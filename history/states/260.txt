@@ -1,0 +1,32 @@
+
+state={
+	id=260
+	name="STATE_260"
+
+	history={
+		owner = W57
+		victory_points = {
+			10908 0 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+
+		}
+		add_core_of = W57
+		add_claim_by = ETH
+		add_claim_by = W02
+		add_claim_by = YEM
+	}
+
+	provinces={
+		1953 2096 4033 7996 10764 10857 10859 10877 10908 12800 
+	}
+	manpower=1986184
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=10.0
+}

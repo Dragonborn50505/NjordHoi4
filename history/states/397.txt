@@ -1,0 +1,30 @@
+
+state={
+	id=397
+	name="STATE_397"
+
+	history={
+		owner = X86
+		victory_points = {
+			12648 15 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 2
+			air_base = 7
+
+		}
+		add_core_of = X86
+		add_claim_by = W02
+	}
+
+	provinces={
+		12064 12648 
+	}
+	manpower=928088
+	buildings_max_level_factor=1.000
+	state_category=city
+
+	local_supplies=10.0
+}

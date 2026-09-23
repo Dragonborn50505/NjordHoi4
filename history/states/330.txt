@@ -1,0 +1,31 @@
+
+state={
+	id=330
+	name="STATE_330"
+
+	history={
+		owner = X75
+		victory_points = {
+			4045 15 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 7
+
+		}
+		add_core_of = RAJ
+		add_core_of = X75
+		add_claim_by = X64
+	}
+
+	provinces={
+		2005 4045 12786 
+	}
+	manpower=5242248
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+
+	local_supplies=10.0
+}

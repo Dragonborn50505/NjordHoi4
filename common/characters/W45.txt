@@ -1,0 +1,16 @@
+characters={
+	W45_adriaan_lefebvre={
+		name=W45_adriaan_lefebvre
+		portraits={
+			civilian={
+				large="GFX_France_Paul_Reynaud"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

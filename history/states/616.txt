@@ -1,0 +1,30 @@
+
+state={
+	id=616
+	name="STATE_616"
+
+	history={
+		owner = W17
+		victory_points = {
+			10400 15 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 7
+
+		}
+		add_core_of = W17
+		add_claim_by = W02
+	}
+
+	provinces={
+		1688 2171 2213 5106 5217 10400 10566 
+	}
+	manpower=1597744
+	buildings_max_level_factor=1.000
+	state_category=city
+
+	local_supplies=10.0
+}

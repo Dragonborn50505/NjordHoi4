@@ -1,0 +1,33 @@
+
+state={
+	id=655
+	name="STATE_655"
+
+	history={
+		owner = W24
+		victory_points = {
+			4593 1 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 0
+			4593 = {
+				naval_base = 2
+			}
+
+		}
+		add_core_of = W24
+		add_claim_by = W10
+	}
+
+	provinces={
+		1602 1617 1629 4593 7627 10505 12457 
+	}
+	manpower=127048
+	buildings_max_level_factor=1.000
+	state_category=large_island
+
+	local_supplies=10.0
+}

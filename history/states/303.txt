@@ -1,0 +1,32 @@
+
+state={
+	id=303
+	name="STATE_303"
+
+	history={
+		owner = X63
+		victory_points = {
+			1849 10 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 10
+
+		}
+		add_core_of = X63
+		add_core_of = X85
+		add_core_of = X91
+		add_claim_by = W10
+	}
+
+	provinces={
+		703 926 1560 1760 1849 3699 4029 4166 4738 4834 7776 7829 9657 9678 10341 10526 12357 12456 
+	}
+	manpower=39360
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=10.0
+}

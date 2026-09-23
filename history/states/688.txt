@@ -1,0 +1,38 @@
+
+state={
+	id=688
+	name="STATE_688"
+
+	history={
+		owner = W35
+		victory_points = {
+			12712 10 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 4
+			arms_factory = 0
+			dockyard = 1
+			air_base = 10
+			8032 = {
+				naval_base = 8
+			}
+
+		}
+		add_core_of = W14
+		add_core_of = W18
+		add_core_of = W35
+		add_core_of = W43
+		add_core_of = X71
+		add_claim_by = TIG
+	}
+
+	provinces={
+		4887 5066 8032 8236 10730 10773 10832 12712 
+	}
+	manpower=2418596
+	buildings_max_level_factor=1.000
+	state_category=large_town
+
+	local_supplies=10.0
+}

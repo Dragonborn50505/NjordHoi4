@@ -1,0 +1,35 @@
+
+state={
+	id=367
+	name="STATE_367"
+
+	history={
+		owner = W49
+		victory_points = {
+			10697 0 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+			4528 = {
+				naval_base = 6
+			}
+
+		}
+		add_core_of = W49
+		add_claim_by = W02
+		add_claim_by = W10
+		add_claim_by = X86
+	}
+
+	provinces={
+		1509 4528 5203 5231 10442 10668 10697 12419 
+	}
+	manpower=266860
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=10.0
+}

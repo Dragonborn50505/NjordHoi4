@@ -1,0 +1,31 @@
+
+state={
+	id=425
+	name="STATE_425"
+
+	history={
+		owner = X93
+		victory_points = {
+			6280 2 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 1
+
+		}
+		add_core_of = X93
+		add_claim_by = SOV
+		add_claim_by = W02
+	}
+
+	provinces={
+		233 277 358 406 560 3309 3366 3556 6280 6306 6340 6359 6413 6415 6579 9236 9304 9341 9359 11285 11341 11342 11391 
+	}
+	manpower=1590992
+	buildings_max_level_factor=1.000
+	state_category=large_island
+
+	local_supplies=10.0
+}

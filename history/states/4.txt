@@ -1,0 +1,37 @@
+
+state={
+	id=4
+	name="STATE_4"
+
+	history={
+		owner = ATJ
+		victory_points = {
+			12138 10 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 1
+			dockyard = 1
+			air_base = 7
+			4320 = {
+				naval_base = 4
+			}
+
+		}
+		add_core_of = ATJ
+		add_core_of = MAL
+		add_core_of = X73
+		add_core_of = X92
+		add_claim_by = TIG
+	}
+
+	provinces={
+		1246 1274 1313 1332 1342 1345 1373 1401 1533 4276 4320 4361 4364 4381 7308 7440 10150 10194 10294 10322 12138 12165 12209 12212 12268 12296 12415 
+	}
+	manpower=2170052
+	buildings_max_level_factor=1.000
+	state_category=city
+
+	local_supplies=10.0
+}

@@ -1,0 +1,21 @@
+
+state={
+	id=579
+	name="STATE_579"
+	impassable = yes
+
+	history={
+		owner = W64
+		add_core_of = W64
+		add_claim_by = W10
+	}
+
+	provinces={
+		1897 1962 7943 8035 10771 10779 10838 
+	}
+	manpower=55712
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+
+	local_supplies=10.0
+}

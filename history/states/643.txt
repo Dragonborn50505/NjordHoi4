@@ -1,0 +1,39 @@
+
+state={
+	id=643
+	name="STATE_643"
+
+	history={
+		owner = W23
+		victory_points = {
+			10837 1 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+			10837 = {
+				landmark_sadabad_complex = {
+					level = 1
+					allowed = {
+						has_dlc = "Gotterdammerung"
+					}
+				}
+			}
+
+		}
+		add_core_of = PER
+		add_core_of = W23
+		add_claim_by = W02
+	}
+
+	provinces={
+		2071 4553 7969 8093 10523 10837 10922 12704 12818 
+	}
+	manpower=1010432
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=10.0
+}

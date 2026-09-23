@@ -1,0 +1,33 @@
+
+state={
+	id=307
+	name="STATE_307"
+
+	history={
+		owner = X68
+		victory_points = {
+			10866 15 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 7
+
+		}
+		add_core_of = RAJ
+		add_core_of = X40
+		add_core_of = X64
+		add_core_of = X68
+		add_core_of = X97
+	}
+
+	provinces={
+		2054 4149 4984 7905 10847 10866 12718 12886 
+	}
+	manpower=3818708
+	buildings_max_level_factor=1.000
+	state_category=city
+
+	local_supplies=10.0
+}

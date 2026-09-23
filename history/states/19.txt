@@ -1,0 +1,34 @@
+
+state={
+	id=19
+	name="STATE_19"
+
+	history={
+		owner = X07
+		victory_points = {
+			11581 0 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+			13252 = {
+				naval_base = 1
+			}
+
+		}
+		add_core_of = CRO
+		add_claim_by = W02
+		add_claim_by = X07
+	}
+
+	provinces={
+		624 3592 3596 3601 3627 9611 11581 11594 13252 
+	}
+	manpower=1213484
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=10.0
+}

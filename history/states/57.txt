@@ -1,0 +1,33 @@
+
+state={
+	id=57
+	name="STATE_57"
+
+	history={
+		owner = BRA
+		victory_points = {
+			12853 1 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 0
+			12853 = {
+				naval_base = 6
+			}
+
+		}
+		add_core_of = BRA
+		add_claim_by = W10
+	}
+
+	provinces={
+		2035 2214 4980 10874 10956 12853 12999 13274 13276 13353 13354 13356 13357 
+	}
+	manpower=182856
+	buildings_max_level_factor=1.000
+	state_category=large_island
+
+	local_supplies=10.0
+}

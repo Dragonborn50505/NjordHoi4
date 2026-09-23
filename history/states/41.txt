@@ -1,0 +1,33 @@
+
+state={
+	id=41
+	name="STATE_41"
+
+	history={
+		owner = W66
+		victory_points = {
+			1896 15 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 6
+
+		}
+		add_core_of = PER
+		add_core_of = TUR
+		add_core_of = W23
+		add_core_of = W66
+		add_claim_by = TIG
+	}
+
+	provinces={
+		1636 1822 1896 4755 4825 4901 7604 10454 12793 12861 
+	}
+	manpower=3786424
+	buildings_max_level_factor=1.000
+	state_category=city
+
+	local_supplies=10.0
+}

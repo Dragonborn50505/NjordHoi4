@@ -1,0 +1,16 @@
+characters={
+	W64_damaso_bugallal={
+		name=W64_damaso_bugallal
+		portraits={
+			civilian={
+				large="GFX_Columbia_Lauro_Gomez_Castro"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

@@ -1,0 +1,35 @@
+
+state={
+	id=290
+	name="STATE_290"
+
+	history={
+		owner = W58
+		victory_points = {
+			10147 10 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 5
+			10147 = {
+				naval_base = 4
+			}
+
+		}
+		add_core_of = PNG
+		add_core_of = W24
+		add_core_of = W58
+		add_claim_by = W10
+	}
+
+	provinces={
+		1222 1242 1283 1310 10147 12123 12135 12484 
+	}
+	manpower=73760
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=10.0
+}

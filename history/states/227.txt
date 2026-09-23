@@ -1,0 +1,30 @@
+
+state={
+	id=227
+	name="STATE_227"
+
+	history={
+		owner = ITA
+		victory_points = {
+			3780 7 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 9
+			arms_factory = 3
+			air_base = 4
+
+		}
+		add_core_of = ITA
+		add_claim_by = X64
+	}
+
+	provinces={
+		607 773 969 3780 6661 9584 11568 11587 
+	}
+	manpower=5375384
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+
+	local_supplies=10.0
+}

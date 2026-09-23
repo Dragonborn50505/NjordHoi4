@@ -1,0 +1,34 @@
+
+state={
+	id=695
+	name="STATE_695"
+
+	history={
+		owner = W36
+		victory_points = {
+			7442 15 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 0
+			air_base = 6
+			10271 = {
+				naval_base = 6
+			}
+
+		}
+		add_core_of = W36
+		add_claim_by = SOV
+		add_claim_by = W10
+	}
+
+	provinces={
+		1320 1690 4296 4398 4747 7255 7315 7386 7414 7442 10155 10157 10198 10242 10271 10327 10687 10690 10693 12155 12214 12673 
+	}
+	manpower=241332
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=10.0
+}

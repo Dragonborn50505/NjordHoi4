@@ -1,0 +1,35 @@
+
+state={
+	id=6
+	name="STATE_6"
+
+	history={
+		owner = ATJ
+		victory_points = {
+			1277 1 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+			1277 = {
+				naval_base = 4
+			}
+
+		}
+		add_core_of = ATJ
+		add_core_of = MAL
+		add_core_of = X73
+		add_claim_by = W02
+	}
+
+	provinces={
+		1277 1460 7327 7368 7463 10209 10225 10354 10382 12168 12181 12184 12302 12343 
+	}
+	manpower=541860
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+
+	local_supplies=10.0
+}

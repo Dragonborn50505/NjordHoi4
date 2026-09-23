@@ -1,0 +1,35 @@
+
+state={
+	id=223
+	name="STATE_223"
+
+	history={
+		owner = ITA
+		victory_points = {
+			6843 7 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 7
+			arms_factory = 3
+			dockyard = 2
+			air_base = 4
+			3966 = {
+				naval_base = 8
+			}
+
+		}
+		add_core_of = ITA
+		add_core_of = X79
+		add_claim_by = X64
+	}
+
+	provinces={
+		883 963 3910 3923 3966 6831 6843 6939 6979 6980 9784 9838 11803 11837 11882 11998 
+	}
+	manpower=4560400
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+
+	local_supplies=10.0
+}

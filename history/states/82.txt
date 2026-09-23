@@ -1,0 +1,34 @@
+
+state={
+	id=82
+	name="STATE_82"
+
+	history={
+		owner = COL
+		victory_points = {
+			7630 1 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 0
+			7617 = {
+				naval_base = 6
+			}
+
+		}
+		add_core_of = COL
+		add_core_of = X76
+		add_claim_by = W10
+	}
+
+	provinces={
+		1633 4611 4624 7617 7630 10482 
+	}
+	manpower=466940
+	buildings_max_level_factor=1.000
+	state_category=large_island
+
+	local_supplies=10.0
+}

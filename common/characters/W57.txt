@@ -1,0 +1,16 @@
+characters={
+	W57_guglielmo_cusani={
+		name=W57_guglielmo_cusani
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/portrait_europe_generic_8.dds"
+			}
+		}
+		country_leader={
+			ideology=leninism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

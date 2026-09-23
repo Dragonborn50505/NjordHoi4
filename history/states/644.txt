@@ -1,0 +1,31 @@
+
+state={
+	id=644
+	name="STATE_644"
+
+	history={
+		owner = W23
+		victory_points = {
+			2026 1 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+
+		}
+		add_core_of = PER
+		add_core_of = W23
+		add_claim_by = W02
+	}
+
+	provinces={
+		1963 2026 4928 4983 5067 8074 10828 12756 
+	}
+	manpower=961764
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=10.0
+}

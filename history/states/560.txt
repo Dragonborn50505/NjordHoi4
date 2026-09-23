@@ -1,0 +1,33 @@
+
+state={
+	id=560
+	name="STATE_560"
+
+	history={
+		owner = SPR
+		victory_points = {
+			6906 3 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 1
+			6906 = {
+				naval_base = 8
+			}
+
+		}
+		add_core_of = SPR
+		add_claim_by = TIG
+	}
+
+	provinces={
+		832 942 962 1093 3799 3835 3873 4098 4195 6817 6856 6906 6959 7111 9889 9896 9903 10024 10109 11807 11812 11884 13222 
+	}
+	manpower=2341620
+	buildings_max_level_factor=1.000
+	state_category=city
+
+	local_supplies=10.0
+}

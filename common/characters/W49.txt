@@ -1,0 +1,16 @@
+characters={
+	W49_adriaan_lefebvre={
+		name=W49_adriaan_lefebvre
+		portraits={
+			civilian={
+				large="GFX_USA_Harry_Truman"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

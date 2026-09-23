@@ -1,0 +1,36 @@
+
+state={
+	id=681
+	name="STATE_681"
+
+	history={
+		owner = W65
+		victory_points = {
+			5128 10 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 0
+			air_base = 10
+			5222 = {
+				naval_base = 6
+			}
+
+		}
+		add_core_of = MAD
+		add_core_of = W65
+		add_core_of = X19
+		add_core_of = X70
+		add_claim_by = TIG
+	}
+
+	provinces={
+		5128 5222 8188 
+	}
+	manpower=2271860
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=10.0
+}

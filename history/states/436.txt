@@ -1,0 +1,30 @@
+
+state={
+	id=436
+	name="STATE_436"
+
+	history={
+		owner = X93
+		victory_points = {
+			1450 1 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 1
+			air_base = 0
+
+		}
+		add_core_of = TIG
+		add_claim_by = W07
+	}
+
+	provinces={
+		666 670 683 700 712 728 1450 1455 3668 3672 3682 3711 4463 6689 6701 6702 6730 6748 7554 7624 9628 9645 9647 11614 11632 
+	}
+	manpower=2373464
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=10.0
+}

@@ -1,0 +1,33 @@
+
+state={
+	id=477
+	name="STATE_477"
+
+	history={
+		owner = QUE
+		victory_points = {
+			4872 1 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+			5239 = {
+				naval_base = 1
+			}
+
+		}
+		add_core_of = QUE
+		add_claim_by = W10
+	}
+
+	provinces={
+		1848 1873 3721 4218 4426 4790 4872 5119 5239 6728 7185 7782 9615 10585 10605 12145 12636 12688 
+	}
+	manpower=273412
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=10.0
+}

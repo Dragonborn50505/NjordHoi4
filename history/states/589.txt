@@ -1,0 +1,30 @@
+
+state={
+	id=589
+	name="STATE_589"
+
+	history={
+		owner = W07
+		victory_points = {
+			6601 0 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+
+		}
+		add_core_of = W02
+		add_claim_by = W07
+	}
+
+	provinces={
+		499 3490 3517 3551 6430 6479 6574 6601 9432 9577 11395 11421 11460 11523 
+	}
+	manpower=373120
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=10.0
+}

@@ -1,0 +1,151 @@
+﻿converted_war_strategies_X32 = {
+	allowed = {
+		tag = X32
+	}
+	enable = {
+		always = no
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = conquer
+		id = "MEX"
+		value = 324
+	}
+	ai_strategy = {
+		type = conquer
+		id = "W36"
+		value = 107
+	}
+	ai_strategy = {
+		type = conquer
+		id = "IRE"
+		value = 105
+	}
+	ai_strategy = {
+		type = conquer
+		id = "SOV"
+		value = 38
+	}
+	ai_strategy = {
+		type = conquer
+		id = "PRU"
+		value = 15
+	}
+	ai_strategy = {
+		type = conquer
+		id = "PRE"
+		value = 15
+	}
+}
+
+converted_diplo_strategies_X32 = {
+	allowed = {
+		tag = X32
+	}
+	enable = {
+		always = no
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = contain
+		id = "IRE"
+		value = 400
+	}
+	ai_strategy = {
+		type = contain
+		id = "W41"
+		value = 219
+	}
+	ai_strategy = {
+		type = contain
+		id = "MEX"
+		value = 66
+	}
+	ai_strategy = {
+		type = contain
+		id = "W36"
+		value = 63
+	}
+	ai_strategy = {
+		type = contain
+		id = "W35"
+		value = 19
+	}
+	ai_strategy = {
+		type = contain
+		id = "TEX"
+		value = 19
+	}
+	ai_strategy = {
+		type = contain
+		id = "PRE"
+		value = 16
+	}
+	ai_strategy = {
+		type = contain
+		id = "CUB"
+		value = 8
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "IRE"
+		value = 400
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "W36"
+		value = 143
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "ITA"
+		value = 67
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "PRE"
+		value = 38
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "SOV"
+		value = 36
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "USA"
+		value = 22
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "PRU"
+		value = 4
+	}
+	ai_strategy = {
+		type = alliance
+		id = "HOL"
+		value = 200
+	}
+	ai_strategy = {
+		type = alliance
+		id = "W41"
+		value = 130
+	}
+	ai_strategy = {
+		type = alliance
+		id = "FRA"
+		value = 103
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "W36"
+		value = 105
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "USA"
+		value = 56
+	}
+}

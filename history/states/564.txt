@@ -1,0 +1,34 @@
+
+state={
+	id=564
+	name="STATE_564"
+
+	history={
+		owner = SPR
+		victory_points = {
+			11805 1 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 0
+			arms_factory = 0
+			dockyard = 1
+			air_base = 1
+			11805 = {
+				naval_base = 8
+			}
+
+		}
+		add_core_of = SPR
+		add_claim_by = TIG
+	}
+
+	provinces={
+		799 844 924 970 980 3798 3861 6924 11768 11805 
+	}
+	manpower=1758148
+	buildings_max_level_factor=1.000
+	state_category=large_island
+
+	local_supplies=10.0
+}

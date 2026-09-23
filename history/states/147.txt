@@ -1,0 +1,31 @@
+
+state={
+	id=147
+	name="STATE_147"
+
+	history={
+		owner = GER
+		victory_points = {
+			495 3 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 4
+			arms_factory = 1
+			air_base = 2
+
+		}
+		add_core_of = GER
+		add_core_of = SAX
+		add_claim_by = TIG
+	}
+
+	provinces={
+		495 564 3512 3524 6535 6622 9443 9509 11346 11388 11431 11533 
+	}
+	manpower=3646504
+	buildings_max_level_factor=1.000
+	state_category=city
+
+	local_supplies=10.0
+}

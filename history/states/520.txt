@@ -1,0 +1,30 @@
+
+state={
+	id=520
+	name="STATE_520"
+
+	history={
+		owner = W63
+		victory_points = {
+			6779 0 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+
+		}
+		add_core_of = W63
+		add_claim_by = W10
+	}
+
+	provinces={
+		3800 4695 6779 
+	}
+	manpower=16412
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=10.0
+}

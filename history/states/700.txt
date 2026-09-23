@@ -1,0 +1,33 @@
+
+state={
+	id=700
+	name="STATE_700"
+
+	history={
+		owner = YEM
+		victory_points = {
+			1889 15 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 6
+			1889 = {
+				naval_base = 2
+			}
+
+		}
+		add_core_of = YEM
+		add_claim_by = W10
+	}
+
+	provinces={
+		1889 
+	}
+	manpower=82564
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=10.0
+}

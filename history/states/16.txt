@@ -1,0 +1,30 @@
+
+state={
+	id=16
+	name="STATE_16"
+
+	history={
+		owner = X07
+		victory_points = {
+			9617 3 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 3
+			arms_factory = 2
+			air_base = 1
+
+		}
+		add_core_of = X07
+		add_claim_by = TIG
+	}
+
+	provinces={
+		637 660 674 818 3630 3636 3639 3645 3663 6652 6658 6667 6677 6695 9617 9651 11588 11603 11605 11619 11636 11657 
+	}
+	manpower=3544096
+	buildings_max_level_factor=1.000
+	state_category=city
+
+	local_supplies=10.0
+}

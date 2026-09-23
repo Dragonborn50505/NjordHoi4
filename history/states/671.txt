@@ -1,0 +1,35 @@
+
+state={
+	id=671
+	name="STATE_671"
+
+	history={
+		owner = W31
+		victory_points = {
+			792 15 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 6
+			792 = {
+				naval_base = 2
+			}
+
+		}
+		add_core_of = LEB
+		add_core_of = SYR
+		add_core_of = X54
+		add_claim_by = W02
+	}
+
+	provinces={
+		792 1108 11919 
+	}
+	manpower=659004
+	buildings_max_level_factor=1.000
+	state_category=large_island
+
+	local_supplies=10.0
+}

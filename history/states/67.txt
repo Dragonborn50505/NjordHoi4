@@ -1,0 +1,33 @@
+
+state={
+	id=67
+	name="STATE_67"
+
+	history={
+		owner = BRA
+		victory_points = {
+			8181 1 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+			8181 = {
+				naval_base = 4
+			}
+
+		}
+		add_core_of = BRA
+		add_claim_by = W02
+	}
+
+	provinces={
+		2109 4587 5178 8181 8239 
+	}
+	manpower=569548
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+
+	local_supplies=10.0
+}

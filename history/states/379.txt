@@ -1,0 +1,30 @@
+
+state={
+	id=379
+	name="STATE_379"
+
+	history={
+		owner = W49
+		victory_points = {
+			4556 0 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+
+		}
+		add_core_of = W49
+		add_claim_by = W02
+	}
+
+	provinces={
+		4556 
+	}
+	manpower=501948
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+
+	local_supplies=10.0
+}

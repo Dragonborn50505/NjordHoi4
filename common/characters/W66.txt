@@ -1,0 +1,16 @@
+characters={
+	W66_constin_iancovescu={
+		name=W66_constin_iancovescu
+		portraits={
+			civilian={
+				large="GFX_Bulgaria_Georgi_Dimitrov"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

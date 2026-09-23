@@ -1,0 +1,33 @@
+
+state={
+	id=396
+	name="STATE_396"
+
+	history={
+		owner = X84
+		victory_points = {
+			4543 15 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 5
+			4543 = {
+				naval_base = 1
+			}
+
+		}
+		add_core_of = X84
+		add_claim_by = W10
+	}
+
+	provinces={
+		4543 4615 10334 10373 
+	}
+	manpower=5620
+	buildings_max_level_factor=1.000
+	state_category=large_island
+
+	local_supplies=10.0
+}

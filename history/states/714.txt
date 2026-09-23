@@ -1,0 +1,32 @@
+
+state={
+	id=714
+	name="STATE_714"
+
+	history={
+		owner = W41
+		victory_points = {
+			4801 1 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 0
+
+		}
+		add_core_of = MON
+		add_core_of = W41
+		add_core_of = X51
+		add_claim_by = TIG
+	}
+
+	provinces={
+		1723 1743 1787 1853 1859 1868 4655 4729 4732 4786 4792 4801 4856 4862 4873 7717 7749 7752 7823 7885 10554 10558 10575 10578 10632 10647 10689 10708 12533 12539 12557 12605 12612 12629 12665 12669 12686 
+	}
+	manpower=1689692
+	buildings_max_level_factor=1.000
+	state_category=large_island
+
+	local_supplies=10.0
+}

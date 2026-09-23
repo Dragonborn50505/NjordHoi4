@@ -1,0 +1,16 @@
+characters={
+	W67_artur_iancovescu={
+		name=W67_artur_iancovescu
+		portraits={
+			civilian={
+				large="GFX_Romania_Armand_Calinescu"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

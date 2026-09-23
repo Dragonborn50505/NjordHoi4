@@ -1,0 +1,33 @@
+
+state={
+	id=496
+	name="STATE_496"
+
+	history={
+		owner = SOV
+		victory_points = {
+			12530 1 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+			105 = {
+				naval_base = 1
+			}
+
+		}
+		add_core_of = SOV
+		add_claim_by = W10
+	}
+
+	provinces={
+		105 198 6040 6177 6538 7712 9121 9205 9230 10207 10579 10723 11047 11098 11119 11182 12530 13076 
+	}
+	manpower=174900
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=10.0
+}

@@ -1,0 +1,40 @@
+
+state={
+	id=755
+	name="STATE_755"
+
+	history={
+		owner = W41
+		victory_points = {
+			11913 0 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 1
+			7014 = {
+				naval_base = 6
+			}
+			11913 = {
+				landmark_nanjing_presidential_palace = {
+					level = 1
+					allowed = {
+						has_dlc = "No Compromise, No Surrender"
+					}
+				}
+			}
+
+		}
+		add_core_of = X45
+	}
+
+	provinces={
+		996 7014 10034 10076 11913 11982 12052 12076 
+	}
+	manpower=24350772
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+
+	local_supplies=10.0
+}

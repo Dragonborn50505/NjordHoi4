@@ -1,0 +1,32 @@
+
+state={
+	id=679
+	name="STATE_679"
+
+	history={
+		owner = W31
+		victory_points = {
+			1977 0 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+			1977 = {
+				naval_base = 1
+			}
+
+		}
+		add_core_of = W10
+	}
+
+	provinces={
+		1977 
+	}
+	manpower=45968
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=10.0
+}

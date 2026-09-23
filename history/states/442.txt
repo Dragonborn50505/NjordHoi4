@@ -1,0 +1,34 @@
+
+state={
+	id=442
+	name="STATE_442"
+
+	history={
+		owner = PRE
+		victory_points = {
+			122 1 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 0
+			6176 = {
+				naval_base = 8
+			}
+
+		}
+		add_core_of = NOR
+		add_core_of = PRE
+		add_claim_by = W02
+	}
+
+	provinces={
+		14 53 65 100 122 137 144 199 3049 3059 3090 3094 3114 3129 3188 3192 6072 6080 6145 6151 6176 6184 6216 9036 9047 9096 9103 9170 9174 9196 9204 9296 11029 11101 11176 11198 11367 
+	}
+	manpower=955556
+	buildings_max_level_factor=1.000
+	state_category=large_island
+
+	local_supplies=10.0
+}

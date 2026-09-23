@@ -1,0 +1,33 @@
+
+state={
+	id=53
+	name="STATE_53"
+
+	history={
+		owner = BRU
+		victory_points = {
+			4429 1 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+			4429 = {
+				naval_base = 2
+			}
+
+		}
+		add_core_of = BRU
+		add_claim_by = W10
+	}
+
+	provinces={
+		4429 7419 10145 
+	}
+	manpower=75908
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=10.0
+}

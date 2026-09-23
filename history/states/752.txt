@@ -1,0 +1,37 @@
+
+state={
+	id=752
+	name="STATE_752"
+
+	history={
+		owner = W41
+		victory_points = {
+			12127 10 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 5
+			1330 = {
+				naval_base = 6
+			}
+
+		}
+		add_core_of = BRM
+		add_core_of = X17
+		add_core_of = X90
+		add_claim_by = RAJ
+		add_claim_by = W02
+		add_claim_by = W10
+	}
+
+	provinces={
+		1014 1142 1330 1333 1417 1650 3651 4019 4059 4147 4202 4293 4336 7034 7122 7254 7382 10154 10182 10223 10267 10283 10344 12090 12127 12197 12267 12284 
+	}
+	manpower=2091644
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=10.0
+}

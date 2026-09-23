@@ -1,0 +1,30 @@
+
+state={
+	id=300
+	name="STATE_300"
+
+	history={
+		owner = X57
+		victory_points = {
+			4318 15 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 6
+
+		}
+		add_core_of = X57
+		add_claim_by = W10
+	}
+
+	provinces={
+		1197 1934 4318 4996 8063 
+	}
+	manpower=203884
+	buildings_max_level_factor=1.000
+	state_category=city
+
+	local_supplies=10.0
+}

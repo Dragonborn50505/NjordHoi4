@@ -1,0 +1,29 @@
+
+state={
+	id=514
+	name="STATE_514"
+
+	history={
+		owner = SOV
+		victory_points = {
+			4716 0 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+
+		}
+		add_core_of = W10
+	}
+
+	provinces={
+		1761 4716 4835 7736 7854 12644 
+	}
+	manpower=118008
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=10.0
+}

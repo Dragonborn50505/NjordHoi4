@@ -1,0 +1,33 @@
+
+state={
+	id=660
+	name="STATE_660"
+
+	history={
+		owner = W31
+		victory_points = {
+			3401 1 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+			3401 = {
+				naval_base = 4
+			}
+
+		}
+		add_core_of = W31
+		add_claim_by = W10
+	}
+
+	provinces={
+		3401 
+	}
+	manpower=71892
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=10.0
+}

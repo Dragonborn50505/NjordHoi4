@@ -1,0 +1,35 @@
+
+state={
+	id=28
+	name="STATE_28"
+
+	history={
+		owner = X07
+		victory_points = {
+			6923 15 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 0
+			air_base = 6
+			9919 = {
+				naval_base = 6
+			}
+
+		}
+		add_core_of = W32
+		add_core_of = X07
+		add_claim_by = W02
+		add_claim_by = X21
+	}
+
+	provinces={
+		878 893 3937 6814 6857 6923 6952 6967 6982 9818 9862 9888 9902 9919 11813 
+	}
+	manpower=1439612
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=10.0
+}

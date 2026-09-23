@@ -1,0 +1,35 @@
+
+state={
+	id=432
+	name="STATE_432"
+
+	history={
+		owner = X93
+		victory_points = {
+			3686 10 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 0
+			dockyard = 1
+			air_base = 6
+			11649 = {
+				naval_base = 8
+			}
+
+		}
+		add_core_of = CRI
+		add_core_of = X93
+		add_claim_by = W02
+	}
+
+	provinces={
+		705 3686 3722 6704 6724 9677 9680 9718 11649 
+	}
+	manpower=644472
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=10.0
+}

@@ -1,0 +1,35 @@
+
+state={
+	id=298
+	name="STATE_298"
+
+	history={
+		owner = KOR
+		victory_points = {
+			7155 1 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 0
+			dockyard = 1
+			air_base = 0
+			7155 = {
+				naval_base = 2
+			}
+
+		}
+		add_core_of = JAP
+		add_core_of = KOR
+		add_claim_by = X64
+	}
+
+	provinces={
+		848 1003 4107 7070 7155 9981 10065 10083 11915 11958 12040 
+	}
+	manpower=3298176
+	buildings_max_level_factor=1.000
+	state_category=city
+
+	local_supplies=10.0
+}

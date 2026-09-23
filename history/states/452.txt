@@ -1,0 +1,35 @@
+
+state={
+	id=452
+	name="STATE_452"
+
+	history={
+		owner = PRE
+		victory_points = {
+			321 2 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 0
+			arms_factory = 1
+			dockyard = 1
+			air_base = 1
+			321 = {
+				naval_base = 10
+			}
+
+		}
+		add_core_of = GER
+		add_core_of = PRE
+		add_claim_by = W02
+	}
+
+	provinces={
+		268 293 321 349 3258 3340 9294 9388 11276 11305 13257 
+	}
+	manpower=1302772
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=10.0
+}

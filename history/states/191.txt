@@ -1,0 +1,35 @@
+
+state={
+	id=191
+	name="STATE_191"
+
+	history={
+		owner = IRE
+		victory_points = {
+			6384 3 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 2
+			6384 = {
+				naval_base = 8
+			}
+
+		}
+		add_core_of = ENG
+		add_core_of = IRE
+		add_core_of = X34
+		add_claim_by = TIG
+	}
+
+	provinces={
+		219 6318 6335 6384 6399 9285 11332 
+	}
+	manpower=3652164
+	buildings_max_level_factor=1.000
+	state_category=city
+
+	local_supplies=10.0
+}

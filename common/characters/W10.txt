@@ -1,0 +1,16 @@
+characters={
+	W10_isbjorn_growler={
+		name=W10_isbjorn_growler
+		portraits={
+			civilian={
+				large="GFX_bear_buisnessman_leader"
+			}
+		}
+		country_leader={
+			ideology=dictatorship_neutral
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

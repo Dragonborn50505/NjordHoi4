@@ -1,0 +1,36 @@
+
+state={
+	id=42
+	name="STATE_42"
+
+	history={
+		owner = W67
+		victory_points = {
+			8117 10 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 5
+			10797 = {
+				naval_base = 4
+			}
+
+		}
+		add_core_of = PER
+		add_core_of = W13
+		add_core_of = W23
+		add_core_of = W67
+		add_claim_by = W02
+	}
+
+	provinces={
+		4959 4966 5089 8031 8117 10797 10881 12832 
+	}
+	manpower=990388
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=10.0
+}

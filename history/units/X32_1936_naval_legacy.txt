@@ -1,0 +1,36 @@
+units = {
+	fleet = {
+		name = "2nd Fleet"
+		naval_base = 12859
+		task_force = {
+			name = "2nd Fleet"
+			location = 12859
+			ship = { name = "Brigham Young" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = X32 } } }
+			ship = { name = "Saint James 2" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = X32 } } }
+			ship = { name = "Nimrod" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = X32 } } }
+			ship = { name = "Zedekiah" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = X32 } } }
+			ship = { name = "Zedekiah 2" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = X32 } } }
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "X32"
+		}
+		requested_factories = 3
+		progress = 0.25
+		amount = 10
+	}
+	add_equipment_production = {
+		equipment = {
+			type = battleship_1
+			creator = "X32"
+		}
+		requested_factories = 8
+		progress = 0.25
+		amount = 3
+	}
+}

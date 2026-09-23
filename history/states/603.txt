@@ -1,0 +1,30 @@
+
+state={
+	id=603
+	name="STATE_603"
+
+	history={
+		owner = TEX
+		victory_points = {
+			4569 1 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 1
+
+		}
+		add_core_of = TEX
+		add_claim_by = W02
+	}
+
+	provinces={
+		1441 1523 1534 1564 1621 4449 4540 4569 7449 7607 10333 10370 10391 10516 10717 12346 12361 12463 
+	}
+	manpower=2018828
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=10.0
+}

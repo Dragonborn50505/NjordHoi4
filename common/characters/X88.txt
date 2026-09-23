@@ -1,0 +1,16 @@
+characters={
+	X88_king_acamapichtli_iii={
+		name=X88_king_acamapichtli_iii
+		portraits={
+			civilian={
+				large="GFX_Apocalypto_absolutist"
+			}
+		}
+		country_leader={
+			ideology=absolute_monarchy
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

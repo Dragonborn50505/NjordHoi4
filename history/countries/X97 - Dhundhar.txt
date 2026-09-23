@@ -1,0 +1,165 @@
+﻿capital = 483
+set_research_slots = 2
+
+oob = "X97_OOB"
+
+# Starting tech
+# Research Bonuses
+
+set_country_flag = conv_south_asia
+set_convoys = 0
+
+set_politics = {
+    ruling_party = absolutist
+    last_election = "1836.1.1"
+    election_frequency = 48
+    elections_allowed = no
+}
+
+set_popularities = {
+	absolutist = 57
+	democratic = 41
+	neutrality = 2
+}
+
+add_opinion_modifier = { target = BRA modifier = negative_10 }
+add_opinion_modifier = { target = BRU modifier = negative_20 }
+add_opinion_modifier = { target = COL modifier = negative_10 }
+add_opinion_modifier = { target = CUB modifier = negative_10 }
+add_opinion_modifier = { target = DOM modifier = negative_10 }
+add_opinion_modifier = { target = IRE modifier = negative_100 }
+add_opinion_modifier = { target = ITA modifier = negative_125 }
+add_opinion_modifier = { target = JAP modifier = negative_200 }
+add_opinion_modifier = { target = MEX modifier = negative_10 }
+add_opinion_modifier = { target = PAK modifier = negative_17 }
+add_opinion_modifier = { target = PRE modifier = negative_10 }
+add_opinion_modifier = { target = PRU modifier = negative_10 }
+add_opinion_modifier = { target = QUE modifier = negative_35 }
+add_opinion_modifier = { target = SAM modifier = negative_20 }
+add_opinion_modifier = { target = SIN modifier = negative_50 }
+add_opinion_modifier = { target = SOV modifier = negative_50 }
+add_opinion_modifier = { target = SPR modifier = negative_10 }
+add_opinion_modifier = { target = TEX modifier = negative_35 }
+add_opinion_modifier = { target = TNE modifier = positive_10 }
+add_opinion_modifier = { target = USA modifier = negative_110 }
+add_opinion_modifier = { target = W03 modifier = negative_20 }
+add_opinion_modifier = { target = W05 modifier = negative_20 }
+add_opinion_modifier = { target = W08 modifier = negative_20 }
+add_opinion_modifier = { target = W13 modifier = negative_35 }
+add_opinion_modifier = { target = W19 modifier = positive_35 }
+add_opinion_modifier = { target = W23 modifier = positive_47 }
+add_opinion_modifier = { target = W24 modifier = negative_30 }
+add_opinion_modifier = { target = W27 modifier = negative_16 }
+add_opinion_modifier = { target = W31 modifier = negative_9 }
+add_opinion_modifier = { target = W35 modifier = negative_10 }
+add_opinion_modifier = { target = W37 modifier = negative_30 }
+add_opinion_modifier = { target = W41 modifier = positive_71 }
+add_opinion_modifier = { target = X04 modifier = negative_20 }
+add_opinion_modifier = { target = X20 modifier = positive_10 }
+add_opinion_modifier = { target = X21 modifier = positive_67 }
+add_opinion_modifier = { target = X32 modifier = negative_10 }
+add_opinion_modifier = { target = X35 modifier = negative_20 }
+add_opinion_modifier = { target = X36 modifier = negative_10 }
+add_opinion_modifier = { target = X40 modifier = negative_137 }
+add_opinion_modifier = { target = X46 modifier = negative_20 }
+add_opinion_modifier = { target = X47 modifier = negative_20 }
+add_opinion_modifier = { target = X57 modifier = negative_20 }
+add_opinion_modifier = { target = X63 modifier = negative_10 }
+add_opinion_modifier = { target = X68 modifier = positive_1 }
+add_opinion_modifier = { target = X73 modifier = negative_20 }
+add_opinion_modifier = { target = X75 modifier = negative_9 }
+add_opinion_modifier = { target = X82 modifier = negative_20 }
+add_opinion_modifier = { target = X83 modifier = negative_20 }
+add_opinion_modifier = { target = X84 modifier = negative_20 }
+add_opinion_modifier = { target = X93 modifier = negative_25 }
+add_opinion_modifier = { target = X94 modifier = negative_40 }
+add_opinion_modifier = { target = X98 modifier = negative_10 }
+add_opinion_modifier = { target = YEM modifier = negative_30 }
+
+
+add_ideas = {
+	uncivilized
+	limited_conscription
+	civilian_economy
+	export_focus
+	culture_rajput
+}
+set_stability = 0.60
+set_war_support = 0.68
+
+recruit_character = X97_sardar_kunwar
+recruit_character = X97_hussain_bachittar_singh
+recruit_character = X97_umar_ur_rahman
+recruit_character = X97_rai_kunwar
+recruit_character = X97_malik_shekha
+recruit_character = X97_king_bhimasimha_ii
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_operative_leader = {
+		name = "Indira ur Rahman"
+		GFX = "gfx/leaders/India/portrait_india_generic_operative_female_1.dds"
+		traits = {}
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { X97 }
+	}
+
+	create_operative_leader = {
+		name = "Indira Bhatti"
+		GFX = "gfx/leaders/India/portrait_india_generic_operative_female_2.dds"
+		traits = {}
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { X97 }
+	}
+
+	create_operative_leader = {
+		name = "Indira Qaim"
+		GFX = "gfx/leaders/India/portrait_india_generic_operative_female_3.dds"
+		traits = {}
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { X97 }
+	}
+
+	create_operative_leader = {
+		name = "Bhai Bhatti"
+		GFX = "gfx/leaders/India/portrait_india_generic_operative_male_1.dds"
+		traits = {}
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { X97 }
+	}
+
+	create_operative_leader = {
+		name = "Muhammad Tiwana"
+		GFX = "gfx/leaders/India/portrait_india_generic_operative_male_2.dds"
+		traits = {}
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { X97 }
+	}
+
+}
+### VARIANTS ###
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+}
+### PLANE DESIGNS ###
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+}
+### TANK DESIGNS ###
+if = {
+	limit = { has_dlc = "No Step Back" }
+}
+

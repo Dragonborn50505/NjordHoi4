@@ -1,0 +1,23 @@
+
+state={
+	id=377
+	name="STATE_377"
+	impassable = yes
+
+	history={
+		owner = W47
+		add_core_of = BRU
+		add_core_of = W47
+		add_core_of = X73
+		add_claim_by = W02
+	}
+
+	provinces={
+		2047 2184 5176 5226 7424 
+	}
+	manpower=101612
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+
+	local_supplies=10.0
+}

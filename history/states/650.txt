@@ -1,0 +1,32 @@
+
+state={
+	id=650
+	name="STATE_650"
+
+	history={
+		owner = W23
+		victory_points = {
+			4893 15 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 6
+
+		}
+		add_core_of = PER
+		add_core_of = W23
+		add_claim_by = RAJ
+		add_claim_by = X64
+	}
+
+	provinces={
+		1995 2078 4893 7448 7519 7584 7916 7984 8053 10476 10737 10781 10826 10852 10896 12248 12314 12653 12788 12871 12877 
+	}
+	manpower=4938320
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+
+	local_supplies=10.0
+}

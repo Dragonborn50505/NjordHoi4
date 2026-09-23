@@ -1,0 +1,33 @@
+
+state={
+	id=662
+	name="STATE_662"
+
+	history={
+		owner = W31
+		victory_points = {
+			940 2 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 0
+			1005 = {
+				naval_base = 2
+			}
+
+		}
+		add_core_of = W31
+		add_claim_by = W02
+	}
+
+	provinces={
+		784 869 940 1005 1119 1122 3788 3876 3983 4008 4127 6807 6877 6894 7143 9755 9763 9811 9861 9878 11792 11860 11907 12013 12016 
+	}
+	manpower=1519216
+	buildings_max_level_factor=1.000
+	state_category=large_island
+
+	local_supplies=10.0
+}

@@ -1,0 +1,33 @@
+
+state={
+	id=85
+	name="STATE_85"
+
+	history={
+		owner = COL
+		victory_points = {
+			13087 1 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 0
+			13087 = {
+				naval_base = 6
+			}
+
+		}
+		add_core_of = COL
+		add_claim_by = W10
+	}
+
+	provinces={
+		12878 13087 13092 
+	}
+	manpower=496812
+	buildings_max_level_factor=1.000
+	state_category=large_island
+
+	local_supplies=10.0
+}

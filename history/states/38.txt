@@ -1,0 +1,30 @@
+
+state={
+	id=38
+	name="STATE_38"
+
+	history={
+		owner = X07
+		victory_points = {
+			2097 0 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+
+		}
+		add_core_of = TIG
+		add_claim_by = W23
+	}
+
+	provinces={
+		1600 1631 1938 2097 3795 3916 4951 5014 6826 8123 10106 10793 10804 10811 12046 12372 12413 12855 
+	}
+	manpower=2346824
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=10.0
+}

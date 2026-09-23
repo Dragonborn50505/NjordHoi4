@@ -1,0 +1,32 @@
+
+state={
+	id=151
+	name="STATE_151"
+
+	history={
+		owner = GER
+		victory_points = {
+			6488 10 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 6
+			arms_factory = 2
+			air_base = 8
+
+		}
+		add_core_of = GER
+		add_core_of = X37
+		add_claim_by = TIG
+		add_claim_by = X64
+	}
+
+	provinces={
+		589 3397 3574 6444 6488 6549 6594 9486 11445 
+	}
+	manpower=4106376
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+
+	local_supplies=10.0
+}

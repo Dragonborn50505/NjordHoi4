@@ -1,0 +1,144 @@
+﻿capital = 232
+set_research_slots = 3
+
+oob = "X79_OOB"
+
+# Starting tech
+# Research Bonuses
+
+set_country_flag = conv_italy
+set_convoys = 0
+
+set_politics = {
+    ruling_party = absolutist
+    last_election = "1836.1.1"
+    election_frequency = 48
+    elections_allowed = no
+}
+
+set_popularities = {
+	absolutist = 90
+	democratic = 7
+	neutrality = 3
+}
+
+add_opinion_modifier = { target = BRA modifier = positive_5 }
+add_opinion_modifier = { target = COG modifier = negative_200 }
+add_opinion_modifier = { target = COL modifier = negative_15 }
+add_opinion_modifier = { target = CUB modifier = positive_20 }
+add_opinion_modifier = { target = DOM modifier = positive_5 }
+add_opinion_modifier = { target = FRA modifier = positive_30 }
+add_opinion_modifier = { target = GER modifier = positive_15 }
+add_opinion_modifier = { target = HOL modifier = positive_15 }
+add_opinion_modifier = { target = ICE modifier = positive_15 }
+add_opinion_modifier = { target = IRE modifier = negative_90 }
+add_opinion_modifier = { target = ITA modifier = negative_85 }
+add_opinion_modifier = { target = JAP modifier = negative_200 }
+add_opinion_modifier = { target = MEX modifier = positive_20 }
+add_opinion_modifier = { target = PRE modifier = positive_5 }
+add_opinion_modifier = { target = PRU modifier = positive_5 }
+add_opinion_modifier = { target = QUE modifier = negative_5 }
+add_opinion_modifier = { target = SOV modifier = negative_55 }
+add_opinion_modifier = { target = SPR modifier = negative_95 }
+add_opinion_modifier = { target = TEX modifier = negative_5 }
+add_opinion_modifier = { target = TIG modifier = negative_150 }
+add_opinion_modifier = { target = USA modifier = negative_5 }
+add_opinion_modifier = { target = W02 modifier = negative_200 }
+add_opinion_modifier = { target = W07 modifier = positive_15 }
+add_opinion_modifier = { target = W10 modifier = negative_150 }
+add_opinion_modifier = { target = W13 modifier = negative_55 }
+add_opinion_modifier = { target = W22 modifier = negative_150 }
+add_opinion_modifier = { target = W24 modifier = negative_10 }
+add_opinion_modifier = { target = W31 modifier = negative_5 }
+add_opinion_modifier = { target = W35 modifier = negative_15 }
+add_opinion_modifier = { target = W37 modifier = negative_10 }
+add_opinion_modifier = { target = X04 modifier = negative_150 }
+add_opinion_modifier = { target = X07 modifier = positive_15 }
+add_opinion_modifier = { target = X21 modifier = positive_15 }
+add_opinion_modifier = { target = X32 modifier = positive_20 }
+add_opinion_modifier = { target = X36 modifier = positive_20 }
+add_opinion_modifier = { target = X63 modifier = positive_5 }
+add_opinion_modifier = { target = X64 modifier = negative_200 }
+add_opinion_modifier = { target = X93 modifier = negative_10 }
+add_opinion_modifier = { target = X98 modifier = positive_5 }
+add_opinion_modifier = { target = YEM modifier = negative_10 }
+
+
+add_ideas = {
+	volunteer_only
+	civilian_economy
+	export_focus
+	culture_south_italian
+}
+
+recruit_character = X79_king_renato_ii
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_operative_leader = {
+		name = "Maria Orsini"
+		GFX = "gfx/leaders/Europe/portrait_europe_generic_operative_female_1.dds"
+		traits = {}
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { X79 }
+	}
+
+	create_operative_leader = {
+		name = "Anna de Riseis"
+		GFX = "gfx/leaders/Europe/portrait_europe_generic_operative_female_2.dds"
+		traits = {}
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { X79 }
+	}
+
+	create_operative_leader = {
+		name = "Anna Pironti"
+		GFX = "gfx/leaders/Europe/portrait_europe_generic_operative_female_3.dds"
+		traits = {}
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { X79 }
+	}
+
+	create_operative_leader = {
+		name = "Corrado de Liguori"
+		GFX = "gfx/leaders/Europe/portrait_europe_generic_operative_male_1.dds"
+		traits = {}
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { X79 }
+	}
+
+	create_operative_leader = {
+		name = "Sigismondo Chigi"
+		GFX = "gfx/leaders/Europe/portrait_europe_generic_operative_male_2.dds"
+		traits = {}
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { X79 }
+	}
+
+}
+### VARIANTS ###
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+}
+### PLANE DESIGNS ###
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+}
+### TANK DESIGNS ###
+if = {
+	limit = { has_dlc = "No Step Back" }
+}
+

@@ -1,0 +1,32 @@
+
+state={
+	id=250
+	name="STATE_250"
+
+	history={
+		owner = W57
+		victory_points = {
+			2040 10 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 6
+
+		}
+		add_core_of = ETH
+		add_core_of = W57
+		add_core_of = YEM
+		add_claim_by = X64
+	}
+
+	provinces={
+		1984 2040 4954 13242 
+	}
+	manpower=5220812
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+
+	local_supplies=10.0
+}

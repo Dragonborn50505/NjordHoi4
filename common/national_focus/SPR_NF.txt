@@ -1,0 +1,193 @@
+focus_tree = {
+	id = SPR_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SPR
+		}
+	}
+	
+	default = no
+	
+	shared_focus = army_effort
+	shared_focus = aviation_effort
+	shared_focus = naval_effort
+	shared_focus = industrial_effort
+	shared_focus = political_effort
+
+	focus = {
+		id = WarPropSPR
+		icon = GFX_goal_generic_propaganda
+		text = WarProp
+		x = 28
+		y = 0
+		cost = 10
+		available = {
+		threat > 0.000000
+	}
+		completion_reward = {
+		add_stability = 0.05
+	}
+		ai_will_do = {
+		factor = 10
+	}
+	}
+
+	focus = {
+		id = PrepInterSPR
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		text = PrepInter
+		prerequisite = { focus = WarPropSPR }
+		x = 0
+		y = 1
+		relative_position_id = WarPropSPR
+		cost = 10
+		available = {
+		threat > 0.000000
+	}
+		completion_reward = {
+		add_political_power = 120
+		set_rule = { can_send_volunteers = yes }
+	}
+		ai_will_do = {
+		factor = 10
+	}
+	}
+
+	focus = {
+		id = LimSPR
+		icon = GFX_goal_generic_more_territorial_claims
+		text = Lim
+		prerequisite = { focus = PrepInterSPR }
+		x = 0
+		y = 1
+		relative_position_id = PrepInterSPR
+		cost = 10
+		available = {
+		threat > 0.000000
+	}
+		completion_reward = {
+		add_ideas = limited_interventionism
+	}
+		ai_will_do = {
+		factor = 10
+	}
+	}
+
+	focus = {
+		id = WarPlanSPRITA
+		icon = GFX_goal_generic_position_armies
+		text = WarPlanITA
+		prerequisite = { focus = LimSPR }
+		bypass = {
+		has_war_with = ITA
+	}
+		x = 0
+		y = 1
+		relative_position_id = LimSPR
+		cost = 10
+		available = {
+		date > 1913.3.5
+		any_other_country = {
+			original_tag = ITA
+			exists = yes
+			NOT = { has_government = democratic }
+			NOT = { is_in_faction_with = ROOT }
+			OR = {
+				has_offensive_war = yes
+				has_added_tension_amount > 30
+			}
+		}
+	}
+		completion_reward = {
+		army_experience = 20
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.3
+			uses = 1
+			category = land_doctrine
+		}
+	}
+		ai_will_do = {
+		factor = 10
+	}
+	}
+
+	focus = {
+		id = EmbargoSPRITA
+		icon = GFX_goal_generic_trade
+		text = EmbargoITA
+		prerequisite = { focus =  WarPlanSPRITA }
+		bypass = {
+		has_war_with = ITA
+	}
+		x = 0
+		y = 1
+		relative_position_id = WarPlanSPRITA
+		cost = 10
+		available = {
+		date > 1913.3.5
+		any_other_country = {
+			original_tag = ITA
+			exists = yes
+			NOT = { has_government = democratic }
+			NOT = { is_in_faction_with = ROOT }
+			OR = {
+				has_offensive_war = yes
+				has_added_tension_amount > 30
+				threat > 0.6
+			}
+		}
+	}
+		completion_reward = {
+		ITA = {
+			add_opinion_modifier = { target = ROOT modifier = embargo }
+		}
+	}
+		ai_will_do = {
+		factor = 10
+	}
+	}
+
+	focus = {
+		id = WARSPRITA
+		icon = GFX_goal_support_democracy
+		text = WARITA
+		prerequisite = { focus =  EmbargoSPRITA }
+		bypass = {
+		has_war_with = ITA
+	}
+		x = 0
+		y = 1
+		relative_position_id = EmbargoSPRITA
+		cost = 10
+		available = {
+		date > 1913.3.5
+		has_war = no
+		any_other_country = {
+			original_tag = ITA
+			exists = yes
+			NOT = { has_government = democratic }
+			NOT = { is_in_faction_with = ROOT }
+			OR = {
+				has_offensive_war = yes
+				has_added_tension_amount > 30
+				threat > 0.6
+			}
+		}
+	}
+		completion_reward = {
+		declare_war_on = {
+			type = puppet_wargoal_focus
+			target = ITA
+		}
+	}
+		ai_will_do = {
+		factor = 10
+	}
+	}
+
+}

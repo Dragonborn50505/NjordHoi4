@@ -1,0 +1,34 @@
+
+state={
+	id=481
+	name="STATE_481"
+
+	history={
+		owner = QUE
+		victory_points = {
+			4360 10 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 6
+			7379 = {
+				naval_base = 6
+			}
+
+		}
+		add_core_of = QUE
+		add_core_of = X69
+		add_claim_by = W02
+	}
+
+	provinces={
+		634 1354 1424 4285 4342 4360 4362 4430 4432 4623 7304 7361 7379 7644 10244 12289 
+	}
+	manpower=618280
+	buildings_max_level_factor=1.000
+	state_category=large_island
+
+	local_supplies=10.0
+}

@@ -1,0 +1,20 @@
+
+state={
+	id=239
+	name="STATE_239"
+	impassable = yes
+
+	history={
+		owner = ITA
+		add_core_of = W02
+	}
+
+	provinces={
+		1057 1060 1140 4191 10104 10785 11951 
+	}
+	manpower=12766
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+
+	local_supplies=10.0
+}

@@ -1,0 +1,2355 @@
+characters={
+	ITA_prospero_porro={
+		name=ITA_prospero_porro
+		portraits={
+			army={
+				large="GFX_Portrait_Italy_Generic_land_4"
+			}
+			army={
+				small="GFX_Portrait_Italy_Generic_land_4_small"
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=5
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_costanzo_cagni={
+		name=ITA_costanzo_cagni
+		portraits={
+			army={
+				large="GFX_Portrait_Italy_Generic_land_5"
+			}
+			army={
+				small="GFX_Portrait_Italy_Generic_land_5_small"
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=4
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_giulio_baratieri={
+		name=ITA_giulio_baratieri
+		portraits={
+			army={
+				large="GFX_Portrait_Europe_Generic_land_5"
+			}
+			army={
+				small="GFX_Portrait_Europe_Generic_land_5_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=4
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_antonio_d'austria_este={
+		name=ITA_antonio_d'austria_este
+		portraits={
+			army={
+				large="GFX_TUS_Umberto_Soma"
+			}
+			army={
+				small="GFX_TUS_Umberto_Soma_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_fabrizio_orengo={
+		name=ITA_fabrizio_orengo
+		portraits={
+			army={
+				large="GFX_Portrait_Europe_Generic_land_3"
+			}
+			army={
+				small="GFX_Portrait_Europe_Generic_land_3_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_fiorenzo_fara={
+		name=ITA_fiorenzo_fara
+		portraits={
+			army={
+				large="GFX_Portrait_Italy_Generic_land_7"
+			}
+			army={
+				small="GFX_Portrait_Italy_Generic_land_7_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_simone_di_robilant={
+		name=ITA_simone_di_robilant
+		portraits={
+			army={
+				large="GFX_TUS_Umberto_Soma"
+			}
+			army={
+				small="GFX_TUS_Umberto_Soma_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_ambrogio_sanna={
+		name=ITA_ambrogio_sanna
+		portraits={
+			army={
+				large="GFX_Portrait_Italy_Generic_land_2"
+			}
+			army={
+				small="GFX_Portrait_Italy_Generic_land_2_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_ettore_cialdini={
+		name=ITA_ettore_cialdini
+		portraits={
+			army={
+				large="GFX_portrait_ITA_rodolfo_graziani"
+			}
+			army={
+				small="GFX_portrait_ITA_rodolfo_graziani_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=4
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_enrico_d'absburgo_toscana={
+		name=ITA_enrico_d'absburgo_toscana
+		portraits={
+			army={
+				large="GFX_portrait_ITA_italo_balbo"
+			}
+			army={
+				small="GFX_portrait_ITA_italo_balbo_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_ugo_di_robilant={
+		name=ITA_ugo_di_robilant
+		portraits={
+			army={
+				large="GFX_LOM_Italo_Gariboldi"
+			}
+			army={
+				small="GFX_LOM_Italo_Gariboldi_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=3
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_camillo_ceccherini={
+		name=ITA_camillo_ceccherini
+		portraits={
+			army={
+				large="GFX_portrait_ITA_rodolfo_graziani"
+			}
+			army={
+				small="GFX_portrait_ITA_rodolfo_graziani_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_tancredi_di_savoia_aosta={
+		name=ITA_tancredi_di_savoia_aosta
+		portraits={
+			army={
+				large="GFX_Portrait_Europe_Generic_land_4"
+			}
+			army={
+				small="GFX_Portrait_Europe_Generic_land_4_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_giuseppe_la_marmora={
+		name=ITA_giuseppe_la_marmora
+		portraits={
+			army={
+				large="GFX_Portrait_Italy_Generic_land_7"
+			}
+			army={
+				small="GFX_Portrait_Italy_Generic_land_7_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_giulio_d'austria_este={
+		name=ITA_giulio_d'austria_este
+		portraits={
+			army={
+				large="GFX_portrait_europe_generic_land_7"
+			}
+			army={
+				small="GFX_portrait_europe_generic_land_7_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_vittorio_orengo={
+		name=ITA_vittorio_orengo
+		portraits={
+			army={
+				large="GFX_Portrait_Italy_Generic_land_7"
+			}
+			army={
+				small="GFX_Portrait_Italy_Generic_land_7_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=4
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_guglielmo_di_savoia={
+		name=ITA_guglielmo_di_savoia
+		portraits={
+			army={
+				large="GFX_portrait_europe_generic_land_9"
+			}
+			army={
+				small="GFX_portrait_europe_generic_land_9_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_andrea_vaccari={
+		name=ITA_andrea_vaccari
+		portraits={
+			army={
+				large="GFX_portrait_europe_generic_land_8"
+			}
+			army={
+				small="GFX_portrait_europe_generic_land_8_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=4
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_umberto_orengo={
+		name=ITA_umberto_orengo
+		portraits={
+			army={
+				large="GFX_Italy_Generic_land_4"
+			}
+			army={
+				small="GFX_Italy_Generic_land_4_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=4
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_roberto_solari={
+		name=ITA_roberto_solari
+		portraits={
+			army={
+				large="GFX_portrait_ITA_giovanni_messe"
+			}
+			army={
+				small="GFX_portrait_ITA_giovanni_messe_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_silvio_vaccari={
+		name=ITA_silvio_vaccari
+		portraits={
+			army={
+				large="GFX_Portrait_Italy_Generic_land_5"
+			}
+			army={
+				small="GFX_Portrait_Italy_Generic_land_5_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_matteo_govone={
+		name=ITA_matteo_govone
+		portraits={
+			army={
+				large="GFX_Portrait_Europe_Generic_land_1"
+			}
+			army={
+				small="GFX_Portrait_Europe_Generic_land_1_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_raffaele_solari={
+		name=ITA_raffaele_solari
+		portraits={
+			army={
+				large="GFX_Portrait_Europe_Generic_land_3"
+			}
+			army={
+				small="GFX_Portrait_Europe_Generic_land_3_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_alfonso_di_borbone_di_parma={
+		name=ITA_alfonso_di_borbone_di_parma
+		portraits={
+			army={
+				large="GFX_Portrait_Italy_Generic_land_5"
+			}
+			army={
+				small="GFX_Portrait_Italy_Generic_land_5_small"
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=5
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_girolamo_acton={
+		name=ITA_girolamo_acton
+		portraits={
+			army={
+				large="GFX_portrait_ITA_italo_balbo"
+			}
+			army={
+				small="GFX_portrait_ITA_italo_balbo_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_girolamo_acton_1={
+		name=ITA_girolamo_acton_1
+		portraits={
+			army={
+				large="GFX_Portrait_Italy_Generic_land_4"
+			}
+			army={
+				small="GFX_Portrait_Italy_Generic_land_4_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_felice_badoglio={
+		name=ITA_felice_badoglio
+		portraits={
+			army={
+				large="GFX_portrait_ITA_ubaldo_soddu"
+			}
+			army={
+				small="GFX_portrait_ITA_ubaldo_soddu_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_davide_cusani={
+		name=ITA_davide_cusani
+		portraits={
+			army={
+				large="GFX_Portrait_Europe_Generic_land_5"
+			}
+			army={
+				small="GFX_Portrait_Europe_Generic_land_5_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_matteo_zupelli={
+		name=ITA_matteo_zupelli
+		portraits={
+			army={
+				large="GFX_portrait_ITA_ubaldo_soddu"
+			}
+			army={
+				small="GFX_portrait_ITA_ubaldo_soddu_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_fiorenzo_ceccherini={
+		name=ITA_fiorenzo_ceccherini
+		portraits={
+			army={
+				large="GFX_Portrait_Italy_Generic_land_2"
+			}
+			army={
+				small="GFX_Portrait_Italy_Generic_land_2_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_enrico_sacchi={
+		name=ITA_enrico_sacchi
+		portraits={
+			army={
+				large="GFX_portrait_ITA_sebastiano_visconti_prasca"
+			}
+			army={
+				small="GFX_portrait_ITA_sebastiano_visconti_prasca_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_felice_ceccherini={
+		name=ITA_felice_ceccherini
+		portraits={
+			army={
+				large="GFX_Portrait_Europe_Generic_land_2"
+			}
+			army={
+				small="GFX_Portrait_Europe_Generic_land_2_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_antonio_pecori_giraldi={
+		name=ITA_antonio_pecori_giraldi
+		portraits={
+			army={
+				large="GFX_Portrait_Europe_Generic_land_3"
+			}
+			army={
+				small="GFX_Portrait_Europe_Generic_land_3_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_ambrogio_sanna_1={
+		name=ITA_ambrogio_sanna_1
+		portraits={
+			army={
+				large="GFX_Italy_Generic_land_4"
+			}
+			army={
+				small="GFX_Italy_Generic_land_4_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_amedeo_orengo={
+		name=ITA_amedeo_orengo
+		portraits={
+			army={
+				large="GFX_portrait_europe_generic_land_9"
+			}
+			army={
+				small="GFX_portrait_europe_generic_land_9_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=3
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_angelo_ceccherini={
+		name=ITA_angelo_ceccherini
+		portraits={
+			army={
+				large="GFX_LOM_Adriano_Visconti"
+			}
+			army={
+				small="GFX_LOM_Adriano_Visconti_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_pietro_porro={
+		name=ITA_pietro_porro
+		portraits={
+			army={
+				large="GFX_LOM_Adriano_Visconti"
+			}
+			army={
+				small="GFX_LOM_Adriano_Visconti_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=3
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_ruggiero_saletta={
+		name=ITA_ruggiero_saletta
+		portraits={
+			army={
+				large="GFX_portrait_ITA_ugo_cavallero"
+			}
+			army={
+				small="GFX_portrait_ITA_ugo_cavallero_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=3
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_ugo_baldissera={
+		name=ITA_ugo_baldissera
+		portraits={
+			army={
+				large="GFX_portrait_europe_generic_land_8"
+			}
+			army={
+				small="GFX_portrait_europe_generic_land_8_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_marco_vaccari={
+		name=ITA_marco_vaccari
+		portraits={
+			army={
+				large="GFX_TUS_Umberto_Soma"
+			}
+			army={
+				small="GFX_TUS_Umberto_Soma_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_felice_badoglio_1={
+		name=ITA_felice_badoglio_1
+		portraits={
+			army={
+				large="GFX_portrait_ITA_ubaldo_soddu"
+			}
+			army={
+				small="GFX_portrait_ITA_ubaldo_soddu_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_alfonso_fanti={
+		name=ITA_alfonso_fanti
+		portraits={
+			army={
+				large="GFX_LOM_Alberto_Pariani"
+			}
+			army={
+				small="GFX_LOM_Alberto_Pariani_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_marco_caviglia={
+		name=ITA_marco_caviglia
+		portraits={
+			army={
+				large="GFX_portrait_europe_generic_land_7"
+			}
+			army={
+				small="GFX_portrait_europe_generic_land_7_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_federico_di_robilant={
+		name=ITA_federico_di_robilant
+		portraits={
+			army={
+				large="GFX_Portrait_Europe_Generic_land_1"
+			}
+			army={
+				small="GFX_Portrait_Europe_Generic_land_1_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_antonio_pelloux={
+		name=ITA_antonio_pelloux
+		portraits={
+			army={
+				large="GFX_portrait_ITA_ubaldo_soddu"
+			}
+			army={
+				small="GFX_portrait_ITA_ubaldo_soddu_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_francesco_ceccherini={
+		name=ITA_francesco_ceccherini
+		portraits={
+			army={
+				large="GFX_Portrait_Italy_Generic_land_6"
+			}
+			army={
+				small="GFX_Portrait_Italy_Generic_land_6_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_felice_cialdini={
+		name=ITA_felice_cialdini
+		portraits={
+			army={
+				large="GFX_portrait_europe_generic_land_8"
+			}
+			army={
+				small="GFX_portrait_europe_generic_land_8_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=3
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_giuseppe_sanna={
+		name=ITA_giuseppe_sanna
+		portraits={
+			army={
+				large="GFX_Portrait_Europe_Generic_land_4"
+			}
+			army={
+				small="GFX_Portrait_Europe_Generic_land_4_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_enrico_vaccari={
+		name=ITA_enrico_vaccari
+		portraits={
+			navy={
+				large="GFX_Portrait_Italy_Generic_navy_1"
+			}
+			navy={
+				small="GFX_Portrait_Italy_Generic_navy_1_small"
+			}
+		}
+		navy_leader={
+			skill=2
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_felice_govone={
+		name=ITA_felice_govone
+		portraits={
+			navy={
+				large="GFX_Portrait_Europe_Generic_navy_3"
+			}
+			navy={
+				small="GFX_Portrait_Europe_Generic_navy_3_small"
+			}
+		}
+		navy_leader={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_tancredi_sacchi={
+		name=ITA_tancredi_sacchi
+		portraits={
+			navy={
+				large="GFX_Europe_Generic_navy_new_2"
+			}
+			navy={
+				small="GFX_Europe_Generic_navy_new_2_small"
+			}
+		}
+		navy_leader={
+			skill=2
+			attack_skill=4
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_cesare_cadorna={
+		name=ITA_cesare_cadorna
+		portraits={
+			navy={
+				large="GFX_Europe_Generic_navy_new_5"
+			}
+			navy={
+				small="GFX_Europe_Generic_navy_new_5_small"
+			}
+		}
+		navy_leader={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_ambrogio_acton={
+		name=ITA_ambrogio_acton
+		portraits={
+			civilian={
+				large="GFX_Europe_Generic_1"
+			}
+		}
+		country_leader={
+			ideology=leninism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	UTI_georgy_zhukov={
+		portraits={
+			army={
+				small="GFX_portrait_ITA_ugo_cavallero_small"
+			}
+			army={
+				large="GFX_portrait_ITA_ugo_cavallero"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = UTI_georgy_zhukov
+			ledger = army
+			available = {
+                has_completed_focus = SOV_positive_heroism
+                if = {
+                    limit = {
+                        has_character_flag = SOV_exiled_flag
+                    }
+                    NOT = { has_character_flag = SOV_exiled_flag }
+                }
+            }
+			allowed = {
+                original_tag = event_target:SOV_the_path_of_marxism_leninism_SOV
+            }
+			traits = {
+				mass_assault_expert
+			}
+			cost = 150
+			ai_will_do = {
+                base = 2
+            }
+		}
+		corps_commander={
+			traits={ media_personality armor_officer war_hero winter_specialist }
+			skill=5
+			attack_skill=5
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=5
+			legacy_id=0
+		}
+	}
+
+	UTI_konstantin_rokossovsky={
+		portraits={
+			army={
+				small="GFX_portrait_ITA_giovanni_messe_small"
+			}
+			army={
+				large="GFX_portrait_ITA_giovanni_messe"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = UTI_konstantin_rokossovsky
+			ledger = army
+			available = {
+                has_completed_focus = SOV_positive_heroism
+                if = {
+                    limit = {
+                        has_character_flag = SOV_exiled_flag
+                    }
+                    NOT = { has_character_flag = SOV_exiled_flag }
+                }
+            }
+			allowed = {
+                original_tag = event_target:SOV_the_path_of_marxism_leninism_SOV
+                hidden_trigger = {
+                    NOT = {
+                        any_other_country = {
+                            has_war_with = event_target:SOV_the_path_of_marxism_leninism_SOV
+                            original_tag = event_target:SOV_the_path_of_marxism_leninism_SOV
+                            has_unit_leader = 403.000
+                        }
+                    }
+                }
+            }
+			traits = {
+				army_armored_3
+			}
+			cost = 200
+			ai_will_do = {
+                base = 2
+            }
+		}
+		corps_commander={
+			traits={ brilliant_strategist trait_cautious armor_officer }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=0
+		}
+	}
+
+	UTI_ivan_konev={
+		portraits={
+			army={
+				small="GFX_Portrait_Italy_Generic_land_4_small"
+			}
+			army={
+				large="GFX_Portrait_Italy_Generic_land_4"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = UTI_ivan_konev
+			ledger = army
+			available = {
+                custom_trigger_tooltip = {
+                    tooltip = SOV_konev_civil_war
+                    NOT = {
+                        any_other_country = {
+                            has_war_with = event_target:SOV_the_path_of_marxism_leninism_SOV
+                            original_tag = event_target:SOV_the_path_of_marxism_leninism_SOV
+                            has_unit_leader = 408.000
+                        }
+                    }
+                }
+                if = {
+                    limit = {
+                        has_character_flag = SOV_exiled_flag
+                    }
+                    NOT = { has_character_flag = SOV_exiled_flag }
+                }
+            }
+			allowed = {
+                original_tag = event_target:SOV_the_path_of_marxism_leninism_SOV
+            }
+			traits = {
+				army_concealment_2
+			}
+			cost = 100
+			ai_will_do = {
+                base = 1
+            }
+		}
+		corps_commander={
+			traits={ harsh_leader armor_officer politically_connected }
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=2
+			logistics_skill=5
+			legacy_id=0
+		}
+	}
+
+	UTI_grigory_zinovyev={
+		portraits={
+			civilian={
+				large="GFX_portrait_ITA_rodolfo_graziani"
+			}
+			army={
+				small="GFX_portrait_ITA_rodolfo_graziani_small"
+			}
+		}
+		allowed_civil_war={ 
+            OR = {
+                AND = {
+                    tag = event_target:SOV_the_path_of_marxism_leninism_SOV 
+                    has_government = communism
+                }
+                AND = {
+                    SOV_is_exiles = yes 
+                    has_government = communism 
+                }
+            }
+        }
+		advisor={
+			slot = political_advisor
+			idea_token = UTI_grigory_zinovyev
+			available = {
+                OR = {
+                    has_global_flag = SOV_soviet_civil_war
+                    has_global_flag = SOV_soviet_civil_war_over
+                }
+                if = {
+                    limit = {
+                        has_character_flag = SOV_imprisoned_flag
+                    }
+                    NOT = { has_character_flag = SOV_imprisoned_flag } #For flavor purposes only -> Removed in the appropriate focus/event/dec
+                }
+                if = {
+                    limit = {
+                        has_character_flag = SOV_exiled_flag
+                    }
+                    NOT = { has_character_flag = SOV_exiled_flag }
+                }
+            }
+			allowed = {
+                original_tag = event_target:SOV_the_path_of_marxism_leninism_SOV
+            }
+			visible = {
+                NOT = {
+                    has_character_flag = SOV_character_purged_flag 
+                }
+            }
+			traits = {
+				communist_theorist
+			}
+			ai_will_do = {
+                base = 1
+            }
+		}
+	}
+
+	UTI_lev_kamenev={
+		portraits={
+			civilian={
+				large="GFX_Portrait_Italy_Generic_land_1"
+			}
+			army={
+				small="GFX_Portrait_Italy_Generic_land_1_small"
+			}
+		}
+		allowed_civil_war={ 
+            OR = {
+                AND = {
+                    tag = event_target:SOV_the_path_of_marxism_leninism_SOV 
+                    has_government = communism
+                }
+                AND = {
+                    SOV_is_exiles = yes 
+                    has_government = communism 
+                }
+            }
+        }
+		advisor={
+			slot = political_advisor
+			idea_token = UTI_lev_kamenev
+			available = {
+                OR = {
+                    has_global_flag = SOV_soviet_civil_war
+                    has_global_flag = SOV_soviet_civil_war_over
+                }
+                if = {
+                    limit = {
+                        has_character_flag = SOV_imprisoned_flag
+                    }
+                    NOT = { has_character_flag = SOV_imprisoned_flag } #For flavor purposes only -> Removed in the appropriate focus/event/dec
+                }
+                if = {
+                    limit = {
+                        has_character_flag = SOV_exiled_flag
+                    }
+                    NOT = { has_character_flag = SOV_exiled_flag }
+                }
+            }
+			allowed = {
+                original_tag = event_target:SOV_the_path_of_marxism_leninism_SOV
+            }
+			visible = {
+                NOT = {
+                    has_character_flag = SOV_character_purged_flag 
+                }
+            }
+			traits = {
+				appeasing_technocrat
+			}
+			ai_will_do = {
+                base = 2
+            }
+		}
+	}
+
+	UTI_ivan_smirnov={
+		portraits={
+			civilian={
+				large="GFX_Portrait_Europe_Generic_land_3"
+			}
+			army={
+				small="GFX_Portrait_Europe_Generic_land_3_small"
+			}
+		}
+		allowed_civil_war={ 
+            OR = {
+                AND = {
+                    tag = event_target:SOV_the_path_of_marxism_leninism_SOV 
+                    has_government = communism
+                }
+                AND = {
+                    SOV_is_exiles = yes 
+                    has_government = communism 
+                }
+            }
+        }
+		advisor={
+			slot = political_advisor
+			idea_token = UTI_ivan_smirnov
+			available = {
+                OR = {
+                    has_global_flag = SOV_soviet_civil_war
+                    has_global_flag = SOV_soviet_civil_war_over
+                }
+                is_country_leader = no
+                if = {
+                    limit = {
+                        has_character_flag = SOV_imprisoned_flag
+                    }
+                    NOT = { has_character_flag = SOV_imprisoned_flag } #For flavor purposes only -> Removed in the appropriate focus/event/dec
+                }
+                if = {
+                    limit = {
+                        has_character_flag = SOV_exiled_flag
+                    }
+                    NOT = { has_character_flag = SOV_exiled_flag }
+                }
+            }
+			allowed = {
+                original_tag = event_target:SOV_the_path_of_marxism_leninism_SOV
+            }
+			visible = {
+                NOT = { has_character_flag = SOV_character_purged_flag }
+                
+            }
+			traits = {
+				head_directorate_of_new_buildings
+			}
+			ai_will_do = {
+                base = 2
+            }
+		}
+	}
+
+	UTI_grigory_sokolnikov={
+		portraits={
+			army={
+				small="GFX_Portrait_Italy_Generic_land_2_small"
+			}
+		}
+		allowed_civil_war={
+            has_government = communism
+        }
+		advisor={
+			slot = political_advisor
+			idea_token = UTI_grigory_sokolnikov
+			available = {
+                if = {
+                    limit = {
+                        has_character_flag = SOV_exiled_flag
+                    }
+                    NOT = { has_character_flag = SOV_exiled_flag }
+                }
+            }
+			allowed = {
+                original_tag = event_target:SOV_the_path_of_marxism_leninism_SOV
+            }
+			visible = {
+                NOT = {
+                    has_character_flag = SOV_character_purged_flag 
+                }
+            }
+			traits = {
+				peoples_commissar_of_finance
+			}
+			ai_will_do = {
+                base = 2
+            }
+		}
+	}
+
+	UTI_aleksandr_shlyapnikov={
+		portraits={
+			army={
+				small="GFX_Portrait_Italy_Generic_land_2_small"
+			}
+		}
+		allowed_civil_war={ 
+            OR = {
+                AND = {
+                    tag = event_target:SOV_the_path_of_marxism_leninism_SOV 
+                    has_government = communism
+                }
+                AND = {
+                    SOV_is_exiles = yes 
+                    has_government = communism 
+                }
+            }
+        }
+		advisor={
+			slot = political_advisor
+			idea_token = UTI_aleksandr_shlyapnikov
+			available = {
+                SOV_is_left_opposition = yes
+                if = {
+                    limit = {
+                        has_character_flag = SOV_imprisoned_flag
+                    }
+                    NOT = { has_character_flag = SOV_imprisoned_flag } #For flavor purposes only -> Removed in the appropriate focus/event/dec
+                }
+                if = {
+                    limit = {
+                        has_character_flag = SOV_exiled_flag
+                    }
+                    NOT = { has_character_flag = SOV_exiled_flag }
+                }
+            }
+			allowed = {
+                original_tag = event_target:SOV_the_path_of_marxism_leninism_SOV
+            }
+			visible = {
+                NOT = {
+                    has_character_flag = SOV_character_purged_flag 
+                }
+            }
+			traits = {
+				left_trade_unionist
+			}
+			ai_will_do = {
+                base = 1
+            }
+		}
+	}
+
+	UTI_karl_radek={
+		portraits={
+			army={
+				small="GFX_portrait_MEX_Luis_Maria_Martinez_small"
+			}
+		}
+		allowed_civil_war={
+            OR = {
+                AND = {
+                    tag = event_target:SOV_the_path_of_marxism_leninism_SOV
+                    SOV_is_left_opposition = yes 
+                }
+                AND = {
+                    tag = event_target:SOV_the_path_of_marxism_leninism_SOV
+                    SOV_is_right_opposition = yes 
+                }
+                AND = {
+                    SOV_is_exiles = yes 
+                    has_government = communism 
+                }
+            }
+        }
+		advisor={
+			slot = political_advisor
+			idea_token = UTI_karl_radek
+			available = {
+                OR = {
+                    SOV_is_left_opposition = yes 
+                    SOV_is_right_opposition = yes 
+                }
+                if = {
+                    limit = {
+                        has_character_flag = SOV_exiled_flag
+                    }
+                    NOT = { has_character_flag = SOV_exiled_flag }
+                }
+            }
+			allowed = {
+                original_tag = event_target:SOV_the_path_of_marxism_leninism_SOV
+            }
+			visible = {
+                NOT = {
+                    has_character_flag = SOV_character_purged_flag 
+                }
+            }
+			traits = {
+				international_revolutionary
+			}
+			ai_will_do = {
+                base = 1
+            }
+		}
+	}
+
+	UTI_ivar_smilga={
+		portraits={
+			army={
+				small="GFX_VNC_Antonio_Scaramuzza_small"
+			}
+		}
+		allowed_civil_war={ 
+            OR = {
+                AND = {
+                    tag = event_target:SOV_the_path_of_marxism_leninism_SOV 
+                    has_government = communism
+                }
+                AND = {
+                    SOV_is_exiles = yes 
+                    has_government = communism 
+                }
+            }
+        }
+		advisor={
+			slot = political_advisor
+			idea_token = UTI_ivar_smilga
+			available = {
+                if = {
+                    limit = {
+                        has_character_flag = SOV_imprisoned_flag
+                    }
+                    NOT = { has_character_flag = SOV_imprisoned_flag } #For flavor purposes only -> Removed in the appropriate focus/event/dec
+                }
+                if = {
+                    limit = {
+                        has_character_flag = SOV_exiled_flag
+                    }
+                    NOT = { has_character_flag = SOV_exiled_flag }
+                }
+            }
+			allowed = {
+                original_tag = event_target:SOV_the_path_of_marxism_leninism_SOV
+            }
+			visible = {
+                NOT = {
+                    has_character_flag = SOV_character_purged_flag 
+                }
+            }
+			traits = {
+				soviet_economist
+			}
+			ai_will_do = {
+                base = 2
+            }
+		}
+	}
+
+	UTI_yevgeny_preobrazhensky={
+		portraits={
+			army={
+				small="GFX_Portrait_Italy_Generic_land_3_small"
+			}
+		}
+		allowed_civil_war={
+            OR = {
+                AND = {
+                    tag = event_target:SOV_the_path_of_marxism_leninism_SOV
+                    SOV_is_left_opposition = yes 
+                }
+                AND = {
+                    tag = event_target:SOV_the_path_of_marxism_leninism_SOV
+                    SOV_is_right_opposition = yes 
+                }
+                AND = {
+                    SOV_is_exiles = yes 
+                    has_government = communism 
+                }
+            }
+        }
+		advisor={
+			slot = political_advisor
+			idea_token = UTI_yevgeny_preobrazhensky
+			available = {
+                OR = {
+                    AND = {
+                        tag = event_target:SOV_the_path_of_marxism_leninism_SOV
+                        SOV_is_left_opposition = yes 
+                    }
+                    AND = {
+                        tag = event_target:SOV_the_path_of_marxism_leninism_SOV
+                        SOV_is_right_opposition = yes 
+                    }
+                }
+                if = {
+                    limit = {
+                        has_character_flag = SOV_exiled_flag
+                    }
+                    NOT = { has_character_flag = SOV_exiled_flag }
+                }
+            }
+			allowed = {
+                original_tag = event_target:SOV_the_path_of_marxism_leninism_SOV
+            }
+			visible = {
+                NOT = {
+                    has_character_flag = SOV_character_purged_flag 
+                }
+            }
+			traits = {
+				ecomonist_publicist
+			}
+			ai_will_do = {
+                base = 1
+            }
+		}
+	}
+
+	UTI_martemyan_ryutin={
+		portraits={
+			army={
+				small="GFX_Portrait_Europe_Generic_land_4_small"
+			}
+		}
+		allowed_civil_war={
+            OR = {
+                SOV_is_left_opposition = yes 
+                SOV_is_right_opposition = yes 
+                AND = {
+                    SOV_is_exiles = yes 
+                    has_government = communism
+                }
+            }
+        }
+		advisor={
+			slot = political_advisor
+			idea_token = UTI_martemyan_ryutin
+			available = {
+                OR = {
+                    has_global_flag = SOV_soviet_civil_war
+                    has_global_flag = SOV_soviet_civil_war_over
+                }
+                if = {
+                    limit = {
+                        has_character_flag = SOV_imprisoned_flag
+                    }
+                    NOT = { has_character_flag = SOV_imprisoned_flag } #For flavor purposes only -> Removed in the appropriate focus/event/dec
+                }
+                if = {
+                    limit = {
+                        has_character_flag = SOV_exiled_flag
+                    }
+                    NOT = { has_character_flag = SOV_exiled_flag }
+                }
+            }
+			allowed = {
+                original_tag = event_target:SOV_the_path_of_marxism_leninism_SOV
+            }
+			visible = {
+                NOT = {
+                    has_character_flag = SOV_character_purged_flag 
+                }
+            }
+			traits = {
+				anti_stalinist_propagandist
+			}
+			ai_will_do = {
+                base = 0.5
+            }
+		}
+	}
+
+	UTI_nikolay_ustryalov={
+		portraits={
+			army={
+				small="GFX_portrait_europe_generic_land_9_small"
+			}
+		}
+		allowed_civil_war={
+            OR = {
+                has_government = neutrality 
+            }
+        }
+		advisor={
+			slot = political_advisor
+			idea_token = UTI_nikolay_ustryalov
+			available = {
+                always = no
+            }
+			allowed = {
+                original_tag = event_target:SOV_the_path_of_marxism_leninism_SOV
+            }
+			traits = {
+				political_chameleon
+			}
+			ai_will_do = {
+                base = 0
+            }
+		}
+	}
+
+	UTI_mikhail_tukhachevsky={
+		portraits={
+			army={
+				small="GFX_portrait_ITA_ubaldo_soddu_small"
+			}
+			army={
+				large="GFX_portrait_ITA_ubaldo_soddu"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = mikhail_tukhachevsky
+			ledger = army
+			available = {
+                if = {
+                    limit = {
+                        has_character_flag = SOV_exiled_flag
+                    }
+                    NOT = { has_character_flag = SOV_exiled_flag }
+                }
+            }
+			allowed = {
+                original_tag = event_target:SOV_the_path_of_marxism_leninism_SOV
+            }
+			traits = {
+				mass_assault_expert
+			}
+			cost = 150
+			ai_will_do = {
+                base = 1
+            }
+		}
+		field_marshal={
+			traits={ brilliant_strategist career_officer trait_reckless infantry_officer offensive_doctrine }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+
+	UTI_aleksandr_yegorov={
+		portraits={
+			army={
+				small="GFX_LOM_Italo_Gariboldi_small"
+			}
+			army={
+				large="GFX_LOM_Italo_Gariboldi"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = UTI_aleksandr_yegorov
+			allowed = {
+                original_tag = event_target:SOV_the_path_of_marxism_leninism_SOV
+            }
+			traits = {
+				army_chief_defensive_2
+			}
+			cost = 100
+			ai_will_do = {
+                base = 0.5
+                modifier = {
+                    factor = 5
+                    NOT = { has_character = SOV_semyon_timoshenko }
+                }
+            }
+		}
+		field_marshal={
+			traits={ career_officer inflexible_strategist trait_reckless }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+
+	UTI_vasily_blyukher={
+		portraits={
+			army={
+				small="GFX_LOM_Italo_Gariboldi_small"
+			}
+			army={
+				large="GFX_LOM_Italo_Gariboldi"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = UTI_vasily_blyukher
+			allowed = {
+                original_tag = event_target:SOV_the_path_of_marxism_leninism_SOV
+            }
+			traits = {
+				army_chief_maneuver_2
+			}
+			cost = 100
+			ai_will_do = {
+                base = 1
+                modifier = {
+                    factor = 5
+                    NOT = { has_character = SOV_semyon_timoshenko }
+                }
+            }
+		}
+		field_marshal={
+			traits={ old_guard career_officer infantry_officer organizer }
+			skill=3
+			attack_skill=2
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=0
+		}
+	}
+
+	UTI_vitaly_primakov={
+		portraits={
+			army={
+				large="GFX_portrait_europe_generic_land_9"
+			}
+			army={
+				small="GFX_portrait_europe_generic_land_9_small"
+			}
+		}
+		corps_commander={
+			traits={ cavalry_officer trait_reckless war_hero cavalry_leader }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=0
+		}
+	}
+
+	UTI_nikolay_bukharin={
+		portraits={
+			civilian={
+				large="GFX_LOM_Alberto_Pariani"
+			}
+			army={
+				small="GFX_LOM_Alberto_Pariani_small"
+			}
+		}
+		allowed_civil_war={
+            OR = {
+                SOV_is_right_opposition = yes 
+                SOV_is_left_opposition = yes 
+                AND = {
+                    SOV_is_exiles = yes 
+                    has_government = communism 
+                }
+            }
+
+        }
+		advisor={
+			slot = political_advisor
+			idea_token = UTI_nikolay_bukharin
+			available = {
+                OR = {
+                    SOV_is_right_opposition = yes 
+                    SOV_is_left_opposition = yes 
+                }
+                is_country_leader = no
+                if = {
+                    limit = {
+                        has_character_flag = SOV_exiled_flag
+                    }
+                    NOT = { has_character_flag = SOV_exiled_flag }
+                }
+            }
+			allowed = {
+                original_tag = event_target:SOV_the_path_of_marxism_leninism_SOV
+            }
+			visible = {
+                NOT = {
+                    has_character_flag = SOV_character_purged_flag 
+                }
+            }
+			traits = {
+				economy_reformer
+			}
+			ai_will_do = {
+                base = 1
+            }
+		}
+	}
+
+	UTI_aleksey_rykov={
+		portraits={
+			civilian={
+				large="GFX_Portrait_Italy_Generic_land_6"
+			}
+			army={
+				small="GFX_Portrait_Italy_Generic_land_6_small"
+			}
+		}
+		allowed_civil_war={
+            OR = {
+                SOV_is_right_opposition = yes 
+                SOV_is_left_opposition = yes 
+                AND = {
+                    SOV_is_exiles = yes 
+                    has_government = communism 
+                }
+            }
+        }
+		advisor={
+			slot = political_advisor
+			idea_token = UTI_aleksey_rykov
+			available = {
+                OR = {
+                    SOV_is_right_opposition = yes 
+                    SOV_is_left_opposition = yes 
+                }
+                is_country_leader = no
+                if = {
+                    limit = {
+                        has_character_flag = SOV_exiled_flag
+                    }
+                    NOT = { has_character_flag = SOV_exiled_flag }
+                }
+            }
+			allowed = {
+                original_tag = event_target:SOV_the_path_of_marxism_leninism_SOV
+            }
+			visible = {
+                NOT = {
+                    has_character_flag = SOV_character_purged_flag 
+                }
+            }
+			traits = {
+				peoples_commissar_for_posts_and_telegraphs
+			}
+			ai_will_do = {
+                base = 1
+            }
+		}
+	}
+
+	UTI_mikhail_tomsky={
+		portraits={
+			army={
+				small="GFX_Portrait_Europe_Generic_land_1_small"
+			}
+		}
+		allowed_civil_war={ 
+            OR = {
+                AND = {
+                    tag = event_target:SOV_the_path_of_marxism_leninism_SOV 
+                    has_government = communism
+                }
+                AND = {
+                    SOV_is_exiles = yes 
+                    has_government = communism 
+                }
+            }
+        }
+		advisor={
+			slot = political_advisor
+			idea_token = UTI_mikhail_tomsky
+			available = {
+                SOV_is_right_opposition = yes
+                if = {
+                    limit = {
+                        has_character_flag = SOV_exiled_flag
+                    }
+                    NOT = { has_character_flag = SOV_exiled_flag }
+                }
+            }
+			allowed = {
+                original_tag = event_target:SOV_the_path_of_marxism_leninism_SOV
+            }
+			visible = {
+                NOT = {
+                    has_character_flag = SOV_character_purged_flag 
+                }
+            }
+			traits = {
+				right_trade_unionist
+			}
+			ai_will_do = {
+                base = 2
+            }
+		}
+	}
+
+	UTI_maksim_litvinov={
+		portraits={
+			army={
+				small="GFX_portrait_ITA_italo_balbo_small"
+			}
+		}
+		allowed_civil_war={
+            has_government = communism
+        }
+		advisor={
+			slot = political_advisor
+			idea_token = UTI_maksim_litvinov
+			available = {
+                always = no 
+            }
+			allowed = {
+                original_tag = event_target:SOV_the_path_of_marxism_leninism_SOV
+            }
+			visible = {
+                NOT = {
+                    has_character_flag = SOV_character_purged_flag 
+                }
+            }
+			traits = {
+				pc_for_foreign_affairs_litvinov
+			}
+			ai_will_do = {
+                base = 0.5
+            }
+		}
+	}
+
+	UTI_genrikh_yagoda={
+		portraits={
+			army={
+				small="GFX_portrait_ITA_ugo_cavallero_small"
+			}
+		}
+		allowed_civil_war={
+            OR = {
+                AND = { #If not aligned by Right oppo, then stays with Stalin
+                    original_tag = event_target:SOV_the_path_of_marxism_leninism_SOV
+                    NOT = { tag = event_target:SOV_the_path_of_marxism_leninism_SOV }
+                }
+            }
+            has_government = communism
+        }
+		advisor={
+			slot = political_advisor
+			idea_token = UTI_genrikh_yagoda
+			can_be_fired = no
+			allowed = {
+                original_tag = event_target:SOV_the_path_of_marxism_leninism_SOV
+            }
+			visible = {
+                NOT = {
+                    has_character_flag = SOV_character_purged_flag 
+                }
+            }
+			traits = {
+				head_of_the_nkvd_yagoda_initial
+			}
+			on_add = {
+                ROOT = { add_to_variable = { SOV_paranoia_weekly_modifiers_amount = 1 } }
+                ROOT = { SOV_paranoia_modifier_update_gui_tooltip = yes }
+            }
+			on_remove = {
+                ROOT = { subtract_from_variable = { SOV_paranoia_weekly_modifiers_amount = 1 } }
+                ROOT = { SOV_paranoia_modifier_update_gui_tooltip = yes }
+            }
+		}
+	}
+
+	UTI_nikolay_yezhov={
+		portraits={
+			army={
+				small="GFX_Portrait_Europe_Generic_land_4_small"
+			}
+		}
+		allowed_civil_war={
+            OR = {
+                AND = { #If not aligned by Right oppo, then stays with Stalin
+                    original_tag = event_target:SOV_the_path_of_marxism_leninism_SOV
+                    NOT = { tag = event_target:SOV_the_path_of_marxism_leninism_SOV }
+                }
+            }
+            has_government = communism
+        }
+		advisor={
+			slot = political_advisor
+			idea_token = UTI_nikolay_yezhov
+			can_be_fired = no
+			available = {
+                NOT = { has_idea = UTI_genrikh_yagoda }
+                NOT = { has_idea = UTI_lavrenty_beriya }
+            }
+			allowed = {
+                original_tag = event_target:SOV_the_path_of_marxism_leninism_SOV
+            }
+			traits = {
+				head_of_the_nkvd_yezhov_initial
+			}
+			on_add = {
+                ROOT = { add_to_variable = { SOV_paranoia_weekly_modifiers_amount = 2 } }
+                SOV_paranoia_modifier_update_gui_tooltip = yes
+            }
+			on_remove = {
+                ROOT = { subtract_from_variable = { SOV_paranoia_weekly_modifiers_amount = 2 } }
+                SOV_paranoia_modifier_update_gui_tooltip = yes
+            }
+		}
+	}
+
+	UTI_lavrenty_beriya={
+	instance={
+		allowed={
+            has_dlc = "La Resistance"
+        }
+		portraits={
+			civilian={
+				large="GFX_portrait_SOV_lavrenty_beriya"
+			}
+			army={
+				small="GFX_idea_SOV_lavrenty_beriya"
+			}
+		}
+		allowed_civil_war={
+            original_tag = event_target:SOV_the_path_of_marxism_leninism_SOV
+            has_government = communism
+            NOT = { tag = event_target:SOV_the_path_of_marxism_leninism_SOV }
+        }
+		advisor={
+			slot = political_advisor
+			idea_token = UTI_lavrenty_beriya
+			name = "UTI_lavrenty_beriya"
+			can_be_fired = no
+			available = {
+                NOT = { has_idea = UTI_nikolay_yezhov }
+                NOT = { has_idea = UTI_genrikh_yagoda }
+                NOT = { is_country_leader = yes }
+            }
+			allowed = {
+                original_tag = event_target:SOV_the_path_of_marxism_leninism_SOV
+            }
+			visible = {
+                NOT = {
+                    has_character_flag = SOV_character_purged_flag 
+                }
+            }
+			traits = {
+				head_of_the_nkvd_beriya_initial
+			}
+			on_add = {
+                ROOT = { add_to_variable = { SOV_paranoia_weekly_modifiers_amount = 2 } }
+                SOV_paranoia_modifier_update_gui_tooltip = yes
+            }
+			on_remove = {
+                ROOT = { subtract_from_variable = { SOV_paranoia_weekly_modifiers_amount = 2 } }
+                SOV_paranoia_modifier_update_gui_tooltip = yes
+            }
+		}
+	}
+	instance={
+		allowed={
+            NOT = { has_dlc = "La Resistance" }
+        }
+		portraits={
+			civilian={
+				large="GFX_portrait_SOV_lavrenty_beriya"
+			}
+			army={
+				small="GFX_idea_SOV_lavrenty_beriya"
+			}
+		}
+		allowed_civil_war={
+            original_tag = event_target:SOV_the_path_of_marxism_leninism_SOV
+            NOT = { tag = event_target:SOV_the_path_of_marxism_leninism_SOV }
+            has_government = communism
+        }
+		advisor={
+			slot = political_advisor
+			idea_token = UTI_lavrenty_beriya
+			name = "UTI_lavrenty_beriya"
+			can_be_fired = no
+			available = {
+                NOT = { has_idea = UTI_nikolay_yezhov }
+                NOT = { has_idea = UTI_genrikh_yagoda }
+            }
+			allowed = {
+                original_tag = event_target:SOV_the_path_of_marxism_leninism_SOV
+            }
+			visible = {
+                NOT = {
+                    has_character_flag = SOV_character_purged_flag 
+                }
+            }
+			traits = {
+				head_of_the_nkvd_beriya_initial
+			}
+			on_add = {
+                ROOT = { add_to_variable = { SOV_paranoia_weekly_modifiers_amount = 3 } }
+                SOV_paranoia_modifier_update_gui_tooltip = yes
+            }
+			on_remove = {
+                ROOT = { subtract_from_variable = { SOV_paranoia_weekly_modifiers_amount = 3 } }
+                SOV_paranoia_modifier_update_gui_tooltip = yes
+            }
+		}
+	}
+	}
+
+	UTI_iosif_stalin={
+		portraits={
+			civilian={
+				large="GFX_Portrait_Italy_Generic_land_4"
+			}
+			army={
+				large="GFX_Portrait_Italy_Generic_land_4"
+			}
+			army={
+				small="GFX_Portrait_Italy_Generic_land_4_small"
+			}
+		}
+		country_leader={
+			ideology=stalinism
+			traits={ stalin_heart_of_steel }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	UTI_lev_trotsky={
+		portraits={
+			civilian={
+				large="GFX_Portrait_Europe_Generic_land_4"
+			}
+			army={
+				small="GFX_Portrait_Europe_Generic_land_4_small"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = UTI_lev_trotsky
+			can_be_fired = no
+			allowed = {
+                always = no
+            }
+			traits = {
+				pc_military_naval_affairs
+			}
+		}
+	}
+
+	UTI_sergei_kirov={
+		portraits={
+			civilian={
+				large="GFX_VNC_Antonio_Scaramuzza"
+			}
+			army={
+				small="GFX_VNC_Antonio_Scaramuzza_small"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = UTI_sergei_kirov
+			can_be_fired = no
+			allowed = {
+                always = no
+            }
+		}
+	}
+
+	UTI_sergey_khudyakov={
+		portraits={
+			army={
+				small="GFX_Portrait_Europe_Generic_land_5_small"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = sergei_khudyakov
+			can_be_fired = no
+			ledger = air
+			allowed = {
+                original_tag = event_target:SOV_the_path_of_marxism_leninism_SOV
+            }
+			traits = {
+				air_close_air_support_2
+			}
+			cost = 100
+			ai_will_do = {
+                base = 1
+            }
+		}
+	}
+
+	UTI_yakov_smushkevich={
+		portraits={
+			army={
+				small="GFX_portrait_ITA_ugo_cavallero_small"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = yakov_smushkevich
+			can_be_fired = no
+			allowed = {
+                original_tag = event_target:SOV_the_path_of_marxism_leninism_SOV
+            }
+			traits = {
+				air_chief_safety_2
+			}
+			cost = 100
+			ai_will_do = {
+                base = 1
+            }
+		}
+	}
+
+	UTI_pavel_rychagov={
+		portraits={
+			army={
+				small="GFX_VNC_Antonio_Scaramuzza_small"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = pavel_rychagov
+			can_be_fired = no
+			allowed = {
+                original_tag = event_target:SOV_the_path_of_marxism_leninism_SOV
+            }
+			traits = {
+				air_chief_all_weather_2
+			}
+			cost = 100
+			ai_will_do = {
+                base = 1
+            }
+		}
+	}
+
+}

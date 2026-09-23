@@ -1,0 +1,16 @@
+characters={
+	MAD_andriantsirotso_ratsiraka={
+		name=MAD_andriantsirotso_ratsiraka
+		portraits={
+			civilian={
+				large="GFX_SUD_Abd_Mahdi"
+			}
+		}
+		country_leader={
+			ideology=absolute_monarchy
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

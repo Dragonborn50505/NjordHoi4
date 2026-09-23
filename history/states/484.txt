@@ -1,0 +1,32 @@
+
+state={
+	id=484
+	name="STATE_484"
+
+	history={
+		owner = SOV
+		victory_points = {
+			12512 0 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+			10245 = {
+				naval_base = 1
+			}
+
+		}
+		add_core_of = W02
+	}
+
+	provinces={
+		10245 10636 12512 13058 13066 
+	}
+	manpower=472540
+	buildings_max_level_factor=1.000
+	state_category=large_island
+
+	local_supplies=10.0
+}

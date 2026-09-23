@@ -1,0 +1,21 @@
+
+state={
+	id=78
+	name="STATE_78"
+	impassable = yes
+
+	history={
+		owner = X21
+		add_core_of = X21
+		add_claim_by = W10
+	}
+
+	provinces={
+		2205 8206 
+	}
+	manpower=630
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+
+	local_supplies=10.0
+}

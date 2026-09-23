@@ -1,0 +1,36 @@
+
+state={
+	id=686
+	name="STATE_686"
+
+	history={
+		owner = W35
+		victory_points = {
+			8079 10 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 0
+			air_base = 6
+			10889 = {
+				naval_base = 8
+			}
+
+		}
+		add_core_of = W15
+		add_core_of = W35
+		add_core_of = W40
+		add_core_of = X44
+		add_claim_by = W02
+	}
+
+	provinces={
+		8079 10732 10889 12810 
+	}
+	manpower=506504
+	buildings_max_level_factor=1.000
+	state_category=large_island
+
+	local_supplies=10.0
+}

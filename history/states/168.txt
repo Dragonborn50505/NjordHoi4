@@ -1,0 +1,39 @@
+
+state={
+	id=168
+	name="STATE_168"
+
+	history={
+		owner = GER
+		victory_points = {
+			6521 2 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 0
+			air_base = 0
+			6521 = {
+				landmark_berlin_reichstag = {
+					level = 1
+					allowed = {
+						has_dlc = "Gotterdammerung"
+					}
+				}
+			}
+
+		}
+		add_core_of = GER
+		add_core_of = PRE
+		add_claim_by = TIG
+	}
+
+	provinces={
+		375 478 3207 3312 3367 3499 6521 9428 9496 11219 11415 11444 11505 
+	}
+	manpower=1956728
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=10.0
+}

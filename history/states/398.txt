@@ -1,0 +1,32 @@
+
+state={
+	id=398
+	name="STATE_398"
+
+	history={
+		owner = PRU
+		victory_points = {
+			10942 10 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 5
+
+		}
+		add_core_of = PRU
+		add_core_of = X31
+		add_claim_by = W02
+		add_claim_by = W10
+	}
+
+	provinces={
+		5162 8213 10942 10970 
+	}
+	manpower=97672
+	buildings_max_level_factor=1.000
+	state_category=large_island
+
+	local_supplies=10.0
+}

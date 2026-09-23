@@ -1,0 +1,34 @@
+
+state={
+	id=362
+	name="STATE_362"
+
+	history={
+		owner = W49
+		victory_points = {
+			12971 0 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+			12971 = {
+				naval_base = 6
+			}
+
+		}
+		add_core_of = W49
+		add_claim_by = W02
+		add_claim_by = W10
+	}
+
+	provinces={
+		2180 12950 12971 
+	}
+	manpower=664096
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+
+	local_supplies=10.0
+}

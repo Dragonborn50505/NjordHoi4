@@ -1,0 +1,32 @@
+
+state={
+	id=471
+	name="STATE_471"
+
+	history={
+		owner = PRE
+		victory_points = {
+			1939 0 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+			10976 = {
+				naval_base = 8
+			}
+
+		}
+		add_core_of = W02
+	}
+
+	provinces={
+		1939 5196 5210 6020 10761 10962 10976 
+	}
+	manpower=4600
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=10.0
+}

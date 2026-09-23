@@ -1,0 +1,30 @@
+
+state={
+	id=467
+	name="STATE_467"
+
+	history={
+		owner = W62
+		victory_points = {
+			5045 0 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 1
+
+		}
+		add_core_of = W62
+		add_claim_by = W02
+	}
+
+	provinces={
+		2012 5045 10812 10829 10915 
+	}
+	manpower=1581788
+	buildings_max_level_factor=1.000
+	state_category=large_island
+
+	local_supplies=10.0
+}

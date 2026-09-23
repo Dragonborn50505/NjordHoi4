@@ -1,0 +1,33 @@
+
+state={
+	id=612
+	name="STATE_612"
+
+	history={
+		owner = W13
+		victory_points = {
+			12640 1 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 0
+
+		}
+		add_core_of = W13
+		add_core_of = W23
+		add_claim_by = W02
+		add_claim_by = W10
+		add_claim_by = W41
+	}
+
+	provinces={
+		1384 1675 1825 1919 2058 4316 4391 4542 4768 5062 7224 7706 10187 10205 10408 10660 11687 12218 12250 12370 12430 12511 12581 12583 12640 
+	}
+	manpower=1041416
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=10.0
+}

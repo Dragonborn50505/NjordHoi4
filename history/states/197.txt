@@ -1,0 +1,35 @@
+
+state={
+	id=197
+	name="STATE_197"
+
+	history={
+		owner = W52
+		victory_points = {
+			10263 10 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 0
+			air_base = 10
+			7598 = {
+				naval_base = 4
+			}
+
+		}
+		add_core_of = GOW
+		add_core_of = W01
+		add_core_of = W52
+		add_claim_by = W02
+	}
+
+	provinces={
+		1098 1289 1484 1505 1518 1561 1589 4262 4307 4308 4349 4493 4537 4564 7311 7336 7598 10153 10169 10197 10222 10263 10450 10464 12330 12358 12444 
+	}
+	manpower=1290412
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=10.0
+}

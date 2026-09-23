@@ -1,0 +1,16 @@
+characters={
+	X18_petru_samsonovici={
+		name=X18_petru_samsonovici
+		portraits={
+			civilian={
+				large="GFX_europe_generic_5"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

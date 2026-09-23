@@ -1,0 +1,35 @@
+
+state={
+	id=552
+	name="STATE_552"
+
+	history={
+		owner = W03
+		victory_points = {
+			12632 15 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
+			dockyard = 1
+			air_base = 6
+			12632 = {
+				naval_base = 2
+			}
+
+		}
+		add_core_of = W03
+		add_core_of = X84
+		add_claim_by = W10
+	}
+
+	provinces={
+		4819 12632 
+	}
+	manpower=10428
+	buildings_max_level_factor=1.000
+	state_category=city
+
+	local_supplies=10.0
+}

@@ -1,0 +1,33 @@
+
+state={
+	id=201
+	name="STATE_201"
+
+	history={
+		owner = W54
+		victory_points = {
+			10167 0 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+			4101 = {
+				naval_base = 6
+			}
+
+		}
+		add_core_of = W54
+		add_claim_by = TIG
+	}
+
+	provinces={
+		1372 1388 4101 4214 4228 4233 4350 4368 4377 4423 7325 7439 10167 10241 10252 10298 10306 12213 12253 12279 
+	}
+	manpower=1776480
+	buildings_max_level_factor=1.000
+	state_category=large_island
+
+	local_supplies=10.0
+}

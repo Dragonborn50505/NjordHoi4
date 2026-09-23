@@ -1,0 +1,31 @@
+
+state={
+	id=641
+	name="STATE_641"
+
+	history={
+		owner = W23
+		victory_points = {
+			4111 15 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 5
+
+		}
+		add_core_of = SYR
+		add_claim_by = W02
+		add_claim_by = W23
+	}
+
+	provinces={
+		1056 1072 1074 4111 4550 
+	}
+	manpower=702716
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=10.0
+}

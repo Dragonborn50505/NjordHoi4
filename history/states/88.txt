@@ -1,0 +1,35 @@
+
+state={
+	id=88
+	name="STATE_88"
+
+	history={
+		owner = COL
+		victory_points = {
+			8056 2 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 0
+			arms_factory = 1
+			dockyard = 1
+			air_base = 0
+			4969 = {
+				naval_base = 4
+			}
+
+		}
+		add_core_of = COL
+		add_core_of = X67
+		add_claim_by = W02
+	}
+
+	provinces={
+		1937 2023 2085 4969 8056 10494 10864 12703 12790 12845 
+	}
+	manpower=1706136
+	buildings_max_level_factor=1.000
+	state_category=large_island
+
+	local_supplies=10.0
+}

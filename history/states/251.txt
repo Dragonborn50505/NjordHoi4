@@ -1,0 +1,31 @@
+
+state={
+	id=251
+	name="STATE_251"
+
+	history={
+		owner = W57
+		victory_points = {
+			12751 0 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 1
+
+		}
+		add_core_of = W57
+		add_claim_by = TIG
+		add_claim_by = W02
+	}
+
+	provinces={
+		4927 8116 12751 12794 12838 
+	}
+	manpower=3479844
+	buildings_max_level_factor=1.000
+	state_category=city
+
+	local_supplies=10.0
+}

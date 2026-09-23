@@ -1,0 +1,16 @@
+characters={
+	SYR_king_isa_iii={
+		name=SYR_king_isa_iii
+		portraits={
+			civilian={
+				large="GFX_yem_imam_yaha"
+			}
+		}
+		country_leader={
+			ideology=absolute_monarchy
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

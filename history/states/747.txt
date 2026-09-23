@@ -1,0 +1,33 @@
+
+state={
+	id=747
+	name="STATE_747"
+
+	history={
+		owner = W41
+		victory_points = {
+			7603 10 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 3
+			arms_factory = 0
+			air_base = 10
+
+		}
+		add_core_of = BRM
+		add_core_of = X17
+		add_core_of = X43
+		add_core_of = X74
+		add_claim_by = W02
+	}
+
+	provinces={
+		1170 1566 1607 2061 4175 4210 4585 4626 4654 7400 7441 7562 7603 7647 7909 7974 12256 12317 12363 12449 
+	}
+	manpower=2075500
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=10.0
+}

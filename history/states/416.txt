@@ -1,0 +1,34 @@
+
+state={
+	id=416
+	name="STATE_416"
+
+	history={
+		owner = X93
+		victory_points = {
+			362 2 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 0
+			dockyard = 1
+			air_base = 1
+			362 = {
+				naval_base = 10
+			}
+
+		}
+		add_core_of = X93
+		add_claim_by = W02
+	}
+
+	provinces={
+		334 362 389 3295 3324 3351 3380 6347 6402 9263 
+	}
+	manpower=1367708
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=10.0
+}

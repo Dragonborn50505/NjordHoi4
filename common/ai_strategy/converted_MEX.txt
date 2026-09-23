@@ -1,0 +1,151 @@
+﻿converted_war_strategies_MEX = {
+	allowed = {
+		tag = MEX
+	}
+	enable = {
+		always = no
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = conquer
+		id = "X32"
+		value = 394
+	}
+	ai_strategy = {
+		type = conquer
+		id = "TEX"
+		value = 264
+	}
+	ai_strategy = {
+		type = conquer
+		id = "W35"
+		value = 227
+	}
+	ai_strategy = {
+		type = conquer
+		id = "IRE"
+		value = 30
+	}
+	ai_strategy = {
+		type = conquer
+		id = "PRE"
+		value = 15
+	}
+}
+
+converted_diplo_strategies_MEX = {
+	allowed = {
+		tag = MEX
+	}
+	enable = {
+		always = no
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = contain
+		id = "IRE"
+		value = 400
+	}
+	ai_strategy = {
+		type = contain
+		id = "W41"
+		value = 302
+	}
+	ai_strategy = {
+		type = contain
+		id = "PRE"
+		value = 119
+	}
+	ai_strategy = {
+		type = contain
+		id = "X32"
+		value = 69
+	}
+	ai_strategy = {
+		type = contain
+		id = "CUB"
+		value = 51
+	}
+	ai_strategy = {
+		type = contain
+		id = "X36"
+		value = 51
+	}
+	ai_strategy = {
+		type = contain
+		id = "W35"
+		value = 47
+	}
+	ai_strategy = {
+		type = contain
+		id = "TEX"
+		value = 47
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "IRE"
+		value = 400
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "ITA"
+		value = 45
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "W36"
+		value = 31
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "PRE"
+		value = 25
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "SOV"
+		value = 13
+	}
+	ai_strategy = {
+		type = alliance
+		id = "HOL"
+		value = 200
+	}
+	ai_strategy = {
+		type = alliance
+		id = "W41"
+		value = 90
+	}
+	ai_strategy = {
+		type = alliance
+		id = "FRA"
+		value = 88
+	}
+	ai_strategy = {
+		type = alliance
+		id = "SOV"
+		value = 80
+	}
+	ai_strategy = {
+		type = protect
+		id = "X63"
+		value = 11
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "X21"
+		value = 61
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "W17"
+		value = 61
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "W36"
+		value = 55
+	}
+}

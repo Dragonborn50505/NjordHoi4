@@ -1,0 +1,35 @@
+
+state={
+	id=192
+	name="STATE_192"
+
+	history={
+		owner = IRE
+		victory_points = {
+			351 1 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 1
+			351 = {
+				naval_base = 8
+			}
+
+		}
+		add_core_of = ENG
+		add_core_of = IRE
+		add_core_of = X34
+		add_claim_by = W02
+	}
+
+	provinces={
+		351 11270 11299 
+	}
+	manpower=874808
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+
+	local_supplies=10.0
+}

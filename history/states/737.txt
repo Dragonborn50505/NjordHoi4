@@ -1,0 +1,32 @@
+
+state={
+	id=737
+	name="STATE_737"
+
+	history={
+		owner = W41
+		victory_points = {
+			1200 1 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 1
+			1200 = {
+				naval_base = 6
+			}
+
+		}
+		add_core_of = X45
+	}
+
+	provinces={
+		1084 1104 1184 1200 4071 4089 4186 4205 7089 7105 10018 10102 10119 12074 12093 
+	}
+	manpower=17625476
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+
+	local_supplies=10.0
+}

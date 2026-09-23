@@ -1,0 +1,33 @@
+
+state={
+	id=460
+	name="STATE_460"
+
+	history={
+		owner = W62
+		victory_points = {
+			4948 0 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 1
+			4948 = {
+				naval_base = 8
+			}
+
+		}
+		add_core_of = W62
+		add_claim_by = W02
+	}
+
+	provinces={
+		4948 8015 12710 
+	}
+	manpower=1583580
+	buildings_max_level_factor=1.000
+	state_category=large_island
+
+	local_supplies=10.0
+}

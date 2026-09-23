@@ -1,0 +1,31 @@
+
+state={
+	id=334
+	name="STATE_334"
+
+	history={
+		owner = X77
+		victory_points = {
+			12844 15 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 7
+
+		}
+		add_core_of = RAJ
+		add_core_of = X64
+		add_core_of = X77
+	}
+
+	provinces={
+		7998 12041 12844 12876 
+	}
+	manpower=995036
+	buildings_max_level_factor=1.000
+	state_category=city
+
+	local_supplies=10.0
+}

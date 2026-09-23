@@ -1,0 +1,33 @@
+
+state={
+	id=114
+	name="STATE_114"
+
+	history={
+		owner = DOM
+		victory_points = {
+			177 1 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 0
+			177 = {
+				naval_base = 4
+			}
+
+		}
+		add_core_of = DOM
+		add_claim_by = W10
+	}
+
+	provinces={
+		177 7123 13009 
+	}
+	manpower=425012
+	buildings_max_level_factor=1.000
+	state_category=large_island
+
+	local_supplies=10.0
+}

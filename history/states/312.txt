@@ -1,0 +1,33 @@
+
+state={
+	id=312
+	name="STATE_312"
+
+	history={
+		owner = MEX
+		victory_points = {
+			4946 1 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 0
+			1945 = {
+				naval_base = 1
+			}
+
+		}
+		add_core_of = MEX
+		add_claim_by = W02
+	}
+
+	provinces={
+		1945 4946 7921 8003 8057 10738 10853 10871 10895 12804 
+	}
+	manpower=1496996
+	buildings_max_level_factor=1.000
+	state_category=large_island
+
+	local_supplies=10.0
+}

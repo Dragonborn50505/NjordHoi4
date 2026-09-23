@@ -1,0 +1,16 @@
+characters={
+	W25_king_basil_v={
+		name=W25_king_basil_v
+		portraits={
+			civilian={
+				large="GFX_Ethiopia_Haile_Selassie"
+			}
+		}
+		country_leader={
+			ideology=absolute_monarchy
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

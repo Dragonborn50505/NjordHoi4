@@ -1,0 +1,47 @@
+units = {
+	fleet = {
+		name = "10th Fleet"
+		naval_base = 10889
+		task_force = {
+			name = "10th Fleet"
+			location = 10889
+			ship = { name = "3rd Minatitlán Steam Frigate" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = W35 } } }
+			ship = { name = "4th Minatitlán Steam Frigate" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = W35 } } }
+			ship = { name = "5th Minatitlán Steam Frigate" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = W35 } } }
+			ship = { name = "6th Minatitlán Steam Frigate" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = W35 } } }
+			ship = { name = "1st Cololo Steam Frigate" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = W35 } } }
+			ship = { name = "1st Tapachula Steam Frigate" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = W35 } } }
+			ship = { name = "2nd Ocos Steam Frigate" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = W35 } } }
+			ship = { name = "2nd Tapachula Steam Frigate" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = W35 } } }
+			ship = { name = "7th Minatitlán Steam Frigate" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = W35 } } }
+			ship = { name = "2nd Cololo Steam Frigate" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = W35 } } }
+			ship = { name = "3rd Cololo Steam Frigate" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = W35 } } }
+			ship = { name = "1st Mérida Steam Frigate" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = W35 } } }
+			ship = { name = "4th Cololo Steam Frigate" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = W35 } } }
+			ship = { name = "1st San Salvador Steam Frigate" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = W35 } } }
+			ship = { name = "2nd Mérida Steam Frigate" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = W35 } } }
+			ship = { name = "1st Comayagua Steam Frigate" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = W35 } } }
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "W35"
+		}
+		requested_factories = 3
+		progress = 0.25
+		amount = 10
+	}
+	add_equipment_production = {
+		equipment = {
+			type = battleship_1
+			creator = "W35"
+		}
+		requested_factories = 8
+		progress = 0.25
+		amount = 3
+	}
+}

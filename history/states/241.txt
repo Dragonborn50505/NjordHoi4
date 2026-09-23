@@ -1,0 +1,23 @@
+
+state={
+	id=241
+	name="STATE_241"
+	impassable = yes
+
+	history={
+		owner = W57
+		add_core_of = MOR
+		add_core_of = W57
+		add_claim_by = W02
+		add_claim_by = X99
+	}
+
+	provinces={
+		1115 2068 10725 10868 
+	}
+	manpower=66457
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+
+	local_supplies=10.0
+}

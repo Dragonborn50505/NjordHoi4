@@ -1,0 +1,33 @@
+
+state={
+	id=614
+	name="STATE_614"
+
+	history={
+		owner = W13
+		victory_points = {
+			12324 1 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+
+		}
+		add_core_of = W13
+		add_claim_by = PER
+		add_claim_by = TUR
+		add_claim_by = W10
+		add_claim_by = W23
+	}
+
+	provinces={
+		756 1493 1593 1632 1649 4482 4549 4599 4958 5003 7477 7491 7560 7563 7618 7635 7924 8099 9605 10348 10357 10359 10406 10414 10485 10510 10742 12324 12333 12359 12491 
+	}
+	manpower=428624
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=10.0
+}

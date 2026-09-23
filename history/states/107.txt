@@ -1,0 +1,33 @@
+
+state={
+	id=107
+	name="STATE_107"
+
+	history={
+		owner = CUB
+		victory_points = {
+			153 1 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 0
+			153 = {
+				naval_base = 1
+			}
+
+		}
+		add_core_of = CUB
+		add_claim_by = W02
+	}
+
+	provinces={
+		153 
+	}
+	manpower=316900
+	buildings_max_level_factor=1.000
+	state_category=large_island
+
+	local_supplies=10.0
+}

@@ -1,0 +1,33 @@
+
+state={
+	id=657
+	name="STATE_657"
+
+	history={
+		owner = W27
+		victory_points = {
+			4106 15 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 5
+
+		}
+		add_core_of = RAJ
+		add_core_of = W27
+		add_core_of = X40
+		add_core_of = X97
+		add_claim_by = TIG
+	}
+
+	provinces={
+		1199 1949 2036 2105 4106 7080 7205 8076 10807 10816 11993 11995 12080 
+	}
+	manpower=2848908
+	buildings_max_level_factor=1.000
+	state_category=large_town
+
+	local_supplies=10.0
+}

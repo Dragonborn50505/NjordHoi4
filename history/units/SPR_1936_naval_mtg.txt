@@ -1,0 +1,63 @@
+units = {
+	fleet = {
+		name = "2nd Fleet"
+		naval_base = 10063
+		task_force = {
+			name = "2nd Fleet"
+			location = 10063
+			ship = { name = "Alfonso XII" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Early Light Cruiser" } } }
+			ship = { name = "Almirante Oquendo" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Early Light Cruiser" } } }
+			ship = { name = "Aragón" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Early Light Cruiser" } } }
+			ship = { name = "Don Juan de Austria" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Early Light Cruiser" } } }
+			ship = { name = "Cardenal Cisneros" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Early Light Cruiser" } } }
+			ship = { name = "Castilla" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Early Light Cruiser" } } }
+			ship = { name = "Emperador Carlos V" definition = light_cruiser start_experience_factor = 0.09643 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Early Light Cruiser" } } }
+			ship = { name = "Ciudad de Oviedo" definition = light_cruiser start_experience_factor = 0.09775 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Early Light Cruiser" } } }
+			ship = { name = "Extremadura" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Early Light Cruiser" } } }
+			ship = { name = "Cataluña" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Early Light Cruiser" } } }
+			ship = { name = "Navarra" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Early Light Cruiser" } } }
+			ship = { name = "Gravina" definition = light_cruiser start_experience_factor = 0.09861 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Early Light Cruiser" } } }
+			ship = { name = "Infanta Isabel" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Early Light Cruiser" } } }
+			ship = { name = "Princesa de Asturias" definition = light_cruiser start_experience_factor = 0.0992 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Early Light Cruiser" } } }
+			ship = { name = "Conde de Venadito" definition = light_cruiser start_experience_factor = 0.09425 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Early Light Cruiser" } } }
+			ship = { name = "Isla de Cuba" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Early Light Cruiser" } } }
+			ship = { name = "Cristóbal Colón" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Early Light Cruiser" } } }
+			ship = { name = "Reina Cristina" definition = light_cruiser start_experience_factor = 0.0995 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Early Light Cruiser" } } }
+			ship = { name = "Isla de Luzón" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Early Light Cruiser" } } }
+			ship = { name = "1st La Coruña Cruiser" definition = light_cruiser start_experience_factor = 0.1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Early Light Cruiser" } } }
+			ship = { name = "Reina Mercedes" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Early Light Cruiser" } } }
+			ship = { name = "Don Antonio de Ulloa" definition = light_cruiser start_experience_factor = 0.14297 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Early Light Cruiser" } } }
+			ship = { name = "Reina Regente" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Early Light Cruiser" } } }
+			ship = { name = "1st Oviedo Cruiser" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Early Light Cruiser" } } }
+			ship = { name = "Juan Sebastián Elcano" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Early Light Cruiser" } } }
+			ship = { name = "Río de la Plata" definition = light_cruiser start_experience_factor = 0.14534 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Early Light Cruiser" } } }
+			ship = { name = "Lepanto" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Early Light Cruiser" } } }
+			ship = { name = "1st Bilbao Cruiser" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Early Light Cruiser" } } }
+			ship = { name = "Velasco" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Early Light Cruiser" } } }
+			ship = { name = "1st Gerona Cruiser" definition = light_cruiser start_experience_factor = 0.14676 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Early Light Cruiser" } } }
+			ship = { name = "Marqués de la Ensenada" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Early Light Cruiser" } } }
+			ship = { name = "1st Valencia Cruiser" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Early Light Cruiser" } } }
+			ship = { name = "Vizcaya" definition = light_cruiser start_experience_factor = 0.14792 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Early Light Cruiser" } } }
+			ship = { name = "1st Huelva Cruiser" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Early Light Cruiser" } } }
+			ship = { name = "1st Lisbon Cruiser" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Early Light Cruiser" } } }
+			ship = { name = "1st Granada Cruiser" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Early Light Cruiser" } } }
+			ship = { name = "1st Faro Cruiser" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Early Light Cruiser" } } }
+			ship = { name = "1st Oporto Cruiser" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Early Light Cruiser" } } }
+			ship = { name = "2nd Lisbon Cruiser" definition = light_cruiser start_experience_factor = 0.14294 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Early Light Cruiser" } } }
+			ship = { name = "2nd Faro Cruiser" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Early Light Cruiser" } } }
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_1
+			creator = "SPR"
+			version_name = "Early Destroyer"
+		}
+		requested_factories = 3
+		progress = 0.25
+		amount = 10
+	}
+}

@@ -1,0 +1,31 @@
+
+state={
+	id=247
+	name="STATE_247"
+
+	history={
+		owner = W57
+		victory_points = {
+			10827 0 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+
+		}
+		add_core_of = W25
+		add_core_of = W57
+		add_claim_by = TIG
+	}
+
+	provinces={
+		1960 2016 4961 5060 7925 8052 8084 10739 10795 10827 10851 12744 
+	}
+	manpower=1784708
+	buildings_max_level_factor=1.000
+	state_category=large_island
+
+	local_supplies=10.0
+}

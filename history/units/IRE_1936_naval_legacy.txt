@@ -1,0 +1,54 @@
+units = {
+	fleet = {
+		name = "3rd Fleet"
+		naval_base = 10201
+		task_force = {
+			name = "3rd Fleet"
+			location = 10201
+			ship = { name = "1st Dún na nGall Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = IRE } } }
+			ship = { name = "1st Baile Átha Cliath Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = IRE } } }
+			ship = { name = "1st Béal Feirste Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = IRE } } }
+			ship = { name = "1st Port Láirge Battleship" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = IRE } } }
+			ship = { name = "2nd Port Láirge Cruiser" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = IRE } } }
+			ship = { name = "1st Dún na nGall Cruiser" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = IRE } } }
+			ship = { name = "6th Baile Átha Cliath Cruiser" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = IRE } } }
+			ship = { name = "7th Baile Átha Cliath Cruiser" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = IRE } } }
+			ship = { name = "1st Baile Átha Cliath Cruiser" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = IRE } } }
+			ship = { name = "2nd Baile Átha Cliath Cruiser" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = IRE } } }
+			ship = { name = "1st Port Láirge Cruiser" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = IRE } } }
+			ship = { name = "5th Baile Átha Cliath Cruiser" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = IRE } } }
+			ship = { name = "4th Port Láirge Cruiser" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = IRE } } }
+			ship = { name = "4th Baile Átha Cliath Cruiser" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = IRE } } }
+			ship = { name = "2nd Béal Feirste Cruiser" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = IRE } } }
+			ship = { name = "3rd Port Láirge Cruiser" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = IRE } } }
+			ship = { name = "3rd Baile Átha Cliath Cruiser" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = IRE } } }
+			ship = { name = "3rd Béal Feirste Cruiser" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = IRE } } }
+			ship = { name = "Michelle" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = IRE } } }
+			ship = { name = "Peigi" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = IRE } } }
+			ship = { name = "Máire" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = IRE } } }
+			ship = { name = "Róisín" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = IRE } } }
+			ship = { name = "Esther" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = IRE } } }
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "IRE"
+		}
+		requested_factories = 3
+		progress = 0.25
+		amount = 10
+	}
+	add_equipment_production = {
+		equipment = {
+			type = battleship_1
+			creator = "IRE"
+		}
+		requested_factories = 8
+		progress = 0.25
+		amount = 3
+	}
+}

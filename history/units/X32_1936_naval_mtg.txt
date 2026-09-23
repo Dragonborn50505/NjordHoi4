@@ -1,0 +1,28 @@
+units = {
+	fleet = {
+		name = "2nd Fleet"
+		naval_base = 12859
+		task_force = {
+			name = "2nd Fleet"
+			location = 12859
+			ship = { name = "Brigham Young" definition = destroyer start_experience_factor = 0.04995 equipment = { ship_hull_light_1 = { amount = 1 owner = X32 version_name = "Early Destroyer" } } }
+			ship = { name = "Saint James 2" definition = destroyer start_experience_factor = 0.0499 equipment = { ship_hull_light_1 = { amount = 1 owner = X32 version_name = "Early Destroyer" } } }
+			ship = { name = "Nimrod" definition = destroyer start_experience_factor = 0.05 equipment = { ship_hull_light_1 = { amount = 1 owner = X32 version_name = "Early Destroyer" } } }
+			ship = { name = "Zedekiah" definition = destroyer start_experience_factor = 0.05 equipment = { ship_hull_light_1 = { amount = 1 owner = X32 version_name = "Early Destroyer" } } }
+			ship = { name = "Zedekiah 2" definition = destroyer start_experience_factor = 0.05 equipment = { ship_hull_light_1 = { amount = 1 owner = X32 version_name = "Early Destroyer" } } }
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_1
+			creator = "X32"
+			version_name = "Early Destroyer"
+		}
+		requested_factories = 3
+		progress = 0.25
+		amount = 10
+	}
+}

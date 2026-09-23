@@ -1,0 +1,196 @@
+﻿capital = 46
+set_research_slots = 2
+
+oob = "BAN_OOB"
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "BAN_1936_naval_mtg"
+	else = { 
+		set_naval_oob = "BAN_1936_naval_legacy"
+	}
+}
+
+# Starting tech
+# Research Bonuses
+
+set_country_flag = conv_south_asia
+set_convoys = 0
+
+set_politics = {
+    ruling_party = absolutist
+    last_election = "1836.1.1"
+    election_frequency = 48
+    elections_allowed = no
+}
+
+set_popularities = {
+	absolutist = 76
+	democratic = 23
+	neutrality = 1
+}
+
+give_guarantee = X57
+if = {
+	limit = { NOT = { has_non_aggression_pact_with = X57 } }
+	diplomatic_relation = { country = X57 relation = non_aggression_pact }
+}
+
+add_opinion_modifier = { target = BRA modifier = negative_10 }
+add_opinion_modifier = { target = BRU modifier = negative_20 }
+add_opinion_modifier = { target = COL modifier = negative_10 }
+add_opinion_modifier = { target = CUB modifier = negative_10 }
+add_opinion_modifier = { target = DOM modifier = negative_10 }
+add_opinion_modifier = { target = FRA modifier = negative_42 }
+add_opinion_modifier = { target = GER modifier = negative_100 }
+add_opinion_modifier = { target = HOL modifier = negative_50 }
+add_opinion_modifier = { target = ITA modifier = negative_155 }
+add_opinion_modifier = { target = JAP modifier = negative_200 }
+add_opinion_modifier = { target = MEX modifier = negative_10 }
+add_opinion_modifier = { target = PAK modifier = negative_50 }
+add_opinion_modifier = { target = PRE modifier = negative_194 }
+add_opinion_modifier = { target = PRU modifier = negative_10 }
+add_opinion_modifier = { target = QUE modifier = negative_35 }
+add_opinion_modifier = { target = SAM modifier = negative_20 }
+add_opinion_modifier = { target = SOV modifier = negative_75 }
+add_opinion_modifier = { target = SPR modifier = negative_35 }
+add_opinion_modifier = { target = TEX modifier = negative_35 }
+add_opinion_modifier = { target = TNE modifier = positive_10 }
+add_opinion_modifier = { target = USA modifier = negative_35 }
+add_opinion_modifier = { target = W03 modifier = negative_20 }
+add_opinion_modifier = { target = W05 modifier = negative_20 }
+add_opinion_modifier = { target = W08 modifier = negative_20 }
+add_opinion_modifier = { target = W13 modifier = negative_35 }
+add_opinion_modifier = { target = W23 modifier = negative_20 }
+add_opinion_modifier = { target = W24 modifier = negative_30 }
+add_opinion_modifier = { target = W27 modifier = positive_10 }
+add_opinion_modifier = { target = W35 modifier = negative_10 }
+add_opinion_modifier = { target = W37 modifier = negative_30 }
+add_opinion_modifier = { target = W41 modifier = negative_47 }
+add_opinion_modifier = { target = X04 modifier = negative_20 }
+add_opinion_modifier = { target = X07 modifier = negative_50 }
+add_opinion_modifier = { target = X20 modifier = positive_10 }
+add_opinion_modifier = { target = X32 modifier = negative_10 }
+add_opinion_modifier = { target = X35 modifier = negative_20 }
+add_opinion_modifier = { target = X36 modifier = negative_10 }
+add_opinion_modifier = { target = X40 modifier = positive_10 }
+add_opinion_modifier = { target = X46 modifier = negative_20 }
+add_opinion_modifier = { target = X47 modifier = negative_20 }
+add_opinion_modifier = { target = X57 modifier = positive_110 }
+add_opinion_modifier = { target = X63 modifier = negative_10 }
+add_opinion_modifier = { target = X73 modifier = negative_20 }
+add_opinion_modifier = { target = X75 modifier = negative_15 }
+add_opinion_modifier = { target = X82 modifier = negative_20 }
+add_opinion_modifier = { target = X83 modifier = negative_20 }
+add_opinion_modifier = { target = X84 modifier = negative_20 }
+add_opinion_modifier = { target = X93 modifier = negative_55 }
+add_opinion_modifier = { target = X94 modifier = negative_20 }
+add_opinion_modifier = { target = X98 modifier = negative_10 }
+add_opinion_modifier = { target = YEM modifier = negative_30 }
+
+
+add_ideas = {
+	uncivilized
+	limited_conscription
+	civilian_economy
+	export_focus
+	culture_bengali
+}
+set_stability = 0.60
+set_war_support = 0.60
+
+recruit_character = BAN_sirajuddaula_ali
+recruit_character = BAN_mir_muhammad_sarfaraz
+recruit_character = BAN_najimuddin_mirza
+recruit_character = BAN_hasan_bahadur
+recruit_character = BAN_wasif_jafar
+recruit_character = BAN_saifuddaula_qasim_ali
+recruit_character = BAN_reza_jafar
+recruit_character = BAN_zainul_mirza
+recruit_character = BAN_reza_qasim_ali
+recruit_character = BAN_ahmad_mirza
+recruit_character = BAN_zainul_mirza_1
+recruit_character = BAN_saifuddaula_jafar
+recruit_character = BAN_alivardi_muhammad
+recruit_character = BAN_wasif_ali
+recruit_character = BAN_alivardi_bahadur
+recruit_character = BAN_mir_muhammad_najabut
+recruit_character = BAN_mir_muhammad_najabut_1
+recruit_character = BAN_najimuddin_bahadur
+recruit_character = BAN_sirajuddaula_bahadur
+recruit_character = BAN_murshid_bahadur
+recruit_character = BAN_mansur_mirza
+recruit_character = BAN_quli_muhammad
+recruit_character = BAN_shujauddin_qasim_ali
+recruit_character = BAN_king_ahmad
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_operative_leader = {
+		name = "Indira Muhammad"
+		GFX = "gfx/leaders/India/portrait_india_generic_operative_female_1.dds"
+		traits = {}
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { BAN }
+	}
+
+	create_operative_leader = {
+		name = "Indira Jafar"
+		GFX = "gfx/leaders/India/portrait_india_generic_operative_female_2.dds"
+		traits = {}
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { BAN }
+	}
+
+	create_operative_leader = {
+		name = "Indira Qasim Ali"
+		GFX = "gfx/leaders/India/portrait_india_generic_operative_female_3.dds"
+		traits = {}
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { BAN }
+	}
+
+	create_operative_leader = {
+		name = "Hasan Sarfaraz"
+		GFX = "gfx/leaders/India/portrait_india_generic_operative_male_1.dds"
+		traits = {}
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { BAN }
+	}
+
+	create_operative_leader = {
+		name = "Mubarak Najabut"
+		GFX = "gfx/leaders/India/portrait_india_generic_operative_male_2.dds"
+		traits = {}
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { BAN }
+	}
+
+}
+### VARIANTS ###
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+}
+### PLANE DESIGNS ###
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+}
+### TANK DESIGNS ###
+if = {
+	limit = { has_dlc = "No Step Back" }
+}
+add_equipment_to_stockpile = { type = artillery_equipment amount = 72 producer = BAN }
+add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 1 producer = BAN }
+

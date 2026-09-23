@@ -1,0 +1,16 @@
+characters={
+	X37_johann_von_schwarzburg={
+		name=X37_johann_von_schwarzburg
+		portraits={
+			civilian={
+				large="GFX_Germany_Konrad_Adenauer"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

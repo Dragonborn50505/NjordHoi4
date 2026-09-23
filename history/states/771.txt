@@ -1,0 +1,34 @@
+
+state={
+	id=771
+	name="STATE_771"
+
+	history={
+		owner = W41
+		victory_points = {
+			10278 0 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 1
+			10278 = {
+				naval_base = 4
+			}
+
+		}
+		add_core_of = RAJ
+		add_core_of = W21
+		add_claim_by = X45
+	}
+
+	provinces={
+		1268 1344 1381 1409 4315 4327 4416 4420 7265 7288 7363 7436 8067 10130 10149 10246 10274 10278 10808 12164 12247 
+	}
+	manpower=15317416
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+
+	local_supplies=10.0
+}

@@ -1,0 +1,38 @@
+
+state={
+	id=164
+	name="STATE_164"
+
+	history={
+		owner = GER
+		victory_points = {
+			11542 5 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 6
+			arms_factory = 3
+			air_base = 3
+			11542 = {
+				landmark_prague_castle = {
+					level = 1
+					allowed = {
+						
+					}
+				}
+			}
+
+		}
+		add_core_of = GER
+		add_claim_by = X64
+	}
+
+	provinces={
+		494 557 569 583 3462 3569 6576 6592 9421 9429 9541 9569 11511 11525 11542 11556 
+	}
+	manpower=6185932
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+
+	local_supplies=10.0
+}

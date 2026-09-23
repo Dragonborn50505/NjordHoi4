@@ -1,0 +1,35 @@
+
+state={
+	id=647
+	name="STATE_647"
+
+	history={
+		owner = W23
+		victory_points = {
+			12727 10 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 5
+			4932 = {
+				naval_base = 1
+			}
+
+		}
+		add_core_of = X80
+		add_claim_by = SYR
+		add_claim_by = W02
+		add_claim_by = W23
+	}
+
+	provinces={
+		4932 7995 8118 12727 12740 12813 12870 
+	}
+	manpower=392988
+	buildings_max_level_factor=1.000
+	state_category=large_island
+
+	local_supplies=10.0
+}

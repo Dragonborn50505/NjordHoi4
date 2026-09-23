@@ -1,0 +1,40 @@
+
+state={
+	id=11
+	name="STATE_11"
+
+	history={
+		owner = X07
+		victory_points = {
+			9692 15 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 8
+			arms_factory = 4
+			air_base = 9
+			3484 = {
+				landmark_bojnice_castle = {
+					level = 1
+					allowed = {
+						
+					}
+				}
+			}
+
+		}
+		add_core_of = HUN
+		add_core_of = SLO
+		add_core_of = X07
+		add_claim_by = X64
+	}
+
+	provinces={
+		541 555 581 3484 3537 3548 3550 3565 3581 3716 6561 6571 6573 6586 6604 9537 9539 9563 9692 11522 11536 11539 11554 11679 11691 
+	}
+	manpower=6488448
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+
+	local_supplies=10.0
+}

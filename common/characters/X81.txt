@@ -1,0 +1,76 @@
+characters={
+	X81_zinachukwudi_onyeso={
+		name=X81_zinachukwudi_onyeso
+		portraits={
+			army={
+				large="GFX_German_Africa_Generic_land_5"
+			}
+			army={
+				small="GFX_German_Africa_Generic_land_5_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	X81_rapuluchukwu_opobo={
+		name=X81_rapuluchukwu_opobo
+		portraits={
+			army={
+				large="GFX_Portrait_Africa_Generic_land_3"
+			}
+			army={
+				small="GFX_Portrait_Africa_Generic_land_3_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	X81_dibia_udene={
+		name=X81_dibia_udene
+		portraits={
+			army={
+				large="GFX_LIB_Jenkins_Yancey"
+			}
+			army={
+				small="GFX_LIB_Jenkins_Yancey_small"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	X81_king_malam_ii={
+		name=X81_king_malam_ii
+		portraits={
+			civilian={
+				large="GFX_RWA_Yuhi_V"
+			}
+		}
+		country_leader={
+			ideology=absolute_monarchy
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

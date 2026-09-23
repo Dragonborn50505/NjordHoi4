@@ -1,0 +1,31 @@
+
+state={
+	id=518
+	name="STATE_518"
+
+	history={
+		owner = SOV
+		victory_points = {
+			3010 1 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 0
+			arms_factory = 1
+			air_base = 0
+
+		}
+		add_core_of = SOV
+		add_core_of = W36
+		add_claim_by = W10
+	}
+
+	provinces={
+		515 1262 1347 1763 1804 3010 3706 4765 6726 6754 7348 7718 7766 7787 10684 12166 12534 
+	}
+	manpower=461544
+	buildings_max_level_factor=1.000
+	state_category=large_island
+
+	local_supplies=10.0
+}

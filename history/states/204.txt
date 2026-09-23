@@ -1,0 +1,33 @@
+
+state={
+	id=204
+	name="STATE_204"
+
+	history={
+		owner = W56
+		victory_points = {
+			7959 10 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 6
+			8006 = {
+				naval_base = 4
+			}
+
+		}
+		add_core_of = W56
+		add_claim_by = W02
+	}
+
+	provinces={
+		7959 8006 
+	}
+	manpower=365868
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=10.0
+}

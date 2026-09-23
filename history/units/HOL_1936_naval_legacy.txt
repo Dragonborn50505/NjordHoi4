@@ -1,0 +1,82 @@
+units = {
+	fleet = {
+		name = "1st Fleet"
+		naval_base = 7135
+		task_force = {
+			name = "1st Fleet"
+			location = 5116
+			ship = { name = "Kortenaer" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = HOL } } }
+			ship = { name = "Maarten Harpetsz. Tromp" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = HOL } } }
+			ship = { name = "Koningin Regentes" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = HOL } } }
+			ship = { name = "Hertog Hendrik" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = HOL } } }
+			ship = { name = "Jacob van Heemskerck" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = HOL } } }
+			ship = { name = "De Zeven Provinciï¿½n" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = HOL } } }
+			ship = { name = "Koning der Nederlanden" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = HOL } } }
+			ship = { name = "Evertsen" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = HOL } } }
+			ship = { name = "Guinea" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = HOL } } }
+			ship = { name = "Buffel" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = HOL } } }
+			ship = { name = "Maarten Harpetsz. Tromp 2" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = HOL } } }
+			ship = { name = "Piet Hein" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = HOL } } }
+			ship = { name = "De Ruyter" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = HOL } } }
+			ship = { name = "Isaac Sweers" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = HOL } } }
+			ship = { name = "Aert van Nes" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = HOL } } }
+			ship = { name = "Van Ghent" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = HOL } } }
+			ship = { name = "Tjerk Hiddes" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = HOL } } }
+			ship = { name = "Callenburgh" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = HOL } } }
+			ship = { name = "Java" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = HOL } } }
+			ship = { name = "Banckert" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = HOL } } }
+			ship = { name = "Van Galen" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = HOL } } }
+			ship = { name = "Abraham van der Hulst" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = HOL } } }
+			ship = { name = "Van Speijck" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = HOL } } }
+		}
+	}
+	fleet = {
+		name = "3rd Fleet"
+		naval_base = 7135
+		task_force = {
+			name = "3rd Fleet"
+			location = 8450
+			ship = { name = "Piet Hein 2" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = HOL } } }
+		}
+	}
+	fleet = {
+		name = "4th Fleet"
+		naval_base = 7135
+		task_force = {
+			name = "4th Fleet"
+			location = 2775
+			ship = { name = "De Ruyter 2" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = HOL } } }
+		}
+	}
+	fleet = {
+		name = "5th Fleet"
+		naval_base = 11374
+		task_force = {
+			name = "5th Fleet"
+			location = 11374
+			ship = { name = "Schorpioen" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = HOL } } }
+			ship = { name = "Adolf Hertog van Nassau" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = HOL } } }
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "HOL"
+		}
+		requested_factories = 3
+		progress = 0.25
+		amount = 10
+	}
+	add_equipment_production = {
+		equipment = {
+			type = battleship_1
+			creator = "HOL"
+		}
+		requested_factories = 8
+		progress = 0.25
+		amount = 3
+	}
+}

@@ -1,0 +1,37 @@
+
+state={
+	id=762
+	name="STATE_762"
+
+	history={
+		owner = W41
+		victory_points = {
+			7295 0 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+			7295 = {
+				naval_base = 6
+			}
+
+		}
+		add_core_of = BRM
+		add_core_of = X17
+		add_core_of = X90
+		add_claim_by = RAJ
+		add_claim_by = W02
+		add_claim_by = W10
+	}
+
+	provinces={
+		1296 1315 1385 1403 4275 4408 7295 10217 12125 12238 12292 
+	}
+	manpower=704336
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+
+	local_supplies=10.0
+}

@@ -1,0 +1,33 @@
+
+state={
+	id=356
+	name="STATE_356"
+
+	history={
+		owner = W46
+		victory_points = {
+			1903 15 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 5
+			1903 = {
+				naval_base = 1
+			}
+
+		}
+		add_core_of = W46
+		add_claim_by = W10
+	}
+
+	provinces={
+		1903 
+	}
+	manpower=59192
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=10.0
+}

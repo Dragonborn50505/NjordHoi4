@@ -1,0 +1,33 @@
+
+state={
+	id=70
+	name="STATE_70"
+
+	history={
+		owner = X20
+		victory_points = {
+			4579 1 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+			4579 = {
+				naval_base = 2
+			}
+
+		}
+		add_core_of = X20
+		add_claim_by = W10
+	}
+
+	provinces={
+		4579 13400 
+	}
+	manpower=10976
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+
+	local_supplies=10.0
+}

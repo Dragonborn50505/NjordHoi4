@@ -1,0 +1,36 @@
+
+state={
+	id=74
+	name="STATE_74"
+
+	history={
+		owner = X21
+		victory_points = {
+			7798 10 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 0
+			dockyard = 1
+			air_base = 10
+			7798 = {
+				naval_base = 4
+			}
+
+		}
+		add_core_of = X06
+		add_core_of = X13
+		add_core_of = X21
+		add_claim_by = W10
+	}
+
+	provinces={
+		1759 2130 2155 2183 2189 4763 4776 4791 5181 5187 7755 7798 7811 10553 10581 10622 10637 10665 12576 12645 12932 
+	}
+	manpower=146536
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=10.0
+}

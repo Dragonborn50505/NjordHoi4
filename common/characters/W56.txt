@@ -1,0 +1,16 @@
+characters={
+	W56_brian_mccartan={
+		name=W56_brian_mccartan
+		portraits={
+			civilian={
+				large="GFX_Canada_Mackenzie_King"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

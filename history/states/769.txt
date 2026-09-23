@@ -1,0 +1,38 @@
+
+state={
+	id=769
+	name="STATE_769"
+
+	history={
+		owner = W41
+		victory_points = {
+			4344 10 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 0
+			air_base = 10
+			10190 = {
+				naval_base = 4
+			}
+
+		}
+		add_core_of = MYS
+		add_core_of = RAJ
+		add_core_of = W21
+		add_claim_by = W02
+		add_claim_by = W16
+		add_claim_by = X64
+		add_claim_by = X75
+	}
+
+	provinces={
+		1412 4278 4291 4344 7244 7250 7395 8011 8100 10190 10208 12105 12146 12208 12734 
+	}
+	manpower=7741168
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+
+	local_supplies=10.0
+}

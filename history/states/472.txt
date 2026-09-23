@@ -1,0 +1,34 @@
+
+state={
+	id=472
+	name="STATE_472"
+
+	history={
+		owner = W60
+		victory_points = {
+			5139 10 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 5
+			5139 = {
+				naval_base = 8
+			}
+
+		}
+		add_core_of = MOR
+		add_core_of = W60
+		add_claim_by = W10
+	}
+
+	provinces={
+		5139 
+	}
+	manpower=47184
+	buildings_max_level_factor=1.000
+	state_category=large_island
+
+	local_supplies=10.0
+}

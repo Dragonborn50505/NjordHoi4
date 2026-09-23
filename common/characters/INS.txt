@@ -1,0 +1,16 @@
+characters={
+	INS_amir_akbaruddin={
+		name=INS_amir_akbaruddin
+		portraits={
+			civilian={
+				large="GFX_Asia_Generic_democracy"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

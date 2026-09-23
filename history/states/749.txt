@@ -1,0 +1,32 @@
+
+state={
+	id=749
+	name="STATE_749"
+
+	history={
+		owner = W41
+		victory_points = {
+			4379 0 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+			4334 = {
+				naval_base = 4
+			}
+
+		}
+		add_core_of = TIG
+	}
+
+	provinces={
+		1248 1300 1302 1328 1400 1605 4255 4334 4363 4379 4397 4405 7229 7280 7380 10137 10162 10180 10309 12109 12297 
+	}
+	manpower=3852692
+	buildings_max_level_factor=1.000
+	state_category=large_city
+
+	local_supplies=10.0
+}

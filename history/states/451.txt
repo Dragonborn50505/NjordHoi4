@@ -1,0 +1,34 @@
+
+state={
+	id=451
+	name="STATE_451"
+
+	history={
+		owner = PRE
+		victory_points = {
+			6361 1 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 0
+			arms_factory = 1
+			air_base = 1
+			6361 = {
+				naval_base = 1
+			}
+
+		}
+		add_core_of = GER
+		add_core_of = PRE
+		add_claim_by = W02
+	}
+
+	provinces={
+		6361 
+	}
+	manpower=32604
+	buildings_max_level_factor=1.000
+	state_category=large_island
+
+	local_supplies=10.0
+}

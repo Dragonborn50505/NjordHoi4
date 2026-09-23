@@ -1,0 +1,30 @@
+
+state={
+	id=605
+	name="STATE_605"
+
+	history={
+		owner = TEX
+		victory_points = {
+			1866 1 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 0
+
+		}
+		add_core_of = TEX
+		add_claim_by = W10
+	}
+
+	provinces={
+		1719 1866 1867 4664 4807 6752 6827 7536 9880 10618 10719 12577 
+	}
+	manpower=608836
+	buildings_max_level_factor=1.000
+	state_category=large_island
+
+	local_supplies=10.0
+}

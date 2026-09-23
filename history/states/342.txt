@@ -1,0 +1,33 @@
+
+state={
+	id=342
+	name="STATE_342"
+
+	history={
+		owner = HOL
+		victory_points = {
+			391 2 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 0
+			air_base = 1
+			9498 = {
+				naval_base = 10
+			}
+
+		}
+		add_core_of = HOL
+		add_claim_by = TIG
+	}
+
+	provinces={
+		68 391 3211 3314 6241 9363 9498 11456 
+	}
+	manpower=2372620
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=10.0
+}

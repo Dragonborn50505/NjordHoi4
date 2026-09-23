@@ -1,0 +1,31 @@
+
+state={
+	id=12
+	name="STATE_12"
+
+	history={
+		owner = X07
+		victory_points = {
+			9660 10 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 4
+			arms_factory = 2
+			air_base = 7
+
+		}
+		add_core_of = HUN
+		add_core_of = X07
+		add_claim_by = TIG
+	}
+
+	provinces={
+		679 684 699 716 730 3713 3730 3731 6670 6700 6716 6735 6751 9656 9660 9690 9706 11520 11625 11644 11646 11659 
+	}
+	manpower=3130560
+	buildings_max_level_factor=1.000
+	state_category=large_city
+
+	local_supplies=10.0
+}

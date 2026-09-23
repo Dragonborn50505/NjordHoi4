@@ -1,0 +1,35 @@
+
+state={
+	id=493
+	name="STATE_493"
+
+	history={
+		owner = SOV
+		victory_points = {
+			3083 6 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 6
+			arms_factory = 3
+			dockyard = 2
+			air_base = 3
+			3083 = {
+				naval_base = 8
+			}
+
+		}
+		add_core_of = SOV
+		add_core_of = SWE
+		add_claim_by = X64
+	}
+
+	provinces={
+		32 63 66 169 3009 3025 3083 3117 3119 3122 3137 3172 6013 6047 6066 6138 6141 6198 9038 9094 9156 9166 9194 9219 9228 11033 11065 11126 11144 11172 11210 
+	}
+	manpower=4285592
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+
+	local_supplies=10.0
+}

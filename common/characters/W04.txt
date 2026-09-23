@@ -1,0 +1,16 @@
+characters={
+	W04_king_nasr_iii={
+		name=W04_king_nasr_iii
+		portraits={
+			civilian={
+				large="GFX_Egypt_Farouk"
+			}
+		}
+		country_leader={
+			ideology=absolute_monarchy
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

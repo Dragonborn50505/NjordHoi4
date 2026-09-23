@@ -1,0 +1,35 @@
+
+state={
+	id=29
+	name="STATE_29"
+
+	history={
+		owner = X07
+		victory_points = {
+			949 10 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 6
+			9783 = {
+				naval_base = 6
+			}
+
+		}
+		add_core_of = BUL
+		add_claim_by = TIG
+		add_claim_by = X07
+		add_claim_by = X21
+	}
+
+	provinces={
+		649 793 935 949 965 3796 3819 3908 3952 3971 6842 9610 9612 9769 9771 9783 11754 
+	}
+	manpower=2938512
+	buildings_max_level_factor=1.000
+	state_category=city
+
+	local_supplies=10.0
+}

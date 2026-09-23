@@ -1,0 +1,31 @@
+
+state={
+	id=10
+	name="STATE_10"
+
+	history={
+		owner = X07
+		victory_points = {
+			3414 2 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 1
+
+		}
+		add_core_of = HUN
+		add_core_of = X07
+		add_claim_by = TIG
+	}
+
+	provinces={
+		421 445 3414 3553 3583 6485 6562 6590 9412 9551 9567 
+	}
+	manpower=2025444
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=10.0
+}

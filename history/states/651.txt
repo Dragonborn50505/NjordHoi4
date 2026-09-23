@@ -1,0 +1,31 @@
+
+state={
+	id=651
+	name="STATE_651"
+
+	history={
+		owner = W23
+		victory_points = {
+			2101 1 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+
+		}
+		add_core_of = PER
+		add_core_of = W23
+		add_claim_by = TIG
+	}
+
+	provinces={
+		1948 2017 2062 2101 4949 5020 5064 5082 8090 10789 12769 12831 
+	}
+	manpower=2005892
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=10.0
+}

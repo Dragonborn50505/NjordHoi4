@@ -1,0 +1,16 @@
+characters={
+	X76_curiatao_canchari={
+		name=X76_curiatao_canchari
+		portraits={
+			civilian={
+				large="GFX_nat_carib_absolutist"
+			}
+		}
+		country_leader={
+			ideology=dictatorship
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

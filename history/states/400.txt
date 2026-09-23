@@ -1,0 +1,35 @@
+
+state={
+	id=400
+	name="STATE_400"
+
+	history={
+		owner = PRU
+		victory_points = {
+			12997 15 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 0
+			dockyard = 1
+			air_base = 6
+			12997 = {
+				naval_base = 4
+			}
+
+		}
+		add_core_of = PRU
+		add_core_of = X24
+		add_claim_by = W02
+	}
+
+	provinces={
+		2162 2212 2226 5190 12983 12997 13316 
+	}
+	manpower=1284824
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=10.0
+}

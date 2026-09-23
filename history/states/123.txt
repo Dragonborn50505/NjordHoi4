@@ -1,0 +1,33 @@
+
+state={
+	id=123
+	name="STATE_123"
+
+	history={
+		owner = X36
+		victory_points = {
+			7202 1 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+			7202 = {
+				naval_base = 4
+			}
+
+		}
+		add_core_of = X36
+		add_claim_by = W02
+	}
+
+	provinces={
+		1485 1547 3994 4491 4653 7012 7134 7202 7527 10029 10047 11927 
+	}
+	manpower=965728
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=10.0
+}

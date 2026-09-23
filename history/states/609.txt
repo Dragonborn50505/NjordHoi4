@@ -1,0 +1,33 @@
+
+state={
+	id=609
+	name="STATE_609"
+
+	history={
+		owner = W13
+		victory_points = {
+			1614 15 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 5
+			arms_factory = 2
+			air_base = 10
+
+		}
+		add_core_of = W13
+		add_core_of = W34
+		add_claim_by = W23
+		add_claim_by = W41
+		add_claim_by = X64
+	}
+
+	provinces={
+		1216 1459 1479 1483 1532 1554 1573 1576 1614 1623 4488 4499 4618 4629 7541 7639 7682 7775 10395 10420 10435 10470 10488 10530 10671 12161 12233 12239 12454 12465 12474 12722 13207 
+	}
+	manpower=4234896
+	buildings_max_level_factor=1.000
+	state_category=large_city
+
+	local_supplies=10.0
+}

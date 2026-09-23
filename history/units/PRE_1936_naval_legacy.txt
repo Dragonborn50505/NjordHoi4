@@ -1,0 +1,85 @@
+units = {
+	fleet = {
+		name = "1st Fleet"
+		naval_base = 6389
+		task_force = {
+			name = "1st Fleet"
+			location = 6389
+			ship = { name = "Amazone" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Arcona" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Ariadne" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Blitz" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Blücher" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Bremse" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Brummer" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Bussard" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Comet" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Condor" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Dresden" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Elbing" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Falke" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Frauenlob" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Falke 2" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Freya" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Friedrich Carl" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Greif" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Hertha" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Victoria Louise" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Hela" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Gefion" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "1st Stettin Cruiser" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Geier" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Gneisenau" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Nymphe" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Graudenz" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Greif 2" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Königsberg" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Irene" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Leipzig" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Jagd" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Leipzig 2" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Stralsund" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Magdeburg" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Medusa" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Meteor" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Niobe" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Undine" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Pillau" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Prinz Adalbert" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Scharnhorst" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Schwalbe" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Rostock" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Stralsund 2" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Strassburg" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Stuttgart" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Thetis" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "Stettin" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "3rd Frederiksstad Cruiser" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "3rd Göteborg Cruiser" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "3rd Gotland Cruiser" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "3rd Aarhaus Cruiser" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+			ship = { name = "2nd Christianssand Cruiser" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = PRE } } }
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_1
+			creator = "PRE"
+		}
+		requested_factories = 3
+		progress = 0.25
+		amount = 10
+	}
+	add_equipment_production = {
+		equipment = {
+			type = battleship_1
+			creator = "PRE"
+		}
+		requested_factories = 8
+		progress = 0.25
+		amount = 3
+	}
+}

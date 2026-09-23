@@ -1,0 +1,31 @@
+
+state={
+	id=720
+	name="STATE_720"
+
+	history={
+		owner = W41
+		victory_points = {
+			10750 1 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 0
+
+		}
+		add_core_of = W41
+		add_claim_by = MON
+		add_claim_by = TIG
+	}
+
+	provinces={
+		1882 2053 2099 4536 4914 4964 7270 7940 7997 8018 8037 10490 10750 10796 10834 10865 11448 12815 12846 12890 12899 13380 13381 
+	}
+	manpower=2481140
+	buildings_max_level_factor=1.000
+	state_category=large_town
+
+	local_supplies=10.0
+}

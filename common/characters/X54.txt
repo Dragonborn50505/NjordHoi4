@@ -1,0 +1,16 @@
+characters={
+	X54_o._vom_g.={
+		name=X54_o._vom_g.
+		portraits={
+			civilian={
+				large="GFX_Austria_Otto_I"
+			}
+		}
+		country_leader={
+			ideology=theocracy
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

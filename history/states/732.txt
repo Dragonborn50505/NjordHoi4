@@ -1,0 +1,29 @@
+
+state={
+	id=732
+	name="STATE_732"
+
+	history={
+		owner = W41
+		victory_points = {
+			7256 0 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 1
+
+		}
+		add_core_of = X45
+	}
+
+	provinces={
+		1893 2030 2091 4041 4141 4431 5048 6999 7256 7948 10144 10304 10822 11865 12274 12767 
+	}
+	manpower=23398960
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+
+	local_supplies=10.0
+}

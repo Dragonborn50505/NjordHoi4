@@ -1,0 +1,33 @@
+
+state={
+	id=527
+	name="STATE_527"
+
+	history={
+		owner = X98
+		victory_points = {
+			12994 1 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+			8217 = {
+				naval_base = 2
+			}
+
+		}
+		add_core_of = X98
+		add_claim_by = W10
+	}
+
+	provinces={
+		5131 5146 5171 8217 8231 12994 13301 13302 13303 13304 
+	}
+	manpower=220372
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=10.0
+}

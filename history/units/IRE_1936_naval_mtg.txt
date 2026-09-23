@@ -1,0 +1,46 @@
+units = {
+	fleet = {
+		name = "3rd Fleet"
+		naval_base = 10201
+		task_force = {
+			name = "3rd Fleet"
+			location = 10201
+			ship = { name = "1st Dún na nGall Battleship" definition = heavy_cruiser start_experience_factor = 0.04262 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = IRE version_name = "Early Heavy Cruiser" } } }
+			ship = { name = "1st Baile Átha Cliath Battleship" definition = heavy_cruiser start_experience_factor = 0.04262 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = IRE version_name = "Early Heavy Cruiser" } } }
+			ship = { name = "1st Béal Feirste Battleship" definition = heavy_cruiser start_experience_factor = 0.04616 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = IRE version_name = "Early Heavy Cruiser" } } }
+			ship = { name = "1st Port Láirge Battleship" definition = heavy_cruiser start_experience_factor = 0.04262 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = IRE version_name = "Early Heavy Cruiser" } } }
+			ship = { name = "2nd Port Láirge Cruiser" definition = light_cruiser start_experience_factor = 0.04211 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = IRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "1st Dún na nGall Cruiser" definition = light_cruiser start_experience_factor = 0.04262 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = IRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "6th Baile Átha Cliath Cruiser" definition = light_cruiser start_experience_factor = 0.04616 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = IRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "7th Baile Átha Cliath Cruiser" definition = light_cruiser start_experience_factor = 0.04616 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = IRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "1st Baile Átha Cliath Cruiser" definition = light_cruiser start_experience_factor = 0.04616 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = IRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "2nd Baile Átha Cliath Cruiser" definition = light_cruiser start_experience_factor = 0.04129 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = IRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "1st Port Láirge Cruiser" definition = light_cruiser start_experience_factor = 0.04616 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = IRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "5th Baile Átha Cliath Cruiser" definition = light_cruiser start_experience_factor = 0.04262 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = IRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "4th Port Láirge Cruiser" definition = light_cruiser start_experience_factor = 0.04262 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = IRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "4th Baile Átha Cliath Cruiser" definition = light_cruiser start_experience_factor = 0.04178 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = IRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "2nd Béal Feirste Cruiser" definition = light_cruiser start_experience_factor = 0.04262 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = IRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "3rd Port Láirge Cruiser" definition = light_cruiser start_experience_factor = 0.04616 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = IRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "3rd Baile Átha Cliath Cruiser" definition = light_cruiser start_experience_factor = 0.04262 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = IRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "3rd Béal Feirste Cruiser" definition = light_cruiser start_experience_factor = 0.04262 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = IRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Michelle" definition = light_cruiser start_experience_factor = 0.04616 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = IRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Peigi" definition = light_cruiser start_experience_factor = 0.04262 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = IRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Máire" definition = light_cruiser start_experience_factor = 0.04262 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = IRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Róisín" definition = light_cruiser start_experience_factor = 0.04262 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = IRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Esther" definition = light_cruiser start_experience_factor = 0.04262 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = IRE version_name = "Early Light Cruiser" } } }
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_1
+			creator = "IRE"
+			version_name = "Early Destroyer"
+		}
+		requested_factories = 3
+		progress = 0.25
+		amount = 10
+	}
+}

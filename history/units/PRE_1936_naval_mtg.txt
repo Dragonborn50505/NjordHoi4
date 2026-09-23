@@ -1,0 +1,77 @@
+units = {
+	fleet = {
+		name = "1st Fleet"
+		naval_base = 6389
+		task_force = {
+			name = "1st Fleet"
+			location = 6389
+			ship = { name = "Amazone" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Arcona" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Ariadne" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Blitz" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Blücher" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Bremse" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Brummer" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Bussard" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Comet" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Condor" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Dresden" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Elbing" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Falke" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Frauenlob" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Falke 2" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Freya" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Friedrich Carl" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Greif" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Hertha" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Victoria Louise" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Hela" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Gefion" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "1st Stettin Cruiser" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Geier" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Gneisenau" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Nymphe" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Graudenz" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Greif 2" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Königsberg" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Irene" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Leipzig" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Jagd" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Leipzig 2" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Stralsund" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Magdeburg" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Medusa" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Meteor" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Niobe" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Undine" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Pillau" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Prinz Adalbert" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Scharnhorst" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Schwalbe" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Rostock" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Stralsund 2" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Strassburg" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Stuttgart" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Thetis" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "Stettin" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "3rd Frederiksstad Cruiser" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "3rd Göteborg Cruiser" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "3rd Gotland Cruiser" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "3rd Aarhaus Cruiser" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+			ship = { name = "2nd Christianssand Cruiser" definition = light_cruiser start_experience_factor = 0.05 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = PRE version_name = "Early Light Cruiser" } } }
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_1
+			creator = "PRE"
+			version_name = "Early Destroyer"
+		}
+		requested_factories = 3
+		progress = 0.25
+		amount = 10
+	}
+}

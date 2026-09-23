@@ -1,0 +1,16 @@
+characters={
+	W54_brian_mccartan={
+		name=W54_brian_mccartan
+		portraits={
+			civilian={
+				large="GFX_Belgium_Hubert_Pierlot"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

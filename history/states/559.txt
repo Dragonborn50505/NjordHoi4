@@ -1,0 +1,33 @@
+
+state={
+	id=559
+	name="STATE_559"
+
+	history={
+		owner = SPR
+		victory_points = {
+			9793 2 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 0
+			air_base = 1
+			7114 = {
+				naval_base = 1
+			}
+
+		}
+		add_core_of = SPR
+		add_claim_by = TIG
+	}
+
+	provinces={
+		7114 9793 9845 
+	}
+	manpower=370652
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=10.0
+}

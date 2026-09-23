@@ -1,0 +1,36 @@
+
+state={
+	id=148
+	name="STATE_148"
+
+	history={
+		owner = GER
+		victory_points = {
+			3326 2 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 0
+			arms_factory = 1
+			dockyard = 1
+			air_base = 0
+			3326 = {
+				naval_base = 6
+			}
+
+		}
+		add_core_of = GER
+		add_core_of = PRE
+		add_core_of = SAX
+		add_claim_by = W02
+	}
+
+	provinces={
+		241 247 309 336 3326 9281 11233 11264 
+	}
+	manpower=1079596
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=10.0
+}

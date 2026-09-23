@@ -1,0 +1,38 @@
+
+state={
+	id=180
+	name="STATE_180"
+
+	history={
+		owner = X47
+		victory_points = {
+			4180 10 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 6
+			arms_factory = 1
+			dockyard = 1
+			air_base = 10
+			4180 = {
+				naval_base = 1
+			}
+
+		}
+		add_core_of = HAW
+		add_core_of = X47
+		add_core_of = X48
+		add_core_of = X49
+		add_core_of = X50
+		add_claim_by = W10
+	}
+
+	provinces={
+		4180 7112 7195 10048 12021 
+	}
+	manpower=65524
+	buildings_max_level_factor=1.000
+	state_category=city
+
+	local_supplies=10.0
+}

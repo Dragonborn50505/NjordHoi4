@@ -1,0 +1,34 @@
+
+state={
+	id=619
+	name="STATE_619"
+
+	history={
+		owner = W19
+		victory_points = {
+			7344 1 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+			7344 = {
+				naval_base = 4
+			}
+
+		}
+		add_core_of = RAJ
+		add_core_of = W19
+		add_claim_by = W02
+	}
+
+	provinces={
+		7260 7344 
+	}
+	manpower=879636
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+
+	local_supplies=10.0
+}

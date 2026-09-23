@@ -1,0 +1,33 @@
+
+state={
+	id=349
+	name="STATE_349"
+
+	history={
+		owner = HOL
+		victory_points = {
+			485 1 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 1
+			485 = {
+				naval_base = 8
+			}
+
+		}
+		add_core_of = HOL
+		add_claim_by = W02
+	}
+
+	provinces={
+		454 485 11420 
+	}
+	manpower=767992
+	buildings_max_level_factor=1.000
+	state_category=large_island
+
+	local_supplies=10.0
+}

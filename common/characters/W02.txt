@@ -1,0 +1,36 @@
+characters={
+	W02_bamse_ursidae={
+		name=W02_bamse_ursidae
+		portraits={
+			army={
+				large="GFX_portrait_POL_wojtek"
+			}
+			army={
+				small="GFX_portrait_POL_wojtek_small"
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=6
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	W02_ursus_carnivora={
+		name=W02_ursus_carnivora
+		portraits={
+			civilian={
+				large="GFX_bear_buisnessman_leader"
+			}
+		}
+		country_leader={
+			ideology=dictatorship_neutral
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

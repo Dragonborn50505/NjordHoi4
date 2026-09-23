@@ -1,0 +1,31 @@
+
+state={
+	id=145
+	name="STATE_145"
+
+	history={
+		owner = FRA
+		victory_points = {
+			6766 2 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 0
+
+		}
+		add_core_of = FRA
+		add_claim_by = SPR
+		add_claim_by = TIG
+	}
+
+	provinces={
+		929 943 3749 3915 3948 6766 6775 6931 9882 9884 11697 11699 11702 12169 
+	}
+	manpower=1854924
+	buildings_max_level_factor=1.000
+	state_category=large_island
+
+	local_supplies=10.0
+}

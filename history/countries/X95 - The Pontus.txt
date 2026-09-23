@@ -1,0 +1,137 @@
+﻿capital = 665
+set_research_slots = 3
+
+oob = "X95_OOB"
+
+# Starting tech
+# Research Bonuses
+
+set_country_flag = conv_turkey
+set_convoys = 0
+
+set_politics = {
+    ruling_party = absolutist
+    last_election = "1836.1.1"
+    election_frequency = 48
+    elections_allowed = no
+}
+
+set_popularities = {
+	absolutist = 73
+	democratic = 25
+	neutrality = 2
+}
+
+add_opinion_modifier = { target = BRA modifier = positive_5 }
+add_opinion_modifier = { target = COL modifier = negative_15 }
+add_opinion_modifier = { target = CUB modifier = positive_5 }
+add_opinion_modifier = { target = DOM modifier = positive_5 }
+add_opinion_modifier = { target = FRA modifier = positive_15 }
+add_opinion_modifier = { target = GER modifier = positive_15 }
+add_opinion_modifier = { target = HOL modifier = positive_15 }
+add_opinion_modifier = { target = ICE modifier = positive_15 }
+add_opinion_modifier = { target = IRE modifier = negative_105 }
+add_opinion_modifier = { target = ITA modifier = negative_95 }
+add_opinion_modifier = { target = JAP modifier = negative_200 }
+add_opinion_modifier = { target = MEX modifier = positive_5 }
+add_opinion_modifier = { target = PRE modifier = positive_5 }
+add_opinion_modifier = { target = PRU modifier = positive_5 }
+add_opinion_modifier = { target = QUE modifier = negative_20 }
+add_opinion_modifier = { target = SOV modifier = negative_40 }
+add_opinion_modifier = { target = SPR modifier = negative_95 }
+add_opinion_modifier = { target = TEX modifier = negative_20 }
+add_opinion_modifier = { target = USA modifier = negative_20 }
+add_opinion_modifier = { target = W07 modifier = positive_55 }
+add_opinion_modifier = { target = W13 modifier = negative_55 }
+add_opinion_modifier = { target = W24 modifier = negative_10 }
+add_opinion_modifier = { target = W31 modifier = negative_200 }
+add_opinion_modifier = { target = W35 modifier = negative_15 }
+add_opinion_modifier = { target = W37 modifier = negative_10 }
+add_opinion_modifier = { target = X07 modifier = positive_30 }
+add_opinion_modifier = { target = X21 modifier = positive_55 }
+add_opinion_modifier = { target = X32 modifier = positive_5 }
+add_opinion_modifier = { target = X36 modifier = positive_5 }
+add_opinion_modifier = { target = X63 modifier = positive_5 }
+add_opinion_modifier = { target = X93 modifier = positive_5 }
+add_opinion_modifier = { target = X98 modifier = positive_5 }
+add_opinion_modifier = { target = YEM modifier = negative_10 }
+
+
+add_ideas = {
+	limited_conscription
+	civilian_economy
+	export_focus
+	culture_greek
+}
+
+recruit_character = X95_charalambos_zymvrakakis
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_operative_leader = {
+		name = "Anastasia Tsakalóto"
+		GFX = "gfx/leaders/Europe/portrait_europe_generic_operative_female_1.dds"
+		traits = {}
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { X95 }
+	}
+
+	create_operative_leader = {
+		name = "Baslikike Plastíra"
+		GFX = "gfx/leaders/Europe/portrait_europe_generic_operative_female_2.dds"
+		traits = {}
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { X95 }
+	}
+
+	create_operative_leader = {
+		name = "Eirene Chatzianésti"
+		GFX = "gfx/leaders/Europe/portrait_europe_generic_operative_female_3.dds"
+		traits = {}
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { X95 }
+	}
+
+	create_operative_leader = {
+		name = "Theódoros Papadiamantópoulos"
+		GFX = "gfx/leaders/Europe/portrait_europe_generic_operative_male_1.dds"
+		traits = {}
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { X95 }
+	}
+
+	create_operative_leader = {
+		name = "Stylianós Kondylis"
+		GFX = "gfx/leaders/Europe/portrait_europe_generic_operative_male_2.dds"
+		traits = {}
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { X95 }
+	}
+
+}
+### VARIANTS ###
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+}
+### PLANE DESIGNS ###
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+}
+### TANK DESIGNS ###
+if = {
+	limit = { has_dlc = "No Step Back" }
+}
+

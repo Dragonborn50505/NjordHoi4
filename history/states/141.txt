@@ -1,0 +1,33 @@
+
+state={
+	id=141
+	name="STATE_141"
+
+	history={
+		owner = FRA
+		victory_points = {
+			9898 1 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 0
+			9853 = {
+				naval_base = 8
+			}
+
+		}
+		add_core_of = FRA
+		add_claim_by = TIG
+	}
+
+	provinces={
+		752 760 3751 3946 6915 6917 6960 6962 9723 9853 9898 11709 
+	}
+	manpower=1991140
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=10.0
+}

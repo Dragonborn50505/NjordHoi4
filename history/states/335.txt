@@ -1,0 +1,35 @@
+
+state={
+	id=335
+	name="STATE_335"
+
+	history={
+		owner = HOL
+		victory_points = {
+			377 10 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+			arms_factory = 1
+			dockyard = 1
+			air_base = 7
+			377 = {
+				naval_base = 10
+			}
+
+		}
+		add_core_of = HOL
+		add_core_of = WLS
+		add_claim_by = TIG
+	}
+
+	provinces={
+		253 311 377 407 3274 6363 9364 11361 
+	}
+	manpower=2095712
+	buildings_max_level_factor=1.000
+	state_category=city
+
+	local_supplies=10.0
+}

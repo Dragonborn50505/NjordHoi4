@@ -1,0 +1,30 @@
+
+state={
+	id=419
+	name="STATE_419"
+
+	history={
+		owner = X93
+		victory_points = {
+			11479 3 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 2
+			air_base = 2
+
+		}
+		add_core_of = X93
+		add_claim_by = X64
+	}
+
+	provinces={
+		438 491 536 3483 3562 3743 6431 6460 6483 9425 9454 9468 9558 11411 11427 11479 11550 
+	}
+	manpower=3724096
+	buildings_max_level_factor=1.000
+	state_category=city
+
+	local_supplies=10.0
+}

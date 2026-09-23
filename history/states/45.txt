@@ -1,0 +1,36 @@
+
+state={
+	id=45
+	name="STATE_45"
+
+	history={
+		owner = W67
+		victory_points = {
+			5043 0 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+			7917 = {
+				naval_base = 4
+			}
+
+		}
+		add_core_of = W67
+		add_claim_by = PER
+		add_claim_by = RAJ
+		add_claim_by = W02
+		add_claim_by = W23
+	}
+
+	provinces={
+		1179 1978 4990 4998 5043 5075 5105 7847 7917 7975 8013 8044 8066 8098 10813 12717 12761 
+	}
+	manpower=1584448
+	buildings_max_level_factor=1.000
+	state_category=large_island
+
+	local_supplies=10.0
+}

@@ -1,0 +1,33 @@
+
+state={
+	id=583
+	name="STATE_583"
+
+	history={
+		owner = SPR
+		victory_points = {
+			11984 0 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+			11984 = {
+				naval_base = 2
+			}
+
+		}
+		add_core_of = W31
+		add_claim_by = W10
+	}
+
+	provinces={
+		7193 11984 
+	}
+	manpower=156004
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=10.0
+}

@@ -1,0 +1,32 @@
+
+state={
+	id=256
+	name="STATE_256"
+
+	history={
+		owner = W57
+		victory_points = {
+			5010 0 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+
+		}
+		add_core_of = ETH
+		add_core_of = W57
+		add_core_of = YEM
+		add_claim_by = X64
+	}
+
+	provinces={
+		2009 5010 7912 7980 8036 10734 12714 12856 13239 13243 13244 13245 13249 
+	}
+	manpower=7370600
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+
+	local_supplies=10.0
+}

@@ -1,0 +1,42 @@
+
+state={
+	id=33
+	name="STATE_33"
+
+	history={
+		owner = X07
+		victory_points = {
+			9833 2 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 0
+			air_base = 1
+			849 = {
+				naval_base = 1
+			}
+			9833 = {
+				landmark_hagia_sophia = {
+					level = 1
+					allowed = {
+						has_dlc = "Gotterdammerung"
+					}
+				}
+			}
+
+		}
+		add_core_of = X07
+		add_claim_by = TIG
+		add_claim_by = X21
+	}
+
+	provinces={
+		849 922 3879 3893 6895 9833 11842 
+	}
+	manpower=2024944
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=10.0
+}

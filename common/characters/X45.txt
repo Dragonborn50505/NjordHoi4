@@ -1,0 +1,16 @@
+characters={
+	X45_bamse_muncher={
+		name=X45_bamse_muncher
+		portraits={
+			civilian={
+				large="GFX_bear_buisnessman_leader"
+			}
+		}
+		country_leader={
+			ideology=dictatorship_neutral
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

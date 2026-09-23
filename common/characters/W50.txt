@@ -1,0 +1,16 @@
+characters={
+	W50_brian_mccartan={
+		name=W50_brian_mccartan
+		portraits={
+			civilian={
+				large="GFX_USA_Wendell_Willkie"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

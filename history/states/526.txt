@@ -1,0 +1,31 @@
+
+state={
+	id=526
+	name="STATE_526"
+
+	history={
+		owner = X98
+		victory_points = {
+			11001 10 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 5
+
+		}
+		add_core_of = X23
+		add_claim_by = W10
+		add_claim_by = X98
+	}
+
+	provinces={
+		2224 10944 10965 11001 13308 13310 13311 
+	}
+	manpower=52400
+	buildings_max_level_factor=1.000
+	state_category=large_island
+
+	local_supplies=10.0
+}

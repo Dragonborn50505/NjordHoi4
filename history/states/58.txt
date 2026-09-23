@@ -1,0 +1,21 @@
+
+state={
+	id=58
+	name="STATE_58"
+	impassable = yes
+
+	history={
+		owner = BRA
+		add_core_of = BRA
+		add_claim_by = W10
+	}
+
+	provinces={
+		5008 8172 13277 
+	}
+	manpower=41368
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+
+	local_supplies=10.0
+}

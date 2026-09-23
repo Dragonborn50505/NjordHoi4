@@ -1,0 +1,29 @@
+
+state={
+	id=580
+	name="STATE_580"
+
+	history={
+		owner = SPR
+		victory_points = {
+			11953 0 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+
+		}
+		add_core_of = W02
+	}
+
+	provinces={
+		1058 1141 4131 7065 9976 10059 11953 12034 13077 
+	}
+	manpower=1770940
+	buildings_max_level_factor=1.000
+	state_category=large_island
+
+	local_supplies=10.0
+}

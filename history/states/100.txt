@@ -1,0 +1,35 @@
+
+state={
+	id=100
+	name="STATE_100"
+
+	history={
+		owner = CSA
+		victory_points = {
+			11738 15 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			dockyard = 1
+			air_base = 7
+			6846 = {
+				naval_base = 2
+			}
+
+		}
+		add_core_of = CSA
+		add_core_of = USA
+		add_claim_by = W02
+	}
+
+	provinces={
+		865 873 951 1506 3823 3917 3925 6846 7558 9779 9931 10343 10412 10439 11738 11841 11873 
+	}
+	manpower=2958696
+	buildings_max_level_factor=1.000
+	state_category=city
+
+	local_supplies=10.0
+}

@@ -1,0 +1,33 @@
+
+state={
+	id=35
+	name="STATE_35"
+
+	history={
+		owner = X07
+		victory_points = {
+			9914 10 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 5
+			9780 = {
+				naval_base = 6
+			}
+
+		}
+		add_core_of = ALB
+		add_claim_by = W02
+	}
+
+	provinces={
+		914 3448 3884 3896 6900 9780 9875 9914 11762 11767 13234 13235 13255 
+	}
+	manpower=859112
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=10.0
+}

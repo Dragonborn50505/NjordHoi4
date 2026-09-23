@@ -1,0 +1,31 @@
+
+state={
+	id=301
+	name="STATE_301"
+
+	history={
+		owner = X63
+		victory_points = {
+			9910 10 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 5
+
+		}
+		add_core_of = X63
+		add_core_of = X78
+		add_claim_by = W10
+	}
+
+	provinces={
+		1831 4691 7306 9910 10478 10666 11788 11971 12646 
+	}
+	manpower=25072
+	buildings_max_level_factor=1.000
+	state_category=large_island
+
+	local_supplies=10.0
+}

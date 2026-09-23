@@ -1,0 +1,35 @@
+
+state={
+	id=3
+	name="STATE_3"
+
+	history={
+		owner = X04
+		victory_points = {
+			12785 1 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 0
+			arms_factory = 0
+			dockyard = 1
+			air_base = 0
+			12785 = {
+				naval_base = 1
+			}
+
+		}
+		add_core_of = X04
+		add_claim_by = TIG
+		add_claim_by = W02
+	}
+
+	provinces={
+		12785 
+	}
+	manpower=442752
+	buildings_max_level_factor=1.000
+	state_category=large_island
+
+	local_supplies=10.0
+}

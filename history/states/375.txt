@@ -1,0 +1,32 @@
+
+state={
+	id=375
+	name="STATE_375"
+
+	history={
+		owner = HOL
+		victory_points = {
+			7135 0 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+			7135 = {
+				naval_base = 6
+			}
+
+		}
+		add_core_of = W10
+	}
+
+	provinces={
+		7135 
+	}
+	manpower=99160
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=10.0
+}

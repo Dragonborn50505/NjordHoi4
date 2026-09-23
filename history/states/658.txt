@@ -1,0 +1,33 @@
+
+state={
+	id=658
+	name="STATE_658"
+
+	history={
+		owner = W27
+		victory_points = {
+			7150 0 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+			7150 = {
+				naval_base = 1
+			}
+
+		}
+		add_core_of = RAJ
+		add_claim_by = W10
+	}
+
+	provinces={
+		7150 7165 11952 
+	}
+	manpower=139556
+	buildings_max_level_factor=1.000
+	state_category=large_island
+
+	local_supplies=10.0
+}

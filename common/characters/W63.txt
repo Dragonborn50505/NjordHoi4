@@ -1,0 +1,16 @@
+characters={
+	W63_lavr_dragomirov={
+		name=W63_lavr_dragomirov
+		portraits={
+			civilian={
+				large="GFX_Soviet_Victor_Baydalakov"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

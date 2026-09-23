@@ -1,0 +1,33 @@
+
+state={
+	id=516
+	name="STATE_516"
+
+	history={
+		owner = W63
+		victory_points = {
+			13075 10 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 5
+			1712 = {
+				naval_base = 1
+			}
+
+		}
+		add_core_of = W63
+		add_claim_by = W10
+	}
+
+	provinces={
+		1712 2407 2947 3606 3691 7696 7813 7869 7891 7901 10527 10703 10721 13075 
+	}
+	manpower=227056
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=10.0
+}

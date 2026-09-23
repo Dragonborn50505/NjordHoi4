@@ -1,0 +1,35 @@
+
+state={
+	id=394
+	name="STATE_394"
+
+	history={
+		owner = X82
+		victory_points = {
+			10609 15 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
+			dockyard = 1
+			air_base = 6
+			1801 = {
+				naval_base = 1
+			}
+
+		}
+		add_core_of = X82
+		add_core_of = X84
+		add_claim_by = W10
+	}
+
+	provinces={
+		1801 4718 4748 7742 10609 10710 
+	}
+	manpower=9548
+	buildings_max_level_factor=1.000
+	state_category=city
+
+	local_supplies=10.0
+}

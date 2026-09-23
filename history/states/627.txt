@@ -1,0 +1,30 @@
+
+state={
+	id=627
+	name="STATE_627"
+
+	history={
+		owner = TUR
+		victory_points = {
+			464 1 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+
+		}
+		add_core_of = TUR
+		add_claim_by = W10
+	}
+
+	provinces={
+		432 464 468 470 477 508 545 554 566 576 615 642 1247 1290 1318 1429 3404 3406 3459 3467 3502 3515 3538 3618 3622 4254 4294 4351 4394 6491 6498 6514 6523 6525 6551 6564 6588 6615 7313 7322 7341 7370 7410 7438 9447 9453 9462 9469 9487 9513 9526 9528 9538 9549 10253 10264 11442 11455 11457 11469 11472 11473 11480 11482 11510 11524 11537 11538 11552 11578 11591 12179 12227 12235 12254 12294 13008 
+	}
+	manpower=197544
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=10.0
+}

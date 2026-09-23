@@ -1,0 +1,34 @@
+
+state={
+	id=276
+	name="STATE_276"
+
+	history={
+		owner = JAP
+		victory_points = {
+			998 1 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 0
+			arms_factory = 0
+			dockyard = 1
+			air_base = 0
+			1117 = {
+				naval_base = 2
+			}
+
+		}
+		add_core_of = JAP
+		add_claim_by = X64
+	}
+
+	provinces={
+		998 1117 4069 4172 7087 7102 7157 7187 7217 9952 10015 10032 10100 10125 10128 11930 11989 12007 12072 12097 
+	}
+	manpower=5657792
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+
+	local_supplies=10.0
+}

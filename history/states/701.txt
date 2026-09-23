@@ -1,0 +1,30 @@
+
+state={
+	id=701
+	name="STATE_701"
+
+	history={
+		owner = YEM
+		victory_points = {
+			5081 1 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+
+		}
+		add_core_of = YEM
+		add_claim_by = W10
+	}
+
+	provinces={
+		5081 5093 8004 8030 8060 10870 12768 
+	}
+	manpower=87404
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=10.0
+}

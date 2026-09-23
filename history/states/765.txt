@@ -1,0 +1,35 @@
+
+state={
+	id=765
+	name="STATE_765"
+
+	history={
+		owner = W41
+		victory_points = {
+			11924 10 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 6
+			10088 = {
+				naval_base = 6
+			}
+
+		}
+		add_core_of = RAJ
+		add_core_of = X87
+		add_claim_by = TIG
+		add_claim_by = W19
+	}
+
+	provinces={
+		1059 1101 1538 4104 4513 7090 9946 10060 10088 10116 10428 11924 12063 
+	}
+	manpower=3351132
+	buildings_max_level_factor=1.000
+	state_category=city
+
+	local_supplies=10.0
+}

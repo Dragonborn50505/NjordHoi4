@@ -1,0 +1,29 @@
+
+state={
+	id=387
+	name="STATE_387"
+
+	history={
+		owner = W49
+		victory_points = {
+			10845 0 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+
+		}
+		add_core_of = W49
+	}
+
+	provinces={
+		10845 
+	}
+	manpower=162988
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=10.0
+}

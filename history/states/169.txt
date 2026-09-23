@@ -1,0 +1,37 @@
+
+state={
+	id=169
+	name="STATE_169"
+
+	history={
+		owner = GER
+		victory_points = {
+			9347 10 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 0
+			dockyard = 1
+			air_base = 7
+			9347 = {
+				naval_base = 6
+			}
+
+		}
+		add_core_of = GER
+		add_core_of = PRE
+		add_core_of = SAX
+		add_core_of = X41
+		add_claim_by = TIG
+	}
+
+	provinces={
+		374 3234 3271 3395 6218 6263 6298 6325 6349 9264 9347 
+	}
+	manpower=1936780
+	buildings_max_level_factor=1.000
+	state_category=city
+
+	local_supplies=10.0
+}

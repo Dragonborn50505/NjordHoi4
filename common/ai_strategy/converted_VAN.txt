@@ -1,0 +1,21 @@
+﻿converted_war_strategies_VAN = {
+	allowed = {
+		tag = VAN
+	}
+	enable = {
+		always = no
+	}
+	abort_when_not_enabled = yes
+	
+}
+
+converted_diplo_strategies_VAN = {
+	allowed = {
+		tag = VAN
+	}
+	enable = {
+		always = no
+	}
+	abort_when_not_enabled = yes
+	
+}

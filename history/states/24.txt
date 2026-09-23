@@ -1,0 +1,33 @@
+
+state={
+	id=24
+	name="STATE_24"
+
+	history={
+		owner = X07
+		victory_points = {
+			9849 1 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 0
+			arms_factory = 1
+			air_base = 0
+
+		}
+		add_core_of = MAC
+		add_core_of = SER
+		add_core_of = YUG
+		add_claim_by = TIG
+		add_claim_by = X07
+	}
+
+	provinces={
+		3922 3939 6940 6953 6970 9849 9874 9890 9906 11832 11857 11868 11887 
+	}
+	manpower=2017464
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=10.0
+}

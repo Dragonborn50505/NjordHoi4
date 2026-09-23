@@ -1,0 +1,32 @@
+
+state={
+	id=23
+	name="STATE_23"
+
+	history={
+		owner = X07
+		victory_points = {
+			11586 10 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 0
+			air_base = 10
+
+		}
+		add_core_of = SER
+		add_core_of = YUG
+		add_claim_by = W02
+		add_claim_by = X07
+	}
+
+	provinces={
+		630 797 3609 3956 3984 6634 6998 9599 9602 9756 11583 11586 
+	}
+	manpower=831484
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=10.0
+}

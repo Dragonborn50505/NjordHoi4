@@ -1,0 +1,222 @@
+﻿capital = 625
+set_research_slots = 3
+add_named_threat = { threat = 0.18 name = infamy }
+
+oob = "TUR_OOB"
+
+# Starting tech
+set_technology = {
+	fuel_refining = 1
+	fuel_silos = 1
+	synth_oil_experiments = 1
+}
+
+# Research Bonuses
+
+set_country_flag = conv_russia
+set_convoys = 0
+
+set_politics = {
+    ruling_party = democratic
+    last_election = "1902.10.14"
+    election_frequency = 48
+    elections_allowed = yes
+}
+
+set_popularities = {
+	absolutist = 3
+	communism = 14
+	democratic = 79
+	fascism = 1
+	neutrality = 3
+}
+
+add_opinion_modifier = { target = ATJ modifier = negative_40 }
+add_opinion_modifier = { target = BRA modifier = negative_30 }
+add_opinion_modifier = { target = BRU modifier = negative_20 }
+add_opinion_modifier = { target = COG modifier = negative_200 }
+add_opinion_modifier = { target = COL modifier = negative_10 }
+add_opinion_modifier = { target = CSA modifier = negative_60 }
+add_opinion_modifier = { target = CUB modifier = negative_30 }
+add_opinion_modifier = { target = DOM modifier = negative_130 }
+add_opinion_modifier = { target = FOR modifier = negative_10 }
+add_opinion_modifier = { target = FRA modifier = positive_113 }
+add_opinion_modifier = { target = GER modifier = positive_115 }
+add_opinion_modifier = { target = HOL modifier = positive_40 }
+add_opinion_modifier = { target = ICE modifier = negative_70 }
+add_opinion_modifier = { target = IRE modifier = negative_108 }
+add_opinion_modifier = { target = ITA modifier = negative_110 }
+add_opinion_modifier = { target = JAP modifier = negative_200 }
+add_opinion_modifier = { target = MEX modifier = negative_30 }
+add_opinion_modifier = { target = PAK modifier = positive_30 }
+add_opinion_modifier = { target = PHI modifier = negative_10 }
+add_opinion_modifier = { target = PRE modifier = negative_25 }
+add_opinion_modifier = { target = PRU modifier = negative_30 }
+add_opinion_modifier = { target = QUE modifier = negative_155 }
+add_opinion_modifier = { target = RAJ modifier = negative_10 }
+add_opinion_modifier = { target = SAR modifier = positive_30 }
+add_opinion_modifier = { target = SIN modifier = positive_30 }
+add_opinion_modifier = { target = SOV modifier = negative_197 }
+add_opinion_modifier = { target = SPR modifier = negative_10 }
+add_opinion_modifier = { target = TEX modifier = negative_105 }
+add_opinion_modifier = { target = TIG modifier = negative_160 }
+add_opinion_modifier = { target = USA modifier = negative_55 }
+add_opinion_modifier = { target = W02 modifier = negative_160 }
+add_opinion_modifier = { target = W05 modifier = positive_30 }
+add_opinion_modifier = { target = W07 modifier = negative_186 }
+add_opinion_modifier = { target = W10 modifier = negative_160 }
+add_opinion_modifier = { target = W13 modifier = negative_3 }
+add_opinion_modifier = { target = W17 modifier = negative_10 }
+add_opinion_modifier = { target = W22 modifier = negative_170 }
+add_opinion_modifier = { target = W23 modifier = negative_20 }
+add_opinion_modifier = { target = W24 modifier = negative_10 }
+add_opinion_modifier = { target = W31 modifier = negative_200 }
+add_opinion_modifier = { target = W35 modifier = negative_10 }
+add_opinion_modifier = { target = W36 modifier = negative_80 }
+add_opinion_modifier = { target = W37 modifier = negative_30 }
+add_opinion_modifier = { target = W41 modifier = positive_107 }
+add_opinion_modifier = { target = X04 modifier = negative_200 }
+add_opinion_modifier = { target = X07 modifier = positive_115 }
+add_opinion_modifier = { target = X21 modifier = negative_200 }
+add_opinion_modifier = { target = X32 modifier = negative_30 }
+add_opinion_modifier = { target = X35 modifier = negative_50 }
+add_opinion_modifier = { target = X36 modifier = negative_80 }
+add_opinion_modifier = { target = X45 modifier = negative_10 }
+add_opinion_modifier = { target = X53 modifier = positive_10 }
+add_opinion_modifier = { target = X63 modifier = negative_30 }
+add_opinion_modifier = { target = X64 modifier = negative_160 }
+add_opinion_modifier = { target = X73 modifier = positive_30 }
+add_opinion_modifier = { target = X77 modifier = positive_30 }
+add_opinion_modifier = { target = X86 modifier = negative_10 }
+add_opinion_modifier = { target = X93 modifier = positive_107 }
+add_opinion_modifier = { target = X94 modifier = positive_30 }
+add_opinion_modifier = { target = X98 modifier = negative_30 }
+add_opinion_modifier = { target = YEM modifier = positive_20 }
+
+
+add_ideas = {
+	TUR_monarch
+	volunteer_only
+	civilian_economy
+	export_focus
+	culture_turkish
+}
+set_stability = 0.60
+set_war_support = 0.63
+
+recruit_character = TUR_mustafa_ozer
+recruit_character = TUR_sukru_aktug'
+recruit_character = TUR_yusuf_bulut
+recruit_character = TUR_riza_burcak
+recruit_character = TUR_sukru_sag'lam
+recruit_character = TUR_emin_altintop
+recruit_character = TUR_selim_guven
+recruit_character = TUR_nurettin_terim
+recruit_character = TUR_fuat_selcuk
+recruit_character = TUR_husrev_tekin
+recruit_character = TUR_ismet_aytimur
+recruit_character = TUR_abdulrahim_inan
+recruit_character = TUR_sukru_ozer
+recruit_character = TUR_cevdet_dilmen
+recruit_character = TUR_hamza_erdog'an
+recruit_character = TUR_arif_burcak
+recruit_character = TUR_ali_bulut
+recruit_character = TUR_riza_ertunc
+recruit_character = TUR_musa_tasci
+recruit_character = TUR_ziya_burcak
+recruit_character = TUR_ibrahim_ciller
+recruit_character = TUR_yunus_baykal
+recruit_character = TUR_hasan_selcuk
+recruit_character = TUR_numan_sen
+recruit_character = TUR_murat_guven
+recruit_character = TUR_rauf_karan
+recruit_character = TUR_abdulkerim_yuksel
+recruit_character = TUR_edhem_gunduz
+recruit_character = TUR_enver_yavuz
+recruit_character = TUR_emin_aktug'
+recruit_character = TUR_omar_yavuz
+recruit_character = TUR_enver_aytimur
+recruit_character = TUR_kemal_ozbey
+recruit_character = TUR_hafiz_yuksel
+recruit_character = TUR_musa_demirel
+recruit_character = TUR_izzet_guler
+recruit_character = TUR_emin_akkoz
+recruit_character = TUR_cemal_onay
+recruit_character = TUR_omar_ors
+recruit_character = TUR_refet_ercan
+recruit_character = TUR_abdullah_durak
+recruit_character = TUR_kemal_gundog'an
+recruit_character = TUR_abdulhamid_cetin
+recruit_character = TUR_lutfi_aktug'
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_operative_leader = {
+		name = "Çiçek Güler"
+		GFX = "gfx/leaders/Arabia/portrait_arabia_generic_operative_female_1.dds"
+		traits = {}
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { TUR }
+	}
+
+	create_operative_leader = {
+		name = "Çilen Erkin"
+		GFX = "gfx/leaders/Arabia/portrait_arabia_generic_operative_female_2.dds"
+		traits = {}
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { TUR }
+	}
+
+	create_operative_leader = {
+		name = "Çiçek Özbey"
+		GFX = "gfx/leaders/Arabia/portrait_arabia_generic_operative_female_3.dds"
+		traits = {}
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		female = yes
+		nationalities = { TUR }
+	}
+
+	create_operative_leader = {
+		name = "Yusuf Durak"
+		GFX = "gfx/leaders/Arabia/portrait_arabia_generic_operative_male_1.dds"
+		traits = {}
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { TUR }
+	}
+
+	create_operative_leader = {
+		name = "Hayrullah Šen"
+		GFX = "gfx/leaders/Arabia/portrait_arabia_generic_operative_male_2.dds"
+		traits = {}
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { TUR }
+	}
+
+}
+### VARIANTS ###
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+}
+### PLANE DESIGNS ###
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+}
+### TANK DESIGNS ###
+if = {
+	limit = { has_dlc = "No Step Back" }
+}
+add_equipment_to_stockpile = { type = artillery_equipment amount = 288 producer = TUR }
+add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 1 producer = TUR }
+

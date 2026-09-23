@@ -1,0 +1,71 @@
+﻿converted_war_strategies_W17 = {
+	allowed = {
+		tag = W17
+	}
+	enable = {
+		always = no
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = conquer
+		id = "HOL"
+		value = 626
+	}
+	ai_strategy = {
+		type = conquer
+		id = "X86"
+		value = 157
+	}
+	ai_strategy = {
+		type = conquer
+		id = "PRE"
+		value = 15
+	}
+}
+
+converted_diplo_strategies_W17 = {
+	allowed = {
+		tag = W17
+	}
+	enable = {
+		always = no
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = contain
+		id = "HOL"
+		value = 400
+	}
+	ai_strategy = {
+		type = contain
+		id = "X86"
+		value = 204
+	}
+	ai_strategy = {
+		type = contain
+		id = "W41"
+		value = 32
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "X86"
+		value = 400
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "HOL"
+		value = 392
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "ITA"
+		value = 89
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "PRE"
+		value = 50
+	}
+}

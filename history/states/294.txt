@@ -1,0 +1,36 @@
+
+state={
+	id=294
+	name="STATE_294"
+
+	history={
+		owner = X53
+		victory_points = {
+			4608 10 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+			dockyard = 1
+			air_base = 6
+			12472 = {
+				naval_base = 8
+			}
+
+		}
+		add_core_of = INS
+		add_core_of = X72
+		add_core_of = X73
+		add_claim_by = TIG
+	}
+
+	provinces={
+		1209 4390 4608 7654 10479 10491 12293 12472 13403 13407 
+	}
+	manpower=2951492
+	buildings_max_level_factor=1.000
+	state_category=large_city
+
+	local_supplies=10.0
+}

@@ -1,0 +1,30 @@
+
+state={
+	id=304
+	name="STATE_304"
+
+	history={
+		owner = X63
+		victory_points = {
+			695 20 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 6
+
+		}
+		add_core_of = X63
+		add_claim_by = W10
+	}
+
+	provinces={
+		691 695 709 751 3766 4854 5205 6710 6769 6782 7420 9684 9724 9746 9747 10233 10303 10599 11641 11656 11669 11685 11714 11731 
+	}
+	manpower=174762
+	buildings_max_level_factor=1.000
+	state_category=large_town
+
+	local_supplies=10.0
+}

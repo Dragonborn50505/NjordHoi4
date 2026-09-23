@@ -1,0 +1,32 @@
+
+state={
+	id=668
+	name="STATE_668"
+
+	history={
+		owner = W31
+		victory_points = {
+			12416 0 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+
+		}
+		add_core_of = ARM
+		add_claim_by = W02
+		add_claim_by = W07
+		add_claim_by = W31
+	}
+
+	provinces={
+		876 3890 4512 6965 7620 9823 9860 9912 10497 11739 11759 11871 12387 12416 
+	}
+	manpower=781952
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+
+	local_supplies=10.0
+}

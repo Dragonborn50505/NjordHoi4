@@ -1,0 +1,40 @@
+
+state={
+	id=66
+	name="STATE_66"
+
+	history={
+		owner = BRA
+		victory_points = {
+			10980 20 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 0
+			dockyard = 1
+			air_base = 6
+			10980 = {
+				naval_base = 4
+				landmark_cristo_redentor = {
+					level = 1
+					allowed = {
+						has_dlc = "Gotterdammerung"
+					}
+				}
+			}
+
+		}
+		add_core_of = BRA
+		add_claim_by = TIG
+	}
+
+	provinces={
+		2153 5172 8190 8196 10980 10999 12996 
+	}
+	manpower=2279976
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=10.0
+}

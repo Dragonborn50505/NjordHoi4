@@ -1,0 +1,33 @@
+
+state={
+	id=174
+	name="STATE_174"
+
+	history={
+		owner = X40
+		victory_points = {
+			4247 15 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 5
+			4247 = {
+				naval_base = 2
+			}
+
+		}
+		add_core_of = VAN
+		add_claim_by = W10
+	}
+
+	provinces={
+		1237 4247 12120 
+	}
+	manpower=27148
+	buildings_max_level_factor=1.000
+	state_category=large_island
+
+	local_supplies=10.0
+}

@@ -1,0 +1,35 @@
+
+state={
+	id=47
+	name="STATE_47"
+
+	history={
+		owner = BAN
+		victory_points = {
+			4616 1 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 0
+			9935 = {
+				naval_base = 4
+			}
+
+		}
+		add_core_of = BAN
+		add_core_of = W19
+		add_claim_by = RAJ
+		add_claim_by = X45
+	}
+
+	provinces={
+		2843 4162 4616 7078 7124 7662 9935 9991 10035 10443 11911 11968 12010 
+	}
+	manpower=10486700
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+
+	local_supplies=10.0
+}

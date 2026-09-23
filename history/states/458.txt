@@ -1,0 +1,34 @@
+
+state={
+	id=458
+	name="STATE_458"
+
+	history={
+		owner = PRE
+		victory_points = {
+			6196 1 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 0
+			air_base = 0
+			6196 = {
+				naval_base = 8
+			}
+
+		}
+		add_core_of = NOR
+		add_core_of = PRE
+		add_claim_by = W10
+	}
+
+	provinces={
+		6196 
+	}
+	manpower=34128
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=10.0
+}

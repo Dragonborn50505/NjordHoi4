@@ -1,0 +1,36 @@
+
+state={
+	id=699
+	name="STATE_699"
+
+	history={
+		owner = W37
+		victory_points = {
+			2197 15 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
+			dockyard = 1
+			air_base = 6
+			2197 = {
+				naval_base = 1
+			}
+
+		}
+		add_core_of = W37
+		add_claim_by = W03
+		add_claim_by = W10
+		add_claim_by = X84
+	}
+
+	provinces={
+		2197 5195 7839 
+	}
+	manpower=222820
+	buildings_max_level_factor=1.000
+	state_category=city
+
+	local_supplies=10.0
+}

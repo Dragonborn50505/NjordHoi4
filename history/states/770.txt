@@ -1,0 +1,35 @@
+
+state={
+	id=770
+	name="STATE_770"
+
+	history={
+		owner = W41
+		victory_points = {
+			7402 15 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 6
+			7391 = {
+				naval_base = 2
+			}
+
+		}
+		add_core_of = RAJ
+		add_core_of = W16
+		add_core_of = W21
+		add_claim_by = X64
+	}
+
+	provinces={
+		1238 1321 7391 7402 7447 12275 
+	}
+	manpower=4877220
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+
+	local_supplies=10.0
+}

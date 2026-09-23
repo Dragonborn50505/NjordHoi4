@@ -1,0 +1,16 @@
+characters={
+	W46_adriaan_lefebvre={
+		name=W46_adriaan_lefebvre
+		portraits={
+			civilian={
+				large="GFX_Netherlands_Dirk_Jan_de_Geer"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

@@ -1,0 +1,32 @@
+
+state={
+	id=391
+	name="STATE_391"
+
+	history={
+		owner = W49
+		victory_points = {
+			4851 10 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 0
+			air_base = 6
+
+		}
+		add_core_of = W00
+		add_core_of = W49
+		add_core_of = X66
+		add_claim_by = W02
+	}
+
+	provinces={
+		1874 2151 4851 
+	}
+	manpower=744572
+	buildings_max_level_factor=1.000
+	state_category=large_island
+
+	local_supplies=10.0
+}

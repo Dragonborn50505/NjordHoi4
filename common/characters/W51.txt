@@ -1,0 +1,16 @@
+characters={
+	W51_brian_mccartan={
+		name=W51_brian_mccartan
+		portraits={
+			civilian={
+				large="GFX_USA_Happy_Chandler"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

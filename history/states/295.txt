@@ -1,0 +1,35 @@
+
+state={
+	id=295
+	name="STATE_295"
+
+	history={
+		owner = X55
+		victory_points = {
+			4132 15 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
+			dockyard = 1
+			air_base = 6
+			4132 = {
+				naval_base = 4
+			}
+
+		}
+		add_core_of = RAJ
+		add_core_of = X55
+		add_claim_by = TIG
+	}
+
+	provinces={
+		1144 4090 4132 7207 10118 12037 
+	}
+	manpower=2063380
+	buildings_max_level_factor=1.000
+	state_category=city
+
+	local_supplies=10.0
+}

@@ -1,0 +1,16 @@
+characters={
+	W60_alfred_von_holstein_gottorp={
+		name=W60_alfred_von_holstein_gottorp
+		portraits={
+			civilian={
+				large="GFX_Schleswig_Holstein_Harald_I"
+			}
+		}
+		country_leader={
+			ideology=prussian_const
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+}
