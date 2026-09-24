@@ -4,7 +4,7 @@ state={
 	name="STATE_104"
 
 	history={
-		owner = CUB
+		owner = DOM
 		victory_points = {
 			4641 1 
 		}
@@ -18,8 +18,7 @@ state={
 			}
 
 		}
-		add_core_of = CUB
-		add_claim_by = W02
+		add_core_of = DOM
 	}
 
 	provinces={

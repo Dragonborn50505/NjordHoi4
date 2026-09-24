@@ -20,8 +20,6 @@ state={
 		}
 		add_core_of = BRU
 		add_core_of = W47
-		add_core_of = X73
-		add_claim_by = W02
 	}
 
 	provinces={

@@ -19,7 +19,8 @@ state={
 
 		}
 		add_core_of = W31
-		add_claim_by = W10
+		set_resistance = 40
+		set_compliance = 20
 	}
 
 	provinces={

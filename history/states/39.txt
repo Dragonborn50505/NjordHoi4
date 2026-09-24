@@ -3,8 +3,12 @@ state={
 	id=39
 	name="STATE_39"
 
+	resources = {
+		oil = 2
+	}
+
 	history={
-		owner = X07
+		owner = W66
 		victory_points = {
 			8085 0 
 		}
@@ -18,8 +22,7 @@ state={
 			}
 
 		}
-		add_core_of = W02
-		add_claim_by = W23
+		add_core_of = W66
 	}
 
 	provinces={

@@ -9,7 +9,7 @@ state={
 			10058 0 
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 1
 			industrial_complex = 0
 			arms_factory = 0
 			air_base = 1
@@ -18,7 +18,7 @@ state={
 			}
 
 		}
-		add_core_of = X64
+		add_core_of = W41
 	}
 
 	provinces={
@@ -26,7 +26,7 @@ state={
 	}
 	manpower=6737064
 	buildings_max_level_factor=1.000
-	state_category=megalopolis
+	state_category=town
 
 	local_supplies=10.0
 }

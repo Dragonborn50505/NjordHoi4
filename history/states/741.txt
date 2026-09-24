@@ -33,7 +33,7 @@ state={
 			4137 = {
 				naval_base = 6
 			}
-			9843 = {
+			11822 = {
 				landmark_forbidden_city = {
 					level = 1
 					allowed = {
@@ -43,7 +43,7 @@ state={
 			}
 
 		}
-		add_core_of = X45
+		add_core_of = W41
 	}
 
 	provinces={
@@ -51,7 +51,7 @@ state={
 	}
 	manpower=19746340
 	buildings_max_level_factor=1.000
-	state_category=megalopolis
+	state_category=large_city
 
 	local_supplies=10.0
 }

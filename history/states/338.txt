@@ -18,10 +18,9 @@ state={
 			}
 
 		}
-		add_core_of = ENG
 		add_core_of = HOL
 		add_core_of = X34
-		add_claim_by = W02
+		add_claim_by = IRE
 	}
 
 	provinces={
@@ -29,7 +28,7 @@ state={
 	}
 	manpower=624048
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=large_town
 
 	local_supplies=10.0
 }

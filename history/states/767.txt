@@ -10,18 +10,15 @@ state={
 		}
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 0
-			arms_factory = 0
+			industrial_complex = 2
+			arms_factory = 1
 			air_base = 0
 			10001 = {
 				naval_base = 6
 			}
 
 		}
-		add_core_of = RAJ
 		add_core_of = X39
-		add_claim_by = X64
-		add_claim_by = X87
 	}
 
 	provinces={
@@ -29,7 +26,7 @@ state={
 	}
 	manpower=10099120
 	buildings_max_level_factor=1.000
-	state_category=megalopolis
+	state_category=large_city
 
 	local_supplies=10.0
 }

@@ -4,7 +4,7 @@ state={
 	name="STATE_548"
 
 	history={
-		owner = W02
+		owner = PRE
 		victory_points = {
 			8183 0 
 		}
@@ -18,15 +18,15 @@ state={
 			}
 
 		}
-		add_core_of = W02
+		add_core_of = X19
 	}
 
 	provinces={
 		8183 
 	}
-	manpower=1
+	manpower=431568
 	buildings_max_level_factor=1.000
-	state_category=wasteland
+	state_category=rural
 
 	local_supplies=10.0
 }

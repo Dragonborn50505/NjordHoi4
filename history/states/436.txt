@@ -15,8 +15,7 @@ state={
 			air_base = 0
 
 		}
-		add_core_of = TIG
-		add_claim_by = W07
+		add_core_of = W07
 	}
 
 	provinces={

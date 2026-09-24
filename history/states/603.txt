@@ -16,7 +16,6 @@ state={
 
 		}
 		add_core_of = TEX
-		add_claim_by = W02
 	}
 
 	provinces={

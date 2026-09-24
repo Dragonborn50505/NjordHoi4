@@ -16,8 +16,6 @@ state={
 
 		}
 		add_core_of = W36
-		add_claim_by = SOV
-		add_claim_by = W10
 	}
 
 	provinces={

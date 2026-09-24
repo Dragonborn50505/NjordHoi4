@@ -16,10 +16,6 @@ state={
 
 		}
 		add_core_of = W13
-		add_claim_by = PER
-		add_claim_by = TUR
-		add_claim_by = W10
-		add_claim_by = W23
 	}
 
 	provinces={

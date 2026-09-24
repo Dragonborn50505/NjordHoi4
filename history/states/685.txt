@@ -18,11 +18,7 @@ state={
 			}
 
 		}
-		add_core_of = W18
 		add_core_of = W35
-		add_core_of = W38
-		add_core_of = X25
-		add_claim_by = TIG
 	}
 
 	provinces={

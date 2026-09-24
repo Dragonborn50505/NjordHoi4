@@ -7,7 +7,7 @@ state={
 	history={
 		owner = X73
 		add_core_of = X73
-		add_claim_by = W10
+		add_core_of = BRU
 	}
 
 	provinces={

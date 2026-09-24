@@ -19,9 +19,6 @@ state={
 
 		}
 		add_core_of = W49
-		add_claim_by = W02
-		add_claim_by = W10
-		add_claim_by = X86
 	}
 
 	provinces={

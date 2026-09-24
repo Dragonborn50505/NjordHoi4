@@ -3,6 +3,11 @@ state={
 	id=93
 	name="STATE_93"
 
+	resources = {
+		steel = 4
+		rubber = 2
+	}
+
 	history={
 		owner = COL
 		victory_points = {
@@ -20,8 +25,6 @@ state={
 
 		}
 		add_core_of = COL
-		add_core_of = X22
-		add_claim_by = W02
 	}
 
 	provinces={

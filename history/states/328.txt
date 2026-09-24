@@ -4,7 +4,7 @@ state={
 	name="STATE_328"
 
 	history={
-		owner = W68
+		owner = W50
 		victory_points = {
 			4329 15 
 		}
@@ -19,8 +19,7 @@ state={
 
 		}
 		add_core_of = PNG
-		add_core_of = W68
-		add_claim_by = W10
+		add_core_of = W50
 	}
 
 	provinces={
@@ -28,7 +27,7 @@ state={
 	}
 	manpower=167824
 	buildings_max_level_factor=1.000
-	state_category=large_island
+	state_category=rural
 
 	local_supplies=10.0
 }

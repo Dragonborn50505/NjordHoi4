@@ -3,6 +3,11 @@ state={
 	id=100
 	name="STATE_100"
 
+	resources = {
+		chromium = 3
+		coal = 15
+	}
+
 	history={
 		owner = CSA
 		victory_points = {
@@ -21,7 +26,6 @@ state={
 		}
 		add_core_of = CSA
 		add_core_of = USA
-		add_claim_by = W02
 	}
 
 	provinces={

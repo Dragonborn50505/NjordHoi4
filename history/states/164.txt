@@ -24,7 +24,6 @@ state={
 
 		}
 		add_core_of = GER
-		add_claim_by = X64
 	}
 
 	provinces={
@@ -32,7 +31,7 @@ state={
 	}
 	manpower=6185932
 	buildings_max_level_factor=1.000
-	state_category=megalopolis
+	state_category=metropolis
 
 	local_supplies=10.0
 }

@@ -4,7 +4,7 @@ state={
 	name="STATE_518"
 
 	history={
-		owner = SOV
+		owner = W63
 		victory_points = {
 			3010 1 
 		}
@@ -15,9 +15,9 @@ state={
 			air_base = 0
 
 		}
-		add_core_of = SOV
+		add_core_of = W63
 		add_core_of = W36
-		add_claim_by = W10
+		add_core_of = QUE
 	}
 
 	provinces={
@@ -25,7 +25,7 @@ state={
 	}
 	manpower=461544
 	buildings_max_level_factor=1.000
-	state_category=large_island
+	state_category=rural
 
 	local_supplies=10.0
 }

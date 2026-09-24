@@ -20,8 +20,7 @@ state={
 
 		}
 		add_core_of = MEX
-		add_claim_by = W02
-		add_claim_by = X44
+		add_claim_by = W35
 	}
 
 	provinces={

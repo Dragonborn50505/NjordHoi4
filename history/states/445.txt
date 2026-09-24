@@ -21,13 +21,12 @@ state={
 		}
 		add_core_of = PRE
 		add_core_of = SWE
-		add_claim_by = W02
 	}
 
 	provinces={
 		408 6258 
 	}
-	manpower=57072
+	manpower=157072
 	buildings_max_level_factor=1.000
 	state_category=rural
 

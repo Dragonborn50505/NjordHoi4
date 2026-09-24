@@ -3,6 +3,14 @@ state={
 	id=73
 	name="STATE_73"
 
+	resources = {
+		aluminium = 1
+		tungsten = 8
+		steel = 22
+		chromium = 3
+		coal = 20
+	}
+
 	history={
 		owner = X21
 		victory_points = {
@@ -18,13 +26,7 @@ state={
 			}
 
 		}
-		add_core_of = X06
-		add_core_of = X08
-		add_core_of = X09
-		add_core_of = X11
-		add_core_of = X14
 		add_core_of = X21
-		add_claim_by = W10
 	}
 
 	provinces={
@@ -32,7 +34,7 @@ state={
 	}
 	manpower=178832
 	buildings_max_level_factor=1.000
-	state_category=large_island
+	state_category = large_town
 
 	local_supplies=10.0
 }

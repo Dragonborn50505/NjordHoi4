@@ -3,6 +3,11 @@ state={
 	id=64
 	name="STATE_64"
 
+	resources = {
+		chromium = 8
+		oil = 1
+	}
+
 	history={
 		owner = BRA
 		victory_points = {
@@ -19,7 +24,6 @@ state={
 
 		}
 		add_core_of = BRA
-		add_claim_by = W02
 	}
 
 	provinces={
@@ -27,7 +31,7 @@ state={
 	}
 	manpower=1401488
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category = town
 
 	local_supplies=10.0
 }

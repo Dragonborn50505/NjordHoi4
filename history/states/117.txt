@@ -16,7 +16,8 @@ state={
 
 		}
 		add_core_of = X36
-		add_claim_by = W02
+		add_claim_by = USA
+		add_claim_by = CSA
 	}
 
 	provinces={

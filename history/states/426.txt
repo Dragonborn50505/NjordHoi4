@@ -17,7 +17,6 @@ state={
 		}
 		add_core_of = X93
 		add_claim_by = SOV
-		add_claim_by = TIG
 	}
 
 	provinces={

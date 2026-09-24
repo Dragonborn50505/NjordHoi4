@@ -4,7 +4,7 @@ state={
 	name="STATE_471"
 
 	history={
-		owner = PRE
+		owner = W57
 		victory_points = {
 			1939 0 
 		}
@@ -18,13 +18,13 @@ state={
 			}
 
 		}
-		add_core_of = W02
+		add_core_of = W57
 	}
 
 	provinces={
 		1939 5196 5210 6020 10761 10962 10976 
 	}
-	manpower=4600
+	manpower=974221
 	buildings_max_level_factor=1.000
 	state_category=rural
 

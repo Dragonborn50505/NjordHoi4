@@ -12,15 +12,15 @@ state={
 			infrastructure = 1
 			industrial_complex = 0
 			arms_factory = 0
+			dockyard = 1
 			air_base = 0
 			12144 = {
 				naval_base = 6
 			}
 
 		}
-		add_core_of = MAL
+		add_core_of = SIA
 		add_core_of = X89
-		add_claim_by = W10
 	}
 
 	provinces={

@@ -7,9 +7,7 @@ state={
 	history={
 		owner = W58
 		add_core_of = PNG
-		add_core_of = W24
 		add_core_of = W58
-		add_claim_by = W10
 	}
 
 	provinces={

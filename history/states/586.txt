@@ -20,7 +20,7 @@ state={
 
 		}
 		add_core_of = SAR
-		add_claim_by = W10
+		add_core_of = BRU
 	}
 
 	provinces={

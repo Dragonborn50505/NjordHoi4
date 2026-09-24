@@ -3,6 +3,10 @@ state={
 	id=43
 	name="STATE_43"
 
+	resources = {
+		chromium = 4
+	}
+
 	history={
 		owner = W67
 		victory_points = {
@@ -20,9 +24,6 @@ state={
 		}
 		add_core_of = W67
 		add_claim_by = PER
-		add_claim_by = W02
-		add_claim_by = W13
-		add_claim_by = W23
 	}
 
 	provinces={

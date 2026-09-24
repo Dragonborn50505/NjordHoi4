@@ -17,8 +17,6 @@ state={
 		}
 		add_core_of = ETH
 		add_core_of = W57
-		add_core_of = YEM
-		add_claim_by = TIG
 	}
 
 	provinces={

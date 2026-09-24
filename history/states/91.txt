@@ -3,6 +3,11 @@ state={
 	id=91
 	name="STATE_91"
 
+	resources = {
+		oil = 37
+		coal = 2
+	}
+
 	history={
 		owner = COL
 		victory_points = {
@@ -20,7 +25,6 @@ state={
 
 		}
 		add_core_of = COL
-		add_claim_by = W02
 	}
 
 	provinces={

@@ -16,7 +16,6 @@ state={
 
 		}
 		add_core_of = X86
-		add_claim_by = W02
 	}
 
 	provinces={

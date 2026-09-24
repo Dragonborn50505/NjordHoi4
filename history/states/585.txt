@@ -21,7 +21,6 @@ state={
 		}
 		add_core_of = PHI
 		add_core_of = W05
-		add_claim_by = W10
 	}
 
 	provinces={

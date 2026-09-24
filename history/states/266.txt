@@ -16,7 +16,6 @@ state={
 
 		}
 		add_core_of = W57
-		add_claim_by = W02
 	}
 
 	provinces={

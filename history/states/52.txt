@@ -7,8 +7,6 @@ state={
 	history={
 		owner = BRU
 		add_core_of = BRU
-		add_core_of = X73
-		add_claim_by = W10
 	}
 
 	provinces={

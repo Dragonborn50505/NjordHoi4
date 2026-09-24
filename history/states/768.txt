@@ -9,16 +9,13 @@ state={
 			1317 10 
 		}
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 1
-			arms_factory = 0
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
 			air_base = 6
 
 		}
-		add_core_of = RAJ
 		add_core_of = X39
-		add_core_of = X75
-		add_claim_by = X64
 	}
 
 	provinces={

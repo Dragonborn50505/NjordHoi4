@@ -3,6 +3,10 @@ state={
 	id=46
 	name="STATE_46"
 
+	resources = {
+		oil = 3
+	}
+
 	history={
 		owner = BAN
 		victory_points = {
@@ -16,8 +20,6 @@ state={
 
 		}
 		add_core_of = BAN
-		add_claim_by = RAJ
-		add_claim_by = W02
 	}
 
 	provinces={
@@ -25,7 +27,7 @@ state={
 	}
 	manpower=570944
 	buildings_max_level_factor=1.000
-	state_category=large_island
+	state_category=rural
 
 	local_supplies=10.0
 }

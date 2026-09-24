@@ -3,6 +3,10 @@ state={
 	id=17
 	name="STATE_17"
 
+	resources = {
+		steel = 1
+	}
+
 	history={
 		owner = X07
 		victory_points = {
@@ -19,9 +23,7 @@ state={
 
 		}
 		add_core_of = X07
-		add_claim_by = BUL
-		add_claim_by = W02
-		add_claim_by = X21
+		add_core_of = BUL
 	}
 
 	provinces={
@@ -29,7 +31,7 @@ state={
 	}
 	manpower=670856
 	buildings_max_level_factor=1.000
-	state_category=large_island
+	state_category=rural
 
 	local_supplies=10.0
 }

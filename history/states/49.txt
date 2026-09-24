@@ -3,6 +3,11 @@ state={
 	id=49
 	name="STATE_49"
 
+	resources = {
+		oil = 12
+		rubber = 5
+	}
+
 	history={
 		owner = BRU
 		victory_points = {
@@ -19,7 +24,6 @@ state={
 
 		}
 		add_core_of = BRU
-		add_claim_by = W10
 	}
 
 	provinces={

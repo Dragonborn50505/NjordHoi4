@@ -18,9 +18,8 @@ state={
 			}
 
 		}
-		add_core_of = BRU
 		add_core_of = W54
-		add_claim_by = W10
+		add_core_of = PHI
 	}
 
 	provinces={

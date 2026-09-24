@@ -18,8 +18,7 @@ state={
 			}
 
 		}
-		add_core_of = X98
-		add_claim_by = W10
+		add_core_of = X23
 	}
 
 	provinces={

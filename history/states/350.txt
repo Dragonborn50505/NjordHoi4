@@ -19,7 +19,8 @@ state={
 
 		}
 		add_core_of = HOL
-		add_claim_by = W10
+		add_core_of = PRE
+		add_claim_by = GER
 	}
 
 	provinces={

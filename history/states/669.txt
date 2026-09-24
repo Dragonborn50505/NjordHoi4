@@ -18,13 +18,7 @@ state={
 			}
 
 		}
-		add_core_of = ARM
-		add_core_of = TUR
-		add_core_of = W07
 		add_core_of = W31
-		add_claim_by = SYR
-		add_claim_by = W02
-		add_claim_by = X21
 	}
 
 	provinces={

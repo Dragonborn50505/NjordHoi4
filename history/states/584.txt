@@ -20,8 +20,8 @@ state={
 		}
 		add_core_of = X07
 		add_core_of = X27
-		add_claim_by = W10
-		add_claim_by = X21
+		set_resistance = 30
+		set_compliance = 20
 	}
 
 	provinces={

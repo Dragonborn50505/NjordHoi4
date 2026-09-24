@@ -19,7 +19,7 @@ state={
 
 		}
 		add_core_of = SPR
-		add_claim_by = TIG
+		add_claim_by = ITA
 	}
 
 	provinces={

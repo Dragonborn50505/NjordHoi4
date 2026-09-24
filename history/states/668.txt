@@ -15,10 +15,7 @@ state={
 			air_base = 0
 
 		}
-		add_core_of = ARM
-		add_claim_by = W02
-		add_claim_by = W07
-		add_claim_by = W31
+		add_core_of = W31
 	}
 
 	provinces={

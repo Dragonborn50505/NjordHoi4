@@ -4,7 +4,7 @@ state={
 	name="STATE_174"
 
 	history={
-		owner = X40
+		owner = W53
 		victory_points = {
 			4247 15 
 		}
@@ -18,8 +18,7 @@ state={
 			}
 
 		}
-		add_core_of = VAN
-		add_claim_by = W10
+		add_core_of = W53
 	}
 
 	provinces={
@@ -27,7 +26,7 @@ state={
 	}
 	manpower=27148
 	buildings_max_level_factor=1.000
-	state_category=large_island
+	state_category=rural
 
 	local_supplies=10.0
 }

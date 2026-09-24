@@ -17,8 +17,6 @@ state={
 		}
 		add_core_of = ETH
 		add_core_of = W57
-		add_core_of = YEM
-		add_claim_by = X64
 	}
 
 	provinces={
@@ -26,7 +24,7 @@ state={
 	}
 	manpower=7370600
 	buildings_max_level_factor=1.000
-	state_category=megalopolis
+	state_category=rural
 
 	local_supplies=10.0
 }

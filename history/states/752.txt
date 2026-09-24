@@ -12,6 +12,7 @@ state={
 			infrastructure = 2
 			industrial_complex = 1
 			arms_factory = 0
+			dockyard = 1
 			air_base = 5
 			1330 = {
 				naval_base = 6
@@ -19,11 +20,6 @@ state={
 
 		}
 		add_core_of = BRM
-		add_core_of = X17
-		add_core_of = X90
-		add_claim_by = RAJ
-		add_claim_by = W02
-		add_claim_by = W10
 	}
 
 	provinces={

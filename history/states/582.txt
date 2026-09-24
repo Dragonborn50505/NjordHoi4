@@ -18,7 +18,11 @@ state={
 			}
 
 		}
-		add_core_of = W10
+		add_core_of = IRE
+		add_core_of = X34
+		add_core_of = X07
+		set_resistance = 30
+		set_compliance = 20
 	}
 
 	provinces={

@@ -4,7 +4,7 @@ state={
 	name="STATE_618"
 
 	history={
-		owner = W19
+		owner = PAK
 		victory_points = {
 			7497 1 
 		}
@@ -15,9 +15,7 @@ state={
 			air_base = 0
 
 		}
-		add_core_of = RAJ
-		add_core_of = W19
-		add_claim_by = W02
+		add_core_of = PAK
 	}
 
 	provinces={

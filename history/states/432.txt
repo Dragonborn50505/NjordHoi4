@@ -21,7 +21,6 @@ state={
 		}
 		add_core_of = CRI
 		add_core_of = X93
-		add_claim_by = W02
 	}
 
 	provinces={

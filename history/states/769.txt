@@ -9,7 +9,8 @@ state={
 			4344 10 
 		}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
+			dockyard = 1
 			industrial_complex = 2
 			arms_factory = 0
 			air_base = 10
@@ -19,12 +20,7 @@ state={
 
 		}
 		add_core_of = MYS
-		add_core_of = RAJ
 		add_core_of = W21
-		add_claim_by = W02
-		add_claim_by = W16
-		add_claim_by = X64
-		add_claim_by = X75
 	}
 
 	provinces={
@@ -32,7 +28,7 @@ state={
 	}
 	manpower=7741168
 	buildings_max_level_factor=1.000
-	state_category=megalopolis
+	state_category=city
 
 	local_supplies=10.0
 }

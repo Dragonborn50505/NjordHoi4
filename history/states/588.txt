@@ -4,7 +4,7 @@ state={
 	name="STATE_588"
 
 	history={
-		owner = W07
+		owner = W31
 		victory_points = {
 			12376 2 
 		}
@@ -19,8 +19,7 @@ state={
 
 		}
 		add_core_of = ARM
-		add_core_of = W07
-		add_claim_by = TIG
+		add_claim_by = W07
 	}
 
 	provinces={
@@ -28,7 +27,7 @@ state={
 	}
 	manpower=1849244
 	buildings_max_level_factor=1.000
-	state_category=large_island
+	state_category=large_town
 
 	local_supplies=10.0
 }

@@ -18,10 +18,7 @@ state={
 			}
 
 		}
-		add_core_of = MAL
 		add_core_of = SIA
-		add_core_of = X89
-		add_claim_by = W02
 	}
 
 	provinces={

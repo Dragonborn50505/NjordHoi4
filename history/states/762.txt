@@ -18,12 +18,7 @@ state={
 			}
 
 		}
-		add_core_of = BRM
-		add_core_of = X17
-		add_core_of = X90
-		add_claim_by = RAJ
-		add_claim_by = W02
-		add_claim_by = W10
+		add_core_of = SIA
 	}
 
 	provinces={

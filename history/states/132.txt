@@ -13,7 +13,7 @@ state={
 			industrial_complex = 3
 			arms_factory = 1
 			air_base = 10
-			9523 = {
+			11506 = {
 				landmark_eiffel_tower = {
 					level = 1
 					allowed = {
@@ -24,7 +24,6 @@ state={
 
 		}
 		add_core_of = FRA
-		add_claim_by = TIG
 	}
 
 	provinces={

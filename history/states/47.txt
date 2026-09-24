@@ -3,6 +3,11 @@ state={
 	id=47
 	name="STATE_47"
 
+	resources = {
+		steel = 25
+		coal = 20
+	}
+
 	history={
 		owner = BAN
 		victory_points = {
@@ -19,9 +24,6 @@ state={
 
 		}
 		add_core_of = BAN
-		add_core_of = W19
-		add_claim_by = RAJ
-		add_claim_by = X45
 	}
 
 	provinces={
@@ -29,7 +31,7 @@ state={
 	}
 	manpower=10486700
 	buildings_max_level_factor=1.000
-	state_category=megalopolis
+	state_category=metropolis
 
 	local_supplies=10.0
 }

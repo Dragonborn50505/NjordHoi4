@@ -27,7 +27,6 @@ state={
 
 		}
 		add_core_of = JAP
-		add_claim_by = X64
 	}
 
 	provinces={

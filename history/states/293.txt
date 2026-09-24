@@ -19,11 +19,8 @@ state={
 			}
 
 		}
-		add_core_of = INS
 		add_core_of = X53
 		add_core_of = X72
-		add_core_of = X73
-		add_claim_by = X64
 	}
 
 	provinces={
@@ -31,7 +28,7 @@ state={
 	}
 	manpower=7399392
 	buildings_max_level_factor=1.000
-	state_category=megalopolis
+	state_category=city
 
 	local_supplies=10.0
 }

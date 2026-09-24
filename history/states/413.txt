@@ -15,11 +15,8 @@ state={
 			air_base = 7
 
 		}
-		add_core_of = MON
-		add_core_of = W41
 		add_core_of = X18
 		add_core_of = X93
-		add_claim_by = TIG
 	}
 
 	provinces={

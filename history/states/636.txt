@@ -21,7 +21,7 @@ state={
 		}
 		add_core_of = USA
 		add_core_of = X00
-		add_claim_by = TIG
+		add_claim_by = CSA
 	}
 
 	provinces={

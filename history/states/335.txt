@@ -21,7 +21,6 @@ state={
 		}
 		add_core_of = HOL
 		add_core_of = WLS
-		add_claim_by = TIG
 	}
 
 	provinces={

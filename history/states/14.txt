@@ -3,6 +3,12 @@ state={
 	id=14
 	name="STATE_14"
 
+	resources = {
+		steel = 1
+		chromium = 4
+		coal = 1
+	}
+
 	history={
 		owner = X07
 		victory_points = {
@@ -16,7 +22,7 @@ state={
 
 		}
 		add_core_of = X07
-		add_claim_by = TIG
+		add_core_of = HUN
 	}
 
 	provinces={

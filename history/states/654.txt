@@ -5,9 +5,9 @@ state={
 	impassable = yes
 
 	history={
-		owner = W24
-		add_core_of = W24
-		add_claim_by = W10
+		owner = W50
+		add_core_of = W50
+		add_core_of = PNG
 	}
 
 	provinces={

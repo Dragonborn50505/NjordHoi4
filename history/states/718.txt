@@ -9,9 +9,9 @@ state={
 			4525 10 
 		}
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 7
-			arms_factory = 2
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 0
 			air_base = 7
 			2028 = {
 				landmark_great_wall_section = {
@@ -33,8 +33,6 @@ state={
 		}
 		add_core_of = W41
 		add_core_of = X51
-		add_claim_by = MON
-		add_claim_by = X64
 	}
 
 	provinces={

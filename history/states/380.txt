@@ -18,9 +18,7 @@ state={
 			}
 
 		}
-		add_core_of = COG
 		add_core_of = W45
-		add_claim_by = X64
 	}
 
 	provinces={

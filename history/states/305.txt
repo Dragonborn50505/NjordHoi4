@@ -4,7 +4,7 @@ state={
 	name="STATE_305"
 
 	history={
-		owner = X64
+		owner = W61
 		victory_points = {
 			2050 15 
 		}
@@ -19,8 +19,7 @@ state={
 			}
 
 		}
-		add_core_of = X64
-		add_claim_by = TIG
+		add_core_of = W61
 	}
 
 	provinces={

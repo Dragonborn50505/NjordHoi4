@@ -6,12 +6,7 @@ state={
 
 	history={
 		owner = X21
-		add_core_of = W12
-		add_core_of = X10
-		add_core_of = X12
-		add_core_of = X16
 		add_core_of = X21
-		add_claim_by = W10
 	}
 
 	provinces={

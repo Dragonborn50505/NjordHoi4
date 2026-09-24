@@ -15,9 +15,7 @@ state={
 			air_base = 10
 
 		}
-		add_core_of = LAO
 		add_core_of = X65
-		add_claim_by = W02
 	}
 
 	provinces={

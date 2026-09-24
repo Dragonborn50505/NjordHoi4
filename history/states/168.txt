@@ -25,7 +25,6 @@ state={
 		}
 		add_core_of = GER
 		add_core_of = PRE
-		add_claim_by = TIG
 	}
 
 	provinces={

@@ -4,7 +4,7 @@ state={
 	name="STATE_701"
 
 	history={
-		owner = YEM
+		owner = X80
 		victory_points = {
 			5081 1 
 		}
@@ -15,8 +15,7 @@ state={
 			air_base = 0
 
 		}
-		add_core_of = YEM
-		add_claim_by = W10
+		add_core_of = X80
 	}
 
 	provinces={

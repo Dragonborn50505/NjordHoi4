@@ -21,7 +21,7 @@ state={
 		}
 		add_core_of = FOR
 		add_claim_by = JAP
-		add_claim_by = TIG
+		add_claim_by = W41
 	}
 
 	provinces={

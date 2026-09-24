@@ -16,9 +16,7 @@ state={
 
 		}
 		add_core_of = FRA
-		add_core_of = X62
 		add_claim_by = GER
-		add_claim_by = W02
 	}
 
 	provinces={

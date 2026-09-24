@@ -18,9 +18,7 @@ state={
 			}
 
 		}
-		add_core_of = NOR
 		add_core_of = PRE
-		add_claim_by = W10
 	}
 
 	provinces={

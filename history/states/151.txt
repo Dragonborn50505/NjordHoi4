@@ -16,9 +16,6 @@ state={
 
 		}
 		add_core_of = GER
-		add_core_of = X37
-		add_claim_by = TIG
-		add_claim_by = X64
 	}
 
 	provinces={

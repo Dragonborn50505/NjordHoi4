@@ -20,8 +20,6 @@ state={
 
 		}
 		add_core_of = SIN
-		add_claim_by = RAJ
-		add_claim_by = TIG
 	}
 
 	provinces={

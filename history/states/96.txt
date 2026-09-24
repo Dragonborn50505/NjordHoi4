@@ -3,8 +3,12 @@ state={
 	id=96
 	name="STATE_96"
 
+	resources = {
+		rubber = 1
+	}
+
 	history={
-		owner = COG
+		owner = W45
 		victory_points = {
 			10968 15 
 		}
@@ -19,8 +23,7 @@ state={
 			}
 
 		}
-		add_core_of = COG
-		add_claim_by = X64
+		add_core_of = W45
 	}
 
 	provinces={

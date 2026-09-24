@@ -16,8 +16,6 @@ state={
 
 		}
 		add_core_of = FRA
-		add_claim_by = SPR
-		add_claim_by = TIG
 	}
 
 	provinces={
@@ -25,7 +23,7 @@ state={
 	}
 	manpower=1854924
 	buildings_max_level_factor=1.000
-	state_category=large_island
+	state_category=town
 
 	local_supplies=10.0
 }

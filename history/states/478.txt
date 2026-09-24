@@ -16,8 +16,6 @@ state={
 
 		}
 		add_core_of = QUE
-		add_core_of = W11
-		add_claim_by = W02
 	}
 
 	provinces={

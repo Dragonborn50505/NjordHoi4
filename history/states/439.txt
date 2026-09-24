@@ -15,11 +15,7 @@ state={
 			air_base = 6
 
 		}
-		add_core_of = X77
 		add_core_of = X94
-		add_claim_by = RAJ
-		add_claim_by = W13
-		add_claim_by = X64
 	}
 
 	provinces={

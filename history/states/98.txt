@@ -3,8 +3,13 @@ state={
 	id=98
 	name="STATE_98"
 
+	resources = {
+		steel = 21
+		chromium = 10
+	}
+
 	history={
-		owner = COG
+		owner = W45
 		victory_points = {
 			191 0 
 		}
@@ -15,7 +20,7 @@ state={
 			air_base = 0
 
 		}
-		add_core_of = COG
+		add_core_of = W45
 	}
 
 	provinces={
