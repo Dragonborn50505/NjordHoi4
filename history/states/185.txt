@@ -3,6 +3,11 @@ state={
 	id=185
 	name="STATE_185"
 
+	resources = {
+		aluminium = 8
+		coal = 5
+	}
+
 	history={
 		owner = IRE
 		victory_points = {

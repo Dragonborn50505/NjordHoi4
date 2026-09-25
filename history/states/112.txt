@@ -3,6 +3,11 @@ state={
 	id=112
 	name="STATE_112"
 
+	resources = {
+		chromium = 20
+		steel = 3
+	}
+
 	history={
 		owner = CUB
 		victory_points = {

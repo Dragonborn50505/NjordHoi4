@@ -3,6 +3,12 @@ state={
 	id=150
 	name="STATE_150"
 
+	resources = {
+		aluminium = 46
+		steel = 21
+		coal = 30
+	}
+
 	history={
 		owner = GER
 		victory_points = {
@@ -13,7 +19,7 @@ state={
 			industrial_complex = 6
 			arms_factory = 3
 			air_base = 3
-
+			synthetic_refinery = 1
 		}
 		add_core_of = GER
 		add_core_of = PRE
