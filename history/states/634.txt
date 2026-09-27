@@ -3,6 +3,12 @@ state={
 	id=634
 	name="STATE_634"
 
+	resources = {
+		steel = 16
+		aluminium = 45
+		chromium = 2
+	}
+
 	history={
 		owner = USA
 		victory_points = {
@@ -26,11 +32,6 @@ state={
 		}
 		add_core_of = USA
 		add_claim_by = CSA
-
-
-
-
-		
 	}
 
 	provinces={

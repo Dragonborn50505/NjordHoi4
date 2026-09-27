@@ -3,6 +3,12 @@ state={
 	id=491
 	name="STATE_491"
 
+	resources = {
+		steel = 10
+		aluminium = 10
+		chromium = 2
+	}
+
 	history={
 		owner = SOV
 		victory_points = {

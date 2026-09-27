@@ -3,6 +3,12 @@ state={
 	id=595
 	name="STATE_595"
 
+	resources = {
+		steel = 8
+		tungsten = 2
+		chromium = 2
+	}
+
 	history={
 		owner = TEX
 		victory_points = {

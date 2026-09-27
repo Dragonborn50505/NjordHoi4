@@ -3,6 +3,10 @@ state={
 	id=307
 	name="STATE_307"
 
+	resources = {
+		tungsten = 4
+	}
+
 	history={
 		owner = X68
 		victory_points = {

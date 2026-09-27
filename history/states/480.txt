@@ -3,6 +3,13 @@ state={
 	id=480
 	name="STATE_480"
 
+	resources = {
+		steel = 4
+		tungsten = 1
+		aluminium = 45
+		chromium = 5
+	}
+
 	history={
 		owner = QUE
 		victory_points = {

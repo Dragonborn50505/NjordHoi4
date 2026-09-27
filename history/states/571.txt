@@ -3,6 +3,10 @@ state={
 	id=571
 	name="STATE_571"
 
+	resources = {
+		oil = 1
+	}
+
 	history={
 		owner = SPR
 		victory_points = {

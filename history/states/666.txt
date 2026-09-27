@@ -3,6 +3,10 @@ state={
 	id=666
 	name="STATE_666"
 
+	resources = {
+		coal = 10
+	}
+
 	history={
 		owner = W31
 		victory_points = {

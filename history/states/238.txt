@@ -3,6 +3,10 @@ state={
 	id=238
 	name="STATE_238"
 
+	resources = {
+		oil = 1
+	}
+
 	history={
 		owner = ITA
 		victory_points = {

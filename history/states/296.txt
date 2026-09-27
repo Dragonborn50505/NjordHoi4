@@ -3,6 +3,13 @@ state={
 	id=296
 	name="STATE_296"
 
+	resources = {
+		steel = 20
+		tungsten = 1
+		aluminium = 5
+		coal = 10
+	}
+
 	history={
 		owner = KOR
 		victory_points = {

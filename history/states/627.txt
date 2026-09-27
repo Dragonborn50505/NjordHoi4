@@ -3,6 +3,10 @@ state={
 	id=627
 	name="STATE_627"
 
+	resources = {
+		oil = 15
+	}
+
 	history={
 		owner = TUR
 		victory_points = {
@@ -17,10 +21,6 @@ state={
 		}
 		add_core_of = TUR
 		add_claim_by = SOV
-
-
-
-		
 	}
 
 	provinces={

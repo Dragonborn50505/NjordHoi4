@@ -3,6 +3,10 @@ state={
 	id=584
 	name="STATE_584"
 
+	resources = {
+		steel = 1
+	}
+
 	history={
 		owner = SPR
 		victory_points = {
@@ -20,8 +24,6 @@ state={
 		}
 		add_core_of = X07
 		add_core_of = X27
-		set_resistance = 30
-		set_compliance = 20
 	}
 
 	provinces={

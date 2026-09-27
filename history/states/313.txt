@@ -2,6 +2,12 @@
 state={
 	id=313
 	name="STATE_313"
+	
+	resources = {
+		steel = 2
+		oil = 20
+		tungsten = 15
+	}
 
 	history={
 		owner = MEX

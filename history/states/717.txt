@@ -3,6 +3,14 @@ state={
 	id=717
 	name="STATE_717"
 
+	resources = {
+		steel = 45
+		coal = 20
+		chromium = 4
+		aluminium = 10
+		oil = 4
+	}
+
 	history={
 		owner = W41
 		victory_points = {

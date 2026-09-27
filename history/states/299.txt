@@ -3,6 +3,11 @@ state={
 	id=299
 	name="STATE_299"
 
+	resources = {
+		tungsten = 4
+		aluminium = 10
+	}
+
 	history={
 		owner = KOR
 		victory_points = {

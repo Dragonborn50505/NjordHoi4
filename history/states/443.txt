@@ -4,7 +4,7 @@ state={
 	name="STATE_443"
 
 	resources = {
-		steel = 3
+		steel = 8
 		coal = 4
 	}
 
@@ -15,7 +15,8 @@ state={
 		}
 		buildings = {
 			infrastructure = 1
-			industrial_complex = 0
+			industrial_complex = 2
+			dockyard = 2
 			arms_factory = 1
 			air_base = 0
 			11151 = {

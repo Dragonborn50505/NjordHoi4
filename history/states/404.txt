@@ -3,6 +3,12 @@ state={
 	id=404
 	name="STATE_404"
 
+	resources = {
+		oil = 2
+		tungsten = 108
+		steel = 14
+	}
+
 	history={
 		owner = PRU
 		victory_points = {

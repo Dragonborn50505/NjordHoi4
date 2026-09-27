@@ -3,15 +3,23 @@ state={
 	id=442
 	name="STATE_442"
 
+	resources = {
+		aluminium = 30
+		tungsten = 15
+		chromium = 10
+		steel = 5
+	}
+
 	history={
 		owner = PRE
 		victory_points = {
 			122 1 
 		}
 		buildings = {
-			infrastructure = 1
-			industrial_complex = 1
-			arms_factory = 0
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
+			dockyard = 2
 			air_base = 0
 			6176 = {
 				naval_base = 8
