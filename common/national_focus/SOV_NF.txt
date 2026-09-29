@@ -16,7 +16,6 @@ focus_tree = {
 	shared_focus = aviation_effort
 	shared_focus = naval_effort
 	shared_focus = industrial_effort
-	shared_focus = political_effort
 
 	focus = {
 		id = reclaim_coresSOV
@@ -24,7 +23,7 @@ focus_tree = {
 		text = reclaim_cores
 		x = 28
 		y = 0
-		cost = 10
+		cost = 3
 		available = {
 			is_subject = no
 		}
@@ -67,7 +66,7 @@ focus_tree = {
 		}
 		x = 28
 		y = 1
-		cost = 10
+		cost = 3
 		available = {
 			NOT = { is_in_faction_with = TUR }
 			NOT = { has_war_with = TUR }
@@ -136,7 +135,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = raise_matterSOVTUR
-		cost = 10
+		cost = 3
 		available = {
 			NOT = { is_in_faction_with = TUR }
 			NOT = { has_war_with = TUR }
@@ -290,7 +289,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = territory_or_warSOVTUR
-		cost = 4
+		cost = 3
 		available = {
 			NOT = { is_in_faction_with = TUR }
 			has_war = no
@@ -434,6 +433,173 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 100
+		}
+	}
+	
+	focus = {
+		id = murderturk
+		icon = GFX_SOV_strengthen_the_mobilization_plan_ccp_2d_sov_compatibility
+		text = "all turks must be eradicated"
+		prerequisite = { focus = declare_warSOVTUR }
+		x = -2
+		y = 1
+		relative_position_id = declare_warSOVTUR
+		cost = 0
+		available = {
+			has_war_with = TUR
+		}
+		completion_reward = {
+			declare_war_on = {
+                target = W13
+                type = annex_everything
+            }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	focus = {
+		id = the_colonial_question
+		icon = GFX_SOV_aristocratic_investments_ccp_2d_sov_compatibility
+		text = "the greenland administration issue"
+		x = 25
+		y = 0
+		cost = 10
+		available = {
+			is_subject = no
+		}
+		select_effect = {
+		}
+
+		completion_reward = {
+		W36 = {
+            declare_war_on = {
+                target = W63
+                type = annex_everything
+            }
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				date < 1939.1.1
+			}
+		}
+	}
+	}
+	
+	focus = {
+		id = the_colonial_question_a1
+		icon = GFX_focus_SOV_reinforce_northern_naval_bases
+		text = "the north secured"
+		prerequisite = { focus = the_colonial_question }
+		mutually_exclusive = { focus = the_colonial_question_a2 }
+		bypass = {is_in_faction_with = IRE}
+		x = -1
+		y = 1
+		relative_position_id = the_colonial_question
+		cost = 10
+		available = {
+			NOT = { country_exists = W36 }
+		}
+		select_effect = {
+		}
+
+		completion_reward = {
+			add_stability = 0.5
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				date < 1939.1.1
+			}
+		}
+	}
+	focus = {
+		id = the_colonial_question_a2
+		icon = GFX_focus_SOV_reinforce_northern_naval_bases
+		text = "our suzerainity questioned"
+		prerequisite = { focus = the_colonial_question }
+		mutually_exclusive = { focus = the_colonial_question_a1 }
+		x = 1
+		y = 1
+		relative_position_id = the_colonial_question
+		cost = 10
+		available = {
+			NOT = { country_exists = W63 }
+		}
+		select_effect = {
+		}
+
+		completion_reward = {
+			add_stability = -0.5
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				date < 1939.1.1
+			}
+		}
+	}
+	
+	
+	focus = {
+		id = consolidateum
+		icon = GFX_focus_SIA_rice_husk_steam_turbines
+		text = "consolidate the northern generators"
+		prerequisite = { focus = the_colonial_question_a1 }
+		x = 0
+		y = 1
+		relative_position_id = the_colonial_question_a1
+		cost = 10
+		available = {
+			NOT = { country_exists = W36 }
+		}
+		select_effect = {
+		}
+
+		completion_reward = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 10
+			}
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				date < 1939.1.1
+			}
+		}
+	}
+	
+	focus = {
+		id = fortf
+		icon = GFX_focus_ARG_establish_the_free_association
+		text = "dig trenches against the warmlanders"
+		prerequisite = {focus = consolidateum focus = the_colonial_question_a2}
+		
+		x = -1
+		y = 1
+		relative_position_id = consolidateum
+		cost = 10
+		available = {
+			is_subject = no
+		}
+		select_effect = {
+		}
+
+		completion_reward = {
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				date < 1939.1.1
+			}
 		}
 	}
 
