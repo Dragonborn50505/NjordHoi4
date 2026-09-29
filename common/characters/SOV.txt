@@ -1120,16 +1120,24 @@ characters={
 	}
 
 	SOV_nikita_putyatin={
-		name=SOV_nikita_putyatin
+		name="the captain"
 		portraits={
 			civilian={
-				large="gfx/leaders/POL/Portrait_POL_Wincenty_Witos.dds"
+				large="gfx/leaders/a.dds"
 			}
 		}
 		country_leader={
 			ideology=conservatism
 			expire="1965.1.1.1"
 			id=-1
+		}
+		corps_commander={
+			skill=2
+			attack_skill=3
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
 		}
 	}
 
