@@ -77,11 +77,12 @@ set_politics = {
 }
 
 set_popularities = {
-	absolutist = 5
-	communism = 4
-	democratic = 88
-	fascism = 2
-	neutrality = 1
+	absolutist = 52
+	communism = 8
+	democratic = 22
+	fascism = 3
+	neutrality = 4
+	radical = 11
 }
 
 give_guarantee = SPR
@@ -192,6 +193,14 @@ add_ideas = {
 	civilian_economy
 	export_focus
 	culture_kirgiz
+	CHI_political_corruption_in_the_administration
+	CHI_inflation_levels_3
+	CHI_heavily_neglected_countryside
+	CHI_illicit_trading_1
+	CHI_corruption_in_the_armed_forces
+	CHI_overbloated_military
+	CHI_resistance_sentiment_1
+	CHI_a_new_chinese_century
 }
 set_stability = 0.60
 set_war_support = 0.60

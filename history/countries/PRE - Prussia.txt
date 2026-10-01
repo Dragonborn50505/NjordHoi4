@@ -2,6 +2,7 @@
 set_research_slots = 3
 add_named_threat = { threat = 2.7043 name = infamy }
 
+
 oob = "PRE_OOB"
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -259,9 +260,137 @@ add_ideas = {
 	civilian_economy
 	export_focus
 	culture_north_german
+	PRE_political_disunity_1_dynamic_modifier
+	PRE_growing_fascist_militias_modifier
+	PRE_memories_of_october
 }
+
+add_dynamic_modifier = {
+	modifier = PRE_army_dynamic_modifier
+}
+set_variable = { PRE_army_dynamic_modifier_mobilization_speed = -0.25 }
+set_variable = { PRE_army_dynamic_modifier_required_garrison_factor = -0.33 }
+set_variable = { PRE_army_dynamic_modifier_army_attack_against_major_factor = -0.1 }
+set_variable = { PRE_army_dynamic_modifier_army_morale_factor = -0.15 }
+set_variable = { PRE_army_dynamic_modifier_experience_gain_army_factor = -0.25 }
+set_variable = { PRE_army_dynamic_modifier_land_doctrine_cost_factor = 0.1 }
+set_variable = { PRE_army_dynamic_modifier_mobilization_laws_cost_factor = 0.5 }
+set_variable = { PRE_army_dynamic_modifier_political_power_gain = 0.1 }
+set_variable = { PRE_army_dynamic_modifier_training_time_factor = 0.2 }
+set_variable = { PRE_army_dynamic_modifier_experience_gain_army_unit_factor = 0 }
+set_variable = { PRE_army_dynamic_modifier_max_training = 0 }
+set_variable = { PRE_army_dynamic_modifier_field_officer_promotion_penalty = 0 }
+set_variable = { PRE_army_dynamic_modifier_acclimatization_cold_climate_gain_factor = 0 }
+set_variable = { PRE_army_dynamic_modifier_acclimatization_hot_climate_gain_factor = 0 }
+set_variable = { PRE_army_dynamic_modifier_supply_consumption_factor = 0 }
+set_variable = { PRE_army_dynamic_modifier_out_of_supply_factor = 0 }
+set_variable = { PRE_army_dynamic_modifier_recon_factor = 0 }
+set_variable = { PRE_army_dynamic_modifier_initiative_factor = 0 }
+set_variable = { PRE_army_dynamic_modifier_air_superiority_bonus_in_combat = 0 }
+set_variable = { PRE_army_dynamic_modifier_army_bonus_air_superiority_factor = 0 }
+set_variable = { PRE_army_dynamic_modifier_coordination_bonus = 0 }
+set_variable = { PRE_army_dynamic_modifier_army_org_regain = 0 }
+set_variable = { PRE_army_dynamic_modifier_army_artillery_attack_factor = 0 }
+set_variable = { PRE_army_dynamic_modifier_army_artillery_defence_factor = 0 }
+set_variable = { PRE_army_dynamic_modifier_no_supply_grace = 0 }
+set_variable = { PRE_army_dynamic_modifier_land_equipment_upgrade_xp_cost = 0 }
+
+add_dynamic_modifier = {
+	modifier = PRE_navy_dynamic_modifier
+}
+set_variable = { PRE_navy_dynamic_modifier_experience_gain_navy = 0.05 }
+set_variable = { PRE_navy_dynamic_modifier_screening_efficiency = 0.1 }
+set_variable = { PRE_navy_dynamic_modifier_navy_max_range_factor = 0.1 }
+set_variable = { PRE_navy_dynamic_modifier_strike_force_movement_org_loss = 0 }
+set_variable = { PRE_navy_dynamic_modifier_naval_has_potf_in_combat_attack = 0 }
+set_variable = { PRE_navy_dynamic_modifier_naval_morale_factor = 0 }
+set_variable = { PRE_navy_dynamic_modifier_positioning = 0 }
+set_variable = { PRE_navy_dynamic_modifier_navy_screen_attack_factor = 0 }
+set_variable = { PRE_navy_dynamic_modifier_navy_screen_defence_factor = 0 }
+set_variable = { PRE_navy_dynamic_modifier_navy_org_factor = 0 }
+set_variable = { PRE_navy_dynamic_modifier_critical_receive_chance = 0 }
+set_variable = { PRE_navy_dynamic_modifier_experience_gain_navy_unit_factor = 0 }
+set_variable = { PRE_navy_dynamic_modifier_naval_hit_chance = 0 }
+set_variable = { PRE_navy_dynamic_modifier_naval_critical_score_chance_factor = 0 }
+set_variable = { PRE_navy_dynamic_modifier_navy_capital_ship_attack_factor = 0 }
+set_variable = { PRE_navy_dynamic_modifier_navy_capital_ship_defence_factor = 0 }
+set_variable = { PRE_navy_dynamic_modifier_ships_at_battle_start = 0 }
+set_variable = { PRE_navy_dynamic_modifier_navy_weather_penalty = 0 }
+set_variable = { PRE_navy_dynamic_modifier_fighter_sortie_efficiency = 0 }
+set_variable = { PRE_navy_dynamic_modifier_carrier_night_traffic = 0 }
+set_variable = { PRE_navy_dynamic_modifier_convoy_escort_efficiency = 0 }
+set_variable = { PRE_navy_dynamic_modifier_convoy_retreat_speed = 0 }
+set_variable = { PRE_navy_dynamic_modifier_naval_equipment_upgrade_xp_cost = 0 }
+
+add_dynamic_modifier = {
+	modifier = PRE_airforce_dynamic_modifier
+}
+set_variable = { PRE_airforce_dynamic_modifier_air_interception_detect_factor = 0.1 }
+set_variable = { PRE_airforce_dynamic_modifier_air_weather_penalty = -0.1 }
+set_variable = { PRE_airforce_dynamic_modifier_naval_strike_targetting_factor = 0 }
+set_variable = { PRE_airforce_dynamic_modifier_air_nav_efficiency = 0 }
+set_variable = { PRE_airforce_dynamic_modifier_army_bonus_air_superiority_factor = 0 }
+set_variable = { PRE_airforce_dynamic_modifier_air_superiority_detect_factor = 0 }
+set_variable = { PRE_airforce_dynamic_modifier_air_mission_xp_gain_factor = 0 }
+set_variable = { PRE_airforce_dynamic_modifier_air_accidents_factor = 0 }
+set_variable = { PRE_airforce_dynamic_modifier_air_bombing_targetting = 0 }
+set_variable = { PRE_airforce_dynamic_modifier_ace_effectiveness_factor = 0 }
+set_variable = { PRE_airforce_dynamic_modifier_air_ace_bonuses_factor = 0 }
+set_variable = { PRE_airforce_dynamic_modifier_air_agility_factor = 0 }
+set_variable = { PRE_airforce_dynamic_modifier_air_close_air_support_org_damage_factor = 0 }
+set_variable = { PRE_airforce_dynamic_modifier_air_defence_factor = 0 }
+set_variable = { PRE_airforce_dynamic_modifier_air_equipment_upgrade_xp_cost = 0 }
+
+add_dynamic_modifier = {
+	modifier = PRE_maritime_industry_dynamic_modifier
+}
+
+set_variable = { PRE_maritime_industry_dynamic_modifier_industrial_capacity_dockyard = 0.1 }
+set_variable = { PRE_maritime_industry_dynamic_modifier_repair_speed_factor = 0.15 }
+set_variable = { PRE_maritime_industry_dynamic_modifier_refit_ic_cost = 0.1 }
+set_variable = { PRE_maritime_industry_dynamic_modifier_cic_construction_boost = 0.05 }
+set_variable = { PRE_maritime_industry_dynamic_modifier_trade_opinion_factor = -0.25 }
+set_variable = { PRE_maritime_industry_dynamic_modifier_min_export = 0.1 }
+set_variable = { PRE_maritime_industry_dynamic_modifier_local_resources_factor = -0.1 }
+set_variable = { PRE_maritime_industry_dynamic_modifier_subjects_autonomy_gain = 0 }
+set_variable = { PRE_maritime_industry_dynamic_modifier_consumer_goods_factor = 0 }
+set_variable = { PRE_maritime_industry_dynamic_modifier_experience_gain_navy = 0 }
+set_variable = { PRE_maritime_industry_dynamic_modifier_production_oil_factor = 0 }
+set_variable = { PRE_maritime_industry_dynamic_modifier_army_fuel_capacity_factor = 0 }
+set_variable = { PRE_maritime_industry_dynamic_modifier_naval_attrition = 0 }
+set_variable = { PRE_maritime_industry_dynamic_modifier_weekly_convoys_war_support = 0 }
+
+add_dynamic_modifier = {
+	modifier = PRE_land_military_industrialization_dynamic_modifier
+}
+
+set_variable = { PRE_land_military_industrialization_dynamic_modifier_industrial_capacity_factory = -0.25 }
+set_variable = { PRE_land_military_industrialization_dynamic_modifier_line_change_production_efficiency_factor = -0.1 }
+set_variable = { PRE_land_military_industrialization_dynamic_modifier_consumer_goods_factor = 0.2 }
+set_variable = { PRE_land_military_industrialization_dynamic_modifier_industry_air_damage_factor = 0 }
+set_variable = { PRE_land_military_industrialization_dynamic_modifier_industry_repair_factor = 0 }
+set_variable = { PRE_land_military_industrialization_dynamic_modifier_production_factory_max_efficiency_factor = -0.1 }
+set_variable = { PRE_land_military_industrialization_dynamic_modifier_production_speed_buildings_factor = 0 }
+set_variable = { PRE_land_military_industrialization_dynamic_modifier_production_factory_efficiency_gain_factor = -0.1 }
+
+#add_dynamic_modifier = { # COMES LATER
+#	modifier = PRE_the_atlantic_federation_dynamic_modifier
+#}
+
+set_variable = { PRE_the_atlantic_federation_dynamic_modifier_max_command_power_mult = 0 }
+set_variable = { PRE_the_atlantic_federation_dynamic_modifier_command_power_gain_mult = 0 }
+set_variable = { PRE_the_atlantic_federation_dynamic_modifier_conscription_factor = 0 }
+set_variable = { PRE_the_atlantic_federation_dynamic_modifier_equipment_conversion_speed = 0 }
+set_variable = { PRE_the_atlantic_federation_dynamic_modifier_line_change_production_efficiency_factor = 0 }
+set_variable = { PRE_the_atlantic_federation_dynamic_modifier_dockyard_donations = 0 }
+set_variable = { PRE_the_atlantic_federation_dynamic_modifier_industrial_factory_donations = 0 }
+set_variable = { PRE_the_atlantic_federation_dynamic_modifier_military_factory_donations = 0 }
+set_variable = { PRE_the_atlantic_federation_dynamic_modifier_political_power_factor = 0 }
+set_variable = { PRE_the_atlantic_federation_dynamic_modifier_local_resources_factor = 0 }
+set_variable = { PRE_the_atlantic_federation_dynamic_modifier_monthly_population = 0 }
+
 set_stability = 0.60
-set_war_support = 0.64
+set_war_support = 0.60
 
 recruit_character = PRE_eduard_von_hessen_darmstadt
 recruit_character = PRE_friedrich_von_anhalt
