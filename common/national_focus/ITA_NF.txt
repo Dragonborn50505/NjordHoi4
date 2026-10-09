@@ -9,1919 +9,6611 @@ focus_tree = {
 			tag = ITA
 		}
 	}
+
+	continuous_focus_position = { x = 50 y = 1250 }
 	
 	default = no
 	
-	shared_focus = army_effort
-	shared_focus = aviation_effort
-	shared_focus = naval_effort
-	shared_focus = industrial_effort
-	shared_focus = political_effort
+	### Political Paths ###
 
 	focus = {
-		id = Home_of_RevolutionITA
-		icon = GFX_goal_support_communism
-		text = Home_of_Revolution
-		x = 29
-		y = 0
-		cost = 10
-		completion_reward = {
-		add_ideas = communist_influence
-	}
-		ai_will_do = {
-		factor = 5
-	}
-	}
+		id = SRI_meeting_of_the_leadership
+		icon = GFX_focus_ITA_communist_leadership
+		cost = 3
 
-	focus = {
-		id = Influence_COG_ITA
-		icon = GFX_goal_generic_propaganda
-		text = Influence_COG
-		prerequisite = { focus = Home_of_RevolutionITA }
-		x = 28
-		y = 1
-		cost = 10
-		completion_reward = {
-			COG = {
-				if = {
-					limit = {
-						ROOT = {
-							has_government = absolutist
-						}
-					}
-					add_ideas = absolutist_influence
-				}
-				if = {
-					limit = {
-						ROOT = {
-							has_government = communism
-						}
-					}
-					add_ideas = communist_influence
-				}
-				if = {
-					limit = {
-						ROOT = {
-							has_government = democratic
-						}
-					}
-					add_ideas = democratic_influence
-				}
-				if = {
-					limit = {
-						ROOT = {
-							has_government = fascism
-						}
-					}
-					add_ideas = fascist_influence
-				}
-				if = {
-					limit = {
-						ROOT = {
-							has_government = radical
-						}
-					}
-					add_ideas = radical_influence
-				}
-				country_event = { id = generic.1 }
-			}
-		}
-		ai_will_do = {
-		factor = 5
-	}
-	}
-
-	focus = {
-		id = Coup_COG_ITA
-		icon = GFX_goal_generic_demand_territory
-		text = Coup_COG
-		prerequisite = { focus = Influence_COG_ITA }
-		x = 0
-		y = 1
-		relative_position_id = Influence_COG_ITA
-		cost = 10
-		available = {
-		COG = { communism > 0.5 }
-	}
-		completion_reward = {
-		COG = {
-			start_civil_war = {
-				ideology = communism
-				size = 0.5
-			}
-		}
-	}
-		ai_will_do = {
-		factor = 5
-	}
-	}
-
-	focus = {
-		id = Influence_IRE_ITA
-		icon = GFX_goal_generic_propaganda
-		text = Influence_IRE
-		prerequisite = { focus = Home_of_RevolutionITA }
-		x = 30
-		y = 1
-		cost = 10
-		completion_reward = {
-			IRE = {
-				if = {
-					limit = {
-						ROOT = {
-							has_government = absolutist
-						}
-					}
-					add_ideas = absolutist_influence
-				}
-				if = {
-					limit = {
-						ROOT = {
-							has_government = communism
-						}
-					}
-					add_ideas = communist_influence
-				}
-				if = {
-					limit = {
-						ROOT = {
-							has_government = democratic
-						}
-					}
-					add_ideas = democratic_influence
-				}
-				if = {
-					limit = {
-						ROOT = {
-							has_government = fascism
-						}
-					}
-					add_ideas = fascist_influence
-				}
-				if = {
-					limit = {
-						ROOT = {
-							has_government = radical
-						}
-					}
-					add_ideas = radical_influence
-				}
-				country_event = { id = generic.1 }
-			}
-		}
-		ai_will_do = {
-		factor = 5
-	}
-	}
-
-	focus = {
-		id = Coup_IRE_ITA
-		icon = GFX_goal_generic_demand_territory
-		text = Coup_IRE
-		prerequisite = { focus = Influence_IRE_ITA }
-		x = 0
-		y = 1
-		relative_position_id = Influence_IRE_ITA
-		cost = 10
-		available = {
-		IRE = { communism > 0.5 }
-	}
-		completion_reward = {
-		IRE = {
-			start_civil_war = {
-				ideology = communism
-				size = 0.5
-			}
-		}
-	}
-		ai_will_do = {
-		factor = 5
-	}
-	}
-
-	focus = {
-		id = StrengthComITA
-		icon = GFX_goal_support_communism
-		text = StrengthCom
-		x = 34
-		y = 0
-		cost = 10
-		completion_reward = {
-		army_experience = 20
-		add_doctrine_cost_reduction = {
-			name = land_doc_bonus
-			cost_reduction = 0.3
-			uses = 2
-			category = land_doctrine
-		}
-	}
-		ai_will_do = {
-		factor = 5
-	}
-	}
-
-	focus = {
-		id = Inter_Com_PresITA
-		icon = GFX_goal_generic_dangerous_deal
-		text = Inter_Com_Pres
-		prerequisite = { focus = StrengthComITA }
-		x = 0
-		y = 1
-		relative_position_id = StrengthComITA
-		cost = 10
-		available = {
-		date > 1937.1.1
-	}
-		completion_reward = {
-		add_named_threat = { threat = 2 name = Inter_Com_Pres }
-		add_political_power = 150
-	}
-		ai_will_do = {
-		factor = 5
-	}
-	}
-
-	focus = {
-		id = WarPREITA
-		icon = GFX_goal_generic_major_war
-		text = WarPRE
-		prerequisite = { focus = Inter_Com_PresITA }
-		bypass = {
-		has_war_with = PRE
-	}
-		x = 32
-		y = 2
-		cost = 10
-		available = {
-		date > 1938.7.1
-
-	}
-		completion_reward = {
-		add_named_threat = { threat = 3 name = "War with Prussia" }
-		create_wargoal = {
-			type = puppet_wargoal_focus
-			target = PRE
-		}
-	}
-		ai_will_do = {
-		factor = 5
-		modifier = {
-			factor = 0
-			strength_ratio = { tag = PRE ratio < 1 }
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				has_war_with = IRE
-				has_war_with = COG
-
-			}
-		}
-	}
-	}
-
-	focus = {
-		id = WarIREITA
-		icon = GFX_goal_generic_major_war
-		text = WarIRE
-		prerequisite = { focus = Inter_Com_PresITA }
-		bypass = {
-		has_war_with = IRE
-	}
-		x = 34
-		y = 2
-		cost = 10
-		available = {
-		date > 1938.1.1
-
-	}
-		completion_reward = {
-		add_named_threat = { threat = 3 name = "War with Ireland" }
-		create_wargoal = {
-			type = puppet_wargoal_focus
-			target = IRE
-		}
-	}
-		ai_will_do = {
-		factor = 5
-		modifier = {
-			factor = 0
-			strength_ratio = { tag = IRE ratio < 1 }
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				has_war_with = PRE
-				has_war_with = COG
-
-			}
-		}
-	}
-	}
-
-	focus = {
-		id = WarCOGITA
-		icon = GFX_goal_generic_major_war
-		text = WarCOG
-		prerequisite = { focus = Inter_Com_PresITA }
-		bypass = {
-		has_war_with = COG
-	}
-		x = 36
-		y = 2
-		cost = 10
-		available = {
-		date > 1938.1.1
-
-	}
-		completion_reward = {
-		add_named_threat = { threat = 3 name = "War with Congo" }
-		create_wargoal = {
-			type = puppet_wargoal_focus
-			target = COG
-		}
-	}
-		ai_will_do = {
-		factor = 5
-		modifier = {
-			factor = 0
-			strength_ratio = { tag = COG ratio < 1 }
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				has_war_with = PRE
-				has_war_with = IRE
-
-			}
-		}
-	}
-	}
-
-	focus = {
-		id = SOV_the_path_of_marxism_leninism
-		icon = GFX_focus_SOV_the_path_of_marxism_leninism
-		x = 40
-		y = 0
-		cost = 5
-		available = {
-
-		}
-		completion_reward = {
-			add_political_power = 25
-
-			SOV_paranoia_low_decrease_effect = yes	
-			if = {
-				limit = {
-					has_dlc = "No Step Back"
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				mark_focus_tree_layout_dirty = yes
-			}
-		}
-		allow_branch = {
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = SOV_the_centre
-		icon = GFX_focus_fra_loyalty_stalin
-		prerequisite = { focus = SOV_the_path_of_marxism_leninism }
-		x = 0
-		y = 1
-		relative_position_id = SOV_the_path_of_marxism_leninism
-		cost = 5
-		available = {
-
-		}
-		completion_reward = {
-			hidden_effect = {
-				add_dynamic_modifier = { modifier = SOV_the_politburo_good_dynamic_modifier }
-			}
-			custom_effect_tooltip = SOV_the_centre_ns_tt
-
-			add_political_power = 25
-			add_stability = 0.05
-
-			SOV_paranoia_low_decrease_effect = yes
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				mark_focus_tree_layout_dirty = yes
-			}
-		}
-		allow_branch = {
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = SOV_socialism_in_one_country
-		icon = GFX_focus_SOV_socialism_in_one_country
-		prerequisite = { focus = SOV_the_centre }
-		x = -1
-		y = 1
-		relative_position_id = SOV_the_centre
-		cost = 5
-		available = {
-
-		}
-		completion_reward = {
-			add_to_variable = { SOV_the_politburo_communism_drift = 0.05 }
-			add_to_variable = { SOV_the_politburo_drift_defence_factor = 0.05 } 
-			add_to_variable = { SOV_the_politburo_defensive_war_stability_factor = 0.25 } 
-			custom_effect_tooltip = SOV_socialism_in_one_country_ns_tt
-
-			add_political_power = 25
-
-			SOV_paranoia_low_decrease_effect = yes
-		}
-	}
-
-	focus = {
-		id = SOV_the_stalin_constitution
-		icon = GFX_SOV_the_stalin_constitutiony_ccp_2d_sov_compatibility
-		prerequisite = { focus = SOV_the_centre }
 		x = 1
-		y = 1
-		relative_position_id = SOV_the_centre
-		cost = 10
-		available = {
+		y = 0
 
-		}
-		completion_reward = {
-			add_to_variable = { SOV_the_politburo_political_power_factor = 0.05 }
-			add_to_variable = { SOV_the_politburo_drift_defence_factor = 0.05 } 
-			custom_effect_tooltip = SOV_the_stalin_constitution_ns_tt
-
-			add_political_power = 50
-			add_stability = 0.05
-
-			SOV_paranoia_low_decrease_effect = yes
-		}
-	}
-
-	focus = {
-		id = SOV_the_zinovyevite_terrorist_center
-		icon = GFX_focus_SOV_purge_zinovyevists
-		prerequisite = { focus = SOV_the_stalin_constitution }
-		x = 0
-		y = 1
-		relative_position_id = SOV_the_stalin_constitution
-		cost = 5
-		available = {
-
-		}
-		select_effect = {
-			set_country_flag = SOV_paranoia_do_not_cancel_focus_flag #This focus cannot be canceled
-		}
-		completion_reward = {
-			clr_country_flag = SOV_paranoia_do_not_cancel_focus_flag
-			set_country_flag = { flag = SOV_paranoia_random_purge_cooldown_from_focus_flag days = 15 } #Used to prevent random purges from popping up while this is active
-			set_country_flag = SOV_first_moscow_trial_flag #Used to unlock the next purge focus
-
-			add_political_power = 25
-
-			SOV_paranoia_high_increase_effect = yes
-			
-			#HISTORICAL
-			#Zinovyev
-			if = {
-				limit = {
-					has_character = UTI_grigory_zinovyev
-				}
-				UTI_grigory_zinovyev = {
-					set_character_flag = SOV_targeted_for_purge_flag
-				}
-			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
-			#Kamenev
-			if = {
-				limit = {
-					has_character = UTI_lev_kamenev
-				}
-				UTI_lev_kamenev = {
-					set_character_flag = SOV_targeted_for_purge_flag
-				}
-			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
-			#Smirnov
-			if = {
-				limit = {
-					has_character = UTI_ivan_smirnov
-				}
-				UTI_ivan_smirnov = {
-					set_character_flag = SOV_targeted_for_purge_flag
-				}
-			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
-
-			#NOT-SO-HISTORICAL
-			#Sokolnikov
-			if = {
-				limit = {
-					has_character = UTI_grigory_sokolnikov
-				}
-				UTI_grigory_sokolnikov = {
-					set_character_flag = SOV_targeted_for_purge_flag
-				}
-			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
-			#Shlyapnikov
-			if = {
-				limit = {
-					has_character = UTI_aleksandr_shlyapnikov
-				}
-				UTI_aleksandr_shlyapnikov = {
-					set_character_flag = SOV_targeted_for_purge_flag
-				}
-			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
-			
-			custom_effect_tooltip = SOV_will_trigger_a_great_purge_tt
-			hidden_effect = {
-				set_country_flag = SOV_purge_event_unavoidable_flag #No way to avoid this purge. This people are about to be purged and there's nothing you can do for them.
-				SOV_trigger_great_purge_moscow_trial_effect = yes #FIRST MOSCOW TRIAL -> Zinovyev & friends
-			}
-			custom_effect_tooltip = SOV_trigger_first_moscow_trial_tt
-		}
-	}
-
-	focus = {
-		id = SOV_secure_the_administration
-		icon = GFX_focus_generic_join_comintern
-		prerequisite = { focus = SOV_the_zinovyevite_terrorist_center }
-		x = -1
-		y = 1
-		relative_position_id = SOV_the_zinovyevite_terrorist_center
-		cost = 10
-		available = {
-
-		}
-		completion_reward = {
-			add_to_variable = { SOV_the_politburo_economy_cost_factor = -0.2 }
-			add_to_variable = { SOV_the_politburo_trade_laws_cost_factor = -0.2 }
-			add_to_variable = { SOV_the_politburo_mobilization_laws_cost_factor = -0.2 }
-			custom_effect_tooltip = SOV_secure_the_administration_ns_tt
-
-			add_political_power = 50
-
-			SOV_paranoia_medium_decrease_effect = yes
-		}
-	}
-
-	focus = {
-		id = SOV_the_collectivization_process
-		icon = GFX_focus_prc_agrarian_socialism
-		prerequisite = { focus = SOV_socialism_in_one_country }
-		prerequisite = { focus = SOV_secure_the_administration }
-		x = 0
-		y = 3
-		relative_position_id = SOV_socialism_in_one_country
-		cost = 10
-		available = {
-
-		}
-		completion_reward = {
-			add_to_variable = { SOV_the_politburo_good_consumer_goods_factor = -0.02 }
-			add_to_variable = { SOV_the_politburo_production_speed_buildings_factor = 0.05 } 
-			add_to_variable = { SOV_the_politburo_global_building_slots_factor = 0.1 } 
-			custom_effect_tooltip = SOV_the_collectivization_process_ns_tt
-
-			add_stability = -0.05
-			add_war_support = -0.05
-
-			if = { #Target a rural state with no civs
-				limit = {
-					any_owned_state = {
-						OR = {
-							has_state_category = town #Developed Rural Region
-							has_state_category = rural #Rural Region
-						}
-						is_fully_controlled_by = ROOT
-						industrial_complex < 1
-						arms_factory < 1
-						dockyard < 1
-						free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-					}
-				}
-				random_owned_state = {
-					limit = {
-						OR = {
-							has_state_category = town #Developed Rural Region
-							has_state_category = rural #Rural Region
-						}
-						is_fully_controlled_by = ROOT
-						industrial_complex < 1
-						arms_factory < 1
-						dockyard < 1
-						free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-				}
-			}
-			else_if = { #Failsafe 1: Target a random rural state
-				limit = {
-					any_owned_state = {
-						OR = {
-							has_state_category = town #Developed Rural Region
-							has_state_category = rural #Rural Region
-						}
-						is_fully_controlled_by = ROOT
-						free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-					}
-				}
-				random_owned_state = {
-					limit = {
-						OR = {
-							has_state_category = town #Developed Rural Region
-							has_state_category = rural #Rural Region
-						}
-						is_fully_controlled_by = ROOT
-						free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-				}
-			}
-			else_if = { #Failsafe 2: Target a random state
-				limit = {
-					any_owned_state = {
-						is_fully_controlled_by = ROOT
-						free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-					}
-				}
-				random_owned_state = {
-					limit = {
-						is_fully_controlled_by = ROOT
-						free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-				}
-			}
-
-			SOV_paranoia_medium_decrease_effect = yes
-		}
-	}
-
-	focus = {
-		id = SOV_the_anti_soviet_trotskyist_center
-		icon = GFX_focus_SOV_purge_trotskyists
-		prerequisite = { focus = SOV_the_zinovyevite_terrorist_center }
-		x = 0
-		y = 2
-		relative_position_id = SOV_the_zinovyevite_terrorist_center
-		cost = 5
-		available = {
-			has_country_flag = {
-				flag = SOV_first_moscow_trial_flag
-				days > 175
-			}
-			custom_trigger_tooltip = {
-				tooltip = SOV_last_purge_focus_days_tt
-				has_country_flag = {
-					flag = SOV_first_moscow_trial_flag
-					days > 175
-				}
-			}
-		}
-		select_effect = {
-			set_country_flag = SOV_paranoia_do_not_cancel_focus_flag #This focus cannot be canceled
-		}
-		completion_reward = {
-			clr_country_flag = SOV_paranoia_do_not_cancel_focus_flag
-			set_country_flag = { flag = SOV_paranoia_random_purge_cooldown_from_focus_flag days = 15 } #Used to prevent random purges from popping up while this is active
-			set_country_flag = SOV_second_moscow_trial_flag #Used to unlock the next purge focus
-
-			add_political_power = 25
-
-			SOV_paranoia_high_increase_effect = yes
-
-			#HISTORICAL
-			#Radek
-			if = {
-				limit = {
-					has_character = UTI_karl_radek
-				}
-				UTI_karl_radek = {
-					set_character_flag = SOV_targeted_for_purge_flag
-				}
-			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
-			#NOT-SO-HISTORICAL
-			#Smilga
-			if = {
-				limit = {
-					has_character = UTI_ivar_smilga
-				}
-				UTI_ivar_smilga = {
-					set_character_flag = SOV_targeted_for_purge_flag
-				}
-			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
-			#Preobrazhensky
-			if = {
-				limit = {
-					has_character = UTI_yevgeny_preobrazhensky
-				}
-				UTI_yevgeny_preobrazhensky = {
-					set_character_flag = SOV_targeted_for_purge_flag
-				}
-			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
-			#Ryutin
-			if = {
-				limit = {
-					has_character = UTI_martemyan_ryutin
-				}
-				UTI_martemyan_ryutin = {
-					set_character_flag = SOV_targeted_for_purge_flag
-				}
-			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
-			#Ustryalov
-			if = {
-				limit = {
-					has_dlc = "No Step Back"
-				}
-				if = {
-					limit = {
-						has_character = UTI_nikolay_ustryalov
-					}
-					UTI_nikolay_ustryalov = {
-						set_character_flag = SOV_targeted_for_purge_flag
-					}
-				}
-				else = {
-					SOV_add_random_character_to_purge_targets_effect = yes
-				}
-			}
-
-			custom_effect_tooltip = SOV_will_trigger_a_great_purge_tt
-			hidden_effect = {
-				set_country_flag = SOV_purge_event_unavoidable_flag #No way to avoid this purge. This people are about to be purged and there's nothing you can do for them.
-				SOV_trigger_great_purge_moscow_trial_effect = yes #SECOND MOSCOW TRIAL -> Left Opposition
-			}
-			custom_effect_tooltip = SOV_trigger_second_moscow_trial_tt
-
-			hidden_effect = {
-				swap_ruler_traits = {
-					remove = stalin_political_paranoia
-					add = stalin_political_paranoia_advanced
-				}
-				add_to_variable = { SOV_paranoia_weekly_modifiers_amount = 1 }
-				SOV_paranoia_modifier_update_gui_tooltip = yes
-			}		
-			custom_effect_tooltip = SOV_increase_weekly_paranoia_in_trait_tt
-		}
-	}
-
-	focus = {
-		id = SOV_the_workers_dictatorship
-		icon = GFX_SOV_the_workers_dictatorship_ccp_2d_sov_compatibility
-		prerequisite = { focus = SOV_the_anti_soviet_trotskyist_center }
-		x = 0
-		y = 1
-		relative_position_id = SOV_the_anti_soviet_trotskyist_center
-		cost = 10
-		available = {
-
-		}
-		completion_reward = {
-			add_to_variable = { SOV_the_politburo_political_power_factor = 0.05 }
-			add_to_variable = { SOV_the_politburo_max_surrender_limit_offset = 0.05 }
-			custom_effect_tooltip = SOV_the_workers_dictatorship_ns_tt
-
-			add_political_power = 50
-
-			SOV_paranoia_low_decrease_effect = yes
-		}
-	}
-
-	focus = {
-		id = SOV_organization_centralization_discipline
-		icon = GFX_focus_SOV_organization_centralization_discipline
-		prerequisite = { focus = SOV_the_collectivization_process }
-		prerequisite = { focus = SOV_the_workers_dictatorship }
-		x = -2
-		y = 1
-		relative_position_id = SOV_the_workers_dictatorship
-		cost = 5
-		available = {
-
-		}
-		completion_reward = {
-			add_to_variable = { SOV_the_politburo_max_command_power = 20 }
-			add_to_variable = { SOV_the_politburo_mobilization_speed = 0.05 }
-			custom_effect_tooltip = SOV_organization_centralization_discipline_ns_tt
-
-			add_political_power = 50
-
-			SOV_paranoia_medium_decrease_effect = yes
-		}
-	}
-
-	focus = {
-		id = SOV_war_economy
-		icon = GFX_SOV_war_economy_ccp_2d_sov_compatibility
-		prerequisite = { focus = SOV_organization_centralization_discipline }
-		x = 0
-		y = 1
-		relative_position_id = SOV_organization_centralization_discipline
-		cost = 10
-		available = {
-
-		}
-		completion_reward = {
-			custom_effect_tooltip = SOV_war_economy_stability_tt
-			if = {
-				limit = {
-					has_war = no
-				}
-				add_stability = -0.1
-			}
-			else = {
-				custom_effect_tooltip = SOV_war_economy_stability_war_tt
-			}
-			if = {
-				limit = {
-					NOT = { has_idea = war_economy }
-					NOT = { has_idea = tot_economic_mobilisation }
-				}
-				add_ideas = war_economy
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-			if = {
-				limit = {
-					217 = {
-						is_controlled_by = ROOT
-						free_building_slots = {
-							building = arms_factory
-							size > 1
-							include_locked = yes
-						}
-					}
-				}
-				217 = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
-				}
-			}
-			else = {
-				random_controlled_state = {
-					limit = {
-						arms_factory > 1
-						free_building_slots = {
-							building = arms_factory
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = SOV_the_military_conspiracy
-		icon = GFX_focus_SOV_military_purge
-		prerequisite = { focus = SOV_the_workers_dictatorship }
-		x = 0
-		y = 2
-		relative_position_id = SOV_the_anti_soviet_trotskyist_center
-		cost = 5
-		available = {
-			has_country_flag = {
-				flag = SOV_second_moscow_trial_flag
-				days > 175
-			}
-			custom_trigger_tooltip = {
-				tooltip = SOV_last_purge_focus_days_military_tt
-				has_country_flag = {
-					flag = SOV_second_moscow_trial_flag
-					days > 175
-				}
-			}
-		}
-		select_effect = {
-			set_country_flag = SOV_paranoia_do_not_cancel_focus_flag #This focus cannot be canceled
-		}
-		completion_reward = {
-			clr_country_flag = SOV_paranoia_do_not_cancel_focus_flag
-			set_country_flag = { flag = SOV_paranoia_random_purge_cooldown_from_focus_flag days = 15 } #Used to prevent random purges from popping up while this is active
-			set_country_flag = SOV_trial_of_the_generals_flag #Used to unlock the next purge focus
-
-			add_political_power = 25
-
-			SOV_paranoia_high_increase_effect = yes
-
-			#Historical
-			if = {
-				limit = {
-					has_character = UTI_mikhail_tukhachevsky
-				}
-				UTI_mikhail_tukhachevsky = {
-					set_character_flag = SOV_targeted_for_purge_flag
-				}
-			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
-			#NOT-SO-HISTORICAL
-			#Yegorov
-			if = {
-				limit = {
-					has_character = UTI_aleksandr_yegorov
-				}
-				UTI_aleksandr_yegorov = {
-					set_character_flag = SOV_targeted_for_purge_flag
-				}
-			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
-			#Blyukher
-			if = {
-				limit = {
-					has_character = UTI_vasily_blyukher
-				}
-				UTI_vasily_blyukher = {
-					set_character_flag = SOV_targeted_for_purge_flag
-				}
-			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
-			#Primakov
-			if = {
-				limit = {
-					has_character = UTI_vitaly_primakov
-				}
-				UTI_vitaly_primakov = {
-					set_character_flag = SOV_targeted_for_purge_flag
-				}
-			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}			
-
-			custom_effect_tooltip = SOV_will_trigger_a_great_purge_tt
-			hidden_effect = {
-				set_country_flag = SOV_purge_event_unavoidable_flag #No way to avoid this purge. This people are about to be purged and there's nothing you can do for them.
-				SOV_great_purge_army_trial_of_the_generals_effect = yes #TRIAL OF THE GENERALS -> Tukhachevsky
-			}
-
-			set_country_flag = SOV_stalinist_military_flag #New Generals have more chances of being Stalinists after this
-		}
-	}
-
-	focus = {
-		id = SOV_the_bloc_of_rights_and_trotskyites
-		icon = GFX_focus_SOV_purge_bukharinists
-		prerequisite = { focus = SOV_the_military_conspiracy }
-		x = 0
-		y = 1
-		relative_position_id = SOV_the_military_conspiracy
-		cost = 10
-		available = {
-			has_country_flag = {
-				flag = SOV_trial_of_the_generals_flag
-				days > 175
-			}
-			custom_trigger_tooltip = {
-				tooltip = SOV_last_purge_focus_days_rights_tt
-				has_country_flag = {
-					flag = SOV_trial_of_the_generals_flag
-					days > 175
-				}
-			}
-		}
-		select_effect = {
-			set_country_flag = SOV_paranoia_do_not_cancel_focus_flag #This focus cannot be canceled
-		}
-		completion_reward = {
-			clr_country_flag = SOV_paranoia_do_not_cancel_focus_flag
-			set_country_flag = { flag = SOV_paranoia_random_purge_cooldown_from_focus_flag days = 15 } #Used to prevent random purges from popping up while this is active
-			set_country_flag = SOV_third_moscow_trial_flag #Used to unlock the next purge focus
-
-			add_political_power = 25
-
-			#HISTORICAL
-			#Bukharin
-			if = {
-				limit = {
-					has_character = UTI_nikolay_bukharin
-				}
-				UTI_nikolay_bukharin = {
-					set_character_flag = SOV_targeted_for_purge_flag
-				}
-			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
-			#Rykov
-			if = {
-				limit = {
-					has_character = UTI_aleksey_rykov
-				}
-				UTI_aleksey_rykov = {
-					set_character_flag = SOV_targeted_for_purge_flag
-				}
-			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
-			#NOT-SO-HISTORICAL
-			#Tomsky
-			if = {
-				limit = {
-					has_character = UTI_mikhail_tomsky
-				}
-				UTI_mikhail_tomsky = {
-					set_character_flag = SOV_targeted_for_purge_flag
-				}
-			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
-			#Litvinov
-			if = {
-				limit = {
-					has_character = UTI_maksim_litvinov
-				}
-				UTI_maksim_litvinov = {
-					set_character_flag = SOV_targeted_for_purge_flag
-				}
-			}
-			else = {
-				SOV_add_random_character_to_purge_targets_effect = yes
-			}
-
-			custom_effect_tooltip = SOV_will_trigger_a_great_purge_tt
-			hidden_effect = {
-				set_country_flag = SOV_purge_event_unavoidable_flag #No way to avoid this purge. This people are about to be purged and there's nothing you can do for them.
-				SOV_trigger_great_purge_moscow_trial_effect = yes #THIRD MOSCOW TRIAL -> Right Opposition
-			}
-			custom_effect_tooltip = SOV_trigger_third_moscow_trial_tt
-
-			SOV_remove_paranoia_effect = yes #REMOVE PARANOIA SYSTEM
-		}
-	}
-
-	focus = {
-		id = SOV_behead_the_snake
-		icon = GFX_focus_SOV_behead_the_snake
-		prerequisite = { focus = SOV_the_military_conspiracy }
-		x = 2
-		y = 1
-		relative_position_id = SOV_the_military_conspiracy
-		cost = 5
-		available = {
-			has_government = communism
-			NOT = { has_global_flag = AAT_trotsky_sent_to_stalin }
-			has_global_flag = AAT_trotsky_in_mexico
-		}
-		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
-				}
-				custom_effect_tooltip = SOV_behead_the_snake_lar_tt
-				create_operative_leader = {
-					name = "Ramón Mercader"
-					GFX = GFX_portrait_SOV_ramon_mercader
-					traits = { operative_tough operative_infiltrator }
-					bypass_recruitment = no
-					available_to_spy_master = yes
-					nationalities = { SOV SPR MEX }
-				}
-
-				#Extra operative slot
-				set_variable = { SOV_the_politburo_operative_slot = 1 }
-				custom_effect_tooltip = SOV_behead_the_snake_ns_tt
-			}
-			else = {
-				custom_effect_tooltip = SOV_behead_the_snake_no_lar_tt
-			}
-
-			SOV_paranoia_high_decrease_effect = yes
-		}
-	}
-
-	focus = {
-		id = SOV_stalins_cult_of_personality
-		icon = GFX_focus_SOV_stalins_cult_of_personality
-		prerequisite = { focus = SOV_the_bloc_of_rights_and_trotskyites }
-		x = 0
-		y = 1
-		relative_position_id = SOV_the_bloc_of_rights_and_trotskyites
-		cost = 5
-		available = {
-			has_country_flag = {
-				flag = SOV_third_moscow_trial_flag
-				days > 175
-			}
-			custom_trigger_tooltip = {
-				tooltip = SOV_last_purge_focus_days_cult_tt
-				has_country_flag = {
-					flag = SOV_third_moscow_trial_flag
-					days > 175
-				}
-			}
-			has_country_leader = {
-				character = UTI_iosif_stalin
-				ruling_only = yes
-			}
-		}
 		completion_reward = {
 			add_political_power = 25
-
-			custom_effect_tooltip = unlock_propaganda_campaign_tt
-			unlock_decision_tooltip = SOV_propaganda_stalin
-			custom_effect_tooltip = propaganda_campaign_requirement_tt
+			custom_effect_tooltip = empty_line
+			swap_ideas = {
+				remove_idea = SRI_uncertain_socialist_direction
+				add_idea = SRI_uncertain_socialist_direction_2
+			}
 		}
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
 	}
 
-	focus = {
-		id = SOV_they_will_know_fear
-		icon = GFX_SOV_they_will_know_fear_ccp_2d_sov_compatibility
-		prerequisite = { focus = SOV_stalins_cult_of_personality }
+	focus = {# Begin Risorgimento
+		id = SRI_risorgimento
+		icon = GFX_focus_ITA_cavalry_charge
+		cost = 5
+
+		relative_position_id = SRI_meeting_of_the_leadership
 		x = -3
 		y = 1
-		relative_position_id = SOV_stalins_cult_of_personality
-		cost = 5
+
 		available = {
-			has_defensive_war = yes
-			if = {
-				limit = {
-					has_dlc = "No Step Back"
+			threat > 0.3
+			has_army_manpower = { size > 249999 }
+			NOT = {
+				OR = {
+					has_idea = SRI_scars_of_the_great_west_european_war
+					has_idea = SRI_scars_of_the_great_west_european_war_2
+					has_idea = SRI_scars_of_the_great_west_european_war_3
 				}
-				has_tech = advanced_heavy_tank_chassis
-			}
-			else = {
-				has_tech = advanced_heavy_tank
 			}
 		}
+		bypass = {
+			is_subject = yes
+		}
+		prerequisite = {
+			focus = SRI_meeting_of_the_leadership
+		}
+		continue_if_invalid = yes
 		completion_reward = {
-
-			add_breakthrough_progress = {
-				specialization = specialization_land
-				value = 1
-			}
-
-			add_tech_bonus = {
-				name = SOV_they_will_know_fear
-				bonus = 1
-				uses = 1 # was 2
-				category = armor
-			}
-
-			if = {
-				limit = {
-					has_dlc = "No Step Back"
-				}
-				# IS-2 tank template
-				if = {
-					limit = {
-						OR = {
-							has_tech = antiair2
-							has_tech = antitank2
-						}
-					}
-					create_equipment_variant = {
-						name = "IS-2"
-						type = heavy_tank_chassis_3
-						parent_version = 0
-						modules = {
-							main_armament_slot = tank_heavy_cannon_2
-							turret_type_slot = tank_heavy_three_man_tank_turret
-							suspension_type_slot = tank_torsion_bar_suspension
-							armor_type_slot = tank_welded_armor
-							engine_type_slot = tank_diesel_engine
-							special_type_slot_1 = tank_radio_1
-							special_type_slot_2 = sloped_armor
-							special_type_slot_3 = smoke_launchers
-						}
-						upgrades = {
-							tank_nsb_engine_upgrade = 8
-							tank_nsb_armor_upgrade = 6
-						}
-						icon = "GFX_SOV_advanced_heavy_tank_medium"
-					}
-				}
-				else_if = {
-					limit = {
-						OR = {
-							has_tech = interwar_antiair
-							has_tech = interwar_antitank
-						}
-					}
-					create_equipment_variant = {
-						name = "IS-2"
-						type = heavy_tank_chassis_3
-						parent_version = 0
-						modules = {
-							main_armament_slot = tank_heavy_cannon
-							turret_type_slot = tank_heavy_three_man_tank_turret
-							suspension_type_slot = tank_torsion_bar_suspension
-							armor_type_slot = tank_welded_armor
-							engine_type_slot = tank_diesel_engine
-							special_type_slot_1 = tank_radio_1
-							special_type_slot_2 = sloped_armor
-							special_type_slot_3 = smoke_launchers
-						}
-						upgrades = {
-							tank_nsb_engine_upgrade = 8
-							tank_nsb_armor_upgrade = 6
-						}
-						icon = "GFX_SOV_advanced_heavy_tank_medium"
-					}
-				}
-			}
+			add_political_power = 100
+			add_war_support = 0.1
 		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 	}
 
-	focus = {
-		id = SOV_inheritor_of_the_mantle_of_lenin
-		icon = GFX_SOV_inheritor_of_the_mantle_of_lenin_ccp_2d_sov_compatibility
-		prerequisite = { focus = SOV_stalins_cult_of_personality }
-		mutually_exclusive = { focus = SOV_the_faithful_servant_of_lenin }
+	focus = {# Research slot (political)
+		id = SRI_attract_socialist_intellectuals
+		icon = GFX_focus_NOR_moscows_education_centers
+		cost = 5
+
+		relative_position_id = SRI_risorgimento
+		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = SRI_risorgimento
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {# Military Exercises
+		id = SRI_military_exercises
+		icon = GFX_focus_SOV_builder_of_the_red_army
+		cost = 5
+
+		relative_position_id = SRI_risorgimento
 		x = -1
 		y = 1
-		relative_position_id = SOV_stalins_cult_of_personality
-		cost = 5
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = SOV_propaganda_campaigns_taken_5_or_greater_tt
-				check_variable = { SOV_propaganda_campaigns_taken = 5 compare = greater_than_or_equals }
-			}
+
+		prerequisite = {
+			focus = SRI_risorgimento
 		}
 		completion_reward = {
-			add_war_support = 0.05
-			add_country_leader_trait = stalin_inheritor_of_lenin
+			army_experience = 35
+			air_experience = 35
+			custom_effect_tooltip = empty_line
+			add_timed_idea = { idea = SRI_recent_military_exercises_idea days = 365 }
 		}
+		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_AIR_XP }
 	}
 
-	focus = {
-		id = SOV_brilliant_genius
-		icon = GFX_focus_generic_socialist_science
-		prerequisite = { focus = SOV_inheritor_of_the_mantle_of_lenin }
+	focus = {# Naval Exercises
+		id = SRI_naval_exericises
+		icon = GFX_focus_PHI_maritime_communism
+		cost = 5
+
+		relative_position_id = SRI_risorgimento
+		x = -3
+		y = 1
+
+		prerequisite = {
+			focus = SRI_risorgimento
+		}
+		completion_reward = {
+			navy_experience = 35
+			custom_effect_tooltip = empty_line
+			add_timed_idea = { idea = SRI_recent_naval_exercises_idea days = 365 }
+		}
+		search_filters = { FOCUS_FILTER_NAVY_XP }
+	}
+
+	focus = {# Italian Irredentism
+		id = SRI_italian_irredentism
+		icon = GFX_focus_spr_class_war
+		cost = 2
+
+		relative_position_id = SRI_meeting_of_the_leadership
 		x = -1
 		y = 1
-		relative_position_id = SOV_inheritor_of_the_mantle_of_lenin
-		cost = 10
+
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = SOV_propaganda_campaigns_taken_10_or_greater_tt
-				check_variable = { SOV_propaganda_campaigns_taken = 10 compare = greater_than_or_equals }
+			NOT = {
+				OR = {
+					has_idea = SRI_uncertain_socialist_direction
+					has_idea = SRI_uncertain_socialist_direction_2
+				}
 			}
+		}
+		prerequisite = {
+			focus = SRI_meeting_of_the_leadership
 		}
 		completion_reward = {
-			#Academies of Sciences decisions are 50% cheaper
-			divide_variable = { SOV_national_academy_of_sciences_construction_cost = 2 }
-			custom_effect_tooltip = SOV_brilliant_genius_academies_of_sciences_tt
-
-			if = {
-				limit = {
-					has_completed_focus = SOV_leader_of_the_party_and_the_people
-				}
-				swap_ruler_traits = {
-					remove = stalin_inheritor_of_lenin_leader
-					add = stalin_inheritor_of_lenin_final
-				}
-			}
-			else = {
-				swap_ruler_traits = {
-					remove = stalin_inheritor_of_lenin
-					add = stalin_inheritor_of_lenin_genius
-				}
-			}
+			add_war_support = 0.1
+			add_manpower = 150000
 		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ANNEXATION }
 	}
 
-	focus = {
-		id = SOV_the_faithful_servant_of_lenin
-		icon = GFX_SOV_the_faithful_servant_of_lenin_ccp_2d_sov_compatibility
-		prerequisite = { focus = SOV_stalins_cult_of_personality }
-		mutually_exclusive = { focus = SOV_inheritor_of_the_mantle_of_lenin }
+	focus = {# FMC, prewar
+		id = SRI_deal_with_fmc
+		icon = GFX_focus_ITA_liberate_gramsci
+		cost = 5
+
+		relative_position_id = SRI_meeting_of_the_leadership
 		x = 1
 		y = 1
-		relative_position_id = SOV_stalins_cult_of_personality
-		cost = 5
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = SOV_propaganda_campaigns_taken_5_or_greater_tt
-				check_variable = { SOV_propaganda_campaigns_taken = 5 compare = greater_than_or_equals }
-			}
-		}
-		completion_reward = {
-			add_stability = 0.1
-			add_country_leader_trait = stalin_servant_of_lenin
-		}
-	}
 
-	focus = {
-		id = SOV_ban_excessive_hero_worship
-		icon = GFX_focus_renounce_the_treaty_of_trianon
-		prerequisite = { focus = SOV_the_faithful_servant_of_lenin }
-		x = 1
-		y = 1
-		relative_position_id = SOV_the_faithful_servant_of_lenin
-		cost = 10
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = SOV_propaganda_campaigns_taken_10_or_greater_tt
-				check_variable = { SOV_propaganda_campaigns_taken = 10 compare = greater_than_or_equals }
-			}
-		}
-		completion_reward = {
-			custom_effect_tooltip = SOV_ban_excessive_hero_worship_dec_cost_tt
-			SOV_foreign_politics_decision_cost_reduction_effect = yes
-
-			if = {
-				limit = {
-					has_completed_focus = SOV_leader_of_the_party_and_the_people
-				}
-				swap_ruler_traits = {
-					remove = stalin_servant_of_lenin_leader
-					add = stalin_servant_of_lenin_final
-				}
-			}
-			else = {
-				swap_ruler_traits = {
-					remove = stalin_servant_of_lenin
-					add = stalin_servant_of_lenin_worship
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = SOV_leader_of_the_party_and_the_people
-		icon = GFX_SOV_leader_of_the_party_and_the_people_ccp_2d_sov_compatibility
-		prerequisite = { focus = SOV_inheritor_of_the_mantle_of_lenin focus = SOV_the_faithful_servant_of_lenin }
-		x = 1
-		y = 1
-		relative_position_id = SOV_inheritor_of_the_mantle_of_lenin
-		cost = 5
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = SOV_propaganda_campaigns_taken_10_or_greater_tt
-				check_variable = { SOV_propaganda_campaigns_taken = 10 compare = greater_than_or_equals }
-			}
-		}
-		completion_reward = {
-			add_political_power = 50
-
-			#Swap Stalin's Trait
-			if = { #INHERITOR BRANCH
-				limit = {
-					has_completed_focus = SOV_inheritor_of_the_mantle_of_lenin
-				}
-				if = {
-					limit = {
-						has_completed_focus = SOV_brilliant_genius
-					}
-					swap_ruler_traits = {
-						remove = stalin_inheritor_of_lenin_genius
-						add = stalin_inheritor_of_lenin_final
-					}
-				}
-				else = {
-					swap_ruler_traits = {
-						remove = stalin_inheritor_of_lenin
-						add = stalin_inheritor_of_lenin_leader
-					}
-				}
-			}
-			else_if = { #SERVANT BRANCH
-				limit = {
-					has_completed_focus = SOV_the_faithful_servant_of_lenin
-				}
-				if = {
-					limit = {
-						has_completed_focus = SOV_ban_excessive_hero_worship
-					}
-					swap_ruler_traits = {
-						remove = stalin_servant_of_lenin_worship
-						add = stalin_servant_of_lenin_final
-					}
-				}
-				else = {
-					swap_ruler_traits = {
-						remove = stalin_servant_of_lenin
-						add = stalin_servant_of_lenin_leader
-					}
-				}
-			}
-			else = {
-				custom_effect_tooltip = SOV_leader_of_the_party_and_the_people_trait_tt
-			}
-		}
-	}
-
-	focus = {
-		id = SOV_great_commander
-		icon = GFX_SOV_great_commander_ccp_2d_sov_compatibility
-		prerequisite = { focus = SOV_inheritor_of_the_mantle_of_lenin }
-		prerequisite = { focus = SOV_leader_of_the_party_and_the_people }
-		mutually_exclusive = { focus = SOV_architect_of_communism }
-		x = -1
-		y = 1
-		relative_position_id = SOV_leader_of_the_party_and_the_people
-		cost = 5
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = SOV_propaganda_campaigns_taken_15_or_greater_tt
-				check_variable = { SOV_propaganda_campaigns_taken = 15 compare = greater_than_or_equals }
-			}
-		}
-		completion_reward = {
-			add_country_leader_trait = stalin_great_commander
-			add_field_marshal_role = {
-				character = "UTI_iosif_stalin"
-				traits={ old_guard politically_connected media_personality harsh_leader }
-				skill=3
-				attack_skill=1
-				defense_skill=3
-				planning_skill=3
-				logistics_skill=3
-				legacy_id=0
-			}
-		}
-	}
-
-	focus = {
-		id = SOV_architect_of_communism
-		icon = GFX_SOV_architect_of_communism_ccp_2d_sov_compatibility
-		prerequisite = { focus = SOV_the_faithful_servant_of_lenin }
-		prerequisite = { focus = SOV_leader_of_the_party_and_the_people }
-		mutually_exclusive = { focus = SOV_great_commander }
-		x = 1
-		y = 1
-		relative_position_id = SOV_leader_of_the_party_and_the_people
-		cost = 5
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = SOV_propaganda_campaigns_taken_15_or_greater_tt
-				check_variable = { SOV_propaganda_campaigns_taken = 15 compare = greater_than_or_equals }
-			}
-		}
-		completion_reward = {
-			add_country_leader_trait = stalin_architect_of_communism
-		}
-	}
-
-	focus = {
-		id = SOV_father_of_nations
-		icon = GFX_SOV_father_of_nations_ccp_2d_sov_compatibility
-		prerequisite = { focus = SOV_great_commander focus = SOV_architect_of_communism }
-		x = 1
-		y = 1
-		relative_position_id = SOV_great_commander
-		cost = 10
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = SOV_propaganda_campaigns_taken_20_or_greater_tt
-				check_variable = { SOV_propaganda_campaigns_taken = 20 compare = greater_than_or_equals }
-			}
-		}
-		completion_reward = {
-			swap_ruler_traits = {
-				remove = stalin_heart_of_steel
-				add = stalin_father_of_nations
-			}
-			hidden_effect = {
-				play_song = "comintern_war_1"
-			}
-		}
-	}
-
-	focus = {
-		id = SOV_freedom_of_debate_unity_of_action
-		icon = GFX_focus_generic_soviet_politics
-		prerequisite = { focus = SOV_stalins_cult_of_personality }
-		x = 3
-		y = 1
-		relative_position_id = SOV_stalins_cult_of_personality
-		cost = 10
-		available = {
-
-		}
-		completion_reward = {
-			add_to_variable = { SOV_the_politburo_political_power_factor = 0.05 }
-			add_to_variable = { SOV_the_politburo_political_advisor_cost_factor = -0.15 }
-			custom_effect_tooltip = SOV_freedom_of_debate_unity_of_action_ns_tt
-
-			add_political_power = 50
-			add_stability = 0.05
-			add_war_support = 0.05
-		}
-	}
-
-	focus = {
-		id = SOV_the_construction_of_communism
-		icon = GFX_focus_ger_great_red_menace
-		prerequisite = { focus = SOV_freedom_of_debate_unity_of_action }
-		x = 0
-		y = 2
-		relative_position_id = SOV_freedom_of_debate_unity_of_action
-		cost = 10
-		available = {
-			num_subjects > 0
-		}
-		completion_reward = {
-			add_to_variable = { SOV_the_politburo_opinion_gain_monthly_same_ideology_factor = 0.25 }
-			custom_effect_tooltip = SOV_the_construction_of_communism_ns_tt
-
-			if = {
-				limit = {
-					num_subjects > 0
-				}
-				every_subject_country = {
-					add_autonomy_score = {
-						value = -100
-						localization = SOV_the_construction_of_communism
-					}
-				}
-			}
-			else = {
-				custom_effect_tooltip = SOV_the_construction_of_communism_puppet_autonomy_tt
-			}
-
-			custom_effect_tooltip = SOV_the_construction_of_communism_railways_tt
-			#Build railway from Moscow to Puppets
-			hidden_effect = { #Hiidden for tooltip reasons
-				every_subject_country = {
-					limit = {
-						capital_scope = {
-							OR = {
-								is_on_continent = europe
-								is_on_continent = asia
-								is_on_continent = middle_east
-							}
-						}
-					}
-
-					if = {
-						limit = {
-							can_build_railway = {
-								start_state = ROOT.capital
-								target_state = THIS.capital
-								build_only_on_allied = yes
-							}
-						}
-						build_railway = {				
-							start_state = ROOT.capital
-							target_state = THIS.capital
-							build_only_on_allied = yes
-						}
-					}		
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = SOV_addressing_internal_affairs
-		icon = GFX_focus_generic_self_management
-		prerequisite = { focus = SOV_the_path_of_marxism_leninism }
-		x = 5
-		y = 1
-		relative_position_id = SOV_the_path_of_marxism_leninism
-		cost = 5
-		available = {
-
-		}
-		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.1
-		}
-	}
-
-	focus = {
-		id = SOV_expand_the_agitprop
-		icon = GFX_SOV_expand_the_agitprop_ccp_2d_sov_compatibility
-		prerequisite = { focus = SOV_addressing_internal_affairs }
-		x = 0
-		y = 1
-		relative_position_id = SOV_addressing_internal_affairs
-		cost = 5
-		available = {
-
-		}
-		completion_reward = {
-			add_political_power = 25
-			add_popularity = {
-				ideology = communism
-				popularity = 0.1
-			}
-
-			hidden_effect = {
-				SOV_unlock_propaganda_campaign_slot_effect = yes
-			}
-			unlock_decision_category_tooltip = SOV_propaganda_campaigns
-		}
-	}
-
-	focus = {
-		id = SOV_positive_heroism
-		icon = GFX_SOV_positive_heroism_ccp_2d_sov_compatibility
-		prerequisite = { focus = SOV_expand_the_agitprop }
-		mutually_exclusive = { focus = SOV_collectivist_propaganda }
-		x = -2
-		y = 1
-		relative_position_id = SOV_expand_the_agitprop
-		cost = 10
-		available = {
-
-		}
-		completion_reward = {
-			add_political_power = 25
-			custom_effect_tooltip = available_military_high_command
-			show_ideas_tooltip = UTI_konstantin_rokossovsky 
-			custom_effect_tooltip = available_theorist
-			show_ideas_tooltip = UTI_georgy_zhukov
-
-			custom_effect_tooltip = unlock_propaganda_campaign_tt
-			unlock_decision_tooltip = SOV_propaganda_heroes_forward
-			custom_effect_tooltip = unlock_propaganda_campaign_slot_tt
-			SOV_unlock_propaganda_campaign_slot_effect = yes
-		}
-	}
-
-	focus = {
-		id = SOV_revive_the_stakhanovite_movement
-		icon = GFX_SOV_revive_the_stakhanovite_movement_ccp_2d_sov_compatibility
-		prerequisite = { focus = SOV_positive_heroism }
-		x = 0
-		y = 1
-		relative_position_id = SOV_positive_heroism
-		cost = 10
-		available = {
-
-		}
-		completion_reward = {
-			add_ideas = SOV_stakhanovite_movement
-		}
-	}
-
-	focus = {
-		id = SOV_war_heroes
-		icon = GFX_SOV_war_heroes_ccp_2d_sov_compatibility
-		prerequisite = { focus = SOV_revive_the_stakhanovite_movement }
-		x = 0
-		y = 1
-		relative_position_id = SOV_revive_the_stakhanovite_movement
-		cost = 10
-		available = {
-
-		}
-		completion_reward = {
-			add_ideas = SOV_war_heroes_ns
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			if = {
-				limit = {
-					UTI_georgy_zhukov = {
-						NOT = { has_character_flag = SOV_character_purged_flag }
-						is_corps_commander = yes
-					}
-				}
-				UTI_georgy_zhukov = {
-					promote_leader = yes
-				}
-			}
-			else = {
-				random_army_leader = {
-					limit = {
-						NOT = { has_character_flag = SOV_potential_target_flag }
-						is_corps_commander = yes
-						NOT = { is_character = UTI_konstantin_rokossovsky }
-						NOT = { is_character = UTI_ivan_konev }
-					}
-					promote_leader = yes
-				}
-			}
-			if = {
-				limit = {
-					UTI_konstantin_rokossovsky = {
-						NOT = { has_character_flag = SOV_character_purged_flag }
-						is_corps_commander = yes
-					}
-				}
-				UTI_konstantin_rokossovsky = {
-					promote_leader = yes
-				}
-			}
-			else = {
-				random_army_leader = {
-					limit = {
-						NOT = { has_character_flag = SOV_potential_target_flag }
-						is_corps_commander = yes
-						NOT = { is_character = UTI_georgy_zhukov }
-						NOT = { is_character = UTI_ivan_konev }
-					}
-					promote_leader = yes
-				}
-			}
-			if = {
-				limit = {
-					UTI_ivan_konev = {
-						NOT = { has_character_flag = SOV_character_purged_flag }
-						is_corps_commander = yes
-					}
-				}
-				UTI_ivan_konev = {
-					promote_leader = yes
-				}
-			}
-			else = {
-				random_army_leader = {
-					limit = {
-						NOT = { has_character_flag = SOV_potential_target_flag }
-						is_corps_commander = yes
-						NOT = { is_character = UTI_georgy_zhukov }
-						NOT = { is_character = UTI_konstantin_rokossovsky }
-					}
-					promote_leader = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = SOV_collectivist_propaganda
-		icon = GFX_SOV_collectivist_propaganda_ccp_2d_sov_compatibility
-		prerequisite = { focus = SOV_expand_the_agitprop }
-		mutually_exclusive = { focus = SOV_positive_heroism }
-		x = 0
-		y = 1
-		relative_position_id = SOV_expand_the_agitprop
-		cost = 10
-		available = {
-
-		}
-		completion_reward = {
-			add_political_power = 25
-			add_ideas = SOV_collectivist_propaganda_ns
-
-			custom_effect_tooltip = unlock_propaganda_campaign_tt
-			unlock_decision_tooltip = SOV_propaganda_for_the_motherland
-			custom_effect_tooltip = unlock_propaganda_campaign_slot_tt
-			SOV_unlock_propaganda_campaign_slot_effect = yes
-		}
-	}
-
-	focus = {
-		id = SOV_socialist_emulation
-		icon = GFX_SOV_socialist_emulation_ccp_2d_sov_compatibility
-		prerequisite = { focus = SOV_collectivist_propaganda }
-		x = 0
-		y = 1
-		relative_position_id = SOV_collectivist_propaganda
-		cost = 10
-		available = {
-
-		}
-		completion_reward = {
-			add_ideas = SOV_socialist_emulation_1_ns
-		}
-	}
-
-	focus = {
-		id = SOV_socialist_realism
-		icon = GFX_SOV_socialist_realism_ccp_2d_sov_compatibility
-		prerequisite = { focus = SOV_socialist_emulation }
-		x = 0
-		y = 1
-		relative_position_id = SOV_socialist_emulation
-		cost = 10
-		available = {
-
+		prerequisite = {
+			focus = SRI_meeting_of_the_leadership
 		}
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = SOV_socialist_emulation_1_ns
-				add_idea = SOV_socialist_emulation_2_ns
+				remove_idea = SRI_italian_chetniks
+				add_idea = SRI_italian_chetniks_2
+			}
+			custom_effect_tooltip = empty_line
+			add_popularity = {
+				ideology = absolutist
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.05
 			}
 		}
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
+	}
+
+	focus = {# FMC, postwar
+		id = SRI_crush_monarchist_militias
+		icon = GFX_focus_ITA_depose_mussolini
+		cost = 5
+
+		relative_position_id = SRI_meeting_of_the_leadership
+		x = 2
+		y = 2
+
+		available = {
+			NOT = {
+				OR = {
+					has_idea = SRI_uncertain_socialist_direction
+					has_idea = SRI_uncertain_socialist_direction_2
+				}
+			}
+		}
+		prerequisite = {
+			focus = SRI_deal_with_fmc
+		}
+		completion_reward = {
+			remove_ideas = SRI_italian_chetniks_2
+			custom_effect_tooltip = empty_line
+			add_popularity = {
+				ideology = radical
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.05
+			}
+		}
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
 	}
 
 	focus = {
-		id = SOV_the_komsomol
-		icon = GFX_SOV_the_komsomol_ccp_2d_sov_compatibility
-		prerequisite = { focus = SOV_expand_the_agitprop }
-		x = 2
-		y = 1
-		relative_position_id = SOV_expand_the_agitprop
-		cost = 5
-		available = {
+		id = SRI_making_the_new_italy
+		icon = GFX_focus_ITA_the_italian_republic
+		cost = 2
 
+		relative_position_id = SRI_meeting_of_the_leadership
+		x = 0
+		y = 2
+
+		prerequisite = {
+			focus = SRI_meeting_of_the_leadership
 		}
 		completion_reward = {
 			add_political_power = 50
+			add_stability = 0.05
+			custom_effect_tooltip = empty_line
+			remove_ideas = SRI_uncertain_socialist_direction_2
+			custom_effect_tooltip = empty_line
+			add_dynamic_modifier = {
+				modifier = SRI_italian_socialism_dynamic_modifier
+			}
+		}
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
+	}
+
+	###	Syndie Path ###
+	focus = {
+		id = SRI_the_syndicalist_orthodoxy
+		icon = GFX_focus_generic_crush_capitalism
+		cost = 5
+
+		relative_position_id = SRI_making_the_new_italy
+		x = 0
+		y = 1
+
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		prerequisite = {
+			focus = SRI_making_the_new_italy
+		}
+		completion_reward = {
+			add_stability = 0.05
+			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_italian_socialism_dynamic_modifier
+			}
+			add_to_variable = {
+				SRI_italian_communism_dynamic_modifier_defensive_war_stability_factor = 0.05
+				tooltip = defensive_war_stability_factor_tt
+			}
+			add_to_variable = {
+				SRI_italian_communism_dynamic_modifier_drift_defence_factor = 0.05
+				tooltip = drift_defence_factor_tt
+			}
+		}
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
+	}
+
+	focus = {
+		id = SRI_empower_cgl
+		icon = GFX_focus_PRC_urbanization_two
+		cost = 5
+
+		relative_position_id = SRI_the_syndicalist_orthodoxy
+		x = -2
+		y = 1
+
+		mutually_exclusive = {
+			focus = SRI_empower_our_political_officers
+		}
+
+		mutually_exclusive = {
+			focus = SRI_empower_usi
+		}
+
+		prerequisite = {
+			focus = SRI_the_syndicalist_orthodoxy
+		}
+		completion_reward = {
+			add_political_power = 75
+			custom_effect_tooltip = empty_line
+			add_ideas = SRI_urban_unions_idea
+			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_italian_socialism_dynamic_modifier
+			}
+			add_to_variable = {
+				SRI_italian_communism_dynamic_modifier_communism_drift = 0.02
+				tooltip = communism_drift_tt
+			}
+		}
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_POLITICAL FOCUS_FILTER_PRODUCTION }
+	}
+
+	focus = {
+		id = SRI_empower_our_political_officers
+		icon = GFX_focus_AST_from_picket_line_to_front_line
+		cost = 5
+
+		relative_position_id = SRI_the_syndicalist_orthodoxy
+		x = 0
+		y = 1
+
+		mutually_exclusive = {
+			focus = SRI_empower_cgl
+		}
+
+		mutually_exclusive = {
+			focus = SRI_empower_usi
+		}
+
+		prerequisite = {
+			focus = SRI_the_syndicalist_orthodoxy
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			custom_effect_tooltip = empty_line
+			add_ideas = SRI_political_commissars
+			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_italian_socialism_dynamic_modifier
+			}
+			add_to_variable = {
+				SRI_italian_communism_dynamic_modifier_communism_drift = 0.02
+				tooltip = communism_drift_tt
+			}
+		}
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_POLITICAL FOCUS_FILTER_PRODUCTION FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = SRI_empower_usi
+		icon = GFX_focus_PRC_bolshevik_urbanization
+		cost = 5
+
+		relative_position_id = SRI_the_syndicalist_orthodoxy
+		x = 2
+		y = 1
+
+		mutually_exclusive = {
+			focus = SRI_empower_cgl
+		}
+
+		mutually_exclusive = {
+			focus = SRI_empower_our_political_officers
+		}
+
+		prerequisite = {
+			focus = SRI_the_syndicalist_orthodoxy
+		}
+		completion_reward = {
+			add_stability = 0.05
+			custom_effect_tooltip = empty_line
+			add_ideas = SRI_rural_unions
+			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_italian_socialism_dynamic_modifier
+			}
+			add_to_variable = {
+				SRI_italian_communism_dynamic_modifier_communism_drift = 0.02
+				tooltip = communism_drift_tt
+			}
+		}
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = SRI_compromise_with_the_church
+		icon = GFX_focus_generic_pope
+		cost = 5
+
+		relative_position_id = SRI_the_syndicalist_orthodoxy
+		x = -1
+		y = 2
+
+		prerequisite = {
+			focus = SRI_empower_cgl
+			focus = SRI_empower_our_political_officers
+		}
+		mutually_exclusive = {
+			focus = SRI_exclude_catholic_unions
+		}
+		completion_reward = {
+			add_political_power = -25
+			add_stability = 0.05
+			custom_effect_tooltip = empty_line
 			add_popularity = {
-				ideology = communism
+				ideology = democratic
 				popularity = 0.1
 			}
-
-			custom_effect_tooltip = unlock_propaganda_campaign_tt
-			unlock_decision_tooltip = SOV_propaganda_knowledge
-			unlock_decision_tooltip = SOV_propaganda_builders_of_communism
-			unlock_decision_tooltip = SOV_propaganda_sweep_scum_out
-			custom_effect_tooltip = unlock_propaganda_campaign_slot_tt
-			SOV_unlock_propaganda_campaign_slot_effect = yes
+			custom_effect_tooltip = empty_line
+			swap_ideas = {
+				remove_idea = SRI_anti_pope_stance
+				add_idea = SRI_the_historical_compromise_1
+			}
+			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_italian_socialism_dynamic_modifier
+			}
+			add_to_variable = {
+				SRI_italian_socialism_dynamic_modifier_political_power_factor = 0.05
+				tooltip = political_power_factor_tt
+			}
 		}
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_STABILITY }
 	}
+
+	focus = {
+		id = SRI_exclude_catholic_unions
+		icon = GFX_focus_mex_triumph_over_the_cristeros
+		cost = 5
+
+		relative_position_id = SRI_the_syndicalist_orthodoxy
+		x = 1
+		y = 2
+
+		prerequisite = {
+			focus = SRI_empower_cgl
+			focus = SRI_empower_our_political_officers
+			focus = SRI_empower_usi
+		}
+		mutually_exclusive = {
+			focus = SRI_compromise_with_the_church
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = -0.05
+			custom_effect_tooltip = empty_line
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			custom_effect_tooltip = empty_line
+			swap_ideas = {
+				remove_idea = SRI_anti_pope_stance
+				add_idea = SRI_anti_clerical_offensive_1
+			}
+			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_italian_socialism_dynamic_modifier
+			}
+			add_to_variable = {
+				SRI_italian_socialism_dynamic_modifier_political_power_factor = 0.05
+				tooltip = political_power_factor_tt
+			}
+		}
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = SRI_crush_the_squadracce
+		icon = GFX_focus_ITA_liberation_or_death
+		cost = 5
+
+		relative_position_id = SRI_the_syndicalist_orthodoxy
+		x = -2
+		y = 3
+
+		prerequisite = {
+			focus = SRI_empower_cgl
+			focus = SRI_empower_our_political_officers
+			focus = SRI_empower_usi
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+			custom_effect_tooltip = empty_line
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.2
+			}
+			add_popularity = {
+				ideology = radical
+				popularity = -0.2
+			}
+			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_italian_socialism_dynamic_modifier
+			}
+			add_to_variable = {
+				SRI_italian_communism_dynamic_modifier_drift_defence_factor = 0.05
+				tooltip = drift_defence_factor_tt
+			}
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+	}
+
+	focus = {
+		id = SRI_empower_federated_unions
+		icon = GFX_focus_ITA_workers_unions
+		cost = 5
+
+		relative_position_id = SRI_the_syndicalist_orthodoxy
+		x = -3
+		y = 2
+
+		prerequisite = {
+			focus = SRI_empower_cgl
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = empty_line
+			if = {
+				limit = { 
+					has_idea = SRI_urban_unions_idea
+				}
+				swap_ideas = {
+					remove_idea = SRI_urban_unions_idea
+					add_idea = SRI_urban_unions_idea_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = SRI_urban_unions_idea_2
+				}
+				swap_ideas = {
+					remove_idea = SRI_urban_unions_idea_2
+					add_idea = SRI_urban_unions_idea_3
+				}
+			}
+			else = {
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = SRI_urban_unions_idea
+						add_idea = SRI_urban_unions_idea_2
+					}
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_PRODUCTION }
+	}
+
+	focus = {
+		id = SRI_create_a_new_system_of_labour_unions
+		icon = GFX_focus_por_workers_of_iberia
+		cost = 5
+
+		relative_position_id = SRI_the_syndicalist_orthodoxy
+		x = -4
+		y = 3
+
+		prerequisite = {
+			focus = SRI_empower_cgl
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = empty_line
+			if = {
+				limit = { 
+					has_idea = SRI_urban_unions_idea
+				}
+				swap_ideas = {
+					remove_idea = SRI_urban_unions_idea
+					add_idea = SRI_urban_unions_idea_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = SRI_urban_unions_idea_2
+				}
+				swap_ideas = {
+					remove_idea = SRI_urban_unions_idea_2
+					add_idea = SRI_urban_unions_idea_3
+				}
+			}
+			else = {
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = SRI_urban_unions_idea
+						add_idea = SRI_urban_unions_idea_2
+					}
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_PRODUCTION }
+	}
+
+	focus = {
+		id = SRI_the_spirit_of_parma
+		icon = GFX_focus_ITA_peasants_rise
+		cost = 5
+
+		relative_position_id = SRI_the_syndicalist_orthodoxy
+		x = 3
+		y = 2
+
+		prerequisite = {
+			focus = SRI_empower_usi
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+					free_building_slots = {
+						building = infrastructure
+						size = 1
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+					free_building_slots = {
+						building = infrastructure
+						size = 1
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = empty_line
+			if = {
+				limit = { 
+					has_idea = SRI_rural_unions
+				}
+				swap_ideas = {
+					remove_idea = SRI_rural_unions
+					add_idea = SRI_rural_unions_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = SRI_rural_unions_2
+				}
+				swap_ideas = {
+					remove_idea = SRI_rural_unions_2
+					add_idea = SRI_rural_unions_3
+				}
+			}
+			else = {
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = SRI_rural_unions
+						add_idea = SRI_rural_unions_2
+					}
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER }
+	}
+
+	focus = {
+		id = SRI_movement_of_true_action
+		icon = GFX_focus_generic_spur_communist_revolutions
+		cost = 5
+
+		relative_position_id = SRI_the_syndicalist_orthodoxy
+		x = 5
+		y = 2
+
+		prerequisite = {
+			focus = SRI_empower_usi
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_manpower = 80000
+			custom_effect_tooltip = empty_line
+			if = {
+				limit = { 
+					has_idea = SRI_rural_unions
+				}
+				swap_ideas = {
+					remove_idea = SRI_rural_unions
+					add_idea = SRI_rural_unions_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = SRI_rural_unions_2
+				}
+				swap_ideas = {
+					remove_idea = SRI_rural_unions_2
+					add_idea = SRI_rural_unions_3
+				}
+			}
+			else = {
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = SRI_rural_unions
+						add_idea = SRI_rural_unions_2
+					}
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_MANPOWER }
+	}
+
+	focus = {
+		id = SRI_appeal_to_socialist_unity
+		icon = GFX_focus_ITA_il_sol_dell_avvenire
+		cost = 5
+
+		relative_position_id = SRI_the_syndicalist_orthodoxy
+		x = 0
+		y = 3
+
+		prerequisite = {
+			focus = SRI_compromise_with_the_church
+			focus = SRI_exclude_catholic_unions
+		}
+		completion_reward = {
+			if = {
+				limit = { 
+					has_idea = SRI_political_commissars
+				}
+				swap_ideas = {
+					remove_idea = SRI_political_commissars
+					add_idea = SRI_political_commissars_2
+				}
+			}
+			else = {
+				add_ideas = SRI_political_commissars
+			}
+			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_italian_socialism_dynamic_modifier
+			}
+			add_to_variable = {
+				SRI_italian_socialism_dynamic_modifier_mobilization_speed = 0.05
+				tooltip = mobilization_speed_tt
+			}
+			add_to_variable = {
+				SRI_italian_socialism_dynamic_modifier_party_popularity_stability_factor = 0.05
+				tooltip = party_popularity_stability_factor_tt
+			}
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_PRODUCTION }
+	}
+
+	focus = {
+		id = SRI_fight_for_internationalism
+		icon = GFX_focus_PRC_join_comintern
+		cost = 5
+
+		relative_position_id = SRI_the_syndicalist_orthodoxy
+		x = 1
+		y = 4
+
+		prerequisite = {
+			focus = SRI_appeal_to_socialist_unity
+		}
+		completion_reward = {
+			if = {
+				limit = { 
+					has_idea = SRI_political_commissars_2
+				}
+				swap_ideas = {
+					remove_idea = SRI_political_commissars_2
+					add_idea = SRI_political_commissars_3
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = SRI_political_commissars
+				}
+				swap_ideas = {
+					remove_idea = SRI_political_commissars
+					add_idea = SRI_political_commissars_2
+				}
+			}
+			else = {
+				add_ideas = SRI_political_commissars
+			}
+			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_italian_socialism_dynamic_modifier
+			}
+			add_to_variable = {
+				SRI_italian_socialism_dynamic_modifier_mobilization_speed = 0.05
+				tooltip = mobilization_speed_tt
+			}
+			add_to_variable = {
+				SRI_italian_socialism_dynamic_modifier_recruitable_population_factor = 0.05
+				tooltip = recruitable_population_factor_tt
+			}
+		}
+		search_filters = { FOCUS_FILTER_MANPOWER }
+	}
+
+	focus = {
+		id = SRI_the_federal_union
+		icon = GFX_focus_FIN_finnish_federation_of_trade_unions
+		cost = 5
+
+		relative_position_id = SRI_the_syndicalist_orthodoxy
+		x = -1
+		y = 4
+
+		prerequisite = {
+			focus = SRI_compromise_with_the_church
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SRI_the_historical_compromise_1
+				add_idea = SRI_the_historical_compromise_2
+			}
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+	}
+
+	focus = {
+		id = SRI_protect_local_democracy
+		icon = GFX_SOV_return_democracy_to_the_party_ccp_2d_sov_compatibility
+		cost = 5
+
+		relative_position_id = SRI_the_syndicalist_orthodoxy
+		x = -2
+		y = 5
+
+		prerequisite = {
+			focus = SRI_the_federal_union
+		}
+		completion_reward = {
+			if = {
+				limit = { 
+					has_idea = SRI_the_historical_compromise_2
+				}
+				swap_ideas = {
+					remove_idea = SRI_the_historical_compromise_2
+					add_idea = SRI_the_historical_compromise_3
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = SRI_the_historical_compromise_3
+				}
+				swap_ideas = {
+					remove_idea = SRI_the_historical_compromise_3
+					add_idea = SRI_the_historical_compromise_4
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = SRI_the_historical_compromise_1
+					add_idea = SRI_the_historical_compromise_2
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+	}
+
+	focus = {
+		id = SRI_emphasise_the_social_saints
+		icon = GFX_focus_generic_catholic_dominion
+		cost = 5
+
+		relative_position_id = SRI_the_syndicalist_orthodoxy
+		x = 0
+		y = 5
+
+		prerequisite = {
+			focus = SRI_the_federal_union
+		}
+		completion_reward = {
+			if = {
+				limit = { 
+					has_idea = SRI_the_historical_compromise_2
+				}
+				swap_ideas = {
+					remove_idea = SRI_the_historical_compromise_2
+					add_idea = SRI_the_historical_compromise_3
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = SRI_the_historical_compromise_3
+				}
+				swap_ideas = {
+					remove_idea = SRI_the_historical_compromise_3
+					add_idea = SRI_the_historical_compromise_4
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = SRI_the_historical_compromise_1
+					add_idea = SRI_the_historical_compromise_2
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+	}
+
+	focus = {
+		id = SRI_empower_chambers_of_labour
+		icon = GFX_SOV_found_the_pcdi_ccp_2d_sov_compatibility
+		cost = 5
+
+		relative_position_id = SRI_the_syndicalist_orthodoxy
+		x = 2
+		y = 3
+
+		prerequisite = {
+			focus = SRI_exclude_catholic_unions
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					is_core_of = root
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					is_core_of = root
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = empty_line
+			if = {
+				limit = { 
+					has_idea = SRI_anti_clerical_offensive_1
+				}
+				swap_ideas = {
+					remove_idea = SRI_anti_clerical_offensive_1
+					add_idea = SRI_anti_clerical_offensive_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = SRI_anti_clerical_offensive_2
+				}
+				swap_ideas = {
+					remove_idea = SRI_anti_clerical_offensive_2
+					add_idea = SRI_anti_clerical_offensive_3
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = SRI_anti_pope_stance
+					add_idea = SRI_anti_clerical_offensive_1
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
+	}
+
+	focus = {
+		id = SRI_revolutionary_expropriations
+		icon = GFX_focus_ARG_state_atheism
+		cost = 5
+
+		relative_position_id = SRI_the_syndicalist_orthodoxy
+		x = 4
+		y = 3
+
+		prerequisite = {
+			focus = SRI_exclude_catholic_unions
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					is_core_of = root
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = empty_line
+			if = {
+				limit = { 
+					has_idea = SRI_anti_clerical_offensive_1
+				}
+				swap_ideas = {
+					remove_idea = SRI_anti_clerical_offensive_1
+					add_idea = SRI_anti_clerical_offensive_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = SRI_anti_clerical_offensive_2
+				}
+				swap_ideas = {
+					remove_idea = SRI_anti_clerical_offensive_2
+					add_idea = SRI_anti_clerical_offensive_3
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = SRI_anti_pope_stance
+					add_idea = SRI_anti_clerical_offensive_1
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = SRI_building_a_new_mythos
+		icon = GFX_focus_ITA_corpo_volontari_della_liberta
+		cost = 5
+
+		relative_position_id = SRI_the_syndicalist_orthodoxy
+		x = 3
+		y = 4
+
+		prerequisite = {
+			focus = SRI_empower_chambers_of_labour
+		}
+		prerequisite = {
+			focus = SRI_revolutionary_expropriations
+		}
+		completion_reward = {
+			add_war_support = 0.1
+			custom_effect_tooltip = empty_line
+			swap_ideas = {
+				remove_idea = SRI_anti_clerical_offensive_3
+				add_idea = SRI_anti_clerical_offensive_4
+			}
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT }
+	}
+
+	### New Economy-Military Tree ###
+	focus = {
+		id = SRI_create_enel
+		icon = GFX_focus_AFG_helmand_river_authority
+		cost = 5
+
+		x = 12
+		y = 0
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = empty_line
+			add_tech_bonus = {
+				name = SRI_create_enel
+				bonus = 1
+				uses = 1
+				category = industry
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SRI_elettro_treno_rapido
+		icon = GFX_focus_generic_railroad
+		cost = 5
+
+		relative_position_id = SRI_create_enel
+		x = 2
+		y = 0
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = SRI_elettro_treno_rapido
+				ahead_reduction = 1
+				bonus = 0.5
+				uses = 1
+				category = train_tech
+			}
+			custom_effect_tooltip = empty_line
+			build_railway = { #Turin to Viterbo
+				level = 1
+				start_province = 6780
+				target_province = 6862
+			}
+			build_railway = { #Bologna to Viterbo
+				level = 1
+				start_province = 6606
+				target_province = 6862
+			}
+			build_railway = { #Bologna to Ancona
+				level = 1
+				start_province = 6606
+				target_province = 925
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SRI_renew_the_ricostruzione_industriale
+		icon = GFX_focus_ICE_embrace_the_workers_revolution
+		cost = 5
+
+		relative_position_id = SRI_create_enel
+		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = SRI_create_enel
+			focus = SRI_elettro_treno_rapido
+		}
+
+		available = {
+			has_completed_focus = SRI_the_syndicalist_orthodoxy
+		}
+
+		completion_reward = {
+			add_dynamic_modifier = { modifier = SRI_istituto_per_la_ricostruzione_industriale_modifier }
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+	focus = {
+		id = SRI_foster_innovation
+		icon = GFX_focus_NORDIC_com_research
+		cost = 5
+
+		relative_position_id = SRI_renew_the_ricostruzione_industriale
+		x = -4
+		y = 1
+
+		prerequisite = {
+			focus = SRI_renew_the_ricostruzione_industriale
+		}
+
+		ai_will_do = { factor = 100 }
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_istituto_per_la_ricostruzione_industriale_modifier
+			}
+			add_to_variable = {
+				SRI_iri_research_speed_factor = 0.1
+				tooltip = research_speed_factor_tt
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SRI_legacy_of_marconi
+		icon = GFX_focus_generic_radio_communication
+		cost = 5
+
+		relative_position_id = SRI_foster_innovation
+		x = -1
+		y = 2
+
+		prerequisite = {
+			focus = SRI_foster_innovation
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 2
+				has_war = no
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = SRI_legacy_of_marconi
+				ahead_reduction = 1
+				bonus = 1
+				uses = 1
+				category = electronics
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SRI_cinecitta
+		icon = GFX_focus_SWE_radiotjanst
+		cost = 5
+
+		relative_position_id = SRI_legacy_of_marconi
+		x = 0
+		y = 2
+
+		prerequisite = {
+			focus = SRI_legacy_of_marconi
+		}
+
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				factor = 2
+				has_war = no
+			}
+		}
+
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+			add_political_power = 75
+			custom_effect_tooltip = empty_line
+			add_tech_bonus = {
+				name = SRI_cinecitta
+				bonus = 1
+				uses = 1
+				category = electronics
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = SRI_expand_turin_polytechnic_institute
+		icon = GFX_focus_NORDIC_com_capstone_research
+		cost = 10
+
+		relative_position_id = SRI_foster_innovation
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = SRI_foster_innovation
+		}
+
+		ai_will_do = { factor = 100 }
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SRI_fermis_nuclear_research
+		icon = GFX_focus_NORDIC_com_selector_research
+		cost = 10
+
+		relative_position_id = SRI_expand_turin_polytechnic_institute
+		x = 0
+		y = 2
+
+		available = {
+			has_tech = atomic_research
+		}
+		prerequisite = {
+			focus = SRI_expand_turin_polytechnic_institute
+		}
+
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+		}
+
+		completion_reward = {
+			add_breakthrough_progress = {
+				specialization = specialization_nuclear
+				value = 1
+			}
+			custom_effect_tooltip = empty_line
+			add_tech_bonus = {
+				name = SRI_fermis_nuclear_research
+				bonus = 1
+				uses = 1
+				category = nuclear
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SRI_thermojet_experiments
+		icon = GFX_SOV_found_the_jet_institute_ccp_2d_sov_compatibility
+		cost = 10
+
+		relative_position_id = SRI_foster_innovation
+		x = 1
+		y = 2
+
+		prerequisite = {
+			focus = SRI_foster_innovation
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+		}
+
+		completion_reward = {
+			add_breakthrough_progress = {
+				specialization = specialization_air
+				value = 1
+			}
+			custom_effect_tooltip = empty_line
+			add_tech_bonus = {
+				name = SRI_thermojet_experiments
+				ahead_reduction = 1
+				bonus = 1
+				uses = 1
+				category = jet_technology
+				category = rocketry
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_AIRFORCE_BONUS }
+	}
+	focus = {
+		id = SRI_syndical_conglomerates
+		icon = GFX_focus_ITA_workers_unions
+		cost = 5
+
+		relative_position_id = SRI_renew_the_ricostruzione_industriale
+		x = -2
+		y = 1
+
+		prerequisite = {
+			focus = SRI_renew_the_ricostruzione_industriale
+		}
+		mutually_exclusive = {
+			focus = SRI_maintain_regional_unions
+		}
+
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				factor = 2
+				has_war = no
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_istituto_per_la_ricostruzione_industriale_modifier
+			}
+			add_to_variable = {
+				SRI_iri_production_factory_max_efficiency_factor = 0.05
+				tooltip = production_factory_max_efficiency_factor_tt
+			}
+			add_to_variable = {
+				SRI_iri_production_factory_efficiency_gain_factor = -0.05
+				tooltip = production_factory_efficiency_gain_factor_tt
+			}
+		}
+		search_filters = { FOCUS_FILTER_PRODUCTION }
+	}
+	focus = {
+		id = SRI_maximise_production_capacity
+		icon = GFX_focus_SOV_merge_plants
+		cost = 5
+
+		relative_position_id = SRI_syndical_conglomerates
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = SRI_syndical_conglomerates
+		}
+
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				factor = 2
+				has_war = no
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_istituto_per_la_ricostruzione_industriale_modifier
+			}
+			add_to_variable = {
+				SRI_iri_production_factory_max_efficiency_factor = 0.05
+				tooltip = production_factory_max_efficiency_factor_tt
+			}
+			add_to_variable = {
+				SRI_iri_production_factory_efficiency_gain_factor = -0.05
+				tooltip = production_factory_efficiency_gain_factor_tt
+			}
+			custom_effect_tooltip = empty_line
+			add_tech_bonus = {
+				name = SRI_maximise_production_capacity
+				ahead_reduction = 1
+				uses = 1
+				category = cat_production
+			}
+		}
+		search_filters = { FOCUS_FILTER_PRODUCTION FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SRI_maintain_regional_unions
+		icon = GFX_focus_prc_agrarian_socialism
+		cost = 5
+
+		relative_position_id = SRI_renew_the_ricostruzione_industriale
+		x = 6
+		y = 1
+
+		prerequisite = {
+			focus = SRI_renew_the_ricostruzione_industriale
+		}
+		mutually_exclusive = {
+			focus = SRI_syndical_conglomerates
+		}
+
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				factor = 2
+				has_war = no
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_istituto_per_la_ricostruzione_industriale_modifier
+			}
+			add_to_variable = {
+				SRI_iri_production_factory_efficiency_gain_factor = 0.05
+				tooltip = production_factory_efficiency_gain_factor_tt
+			}
+			add_to_variable = {
+				SRI_iri_production_factory_start_efficiency_factor = 0.05
+				tooltip = production_factory_start_efficiency_factor_tt
+			}
+		}
+		search_filters = { FOCUS_FILTER_PRODUCTION }
+	}
+	focus = {
+		id = SRI_modern_production_lines
+		icon = GFX_focus_generic_mass_production
+		cost = 5
+
+		relative_position_id = SRI_maintain_regional_unions
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = SRI_maintain_regional_unions
+		}
+
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				factor = 2
+				has_war = no
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_istituto_per_la_ricostruzione_industriale_modifier
+			}
+			add_to_variable = {
+				SRI_iri_industrial_capacity_factory = 0.05
+				tooltip = industrial_capacity_factory_tt
+			}
+			add_to_variable = {
+				SRI_iri_production_factory_efficiency_gain_factor = 0.05
+				tooltip = production_factory_efficiency_gain_factor_tt
+			}
+			add_to_variable = {
+				SRI_iri_line_change_production_efficiency_factor = 0.1
+				tooltip = line_change_production_efficiency_factor_tt
+			}
+			custom_effect_tooltip = empty_line
+			add_tech_bonus = {
+				name = SRI_modern_production_lines
+				ahead_reduction = 1
+				uses = 1
+				category = construction_tech
+			}
+		}
+		search_filters = { FOCUS_FILTER_PRODUCTION FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SRI_reform_the_iacp
+		icon = GFX_focus_generic_low_cost_housing
+		cost = 5
+
+		relative_position_id = SRI_syndical_conglomerates
+		x = 1
+		y = 2
+
+		prerequisite = {
+			focus = SRI_syndical_conglomerates
+			focus = SRI_maintain_regional_unions
+		}
+
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				factor = 2
+				has_war = no
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_istituto_per_la_ricostruzione_industriale_modifier
+			}
+			add_to_variable = {
+				SRI_iri_political_power_factor = 0.05
+				tooltip = political_power_factor_tt
+			}
+			add_to_variable = {
+				SRI_iri_monthly_population = 0.05
+				tooltip = monthly_population_tt
+			}
+			custom_effect_tooltip = empty_line
+			add_tech_bonus = {
+				name = SRI_reform_the_iacp
+				bonus = 0.75
+				uses = 2
+				category = construction_tech
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESISTANCE }
+	}
+	focus = {
+		id = SRI_the_eternal_city
+		icon = GFX_focus_PRC_bolshevik_urbanization_completed
+		cost = 5
+
+		relative_position_id = SRI_reform_the_iacp
+		x = -1
+		y = 2
+
+		available = {
+			controls_state = 231 #Latium
+			231 = { is_core_of = ROOT }
+		}
+
+		prerequisite = {
+			focus = SRI_reform_the_iacp
+		}
+
+		ai_will_do = { factor = 50 }
+
+		completion_reward = {
+			231 = { #Latium
+				NJORD_upgrade_state_category = yes
+				add_extra_state_shared_building_slots = 3
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESISTANCE FOCUS_FILTER_INDUSTRY }
+	}
+	focus = {
+		id = SRI_a_new_partenope
+		icon = GFX_focus_PRC_urbanization
+		cost = 5
+
+		relative_position_id = SRI_reform_the_iacp
+		x = 0
+		y = 1
+
+		available = {
+			controls_state = 232 #Campania
+			232 = { is_core_of = ROOT }
+		}
+
+		prerequisite = {
+			focus = SRI_reform_the_iacp
+		}
+
+		ai_will_do = { factor = 50 }
+
+		completion_reward = {
+			232 = { #Campania
+				NJORD_upgrade_state_category = yes
+				if = {
+					limit = { free_building_slots = { building = infrastructure size > 0 } }
+					add_extra_state_shared_building_slots = 2
+				}
+				else = {
+					add_extra_state_shared_building_slots = 3
+				}
+				if = {
+					limit = { free_building_slots = { building = infrastructure size > 0 } }
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESISTANCE FOCUS_FILTER_INDUSTRY }
+	}
+	focus = {
+		id = SRI_southern_reconstruction
+		icon = GFX_focus_ITA_grande_rivolta_rurale
+		cost = 5
+
+		relative_position_id = SRI_a_new_partenope
+		x = 0
+		y = 2
+
+		available = {
+			controls_state = 232 #Calabria
+			controls_state = 223 #Abruzzo
+			232 = { is_core_of = ROOT }
+			223 = { is_core_of = ROOT }
+		}
+
+		prerequisite = {
+			focus = SRI_a_new_partenope
+		}
+
+		ai_will_do = { factor = 50 }
+
+		completion_reward = {
+			232 = { #Calabria
+				NJORD_upgrade_state_category = yes
+				if = {
+					limit = { free_building_slots = { building = infrastructure size > 0 } }
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				else = {
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+			223 = { #Abruzzo
+				NJORD_upgrade_state_category = yes
+				if = {
+					limit = { free_building_slots = { building = infrastructure size > 0 } }
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				else = {
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESISTANCE FOCUS_FILTER_INDUSTRY }
+	}
+	focus = {
+		id = SRI_tap_sicilian_potential
+		icon = GFX_focus_generic_farmland
+		cost = 5
+
+		relative_position_id = SRI_southern_reconstruction
+		x = -2
+		y = 1
+
+		available = {
+			controls_state = 233 #Sicily
+			233 = { is_core_of = ROOT }
+		}
+
+		prerequisite = {
+			focus = SRI_southern_reconstruction
+		}
+
+		ai_will_do = { factor = 50 }
+
+		completion_reward = {
+			233 = { #Sicily
+				NJORD_upgrade_state_category = yes
+				if = {
+					limit = { free_building_slots = { building = infrastructure size > 0 } }
+					add_extra_state_shared_building_slots = 2
+				}
+				else = {
+					add_extra_state_shared_building_slots = 3
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				if = {
+					limit = { free_building_slots = { building = infrastructure size > 0 } }
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				add_resource = {
+					type = steel
+					amount = 8
+				}
+				add_resource = {
+					type = coal
+					amount = 4
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESISTANCE FOCUS_FILTER_INDUSTRY }
+	}
+	focus = {
+		id = SRI_rebuild_carbonia
+		icon = GFX_focus_generic_coal_mining
+		cost = 5
+
+		relative_position_id = SRI_southern_reconstruction
+		x = 0
+		y = 1
+
+		available = {
+			controls_state = 225 #Sardinia
+			225 = { is_core_of = ROOT }
+		}
+
+		prerequisite = {
+			focus = SRI_southern_reconstruction
+		}
+
+		ai_will_do = { factor = 50 }
+
+		completion_reward = {
+			225 = { #Sardinia
+				NJORD_upgrade_state_category = yes
+				if = {
+					limit = { free_building_slots = { building = infrastructure size > 0 } }
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				else = {
+					add_extra_state_shared_building_slots = 1
+				}
+				add_resource = {
+					type = coal
+					amount = 8
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESISTANCE FOCUS_FILTER_INDUSTRY }
+	}
+	focus = {
+		id = SRI_modernise_the_apulian_fields
+		icon = GFX_focus_generic_land_reclamation
+		cost = 5
+
+		relative_position_id = SRI_southern_reconstruction
+		x = 2
+		y = 1
+
+		available = {
+			controls_state = 223 #Apulia
+			223 = { is_core_of = ROOT }
+		}
+
+		prerequisite = {
+			focus = SRI_southern_reconstruction
+		}
+
+		ai_will_do = { factor = 50 }
+
+		completion_reward = {
+			223 = {
+				NJORD_upgrade_state_category = yes
+			}
+			custom_effect_tooltip = empty_line
+			add_timed_idea = {
+				idea = SRI_apulian_farming
+				days = 365
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESISTANCE FOCUS_FILTER_INDUSTRY }
+	}
+	focus = {
+		id = SRI_reunite_the_italian_heartlands
+		icon = GFX_focus_ETH_invite_italian_settlers
+		cost = 5
+
+		relative_position_id = SRI_reform_the_iacp
+		x = 1
+		y = 2
+
+		prerequisite = {
+			focus = SRI_reform_the_iacp
+		}
+
+		ai_will_do = { factor = 50 }
+
+		completion_reward = {
+			226 = { #Piedmont
+				add_extra_state_shared_building_slots = 1
+			}
+			227 = { #Lombardy
+				add_extra_state_shared_building_slots = 1
+			}
+			222 = { #Venetia
+				add_extra_state_shared_building_slots = 1
+			}
+			229 = { #Romagna
+				add_extra_state_shared_building_slots = 1
+			}
+			224 = { #Liguria
+				add_extra_state_shared_building_slots = 1
+			}
+			230 = { #Emilia
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESISTANCE FOCUS_FILTER_INDUSTRY }
+	}
+	focus = {
+		id = SRI_stabilimento_di_mirafiori
+		icon = GFX_focus_generic_truck
+		cost = 5
+
+		relative_position_id = SRI_syndical_conglomerates
+		x = 2
+		y = 1
+
+		available = {
+			controls_state = 226 #Piedmont
+		}
+
+		prerequisite = {
+			focus = SRI_syndical_conglomerates
+			focus = SRI_maintain_regional_unions
+		}
+
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				factor = 2
+				has_war = no
+			}
+		}
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 300
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+	focus = {
+		id = SRI_finish_the_electrical_conversion
+		icon = GFX_focus_generic_energy
+		cost = 5
+
+		relative_position_id = SRI_syndical_conglomerates
+		x = 4
+		y = 1
+
+		prerequisite = {
+			focus = SRI_syndical_conglomerates
+			focus = SRI_maintain_regional_unions
+		}
+
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				factor = 2
+				has_war = no
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_istituto_per_la_ricostruzione_industriale_modifier
+			}
+			add_to_variable = {
+				SRI_iri_industrial_capacity_factory = 0.05
+				tooltip = industrial_capacity_factory_tt
+			}
+			add_to_variable = {
+				SRI_iri_industrial_capacity_dockyard = 0.05
+				tooltip = industrial_capacity_dockyard_tt
+			}
+			227 = { # CHANGE TO ACTUAL STATE AND PROVINCE
+				add_building_construction = {
+					type = dam
+					level = 1
+					province = 773
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_PRODUCTION }
+	}
+	focus = {
+		id = SRI_terni_city_of_steel
+		icon = GFX_focus_generic_steel
+		cost = 5
+
+		relative_position_id = SRI_syndical_conglomerates
+		x = 6
+		y = 1
+
+		available = {
+			controls_state = 226 #Umbria
+		}
+
+		prerequisite = {
+			focus = SRI_syndical_conglomerates
+			focus = SRI_maintain_regional_unions
+		}
+
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				factor = 2
+				has_war = no
+			}
+		}
+
+		completion_reward = {
+			226 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_resource = {
+					type = steel
+					amount = 8
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+	focus = {
+		id = SRI_expand_ilva
+		icon = GFX_focus_NORDIC_com_civilian
+		cost = 5
+
+		relative_position_id = SRI_finish_the_electrical_conversion
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = SRI_stabilimento_di_mirafiori
+		}
+		prerequisite = {
+			focus = SRI_finish_the_electrical_conversion
+		}
+		prerequisite = {
+			focus = SRI_terni_city_of_steel
+		}
+
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				factor = 2
+				has_war = no
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_istituto_per_la_ricostruzione_industriale_modifier
+			}
+			add_to_variable = {
+				SRI_iri_local_resources_factor = 0.05
+				tooltip = local_resources_factor_tt
+			}
+			custom_effect_tooltip = empty_line
+			add_tech_bonus = {
+				name = SRI_expand_ilva
+				bonus = 0.75
+				uses = 2
+				category = excavation_tech
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SRI_agip_operations_in_romagna
+		icon = GFX_focus_SIA_chemical_imports
+		cost = 5
+
+		relative_position_id = SRI_expand_ilva
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = SRI_expand_ilva
+		}
+
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				factor = 2
+				has_war = no
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_istituto_per_la_ricostruzione_industriale_modifier
+			}
+			add_to_variable = {
+				SRI_iri_production_oil_factor = 0.1
+				tooltip = production_oil_factor_tt
+			}
+			custom_effect_tooltip = empty_line
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+					free_building_slots = { building = fuel_silo size > 0 include_locked = yes }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = fuel_silo
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+					free_building_slots = { building = fuel_silo size > 0 include_locked = yes }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = fuel_silo
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+					free_building_slots = { building = fuel_silo size > 0 include_locked = yes }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = fuel_silo
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+	focus = {
+		id = SRI_gomma_sintetica
+		icon = GFX_focus_BRA_rubber_war
+		cost = 5
+
+		relative_position_id = SRI_agip_operations_in_romagna
+		x = 0
+		y = 2
+
+		prerequisite = {
+			focus = SRI_agip_operations_in_romagna
+		}
+
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				factor = 2
+				has_war = no
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+					free_building_slots = { building = synthetic_refinery size > 0 include_locked = yes }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+					free_building_slots = { building = synthetic_refinery size > 0 include_locked = yes }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = empty_line
+			add_tech_bonus = {
+				name = SRI_gomma_sintetica
+				bonus = 0.75
+				uses = 2
+				category = synth_resources
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SRI_integrate_the_lombard_arms_industry
+		icon = GFX_focus_generic_arms_trade
+		cost = 5
+
+		relative_position_id = SRI_expand_ilva
+		x = 0
+		y = 2
+
+		available = {
+			controls_state = 227
+		}
+
+		prerequisite = {
+			focus = SRI_expand_ilva
+		}
+
+		ai_will_do = { factor = 40 }
+
+		completion_reward = {
+			227 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			#italy_reset_beretta_mio = yes # ADD EXTRA FUNDS TO BERETTA
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+	focus = {
+		id = SRI_modernise_the_po_farmlands
+		icon = GFX_focus_generic_modernizing_agriculture
+		cost = 5
+
+		relative_position_id = SRI_expand_ilva
+		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = SRI_expand_ilva
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 231 }
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 223 }
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 232 }
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+	focus = {
+		id = SRI_modernise_the_armata_rossa
+		icon = GFX_focus_PRC_immediate_response_to_lack_of_army
+		cost = 5
+
+		relative_position_id = SRI_elettro_treno_rapido
+		x = 14
+		y = 0
+
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				factor = 4
+				has_war = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			army_experience = 20
+			add_doctrine_cost_reduction = {
+				name = SRI_modernise_the_armata_rossa
+				cost_reduction = 0.75
+				uses = 1
+				category = land_doctrine
+			}
+			add_tech_bonus = {
+				name = SRI_modernise_the_armata_rossa
+				bonus = 0.25
+				uses = 2
+				category = infantry_weapons
+				category = support_tech
+				category = armor
+				category = artillery
+			}
+
+			add_dynamic_modifier = { modifier = SRI_legione_proletaria_modifier }
+		}
+		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SRI_commissione_armi_e_munizioni
+		icon = GFX_focus_generic_money_for_equipment
+		cost = 5
+
+		relative_position_id = SRI_modernise_the_armata_rossa
+		x = -8
+		y = 4
+
+		available = {
+			has_tech = tech_engineers
+		}
+		prerequisite = {
+			focus = SRI_modernise_the_armata_rossa
+		}
+		prerequisite = {
+			focus = SRI_syndical_conglomerates
+			focus = SRI_maintain_regional_unions
+		}
+
+		ai_will_do = {
+			factor = 15
+			modifier = {
+				factor = 4
+				has_war = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = empty_line
+			complete_special_project = {
+				project = sp:sp_land_flamethrower_tank
+				show_modifiers = no
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ARMY_BONUS }
+	}
+	focus = {
+		id = SRI_motorise_the_bersaglieri
+		icon = GFX_goal_generic_army_motorized
+		cost = 5
+
+		relative_position_id = SRI_commissione_armi_e_munizioni
+		x = -2
+		y = 1
+
+		prerequisite = {
+			focus = SRI_commissione_armi_e_munizioni
+		}
+
+		ai_will_do = {
+			factor = 15
+			modifier = {
+				factor = 4
+				has_war = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = SRI_motorise_the_bersaglieri
+				bonus = 0.75
+				uses = 2
+				category = motorized_equipment
+			}
+			custom_effect_tooltip = empty_line
+			set_technology = {
+				bicycle_infantry = 1
+			}
+			custom_effect_tooltip = empty_line
+			if = {
+				limit = { has_template = "Divisione Bersaglieri" }
+				delete_unit_template_and_units = { division_template = "Divisione Bersaglieri" disband = yes } #no cheating
+			}
+			division_template = {
+				name = "Divisione Bersaglieri"
+				regiments = {
+					bicycle_battalion = { x = 0 y = 0 }
+					bicycle_battalion = { x = 0 y = 1 }
+					bicycle_battalion = { x = 0 y = 2 }
+					bicycle_battalion = { x = 1 y = 0 }
+					bicycle_battalion = { x = 1 y = 1 }
+					bicycle_battalion = { x = 1 y = 2 }
+					bicycle_battalion = { x = 2 y = 0 }
+					bicycle_battalion = { x = 2 y = 1 }
+					bicycle_battalion = { x = 2 y = 2 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+					artillery = { x = 0 y = 1 }
+				}
+			}
+			custom_effect_tooltip = empty_line
+			random_owned_controlled_state = {
+				limit = { is_core_of = root }
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = tooltip_spawn_unit
+						TYPE = "Divisione Bersaglieri"
+					}
+					create_unit = {
+						division = "division_template = \"Divisione Bersaglieri\" start_experience_factor = 0.3"
+						owner = ROOT
+					}
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SRI_carri_di_rottura
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
+		cost = 5
+
+		relative_position_id = SRI_motorise_the_bersaglieri
+		x = -1
+		y = 1
+
+		available = {
+			has_tech = radio
+			has_tech = interwar_antitank
+			has_tech = interwar_antiair
+		}
+
+		prerequisite = {
+			focus = SRI_motorise_the_bersaglieri
+		}
+
+		ai_will_do = {
+			factor = 15
+			modifier = {
+				factor = 4
+				has_war = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = empty_line
+			add_tech_bonus = {
+				name = SRI_carri_di_rottura
+				bonus = 1
+				uses = 1
+				category = armor
+			}
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+	}
+	focus = {
+		id = SRI_semoventi_dartiglieria
+		icon = GFX_focus_generic_self_propelled_gun
+		cost = 5
+
+		relative_position_id = SRI_motorise_the_bersaglieri
+		x = 1
+		y = 1
+
+		available = {
+			has_tech = interwar_antitank
+			has_tech = interwar_antiair
+			has_tech = interwar_artillery
+			has_tech = radio
+		}
+
+		prerequisite = {
+			focus = SRI_howitzer_standardisation
+		}
+		prerequisite = {
+			focus = SRI_motorise_the_bersaglieri
+		}
+
+		ai_will_do = {
+			factor = 15
+			modifier = {
+				factor = 4
+				has_war = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = empty_line
+			add_tech_bonus = {
+				name = SRI_semoventi_dartiglieria
+				uses = 1
+				bonus = 1
+				category = armor
+			}
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+	}
+	focus = {
+		id = SRI_ferrea_mole_ferreo_cuore
+		icon = GFX_focus_ITA_ferrea_mole_ferreo_cuore
+		cost = 5
+
+		relative_position_id = SRI_motorise_the_bersaglieri
+		x = 0
+		y = 2
+
+		prerequisite = {
+			focus = SRI_semoventi_dartiglieria
+			focus = SRI_carri_di_rottura
+		}
+
+		ai_will_do = {
+			factor = 15
+			modifier = {
+				factor = 4
+				has_war = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_legione_proletaria_modifier
+			}
+			add_to_variable = {
+				SRI_ar_army_armor_defence_factor = 0.05
+				tooltip = army_armor_defence_factor_tt
+			}
+			add_to_variable = {
+				SRI_ar_army_armor_speed_factor = 0.05
+				tooltip = army_armor_speed_factor_tt
+			}
+			custom_effect_tooltip = empty_line
+			add_breakthrough_progress = {
+				specialization = specialization_land
+				value = 0.5
+			}
+			custom_effect_tooltip = empty_line
+			add_tech_bonus = {
+				name = SRI_ferrea_mole_ferreo_cuore
+				ahead_reduction = 1
+				bonus = 0.5
+				uses = 1
+				category = armor
+			}
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SRI_howitzer_standardisation
+		icon = GFX_goal_generic_army_artillery
+		cost = 5
+
+		relative_position_id = SRI_commissione_armi_e_munizioni
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = SRI_commissione_armi_e_munizioni
+		}
+
+		ai_will_do = {
+			factor = 15
+			modifier = {
+				factor = 4
+				has_war = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = SRI_howitzer_standardisation
+				bonus = 0.75
+				uses = 2
+				category = artillery
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SRI_cannone_da_novanta
+		icon = GFX_SOV_soviet_artillery_ccp_2d_sov_compatibility
+		cost = 5
+
+		relative_position_id = SRI_howitzer_standardisation
+		x = 0
+		y = 2
+
+		available = {
+			has_tech = interwar_artillery
+		}
+
+		prerequisite = {
+			focus = SRI_howitzer_standardisation
+		}
+
+		ai_will_do = {
+			factor = 15
+			modifier = {
+				factor = 4
+				has_war = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_legione_proletaria_modifier
+			}
+			add_to_variable = {
+				SRI_ar_breakthrough_factor = 0.05
+				tooltip = breakthrough_factor_tt
+			}
+			add_to_variable = {
+				SRI_ar_army_artillery_defence_factor = 0.05
+				tooltip = army_artillery_defence_factor_tt
+			}
+			custom_effect_tooltip = empty_line
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = empty_line
+			add_tech_bonus = {
+				name = SRI_cannone_da_novanta
+				ahead_reduction = 1
+				bonus = 0.5
+				uses = 1
+				category = artillery
+			}
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+	}
+	focus = {
+		id = SRI_replace_the_six_point_five_milimetres
+		icon = GFX_focus_PRC_equipment_from_copper_coins
+		cost = 5
+
+		relative_position_id = SRI_commissione_armi_e_munizioni
+		x = 2
+		y = 1
+
+		prerequisite = {
+			focus = SRI_commissione_armi_e_munizioni
+		}
+
+		ai_will_do = {
+			factor = 15
+			modifier = {
+				factor = 4
+				has_war = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = SRI_replace_the_six_point_five_milimetres
+				bonus = 0.75
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SRI_armaguerra
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		cost = 5
+
+		relative_position_id = SRI_replace_the_six_point_five_milimetres
+		x = -1
+		y = 1
+
+		available = {
+			has_tech = infantry_weapons2
+			has_tech = support_weapons2
+		}
+
+		prerequisite = {
+			focus = SRI_replace_the_six_point_five_milimetres
+		}
+
+		ai_will_do = {
+			factor = 15
+			modifier = {
+				factor = 4
+				has_war = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = SRI_armaguerra
+				ahead_reduction = 0.5
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SRI_telo_mimetico
+		icon = GFX_focus_prc_infiltration
+		cost = 5
+
+		relative_position_id = SRI_replace_the_six_point_five_milimetres
+		x = 1
+		y = 1
+
+		available = {
+			has_tech = infantry_weapons2
+			has_tech = support_weapons2
+		}
+
+		prerequisite = {
+			focus = SRI_replace_the_six_point_five_milimetres
+		}
+
+		ai_will_do = {
+			factor = 15
+			modifier = {
+				factor = 4
+				has_war = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_legione_proletaria_modifier
+			}
+			add_to_variable = {
+				SRI_ar_max_dig_in = 1
+				tooltip = max_dig_in_tt
+			}
+			add_to_variable = {
+				SRI_ar_dig_in_speed_factor = 0.05
+				tooltip = dig_in_speed_factor_tt
+			}
+			custom_effect_tooltip = empty_line
+			add_tech_bonus = {
+				name = SRI_telo_mimetico
+				bonus = 0.75
+				uses = 2
+				category = support_tech
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_ARMY_BONUS }
+	}
+	focus = {
+		id = SRI_la_legione_proletaria
+		icon = GFX_focus_SOV_builder_of_the_red_army
+		cost = 5
+
+		relative_position_id = SRI_modernise_the_armata_rossa
+		x = -4
+		y = 1
+
+		prerequisite = {
+			focus = SRI_modernise_the_armata_rossa
+		}
+		mutually_exclusive = {
+			focus = SRI_la_guardia_rossa
+		}
+
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 4
+				has_war = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_legione_proletaria_modifier
+			}
+			add_to_variable = { SRI_ar_conscription = 0.01 tooltip = conscription_tt }
+			custom_effect_tooltip = empty_line
+			add_mastery_bonus = {
+				name = SRI_la_legione_proletaria
+				bonus = 0.1
+				days = 365
+				track = infantry
+			}
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_MANPOWER }
+	}
+	focus = {
+		id = SRI_establish_military_inspectorate
+		icon = GFX_SOV_barrier_troops_ccp_2d_sov_compatibility
+		cost = 5
+
+		relative_position_id = SRI_la_legione_proletaria
+		x = -2
+		y = 1
+
+		prerequisite = {
+			focus = SRI_la_legione_proletaria
+		}
+
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				factor = 4
+				has_war = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			army_experience = 25
+			add_command_power = 25
+			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_legione_proletaria_modifier
+			}
+			add_to_variable = {
+				SRI_ar_army_org_factor = 0.05
+				tooltip = army_org_factor_tt
+			}
+			add_to_variable = {
+				SRI_ar_army_morale_factor = 0.05
+				tooltip = army_morale_factor_tt
+			}
+			add_to_variable = {
+				SRI_ar_army_infantry_defence_factor = 0.05
+				tooltip = army_infantry_defence_factor_tt
+			}
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_ARMY_XP }
+	}
+	focus = {
+		id = SRI_one_army_one_command
+		icon = GFX_SOV_swap_to_political_advisors_ccp_2d_sov_compatibility
+		cost = 5
+
+		relative_position_id = SRI_establish_military_inspectorate
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = SRI_establish_military_inspectorate
+		}
+		mutually_exclusive = {
+			focus = SRI_maintain_officer_autonomy
+		}
+
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				factor = 4
+				has_war = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_legione_proletaria_modifier
+			}
+			add_to_variable = {
+				SRI_ar_max_command_power_mult = 0.15
+				tooltip = max_command_power_mult_tt
+			}
+			add_to_variable = {
+				SRI_ar_command_power_gain_mult = 0.15
+				tooltip = command_power_gain_mult_tt
+			}
+			add_to_variable = {
+				SRI_ar_army_advisor_cost_factor = -0.25
+				tooltip = army_advisor_cost_factor_tt
+			}
+			custom_effect_tooltip = empty_line
+			every_army_leader = { add_planning = 1 }
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS }
+	}
+	focus = {
+		id = SRI_maintain_officer_autonomy
+		icon = GFX_SOV_keep_commissars_organization_ccp_2d_sov_compatibility
+		cost = 5
+
+		relative_position_id = SRI_establish_military_inspectorate
+		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = SRI_establish_military_inspectorate
+		}
+		mutually_exclusive = {
+			focus = SRI_one_army_one_command
+		}
+
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				factor = 4
+				has_war = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_legione_proletaria_modifier
+			}
+			add_to_variable = {
+				SRI_ar_army_org_factor = 0.05
+				tooltip = army_org_factor_tt
+			}
+			add_to_variable = {
+				SRI_ar_experience_gain_factor = 0.1
+				tooltip = experience_gain_factor_tt
+			}
+			add_to_variable = {
+				SRI_ar_out_of_supply_factor = -0.1
+				tooltip = out_of_supply_factor_tt
+			}
+			custom_effect_tooltip = empty_line
+			every_army_leader = { add_logistics = 1 }
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS }
+	}
+	focus = {
+		id = SRI_ragruppamenti_esploranti
+		icon = GFX_focus_prc_infiltration
+		cost = 5
+
+		relative_position_id = SRI_la_legione_proletaria
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = SRI_la_legione_proletaria
+		}
+
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				factor = 4
+				has_war = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_legione_proletaria_modifier
+			}
+			add_to_variable = {
+				SRI_ar_modifier_army_sub_unit_armored_car_recon_max_org_factor = 0.1
+				tooltip = modifier_army_sub_unit_armored_car_recon_max_org_factor_tt
+			}
+			add_to_variable = {
+				SRI_ar_modifier_army_sub_unit_light_tank_recon_max_org_factor = 0.1
+				tooltip = modifier_army_sub_unit_light_tank_recon_max_org_factor_tt
+			}
+			custom_effect_tooltip = empty_line
+			add_tech_bonus = {
+				name = SRI_ragruppamenti_esploranti
+				bonus = 0.75
+				uses = 1
+				category = recon_tech
+			}
+			add_tech_bonus = {
+				name = SRI_ragruppamenti_esploranti
+				bonus = 0.75
+				uses = 1
+				category = cat_armored_cars
+			}
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SRI_corpo_darmata_di_manovra
+		icon = GFX_focus_generic_tankette
+		cost = 10
+
+		relative_position_id = SRI_ragruppamenti_esploranti
+		x = 0
+		y = 2
+
+		prerequisite = {
+			focus = SRI_ragruppamenti_esploranti
+		}
+
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				factor = 4
+				has_war = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_legione_proletaria_modifier
+			}
+			add_to_variable = {
+				SRI_ar_army_armor_attack_factor = 0.05
+				tooltip = army_armor_attack_factor_tt
+			}
+			add_ideas = SRI_armoured_production_bonus
+			custom_effect_tooltip = empty_line
+			add_tech_bonus = {
+				name = SRI_corpo_darmata_di_manovra
+				bonus = 1
+				uses = 1
+				category = armor
+			}
+			add_tech_bonus = {
+				name = SRI_corpo_darmata_di_manovra
+				bonus = 0.75
+				uses = 1
+				category = cat_armored_cars
+			}
+			custom_effect_tooltip = empty_line
+			add_mastery_bonus = {
+				name = SRI_corpo_darmata_di_manovra
+				bonus = 0.1
+				days = 365
+				track = armor
+			}
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_RESEARCH FOCUS_FILTER_PRODUCTION }
+	}
+	focus = {
+		id = SRI_reform_modena_military_academy
+		icon = GFX_focus_generic_military_academy
+		cost = 5
+
+		relative_position_id = SRI_la_legione_proletaria
+		x = 2
+		y = 1
+
+		prerequisite = {
+			focus = SRI_la_legione_proletaria
+			focus = SRI_la_guardia_rossa
+		}
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 4
+				has_war = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			army_experience = 25
+			add_command_power = 25
+			add_doctrine_cost_reduction = {
+				name = SRI_reform_modena_military_academy
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_ARMY_XP }
+	}
+	focus = {
+		id = SRI_gruppi_di_difesa_della_donna
+		icon = GFX_focus_generic_women_in_military
+		cost = 5
+
+		relative_position_id = SRI_reform_modena_military_academy
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = SRI_reform_modena_military_academy
+		}
+
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				factor = 4
+				has_war = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_legione_proletaria_modifier
+			}
+			add_to_variable = {
+				SRI_ar_conscription_factor = 0.05
+				tooltip = conscription_factor_tt
+			}
+			custom_effect_tooltip = empty_line
+			set_rule = { can_generate_female_aces = yes }
+		}
+		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY FOCUS_FILTER_MANPOWER }
+	}
+	focus = {
+		id = SRI_vallo_alpino
+		icon = GFX_focus_ITA_alpine_division
+		cost = 5
+
+		relative_position_id = SRI_reform_modena_military_academy
+		x = 0
+		y = 2
+
+		available = {
+			has_full_control_of_state = 158 #Piedmont
+			has_full_control_of_state = 159 #Lombardy
+			has_full_control_of_state = 160 #Venetia
+			has_full_control_of_state = 759 #Friuli
+			has_full_control_of_state = 838 #Liguria
+			has_full_control_of_state = 1003 #Aosta Valley
+		}
+
+		prerequisite = {
+			focus = SRI_reform_modena_military_academy
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 4
+				has_war = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						state = 158 #Piedmont
+						state = 159 #Lombardy
+						state = 160 #Venetia
+						state = 759 #Friuli
+						state = 838 #Liguria
+						state = 1003 #Aosta Valley
+						state = 103 #Rijeka
+						state = 488 #Trieste
+						state = 683 #Gorizia
+						state = 735 #Savoy
+						state = 736 #Istria
+						state = 761 #Ticino
+						state = 762 #Nice
+						state = 783 #Trentino
+						state = 943 #Upper Savoy
+					}
+					is_fully_controlled_by = ROOT
+					any_neighbor_state = { NOT = { is_owned_by = ROOT } }
+				}
+				add_building_construction = {
+					type = bunker
+					province = {
+					all_provinces = yes
+						limit_to_border = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+	focus = {
+		id = SRI_arditi_del_popolo
+		icon = GFX_focus_ITA_blackshirts
+		cost = 5
+
+		relative_position_id = SRI_reform_modena_military_academy
+		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = SRI_reform_modena_military_academy
+		}
+
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				factor = 2
+				has_completed_focus = SRI_la_guardia_rossa
+			}
+			modifier = {
+				factor = 4
+				has_war = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			army_experience = 15
+			set_technology = {
+				blackshirt_assault_battalion_tech = 1
+			}
+		}
+		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_ARMY_BONUS }
+	}
+	focus = {
+		id = SRI_corpo_speciale
+		icon = GFX_focus_ITA_bersaglieri
+		cost = 5
+
+		relative_position_id = SRI_la_legione_proletaria
+		x = 6
+		y = 1
+
+		prerequisite = {
+			focus = SRI_la_legione_proletaria
+			focus = SRI_la_guardia_rossa
+		}
+
+		ai_will_do = {
+			factor = 15
+			modifier = {
+				factor = 4
+				has_war = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_legione_proletaria_modifier
+			}
+			add_to_variable = {
+				SRI_ar_special_forces_cap = 0.02
+				tooltip = special_forces_cap_tt
+			}
+			add_to_variable = {
+				SRI_ar_special_forces_attack_factor = 0.05
+				tooltip = special_forces_attack_factor_tt
+			}
+			add_to_variable = {
+				SRI_ar_special_forces_defence_factor = 0.05
+				tooltip = special_forces_defence_factor_tt
+			}
+			custom_effect_tooltip = empty_line
+			add_potential_special_forces_tree = yes
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS }
+	}
+	focus = {
+		id = SRI_brigate_marine
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 5
+
+		relative_position_id = SRI_corpo_speciale
+		x = -1
+		y = 1
+
+		available = {
+			has_tech = marines
+			has_tech = tech_recon
+			has_tech = tech_engineers
+		}
+
+		prerequisite = {
+			focus = SRI_corpo_speciale
+		}
+
+		ai_will_do = {
+			factor = 15
+			modifier = {
+				factor = 4
+				has_war = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_legione_proletaria_modifier
+			}
+			add_to_variable = {
+				SRI_ar_special_forces_cap = 0.02
+				tooltip = special_forces_cap_tt
+			}
+			add_to_variable = {
+				SRI_ar_modifier_army_sub_unit_marine_defence_factor = 0.05
+				tooltip = modifier_army_sub_unit_marine_defence_factor_tt
+			}
+			add_to_variable = {
+				SRI_ar_modifier_army_sub_unit_marine_max_org_factor = 0.05
+				tooltip = modifier_army_sub_unit_marine_max_org_factor_tt
+			}
+			add_to_variable = {
+				SRI_ar_extra_marine_supply_grace = 48
+				tooltip = extra_marine_supply_grace_tt
+			}
+			custom_effect_tooltip = empty_line
+			add_doctrine_cost_reduction = {
+				name = SRI_brigate_marine
+				cost_reduction = 0.5
+				uses = 1
+				category = special_forces_doctrine
+			}
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SRI_alpini_rossi
+		icon = GFX_focus_generic_mountain_troops
+		cost = 5
+
+		relative_position_id = SRI_corpo_speciale
+		x = 0
+		y = 2
+
+		available = {
+			has_tech = tech_mountaineers
+			has_tech = tech_recon
+			has_tech = tech_engineers
+		}
+
+		prerequisite = {
+			focus = SRI_corpo_speciale
+		}
+
+		ai_will_do = {
+			factor = 15
+			modifier = {
+				factor = 4
+				has_war = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_legione_proletaria_modifier
+			}
+			add_to_variable = {
+				SRI_ar_special_forces_cap = 0.02
+				tooltip = special_forces_cap_tooltip
+			}
+			add_to_variable = {
+				SRI_ar_modifier_army_sub_unit_mountaineers_defence_factor = 0.05
+				tooltip = modifier_army_sub_unit_mountaineers_defence_factor_tt
+			}
+			add_to_variable = {
+				SRI_ar_modifier_army_sub_unit_mountaineers_max_org_factor = 0.05
+				tooltip = modifier_army_sub_unit_mountaineers_max_org_factor_tt
+			}
+			custom_effect_tooltip = empty_line
+			add_doctrine_cost_reduction = {
+				name = SRI_alpini_rossi
+				cost_reduction = 0.5
+				uses = 1
+				category = special_forces_doctrine
+			}
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SRI_carabinieri_del_cielo
+		icon = GFX_focus_generic_paratrooper
+		cost = 5
+
+		relative_position_id = SRI_corpo_speciale
+		x = 1
+		y = 1
+
+		available = {
+			has_tech = paratroopers
+			has_tech = tech_recon
+			has_tech = tech_engineers
+		}
+
+		prerequisite = {
+			focus = SRI_corpo_speciale
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 4
+				has_war = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_legione_proletaria_modifier
+			}
+			add_to_variable = {
+				SRI_ar_special_forces_cap = 0.02
+				tooltip = special_forces_cap_tt
+			}
+			add_to_variable = {
+				SRI_ar_modifier_army_sub_unit_paratrooper_defence_factor = 0.05
+				tooltip = modifier_army_sub_unit_paratrooper_defence_factor_tt
+			}
+			add_to_variable = {
+				SRI_ar_modifier_army_sub_unit_paratrooper_max_org_factor = 0.05
+				tooltip = modifier_army_sub_unit_paratrooper_max_org_factor_tt
+			}
+			add_to_variable = {
+				SRI_ar_extra_paratrooper_supply_grace = 48
+				tooltip = extra_paratrooper_supply_grace_tt
+			}
+			custom_effect_tooltip = empty_line
+			add_doctrine_cost_reduction = {
+				name = SRI_carabinieri_del_cielo
+				cost_reduction = 0.5
+				uses = 1
+				category = special_forces_doctrine
+			}
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SRI_la_guardia_rossa
+		icon = GFX_goal_reform_socialist_army
+		cost = 5
+
+		relative_position_id = SRI_modernise_the_armata_rossa
+		x = 4
+		y = 1
+
+		prerequisite = {
+			focus = SRI_modernise_the_armata_rossa
+		}
+		mutually_exclusive = {
+			focus = SRI_la_legione_proletaria
+		}
+
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 4
+				has_war = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_legione_proletaria_modifier
+			}
+			add_to_variable = { SRI_ar_org_loss_when_moving = -0.15 tooltip = org_loss_when_moving_tt }
+			custom_effect_tooltip = empty_line
+			add_mastery_bonus = {
+				name = SRI_la_guardia_rossa
+				bonus = 0.1
+				days = 365
+				track = operations
+			}
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS }
+	}
+	focus = {
+		id = SRI_formazione_di_difesa
+		icon = GFX_focus_ETH_peacekeeping_forces
+		cost = 5
+
+		relative_position_id = SRI_la_guardia_rossa
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = SRI_la_guardia_rossa
+		}
+
+		ai_will_do = {
+			factor = 70
+			modifier = {
+				factor = 0
+				NOT = { has_completed_focus = SRI_arditi_del_popolo }
+			}
+			modifier = {
+				factor = 4
+				has_war = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_legione_proletaria_modifier
+			}
+			add_to_variable = {
+				SRI_ar_modifier_army_sub_unit_militia_attack_factor = 0.05
+				tooltip = modifier_army_sub_unit_militia_attack_factor_tt
+			}
+			add_to_variable = {
+				SRI_ar_modifier_army_sub_unit_militia_defence_factor = 0.05
+				tooltip = modifier_army_sub_unit_militia_defence_factor_tt
+			}
+			add_to_variable = {
+				SRI_ar_modifier_army_sub_unit_militia_max_org_factor = 0.05
+				tooltip = modifier_army_sub_unit_militia_max_org_factor_tt
+			}
+			custom_effect_tooltip = empty_line
+			set_technology = {
+				militia_tech = 1
+			}
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS }
+	}
+	focus = {
+		id = SRI_autotrasportabilita
+		icon = GFX_focus_generic_mechanized
+		cost = 5
+
+		relative_position_id = SRI_la_guardia_rossa
+		x = 2
+		y = 1
+
+		prerequisite = {
+			focus = SRI_la_guardia_rossa
+		}
+
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				factor = 4
+				has_war = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_legione_proletaria_modifier
+			}
+			add_to_variable = {
+				SRI_ar_initiative_factor = 0.02
+				tooltip = initiative_factor_tt
+			}
+			add_to_variable = {
+				SRI_ar_army_speed_factor = 0.05
+				tooltip = army_speed_factor_tt
+			}
+			custom_effect_tooltip = empty_line
+			add_tech_bonus = {
+				name = SRI_autotrasportabilita
+				bonus = 1
+				uses = 1
+				category = cat_mechanized_equipment
+			}
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SRI_scuole_centrale_militare
+		icon = GFX_focus_generic_combined_arms
+		cost = 5
+
+		relative_position_id = SRI_la_guardia_rossa
+		x = 1
+		y = 2
+
+		prerequisite = {
+			focus = SRI_la_guardia_rossa
+		}
+
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				factor = 4
+				has_war = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			army_experience = 25
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_legione_proletaria_modifier
+			}
+			add_to_variable = {
+				SRI_ar_coordination_bonus = 0.05
+				tooltip = coordination_bonus_tt
+			}
+			custom_effect_tooltip = tech_effect|tech_strengthened_support_companies
+			hidden_effect = {
+				enable_tech_strengthened_support_companies = yes
+			}
+			custom_effect_tooltip = empty_line
+			add_mastery_bonus = {
+				name = SRI_scuole_centrale_militare
+				bonus = 0.1
+				days = 365
+				track = combat_support
+			}
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_ARMY_XP }
+	}
+	focus = {
+		id = SRI_guerra_brigantesca
+		icon = GFX_focus_ITA_cavalry_charge
+		cost = 5
+
+		relative_position_id = SRI_scuole_centrale_militare
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = SRI_scuole_centrale_militare
+		}
+		mutually_exclusive = {
+			focus = SRI_guardia_alla_frontiera
+		}
+
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				factor = 4
+				has_war = yes
+			}
+			modifier = {
+				factor = 2
+				is_in_faction = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_legione_proletaria_modifier
+			}
+			add_to_variable = {
+				SRI_ar_out_of_supply_factor = -0.1
+				tooltip = out_of_supply_factor_tt
+			}
+			add_to_variable = {
+				SRI_ar_army_attack_speed_factor = 0.05
+				tooltip = army_attack_speed_tt
+			}
+			add_to_variable = {
+				SRI_ar_cas_damage_reduction = 0.05
+				tooltip = cas_damage_reduction_tt
+			}
+			custom_effect_tooltip = empty_line
+			every_army_leader = { add_attack = 1 }
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS }
+	}
+	focus = {
+		id = SRI_guardia_alla_frontiera
+		icon = GFX_focus_SIA_territorial_defense_student
+		cost = 5
+
+		relative_position_id = SRI_scuole_centrale_militare
+		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = SRI_scuole_centrale_militare
+		}
+		mutually_exclusive = {
+			focus = SRI_guerra_brigantesca
+		}
+
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				factor = 4
+				has_war = yes
+			}
+			modifier = {
+				factor = 2
+				is_in_faction = no
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_legione_proletaria_modifier
+			}
+			add_to_variable = {
+				SRI_ar_max_dig_in_factor = 0.1
+				tooltip = max_dig_in_factor_tt
+			}
+			add_to_variable = {
+				SRI_ar_land_bunker_effectiveness_factor = 0.05
+				tooltip = land_bunker_effectiveness_factor_tt
+			}
+			add_to_variable = {
+				SRI_ar_coastal_bunker_effectiveness_factor = 0.05
+				tooltip = coastal_bunker_effectiveness_factor_tt
+			}
+			custom_effect_tooltip = empty_line
+			add_tech_bonus = {
+				name = SRI_guardia_alla_frontiera
+				bonus = 1
+				uses = 1
+				category = engineers_tech
+			}
+			custom_effect_tooltip = empty_line
+			every_army_leader = { add_defense = 1 }
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SRI_citta_del_aria
+		icon = GFX_focus_generic_aircraft_production
+		cost = 5
+
+		relative_position_id = SRI_la_legione_proletaria
+		x = 4
+		y = 1
+
+		prerequisite = {
+			focus = SRI_la_legione_proletaria
+			focus = SRI_la_guardia_rossa
+		}
+
+		ai_will_do = {
+			factor = 15
+			modifier = {
+				factor = 4
+				has_war = yes
+			}
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			air_experience = 15
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = empty_line
+			add_ideas = SRI_cda_aircraft_production_bonus
+			custom_effect_tooltip = empty_line
+			if = {
+				limit = {
+					controls_province = 11730 #near Turin
+					158 = { #Piedmont
+						is_owned_and_controlled_by = ROOT
+						can_construct_building = air_facility
+					}
+				}
+				158 = { #Piedmont
+					add_building_construction = {
+						type = air_facility
+						level = 1
+						province = 11730 #near Turin
+						instant_build = yes
+					}
+				}
+			}
+			else = {
+				random_owned_controlled_state = {
+					prioritize = { 158 1004 }
+					limit = {
+						is_core_of = ROOT
+						can_construct_building = air_facility
+					}
+					construct_building_in_random_province = { air_facility = 1 }
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_AIR_XP FOCUS_FILTER_PRODUCTION FOCUS_FILTER_INDUSTRY }
+	}
+	focus = {
+		id = SRI_corpo_del_genio_aeronautico
+		icon = GFX_focus_PER_the_peoples_airforce
+		cost = 5
+
+		relative_position_id = SRI_citta_del_aria
+		x = 0
+		y = 3
+
+		prerequisite = {
+			focus = SRI_citta_del_aria
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 4
+				has_war = yes
+			}
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			air_experience = 25
+			custom_effect_tooltip = empty_line
+			custom_override_tooltip = {
+				tooltip = {
+					localization_key = tooltip_add_dynmod
+					DYNMOD = SRI_citta_del_aria_modifier
+				}
+				add_dynamic_modifier = { modifier = SRI_citta_del_aria_modifier }
+			}
+			add_to_variable = {
+				SRI_cda_air_accidents_factor = -0.1
+				tooltip = air_accidents_factor_tt
+			}
+			custom_effect_tooltip = empty_line
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+					is_controlled_by = ROOT
+					air_base > 0
+					free_building_slots = { building = air_base size > 0 }
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+					is_controlled_by = ROOT
+					air_base > 0
+					free_building_slots = { building = air_base size > 0 }
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+					is_controlled_by = ROOT
+					air_base > 0
+					free_building_slots = { building = air_base size > 0 }
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_AIR_XP FOCUS_FILTER_AIRFORCE_BONUS FOCUS_FILTER_INDUSTRY }
+	}
+	focus = {
+		id = SRI_accademia_aeronautica
+		icon = GFX_focus_SOV_flying_clubs
+		cost = 5
+
+		relative_position_id = SRI_corpo_del_genio_aeronautico
+		x = -3
+		y = 1
+
+		prerequisite = {
+			focus = SRI_corpo_del_genio_aeronautico
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 4
+				has_war = yes
+			}
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			air_experience = 25
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_citta_del_aria_modifier
+			}
+			add_to_variable = {
+				SRI_cda_air_night_penalty = -0.05
+				tooltip = air_night_penalty_tt
+			}
+			add_to_variable = {
+				SRI_cda_air_weather_penalty = -0.05
+				tooltip = air_weather_penalty_tt
+			}
+			custom_effect_tooltip = empty_line
+			add_ace = {
+				type = "fighter_genius"
+				name = "Teresio"
+				surname = "Martinoli"
+				callsign = "Vittoria"
+			}
+			add_ace = {
+				type = "fighter_unique"
+				name = "Giuseppe"
+				surname = "Cenni"
+				callsign = "Casola"
+			}
+			add_ace = {
+				type = "fighter_unique"
+				name = "Luigi"
+				surname = "Gorrini"
+				callsign = "Falco"
+			}
+			add_ace = {
+				type = "support_unique"
+				name = "Carlo"
+				surname = "Buscaglia"
+				callsign = "Silurante"
+			}
+		}
+		search_filters = { FOCUS_FILTER_AIR_XP FOCUS_FILTER_AIRFORCE_BONUS }
+	}
+	focus = {
+		id = SRI_trimotore_bombers
+		icon = GFX_focus_generic_long_range_aircraft
+		cost = 5
+
+		relative_position_id = SRI_corpo_del_genio_aeronautico
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = SRI_corpo_del_genio_aeronautico
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 4
+				has_war = yes
+			}
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_citta_del_aria_modifier
+			}
+			add_to_variable = {
+				SRI_cda_air_range_factor = 0.05
+				tooltip = air_range_factor_tt
+			}
+			custom_effect_tooltip = empty_line
+			add_tech_bonus = {
+				name = SRI_trimotore_bombers
+				bonus = 1
+				uses = 1
+				category = medium_air
+			}
+		}
+		search_filters = { FOCUS_FILTER_AIRFORCE_BONUS FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SRI_pursuit_aircraft
+		icon = GFX_focus_generic_cas_aircraft
+		cost = 5
+
+		relative_position_id = SRI_corpo_del_genio_aeronautico
+		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = SRI_corpo_del_genio_aeronautico
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 4
+				has_war = yes
+			}
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_citta_del_aria_modifier
+			}
+			add_to_variable = {
+				SRI_cda_air_agility_factor = 0.05
+				tooltip = air_agility_factor_tt
+			}
+			custom_effect_tooltip = empty_line
+			add_tech_bonus = {
+				name = SRI_pursuit_aircraft
+				bonus = 0.75
+				uses = 1
+				category = light_fighter
+			}
+		}
+		search_filters = { FOCUS_FILTER_AIRFORCE_BONUS FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SRI_aviazione_marittima
+		icon = GFX_goal_generic_air_naval_bomber
+		cost = 5
+
+		relative_position_id = SRI_corpo_del_genio_aeronautico
+		x = 3
+		y = 1
+
+		prerequisite = {
+			focus = SRI_corpo_del_genio_aeronautico
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 4
+				has_war = yes
+			}
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_citta_del_aria_modifier
+			}
+			add_to_variable = {
+				SRI_cda_naval_strike_targetting_factor = 0.05
+				tooltip = naval_strike_targetting_factor_tt
+			}
+			custom_effect_tooltip = empty_line
+			add_tech_bonus = {
+				name = SRI_aviazione_marittima
+				bonus = 0.75
+				uses = 1
+				category = naval_bomber
+			}
+		}
+		search_filters = { FOCUS_FILTER_AIRFORCE_BONUS FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SRI_command_of_the_air
+		icon = GFX_focus_generic_tank_air_support
+		cost = 5
+
+		relative_position_id = SRI_corpo_del_genio_aeronautico
+		x = -2
+		y = 2
+
+		prerequisite = {
+			focus = SRI_corpo_del_genio_aeronautico
+		}
+		mutually_exclusive = {
+			focus = SRI_aviazone_dassalto
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 4
+				has_war = yes
+			}
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_citta_del_aria_modifier
+			}
+			add_to_variable = {
+				SRI_cda_air_cas_present_factor = 0.1
+				tooltip = air_cas_present_factor_tt
+			}
+			custom_effect_tooltip = empty_line
+			add_doctrine_cost_reduction = {
+				name = SRI_command_of_the_air
+				cost_reduction = 0.75
+				uses = 1
+				category = air_doctrine
+			}
+		}
+		search_filters = { FOCUS_FILTER_AIRFORCE_BONUS }
+	}
+	focus = {
+		id = SRI_arma_offensiva
+		icon = GFX_focus_SWE_marauder_bombers
+		cost = 5
+
+		relative_position_id = SRI_command_of_the_air
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = SRI_command_of_the_air
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 4
+				has_war = yes
+			}
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_citta_del_aria_modifier
+			}
+			add_to_variable = {
+				SRI_cda_strategic_bomb_visibility = -0.1
+				tooltip = strategic_bomb_visibility_tt
+			}
+			custom_effect_tooltip = empty_line
+			add_tech_bonus = {
+				name = SRI_arma_offensiva
+				bonus = 0.75
+				uses = 1
+				category = heavy_air
+			}
+		}
+		search_filters = { FOCUS_FILTER_AIRFORCE_BONUS FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SRI_aerei_da_battaglia
+		icon = GFX_focus_generic_multi_role_aircraft
+		cost = 5
+
+		relative_position_id = SRI_command_of_the_air
+		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = SRI_command_of_the_air
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 4
+				has_war = yes
+			}
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_citta_del_aria_modifier
+			}
+			add_to_variable = {
+				SRI_cda_air_bombing_targetting = 0.05
+				tooltip = air_bombing_targetting_tt
+			}
+			custom_effect_tooltip = empty_line
+			add_tech_bonus = {
+				name = SRI_aerei_da_battaglia
+				bonus = 0.75
+				uses = 1
+				category = plane_modules_tech
+			}
+		}
+		search_filters = { FOCUS_FILTER_AIRFORCE_BONUS FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SRI_aviazone_dassalto
+		icon = GFX_goal_generic_air_fighter2
+		cost = 5
+
+		relative_position_id = SRI_corpo_del_genio_aeronautico
+		x = 2
+		y = 2
+
+		prerequisite = {
+			focus = SRI_corpo_del_genio_aeronautico
+		}
+		mutually_exclusive = {
+			focus = SRI_command_of_the_air
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 4
+				has_war = yes
+			}
+			modifier = {
+				factor = 3
+				is_major = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_citta_del_aria_modifier
+			}
+			add_to_variable = {
+				SRI_cda_air_superiority_bonus_in_combat = 0.1
+				tooltip = air_superiority_bonus_in_combat_tt
+			}
+			custom_effect_tooltip = empty_line
+			add_doctrine_cost_reduction = {
+				name = SRI_aviazone_dassalto
+				cost_reduction = 0.75
+				uses = 1
+				category = air_doctrine
+			}
+		}
+		search_filters = { FOCUS_FILTER_AIRFORCE_BONUS }
+	}
+	focus = {
+		id = SRI_zone_aeree_territoriali
+		icon = GFX_focus_usa_escort_fighters
+		cost = 5
+
+		relative_position_id = SRI_aviazone_dassalto
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = SRI_aviazone_dassalto
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 4
+				has_war = yes
+			}
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_citta_del_aria_modifier
+			}
+			add_to_variable = {
+				SRI_cda_air_intercept_efficiency = 0.05
+				tooltip = air_intercept_efficiency_tt
+			}
+			custom_effect_tooltip = empty_line
+			add_tech_bonus = {
+				name = SRI_zone_aeree_territoriali
+				bonus = 1
+				uses = 1
+				category = plane_modules_tech
+			}
+		}
+		search_filters = { FOCUS_FILTER_AIRFORCE_BONUS FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SRI_difesa_contraerea_territoriale
+		icon = GFX_focus_PER_construct_air_defenses
+		cost = 5
+
+		relative_position_id = SRI_aviazone_dassalto
+		x = 1
+		y = 1
+
+		available = {
+			custom_override_tooltip = {
+				tooltip = {
+					localization_key = tooltip_has_tech_detailed
+					NAME = country_culture|anti_air_equipment_1
+					TECH = interwar_antiair
+				}
+				has_tech = interwar_antiair
+			}
+		}
+
+		prerequisite = {
+			focus = SRI_aviazone_dassalto
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 4
+				has_war = yes
+			}
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_citta_del_aria_modifier
+			}
+			add_to_variable = {
+				SRI_cda_air_power_projection_factor = 0.05
+				tooltip = air_power_projection_factor_tt
+			}
+			add_to_variable = {
+				SRI_cda_air_home_defence_factor = 0.05
+				tooltip = air_home_defence_factor_tt
+			}
+			custom_effect_tooltip = empty_line
+			add_tech_bonus = {
+				name = SRI_difesa_contraerea_territoriale
+				bonus = 0.5
+				uses = 2
+				category = air_equipment
+				category = cat_anti_air
+			}
+			custom_effect_tooltip = empty_line
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+					is_controlled_by = ROOT
+					air_base > 0
+					free_building_slots = { building = anti_air_building size > 0 }
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+					is_controlled_by = ROOT
+					air_base > 0
+					free_building_slots = { building = anti_air_building size > 0 }
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+					is_controlled_by = ROOT
+					air_base > 0
+					free_building_slots = { building = anti_air_building size > 0 }
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+					is_controlled_by = ROOT
+					air_base > 0
+					free_building_slots = { building = anti_air_building size > 0 }
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+					is_controlled_by = ROOT
+					air_base > 0
+					free_building_slots = { building = anti_air_building size > 0 }
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_AIRFORCE_BONUS FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SRI_istituto_di_studi_militari_marittimi
+		icon = GFX_focus_NORDIC_com_navy
+		cost = 5
+
+		relative_position_id = SRI_la_guardia_rossa
+		x = 8
+		y = -1
+
+		completion_reward = {
+			navy_experience = 50
+			custom_override_tooltip = {
+				tooltip = {
+					localization_key = tooltip_add_dynmod
+					DYNMOD = SRI_istituto_di_studi_militari_marittimi_modifier
+				}
+				add_dynamic_modifier = { modifier = SRI_istituto_di_studi_militari_marittimi_modifier }
+			}
+			add_to_variable = { SRI_ismm_naval_doctrine_cost_factor = -0.1 tooltip = naval_doctrine_cost_factor_tt }
+			add_to_variable = { SRI_ismm_naval_torpedo_screen_penetration_factor = 0.05 tooltip = naval_torpedo_screen_penetration_factor_tt }
+		}
+		search_filters = { FOCUS_FILTER_NAVY_XP FOCUS_FILTER_NAVY_BONUS }
+	}
+	focus = {
+		id = SRI_expand_the_livorno_academy
+		icon = GFX_focus_BEL_antwerp_maritime_academy
+		cost = 5
+
+		relative_position_id = SRI_istituto_di_studi_militari_marittimi
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = SRI_istituto_di_studi_militari_marittimi
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_istituto_di_studi_militari_marittimi_modifier
+			}
+			add_to_variable = {
+				SRI_ismm_navy_spirit_category_type_cost_factor = -0.25
+				tooltip = navy_spirit_category_type_cost_factor_tt
+			}
+			custom_effect_tooltip = empty_line
+			add_doctrine_cost_reduction = {
+				name = SRI_expand_the_livorno_academy
+				cost_reduction = 0.5
+				uses = 2
+				category = naval_doctrine
+			}
+		}
+		search_filters = { FOCUS_FILTER_NAVY_BONUS }
+	}
+	focus = {
+		id = SRI_corpo_del_genio_navale
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 5
+
+		relative_position_id = SRI_expand_the_livorno_academy
+		x = -3
+		y = 1
+
+		prerequisite = {
+			focus = SRI_modernise_the_armata_rossa
+		}
+		prerequisite = {
+			focus = SRI_expand_the_livorno_academy
+		}
+
+		completion_reward = {
+			navy_experience = 25
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_istituto_di_studi_militari_marittimi_modifier
+			}
+			add_to_variable = {
+				SRI_ismm_refit_ic_cost = -0.1
+				tooltip = refit_ic_cost_tt
+			}
+			add_to_variable = {
+				SRI_ismm_refit_speed = 0.1
+				tooltip = refit_speed_tt
+			}
+			add_to_variable = {
+				SRI_ismm_repair_speed_factor = 0.1
+				tooltip = repair_speed_factor_tt
+			}
+		}
+		search_filters = { FOCUS_FILTER_NAVY_XP FOCUS_FILTER_NAVY_BONUS }
+	}
+	focus = {
+		id = SRI_flottiglie_mas
+		icon = GFX_focus_generic_midget_submarines
+		cost = 5
+
+		relative_position_id = SRI_corpo_del_genio_navale
+		x = -2
+		y = 1
+
+		available = {
+			has_tech = early_ship_hull_submarine
+			has_tech = basic_torpedo
+		}
+
+		prerequisite = {
+			focus = SRI_corpo_del_genio_navale
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_istituto_di_studi_militari_marittimi_modifier
+			}
+			add_to_variable = {
+				SRI_ismm_navy_submarine_attack_factor = 0.05
+				tooltip = navy_submarine_attack_factor_tt
+			}
+			add_to_variable = {
+				SRI_ismm_naval_critical_score_chance_factor = 0.05
+				tooltip = naval_critical_score_chance_factor_tt
+			}
+		}
+		search_filters = { FOCUS_FILTER_NAVY_BONUS }
+	}
+	focus = {
+		id = SRI_revolution_under_the_sea
+		icon = GFX_goal_generic_navy_anti_submarine
+		cost = 5
+
+		relative_position_id = SRI_flottiglie_mas
+		x = 0
+		y = 3
+
+		available = {
+			has_tech = early_ship_hull_submarine
+			has_tech = basic_torpedo
+		}
+
+		prerequisite = {
+			focus = SRI_flottiglie_mas
+		}
+
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = SRI_revolution_under_the_sea
+				bonus = 1
+				uses = 1
+				category = ss_tech
+			}
+			add_tech_bonus = {
+				name = SRI_revolution_under_the_sea
+				ahead_reduction = 2
+				uses = 1
+				technology = basic_submarine_snorkel
+				technology = improved_submarine_snorkel
+			}
+		}
+		search_filters = { FOCUS_FILTER_NAVY_XP FOCUS_FILTER_NAVY_BONUS }
+	}
+	focus = {
+		id = SRI_legacy_of_mignatta_and_the_mas
+		icon = GFX_focus_generic_torpedo_production
+		cost = 5
+
+		relative_position_id = SRI_revolution_under_the_sea
+		x = -2
+		y = 1
+
+		prerequisite = {
+			focus = SRI_revolution_under_the_sea
+			focus = SRI_aviazione_marittima
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_citta_del_aria_modifier
+			}
+			add_to_variable = {
+				SRI_cda_naval_strike_attack_factor = 0.05
+				tooltip = naval_strike_attack_factor_tt
+			}
+			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_istituto_di_studi_militari_marittimi_modifier
+			}
+			add_to_variable = {
+				SRI_ismm_naval_torpedo_hit_chance_factor = 0.05
+				tooltip = naval_torpedo_hit_chance_factor_tooltip
+			}
+			custom_effect_tooltip = empty_line
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+					is_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = empty_line
+			add_tech_bonus = {
+				name = SRI_legacy_of_mignatta_and_the_mas
+				bonus = 0.75
+				uses = 2
+				category = cat_torpedoes
+			}
+		}
+		search_filters = { FOCUS_FILTER_AIRFORCE_BONUS FOCUS_FILTER_NAVY_BONUS FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SRI_incrociatori_sommergibili
+		icon = GFX_goal_generic_occupy_states_coastal
+		cost = 5
+
+		relative_position_id = SRI_corpo_del_genio_navale
+		x = 0
+		y = 1
+
+		available = {
+			has_tech = early_ship_hull_submarine
+			has_tech = basic_torpedo
+		}
+
+		prerequisite = {
+			focus = SRI_corpo_del_genio_navale
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_istituto_di_studi_militari_marittimi_modifier
+			}
+			add_to_variable = {
+				SRI_ismm_convoy_raiding_efficiency_factor = 0.1
+				tooltip = convoy_raiding_efficiency_factor_tooltip
+			}
+			custom_effect_tooltip = empty_line
+			add_mastery_bonus = {
+				name = SRI_incrociatori_sommergibili
+				bonus = 0.1
+				days = 365
+				track = submarines
+			}
+		}
+		search_filters = { FOCUS_FILTER_NAVY_BONUS }
+	}
+	focus = {
+		id = SRI_artiglieria_marittima
+		icon = GFX_focus_ITA_milizia_marittima_di_artiglieria
+		cost = 5
+
+		relative_position_id = SRI_flottiglie_mas
+		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = SRI_flottiglie_mas
+			focus = SRI_incrociatori_sommergibili
+		}
+
+		completion_reward = {
+			army_experience = 10
+			navy_experience = 10
+			custom_effect_tooltip = empty_line
+			add_tech_bonus = {
+				name = SRI_artiglieria_marittima
+				bonus = 0.5
+				uses = 1
+				category = artillery
+			}
+			add_tech_bonus = {
+				name = SRI_artiglieria_marittima
+				bonus = 0.75
+				uses = 2
+				category = naval_mines
+			}
+			custom_effect_tooltip = empty_line
+			division_template = {
+				name = "Divisione Costiera"
+				template_counter = 20
+				priority = 0
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+					artillery = { x = 0 y = 1 }
+					anti_air = { x = 0 y = 2 }
+				}
+			}
+			custom_effect_tooltip = empty_line
+			every_owned_state = {
+				display_individual_scopes = yes
+				limit = {
+					is_core_of = root
+					is_controlled_by = ROOT
+					naval_base > 0
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					instant_build = yes
+				}
+				create_unit = {
+					division = "division_template = \"Divisione Costiera\" start_experience_factor = 0.1"
+					owner = ROOT
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_NAVY_XP FOCUS_FILTER_ARMY_XP FOCUS_FILTER_NAVY_BONUS FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SRI_expand_genoese_naval_yards
+		icon = GFX_focus_POL_develop_polish_shipbuilding
+		cost = 5
+
+		relative_position_id = SRI_corpo_del_genio_navale
+		x = 1
+		y = 2
+
+		prerequisite = {
+			focus = SRI_corpo_del_genio_navale
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					controls_province = 6788 #Genoa
+					838 = { #Liguria
+						is_owned_and_controlled_by = ROOT
+						can_construct_building = naval_facility
+					}
+				}
+				838 = { #Liguria
+					add_building_construction = {
+						type = naval_facility
+						level = 1
+						province = 6788 #Genoa
+						instant_build = yes
+					}
+				}
+			}
+			else = {
+				random_owned_controlled_state = {
+					prioritize = { 838 162 }
+					limit = {
+						is_core_of = ROOT
+						can_construct_building = naval_facility
+					}
+					construct_building_in_random_province = { naval_facility = 1 }
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+	focus = {
+		id = SRI_odero_terni_orlando
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 5
+
+		relative_position_id = SRI_expand_genoese_naval_yards
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = SRI_expand_genoese_naval_yards
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_istituto_di_studi_militari_marittimi_modifier
+			}
+			add_to_variable = {
+				SRI_ismm_navy_capital_ship_attack_factor = 0.05
+				tooltip = navy_capital_ship_attack_factor_tooltip
+			}
+			custom_effect_tooltip = empty_line
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_BONUS }
+	}
+	focus = {
+		id = SRI_cantieri_riuniti_del_tirreno
+		icon = GFX_focus_generic_refit_civilian_ships
+		cost = 5
+
+		relative_position_id = SRI_expand_genoese_naval_yards
+		x = -1
+		y = 2
+
+		prerequisite = {
+			focus = SRI_expand_genoese_naval_yards
+		}
+		mutually_exclusive = {
+			focus = SRI_increase_ship_exports
+		}
+
+		completion_reward = {
+			add_ideas = SRI_ismm_screen_production_bonus
+			custom_effect_tooltip = empty_line
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_PRODUCTION }
+	}
+	focus = {
+		id = SRI_increase_ship_exports
+		icon = GFX_SOV_expand_shipbuilding_plants_ccp_2d_sov_compatibility
+		cost = 5
+
+		relative_position_id = SRI_expand_genoese_naval_yards
+		x = 1
+		y = 2
+
+		prerequisite = {
+			focus = SRI_expand_genoese_naval_yards
+		}
+		mutually_exclusive = {
+			focus = SRI_cantieri_riuniti_del_tirreno
+		}
+
+		ai_will_do = { factor = 0 }
+
+		completion_reward = {
+			add_political_power = 100
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_istituto_di_studi_militari_marittimi_modifier
+			}
+			add_to_variable = {
+				SRI_ismm_consumer_goods_factor = -0.05
+				tooltip = consumer_goods_factor_tt
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = SRI_cantieri_riuniti_dell_adriatico
+		icon = GFX_focus_PHI_the_concrete_battleship
+		cost = 5
+
+		relative_position_id = SRI_cantieri_riuniti_del_tirreno
+		x = 0
+		y = 1
+
+		available = {
+			controls_state = 488 #Trieste
+		}
+
+		prerequisite = {
+			focus = SRI_cantieri_riuniti_del_tirreno
+		}
+
+		completion_reward = {
+			add_ideas = SRI_ismm_capital_production_bonus
+			custom_effect_tooltip = empty_line
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_PRODUCTION }
+	}
+	focus = {
+		id = SRI_guerra_marittima
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 5
+
+		relative_position_id = SRI_expand_the_livorno_academy
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = SRI_expand_the_livorno_academy
+		}
+		mutually_exclusive = {
+			focus = SRI_battaglia_decisiva
+		}
+
+		completion_reward = {
+			navy_experience = 30
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_istituto_di_studi_militari_marittimi_modifier
+			}
+			add_to_variable = {
+				SRI_ismm_naval_coordination = 0.05
+				tooltip = naval_coordination_tt
+			}
+			add_to_variable = {
+				SRI_ismm_naval_strike_agility_factor = 0.05
+				tooltip = naval_strike_agility_factor_tooltip
+			}
+		}
+		search_filters = { FOCUS_FILTER_NAVY_BONUS }
+	}
+	focus = {
+		id = SRI_fast_battleships
+		icon = GFX_focus_generic_navy_battleship2
+		cost = 5
+
+		relative_position_id = SRI_guerra_marittima
+		x = -1
+		y = 1
+
+		available = {
+			has_tech = early_ship_hull_cruiser
+		}
+
+		prerequisite = {
+			focus = SRI_guerra_marittima
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 4
+				has_war = yes
+				enemies_naval_strength_ratio > 1
+			}
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SRI_fast_battleships"
+			add_tech_bonus = {
+				name = SRI_fast_battleships
+				bonus = 0.75
+				uses = 2
+				category = ca_tech
+			}
+			custom_effect_tooltip = empty_line
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_cruiser_panzerschiff
+					version_name = "Uragano Class"
+				}
+				progress = 0.45
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_cruiser_panzerschiff
+					version_name = "Uragano Class"
+				}
+				progress = 0.45
+			}
+			custom_effect_tooltip = empty_line
+			add_mastery_bonus = {
+				name = SRI_fast_battleships
+				bonus = 0.1
+				days = 365
+				track = capital_ships
+			}
+		}
+		search_filters = { FOCUS_FILTER_NAVY_XP FOCUS_FILTER_NAVY_BONUS FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SRI_battaglia_decisiva
+		icon = GFX_focus_generic_cruiser2
+		cost = 5
+
+		relative_position_id = SRI_guerra_marittima
+		x = 6
+		y = 0
+
+		prerequisite = {
+			focus = SRI_expand_the_livorno_academy
+		}
+		mutually_exclusive = {
+			focus = SRI_guerra_marittima
+		}
+
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed SRI_battaglia_decisiva"
+			navy_experience = 30
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_istituto_di_studi_militari_marittimi_modifier
+			}
+			add_to_variable = {
+				SRI_ismm_positioning = 0.1
+				tooltip = positioning_tooltip
+			}
+			add_to_variable = {
+				SRI_ismm_naval_retreat_chance_after_initial_combat = -0.05
+				tooltip = naval_retreat_chance_after_initial_combat_tooltip
+			}
+			add_to_variable = {
+				SRI_ismm_naval_retreat_speed_after_initial_combat = -0.1
+				tooltip = naval_retreat_speed_after_initial_combat_tooltip
+			}
+		}
+		search_filters = { FOCUS_FILTER_NAVY_BONUS }
+	}
+	focus = {
+		id = SRI_rebuild_the_battle_line
+		icon = GFX_focus_ARG_study_the_battle_of_the_river_plate
+		cost = 5
+
+		relative_position_id = SRI_battaglia_decisiva
+		x = 0
+		y = 3
+
+		available = {
+			has_tech = early_ship_hull_heavy
+		}
+
+		prerequisite = {
+			focus = SRI_battaglia_decisiva
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = SRI_rebuild_the_battle_line
+				bonus = 0.75
+				uses = 2
+				category = bb_tech
+			}
+			custom_effect_tooltip = empty_line
+			if = {
+				limit = { has_tech = advanced_ship_hull_heavy }
+				create_equipment_variant = {
+					name = "Rivoluzione Class"
+					type = ship_hull_heavy_4
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = ship_heavy_battery_3
+						fixed_ship_anti_air_slot = ship_anti_air_4
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+						fixed_ship_radar_slot = ship_radar_3
+						fixed_ship_engine_slot = heavy_ship_engine_4
+						fixed_ship_secondaries_slot = dp_ship_secondaries_3
+						fixed_ship_armor_slot = ship_armor_bb_3
+						front_1_custom_slot = ship_heavy_battery_3
+						mid_1_custom_slot = ship_anti_air_4
+						mid_2_custom_slot = dp_ship_secondaries_3
+						mid_3_custom_slot = ship_airplane_launcher_2
+						rear_1_custom_slot = ship_heavy_battery_3
+					}
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_heavy_4
+						version_name = "Rivoluzione Class"
+					}
+					progress = 0.45
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_heavy_4
+						version_name = "Rivoluzione Class"
+					}
+					progress = 0.45
+				}
+			}
+			else_if = {
+				limit = { has_tech = improved_ship_hull_heavy }
+				if = {
+					limit = { has_tech = basic_dp_light_battery }
+					create_equipment_variant = {
+						name = "Rivoluzione Class"
+						type = ship_hull_heavy_3
+						parent_version = 0
+						modules = {
+							fixed_ship_battery_slot = ship_heavy_battery_2
+							fixed_ship_anti_air_slot = ship_anti_air_3
+							fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+							fixed_ship_radar_slot = ship_radar_2
+							fixed_ship_engine_slot = heavy_ship_engine_4
+							fixed_ship_secondaries_slot = dp_ship_secondaries_2
+							fixed_ship_armor_slot = ship_armor_bb_2
+							front_1_custom_slot = ship_heavy_battery_2
+							mid_1_custom_slot = ship_anti_air_3
+							mid_2_custom_slot = dp_ship_secondaries_2
+							mid_3_custom_slot = ship_airplane_launcher_2
+							rear_1_custom_slot = ship_heavy_battery_2
+						}
+					}
+				}
+				else = {
+					create_equipment_variant = {
+						name = "Rivoluzione Class"
+						type = ship_hull_heavy_3
+						parent_version = 0
+						modules = {
+							fixed_ship_battery_slot = ship_heavy_battery_2
+							fixed_ship_anti_air_slot = ship_anti_air_3
+							fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+							fixed_ship_radar_slot = ship_radar_2
+							fixed_ship_engine_slot = heavy_ship_engine_3
+							fixed_ship_secondaries_slot = ship_secondaries_2
+							fixed_ship_armor_slot = ship_armor_bb_2
+							front_1_custom_slot = ship_heavy_battery_2
+							mid_1_custom_slot = ship_anti_air_3
+							mid_2_custom_slot = ship_secondaries_2
+							mid_3_custom_slot = ship_airplane_launcher_2
+							rear_1_custom_slot = ship_heavy_battery_2
+						}
+					}
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_heavy_3
+						version_name = "Rivoluzione Class"
+					}
+					progress = 0.45
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_heavy_3
+						version_name = "Rivoluzione Class"
+					}
+					progress = 0.45
+				}
+			}
+			else_if = {
+				limit = { has_tech = basic_ship_hull_heavy }
+				create_equipment_variant = {
+					name = "Rivoluzione Class"
+					type = ship_hull_heavy_2
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = ship_heavy_battery_2
+						fixed_ship_anti_air_slot = ship_anti_air_1
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = heavy_ship_engine_2
+						fixed_ship_secondaries_slot = ship_secondaries_2
+						fixed_ship_armor_slot = ship_armor_bb_2
+						front_1_custom_slot = ship_anti_air_1
+						mid_1_custom_slot = ship_secondaries_2
+						mid_2_custom_slot = ship_airplane_launcher_2
+						rear_1_custom_slot = ship_heavy_battery_2
+					}
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_heavy_2
+						version_name = "Rivoluzione Class"
+					}
+					progress = 0.45
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_heavy_2
+						version_name = "Rivoluzione Class"
+					}
+					progress = 0.45
+				}
+			}
+			else = {
+				create_equipment_variant = {
+					name = "Rivoluzione Class"
+					type = ship_hull_heavy_1
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = ship_heavy_battery_1
+						fixed_ship_anti_air_slot = ship_anti_air_1
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = heavy_ship_engine_1
+						fixed_ship_secondaries_slot = ship_secondaries_1
+						fixed_ship_armor_slot = ship_armor_bb_1
+						front_1_custom_slot = ship_anti_air_1
+						mid_1_custom_slot = ship_secondaries_1
+						mid_2_custom_slot = ship_airplane_launcher_1
+						rear_1_custom_slot = ship_heavy_battery_1
+					}
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_heavy_1
+						version_name = "Rivoluzione Class"
+					}
+					progress = 0.45
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_heavy_1
+						version_name = "Rivoluzione Class"
+					}
+					progress = 0.45
+				}
+			}
+			custom_effect_tooltip = empty_line
+			add_mastery_bonus = {
+				name = SRI_rebuild_the_battle_line
+				bonus = 0.1
+				days = 365
+				track = capital_ships
+			}
+		}
+		search_filters = { FOCUS_FILTER_NAVY_XP FOCUS_FILTER_NAVY_BONUS FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SRI_mariantisom
+		icon = GFX_focus_generic_destroyer
+		cost = 5
+
+		relative_position_id = SRI_guerra_marittima
+		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = SRI_guerra_marittima
+			focus = SRI_battaglia_decisiva
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 4
+				has_war = yes
+				enemies_naval_strength_ratio > 1
+			}
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = SRI_mariantisom
+				bonus = 0.75
+				uses = 2
+				category = dd_tech
+			}
+			add_tech_bonus = {
+				name = SRI_mariantisom
+				bonus = 1
+				uses = 1
+				category = asw_tech
+			}
+			custom_effect_tooltip = empty_line
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = empty_line
+			add_mastery_bonus = {
+				name = SRI_mariantisom
+				bonus = 0.1
+				days = 365
+				track = screens
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SRI_sealane_protectors
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 5
+
+		relative_position_id = SRI_mariantisom
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = SRI_mariantisom
+		}
+		mutually_exclusive = {
+			focus = SRI_squadron_flagships
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 4
+				has_war = yes
+				enemies_naval_strength_ratio > 1
+			}
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = SRI_sealane_protectors
+				bonus = 1
+				uses = 1
+				category = ca_tech
+			}
+			add_tech_bonus = {
+				name = SRI_sealane_protectors
+				bonus = 1
+				uses = 1
+				category = cat_ship_light_battery
+				category = asw_tech
+			}
+			custom_effect_tooltip = empty_line
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SRI_squadron_flagships
+		icon = GFX_focus_generic_cruiser2
+		cost = 5
+
+		relative_position_id = SRI_mariantisom
+		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = SRI_mariantisom
+		}
+		mutually_exclusive = {
+			focus = SRI_sealane_protectors
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 4
+				has_war = yes
+				enemies_naval_strength_ratio > 1
+			}
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = SRI_squadron_flagships
+				bonus = 1
+				uses = 1
+				category = ca_tech
+			}
+			add_tech_bonus = {
+				name = SRI_squadron_flagships
+				bonus = 1
+				uses = 1
+				category = cat_ship_medium_battery
+				category = naval_armor
+			}
+			custom_effect_tooltip = empty_line
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SRI_maritime_air_power
+		icon = GFX_goal_generic_navy_carrier
+		cost = 5
+
+		relative_position_id = SRI_mariantisom
+		x = 0
+		y = 2
+
+		available = {
+			has_tech = early_ship_hull_carrier
+		}
+
+		prerequisite = {
+			focus = SRI_sealane_protectors
+			focus = SRI_squadron_flagships
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = SRI_maritime_air_power
+				bonus = 0.75
+				uses = 2
+				category = cv_tech
+			}
+			custom_effect_tooltip = empty_line
+			if = {
+				limit = { has_tech = advanced_ship_hull_carrier }
+				if = {
+					limit = { has_tech = advanced_dp_light_battery }
+					create_equipment_variant = {
+						name = "Vittoria Class"
+						type = ship_hull_carrier_3
+						parent_version = 0
+						modules = {
+							fixed_ship_deck_slot_1 = ship_deck_space
+							fixed_ship_deck_slot_2 = ship_deck_space
+							fixed_ship_anti_air_slot = ship_anti_air_2
+							fixed_ship_radar_slot = empty
+							fixed_ship_engine_slot = carrier_ship_engine_4
+							fixed_ship_secondaries_slot = dp_ship_secondaries_4
+							front_1_custom_slot = ship_deck_space
+						}
+					}
+				}
+				else_if = {
+					limit = { has_tech = improved_dp_light_battery }
+					create_equipment_variant = {
+						name = "Vittoria Class"
+						type = ship_hull_carrier_3
+						parent_version = 0
+						modules = {
+							fixed_ship_deck_slot_1 = ship_deck_space
+							fixed_ship_deck_slot_2 = ship_deck_space
+							fixed_ship_anti_air_slot = ship_anti_air_2
+							fixed_ship_radar_slot = empty
+							fixed_ship_engine_slot = carrier_ship_engine_4
+							fixed_ship_secondaries_slot = dp_ship_secondaries_3
+							front_1_custom_slot = ship_deck_space
+						}
+					}
+				}
+				else_if = {
+					limit = { has_tech = basic_dp_light_battery }
+					create_equipment_variant = {
+						name = "Vittoria Class"
+						type = ship_hull_carrier_3
+						parent_version = 0
+						modules = {
+							fixed_ship_deck_slot_1 = ship_deck_space
+							fixed_ship_deck_slot_2 = ship_deck_space
+							fixed_ship_anti_air_slot = ship_anti_air_2
+							fixed_ship_radar_slot = empty
+							fixed_ship_engine_slot = carrier_ship_engine_4
+							fixed_ship_secondaries_slot = dp_ship_secondaries_2
+							front_1_custom_slot = ship_deck_space
+						}
+					}
+				}
+				else = {
+					create_equipment_variant = {
+						name = "Vittoria Class"
+						type = ship_hull_carrier_3
+						parent_version = 0
+						modules = {
+							fixed_ship_deck_slot_1 = ship_deck_space
+							fixed_ship_deck_slot_2 = ship_deck_space
+							fixed_ship_anti_air_slot = ship_anti_air_2
+							fixed_ship_radar_slot = empty
+							fixed_ship_engine_slot = carrier_ship_engine_4
+							fixed_ship_secondaries_slot = ship_secondaries_2
+							front_1_custom_slot = ship_deck_space
+						}
+					}
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_carrier_3
+						version_name = "Vittoria Class"
+					}
+					requested_factories = 5
+					progress = 0.45
+				}
+			}
+			else_if = {
+				limit = { has_tech = improved_ship_hull_carrier }
+				if = {
+					limit = { has_tech = basic_dp_light_battery }
+					create_equipment_variant = {
+						name = "Vittoria Class"
+						type = ship_hull_carrier_2
+						parent_version = 0
+						modules = {
+							fixed_ship_deck_slot_1 = ship_deck_space
+							fixed_ship_deck_slot_2 = ship_deck_space
+							fixed_ship_anti_air_slot = ship_anti_air_2
+							fixed_ship_radar_slot = empty
+							fixed_ship_engine_slot = carrier_ship_engine_3
+							fixed_ship_secondaries_slot = dp_ship_secondaries_2
+							front_1_custom_slot = ship_deck_space
+						}
+					}
+				}
+				else = {
+					create_equipment_variant = {
+						name = "Vittoria Class"
+						type = ship_hull_carrier_2
+
+						parent_version = 0
+						modules = {
+							fixed_ship_deck_slot_1 = ship_deck_space
+							fixed_ship_deck_slot_2 = ship_deck_space
+							fixed_ship_anti_air_slot = ship_anti_air_2
+							fixed_ship_radar_slot = empty
+							fixed_ship_engine_slot = carrier_ship_engine_3
+							fixed_ship_secondaries_slot = ship_secondaries_2
+							front_1_custom_slot = ship_deck_space
+						}
+					}
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_carrier_2
+						version_name = "Vittoria Class"
+					}
+					requested_factories = 5
+					progress = 0.45
+				}
+			}
+			else_if = {
+				limit = { has_tech = basic_ship_hull_carrier }
+				create_equipment_variant = {
+					name = "Vittoria Class"
+					type = ship_hull_carrier_1
+					parent_version = 0
+					modules = {
+						fixed_ship_deck_slot_1 = ship_deck_space
+						fixed_ship_deck_slot_2 = ship_deck_space
+						fixed_ship_anti_air_slot = ship_anti_air_1
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = carrier_ship_engine_2
+						fixed_ship_secondaries_slot = ship_secondaries_2
+						front_1_custom_slot = ship_deck_space
+					}
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_carrier_1
+						version_name = "Vittoria Class"
+					}
+					requested_factories = 5
+					progress = 0.45
+				}
+			}
+			else = {
+				create_equipment_variant = {
+					name = "Vittoria Class"
+					type = ship_hull_carrier_conversion_bb
+					parent_version = 0
+					modules = {
+						fixed_ship_deck_slot_1 = ship_deck_space
+						fixed_ship_deck_slot_2 = ship_deck_space
+						fixed_ship_anti_air_slot = ship_anti_air_1
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = carrier_ship_engine_1
+						fixed_ship_secondaries_slot = ship_secondaries_1
+					}
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_carrier_conversion_bb
+						version_name = "Vittoria Class"
+					}
+					requested_factories = 5
+					progress = 0.45
+				}
+			}
+			custom_effect_tooltip = empty_line
+			add_mastery_bonus = {
+				name = SRI_maritime_air_power
+				bonus = 0.1
+				days = 365
+				track = carriers
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_BONUS }
+	}
+	focus = {
+		id = SRI_improved_gunnery
+		icon = GFX_focus_FIN_coastal_defense
+		cost = 5
+
+		relative_position_id = SRI_guerra_marittima
+		x = 3
+		y = 1
+
+		prerequisite = {
+			focus = SRI_guerra_marittima
+			focus = SRI_battaglia_decisiva
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 4
+				has_war = yes
+				enemies_naval_strength_ratio > 1
+			}
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_istituto_di_studi_militari_marittimi_modifier
+			}
+			add_to_variable = {
+				SRI_ismm_naval_hit_chance = 0.05
+				tooltip = naval_hit_chance_tooltip
+			}
+			add_to_variable = {
+				SRI_ismm_navy_anti_air_attack_factor = 0.05
+				tooltip = navy_anti_air_attack_factor_tooltip
+			}
+			custom_effect_tooltip = empty_line
+			add_tech_bonus = {
+				name = SRI_improved_gunnery
+				bonus = 0.75
+				uses = 2
+				category = ship_modules_tech
+			}
+		}
+		search_filters = { FOCUS_FILTER_NAVY_BONUS FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SRI_adopt_the_gufo
+		icon = GFX_focus_generic_electrification
+		cost = 5
+
+		relative_position_id = SRI_guerra_marittima
+		x = 5
+		y = 1
+
+		available = {
+			is_special_project_completed = sp:sp_air_radar
+		}
+
+		prerequisite = {
+			focus = SRI_guerra_marittima
+			focus = SRI_battaglia_decisiva
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 4
+				has_war = yes
+				enemies_naval_strength_ratio > 1
+			}
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_istituto_di_studi_militari_marittimi_modifier
+			}
+			add_to_variable = {
+				SRI_ismm_spotting_chance = 0.1
+				tooltip = spotting_chance_tooltip
+			}
+			custom_effect_tooltip = empty_line
+			random_owned_controlled_state = {
+				prioritize = { 158 } #Piedmont
+				limit = {
+					is_in_home_area = yes
+				}
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 162 } #Tuscany
+				limit = {
+					is_in_home_area = yes
+				}
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = empty_line
+			add_breakthrough_progress = {
+				specialization = specialization_naval
+				value = 0.25
+			}
+			add_breakthrough_progress = {
+				specialization = specialization_air
+				value = 0.25
+			}
+			custom_effect_tooltip = empty_line
+			add_tech_bonus = {
+				name = SRI_adopt_the_gufo
+				bonus = 0.75
+				uses = 2
+				category = radar_tech
+			}
+		}
+		search_filters = { FOCUS_FILTER_NAVY_BONUS FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = SRI_joint_naval_intelligence
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 5
+
+		relative_position_id = SRI_adopt_the_gufo
+		x = 0
+		y = 1
+
+		bypass_if_unavailable = yes
+
+		prerequisite = {
+			focus = SRI_adopt_the_gufo
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 4
+				has_war = yes
+				enemies_naval_strength_ratio > 1
+			}
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = SRI_istituto_di_studi_militari_marittimi_modifier
+			}
+			add_to_variable = {
+				SRI_ismm_naval_detection = 0.1
+				tooltip = naval_detection_tooltip
+			}
+			custom_effect_tooltip = empty_line
+			every_navy_leader = {
+				display_individual_scopes = yes
+				limit = { NOT = { has_trait = spotter } }
+				add_unit_leader_trait = spotter
+			}
+		}
+		search_filters = { FOCUS_FILTER_NAVY_BONUS }
+	}
+	focus = {
+		id = SRI_mediterraneo_rosso
+		icon = GFX_focus_generic_mediterranean_sea_focus
+		cost = 10
+
+		relative_position_id = SRI_improved_gunnery
+		x = 0
+		y = 2
+
+		prerequisite = {
+			focus = SRI_joint_naval_intelligence
+		}
+		prerequisite = {
+			focus = SRI_improved_gunnery
+		}
+		prerequisite = {
+			focus = SRI_sealane_protectors
+			focus = SRI_squadron_flagships
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 4
+				has_war = yes
+				enemies_naval_strength_ratio > 1
+			}
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1938.1.1
+			}
+			modifier = {
+				factor = 1.5
+				date > 1939.1.1
+			}
+		}
+
+		completion_reward = {
+			add_mastery = {
+				amount = 50
+				folder = naval
+			}
+			custom_effect_tooltip = empty_line
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = empty_line
+			every_navy_leader = {
+				display_individual_scopes = yes
+				limit = { NOT = { has_trait = bold } }
+				add_unit_leader_trait = bold
+			}
+		}
+		search_filters = { FOCUS_FILTER_NAVY_BONUS FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+	}
+
 
 }

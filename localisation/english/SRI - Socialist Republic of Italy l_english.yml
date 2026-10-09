@@ -1,0 +1,419 @@
+﻿l_english:
+### Tooltips ###
+ SRI_istituto_per_la_ricostruzione_industriale_modifier: "Istituto per la Ricostruzione Industriale"
+
+ SRI_legione_proletaria_custom_modifier_tooltip: "[ROOT.SRI_GetLegioneProletariaCustomModifierTooltip]"
+
+
+ SRI_cda_custom_modifier_tooltip: "[ROOT.SRI_GetCDACustomModifierTooltip]"
+ SRI_ismm_custom_modifier_tooltip: "[ROOT.SRI_GetISMMCustomModifierTooltip]"
+
+### Country ###
+ ITA_focus: "Socialist Republic of Italy Focus Tree"
+
+### Political Tree ###
+ SRI_meeting_of_the_leadership: "Meeting of the Leadership"
+ SRI_meeting_of_the_leadership_desc: "Giulietti's social-nationalist experiment has clearly failed, causing parliamentary gridlock in the wake of the new elections. We must however not show weakness; with our newfound leader, a new governing solution must be found."
+ SRI_making_the_new_italy: "Making the New Italy"
+ SRI_making_the_new_italy_desc: "After years of struggle, Italy is finally united; however, it is also clear that the compromise which encapsulated Socialist politics in the last years cannot last any longer. New elections have been scheduled: let us see what the morning sun brings."
+ SRI_deal_with_fmc: "Deal with the FMC"
+ SRI_deal_with_fmc_desc: "The Clandestine Military Front has been a thorn on our side for too long. With a stable government finally in place we can now see to at least contain and reduce their operations."
+ SRI_crush_monarchist_militias: "Crush the Chetniks"
+ SRI_crush_monarchist_militias_desc: "With Caviglia finally in our hands, nothing can stop our delivering of justice to the terrorists that have rampaged through our nation for so many years."
+ SRI_attract_socialist_intellectuals: "Attract Socialist Intellectuals"
+ SRI_attract_socialist_intellectuals_desc: "Across the Peninsula many socialist intellectuals still work for other governments or await their liberation. No more: let us call upon all these brave sons of Italy to come here (of course, with the promise of rightful compensation) and help in bringing the Revolution to our nation."
+
+ # Syndies
+ SRI_the_syndicalist_orthodoxy: "The Syndicalist Orthodoxy"
+ SRI_the_syndicalist_orthodoxy_desc: "In spite of vicious attacks from the presidentialist FAR and Mussolini, the syndicalist orthodoxy established in 1919 lives on to see another day. Some things will need to change - interim president Giulietti is almost universally disliked and will rapidly be replaced - but we can rest assured that no one will threaten our democracy again."
+ SRI_empower_cgl: "Empower Urban Unions"
+ SRI_empower_cgl_desc: "The compromise between urban and rural unions cannot hold. As the urban CGdL is by far the largest union in the country, it and her leader Giuseppe di Vittorio will lead Italy for the time being."
+ SRI_empower_usi: "Empower Rural Unions"
+ SRI_empower_usi_desc: "The compromise between urban and rural unions cannot hold. With the rural anarchist USI being the most militant peasant-union in the country, it and her leader Alberto Meschi will continue our revolution."
+ SRI_empower_our_political_officers: "Empower the Political Officers"
+ SRI_empower_our_political_officers_desc: "The urban-rural compromise cannot hold. With neither the urban unions of the CGdL nor the rural anarchist USI being our greatest strength; instead, we must support Pietro Nenni, the Union leader of the Political Commissars Union will rise to the top, in a bid for socialist unification."
+ SRI_exclude_catholic_unions: "Exclude Catholic Unions"
+ SRI_exclude_catholic_unions_desc: "We cannot afford to come to a deal with the force that's working to destroy the Republic. Even if they may declare themselves loyal, the Catholic-aligned unions will have to be disbanded for the security of the Republic."
+ SRI_compromise_with_the_church: "Compromise with the Church"
+ SRI_compromise_with_the_church_desc: "Most of our population is Catholic and many trade unionists adhere to the Social Doctrine of the Church. Even if it pains us, we must come to an understanding with the Roman Catholic Church, for the stability of our nation."
+ SRI_the_spirit_of_parma: "The Spirit of Parma"
+ SRI_the_spirit_of_parma_desc: "In 1907, the USI led the biggest trade union demonstration in Italy prior to the 1919 revolution itself, and it was only due to the Socialist Party's inaction that we had to postpone the liberation of the proletariat for 12 years. The spirit of the Parma strikes lives on through us - and will be at the basis of the new Italy."
+ SRI_movement_of_true_action: "The Movement of True Action"
+ SRI_movement_of_true_action_desc: "While the bigger trade unions and the Socialist Party danced with reformism, our small USI always fought for the revolution and the liberation of all proletarians. Even if we lost some important voices on the way, we remain what we've always been - the only movement calling for true revolutionary action."
+ SRI_crush_the_squadracce: "Crush the Squadracce"
+ SRI_crush_the_squadracce_desc: "The fascist blackshirts continue to roam the country and attack our union organisations. The government must be clear - the mistakes that have been made since 1934 will be rectified, and the anti-democratic blackshirts destroyed in the process."
+ SRI_empower_federated_unions: "Empower the Federated Unions"
+ SRI_empower_federated_unions_desc: "We can't just empower the CGdL as a whole - the federated unions that form the confederation must be given the powers and liberties they need to protect and manage the Italian workers."
+ SRI_appeal_to_socialist_unity: "Appeal to Socialist Unity"
+ SRI_appeal_to_socialist_unity_desc: "The biggest strength of the Socialist Republic is our unity in the face of adversity. President Nenni knows this - which is why he's called for socialists of all denominations, and especially his moderate friend Giuseppe Saragat, to come back to the union of the Internationale."
+ SRI_fight_for_internationalism: "Fight for Internationalism"
+ SRI_fight_for_internationalism_desc: "We have seen it ourselves - the liberation of all workers can't coincide with nationalist bickering, and will always be fought by all anti-proletarian forces. We must be ready to fight for liberty - we will be ready!"
+ SRI_the_federal_union: "The Federal Union"
+ SRI_the_federal_union_desc: "We have signed an interesting pact with the Church. With their support, the Catholic unions will be merged with the CGdL in a new, all-Italian federal union to coordinate the efforts of all workers towards their emancipation. This is sure to win us some much needed support."
+ SRI_emphasise_the_social_saints: "Emphasise the Social Saints"
+ SRI_emphasise_the_social_saints_desc: "The Church is, in fact, the first ally of the poor. In promoting our relationship with the church, we shall... ignore the last century of militant reaction; instead, we shall place our attention on the many low level priests who did much to help the proletariat."
+ SRI_protect_local_democracy: "Protect Local Democracy"
+ SRI_protect_local_democracy_desc: "As part of our deal with the Church, Catholic-aligned reactionary politicians will be allowed to run for office on the smallest scales of Government. While the Socialist Republic controls the nation and the cities, the Church will keep their hold of the countryside - in cooperation with our rule."
+ SRI_revolutionary_expropriations: "Revolutionary Expropriations"
+ SRI_revolutionary_expropriations_desc: "With a souring relationship with the church, we can't allow them to control the local governance of the nation. Even excluding the churches themselves, they control a myriad of other utility buildings - which will have to be nationalised."
+ SRI_empower_chambers_of_labour: "Empower the Chambers of Labour"
+ SRI_empower_chambers_of_labour_desc: "The local chambers of labour were initially instituted in the last century to deal with the power of the centrally appointed mayors, but now they have a new objective: crushing the power of the Church at the local level. This cannot be achieved actively: so instead, we will gradually shift local government powers into the Chambers."
+ SRI_building_a_new_mythos: "Building a New Mythos"
+ SRI_building_a_new_mythos_desc: "Garibaldi was an anticlerical, nationalist and yet progressive figure, who is the true father of modern Italy. We shall use his image as one of a new Italy built following his ideals."
+
+### Risorgimento Focuses ###
+ SRI_risorgimento: "Begin the Risorgimento"
+ SRI_risorgimento_desc: "Risorgimento was the process by which Italy was originally united, however with the Italian Civil War in 1919, Italy was shattered into pieces. A new Risorgimento is needed now. One that will not just unite Italy but spread the revolution to all parts of the country."
+ SRI_military_exercises: "Military Exercises"
+ SRI_military_exercises_desc: "Before we begin the actual campaign of reunification we must do military exercises to prepare the army for the rigours of war that we shall be dealing with."
+ SRI_naval_exericises: "Naval Exercises"
+ SRI_naval_exericises_desc: "Before we begin the actual campaign of reunification we must do naval exercises to prepare the navy for the rigours of war that we shall be dealing with."
+ SRI_italian_irredentism: "Revolutionary Irredentism"
+ SRI_italian_irredentism_desc: "While we have destroyed the false countries that call themselves Italy or were on the Italian Peninsula, there are still many places outside of Italy that should belong to Italy or who should see the light of the revolution."
+
+ SRI_create_enel: "Create ENEL"
+ SRI_create_enel_desc: "Even after the revolution, electricity provision has been left to regional companies. No more: better efficiency will be achieved with the formation of one national energy body."
+
+ SRI_elettro_treno_rapido: "Elettro Treno Rapido"
+ SRI_elettro_treno_rapido_desc: "With the recent opening of the Bologna-Firenze Direttissima (\"Super-Direct\") Railway, we now need better rolling stock so achieve a fast, efficient and comfortable service. The new ETR 200 will do nicely."
+
+ SRI_renew_the_ricostruzione_industriale: "Renew the Ricostruzione Industriale"
+ SRI_renew_the_ricostruzione_industriale_desc: "As we prepare to bring the Revolution to the rest of the peninsula, we must expand our industrial base in order to counteract foreign investment in the breakaway states. The government will take an active approach in this reconstruction."
+
+ SRI_foster_innovation: "Foster Innovation"
+ SRI_foster_innovation_desc: "We already own most of Italy's industrial base; what we lack in international support, we can make up with innovation. The brightest minds of the Peninsula, of the World, even, work for our government, and will help the Revolution."
+
+ SRI_legacy_of_marconi: "Legacy of Marconi"
+ SRI_legacy_of_marconi_desc: "The foremost pioneer of radio communication, Guglielmo Marconi, hailed from our nation; it is imperative for us to honour his legacy, by finding (military) applications for the technology he gave us."
+
+ SRI_cinecitta: "Cinecittà"
+ SRI_cinecitta_desc: "With the liberation of Rome, we now have the opportunity to propagandise our revolutionary mission on the big screen. Special facilities shall be built in the capital to help in this task."
+
+ SRI_expand_turin_polytechnic_institute: "Expand Turin Polytechnic Institute"
+ SRI_expand_turin_polytechnic_institute_desc: "With Milan in foreign hands, Turin has been the base of operations for our scientists and engineers in the last decade. As the livelihood of the Republic depends on them, we shall grant them whatever support they may need."
+
+ SRI_fermis_nuclear_research: "Fermi's Nuclear Research"
+ SRI_fermis_nuclear_research_desc: "A new age of monstrous weapons is upon us. With Fermi and his Panisperna Boys having been instrumental in the theoretical and practical research into the power of the atom, we shall grant them even more support, so the terrible military applications of their work are used by the Socialist Republic and not her enemies."
+
+ SRI_thermojet_experiments: "Thermojet Experiments"
+ SRI_thermojet_experiments_desc: "General Crocco, a pioneer of aeronautics, has recently been leading the School of Aeronautical Engineering towards new, experimental technologies that could prove essential to our aerial superiority. Let us encourage this direction."
+
+ SRI_syndical_conglomerates: "Syndical Conglomerates"
+ SRI_syndical_conglomerates_desc: "The old French-inspired regional autonomous unions won't work anymore. In order to keep the economic and social unity of the nation, the various local unions shall be given a clear hierarchy and shall then respond to a federal authority."
+
+ SRI_maximise_production_capacity: "Maximise Production Capacity"
+ SRI_maximise_production_capacity_desc: "Thanks to our central planning policy, we can now be sure the Socialist Republic is running as smoothly and as efficiently as possible. We of course expect nothing less of our emancipated workforce."
+
+ SRI_maintain_regional_unions: "Maintain Regional Unions"
+ SRI_maintain_regional_unions_desc: "While some call for centralisation of the unions, this would just lead to tyranny and everything our Socialist Republic stands against. We must resist these efforts, and officialise the devolution that is the basic principle of our revolutionary economic system."
+
+ SRI_modern_production_lines: "Modern Production Lines"
+ SRI_modern_production_lines_desc: "With help from the central government, the regional unions can achieve the modernity and specialisation they couldn't reach otherwise. Let us then provide this central help."
+
+ SRI_stabilimento_di_mirafiori: "Stabilimento di Mirafiori"
+ SRI_stabilimento_di_mirafiori_desc: "The FIAT Lingotto establishment, heart of automobile production in the Socialist Republic, has proven time and time again to be no longer enough to provide for the Socialist Republic. The Government has seized the opportunity to start building a new, more expansive complex in the Mirafiori neighbourhood of Torino, from which the war machines of our Republic shall emerge."
+
+ SRI_finish_the_electrical_conversion: "Finish the Electrical Conversion"
+ SRI_finish_the_electrical_conversion_desc: "Railways across the country, especially in Piedmont and Liguria, still use the by now outdated 3.6 kV 16 2/3 Hz AC electrification system. Let us finally replace this system with the more advanced 3 kV DC, at least on major routes."
+
+ SRI_terni_city_of_steel: "Terni, City of Steel"
+ SRI_terni_city_of_steel_desc: "Since 1884, Terni has been a major hub of metallurgy and related industries, for civilian but especially military purposes. Let us expand and modernise this most important strategic industrial base."
+
+ SRI_expand_ilva: "Expand Ilva"
+ SRI_expand_ilva_desc: "The former Terni-Elba group, now an amalgamation of many strategic metallurgy industries, is the key to boosting our industrial capacity past the rival governments. We shall expand its mines, modernise its industries, rationalise its management."
+
+ SRI_agip_operations_in_romagna: "Agip Operations in Romagna"
+ SRI_agip_operations_in_romagna_desc: "Beneath the fertile farmland of Romagna lies the biggest fossil fuel reserve in Italy. It is imperative we exploit it to our advantage in the Great Revolutionary War."
+
+ SRI_gomma_sintetica: "Gomma Sintetica"
+ SRI_gomma_sintetica_desc: "The one thing Italy doesn't have is rubber, but recent advances in hydrocarbon technology allows us to process artificial rubber from our refineries - a win-win operation."
+
+ SRI_integrate_the_lombard_arms_industry: "Integrate the Lombard Arms Industry"
+ SRI_integrate_the_lombard_arms_industry_desc: "Before 1919, the heart of Italy's arms industry was located in the valleys of Brescia; in the last few decades we have had to build our own industry, but now we are in a position to merge the establishments."
+
+ SRI_modernise_the_po_farmlands: "Modernise the Po Farmlands"
+ SRI_modernise_the_po_farmlands_desc: "While Piedmont reaches modernity, parts of the lower Padan Valley have yet to leave the middle ages. Politically we've already done what we could do - but economically, we can still intervene to improve their situation."
+
+ SRI_reform_the_iacp: "Reform the IACP"
+ SRI_reform_the_iacp_desc: "From 1903, the Autonomous Public Housing Institute deals with the building and administration of social housing for the less affluent of our society. Over the decades it has grown bloated and corrupted; in the name of the proletariat of this Republic, we shall renovate it at once!"
+
+ SRI_the_eternal_city: "The Eternal City"
+ SRI_the_eternal_city_desc: "Rome languished under the restored rule of the Pope-King. Let us show true charity to the people of the Capital, by commencing the construction of the Garbatella district."
+
+ SRI_a_new_partenope: "A New Partenope"
+ SRI_a_new_partenope_desc: "For a decade Naples decayed under the authoritarian and corrupt rule of its mayor Achille Lauro; and even prior it had to deal with epidemics and various social problems. We, who truly have the needs of the People in mind, will proceed to finally bring the city to the standards of the 20th century."
+
+ SRI_southern_reconstruction: "Southern Reconstruction"
+ SRI_southern_reconstruction_desc: "For decades the liberal governments of the Kingdom of Italy attempted to bring Southern Italy into the modern age, with little success. With the will of the people on our side, we shall finish what Garibaldi started!"
+
+ SRI_tap_sicilian_potential: "Tap Sicilian Potential"
+ SRI_tap_sicilian_potential_desc: "With unrest in North America, Sicily has the unique opportunity to regain its hegemony in the sulphates market. Let us seize the moment!"
+
+ SRI_rebuild_carbonia: "Rebuild Carbonia"
+ SRI_rebuild_carbonia_desc: "The royalist dictatorship in Sardinia built Carbonia as a new city in the 1920s; this city being everything that is wrong with capitalism, built solely to exploit the local mines for the benefit of foreign corporations. With us now in control, Carbonia can be rebuilt as a city of socialism, freedom and Italy."
+
+ SRI_modernise_the_apulian_fields: "Modernise the Apulian Fields"
+ SRI_modernise_the_apulian_fields_desc: "The Salento region in southern Apulia has great agricultural potential, but suffers from a perennial lack of water. By channeling water from the rivers in Campania, we will be able to unlock the full agricultural power of the area."
+
+ SRI_reunite_the_italian_heartlands: "Reunite the Italian Heartlands"
+ SRI_reunite_the_italian_heartlands_desc: "The Ticino-Po line the Austrians imposed on us had disastrous effects on the infrastructural links between Piedmont and Lombardy. We shall then restore these links, and drain the swamps of Veneto in the process."
+
+ SRI_modernise_the_armata_rossa: "Modernise the Armata Rossa"
+ SRI_modernise_the_armata_rossa_desc: "The Red Army was formed out of mutineering units back in the 1919 Revolution, and hasn't changed much since. As the backwardness of the armed forces was one of the leading reasons for our failure to seize the rest of the country in 1927, we shall make sure this won't be a problem in the future."
+
+ SRI_commissione_armi_e_munizioni: "Commissione Armi e Munizioni"
+ SRI_commissione_armi_e_munizioni_desc: "The \"Arms and Munitions Commission\" shall be created to organise the research and manufacturing of new weapons to be used in our fight against the reactionaries."
+
+ SRI_replace_the_six_point_five_milimetres: "Replace the 6.5mm"
+ SRI_replace_the_six_point_five_milimetres_desc: "The pre-Weltkrieg Carcano has served us well, but as the times are changing, so must our guns. A new rifle is needed in the hands of our soldiers."
+
+ SRI_armaguerra: "Armaguerra"
+ SRI_armaguerra_desc: "In these dangerous times, the life-cycle of weapons is rather short. A new semi-automatic rifle, the Armaguerra will bring the firepower of the [ROOT.GetAdjective] rifle squad to a new level."
+
+ SRI_telo_mimetico: "Telo Mimetico"
+ SRI_telo_mimetico_desc: "The colourful jackets of yesteryear have nothing to do on the modern battlefield. While simple, one-coloured uniforms are already in use, the usage of a camouflage pattern originally meant for tents has been proposed."
+
+ SRI_howitzer_standardisation: "Howitzer Standardisation"
+ SRI_howitzer_standardisation_desc: "The number of different types of field guns in the armed forces is raising, straining supply lines. By creating a standard for howitzer barrels and ammunition, these parts will be easier to both supply and replace."
+
+ SRI_cannone_da_novanta: "Cannone da 90"
+ SRI_cannone_da_novanta_desc: "As both enemy land and air vehicles are more heavily armoured, a new, larger gun is necessary to punch through them. A new, 90 mm calibre one will do the job just fine."
+
+ SRI_motorise_the_bersaglieri: "Motorise the Bersaglieri"
+ SRI_motorise_the_bersaglieri_desc: "The internal combustion engine has unlocked troop speeds hitherto unimaginable. Sadly, not enough are available in [ROOT.GetNameDef] - only our best troops can be outfitted as of now."
+
+ SRI_semoventi_dartiglieria: "Semoventi d'Artiglieria"
+ SRI_semoventi_dartiglieria_desc: "The king of the battlefield is just as slow and unmoving as its counterpart on the chess board. The construction of self-propelled guns will allow for a new dimension in artillery warfare."
+
+ SRI_carri_di_rottura: "Carri di Rottura"
+ SRI_carri_di_rottura_desc: "To avoid the stalemates of the Weltkrieg, heavier and more powerfully armed tanks are necessary to rupture the static enemy defences, and pave way for the infantry attack."
+
+ SRI_ferrea_mole_ferreo_cuore: "Ferrea Mole, Ferreo Cuore"
+ SRI_ferrea_mole_ferreo_cuore_desc: "\"Iron Mass, Iron Heart\" is the motto of the [ROOT.GetAdjective] Armoured Corps, signifying that not only the machine, but the men riding it to battle need to be of the highest quality and conviction."
+
+ SRI_la_legione_proletaria: "La Legione Proletaria"
+ SRI_la_legione_proletaria_desc: "Every worker in Italy has his say in what the revolution is and how it will be achieved. Risorgimento will be an opportunity for the men and women of Italy to do our nation proud; we will enable this by sculpting an army where even the humblest of our men has a place."
+
+ SRI_corpo_darmata_di_manovra: "Corpo d'Armata di Manovra"
+ SRI_corpo_darmata_di_manovra_desc: "It is not enough to break the enemy's line, we need dedicated units that can move in and exploit openings through aggressive manoeuvring and attacks in depth. The use of tanks as something to support infantry remains a dated concept, our new Manoeuvre Army Corps will use modern tanks and mounted infantry to strike exposed flanks or breaches in the enemy line."
+
+ SRI_ragruppamenti_esploranti: "Ragruppamenti Esploranti"
+ SRI_ragruppamenti_esploranti_desc: "As an originally partisan force, the Socialist army is all too familiar with the value of reconnaissance and what can be done with it. Long range patrols will allow for deeper penetration, less risk, and generally more effective operations."
+
+ SRI_establish_military_inspectorate: "Establish Military Inspectorate"
+ SRI_establish_military_inspectorate_desc: "The myriad of popular militias needs to be turned into a combined force to serve the revolution. A military inspectorate will be created to discipline the army, and the previously so independent division commanders will be forced to standardise both equipment, organisation and training."
+
+ SRI_one_army_one_command: "One Army, One Command"
+ SRI_one_army_one_command_desc: "The Socialist movement in Italy has grown from a plucky resistance movement in 1919 to a genuine state prepared to govern the whole nation. Our army structure must reflect this: while autonomy might be paramount while communication and logistics are occasional blessings, commanding the large army of Italy today requires a central command capable of administrating the whole war effort, and field commanders must be able to follow to their meticulous plans."
+
+ SRI_maintain_officer_autonomy: "Maintain Officer Autonomy"
+ SRI_maintain_officer_autonomy_desc: "No armed revolt has ever succeeded through byzantine bureaucracy. Simplifying responsibilities and giving more power to lower officers give them the leeway they need to creatively solve the strategic challenges they will face on the battlefield."
+
+ SRI_reform_modena_military_academy: "Reform the Modena Military Academy"
+ SRI_reform_modena_military_academy_desc: "It is clear that some level of professionalisation of our officer corps is needed. Though with a feudal background, the Modena Military Academy is now more famed as a hotbed for military revolutionaries with a myriad of ideas on how to combine socialism with the army. By introducing a more strict curriculum in combination with higher academic standards, we might be able to organise the many ideas into policies and initiatives of use to the army."
+
+ SRI_gruppi_di_difesa_della_donna: "Gruppi di Difesa della Donna"
+ SRI_gruppi_di_difesa_della_donna_desc: "Long on the mind of many egalitarians in the armed forces, the introduction of women into the combat services of the army seems an obvious way to strengthen not only our manpower pool, but also encourage gifted and ambitious women to make a career in our armed forces. As a start we will create specific Defence Groups for women, from where we can integrate them into the army as a whole."
+
+ SRI_vallo_alpino: "Vallo Alpino"
+ SRI_vallo_alpino_desc: "The Alps are some of the best natural defences a nation could ask for, but the presense of mountain passes makes relying on nature to do all the work unwise. By building permanent defences inside of these passes and other weak points, the northern border can be made a truly impassable wall."
+
+ SRI_arditi_del_popolo: "Arditi del Popolo"
+ SRI_arditi_del_popolo_desc: "The Arditi were famed during the Weltkrieg as shock troops able to challenge the stalemate of trench warfare. Further developments in automatic weapons and close quarters fighting have only made the possible uses of such units more appealing. Combining Arditi tactics with revolutionary fervour, the new Arditi del Popolo will be the shock troops that will open the way for our victory against the reactionaries."
+
+ SRI_corpo_speciale: "Corpo Speciale"
+ SRI_corpo_speciale_desc: "The one consistency of the battleground in Italy is that it is inconsistent. Massive mountain ranges, distant islands, packed cities and formidable rivers divide the peninsula, and ignoring these differences would be highly foolish. Instead, we must have contingents ready to face every situation."
+
+ SRI_brigate_marine: "Brigate Marine"
+ SRI_brigate_marine_desc: "An advantage of fighting an offensive war on the peninsula is that if the front quietens, one is not out of options. Corpo Speciale units can land behind the enemy to surround and disrupt them, and to attack the difficult targets of Sardinia and Sicily."
+
+ SRI_carabinieri_del_cielo: "Carabinieri del Cielo"
+ SRI_carabinieri_del_cielo_desc: "While they are not as easily applicable as mountaineers or marines, paratroopers are still a valuable asset for any modern army. Inaccessible areas such as fortifications and ports can be captured through rapid shock and awe, clearing their proximities for the advance of regular troops."
+
+ SRI_alpini_rossi: "Alpini Rossi"
+ SRI_alpini_rossi_desc: "Of course, in a peninsula largely consisting of three mountain ranges the first kind of specialist force anyone will think necessary is the mountaineer battalion, and for good reason. Mountain warfare is inevitable and we must surpass our enemies' combat capability on such battlefields."
+
+ SRI_la_guardia_rossa: "La Guardia Rossa"
+ SRI_la_guardia_rossa_desc: "Socialism is the politics of science and reason. We will defeat our enemies, not by witless sacrifice of men, but with the best-trained professional army equipped with the best-produced arms built by the most efficient industry while the traditionalists in Naples and Cagliari tremor."
+
+ SRI_formazione_di_difesa: "Formazione di Difesa"
+ SRI_formazione_di_difesa_desc: "As offensively adept as the Guardia Rossa might be, they will need a defensive backbone to succeed. Rather than muddy the responsibilities and doctrine of the national army, we will use militias to fill gaps and defend positions while larger formations are free to break the enemy."
+
+ SRI_scuole_centrale_militare: "Scuole Centrale Militare"
+ SRI_scuole_centrale_militare_desc: "The formation of a federalised body of military schools around the country will facilitate standardisation, allowing us to develop more ambitious tactics around the technologically rich Guardia Rossa formations."
+
+ SRI_autotrasportabilita: "Autotrasportabilità"
+ SRI_autotrasportabilita_desc: "The majority of our land and population remains under the stranglehold of our enemies and the Guardia Rossa will need a practical solution to guarantee our superiority over them. Thankfully, our superiority in industry supplies this: by engineering better vehicles for mobile units and doctrine to support, we can outmaneuever our enemies on the peninsula and defeat them in detail before they are able to utilise their numerical advantages."
+
+ SRI_guerra_brigantesca: "Guerra Brigantesca"
+ SRI_guerra_brigantesca_desc: "The troops of the Guardia Rossa must be able to fight like bandits: mobile, hidden, and flexible. These qualities made socialist warfare possible in the first place, and will be integrated into our doctrine."
+
+ SRI_guardia_alla_frontiera: "Guardia alla Frontiera"
+ SRI_guardia_alla_frontiera_desc: "While guerrilla tactics may have served us well inside of our borders, the Guardia Rossa must be prepared for wars with its neighbours too, and for such warfare we must be able to defend a wide front in preparation for offensives either from our territory or an expedition."
+
+ SRI_corpo_del_genio_aeronautico: "Corpo del Genio Aeronautico"
+ SRI_corpo_del_genio_aeronautico_desc: "While airfield construction and aircraft repairs have usually been delegated to army engineers and squadron support units respectively, it has become clear that a dedicated Air Force Engineer Corps needs to be established. With the construction of the Città del'Aria, it would be obvious to place the headquarters of the new corps in Umbria as well."
+
+ SRI_citta_del_aria: "Città del'Aria"
+ SRI_citta_del_aria_desc: "Italy has ever been at the forefront of air power, using aircraft for combat purposes even before the Great War. The chaos and instability of the civil war has interrupted our pole position however. We will set aside land and industry in Umbria for the creation of a 'City of the Air', where we will combine schools, manufactories and research to foster a spirit of progress and industriousness."
+
+ SRI_accademia_aeronautica: "Accademia Aeronautica"
+ SRI_accademia_aeronautica_desc: "The anarchy of the Italian forces in the latter days of the Weltkrieg and the fervent nature of the civil war left little room for modernising military tactics. In today's world, modernity means warfare conducted in the sky. Pilot training is key to catching our armed capabilities up with our neighbours."
+
+ SRI_trimotore_bombers: "Trimotore Bombers"
+ SRI_trimotore_bombers_desc: "Our previous experience with trimotor medium aircraft has shown great promise. Improved engines and designs would allow us to not only increase the payload of such bombers, but also equip them with the defensive weaponry needed to survive in a contested airspace."
+
+ SRI_pursuit_aircraft: "Pursuit Aircraft"
+ SRI_pursuit_aircraft_desc: "While multirole platforms have certainly made our production able to compete with our neighbours, it has meant some of our aircraft could underperform in combat. With production eased by our new facilities and institutions, we should focus on developing a dedicated air superiority platform. These new "pursuit aircraft" will only seek to target enemy planes, and with improved manoeuvring and heavy air-to-air armaments be able to come out on top in every dogfight."
+
+ SRI_aviazione_marittima: "Aviazione Marittima"
+ SRI_aviazione_marittima_desc: "With our air force becoming a more centralised and independent branch of our armed forces, we should make it able to take over all the roles previously taken by both the army and navy air services. Improved air designs would make our aircraft able to contest the Mediterranean and support the navy as it fights the reactionary regimes."
+
+ SRI_command_of_the_air: "Command of the Air"
+ SRI_command_of_the_air_desc: "The terrain of Italy and the difficulties it imposes on our armed forces means we have to reconsider novel approaches to warfare. One suggestion is to follow the doctrine and thoughts laid out by Giulio Douhet, who during the Weltkrieg was arguing for massive bombing campaigns to break the stalemate of trench warfare. Our bomber fleets should target the enemy's cities as well as their forces on the battlefield, allowing us to gain a decisive advantage in firepower."
+
+ SRI_arma_offensiva: "Arma Offensiva"
+ SRI_arma_offensiva_desc: "One of the major worries with strategic bombing campaigns, has been the relative vulnerability connected with having our bombers spend increased amounts of time over enemy territory. Developments in new bomb types and tactics would allow us to fly higher and minimize the risk our aircraft face from anti-aircraft fire."
+
+ SRI_aerei_da_battaglia: "Aerei da Battaglia"
+ SRI_aerei_da_battaglia_desc: "The concept of 'flying artillery' is not new, but we have to admit that the more ponderous medium bombers are tactically inflexible for battlefield fire support. The creation of new 'battle aircraft' who will have a dedicated battlefield support role, will mean that our divisions will always have fire support available to them no matter how fast they advance, or how contested the airspace over the battlefield is."
+
+ SRI_aviazone_dassalto: "Aviazone d'Assalto"
+ SRI_aviazone_dassalto_desc: "Rather than focus on destroying the enemy through better bomber aircraft, an alternative approach could be to simply deny the airspace to the enemy. New training could emphasise the fighter as our premier aircraft type. We wouldn't need better bombers if the ones we have were at little risk of being intercepted."
+
+ SRI_zone_aeree_territoriali: "Zone Aeree Territoriali"
+ SRI_zone_aeree_territoriali_desc: "An organisational change is needed to ensure maximum efficiency amongst our squadrons. New territorial air commands will be in charge of local defence as well coordination with our industries to improve aircraft designs. By removing middlemen, not only will our squadrons be able to respond better to local intrusions into our airspace, but we will get pilot input into new aircraft, hopefully making them available quicker than through ordinary testing and production methods."
+
+ SRI_difesa_contraerea_territoriale: "Difesa Contraerea Territoriale"
+ SRI_difesa_contraerea_territoriale_desc: "A sometime undervalued part of the air power, is the impact that ground based anti-aircraft artillery can have on local air superiority. We should create specific anti-air units under command of the air force, so as to ensure that our air defence remains unified in mission and purpose."
+
+ SRI_istituto_di_studi_militari_marittimi: "Istituto di Studi Militari Marittimi"
+ SRI_istituto_di_studi_militari_marittimi_desc: "To lead a ship to victory, knowledge of tactics, engineering and logistics is necessary for higher level officers. Establishing a new institute researching and teaching these topics will ensure a key edge over the other navies on the peninsula."
+
+ SRI_expand_the_livorno_academy: "Expand the Livorno Academy"
+ SRI_expand_the_livorno_academy_desc: "The navy needs further expansion, which is not possible without men on the decks. To the luck of the [ROOT.GetAdjective] government, the original training academy of the Navy is still within the territory under its controlled, and can be easily expanded."
+
+ SRI_corpo_del_genio_navale: "Corpo del Genio Navale"
+ SRI_corpo_del_genio_navale_desc: "Just as a soldier would not got to war with a rusty rifle, a sailor can not sail a leaky ship. Caring for and maintaining ships has become specialised knowledge, that should have its own section within the Navy."
+
+ SRI_flottiglie_mas: "Flottiglie MAS"
+ SRI_flottiglie_mas_desc: "The torpedo has revolutionised naval warfare, allowing small boats to sink much larger targets. Taking this idea to below the surface yields a new type of submarine which small, nimble and lightly manned."
+
+ SRI_revolution_under_the_sea: "Revolution Under the Sea"
+ SRI_revolution_under_the_sea_desc: "If the Entente think the Mediterranean is an easy doorstep into the southern borders of revolutionary Europe, they are sorely mistaken. While our allies must pay attention to the Atlantic we will make it our job to sink any materiel or manpower which attempts to cross our sea."
+
+ SRI_legacy_of_mignatta_and_the_mas: "Legacy of Mignatta and the MAS"
+ SRI_legacy_of_mignatta_and_the_mas_desc: "The weapon that transformed naval warfare was born in a city inhabited by Italians, yet the [ROOT.GetAdjective] naval industry is not up to date in its production. It is time for it to cross the Adriatic, and reach its true potential in the hands of our sailors and airmen."
+
+ SRI_incrociatori_sommergibili: "Incrociatori Sommergibili"
+ SRI_incrociatori_sommergibili_desc: "The German success in the Weltkrieg has shown the effectiveness in sub-surface naval warfare. One obvious way forward is the creation of larger, more powerful submarines with an increased amount of firepower and capable of standing on their own."
+
+ SRI_artiglieria_marittima: "Artiglieria Marittima"
+ SRI_artiglieria_marittima_desc: "By its nature, the Apennine Peninsula has a long coast, that needs defending from any would be invaders. Setting up hard points and static naval artillery in key choke points would deny any possible invasions."
+
+ SRI_expand_genoese_naval_yards: "Expand Genoese Naval Yards"
+ SRI_expand_genoese_naval_yards_desc: "Genoa is the largest port that stayed under the control of the workers of Italy during the Civil War. With an already decent naval industry, it will serve as a nucleus for further naval expansion."
+
+ SRI_odero_terni_orlando: "Odero-Terni-Orlando"
+ SRI_odero_terni_orlando_desc: "The modern battleship is a hulking mass of steel. Connecting shipbuilders to steel manufacturers such as the Terni plant, will allow a streamlined flow of materiel, and better construction."
+
+ SRI_cantieri_riuniti_del_tirreno: "Cantieri Riuniti del Tirreno"
+ SRI_cantieri_riuniti_del_tirreno_desc: "To construct our new ships, a new manufacturer is needed. Uniting naval companies across the Tyrrhenian will result in an improvement of both quality and quantity."
+
+ SRI_increase_ship_exports: "Increase Ship Exports"
+ SRI_increase_ship_exports_desc: "With all the dockyards constructed recently, the [ROOT.GetAdjective] naval industry has surplus capacity to construct civilian vessels for our allies, or other buyers across the world. These exports create both jobs at home, and provide an important source of revenue."
+
+ SRI_cantieri_riuniti_dell_adriatico: "Cantieri Riuniti dell'Adriatico"
+ SRI_cantieri_riuniti_dell_adriatico_desc: "The merge of the shipyards across the Tyrrhenian has proved successful. It is time to bring this model to the newly liberated territories in the Gulf of Kvarner as well."
+
+ SRI_guerra_marittima: "Guerra Marittima"
+ SRI_guerra_marittima_desc: "Just like on land, war on sea has become one of attrition and management of resources. Being able to produce and manage a large number of ships allows the navy to operate in more theatres, and spreading our enemies thin."
+
+ SRI_fast_battleships: "Fast Battleships"
+ SRI_fast_battleships_desc: "With heavier ships usually at anchor during their service, it is paramount that they get to the battle faster than their opponents. Commissioning new ships for this purpose will allow faster reactions to any naval combat."
+
+ SRI_mariantisom: "Mariantisom"
+ SRI_mariantisom_desc: "Having proved successful in the Weltkreig, our opponents are sure to use submarines to deny us shipping capabilities. Creating a special command aimed to counteract these threats will save the lives of many merchant mariners."
+
+ SRI_sealane_protectors: "Sealane Protectors"
+ SRI_sealane_protectors_desc: "The ships out on the open sea need protection from enemy raiders. The solution is the construction of more, smaller vessels capable of fighting of threats from both the surface and below."
+
+ SRI_squadron_flagships: "Squadron Flagships"
+ SRI_squadron_flagships_desc: "The smaller squadrons patrolling our waters are in dire need of improved firepower. Providing newer, heavier designs to lead these would be increase their chances in a toe-to-toe fight."
+
+ SRI_maritime_air_power: "Maritime Air Power"
+ SRI_maritime_air_power_desc: "With the improvement to aircraft in the last decades, the maritime battlespace now covers all dimensions. It is time for the Navy to embrace aircraft, and the carriers allowing them to operate far away from home."
+
+ SRI_improved_gunnery: "Improved Gunnery"
+ SRI_improved_gunnery_desc: "The day of the corvus are long gone - ships fight each other from large distances. Better guns mean striking earlier, and harder, leading to more enemy ships sunk. As such, this is a crucial parts of ships that can not be ignored."
+
+ SRI_mediterraneo_rosso: "Mediterraneo Rosso"
+ SRI_mediterraneo_rosso_desc: "Two thousand years ago the Romans called it Mare Nostrum - Our Sea. While [SRI.GetNameDef] can not claim to control that much coastline, the Italian peninsula still allows for control of the whole sea."
+
+ SRI_adopt_the_gufo: "Adopt the Gufo"
+ SRI_adopt_the_gufo_desc: "The radar is the future of naval combat. Attentive like its namesake, the owl, it will allow for detection of enemy vessels before the naked eye can see them, and provide crucial tactical edge in combat."
+
+ SRI_joint_naval_intelligence: "Joint Naval Intelligence"
+ SRI_joint_naval_intelligence_desc: "As the imperialist proudly proclaimed, Britannia ruled the waves. Even with defections to [CAN.GetName], the navy of [ENG.GetNameDef] is one of the most formidable ones in Europe. It would be prudent to share information with them."
+
+ SRI_battaglia_decisiva: "Battaglia Decisiva"
+ SRI_battaglia_decisiva_desc: "If one punches strong enough, a single swing of an arm can decide a fight. On the sea this means that a proper concentration of ships can seek out and destroy the enemy main fleet, giving control of the seas to the victors."
+
+ SRI_rebuild_the_battle_line: "Rebuild the Battle Line"
+ SRI_rebuild_the_battle_line_desc: "In the chaos of the Civil War, the Regia Marina was split between the various factions. This fall in fleet numbers is especially hard on the heavier ships - rebuilding those is a priority to reclaim control of the Mediterranean."
+
+
+
+ # IDEAS
+ SRI_the_precarious_balance: "The Precarious Balance"
+ SRI_the_precarious_balance_desc: "With the end of the Great War and the Italian Civil War, many foreign powers sought to divide and conquer Italy. In the west, disgruntled and disloyal officers and generals, with French backing, tried to stage a coup. In the east, Austrian nationalists rose up in rebellion in Dalmatia, and in the south, Monarchists, Radicals, and Fascists raised their militias in order to restore the Kingdom. Though our Socialist armies achieved victory, Italy was forced to sign an agreement which effectively imposed non-aligned neutrality and isolationism. As long as Italy is unprepared to once again join the worlds stage, we are forced to focus on Italy, and Italy alone."
+
+ SRI_scars_of_the_great_west_european_war: "Scars of the Foreign and Domestic Wars"
+ SRI_scars_of_the_great_west_european_war_desc: "in The Great War, millions of brave Italians would lose their lives in the mountains of the Pyrenees or the scorching deserts of the Maghreb. Those who survived would come home to an Italy facing economic and political crisis, and only 6 years later, the Italian powderkeg would ignite. The Italian Civil war would reign from 1913 to 1921, causing untold deaths and destruction of massive proportions. Though the joint Socialist left would eventually come out victorious, the Italy that they have now come to reign has gained scars it has yet started to heal from."
+
+ SRI_uncertain_socialist_direction: "Uncertain Socialist Direction"
+ SRI_uncertain_socialist_direction_desc: "The People's Republic of Italy has become a new social experiment in political music chairs, rapidly changing political parties and political leadership amongst the Socialist-Left Coalition. This has created great uncertainty on the political direction of our Socialis Project we are undertaking."
+
+ SRI_italian_chetniks: "Italian Chetniks"
+ SRI_italian_chetniks_desc: "Despite the Civil War ending in victory for the Socialist-Left, many of counterrevolutionary forces still reside in the country, causing disruption and chaos."
+
+ SRI_anti_pope_stance: "Anti-Clerical Stance"
+ SRI_anti_pope_stance_desc: "Our attempts at undermining the Catholic stronghold that Italy used to be in order to fully realise the Socialist Project has been an unpopular move amongst the people. The Church still holds considerable influence amongst the people and many are still hooked on the 'Opium of the Masses'. We must make a decision on whether religion should still be a part of the future of Italy."
+
+ SRI_the_historical_compromise_1: "The Historical Compromise" 
+ SRI_the_historical_compromise_1_desc: "A compromise has been made with the Catholic Church, allowing it to continue its functions as a separate institution from the government."
+
+ SRI_anti_clerical_offensive_1: "Anti-Clerical Offensive"
+ SRI_anti_clerical_offensive_1_desc: "It is high time we fully commit to the  eradication of the perverse and counterrevolutionary ideas of the church. Churches will be forcefully appropriated and their riches shall no longer benefit the Clerics, but the People."
+
+ SRI_urban_unions_idea: "Urban Unions"
+ SRI_urban_unions_idea_desc: "The Urban Unions under Giuseppe di Vittorio will lead Italy for the time being."
+
+ SRI_political_commissars: "Political Commissars Unions"
+ SRI_political_commissars_desc: "The Political Commisars Union under Pietro Nenni will lead Italy for the time being."
+
+ SRI_rural_unions: "Rural Unions"
+ SRI_rural_unions_desc: "The Rural Unions under Alberto Meschi will lead Italy for the time being."
+
+ SRI_recent_military_exercises_idea: "Recent Military Exercises"
+ SRI_recent_military_exercises_idea_desc: ""
+ SRI_recent_naval_exercises_idea: "Recent Naval Exercises"
+ SRI_recent_naval_exercises_idea_desc: ""
+
+ SRI_empower_chambers_of_labour: "Empower the Chambers of Labour"
+ SRI_empower_chambers_of_labour_desc: ""
+
+ SRI_apulian_farming: "Apulian Farming"
+ SRI_apulian_farming_desc: ""
+
+ SRI_armoured_production_bonus: "Corpo d'Armata di Manovra"
+ SRI_armoured_production_bonus_desc: ""
+
+ SRI_cda_aircraft_production_bonus: "Città del'Aria"
+ SRI_cda_aircraft_production_bonus_desc: ""
+
+ SRI_ismm_screen_production_bonus: "Cantieri Riuniti del Tirreno"
+ SRI_ismm_screen_production_bonus_desc: ""
+
+ SRI_ismm_capital_production_bonus: "Cantieri Riuniti dell'Adriatico"
+ SRI_ismm_capital_production_bonus_desc: ""

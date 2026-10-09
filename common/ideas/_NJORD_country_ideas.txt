@@ -1,262 +1,354 @@
 ideas = {
 	country = {
-		# STARTING 
-		PRE_political_disunity_1_dynamic_modifier = {
-			picture = AST_cabinet_trust1_idea
+		PRE_reichstag_controlled_by_opposition = {
+			picture = generic_democratic_opposition
 			modifier = {
-				war_stability_factor = -0.2
-				party_popularity_stability_factor = -0.15
+				political_power_factor = -0.15
+				party_popularity_stability_factor = -0.25
+				economic_law_cost_factor = 0.5
+			}
+		}
+
+		PRE_reichstag_controlled_by_opposition_2 = {
+			name = PRE_reichstag_controlled_by_opposition
+			picture = generic_democratic_opposition
+			modifier = {
 				political_power_factor = -0.1
-				opinion_gain_monthly_same_ideology_factor = -0.5
-				surrender_limit = -0.2
-				master_ideology_drift = -0.03
-			}
-		}
-		PRE_political_disunity_2_dynamic_modifier = { #Political Chaos is less
-			picture = AST_cabinet_trust2_idea
-			modifier = {
-				war_stability_factor = -0.1
-				party_popularity_stability_factor = -0.075
-				opinion_gain_monthly_same_ideology_factor = -0.25
-				surrender_limit = -0.1
-				master_ideology_drift = -0.01
-			}
-		}
-		PRE_political_disunity_3_dynamic_modifier = { #Political Chaos stabilised and reforms implemented to improve it
-			picture = AST_cabinet_trust3_idea
-			modifier = {
-				political_advisor_cost_factor = -0.25
-				stability_factor = 0.05
-				drift_defence_factor = 0.05
-			}
-		}
-		PRE_political_disunity_4_dynamic_modifier = {
-			picture = AST_cabinet_trust4_idea
-			modifier = {
-				political_advisor_cost_factor = -0.25
-				stability_factor = 0.1
-				political_power_gain = 0.1
-				drift_defence_factor = 0.15
-			}
-		}
-		PRE_political_disunity_5_dynamic_modifier = {
-			picture = AST_cabinet_trust5_idea
-			modifier = {
-				political_advisor_cost_factor = -0.5
-				stability_factor = 0.15
-				political_power_gain = 0.15
-				drift_defence_factor = 0.15
-				opinion_gain_monthly_same_ideology_factor = 0.25
-				surrender_limit = 0.1
-				master_ideology_drift = 0.01
-			}
-		}
-		PRE_growing_fascist_militias_modifier = { #Fascists have begun to agitate for chance in government, remains small but vocally important
-			picture = generic_fascist_workers
-			modifier = {
-				stability_factor = -0.05
-				mobilization_speed = 0.05
-				promote_cost_factor = 1
-				fascism_drift = 0.01
-				military_leader_cost_factor = 1
-			}
-		}
-		PRE_memories_of_october = { #Memories of the Fascist dictatorship and the 1930 failed 'old officers' coup
-			picture = ARG_infamous_decade
-			modifier = {
-				absolutist_drift = -0.01
-				political_power_cost = 0.1
-				party_popularity_stability_factor = -0.1
-				drift_defence_factor = -0.15
-				war_support_factor = -0.2
+				party_popularity_stability_factor = -0.15
+				economic_law_cost_factor = 0.25
 			}
 		}
 
-		# GAINED FROM FOCUSES
-		PRE_the_recovery_commissions = { # Timed modifier (technically not but it's removed after economic recovery)
-			picture = SOV_fourth_five_year_plan
+		PRE_economic_downturn_1 = {
+			picture = generic_economic_crisis
 			modifier = {
-				political_power_factor = 0.05
-				consumer_goods_factor = 0.05
-				production_speed_buildings_factor = 0.05
-			}
-		}
-		PRE_the_recovery_commissions_2 = { # Timed modifier
-			picture = SOV_fourth_five_year_plan
-			modifier = {
-				political_power_factor = 0.1
-				consumer_goods_factor = 0.025
-				production_speed_buildings_factor = 0.1
-				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = -0.4
+				production_speed_buildings_factor = -0.2
+				production_factory_max_efficiency_factor = -0.2
+				production_factory_efficiency_gain_factor = -0.4
+				consumer_goods_factor = 0.4
 			}
 		}
 
-		PRE_entrusting_captains_of_industry = { # Timed modifier
-			picture = NOR_printing_money
+		PRE_economic_downturn_2 = {
+			name = PRE_economic_downturn_1
+			picture = generic_economic_crisis
 			modifier = {
-				stability_weekly_factor = 0.003
-				production_factory_efficiency_gain_factor = 0.1
+				industrial_capacity_factory = -0.3
+				production_speed_buildings_factor = -0.15
+				production_factory_max_efficiency_factor = -0.15
+				production_factory_efficiency_gain_factor = -0.3
+				consumer_goods_factor = 0.3
+			}
+		}
+
+		PRE_economic_downturn_3 = {
+			picture = generic_economic_recovery
+			modifier = {
+				industrial_capacity_factory = -0.2
+				production_speed_buildings_factor = -0.1
+				production_factory_max_efficiency_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.2
+				consumer_goods_factor = 0.2
+			}
+		}
+
+		PRE_economic_downturn_4 = {
+			picture = generic_economic_recovery
+			modifier = {
+				industrial_capacity_factory = -0.1
+				production_speed_buildings_factor = -0.05
+				production_factory_max_efficiency_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.1
+				consumer_goods_factor = 0.1
+			}
+		}
+
+		PRE_economic_downturn_saving_the_banks = {
+			picture = tur_balkan_central_bank_wealthy_greece
+			modifier = {
 				consumer_goods_factor = 0.15
-			}
-		}
-		
-		PRE_policy_of_non_interference = { # Timed modifier
-			picture = NOR_printing_money
-			modifier = {
-				political_power_cost = 0.1
-				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.1
 			}
 		}
 
-		PRE_negotiated_with_the_libs = {
-			picture = RAJ_circuvment_demobilization_restrictions
+		PRE_anti_corruption_practices = {
+			picture = AST_liberty_loans
 			modifier = {
-				party_popularity_stability_factor = 0.1
 				political_power_cost = 0.1
-				democratic_drift = 0.01
+				stability_weekly_factor = 0.005
 			}
 		}
 
-		PRE_temporary_strike_breaking = {
-			picture = ARG_anti_soviet
+		PRE_weak_currency = {
+			picture = generic_devalue_currency
 			modifier = {
-				industrial_capacity_factory = 0.1
-				industrial_capacity_dockyard = 0.1
+				political_power_cost = 0.1
+				min_export = 0.1
+				economic_law_cost_factor = 0.5
+				trade_laws_cost_factor = 0.5
+			}
+		}
+
+		PRE_weak_currency_2 = {
+			name = PRE_weak_currency
+			picture = generic_devalue_currency
+			modifier = {
+				economic_law_cost_factor = 0.25
+				trade_laws_cost_factor = 0.25
+			}
+		}
+
+		PRE_army_in_neglect_test_idea = {
+			picture = SPR_disbanded_army
+			modifier = {
+				experience_gain_army_factor = -0.5
 				political_power_gain = 0.1
-				communism_drift = 0.01
+				training_time_army_factor = 0.25
+				army_defence_against_major_factor = -0.1
+				army_org_factor = 0.05
+				breakthrough_factor = 0.1
+				army_infantry_attack_factor = 0.1
+				army_infantry_defence_factor = 0.1
+			}
+		}
+
+		PRE_modern_kriegsmarine_test = {
+			picture = NORDIC_navy_democratic
+			modifier = {
+				industrial_capacity_dockyard = 0.05
+				consumer_goods_factor = 0.1
+			}
+			equipment_bonus = {
+				mio_cat_eq_all_cruiser = {
+					build_cost_ic = -0.05
+				}
+				mio_cat_eq_all_destroyer = {
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		PRE_pacifist_accord = {
+			picture = SWI_spirit_of_helvetia_defensive_peace
+			modifier = {
+				political_power_cost = 0.1
+				stability_factor = 0.1
+				war_support_factor = -0.25
+				mobilization_speed = -0.5
+			}
+		}
+
+		PRE_pacifist_accord_2 = {
+			name = PRE_pacifist_accord
+			picture = SWI_spirit_of_helvetia_defensive_peace
+			modifier = {
+				political_power_cost = 0.05
+				stability_factor = 0.05
+				war_support_factor = -0.2
+				mobilization_speed = -0.35
+			}
+		}
+
+		PRE_pacifist_accord_3 = {
+			name = PRE_pacifist_accord
+			picture = SWI_spirit_of_helvetia_aggressive_peace
+			modifier = {
+				political_power_cost = 0.05
+				war_support_factor = -0.15
+				mobilization_speed = -0.2
+			}
+		}
+
+		PRE_pacifist_accord_4 = {
+			name = PRE_pacifist_accord
+			picture = SWI_spirit_of_helvetia_aggressive_peace
+			modifier = {
+				political_power_cost = 0.05
+				war_support_factor = -0.05
+				mobilization_speed = -0.05
+			}
+		}
+
+		PRE_public_construction_projects = {
+			picture = generic_railroads
+			modifier = {
+				production_speed_infrastructure_factor = 0.2
+				production_speed_rail_way_factor = 0.2
+			}
+		}
+
+		PRE_universal_healthcare = {
+			picture = generic_immigration
+			modifier = {
+				monthly_population = 0.2
+				consumer_goods_factor = 0.05
 			}
 		}
 
 		PRE_devalued_currency = {
 			picture = ITA_devaluated_lira
 			modifier = {
-				production_speed_buildings_factor = 0.05
-				industrial_capacity_dockyard = -0.05
-				industrial_capacity_factory = -0.05
-				political_power_factor = -0.05
+				trade_opinion_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.1
 				min_export = 0.1
 			}
 		}
 
-		PRE_devalued_currency_2 = {
-			picture = ITA_devaluated_lira
+		PRE_strengthened_currency = {
+			picture = generic_mild_economic_recovery
 			modifier = {
-				production_speed_buildings_factor = 0.025
-				industrial_capacity_dockyard = -0.025
-				industrial_capacity_factory = -0.025
-				political_power_factor = -0.025
-				min_export = 0.05
+				stability_factor = 0.05
+				political_power_factor = -0.05
+				trade_opinion_factor = -0.1
 			}
 		}
 
-		PRE_strenghtened_reichsmark = {
-			picture = NOR_printing_money
+		PRE_restoring_normalcy_to_prussias_workplace = {
+			picture = ARG_civilian_economy_boost
 			modifier = {
-				consumer_goods_factor = 0.05
-				industrial_capacity_dockyard = 0.05
-				industrial_capacity_factory = 0.05
-				political_power_factor = 0.05
+				political_power_cost = 0.2
+				stability_weekly_factor = 0.005
 			}
 		}
 
-		PRE_agricultural_subsidies_idea = {
-			picture = LIT_invested_in_farms
-			modifier = {
-				consumer_goods_factor = -0.1
-				political_power_cost = -0.2
-				stability_weekly_factor = 0.003
-			}
-		}
-
-		PRE_public_works_initiative = {
-			picture = generic_build_infrastructure
-			modifier = {
-				production_speed_infrastructure_factor = 0.15
-				production_speed_rail_way_factor = 0.15
-			}
-		}
-
-		PRE_unemployment_benefits = {
-			picture = ARG_social_welfare_fund_ns
-			modifier = {
-				monthly_population = 0.25
-				consumer_goods_factor = 0.1
-			}
-		}
-
-		PRE_idea_universal_healthcare = {
-			picture = ARG_social_welfare_fund_ns
-			modifier = {
-				monthly_population = 0.4
-				consumer_goods_factor = 0.05
-			}
-		}
-
-		PRE_ger_trade = {
+		PRE_german_trade = {
 			picture = GER_german_trade
 			modifier = {
-				production_speed_buildings_factor = 0.1
+				political_power_factor = 0.05
 				consumer_goods_factor = -0.15
 			}
 			targeted_modifier = {
 				tag = GER
-				cic_to_target_factor = 0.05
+				trade_cost_for_target_factor = -0.25
+				extra_trade_to_target_factor = 0.25
 			}
 		}
 
-		PRE_ger_trade_returns = {
+		PRE_prussian_trade = {
 			picture = GER_german_trade
 			modifier = {
-				production_speed_buildings_factor = 0.05
-				consumer_goods_factor = -0.1
+				political_power_factor = 0.05
+				consumer_goods_factor = -0.05
 			}
 			targeted_modifier = {
-				tag = PRE
+				tag = GER
 				trade_cost_for_target_factor = -0.25
+				extra_trade_to_target_factor = 0.25
 			}
 		}
 
-		PRE_idea_investing_companies = {
-			picture = AST_liberty_loans
+		PRE_atlantic_trade = {
+			picture = can_wartime_prices_and_trade_board
 			modifier = {
-				production_speed_industrial_complex_factor = 0.15
-				production_speed_arms_factory_factor = 0.15
+				political_power_factor = 0.1
+				trade_opinion_factor = 0.25
+				industrial_factory_donations = 3
+			}
+		}
+
+		PRE_private_investments = {
+			picture = can_wartime_prices_and_trade_board
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_arms_factory_factor = 0.2
+				production_speed_industrial_complex_factor = 0.2
+			}
+		}
+
+		PRE_expanded_welfare_system = {
+			picture = ARG_social_welfare_fund_ns
+			modifier = {
+				stability_factor = 0.1
 				consumer_goods_factor = 0.05
-				political_power_gain = -0.1
+				monthly_population = 0.1
+			}
+		}
+
+		PRE_convoy_production = {
+			picture = generic_convoys
+			modifier = {
+				industrial_capacity_dockyard = 0.05
+			}
+			equipment_bonus = {
+				convoy = {
+					build_cost_ic = -0.15
+				}
 			}
 		}
 
 		PRE_prussian_state_radio = {
 			picture = SWE_radiotjanst
 			modifier = {
-				drift_defence_factor = 0.05
-				party_popularity_stability_factor = 0.05
 				political_power_gain = 0.1
+				party_popularity_stability_factor = 0.1
+				drift_defence_factor = 0.1
 			}
 		}
 
-		PRE_prussian_state_radio_2 = {
+		PRE_prussian_radio_and_film_institute = {
 			picture = SWE_radiotjanst
 			modifier = {
-				drift_defence_factor = 0.075
-				party_popularity_stability_factor = 0.075
 				political_power_gain = 0.15
-				mobilization_speed = 0.15
-				war_stability_factor = 0.1
+				surrender_limit = 0.05
+				party_popularity_stability_factor = 0.15
+				drift_defence_factor = 0.15
 			}
 		}
 
-		PRE_land_redistribution = {
-			picture = PRC_land_revolution_expedited
+		PRE_university_of_electrical_research = {
+			picture = generic_energy_concern
 			modifier = {
-				stability_weekly_factor = 0.001
-				political_power_gain = -0.2
-				consumer_goods_factor = 0.1
+				factory_energy_consumption = -0.05
+				production_speed_radar_station_factor = 0.1
 			}
-			on_remove = {
-				
+			research_bonus = {
+				electronics = 0.05
 			}
 		}
+
+		PRE_university_of_electrical_research_2 = {
+			picture = generic_energy_concern
+			modifier = {
+				factory_energy_consumption = -0.1
+				production_speed_buildings_powered_factor = 0.05
+				production_speed_radar_station_factor = 0.25
+			}
+			research_bonus = {
+				electronics = 0.1
+			}
+		}
+
+		PRE_terror_bombings = {
+			picture = generic_rocket_bonus
+			modifier = {
+				rocket_attack_factor = 0.1
+				air_strategic_bomber_bombing_factor = 0.1
+			}
+			research_bonus = {
+				rocketry = 0.1
+			}
+		}
+		
+		PRE_jet_fighter_focus = {
+			picture = generic_air_interception
+			modifier = {
+				air_interception_detect_factor = 0.1
+				air_intercept_efficiency = 0.1
+			}
+			research_bonus = {
+				jet_technology = 0.1
+			}
+		}
+
+		PRE_funded_new_norwegian_navy = {
+			picture = yarrow_shipbuilders
+			modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+
 
 
 		CHI_political_corruption_in_the_administration = {
@@ -572,5 +664,384 @@ ideas = {
 		}
 
 
+
+		# ITALY STARTING: 
+		SRI_the_precarious_balance = {
+			picture = BEL_the_kings_surrender
+			modifier = {
+				send_volunteers_tension = 1
+				justify_war_goal_time = 1
+			}
+			rule = {
+				can_join_factions = no
+				can_be_called_to_war = no
+			}
+		}
+		SRI_scars_of_the_great_west_european_war = {
+			picture = BEL_scars_of_ww1
+			modifier = {
+				training_time_army_factor = 0.35
+				war_support_factor = -0.4
+				production_speed_arms_factory_factor = -0.4
+				conscription = -0.015
+				experience_loss_factor = 0.35
+			}
+		}
+		SRI_scars_of_the_great_west_european_war_2 = {
+			name = SRI_scars_of_the_great_west_european_war
+			picture = BEL_scars_of_ww1
+			modifier = {
+				training_time_army_factor = 0.2
+				war_support_factor = -0.25
+				production_speed_arms_factory_factor = -0.25
+				conscription = -0.005
+				experience_loss_factor = 0.2
+			}
+		}
+		SRI_scars_of_the_great_west_european_war_3 = {
+			name = SRI_scars_of_the_great_west_european_war
+			picture = BEL_scars_of_ww1
+			modifier = {
+				training_time_army_factor = 0.05
+				production_speed_arms_factory_factor = -0.1
+				war_support_factor = -0.1
+				experience_loss_factor = 0.05
+			}
+		}
+
+		SRI_uncertain_socialist_direction = {
+			picture = SPR_political_violence
+			modifier = {
+				political_power_cost = 0.4
+				stability_factor = -0.15
+				communism_drift = -0.03
+			}
+		}
+		SRI_uncertain_socialist_direction_2 = {
+			name = SRI_uncertain_socialist_direction
+			picture = SPR_political_violence
+			modifier = {
+				political_power_cost = 0.2
+				stability_factor = -0.05
+				communism_drift = -0.01
+			}
+		}
+		
+		SRI_italian_chetniks = {
+			picture = NOR_anti_communist_sentiment
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				recruitable_population_factor = -0.1
+				fascism_drift = 0.05
+				radical_drift = 0.04
+				absolutist_drift = 0.03
+				neutrality_drift = 0.02
+				democratic_drift = 0.01
+			}
+		}
+		SRI_italian_chetniks_2 = {
+			name = SRI_italian_chetniks_2
+			picture = NOR_anti_communist_sentiment
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				recruitable_population_factor = -0.05
+				fascism_drift = 0.03
+				radical_drift = 0.02
+			}
+		}
+
+		SRI_anti_pope_stance = {
+			picture = MEX_church_power_1
+			modifier = {
+				consumer_goods_factor = 0.1
+				party_popularity_stability_factor = -0.1
+				communism_drift = 0.01
+				research_speed_factor = -0.05
+			}
+		}
+
+		SRI_the_historical_compromise_1 = {
+			picture = MEX_church_power_2
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.05
+				consumer_goods_factor = 0.05
+				party_popularity_stability_factor = -0.05
+			}
+		}
+
+		SRI_the_historical_compromise_2 = {
+			name = SRI_the_historical_compromise_1
+			picture = MEX_church_power_3
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = 0.1
+				research_speed_factor = 0.05
+				compliance_growth = 0.05
+			}
+		}
+
+		SRI_the_historical_compromise_3 = {
+			name = SRI_the_historical_compromise_1
+			picture = MEX_church_power_4
+			modifier = {
+				stability_factor = 0.15
+				political_power_gain = 0.15
+				consumer_goods_factor = -0.05
+				research_speed_factor = 0.075
+				compliance_growth = 0.1
+			}
+		}
+
+		SRI_the_historical_compromise_4 = {
+			name = SRI_the_historical_compromise_1
+			picture = MEX_church_power_5
+			modifier = {
+				stability_factor = 0.2
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.1
+				research_speed_factor = 0.1
+				compliance_growth = 0.15
+			}
+		}
+
+		SRI_anti_clerical_offensive_1 = {
+			picture = SPR_appropriate_church_riches
+			modifier = {
+				stability_factor = -0.15
+				resistance_target = 0.1
+				consumer_goods_factor = 0.05
+				compliance_gain = -0.03
+				communism_drift = 0.01
+				industry_repair_factor = 0.05
+			}
+		}
+
+		SRI_anti_clerical_offensive_2 = {
+			name = SRI_anti_clerical_offensive_1
+			picture = SPR_appropriate_church_riches
+			modifier = {
+				stability_factor = -0.1
+				resistance_target = 0.05
+				compliance_gain = -0.02
+				communism_drift = 0.02
+				industry_repair_factor = 0.1
+				global_building_slots_factor = 0.05
+				research_speed_factor = 0.05
+			}
+		}
+
+		SRI_anti_clerical_offensive_3 = {
+			name = SRI_anti_clerical_offensive_1
+			picture = SPR_appropriate_church_riches
+			modifier = {
+				stability_factor = -0.05
+				consumer_goods_factor = -0.05
+				compliance_gain = -0.01
+				communism_drift = 0.03
+				industry_repair_factor = 0.15
+				global_building_slots_factor = 0.1
+				research_speed_factor = 0.1
+			}
+		}
+
+		SRI_anti_clerical_offensive_4 = {
+			name = SRI_anti_clerical_offensive_1
+			picture = SPR_appropriate_church_riches
+			modifier = {
+				consumer_goods_factor = -0.1
+				communism_drift = 0.03
+				industry_repair_factor = 0.15
+				global_building_slots_factor = 0.15
+				research_speed_factor = 0.1
+				party_popularity_stability_factor = 0.15
+				breakthrough_factor = 0.05
+			}
+		}
+
+		SRI_urban_unions_idea = {
+			picture = FIN_finnish_federation_of_trade_unions_heavy
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+
+		SRI_urban_unions_idea_2 = {
+			name = SRI_urban_unions_idea
+			picture = FIN_finnish_federation_of_trade_unions_heavy
+			modifier = {
+				political_power_gain = 0.05
+				industrial_capacity_factory = 0.075
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+
+		SRI_urban_unions_idea_3 = {
+			name = SRI_urban_unions_idea
+			picture = FIN_finnish_federation_of_trade_unions_heavy
+			modifier = {
+				political_power_gain = 0.1
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.15
+			}
+		}
+
+		SRI_political_commissars = {
+			picture = SOV_smersh_ccp_sov_compatibility
+			modifier = {
+				army_morale_factor = 0.1
+				political_power_factor = 0.1
+			}
+		}
+
+		SRI_political_commissars_2 = {
+			name = SRI_political_commissars
+			picture = SOV_smersh_ccp_sov_compatibility
+			modifier = {
+				army_morale_factor = 0.1
+				political_power_factor = 0.1
+				army_org_regain = 0.05
+				communism_drift = 0.01
+			}
+		}
+
+		SRI_political_commissars_3 = {
+			name = SRI_political_commissars
+			picture = SOV_smersh_ccp_sov_compatibility
+			modifier = {
+				army_morale_factor = 0.1
+				political_power_factor = 0.15
+				army_org_regain = 0.1
+				org_loss_at_low_org_factor = -0.15
+				communism_drift = 0.01
+			}
+		}
+
+		SRI_rural_unions = {
+			picture = FIN_socialist_welfare
+			modifier = {
+				consumer_goods_factor = -0.05
+				supply_consumption_factor = -0.05
+			}
+		}
+
+		SRI_rural_unions_2 = {
+			name = SRI_rural_unions
+			picture = FIN_socialist_welfare
+			modifier = {
+				war_support_factor = 0.05
+				consumer_goods_factor = -0.1
+				recruitable_population_factor = 0.05
+				supply_consumption_factor = -0.05
+			}
+		}
+
+		SRI_rural_unions_3 = {
+			name = SRI_rural_unions
+			picture = FIN_socialist_welfare
+			modifier = {
+				war_support_factor = 0.1
+				consumer_goods_factor = -0.15
+				recruitable_population_factor = 0.1
+				supply_consumption_factor = -0.05
+			}
+		}
+
+
+		# FROM FOCUSES
+		SRI_recent_military_exercises_idea = {
+			picture = generic_communist_army
+			modifier = {
+				experience_gain_air_factor = 0.15
+				experience_gain_army_factor = 0.15
+				command_power_gain_mult = 0.15
+				max_command_power = 60
+			}
+		}
+
+		SRI_recent_naval_exercises_idea = {
+			picture = generic_navy_cruiser_warfare
+			modifier = {
+				experience_gain_navy_factor = 0.15
+				spotting_chance = 0.15
+				positioning = 0.15
+			}
+		}
+
+		SRI_empower_chambers_of_labour = {
+			picture = SOV_stakhanovite_movement
+			modifier = {
+				industrial_capacity_factory = 0.05
+				local_resources_factor = 0.05
+			}
+		}
+
+		SRI_apulian_farming = {
+			picture = ARG_social_welfare_fund_ns
+			modifier = {
+				monthly_population = 0.2
+				consumer_goods_factor = -0.1
+			}
+		}
+
+		SRI_armoured_production_bonus = {
+			picture = ITA_bandits_war
+			equipment_bonus = {
+				armored_car_equipment = {
+					build_cost_ic = -0.15
+				}
+				mio_cat_eq_all_light_tank = {
+					build_cost_ic = -0.1
+				}
+				mio_cat_eq_all_medium_tank = {
+					build_cost_ic = -0.05
+				}
+				mio_cat_eq_all_heavy_tank = {
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		SRI_cda_aircraft_production_bonus = {
+			picture = man_five_year_plan_air
+			equipment_bonus = {
+				mio_cat_eq_all_small_plane = {
+					build_cost_ic = -0.05
+				}
+				mio_cat_eq_all_medium_plane = {
+					build_cost_ic = -0.05
+				}
+				mio_cat_eq_all_large_plane = {
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		SRI_ismm_screen_production_bonus = {
+			picture = AUS_streamline_cruiser_production_idea
+			equipment_bonus = {
+				mio_cat_eq_all_destroyer = {
+					build_cost_ic = -0.05
+				}
+				mio_cat_eq_all_cruiser = {
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		SRI_ismm_capital_production_bonus = {
+			picture = generic_navy_bonus
+			equipment_bonus = {
+				mio_cat_eq_all_battleship = {
+					build_cost_ic = -0.05
+				}
+				mio_cat_eq_all_carrier = {
+					build_cost_ic = -0.05
+				}
+			}
+		}
 	}
 }
