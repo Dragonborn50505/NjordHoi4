@@ -151,6 +151,31 @@ focus_tree = {
 		completion_reward = {
 			add_war_support = 0.1
 			add_manpower = 150000
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					has_idea = SRI_scars_of_the_great_west_european_war_3
+				}
+				remove_idea = SRI_scars_of_the_great_west_european_war_3
+			}
+			else_if = {
+				limit = {
+					has_idea = SRI_scars_of_the_great_west_european_war_2
+				}
+				swap_ideas = {
+					remove_idea = SRI_scars_of_the_great_west_european_war_2
+					add_idea = SRI_scars_of_the_great_west_european_war_3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = SRI_scars_of_the_great_west_european_war_1
+				}
+				swap_ideas = {
+					remove_idea = SRI_scars_of_the_great_west_european_war_1
+					add_idea = SRI_scars_of_the_great_west_european_war_2
+				}
+			}
 		}
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ANNEXATION }
 	}
@@ -269,6 +294,31 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_stability = 0.05
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					has_idea = SRI_scars_of_the_great_west_european_war_3
+				}
+				remove_idea = SRI_scars_of_the_great_west_european_war_3
+			}
+			else_if = {
+				limit = {
+					has_idea = SRI_scars_of_the_great_west_european_war_2
+				}
+				swap_ideas = {
+					remove_idea = SRI_scars_of_the_great_west_european_war_2
+					add_idea = SRI_scars_of_the_great_west_european_war_3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = SRI_scars_of_the_great_west_european_war_1
+				}
+				swap_ideas = {
+					remove_idea = SRI_scars_of_the_great_west_european_war_1
+					add_idea = SRI_scars_of_the_great_west_european_war_2
+				}
+			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
@@ -1192,6 +1242,31 @@ focus_tree = {
 
 		completion_reward = {
 			add_dynamic_modifier = { modifier = SRI_istituto_per_la_ricostruzione_industriale_modifier }
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					has_idea = SRI_scars_of_the_great_west_european_war_3
+				}
+				remove_idea = SRI_scars_of_the_great_west_european_war_3
+			}
+			else_if = {
+				limit = {
+					has_idea = SRI_scars_of_the_great_west_european_war_2
+				}
+				swap_ideas = {
+					remove_idea = SRI_scars_of_the_great_west_european_war_2
+					add_idea = SRI_scars_of_the_great_west_european_war_3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = SRI_scars_of_the_great_west_european_war_1
+				}
+				swap_ideas = {
+					remove_idea = SRI_scars_of_the_great_west_european_war_1
+					add_idea = SRI_scars_of_the_great_west_european_war_2
+				}
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
