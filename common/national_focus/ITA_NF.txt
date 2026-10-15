@@ -26,7 +26,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 25
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = SRI_uncertain_socialist_direction
 				add_idea = SRI_uncertain_socialist_direction_2
@@ -102,7 +102,7 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 35
 			air_experience = 35
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_timed_idea = { idea = SRI_recent_military_exercises_idea days = 365 }
 		}
 		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_AIR_XP }
@@ -122,7 +122,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			navy_experience = 35
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_timed_idea = { idea = SRI_recent_naval_exercises_idea days = 365 }
 		}
 		search_filters = { FOCUS_FILTER_NAVY_XP }
@@ -172,7 +172,7 @@ focus_tree = {
 				remove_idea = SRI_italian_chetniks
 				add_idea = SRI_italian_chetniks_2
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_popularity = {
 				ideology = absolutist
 				popularity = -0.05
@@ -211,7 +211,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			remove_ideas = SRI_italian_chetniks_2
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_popularity = {
 				ideology = radical
 				popularity = -0.05
@@ -239,9 +239,9 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.05
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			remove_ideas = SRI_uncertain_socialist_direction_2
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_dynamic_modifier = {
 				modifier = SRI_italian_socialism_dynamic_modifier
 			}
@@ -269,7 +269,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_stability = 0.05
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = SRI_italian_socialism_dynamic_modifier
@@ -308,9 +308,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 75
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = SRI_urban_unions_idea
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = SRI_italian_socialism_dynamic_modifier
@@ -345,9 +345,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_war_support = 0.05
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = SRI_political_commissars
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = SRI_italian_socialism_dynamic_modifier
@@ -382,9 +382,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_stability = 0.05
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = SRI_rural_unions
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = SRI_italian_socialism_dynamic_modifier
@@ -416,17 +416,17 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = -25
 			add_stability = 0.05
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_popularity = {
 				ideology = democratic
 				popularity = 0.1
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = SRI_anti_pope_stance
 				add_idea = SRI_the_historical_compromise_1
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = SRI_italian_socialism_dynamic_modifier
@@ -459,17 +459,17 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 			add_stability = -0.05
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_popularity = {
 				ideology = communism
 				popularity = 0.05
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = SRI_anti_pope_stance
 				add_idea = SRI_anti_clerical_offensive_1
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = SRI_italian_socialism_dynamic_modifier
@@ -499,7 +499,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.05
 			add_war_support = 0.05
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_popularity = {
 				ideology = fascism
 				popularity = -0.2
@@ -508,7 +508,7 @@ focus_tree = {
 				ideology = radical
 				popularity = -0.2
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = SRI_italian_socialism_dynamic_modifier
@@ -556,7 +556,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = { 
 					has_idea = SRI_urban_unions_idea
@@ -611,7 +611,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = { 
 					has_idea = SRI_urban_unions_idea
@@ -685,7 +685,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = { 
 					has_idea = SRI_rural_unions
@@ -731,7 +731,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 100
 			add_manpower = 80000
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = { 
 					has_idea = SRI_rural_unions
@@ -788,7 +788,7 @@ focus_tree = {
 			else = {
 				add_ideas = SRI_political_commissars
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = SRI_italian_socialism_dynamic_modifier
@@ -839,7 +839,7 @@ focus_tree = {
 			else = {
 				add_ideas = SRI_political_commissars
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = SRI_italian_socialism_dynamic_modifier
@@ -996,7 +996,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = { 
 					has_idea = SRI_anti_clerical_offensive_1
@@ -1050,7 +1050,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = { 
 					has_idea = SRI_anti_clerical_offensive_1
@@ -1096,7 +1096,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_war_support = 0.1
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = SRI_anti_clerical_offensive_3
 				add_idea = SRI_anti_clerical_offensive_4
@@ -1126,7 +1126,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = SRI_create_enel
 				bonus = 1
@@ -1153,7 +1153,7 @@ focus_tree = {
 				uses = 1
 				category = train_tech
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			build_railway = { #Turin to Viterbo
 				level = 1
 				start_province = 6780
@@ -1279,7 +1279,7 @@ focus_tree = {
 			add_stability = 0.05
 			add_war_support = 0.05
 			add_political_power = 75
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = SRI_cinecitta
 				bonus = 1
@@ -1338,7 +1338,7 @@ focus_tree = {
 				specialization = specialization_nuclear
 				value = 1
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = SRI_fermis_nuclear_research
 				bonus = 1
@@ -1374,7 +1374,7 @@ focus_tree = {
 				specialization = specialization_air
 				value = 1
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = SRI_thermojet_experiments
 				ahead_reduction = 1
@@ -1460,7 +1460,7 @@ focus_tree = {
 				SRI_iri_production_factory_efficiency_gain_factor = -0.05
 				tooltip = production_factory_efficiency_gain_factor_tt
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = SRI_maximise_production_capacity
 				ahead_reduction = 1
@@ -1548,7 +1548,7 @@ focus_tree = {
 				SRI_iri_line_change_production_efficiency_factor = 0.1
 				tooltip = line_change_production_efficiency_factor_tt
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = SRI_modern_production_lines
 				ahead_reduction = 1
@@ -1593,7 +1593,7 @@ focus_tree = {
 				SRI_iri_monthly_population = 0.05
 				tooltip = monthly_population_tt
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = SRI_reform_the_iacp
 				bonus = 0.75
@@ -1853,7 +1853,7 @@ focus_tree = {
 			223 = {
 				NJORD_upgrade_state_category = yes
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_timed_idea = {
 				idea = SRI_apulian_farming
 				days = 365
@@ -2067,7 +2067,7 @@ focus_tree = {
 				SRI_iri_local_resources_factor = 0.05
 				tooltip = local_resources_factor_tt
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = SRI_expand_ilva
 				bonus = 0.75
@@ -2107,7 +2107,7 @@ focus_tree = {
 				SRI_iri_production_oil_factor = 0.1
 				tooltip = production_oil_factor_tt
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = root
@@ -2193,7 +2193,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = SRI_gomma_sintetica
 				bonus = 0.75
@@ -2402,7 +2402,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			complete_special_project = {
 				project = sp:sp_land_flamethrower_tank
 				show_modifiers = no
@@ -2450,11 +2450,11 @@ focus_tree = {
 				uses = 2
 				category = motorized_equipment
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			set_technology = {
 				bicycle_infantry = 1
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = { has_template = "Divisione Bersaglieri" }
 				delete_unit_template_and_units = { division_template = "Divisione Bersaglieri" disband = yes } #no cheating
@@ -2477,7 +2477,7 @@ focus_tree = {
 					artillery = { x = 0 y = 1 }
 				}
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_controlled_state = {
 				limit = { is_core_of = root }
 				custom_override_tooltip = {
@@ -2545,7 +2545,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = SRI_carri_di_rottura
 				bonus = 1
@@ -2610,7 +2610,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = SRI_semoventi_dartiglieria
 				uses = 1
@@ -2667,12 +2667,12 @@ focus_tree = {
 				SRI_ar_army_armor_speed_factor = 0.05
 				tooltip = army_armor_speed_factor_tt
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_breakthrough_progress = {
 				specialization = specialization_land
 				value = 0.5
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = SRI_ferrea_mole_ferreo_cuore
 				ahead_reduction = 1
@@ -2776,7 +2776,7 @@ focus_tree = {
 				SRI_ar_army_artillery_defence_factor = 0.05
 				tooltip = army_artillery_defence_factor_tt
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = ROOT
@@ -2788,7 +2788,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = SRI_cannone_da_novanta
 				ahead_reduction = 1
@@ -2942,7 +2942,7 @@ focus_tree = {
 				SRI_ar_dig_in_speed_factor = 0.05
 				tooltip = dig_in_speed_factor_tt
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = SRI_telo_mimetico
 				bonus = 0.75
@@ -2994,7 +2994,7 @@ focus_tree = {
 				DYNMOD = SRI_legione_proletaria_modifier
 			}
 			add_to_variable = { SRI_ar_conscription = 0.01 tooltip = conscription_tt }
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_mastery_bonus = {
 				name = SRI_la_legione_proletaria
 				bonus = 0.1
@@ -3040,7 +3040,7 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 25
 			add_command_power = 25
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = SRI_legione_proletaria_modifier
@@ -3113,7 +3113,7 @@ focus_tree = {
 				SRI_ar_army_advisor_cost_factor = -0.25
 				tooltip = army_advisor_cost_factor_tt
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			every_army_leader = { add_planning = 1 }
 		}
 		search_filters = { FOCUS_FILTER_ARMY_BONUS }
@@ -3171,7 +3171,7 @@ focus_tree = {
 				SRI_ar_out_of_supply_factor = -0.1
 				tooltip = out_of_supply_factor_tt
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			every_army_leader = { add_logistics = 1 }
 		}
 		search_filters = { FOCUS_FILTER_ARMY_BONUS }
@@ -3222,7 +3222,7 @@ focus_tree = {
 				SRI_ar_modifier_army_sub_unit_light_tank_recon_max_org_factor = 0.1
 				tooltip = modifier_army_sub_unit_light_tank_recon_max_org_factor_tt
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = SRI_ragruppamenti_esploranti
 				bonus = 0.75
@@ -3281,7 +3281,7 @@ focus_tree = {
 				tooltip = army_armor_attack_factor_tt
 			}
 			add_ideas = SRI_armoured_production_bonus
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = SRI_corpo_darmata_di_manovra
 				bonus = 1
@@ -3294,7 +3294,7 @@ focus_tree = {
 				uses = 1
 				category = cat_armored_cars
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_mastery_bonus = {
 				name = SRI_corpo_darmata_di_manovra
 				bonus = 0.1
@@ -3386,7 +3386,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.05
 			add_war_support = 0.05
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = SRI_legione_proletaria_modifier
@@ -3395,7 +3395,7 @@ focus_tree = {
 				SRI_ar_conscription_factor = 0.05
 				tooltip = conscription_factor_tt
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			set_rule = { can_generate_female_aces = yes }
 		}
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY FOCUS_FILTER_MANPOWER }
@@ -3574,7 +3574,7 @@ focus_tree = {
 				SRI_ar_special_forces_defence_factor = 0.05
 				tooltip = special_forces_defence_factor_tt
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_potential_special_forces_tree = yes
 		}
 		search_filters = { FOCUS_FILTER_ARMY_BONUS }
@@ -3639,7 +3639,7 @@ focus_tree = {
 				SRI_ar_extra_marine_supply_grace = 48
 				tooltip = extra_marine_supply_grace_tt
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_doctrine_cost_reduction = {
 				name = SRI_brigate_marine
 				cost_reduction = 0.5
@@ -3705,7 +3705,7 @@ focus_tree = {
 				SRI_ar_modifier_army_sub_unit_mountaineers_max_org_factor = 0.05
 				tooltip = modifier_army_sub_unit_mountaineers_max_org_factor_tt
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_doctrine_cost_reduction = {
 				name = SRI_alpini_rossi
 				cost_reduction = 0.5
@@ -3775,7 +3775,7 @@ focus_tree = {
 				SRI_ar_extra_paratrooper_supply_grace = 48
 				tooltip = extra_paratrooper_supply_grace_tt
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_doctrine_cost_reduction = {
 				name = SRI_carabinieri_del_cielo
 				cost_reduction = 0.5
@@ -3827,7 +3827,7 @@ focus_tree = {
 				DYNMOD = SRI_legione_proletaria_modifier
 			}
 			add_to_variable = { SRI_ar_org_loss_when_moving = -0.15 tooltip = org_loss_when_moving_tt }
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_mastery_bonus = {
 				name = SRI_la_guardia_rossa
 				bonus = 0.1
@@ -3891,7 +3891,7 @@ focus_tree = {
 				SRI_ar_modifier_army_sub_unit_militia_max_org_factor = 0.05
 				tooltip = modifier_army_sub_unit_militia_max_org_factor_tt
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			set_technology = {
 				militia_tech = 1
 			}
@@ -3944,7 +3944,7 @@ focus_tree = {
 				SRI_ar_army_speed_factor = 0.05
 				tooltip = army_speed_factor_tt
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = SRI_autotrasportabilita
 				bonus = 1
@@ -4001,7 +4001,7 @@ focus_tree = {
 			hidden_effect = {
 				enable_tech_strengthened_support_companies = yes
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_mastery_bonus = {
 				name = SRI_scuole_centrale_militare
 				bonus = 0.1
@@ -4068,7 +4068,7 @@ focus_tree = {
 				SRI_ar_cas_damage_reduction = 0.05
 				tooltip = cas_damage_reduction_tt
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			every_army_leader = { add_attack = 1 }
 		}
 		search_filters = { FOCUS_FILTER_ARMY_BONUS }
@@ -4130,14 +4130,14 @@ focus_tree = {
 				SRI_ar_coastal_bunker_effectiveness_factor = 0.05
 				tooltip = coastal_bunker_effectiveness_factor_tt
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = SRI_guardia_alla_frontiera
 				bonus = 1
 				uses = 1
 				category = engineers_tech
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			every_army_leader = { add_defense = 1 }
 		}
 		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_RESEARCH }
@@ -4193,9 +4193,9 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = SRI_cda_aircraft_production_bonus
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					controls_province = 11730 #near Turin
@@ -4265,7 +4265,7 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 25
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_override_tooltip = {
 				tooltip = {
 					localization_key = tooltip_add_dynmod
@@ -4277,7 +4277,7 @@ focus_tree = {
 				SRI_cda_air_accidents_factor = -0.1
 				tooltip = air_accidents_factor_tt
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = root
@@ -4371,7 +4371,7 @@ focus_tree = {
 				SRI_cda_air_weather_penalty = -0.05
 				tooltip = air_weather_penalty_tt
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ace = {
 				type = "fighter_genius"
 				name = "Teresio"
@@ -4445,7 +4445,7 @@ focus_tree = {
 				SRI_cda_air_range_factor = 0.05
 				tooltip = air_range_factor_tt
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = SRI_trimotore_bombers
 				bonus = 1
@@ -4501,7 +4501,7 @@ focus_tree = {
 				SRI_cda_air_agility_factor = 0.05
 				tooltip = air_agility_factor_tt
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = SRI_pursuit_aircraft
 				bonus = 0.75
@@ -4557,7 +4557,7 @@ focus_tree = {
 				SRI_cda_naval_strike_targetting_factor = 0.05
 				tooltip = naval_strike_targetting_factor_tt
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = SRI_aviazione_marittima
 				bonus = 0.75
@@ -4616,7 +4616,7 @@ focus_tree = {
 				SRI_cda_air_cas_present_factor = 0.1
 				tooltip = air_cas_present_factor_tt
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_doctrine_cost_reduction = {
 				name = SRI_command_of_the_air
 				cost_reduction = 0.75
@@ -4672,7 +4672,7 @@ focus_tree = {
 				SRI_cda_strategic_bomb_visibility = -0.1
 				tooltip = strategic_bomb_visibility_tt
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = SRI_arma_offensiva
 				bonus = 0.75
@@ -4728,7 +4728,7 @@ focus_tree = {
 				SRI_cda_air_bombing_targetting = 0.05
 				tooltip = air_bombing_targetting_tt
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = SRI_aerei_da_battaglia
 				bonus = 0.75
@@ -4787,7 +4787,7 @@ focus_tree = {
 				SRI_cda_air_superiority_bonus_in_combat = 0.1
 				tooltip = air_superiority_bonus_in_combat_tt
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_doctrine_cost_reduction = {
 				name = SRI_aviazone_dassalto
 				cost_reduction = 0.75
@@ -4843,7 +4843,7 @@ focus_tree = {
 				SRI_cda_air_intercept_efficiency = 0.05
 				tooltip = air_intercept_efficiency_tt
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = SRI_zone_aeree_territoriali
 				bonus = 1
@@ -4914,7 +4914,7 @@ focus_tree = {
 				SRI_cda_air_home_defence_factor = 0.05
 				tooltip = air_home_defence_factor_tt
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = SRI_difesa_contraerea_territoriale
 				bonus = 0.5
@@ -4922,7 +4922,7 @@ focus_tree = {
 				category = air_equipment
 				category = cat_anti_air
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = root
@@ -5036,7 +5036,7 @@ focus_tree = {
 				SRI_ismm_navy_spirit_category_type_cost_factor = -0.25
 				tooltip = navy_spirit_category_type_cost_factor_tt
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_doctrine_cost_reduction = {
 				name = SRI_expand_the_livorno_academy
 				cost_reduction = 0.5
@@ -5176,7 +5176,7 @@ focus_tree = {
 				SRI_cda_naval_strike_attack_factor = 0.05
 				tooltip = naval_strike_attack_factor_tt
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = SRI_istituto_di_studi_militari_marittimi_modifier
@@ -5185,7 +5185,7 @@ focus_tree = {
 				SRI_ismm_naval_torpedo_hit_chance_factor = 0.05
 				tooltip = naval_torpedo_hit_chance_factor_tooltip
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = root
@@ -5198,7 +5198,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = SRI_legacy_of_mignatta_and_the_mas
 				bonus = 0.75
@@ -5235,7 +5235,7 @@ focus_tree = {
 				SRI_ismm_convoy_raiding_efficiency_factor = 0.1
 				tooltip = convoy_raiding_efficiency_factor_tooltip
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_mastery_bonus = {
 				name = SRI_incrociatori_sommergibili
 				bonus = 0.1
@@ -5262,7 +5262,7 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 10
 			navy_experience = 10
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = SRI_artiglieria_marittima
 				bonus = 0.5
@@ -5275,7 +5275,7 @@ focus_tree = {
 				uses = 2
 				category = naval_mines
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			division_template = {
 				name = "Divisione Costiera"
 				template_counter = 20
@@ -5292,7 +5292,7 @@ focus_tree = {
 					anti_air = { x = 0 y = 2 }
 				}
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			every_owned_state = {
 				display_individual_scopes = yes
 				limit = {
@@ -5383,7 +5383,7 @@ focus_tree = {
 				SRI_ismm_navy_capital_ship_attack_factor = 0.05
 				tooltip = navy_capital_ship_attack_factor_tooltip
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = root
@@ -5416,7 +5416,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = SRI_ismm_screen_production_bonus
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = root
@@ -5503,7 +5503,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = SRI_ismm_capital_production_bonus
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = root
@@ -5623,7 +5623,7 @@ focus_tree = {
 				uses = 2
 				category = ca_tech
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_equipment_production = {
 				equipment = {
 					type = ship_hull_cruiser_panzerschiff
@@ -5638,7 +5638,7 @@ focus_tree = {
 				}
 				progress = 0.45
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_mastery_bonus = {
 				name = SRI_fast_battleships
 				bonus = 0.1
@@ -5710,7 +5710,7 @@ focus_tree = {
 				uses = 2
 				category = bb_tech
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = { has_tech = advanced_ship_hull_heavy }
 				create_equipment_variant = {
@@ -5876,7 +5876,7 @@ focus_tree = {
 					progress = 0.45
 				}
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_mastery_bonus = {
 				name = SRI_rebuild_the_battle_line
 				bonus = 0.1
@@ -5938,7 +5938,7 @@ focus_tree = {
 				uses = 1
 				category = asw_tech
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = root
@@ -5950,7 +5950,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_mastery_bonus = {
 				name = SRI_mariantisom
 				bonus = 0.1
@@ -6015,7 +6015,7 @@ focus_tree = {
 				category = cat_ship_light_battery
 				category = asw_tech
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = root
@@ -6085,7 +6085,7 @@ focus_tree = {
 				category = cat_ship_medium_battery
 				category = naval_armor
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = root
@@ -6125,7 +6125,7 @@ focus_tree = {
 				uses = 2
 				category = cv_tech
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = { has_tech = advanced_ship_hull_carrier }
 				if = {
@@ -6297,7 +6297,7 @@ focus_tree = {
 					progress = 0.45
 				}
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_mastery_bonus = {
 				name = SRI_maritime_air_power
 				bonus = 0.1
@@ -6359,7 +6359,7 @@ focus_tree = {
 				SRI_ismm_navy_anti_air_attack_factor = 0.05
 				tooltip = navy_anti_air_attack_factor_tooltip
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = SRI_improved_gunnery
 				bonus = 0.75
@@ -6421,7 +6421,7 @@ focus_tree = {
 				SRI_ismm_spotting_chance = 0.1
 				tooltip = spotting_chance_tooltip
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_controlled_state = {
 				prioritize = { 158 } #Piedmont
 				limit = {
@@ -6444,7 +6444,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_breakthrough_progress = {
 				specialization = specialization_naval
 				value = 0.25
@@ -6453,7 +6453,7 @@ focus_tree = {
 				specialization = specialization_air
 				value = 0.25
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = SRI_adopt_the_gufo
 				bonus = 0.75
@@ -6512,7 +6512,7 @@ focus_tree = {
 				SRI_ismm_naval_detection = 0.1
 				tooltip = naval_detection_tooltip
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			every_navy_leader = {
 				display_individual_scopes = yes
 				limit = { NOT = { has_trait = spotter } }
@@ -6571,7 +6571,7 @@ focus_tree = {
 				amount = 50
 				folder = naval
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = root
@@ -6605,7 +6605,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			every_navy_leader = {
 				display_individual_scopes = yes
 				limit = { NOT = { has_trait = bold } }

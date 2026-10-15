@@ -324,7 +324,7 @@ focus_tree = {
 
 		completion_reward = {
 			remove_ideas = PRE_economic_downturn_4
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_add_dynmod
 				DYNMOD = PRE_land_military_industrialization_dynamic_modifier
@@ -395,7 +395,7 @@ focus_tree = {
 				PRE_land_military_industrialization_dynamic_modifier_production_speed_buildings_factor = 0.025
 				tooltip = production_speed_buildings_factor_tt
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_timed_idea = {
 				idea = PRE_public_construction_projects
 				days = 180
@@ -490,7 +490,7 @@ focus_tree = {
 				PRE_land_military_industrialization_dynamic_modifier_line_change_production_efficiency_factor = 0.05
 				tooltip = line_change_production_efficiency_factor_tt
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_offsite_building = {
 				type = industrial_complex
 				level = 1
@@ -519,7 +519,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = PRE_universal_healthcare
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_land_military_industrialization_dynamic_modifier
@@ -555,7 +555,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = PRE_devalued_currency
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_land_military_industrialization_dynamic_modifier
@@ -592,7 +592,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = PRE_strengthened_currency
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_land_military_industrialization_dynamic_modifier
@@ -699,14 +699,14 @@ focus_tree = {
 			GER = {
 				country_event = PRE_events.1
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = NJORD_PRE_if_they_accept_event
 			effect_tooltip = {
 				add_timed_idea = {
 					idea = PRE_german_trade
 					days = 365
 				}
-				custom_effect_tooltip = empty_line
+				custom_effect_tooltip = generic_skip_one_line_tt
 				GER = {
 					add_timed_idea = {
 						idea = PRE_prussian_trade
@@ -737,7 +737,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 50
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_timed_idea = {
 				idea = PRE_atlantic_trade
 				days = 365
@@ -780,7 +780,7 @@ focus_tree = {
 				PRE_land_military_industrialization_dynamic_modifier_consumer_goods_factor = -0.03
 				tooltip = consumer_goods_factor_tt
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_offsite_building = {
 				type = industrial_complex
 				level = 1
@@ -809,7 +809,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.05
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_land_military_industrialization_dynamic_modifier
@@ -822,7 +822,7 @@ focus_tree = {
 				PRE_land_military_industrialization_dynamic_modifier_consumer_goods_factor = -0.03
 				tooltip = consumer_goods_factor_tt
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_equipment_to_stockpile = {
 				type = convoy
 				amount = 50
@@ -862,7 +862,7 @@ focus_tree = {
 				PRE_land_military_industrialization_dynamic_modifier_industrial_capacity_dockyard = 0.02
 				tooltip = industrial_capacity_dockyard_tt
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = root
@@ -906,7 +906,7 @@ focus_tree = {
 				PRE_land_military_industrialization_dynamic_modifier_production_speed_buildings_factor = 0.025
 				tooltip = production_speed_buildings_factor_tt
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_timed_idea = {
 				idea = PRE_private_investments
 				days = 180
@@ -973,9 +973,9 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.05
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = PRE_expanded_welfare_system
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_land_military_industrialization_dynamic_modifier
@@ -1089,12 +1089,12 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_timed_idea = {
 				idea = PRE_convoy_production
 				days = 180
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_equipment_to_stockpile = {
 				type = convoy
 				amount = 100
@@ -1358,7 +1358,7 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 35
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_controlled_state = { # CHANGE TO NORWEGIAN STATE
 				limit = {
 					is_core_of = root
@@ -1376,7 +1376,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_controlled_state = { # CHANGE TO NORWEGIAN STATE
 				limit = {
 					is_core_of = root
@@ -1543,9 +1543,9 @@ focus_tree = {
 
 		completion_reward = {
 			add_research_slot = 1
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = PRE_university_of_electrical_research
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = DEN_support_the_tiftp
 				bonus = 0.5
@@ -1585,7 +1585,7 @@ focus_tree = {
 				remove_idea = PRE_university_of_electrical_research
 				add_idea = PRE_university_of_electrical_research_2
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = DEN_fund_the_copenhagen_university
 				ahead_reduction = 1
@@ -1638,7 +1638,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_controlled_state = { # CHANGE TO SWEDISH STATE
 				limit = {
 					is_core_of = root
@@ -1693,7 +1693,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = DEN_bridge_designs
 				ahead_reduction = 1
@@ -1741,7 +1741,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_controlled_state = { # CHANGE TO NORTH GERMAN STATE
 				limit = {
 					is_core_of = root
@@ -1777,7 +1777,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_war_support = 0.05
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = { 
 					has_idea = PRE_pacifist_accord
@@ -1805,7 +1805,7 @@ focus_tree = {
 					add_idea = PRE_pacifist_accord_4
 				}
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_army_dynamic_modifier
@@ -1862,7 +1862,7 @@ focus_tree = {
 				uses = 3
 				category = land_doctrine
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = { 
 					has_idea = PRE_pacifist_accord
@@ -1890,7 +1890,7 @@ focus_tree = {
 					add_idea = PRE_pacifist_accord_4
 				}
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_army_dynamic_modifier
@@ -1951,7 +1951,7 @@ focus_tree = {
 				uses = 2
 				category = infantry_weapons
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = { 
 					has_idea = PRE_pacifist_accord
@@ -1979,7 +1979,7 @@ focus_tree = {
 					add_idea = PRE_pacifist_accord_4
 				}
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_army_dynamic_modifier
@@ -2034,7 +2034,7 @@ focus_tree = {
 
 		completion_reward = {
 			remove_ideas = PRE_pacifist_accord_4
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_army_dynamic_modifier
@@ -2115,7 +2115,7 @@ focus_tree = {
 				uses = 2
 				category = mio_cat_artillery
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_army_dynamic_modifier
@@ -2149,7 +2149,7 @@ focus_tree = {
 
 		completion_reward = {
 			every_army_leader = { add_planning = 1 }
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_army_dynamic_modifier
@@ -2210,7 +2210,7 @@ focus_tree = {
 
 		completion_reward = {
 			every_army_leader = { add_planning = 1 }
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_army_dynamic_modifier
@@ -2249,7 +2249,7 @@ focus_tree = {
 				category = cat_anti_tank
 				category = mio_cat_artillery
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			enable_tech_anti_fortification_artillery = yes
 		}
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_ARMY_BONUS }
@@ -2289,7 +2289,7 @@ focus_tree = {
 				PRE_army_dynamic_modifier_army_org_regain = 0.05
 				tooltip = army_org_regain_tt
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_doctrine_cost_reduction = {
 				name = DEN_unwavering_morale
 				cost_reduction = 0.35
@@ -2328,7 +2328,7 @@ focus_tree = {
 				PRE_army_dynamic_modifier_army_artillery_defence_factor = 0.1
 				tooltip = army_artillery_defence_factor_tt
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			complete_special_project = {
 				project = sp:sp_land_large_caliber_kinetic_energy_sabot
 				show_modifiers = no
@@ -2360,9 +2360,9 @@ focus_tree = {
 				bonus = 0.5
 				uses = 2
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			enable_tech_improved_logistics = yes
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_army_dynamic_modifier
@@ -2400,7 +2400,7 @@ focus_tree = {
 				uses = 2
 				category = cat_anti_air
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_controlled_state = { # PRIORITIZE NEAR INDUSTRIAL AREAS
 				limit = {
 					is_core_of = root
@@ -2474,7 +2474,7 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 20
 			air_experience = 20
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_army_dynamic_modifier
@@ -2487,7 +2487,7 @@ focus_tree = {
 				PRE_army_dynamic_modifier_coordination_bonus = 0.05
 				tooltip = coordination_bonus_tt
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_airforce_dynamic_modifier
@@ -2530,9 +2530,9 @@ focus_tree = {
 					popup = no
 				}
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			enable_tech_ski_infantry = yes
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_army_dynamic_modifier
@@ -2569,9 +2569,9 @@ focus_tree = {
 
 		completion_reward = {
 			enable_tech_mountain_artillery = yes
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			enable_tech_mountain_warfare = yes
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_army_dynamic_modifier
@@ -2608,7 +2608,7 @@ focus_tree = {
 
 		completion_reward = {
 			enable_tech_urban_warfare = yes
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_army_dynamic_modifier
@@ -2683,7 +2683,7 @@ focus_tree = {
 				uses = 1
 				category = air_doctrine
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_airforce_dynamic_modifier
@@ -2720,7 +2720,7 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 20
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_airforce_dynamic_modifier
@@ -2757,7 +2757,7 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 20
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_airforce_dynamic_modifier
@@ -2859,7 +2859,7 @@ focus_tree = {
 
 		completion_reward = {
 			enable_tech_improved_recon_units = yes
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_army_dynamic_modifier
@@ -2975,12 +2975,12 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = PRE_terror_bombings
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			complete_special_project = {
 				project = sp:sp_rockets_flying_bomb
 				show_modifiers = no
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_airforce_dynamic_modifier
@@ -3051,9 +3051,9 @@ focus_tree = {
 				uses = 2
 				category = para_tech
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			enable_tech_integrated_specialists = yes
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			enable_tech_better_paratroopers = yes
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_ARMY_BONUS }
@@ -3110,7 +3110,7 @@ focus_tree = {
 				idea = PRE_jet_fighter_focus
 				days = 730
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = DEN_motorisation_focus
 				category = jet_technology
@@ -3143,7 +3143,7 @@ focus_tree = {
 
 		completion_reward = {
 			navy_experience = 25
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_navy_dynamic_modifier
@@ -3186,7 +3186,7 @@ focus_tree = {
 
 		completion_reward = {
 			navy_experience = 25
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_navy_dynamic_modifier
@@ -3239,7 +3239,7 @@ focus_tree = {
 				PRE_navy_dynamic_modifier_positioning = 0.05
 				tooltip = positioning_tt
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_controlled_state = {
 				limit = {
 					is_coastal = yes
@@ -3345,7 +3345,7 @@ focus_tree = {
 				idea = PRE_funded_new_norwegian_navy
 				days = 365
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			create_equipment_variant = {
 				name = "Konge Hans Class"
 				type = ship_hull_cruiser_2
@@ -3434,7 +3434,7 @@ focus_tree = {
 					type = ship_hull_light_2
 					version_name = "Nisse Class"
 				}
-				name = "HDMS Dv‘rg"
+				name = "HDMS Dvï¿½rg"
 				progress = 0.35
 			}
 			add_equipment_production = {
@@ -3471,7 +3471,7 @@ focus_tree = {
 				uses = 2
 				category = cat_anti_air
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_navy_dynamic_modifier
@@ -3617,7 +3617,7 @@ focus_tree = {
 			every_navy_leader = {
 				add_coordination = 1
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_navy_dynamic_modifier
@@ -3664,11 +3664,11 @@ focus_tree = {
 				uses = 3
 				category = naval_doctrine
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			every_navy_leader = {
 				add_maneuver = 1
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_navy_dynamic_modifier
@@ -3706,7 +3706,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.05
 			add_political_power = 50
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_popularity = {
 				ideology = democratic
 				popularity = 0.05
@@ -3715,7 +3715,7 @@ focus_tree = {
 				ideology = absolutist
 				popularity = 0.05
 			}
-			custom_effect_tooltip = empty_line
+			custom_effect_tooltip = generic_skip_one_line_tt
 			remove_ideas = PRE_reichstag_controlled_by_opposition_2
 		}
 		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
