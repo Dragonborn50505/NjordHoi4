@@ -146,7 +146,7 @@ add_opinion_modifier = { target = YEM modifier = negative_30 }
 
 
 add_ideas = {
-	uncivilized
+	# uncivilized
 	limited_conscription
 	civilian_economy
 	export_focus

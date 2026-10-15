@@ -86,7 +86,7 @@ if = {
 
 
 add_ideas = {
-	uncivilized
+	# uncivilized
 	limited_conscription
 	civilian_economy
 	export_focus
