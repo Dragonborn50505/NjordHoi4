@@ -70,3 +70,105 @@ NJORD_upgrade_state_category = {
 		}
 	}
 }
+
+GER_improve_weltpolitik = {
+	IF = {
+		limit = { has_idea = GER_weltpolitik_start }
+		swap_ideas = {
+			remove_idea = GER_weltpolitik_start
+			add_idea = GER_weltpolitik_2
+		}
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = GER_weltpolitik_start
+				add_idea = GER_weltpolitik_2
+			}
+		}
+	}
+	ELSE_IF = {
+		limit = { has_idea = GER_weltpolitik_2 }
+		swap_ideas = {
+			remove_idea = GER_weltpolitik_2
+			add_idea = GER_weltpolitik_3
+		}
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = GER_weltpolitik_2
+				add_idea = GER_weltpolitik_3
+			}
+		}
+	}
+	ELSE_IF = {
+		limit = { has_idea = GER_weltpolitik_3 }
+		swap_ideas = {
+			remove_idea = GER_weltpolitik_3
+			add_idea = GER_weltpolitik_4
+		}
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = GER_weltpolitik_3
+				add_idea = GER_weltpolitik_4
+			}
+		}
+	}
+	ELSE_IF = {
+		limit = { has_idea = GER_weltpolitik_4 }
+		swap_ideas = {
+			remove_idea = GER_weltpolitik_4
+			add_idea = GER_weltpolitik_5
+		}
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = GER_weltpolitik_4
+				add_idea = GER_weltpolitik_5
+			}
+		}
+	}
+	ELSE_IF = {
+		limit = { has_idea = GER_weltpolitik_5 }
+		swap_ideas = {
+			remove_idea = GER_weltpolitik_5
+			add_idea = GER_weltpolitik_6
+		}
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = GER_weltpolitik_5
+				add_idea = GER_weltpolitik_6
+			}
+		}
+	}
+	ELSE_IF = {
+		limit = { has_idea = GER_weltpolitik_6 }
+		swap_ideas = {
+			remove_idea = GER_weltpolitik_6 # SIX
+			add_idea = GER_weltpolitik_7 # SEVEN
+		}
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = GER_weltpolitik_6 # SIX 
+				add_idea = GER_weltpolitik_7 # SEVEN
+			}
+		}
+	}
+	ELSE_IF = {
+		limit = { has_idea = GER_weltpolitik_7 }
+		swap_ideas = {
+			remove_idea = GER_weltpolitik_7
+			add_idea = GER_weltpolitik_8
+		}
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = GER_weltpolitik_7
+				add_idea = GER_weltpolitik_8
+			}
+		}
+	}
+	else = {
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = GER_weltpolitik_start
+				add_idea = GER_weltpolitik_2
+			}
+		}
+	}
+}

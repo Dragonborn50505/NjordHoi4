@@ -186,9 +186,127 @@ add_ideas = {
 	civilian_economy
 	export_focus
 	culture_south_german
+	GER_constitutional_deadlock
+	GER_the_ruhrkampf
 }
-set_stability = 0.60
-set_war_support = 0.43
+
+add_dynamic_modifier = {
+	modifier = GER_war_preparedness
+}
+set_variable = { GER_war_preparedness_war_support_factor = -0.1 }
+set_variable = { GER_war_preparedness_war_stability_factor = -0.1 }
+set_variable = { GER_war_preparedness_air_mission_efficiency = -0.1 }
+set_variable = { GER_war_preparedness_army_morale_factor = -0.1 }
+set_variable = { GER_war_preparedness_army_defence_factor = -0.1 }
+set_variable = { GER_war_preparedness_navy_org_factor = -0.1 }
+set_variable = { GER_war_preparedness_industrial_capacity_factory = -0.15 }
+set_variable = { GER_war_preparedness_industrial_capacity_dockyard = -0.15 }
+set_variable = { GER_war_preparedness_conversion_cost_civ_to_mil_factor = 0 }
+set_variable = { GER_war_preparedness_recruitable_population_factor = 0 }
+set_variable = { GER_war_preparedness_supply_combat_penalties_on_core_factor = 0 }
+set_variable = { GER_war_preparedness_weekly_bombing_war_support = 0 }
+set_variable = { GER_war_preparedness_weekly_convoys_war_support = 0 }
+set_variable = { GER_war_preparedness_conscription = 0 }
+set_variable = { GER_war_preparedness_line_change_production_efficiency_factor = 0 }
+set_variable = { GER_war_preparedness_equipment_conversion_speed = 0 }
+set_variable = { GER_war_preparedness_operative_slot = 0 }
+
+#add_dynamic_modifier = {
+#	modifier = GER_imperial_army
+#}
+set_variable = { GER_imperial_army_land_doctrine_cost_factor = -0.1 }
+set_variable = { GER_imperial_army_grant_medal_cost_factor = -0.5 }
+set_variable = { GER_imperial_army_motorized_attack_factor = 0 }
+set_variable = { GER_imperial_army_motorized_defence_factor = 0 }
+set_variable = { GER_imperial_army_mechanized_attack_factor = 0 }
+set_variable = { GER_imperial_army_mechanized_defence_factor = 0 }
+set_variable = { GER_imperial_army_supply_factor = 0 }
+set_variable = { GER_imperial_supply_consumption_factor = 0 }
+set_variable = { GER_imperial_army_army_armor_attack_factor = 0 }
+set_variable = { GER_imperial_army_army_armor_defence_factor = 0 }
+set_variable = { GER_imperial_army_experience_gain_army_factor = 0 }
+set_variable = { GER_imperial_army_recruitable_population_factor = 0 }
+set_variable = { GER_imperial_army_max_training = 0 }
+set_variable = { GER_imperial_army_army_attack_factor = 0 }
+set_variable = { GER_imperial_army_army_defence_factor = 0 }
+set_variable = { GER_imperial_army_experience_loss_factor = 0 }
+set_variable = { GER_imperial_army_air_advisor_cost_factor = 0 }
+set_variable = { GER_imperial_army_navy_advisor_cost_factor = 0 }
+set_variable = { GER_imperial_army_army_advisor_cost_factor = 0 }
+set_variable = { GER_imperial_army_experience_gain_army_unit_factor = 0 }
+set_variable = { GER_imperial_army_planning_speed = 0 }
+set_variable = { GER_imperial_army_army_org_factor = 0 }
+set_variable = { GER_imperial_army_army_org_regain = 0 }
+set_variable = { GER_imperial_army_command_abilities_cost_factor = 0 }
+set_variable = { GER_imperial_army_initiative_factor = 0 }
+set_variable = { GER_imperial_army_terrain_trait_xp_gain_factor = 0 }
+set_variable = { GER_imperial_army_org_loss_when_moving = 0 }
+set_variable = { GER_imperial_army_command_power_gain_mult = 0 }
+set_variable = { GER_imperial_army_max_planning_factor = 0 }
+set_variable = { GER_imperial_army_dig_in_speed_factor = 0 }
+set_variable = { GER_imperial_army_max_dig_in = 0 }
+set_variable = { GER_imperial_army_land_bunker_effectiveness_factor = 0 }
+set_variable = { GER_imperial_army_coastal_bunker_effectiveness_factor = 0 }
+set_variable = { GER_imperial_army_army_artillery_attack_factor = 0 }
+set_variable = { GER_imperial_army_army_artillery_defence_factor = 0 }
+set_variable = { GER_imperial_army_air_superiority_bonus_in_combat = 0 }
+set_variable = { GER_imperial_army_recon_factor = 0 }
+set_variable = { GER_imperial_army_ground_attack_factor = 0 }
+set_variable = { GER_imperial_army_skill_bonus_factor = 0 }
+set_variable = { GER_imperial_army_experience_gain_factor = 0 }
+set_variable = { GER_imperial_army_coordination_bonus = 0 }
+set_variable = { GER_imperial_army_experience_gain_army_unit_factor = 0 }
+set_variable = { GER_imperial_army_training_time_army_factor = 0 }
+set_variable = { GER_imperial_army_army_morale_factor = 0 }
+set_variable = { GER_imperial_army_army_core_attack_factor = 0 }
+set_variable = { GER_imperial_army_army_core_defence_factor = 0 }
+set_variable = { GER_imperial_army_weekly_casualties_war_support = 0 }
+set_variable = { GER_imperial_army_army_attack_against_major_factor = 0 }
+set_variable = { GER_imperial_army_army_strength_factor = 0 }
+set_variable = { GER_imperial_army_org_loss_at_low_org_factor = 0 }
+set_variable = { GER_imperial_army_minimum_training_level = 0 }
+set_variable = { GER_imperial_army_army_attack_speed_factor = 0 }
+set_variable = { GER_imperial_army_breakthrough_factor = 0 }
+set_variable = { GER_imperial_army_army_infantry_attack_factor = 0 }
+set_variable = { GER_imperial_army_army_infantry_defence_factor = 0 }
+set_variable = { GER_imperial_army_attrition = 0 }
+set_variable = { GER_imperial_army_out_of_supply_factor = 0 }
+
+#add_dynamic_modifier = {
+#	modifier = GER_w_plants
+#}
+set_variable = { GER_w_plants_consumer_goods_factor = -0.05 }
+set_variable = { GER_w_plants_production_speed_arms_factory_factor = 0.05 }
+set_variable = { GER_w_plants_production_speed_dockyard_factor = 0.05 }
+set_variable = { GER_w_plants_military_industrial_organization_research_bonus = 0 }
+set_variable = { GER_w_plants_production_speed_rail_way_factor = 0 }
+set_variable = { GER_w_plants_production_speed_air_base_factor = 0 }
+set_variable = { GER_w_plants_military_industrial_organization_funds_gain = 0 }
+
+add_dynamic_modifier = {
+	modifier = GER_airforce
+}
+set_variable = { GER_airforce_air_intercept_efficiency = 0.1 }
+set_variable = { GER_airforce_experience_gain_air = 0.05 }
+set_variable = { GER_airforce_air_range_factor = 0 }
+set_variable = { GER_airforce_air_cas_present_factor = 0 }
+set_variable = { GER_airforce_air_close_air_support_org_damage_factor = 0 }
+set_variable = { GER_airforce_air_mission_efficiency = 0 }
+set_variable = { GER_airforce_air_cas_efficiency = 0 }
+set_variable = { GER_airforce_air_superiority_efficiency = 0 }
+set_variable = { GER_airforce_ace_effectiveness_factor = 0 }
+set_variable = { GER_airforce_air_ace_generation_chance_factor = 0 }
+set_variable = { GER_airforce_ground_attack_factor = 0 }
+set_variable = { GER_airforce_air_escort_efficiency = 0 }
+set_variable = { GER_airforce_air_bombing_targetting = 0 }
+set_variable = { GER_airforce_air_home_defence_factor = 0 }
+set_variable = { GER_airforce_air_strategic_bomber_bombing_factor = 0 }
+set_variable = { GER_airforce_air_strategic_bomber_night_penalty = 0 }
+set_variable = { GER_airforce_strategic_bomb_visibility = 0 }
+set_variable = { GER_airforce_air_power_projection_factor = 0 }
+
+set_stability = 0.50
+set_war_support = 0.30
 
 recruit_character = GER_christian_von_bohm_ermolli
 recruit_character = GER_gustav_von_grunne

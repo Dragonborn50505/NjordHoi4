@@ -1,0 +1,674 @@
+﻿l_english:
+
+### Dynamic Modifiers ###
+ GER_war_preparedness: "War Preparedness"
+ GER_war_preparedness_desc: "The German populace is still unprepared for a second Great European War. We must do our best to mitigate their concerns."
+
+ GER_imperial_army: "Imperial German Army"
+
+ GER_w_plants: "'W' Plants"
+ 
+ GER_airforce: "German Airforce"
+
+# IDEAS
+ GER_emergency_workplace_training_programs: "Emergency Workplace Training Programs"
+ GER_emergency_workplace_training_programs_desc: ""
+
+ GER_neue_wirtschaft_1: "Neue Wirtschaft"
+ GER_neue_wirtschaft_1_desc: ""
+
+ GER_ersatz_materials: "Ersatz Materials"
+ GER_ersatz_materials_desc: ""
+
+ GER_reform_eco_balancer: "Tarnow-Baade Plan"
+ GER_reform_eco_balancer_desc: ""
+
+ GER_reform_eco_2: "Social Economics"
+ GER_reform_eco_2_desc: ""
+
+ GER_reform_eco_3: "Social Economics"
+ GER_reform_eco_3_desc: ""
+
+ GER_adgb_idea: "ADGB - Trade Union Collectives"
+ GER_adgb_idea_desc: ""
+
+ GER_debt_restructuring_idea: "Debt Restructuring"
+ GER_debt_restructuring_idea_desc: ""
+
+ GER_price_controls_idea: "Price Controls"
+ GER_price_controls_idea_desc: ""
+
+ GER_constitutional_deadlock: "Constitutionalist Deadlock"
+ GER_constitutional_deadlock_desc: "Parliamentarism has failed to produce anything but disaster for the political landscape of Germany. Bohemian nobles hamper the constitutional process, Prussians and North Germans decry South Germans as foreign occupiers, and smaller minorities such as the Swiss, Flemish, Austrian and French demonstrate for political rights."
+
+ GER_support_of_the_zentrum: "Support of the Zentrum"
+ GER_support_of_the_zentrum_desc: ""
+
+ GER_support_of_the_industrialists: "Support of the Industrialists"
+ GER_support_of_the_industrialists_desc: ""
+
+ GER_the_propaganda_machine: "The Propaganda Machine"
+ GER_the_propaganda_machine_desc: ""
+
+ GER_the_ruhrkampf: "The \"Ruhrkampf"\"
+ GER_the_ruhrkampf_desc: "Thousands of workers in the steel and manufactoring industries in the Ruhr Valley strike against unfair working conditions and low pay. This strike has come to paralyse German industry and threaten a socialist revolution."
+
+ GER_weltpolitik_start: "Weltpolitik"
+ GER_weltpolitik_start_desc: ""
+
+ GER_financing_prussian_expedition: "Financing the Prussian War"
+ GER_financing_prussian_expedition_desc: ""
+
+ GER_PRE_financed_swedish_war: "German Military Mission"
+ GER_PRE_financed_swedish_war_desc: ""
+
+ GER_USA_the_prittwitz_plans: "The Prittwitz Plan"
+ GER_USA_the_prittwitz_plans_desc: ""
+
+ GER_abteilung_iii_b: "Abteilun III B"
+ GER_abteilung_iii_b_desc: ""
+
+ GER_SRI_temporary_catholic_resurgence: "Catholic Resurgence"
+ GER_SRI_temporary_catholic_resurgence_desc: ""
+
+ GER_RUS_german_economic_influence: "German Economic Tampering"
+ GER_RUS_german_economic_influence_desc: ""
+
+ GER_POL_german_sabotage: "German Sabotage Missions"
+ GER_POL_german_sabotage_desc: ""
+
+ GER_military_mission_generic: "German Military Mission"
+ GER_military_mission_generic_desc: ""
+
+ GER_middle_eastern_trade: "German Trade"
+ GER_middle_eastern_trade_desc: ""
+
+ GER_secured_supply: "Secured Supply Networks"
+ GER_secured_supply_desc: ""
+
+ GER_research_advances: "Research Advances"
+ GER_research_advances_desc: ""
+
+ GER_motorisation_idea: "Motorisation"
+ GER_motorisation_idea_desc: ""
+
+ GER_maneuovre_warfare_1: "Maneuovre Warfare"
+ GER_maneuovre_warfare_1_desc: ""
+
+ GER_rocket_designs: "Raketenwerfer"
+ GER_rocket_designs_desc: ""
+
+ GER_krupp_railway_guns: "Krupp Railway Guns"
+ GER_krupp_railway_guns_desc: ""
+
+ GER_armour_design_renewal: "Armoured Design Renewal"
+ GER_armour_design_renewal_desc: ""
+
+ GER_enigma_rotors: "The Enigma Rotors"
+ GER_enigma_rotors_desc: ""
+
+ GER_air_production_bonus: "Air Production"
+ GER_air_production_bonus_desc: ""
+
+ GER_submarine_focus: "Submarine Focus"
+ GER_submarine_focus_desc: ""
+
+ GER_navy_wegener_doctrine: "Wegener Naval Doctrine"
+ GER_navy_wegener_doctrine_desc: ""
+
+ GER_navy_raeder_doctrine: "Raeder Naval Doctrine"
+ GER_navy_raeder_doctrine_desc: ""
+
+ GER_navy_league_idea: "Navy League"
+ GER_navy_league_idea_desc: ""
+
+ GER_destroyer_production: "Destroyer Focus"
+ GER_destroyer_production_desc: ""
+
+ GER_cruiser_production: "Cruiser Focus"
+ GER_cruiser_production_desc: ""
+
+ GER_carrier_production: "Carrier Focus"
+ GER_carrier_production_desc: ""
+
+ GER_superheavy_ship_production: "Battleship Focus"
+ GER_superheavy_ship_production_desc: ""
+
+### Focuses ###
+
+ GER_von_schleicher_cabinet: "Kabinett Schleicher"
+ GER_von_schleicher_cabinet_desc: "No winner has come out from the Reichstag election of 1936, thus a Reichskanzler able to unify the Empire in the face of foreign aggression and domestic hardship alike is needed. That Reichskanzler is Kurt von Schleicher, former German Minister of War - and he has a programme to save the yearning German masses."
+
+ GER_arbeitsschlacht: "Die Arbeitsschlacht"
+ GER_arbeitsschlacht_desc: "The first item on our agenda must be the needs of the people. Millions are on the streets and they are desperate for salvation - if the government does not create jobs for them, they will seek alternate, extreme solutions. Their employers have failed them, struggling with debt or awaiting better days. Thus, the State must do the heavy lifting, and create those jobs itself."
+
+ GER_constructive_no_confidence: "Constructive No-Confidence Principle"
+ GER_constructive_no_confidence_desc: "Before the fractured nature of the incumbent Reichstag sparks a flurry of no confidence votes, we must establish a principle with which any no-confidence vote must also propose an alternate candidate for the Reichskanzler seat. This way, we won't experience a situation in which Germany is left headless in a crucial moment."
+
+ GER_renew_rathenauplan: "Renew the Rathenauplan"
+ GER_renew_rathenauplan_desc: "The \"Neue Wirtschaft\" programme of Walther von Rathenau would be a massive change for the German economy, if implemented - it calls for a thorough planification and centralisation of economic life, through which the worst excesses of capitalism will be curtailed and full economic efficiency will be achieved. It is an extreme solution, but these are extreme times as well."
+
+ GER_war_economic_offices: "Renew Operation of War Economic Offices"
+ GER_war_economic_offices_desc: "During the Great European War, the government established several offices, agencies and departments to give the state full control of its resources for war. Their experience can be brought forth once more, but for the reconstruction of the economy, rather than for wartime mobilisation."
+
+ GER_selbstversorgung: "Pursue Selbstversorgung"
+ GER_selbstversorgung_desc: "Selbstversorgung, or self-sufficiency, is a key concept in Rathenau's economic programme. It aim is to achieve autarky in industrial projects, particularly those critical for national defence. Making the German heartland at least somewhat self-sufficient in strategic resources through a combination of substitute materials and innovative technologies."
+ GER_streamline_goods_production: "Streamline Goods Production"
+ GER_streamline_goods_production_desc: "Rathenau envisions a society of perfect production efficiency, which wastes as little resources as possible on things like marketing, waste or competition. The state's economic authorities will enforce quality and production efficiency standards and advantage the most efficient industrial plants. State owned industries will serve as testing ranges for new industrial technology."
+
+ GER_equality_of_opportunity: "Equality of Opportunity"
+ GER_equality_of_opportunity_desc: "Because of poor circumstances of their birth or other inherent traits, many in German society are unable to apply their full potential. Being Jewish himself, Rathenau has personally expressed his dismay at these circumstances. The state must put all the effort it can to integrate all citizens into economic life and reform the education system to find the most skilled."
+
+ GER_tarnow_baade_plan: "Draft Plan Tarnow-Baade"
+ GER_tarnow_baade_plan_desc: "Fritz Tarnow and Fritz Baade are trade union leaders who initiated discussion on a social economic reform project not long after the Black Monday market crash, and publicly endorsed Schleicher's appointment with the hope that he will listen to their concerns. Their project involves vast state intervention to curtail the banking sector and create public works."
+
+ GER_role_of_trade_unions: "Guarantee Leading Role of Trade Unions"
+ GER_role_of_trade_unions_desc: "Economic recovery in Germany will only be fully achieved and benefit all classes if it is done with the support of German trade unions - socialist, liberal or Christian alike. We must involve trade union leadership in economic reform plans and create talks between the government, business representatives and trade unionists to listen to the concerns of everyone."
+
+ GER_price_controls: "Establish Price Controls"
+ GER_price_controls_desc: "One of the most unfortunate effects of the economic crisis is the breakdown of market prices - either too high, because of lacking supply, and punishing the people, or too low, because of lacking demand, and so punishing business. Through strategic taxation and financial investment, the state must intervene and bring order to the market."
+
+ GER_public_works: "Massive Public Works"
+ GER_public_works_desc: "Tarnow and Baade envision the expenditure of upwards of 2 billion Marks on public work programmes alone - until the economy recovers and can employ them again, millions of unemployed must receive temporary relief in the form of public works."
+
+ GER_bank_controls: "Form the Staatliche Bankenaufsicht"
+ GER_bank_controls_desc: "The reckless nature of the German banks led to the Black Monday collapse and shows that government oversight is necessary to prevent it from happening again. The Reichsbank must be curtailed as well, and cooperate more closely with the elected government."
+
+ GER_state_credit: "Expand State-Provided Credit"
+ GER_state_credit_desc: "The industrial sector can be moved out of its malaise by providing credit from the state. We will green-light the emission of more money and provide it to struggling businesses with very low interest, giving them the injection they need to get back on their feet and return to full production capacity."
+
+ GER_debt_restructuring: "Negotiate Debt Restructuring"
+ GER_debt_restructuring_desc: "State investments and economic recovery programmes inevitably come with a cost that someone needs to pay - which, so far, we have been able to cover with short and long term debts. This cannot last forever - we need to start negotiations with domestic and international lenders to delay payments and restructure our debt to prevent a fiscal crash."
+
+ GER_nitrate_tobacco_monopoly: "State Monopoly on Nitrate and Tobacco"
+ GER_nitrate_tobacco_monopoly_desc: "The economist Karl Helfferich has proposed establishing state monopolies on two lucrative consumer industries - nitrate mining and tobacco, which will bring much needed revenue to the budget. This proposal has also found support among the left and the far right."
+
+ GER_slash_welfare: "Slash Welfare Funding"
+ GER_slash_welfare_desc: "The German welfare system is relatively well funded, but in times of distress, we cannot dedicate as much funding to the system as we normally could. This solution is bound to be unpopular with the general population, however."
+
+ GER_federal_income_taxes: "Establish Federal Income Taxes"
+ GER_federal_income_taxes_desc: "The finances of the German Empire are relatively weak, as the government needs to rely upon the financing of the states to stay afloat, and can only levy indirect taxes and tariffs to collect revenue. It is about time to put an end to this weakness - if possible, we must push through a taxation reform in the legislature, and finally allow the Empire to collect direct income tax."
+
+ GER_inflation_weaponry: "Inflation Weaponry"
+ GER_inflation_weaponry_desc: "An effective, if somewhat artificial and controversial method of increasing government revenue is simply printing more money - though this will cause inflation, it will also provide us with currency for economic recovery. Of course, as long as the trust in the German Mark remains."
+
+ GER_labour_service: "Freiwilliger Arbeitsdienst"
+ GER_labour_service_desc: "The first priority of the new government is to make sure that as few German citizens starve on the streets as possible. We shall establish a Voluntary Labour Service which will accept and feed the unemployed, employ them in menial, work-intensive labour across the Empire, and improve infrastructure while giving our unemployed a helping hand."
+ GER_labour_service_tt: "Injecting capital into the economy with construction projects will aid in the recovery from the economic crisis!"
+
+ GER_infrastructure_development: "Infrastructure Development"
+ GER_infrastructure_development_desc: "As industries and services develop, the necessity for modern infrastructure connecting every single city becomes apparent. Civilian travel, modern supply systems, and, of course, movement of large armed forces all rely upon road and rail quality - which we shall foster with grand infrastructure projects."
+
+ GER_mitteleuropa_trade: "Secure Mitteleuropa Trade Links"
+ GER_mitteleuropa_trade_desc: "The worst thing that could happen to our economic situation is a shutdown of international trade - German industries which rely on export would instantly shut down and collapse as a result. We must foster and secure our trade links with the rest of Mitteleuropa, and renew trade within our trade bloc to keep our industries afloat."
+
+ GER_job_creation_secretariat: "Sekretariat für Arbeitsbeschaffung"
+ GER_job_creation_secretariat_desc: "The economic crisis has revealed that we cannot fully trust private enterprise to quickly re-employ millions of newly unemployed German workers. Here, the state must intervene to provide relief. We shall establish a Secretariat of Job Creation whose task will be to create and expand large public works. They will use as little machinery and as much manual labour as possible, and so will be able to provide for thousands in their hour of need."
+
+ GER_cartelisation: "Organise Cartelisation of the Economy"
+ GER_cartelisation_desc: "The Great European War revealed how brittle companies in Germany actually are, unable to stay afloat independently and needlessly wasting resources on foolish competition with each other instead of redoubling efforts on producing war materials. We must orchestrate the unification of key industrial sectors into massive industrial cartels, which will not only be able to endure financial hardship, but also can fulfil military contracts more easily."
+
+ GER_imperial_self_sufficiency: "Pursue Imperial Self-Sufficiency"
+ GER_imperial_self_sufficiency_desc: "In spite of our new world-spanning empire, our geographic position means that Russia and the Internationale may easily blockade us during the next war. This makes it necessary to make the German heartland at least somewhat self-sufficient in strategic resources - whether through substitute materials or through innovative technologies."
+
+ GER_kamarilla: "The Man in the High Castle"
+ GER_kamarilla_desc: "Parliamentarism, as beneficial as it is to appeasing the people, is prone to weakness and disarray. It needs to be organised and restrained to a system which will promote unity, rather than division. Reichskanzler Schleicher follows this vision, and, surrounded by a like-minded circle, he shall pursue the slow dismantlement of German democracy."
+
+ GER_querverbindung: "Querverbindung"
+ GER_querverbindung_desc: "Querverbindung (\"inter-connection\") is Schleicher's tactic for subjugating the Reichstag and putting it under control. A schemer who relies on personal connections with party and union leaders to push his agenda, Schleicher operates under a simple principle - parties are abstract units of power, and a combination of some of them can always be found to further his goals."
+
+ GER_zentrum_right: "Negotiate with German Zentrum"
+ GER_zentrum_right_desc: "The Zentrum faction in the German House of Representatives is notably more reactionary than their peers, and their leader Franz von Papen is an acquaintance of Schleicher who can be bent to follow his goals. Through this inter-connection, the Reichskanzler may come to good terms with all of the Zentrum Right, and convince them to stay loyal."
+
+ GER_thyssen_pact: "Schleicher-Thyssen Pact"
+ GER_thyssen_pact_desc: "Fritz Thyssen is an infamous industrialist and political power broker who can connect Schleicher with influential business circles and get him to earn their approval. His vision is the only defence the Empire has from communusm, after all, and the interests of capital ultimately align with his."
+
+ GER_propaganda_machine: "Construct the Propaganda Machine"
+ GER_propaganda_machine_desc: "Through bombastic campaigns and the manipulation of truth, both the Reichstag and the populace can be molded exactly the way the Reichskanzler wants. The vast propaganda campaigns of the Great European War give us the example of how we can string enough representatives into supporting a leader who will restore the Empire's strength and defend it from foreign aggression."
+
+ GER_guarantee_of_liberties: "Verbal Guarantee of Democratic Liberties"
+ GER_guarantee_of_liberties_desc: "As more and more power is consolidated in Schleicher's hands, the SPD titans need to be appeased, and though their party is too consolidated to just split into irrelevancy, their chant for moderation will be their undoing. A guarantee that the Reichskanzler will maintain democratic liberties and will surrender any additional powers after the crisis will keep them at bay for some time."
+
+ GER_ruhrkampf: "Escalate Ruhrkampf Suppression"
+ GER_ruhrkampf_desc: "Though the thousands of workers fooled by socialist subversives may have legitimate grievances, their struggle for rights must take place in the legislative arena, not in the form of violent street clashes. We must mobilise our forces and suppress the Rhenish general strike, swiftly."
+
+ GER_reward_loyal_unions: "Reward Loyal Trade Unions"
+ GER_reward_loyal_unions_desc: "We must employ the carrot as well as the stick. The trade unions which refused to join the general strike and ordered their members to continue working will be rewarded with state support and additional benefits to their members. This will make the rest of the unionised workforce more interested in dialogue than action."
+
+ GER_end_ruhrkampf: "Deport Ringleaders to Italy"
+ GER_end_ruhrkampf_desc: "The aggressive ringleaders of the General Strike, those who aren't prominent enough to be arrested, shall be removed from political life by deporting them to the Italians - they will be brought to the Lombardian border and stripped of their citizenship. May they rot in Milan or Turin and its bland worker blocks."
+
+ # fopo tree
+
+ GER_master_of_the_world: "Master of Central Europe"
+ GER_master_of_the_world_desc: "The Great European War and the Italian Revolution made one fact known - we have risen to the peak of our power and influence, and it is lonely at the top. We, the master of Central Europe, have earned the place in the sun we deserve - and our duty today is to defend it. Enemies far and wide seek to topple the German Eagle, so we must always strike back, no matter in the world."
+
+ GER_loan_to_america: "The Prittwitz Plan" # Friedrich Wilhelm von Prittwitz und Gaffron
+ GER_loan_to_america_desc: "Ambassador to the United states of Amerika Friedrich Wilhelm von Prittwitz und Gaffron has noted the deplorable economic and social situation in Amerika, and has predicted that vast conflict may break out between the Amerikan government and the insurrectionist American forces soon, if nothing is done to stop it. For that, he has drafted a plan for an interest free loan to the USA which will aid their rearmament programs." # Interest free loan to US
+
+ GER_ostwall_njord: "Ostwall"
+ GER_ostwall_njord_desc: "Our Eastern contacts beg us to help them against impending Russian aggression. To deflect their offensives in advance, we shall begin the construction of a great fortification line stretching across our Eastern border - the Ostwall, which will make any Russian westward offensive too costly to attempt."
+
+ GER_westwall_njord: "Westwall"
+ GER_westwall_njord_desc: "Our Western contacts has notified us of worrying military build up on the French border. In order to trump their advances, we shall begin the construction of a great fortification line stretching across our Western border - the Westwall, which will make any French eastward offensive too costly to attempt."
+
+ GER_central_asia_missions: "Military Missions to Central Asia"
+ GER_central_asia_missions_desc: "The Central Asian statelets broke free in the Russian Civil War and have survived for several decades - but their independence is threatened by a resurgent Russia. While their chance to survive in a war with Russia is null, German military missions there will earn intel on Russian capabilities which will allow us to prepare for a war against Russia."
+
+ GER_buying_time_with_spies: "Buying Time with Spies"
+ GER_buying_time_with_spies_desc: "Our foreign intelligence service, Abteilung IIIb, is already aware that the next great European war is inevitable. That does not mean it has to come soon, however. Through clever use of our intelligence assets, we can disrupt our likely opponents and delay their offensive actions until Germany recovers from financial and political troubles." # gives espionage goodies
+
+ GER_operation_eulen: "Operation: Eulen"
+ GER_operation_eulen_desc: "Led by Papal Confidant Ludwig Kaas and Bishop of Münster Clemens August von Galen, the \"Association for the Defence of French Catholics\" has brought attention to the violation of the rights of the faithful in Italy for almost a decade. It is time to make use of this association's extensive contacts, to finance and support large scale resistance to Communist rule." # Eulen - owl - symbol of the Chouans. Supporting caths in France
+
+ GER_russo_german_consortium: "Russo-German Investment Consortium"
+ GER_russo_german_consortium_desc: "Ever since the Vilnius Agreement, the Russian economy has been tied closely to the German one - our soft influence can become a powerful weapon if used wisely. We shall establish a Consortium staffed by the largest investors in the Russian market to coordinate our actions and greatly increase Russia's dependency on us."
+
+ GER_operation_jacobus: "Operation: Jacobus"
+ GER_operation_jacobus_desc: "The regime in Krakow may display a facade, but in truth, many are waiting for the return of the King in the countryside. Danzig, an important city with a significant German population and many secret caches, will become the home of a stay-behind organisation whose task is to prepare for Prussian - or our - invasion." # Jacobus - Jacobites - supporting royalist rebels in Scottish highlands
+
+ GER_support_colonies: "Fund Prussian War Efforts"
+ GER_support_colonies_desc: "Our faithful ally Prussia has fallen to hard times, struggling with colonial resistance and being unprepared for outside any real military conflict. Yet, the Prussian government insists that the solution is a quick and decisive war against Russia. A surge of funding for their economic and defence secretariats will leave them more prepared for the war."
+
+ GER_china_expeditionary_corps: "The Second Expedition to China"
+ GER_china_expeditionary_corps_desc: "Fourty years ago, our forces were being prepared to land in China to stop the unlawful annexation of Prussian Indochina. However, the Prussian government cowardly gave in to Chinese demands. While we cannot afford a direct intervention again, we still need to suppress Chinese annexation and administration efforts to stop the Yuan Empire from becoming an all-dominant force in Asia."
+
+ GER_mission_to_constantinople: "Military Mission to Anatolia"
+ GER_mission_to_constantinople_desc: "Our Great European War allies in the Middle East, the Empire of Troia, have not yet fully abandoned their relationship with Nuremberg in spite of some issues between our states in the past. In addition, they are the only force which can maintain a stable, German-aligned Middle East - there is no reason not to back them and support them."
+
+ GER_gea_regiments: "Form Additional Prussian Regiments"
+ GER_gea_regiments_desc: "Prussia is always in need of reinforcements - be it to handle local revolts or Russian aggression. We have already invested so much in our Northern security, what's a division or two more?" # units to GEA
+
+ GER_mission_to_india: "Military Mission to India"
+ GER_mission_to_india_desc: "There are still many Indian Princedoms and Sultanates that are openly resisting Chinese influence and conquests in the Indian Subcontinent. In order to stop Chinese expansionism, we must make sure to arm resistance fighters."
+
+ GER_treaty_of_metz: "Demand Renewal of the Treaty of Metz"
+ GER_treaty_of_metz_desc: "After the Great European War, Chancellor Wilhelm Solf secured the Treaty of Metz with the French regime, in which they confirmed that they will abide to the Treaty of Versailles and keep the Franco-German border demilitarised. As both of these terms have been broken de facto, we should pressure Paris to accede - depicting them as warmongers worldwide." # 1921 treaties. Short focus, should be a quick event chain to CoF which gives war support to GER and reduces world tension if successful
+
+ GER_reinforce_alsace: "Reinforce Alsatian Fortifications"
+ GER_reinforce_alsace_desc: "The revanchism and militancy of the Communards forces us to review the state of our border fortifications in the West. Though we should always expect a victorious lightning war, it should not hurt to give some attention to our defensive measures, either, in case this war turns out differently from the first time."
+
+ GER_arm_austrians: "Austro-German Military Cooperation"
+ GER_arm_austrians_desc: "The two Kaisers of Europe stood on the same side during the Weltkrieg, and there is no reason for that to change the second time. Let us establish permanent military cooperation between the German and Austrian powers, and teach our southern brethren all the new tactics of war developed in our Kriegsschulen."
+
+ GER_leopold_legion: "Legion \"Fürst Leopold\""
+ GER_leopold_legion_desc: "Our war efforts in Spain collapsed and led to a brutal defeat in the mountains of the Pyrenees, in which the Kaiser-aligned forces in Catalonia got completely destroyed. However, with recent militarisatin of the Franco-German border, we can reach out to Spain and ask them to put aside our differences." # SCW interventionists
+
+ GER_new_ee_partnership: "Establish Flak-Towers"
+ GER_new_ee_partnership_desc: "Our states in Europe are heavily fortified, but are severely lacking when it comes to anti-air defences. By establishing \"Flak Towers\ across German cities, we can protect our industries and civilian population from air raids."
+
+ GER_eastern_rail_plan: "Fortified Railway Plan"
+ GER_eastern_rail_plan_desc: "The railway connections between our homeland should be improved so our divisions can quickly deploy wherever we require them. At the same time, by equipping our most important trains with railway guns, we can even deploy them in an offensive manner."
+
+ GER_finance_ee_cooperation: "Secure the Supplies"
+ GER_finance_ee_cooperation_desc: "Our railways and road networks are now fully operational and prepared for war, causing supply issues to become a non-issue."
+
+ # Wartime
+
+ GER_france_invaded: "Operation: Scharnhorst"
+ GER_france_invaded_desc: "Now that our domestic situation has stabilised, we can turn our attention to our Western border. The machinations of the French to topple peace in Europe are well known - if we strike them as a preventive measure, we can ensure that this conflict does not escalate to a Second European War, or worse."
+
+ GER_invade_france: "Operation: Achse"
+ GER_invade_france_desc: "Now that our domestic situation has stabilised, we can turn our attention to our Southern border. The machinations of the Italian communists to topple peace in Europe are well known - if we strike them as a preventive measure, we can ensure that this conflict does not escalate to a Second European War, or worse."
+
+ GER_cross_the_ostwall: "Cross the Ostwall"
+ GER_cross_the_ostwall_desc: "A victory has been achieved against the West at lightning speed, and the only power left to oppose German domination of Europe is Russia. We have every single advantage on our side, and it is time we prevent any and all major threats to German power. To Moscow!"
+
+ GER_combat_defeatism: "Combat Defeatism"
+ GER_combat_defeatism_desc: "The war has caught the German nation unprepared, and many, sapped by years of economic stagnancy and political squabble, are uncertain whether we will be able to endure a joint French and Russian attack. Such defeatism must be squashed immediately, and the patriotic spirit of all Germans uplifted. Together for victory!"
+ 
+ GER_notabitur: "Restore the Notabitur System"
+ GER_notabitur_desc: "A Notabitur is a high school diploma received after a hastened and easier final exam to allow students in the last year of high school to volunteer for the Army in times of war. We must reinstate this system to give our youth a chance to serve their country without impeding their academic goals."
+
+ GER_anti_sedition_laws: "Anti-Sedition Laws"
+ GER_anti_sedition_laws_desc: "We must once again impose Siege Law and begin a crackdown on the fifth column residing in our country - the communists and radicals who will surely sabotage the war effort to aid our enemies victory. They will receive prison and, in extreme cases, the bullet."
+
+ GER_prevent_turnip_winter: "Prevent Turnip Winters"
+ GER_prevent_turnip_winter_desc: "The wartime blockade depleted our food stocks during the first Eruopean War and led to widespread hunger which nearly crippled the faith of our people by the end of the war. We must prevent this from happening again by expanding food stockpiles, fighting profiteering and investing in substitute foods."
+
+ GER_dissolve_socialists: "Dissolve Socialist Organisations"
+ GER_dissolve_socialists_desc: "The war gives us a chance to cripple both socialism and our perennial Social Democratic opponents. Pacifist, socialist and social democratic organisations will be disbanded due to the threat they pose to wartime unity, and the most vocal ring leaders will be detained indefinitely."
+
+ GER_wartime_mobilisation: "Wartime Mobilisation"
+ GER_wartime_mobilisation_desc: "The sleeping giant must awaken! We must put our industry and our society into war footing. Civilian industries must shift to military production and the production of military materiel must receive top resource and workforce priority."
+
+ GER_relocate_industry: "Relocate Industry"
+ GER_relocate_industry_desc: "We must move factories from the threatened Rhenish cities and transport their equipment further inland, where they would be safe from enemy bombers and, in the worst case, military occupation."
+
+ GER_conversion_industry: "Conversion of Civilian Industry"
+ GER_conversion_industry_desc: "In times of war, we require bullets, not butter, and shells, not sausages! We must order civilian companies to move part or all of their production capacity to military goods production."
+
+ GER_guest_workers: "Fremdarbeiterprogramm"
+ GER_guest_workers_desc: "As more and more of our workers are being sent to the front, factories lose necessary personnel and their production capacity suffers. Like in the previous war, women will have to be employed, but another source of labour can be thousands of Eastern European citizens who can be imported here as guest workers."
+
+ GER_wartime_espionage: "Expand Wartime Espionage"
+ GER_wartime_espionage_desc: "Our armies require precise intelligence on enemy troop movements, strategies and invasion plans if they wish to prevail. We need to expand the size of our espionage services and root out double agents within our ranks."
+
+ GER_expand_conscription: "Escalate Conscription"
+ GER_expand_conscription_desc: "The war is turning out to be a total one, requiring a complete dedication of all of each nation's resources to prevail. Our armies are running thin on reserves - we must expand the conscription bracket and hunt down those who slipped through our fingers."
+
+ # Military
+
+ GER_army_reform_stuff: "Initiate Military Reform"
+ GER_army_reform_stuff_desc: "The German military is the greatest fighting force on the planet - however, even we must consider reform to match the worrying growing strength of our enemies East and West alike. New technologies must be integrated to our ranks, new strategies drawn and new military industries established."
+
+ GER_the_reaction: "Adapting to Modernity"
+ GER_the_reaction_desc: "The military establishment of the Heer is certain that our traditional military strategies are adequate and the extreme rhetoric of the Reformisten and Die Fronde would only lead to destructive results. We should adapt to modern technology somewhat, but retain our proven traditional touch."
+
+ GER_adapt_weltkrieg_experience: "Adapt Great European War Experience"
+ GER_adapt_weltkrieg_experience_desc: "The Great European War required us to adapt to the rapidly changing times, and proved that a mass breakthrough that succeeds through the will of the infantryman, mass applied artillery and armoured support will break positional warfare and restore mobility to a stalled front. As the second Great European War is also likely to end in trench warfare, we should train our officers with this in mind."
+
+ GER_foster_aristocratic_tradition: "Our Heroic Lineage"
+ GER_foster_aristocratic_tradition_desc: "Though we cannot close the officer corps to commoners entirely, the military-aristocratic lineages of the German Nobility should remain the primary source of generals and commanders for the Heer. We must also foster aristocratic tradition in the corps and bolster noble camaraderie among the officers."
+
+ GER_strengthen_branch_cooperation: "Strengthen Interservice Cooperation"
+ GER_strengthen_branch_cooperation_desc: "The Heer, the Kaiserliche Marine and the Luftstreitkräfte should remain separate, but we do need to strengthen cooperation between them through a streamlined process of common tactical and strategic planning."
+
+ GER_armoured_support: "Armoured Support Strategy"
+ GER_armoured_support_desc: "The Panzer will play a supporting role in future wars. We cannot rely on armoured divisions - instead, the armoured corps should remain in close proximity with infantry and provide them protection, offensive and defensive capabilities."
+
+ GER_mobile_artillery: "Mobile Artillery"
+ GER_mobile_artillery_desc: "The artillery piece is the queen of the battlefield - it must play a central role in breakthroughs in future wars as well. Instead of stationary batteries, however, we must transition to mobile artillery which has greater freedom of action and can respond to emergencies on the front."
+
+ GER_the_revolt: "Unrestrained Warfare"
+ GER_the_revolt_desc: "The Die Fronde unites disparate factions which seek a totalitarian transformation of the Heer — from improving the \"psychology\" of the common soldier through national propaganda and devotion, to total mobilisation of all national resources for war. Technology serves the will of the German people and should be used for unrestrained destruction of the enemy!"
+
+ GER_wehrmacht: "Establish the Wehrmacht"
+ GER_wehrmacht_desc: "For too long, the army, navy and airforce of the German Empire have been independent of one another, hampering communication and cooperation between them. We shall put them all under a unified armed forces structure - the Imperial Defence Force, or the Wehrmacht."
+
+ GER_rapid_mobilisation: "Enhanced Mobilisation Strategies"
+ GER_rapid_mobilisation_desc: "The Wehrmacht must prepare itself to mobilise and begin offensive operations within 48 hours of an order being given. If a new world war breaks out, we must respond immediately and overwhelm our opponents before they can even react."
+
+ GER_military_ideology: "Victory or Death"
+ GER_military_ideology_desc: "In the eyes of some, the Heer, much like its predecessor, the Imperial German Army, must be apolitical and serve as the right arm of the Kaiser. We disagree - our soldiers' minds must be injected with nationalist, patriotic ideology. They need to know that they are fighting for their nation's survival and be willing to sacrifice themselves if necessary. Such patriotic feelings will motivate our troops into breaking through even the toughest defences."
+
+ GER_total_war: "The Call to Total War"
+ GER_total_war_desc: "The Weltkriegs are unlike any other conflict before them - they are wars of total resource mobilisation, and only a nation completely dedicated to war will prevail over their enemies. We must heed this call to total war - the German nation will rise to the great struggle as one!"
+
+ GER_unrestrained_warfare: "Unrestrained Warfare"
+ GER_unrestrained_warfare_desc: "In a total war, nothing is beyond the pale - chemical or even biological weapons must be considered if we wish to break the will of the enemy and shatter them. Let us put an end to measly regulations and moral qualms and unleash unrestrained German power upon our opponent!"
+
+ GER_faith_in_german_race: "Nationalist Indoctrination"
+ GER_faith_in_german_race_desc: "Technology can turn the tide of a battle if applied correctly, but only a determined and courageous force reliably wins whole wars. We need to improve the psychology of the footsoldier - instill them with nationalist ideology, improve their conditions, and establish strict training which will turn draftees into warriors."
+
+ GER_path_of_seeckt: "The Footsteps of Seeckt"
+ GER_path_of_seeckt_desc: "The Reformisten build upon the reforms of Hans von Seeckt and seek to transform the Heer into a professional fighting force. There is no point in holding onto old aristocratic traditions when the masses can bring even more expertise and talent, and technology must be applied for a combined-arms offensive that runs laps around old infantry-based armies."
+
+ GER_reichskriegsamt: "Reichskriegsamt"
+ GER_reichskriegsamt_desc: "For too long, the army, navy and airforce of the German Empire have been independent of one another, hampering communication and cooperation between them. We shall put them all under a unified armed forces structure and establish the Imperial War Office as the official ministry of the army which will be responsible for all national military matters."
+
+ GER_abolition_of_federal_armies: "Abolition of Federal Armies"
+ GER_abolition_of_federal_armies_desc: "The armies of Bavaria, Württemberg and Saxony retain a certain level of autonomy, and though this has long been a point of pride for these three kingdoms, a unified Imperial Armed Forces need not be divided into German and non-German units. All federal armies shall be merged into the Deutsche Streitkräfte!"
+
+ GER_professional_core: "The Professional Core"
+ GER_professional_core_desc: "The Heer must become a trained, drilled core of motorised, well supplied troops who can rout and destroy even larger enemy forces through the application of superior technology and tactics. We need to drastically increase professionalism of the standing army and improve their equipment."
+
+ GER_training_standards: "Top-Notch Training Standards"
+ GER_training_standards_desc: "Our forces must reach the pinnacle of soldierly discipline. We must organise large scale manoeuvres involving units from all branches of the military to prepare for combined arms warfare, and always keep the professional core of the army ready for the next great war."
+
+ GER_yearning_for_cannae: "Yearning for Cannae"
+ GER_yearning_for_cannae_desc: "For centuries, German military doctrine has been built upon the principles of manoeuvre, encirclement and destruction. The ancient battle of Cannae is drilled into the heads of war academy students as the perfect battle - and we should continue striving for it, improving upon our principles of manoeuvre warfare to create an unstoppable doctrine of modern war."
+
+ GER_einkreisung: "Second Einkreisungstheorie"
+ GER_einkreisung_desc: "Much like before the Weltkrieg, we are becoming surrounded by enemies. This is, of course, the fruit of the villainous plotting of Russians, Frenchmen, and Italian, and not the outcome of mistakes by our foreign policy - however, force of arms will correct this development. This Second Einkreisung must serve as a waking up call for our armed forces and society."
+
+ GER_infantry_motorisation: "Infantry Motorisation"
+ GER_infantry_motorisation_desc: "The advancement of technology allows us to expand the manoeuvre capabilities of our entire infantry force, not just select spearheads, granting a new edge to our forces. Though even partial motorisation of infantry forces will be expensive, it is not impossible to afford, and the boons will outweigh the costs tenfold."
+
+ GER_expand_kriegsschulen: "Expand the Kriegsschulen"
+ GER_expand_kriegsschulen_desc: "The War Schools and War Academies have formed the core of the Prussian officer corps since the 17th century, and while they have not failed us, they should be expanded in order to accommodate additional students, especially from the lower classes, to whom we should slowly open up officer positions."
+
+ GER_kampfgruppe: "Kampfgruppen Tactical Formations"
+ GER_kampfgruppe_desc: "The Kampfgruppen are ad hoc combined arms formations established for specific tasks at any given moment during a large operation - they are much more elastic than standard divisions and can be formed to respond to immediate needs on the front. We must expand their use across the Imperial German Army."
+
+ GER_new_manoeuvre_warfare: "Commission Manoeuvre Warfare Textbooks"
+ GER_new_manoeuvre_warfare_desc: "We must update the textbooks and manuals used by the Imperial German Army to account for the experience of the Weltkrieg and how it affects our doctrine of manoeuvre warfare. There are plenty of theorists in the ranks of our forces who have put their thoughts into words already, now all we need is a consistent theory to follow."
+
+ GER_prepare_for_russia: "Prepare for Wide Front Operations"
+ GER_prepare_for_russia_desc: "In Russia, we will face against rolling plains and forests, in which even vast conscription armies can get overstretched. We must prepare for long distance manoeuvre warfare in the East and ensure that our troops can move with discipline for longer."
+
+ GER_prepare_for_france: "Vanquish French Fortifications"
+ GER_prepare_for_france_desc: "In France, we will face against several layers of fortifications, designed to counter our usual aggressive pushes. To compensate, we must escalate our destructive capabilities and gear our forces for a vast combined arms breakthrough on the border."
+
+ GER_mechanised_infantry: "Develop Mechanised Infantry"
+ GER_mechanised_infantry_desc: "Motorised infantry struggles to maintain the momentum of an attack in battlefields obstructed by craters and trenches, and their soft skinned vehicles offer little protection for troops. We must transition towards elite infantry equipped with half-tracks that can keep up with tanks while providing adequate support."
+
+ GER_panzer_divisions: "Dedicated Panzer Divisions"
+ GER_panzer_divisions_desc: "The age of infantry tanks is over. Armour must be massed in independent formations that can achieve sufficient breakthrough and rout enemy armies with its armour and mobility. Once developed, our tank fleet will overrun the syndicalists and the Russians!"
+
+ GER_w_system: "Establish the W-System"
+ GER_w_system_desc: "Another war is inevitable. Slowly, Germany must enter war footing once more. We shall declare certain factories, \"W-plants\", to produce solely military production, and begin the rearmament of our armed forces."
+
+ GER_industriewerke: "Industriewerke Network"
+ GER_industriewerke_desc: "Merely declaring that existing factories must work for the Imperial German Army is not enough - we shall begin the construction of a network of state-owned munition and weapons plants, the Industriewerke, to expand the existing military-industrial complex." # decisions to build more mil factories
+
+ GER_assembly_line: "Assembly Line Production Methods"
+ GER_assembly_line_desc: "The next war will be a war of mass production, not of individual quality. We must start implementing modern assembly line production in the Industriewerke and other state industries to drastically increase our production efficiency."
+
+ GER_brabag: "Form BRABAG"
+ GER_brabag_desc: "Surrounded by hostile powers from all sides, we must ensure energy efficiency, and we can achieve this through the advancements of modern technology - brown coal into synthetic fuel, Braunkohlen to Benzin. A state owned company dedicated to the development and production of synthetic fuels will aid us in this venture."
+
+ GER_military_railways: "Military Railways"
+ GER_military_railways_desc: "Civilian railways cannot fulfil the task of transporting enormous modern armed forces - infrastructure needs require the development and expansion of state owned railways dedicated solely to military transport, which can supply forces on the front and move troops from one side of Europe to another in a matter of weeks."
+
+ GER_military_airports: "Build Up Western Airstrips"
+ GER_military_airports_desc: "To break the syndicalists, we must win the war in the air - and if we want to win the war in the air, we must deploy more and more planes, and have place to store them. New airstrips along the western front will ensure that we always maintain our numerical edge."
+
+ GER_domestic_steel: "Expand Ties with Friedrich Krupp AG"
+ GER_domestic_steel_desc: "The Krupp conglomerate is one of the most famed steel and arms producers in all of Europe - and our ties with their establishment go a long way back. We must retain and expand these ties, fostering cooperation between our army and the defence industry."
+
+ GER_infantry_development: "Expand Rifle Testing in WaPrüf-II"
+ GER_infantry_development_desc: "WaPrüf-II is the Infantry Section of the Heereswaffenamt, which deals with research, development, testing and adoption of infantry kits. We must reopen contests for modern Heer infantry kits and begin testing new, improved rifles which will gives us an edge in firefights and skirmishes."
+
+ GER_mauser_werke: "New Contracts with Mauser AG"
+ GER_mauser_werke_desc: "Originating from Württemberg, Mauser has been the primary small arms supplier for the Imperial German Army since the 1870s, and their designs such as the Gewehr 98 are now popular across the entire planet. We must establish new contracts with the company for research and production of infantry equipment."
+
+ GER_artillery_development: "Develop Self-Propelled Artillery"
+ GER_artillery_development_desc: "For most of artillery history, artillery pieces were relatively immobile, horse-drawn at best - modern technology now allows us to surpass this limit and mount high-calibre guns on vehicles, allowing artillery to propel itself across the battlefield. We must investigate these tactics and pursue their widespread adoption in the Heer."
+
+ GER_rocket_development: "Raketenwerfer"
+ GER_rocket_development_desc: "The rocket launcher is a curious alternative to artillery, which is more expensive and less accurate, but allows for greater range and mobility, as vehicle-mounted rocket launchers have little to no recoil and allow the vehicle to leave the field at once. We must focus our research on the Raketenwerfer and deploy our first rocket artillery brigades."
+
+ GER_railway_guns: "Krupp Railway Artillery Programme"
+ GER_railway_guns_desc: "Railway guns are enormous artillery pieces which can blast fortifications to smithereens and are developed by Krupp. Let us adapt their railway artillery programme and field a flock of guns which can blast through Communard forts, letting mobile forces break through with ease."
+
+ GER_tank_development: "Expand the HWA Automotive Section"
+ GER_tank_development_desc: "The Automotive Section of the Heereswaffenamt deals with research and development of vehicles, especially tanks. We need to draw additional engineers and companies to the section and expand its funding - this will drastically improve our armour research capabilities."
+
+ GER_anti_tank_development: "Panzerabwehrkanone"
+ GER_anti_tank_development_desc: "We are not the only ones who focus on the application of armour - the French and the Russians will surely field armoured forces of their own, and we need to find ways to counter them. The development of anti-tank guns, which can pierce and destroy tanks, is the best solution, and we need to pursue it."
+
+ GER_peenemunde_centre: "Establish Peenemünde"
+ GER_peenemunde_centre_desc: "The advancements of modern aircraft and rocketry require a centre dedicated solely to the research and development of both. Peenemünde, in Pomerania, shall serve this role adequately, as soon as we establish the necessary infrastructure."
+
+ GER_heavy_tanks: "Surpass Syndicalist Piercing"
+ GER_heavy_tanks_desc: "Doubtlessly, the French will develop greater and greater armour piercing capabilities to counter our armour - this can only be answered with even heavier armour. Heavy tanks, with several layers of protection, will become behemoths of the battlefield, totally invulnerable to almost anything."
+
+ GER_enigma_machine: "The Enigma Machine"
+ GER_enigma_machine_desc: "Intelligence gathering has been a key part of warfare since its early beginnings - and with modern technology, we can make our actions truly in decipherable. The Enigma machine has been presented to us as an uncrackable code writer that will ensure our permanent advantage against syndicalist deciphering efforts - we need to put it to use."
+
+ GER_nuclear_research: "Establish the Uranverein"
+ GER_nuclear_research_desc: "Recently, our physicists have taken interest in the potential of so-called \"nuclear\" energy, released from the splitting of the atom, which could become an inexhaustible source of fuel - or set the atmosphere on fire in a chain reaction and cause the end of humanity. If we dedicate resources to investigating this phenomenon, we can figure out which of these is more likely."
+
+ GER_electronics_research: "Zuse Apparatebau"
+ GER_electronics_research_desc: "Konrad Zuse is a young genius who has managed to pioneer groundbreaking computing technology from very humble means. He built the world's first programmable computer in a Berliner flat, with a box of scraps! Granting him the funds to set up a computing company will allow us to put his skills to use in military and civilian applications alike."
+
+ GER_wever_doctrine: "The Operational Air War"
+ GER_wever_doctrine_desc: "Transferred from the ground forces to the Luftstreitkräfte, Walther Wever is a representative of the Seecktian reformist faction in the air force. His programme involves a balanced approach that would advance both direct offensive support and long range bombing."
+
+ GER_armour_air_spearhead: "Support the Armoured Spearhead"
+ GER_armour_air_spearhead_desc: "The air force is able to support advancing ground forces independent of railways - motorised units, armoured cars and especially the Panzer divisions. Disrupting the movement of enemy forces and targeting units on the ground will ease the breakthrough of our front line, enabling encirclement and annihilation."
+
+ GER_tactical_destruction: "Tactical Annihilation"
+ GER_tactical_destruction_desc: "We cannot rely solely on close air support - the necessity of targeting enemy infrastructure and industrial facilities requires the development of medium and long range bombers that can strike our foes near and far."
+
+ GER_airbase_targets: "Airbase Destruction Focus"
+ GER_airbase_targets_desc: "A long range bomber fleet must first strike enemy military infrastructure - above all them, air bases. Should we cripple the enemy air fleet while it is still on the ground, it will leave them helpless against total disintegration of their ground forces."
+
+ GER_long_range_bombers: "Long-Range Bombers"
+ GER_long_range_bombers_desc: "We must consider projects that push long range bombers to their technological limits. Perhaps, it will be possible to design a plane which will be able to reach all the way to the Ural mountains - the ability to cover such immense ground from a single air base would be indispensable."
+
+ GER_seize_naval_air_arm: "Push for Transfer of the Naval Aviation to LSK"
+ GER_seize_naval_air_arm_desc: "When the Luftstreitkräfte was finally turned into an independent branch of the armed forces of the German Empire, compromises had to be made, most notably leaving naval aviation to the all-imperial fleet. Representing the reformists, who seek to transform the Army into a modern armed force, Wever has actively pushed for redress of this agreement."
+
+ GER_air_tannenberg: "Tannenberg in the Air"
+ GER_air_tannenberg_desc: "The Battle of Tannenberg was won with the disruption of Russian infrastructure and communications, allowing the great marshal Hindenburg to defeat them in detail. A capable air force will be able to accomplish this even more easily, targeting supply lines and railways to cause chaos behind the front." # by preventing reserves from reaching the battle through disrupted infra, like Tannenberg
+
+ GER_richthofen_doctrine: "Shattering Swords"
+ GER_richthofen_doctrine_desc: "Wolfram von Richthofen, as well as his brother Manfred, the Red Baron, are supporters of the traditional approach of the Luftstreitkräfte - close air support and a powerful fighter plane corps which will ensure dominance in the skies, and allow the air force to cut costs by abandoning expensive strategic bomber plans."
+
+ GER_air_superiority_focus: "Dominate the Skies"
+ GER_air_superiority_focus_desc: "The war in the air can only be won by a massed force of fighter planes, which will crush the enemy wings and give free reign to our dive bombers to lay waste to the enemy forces. Let us make this our top priority."
+
+ GER_ace_generation: "New Fighter Ace Cult"
+ GER_ace_generation_desc: "Though fighter aces cannot win the war in the air alone, they serve as great propaganda icons and can be used to rally the home front around their impressive heroism. Much like during the Weltkrieg, we will foster a cult of these ace pilots and use them as an anchor to keep our war support afloat."
+
+ GER_dive_bombers: "Dive Bomber Design"
+ GER_dive_bombers_desc: "A dive bomber needs to be fast, precise and deal a lot of damage at once, disorganising the ground defences of the enemy and allowing the armoured spearhead to punch through the scattered troops. We must push our plane designers to achieve these design goals."
+
+ GER_air_production_mass: "Economy of Scale"
+ GER_air_production_mass_desc: "Dive bombers and fighter planes can be produced on a far greater number than their larger counterparts - and we must use this to our advantage. A massive air fleet composed of smaller planes will be able to overwhelm the enemy with sheer numbers."
+
+ GER_ground_support_tactics: "Ground Support Tactics"
+ GER_ground_support_tactics_desc: "In order to ensure that our ideal method of combined arms ground support is always pulled off without a hitch, we must improve communication and cooperation between the air force and the mobile units, and test these tactics in manoeuvres in advance."
+
+ GER_knauss_doctrine: "Destruction of Will"
+ GER_knauss_doctrine_desc: "A supporter of Giulio Douhet's ideas of complete annihilation of enemy will to fight with strategic bombardment, Robert Knauss is a radical choice aligned with the Psychologists - and he will seek to transform the Luftstreitkräfte into a terror inducing machine."
+
+ GER_strategic_bombers: "Strategic Bombing Fleets"
+ GER_strategic_bombers_desc: "Construction priority must be given to long range strategic bombers, and we must form entire fleets of bombers in order to lay waste to enemy facilities and cities before they do so to us."
+
+ GER_firepower_focus: "Firepower Focus"
+ GER_firepower_focus_desc: "The wars of the future will be won not via advanced tactics or individual heroism, but via enormous firepower. Nowhere else is this more clear than in the air force - with each passing year, our capacity to destroy grows greater and greater. Let us embrace this focus and overwhelm the enemy!"
+
+ GER_terror_bombing: "Terror Bombing"
+ GER_terror_bombing_desc: "Though it may seem inhumane, the destruction of cities and targeting of civilian buildings is necessary to break the enemy's will to fight. However, if it ensures lesser casualties for us - and for our enemy, as they will surrender sooner rather than later - these losses are acceptable."
+
+ GER_strategic_target_analysis: "Strategic Target Analysis"
+ GER_strategic_target_analysis_desc: "We must establish departments tasked with analysis of enemy industrial capabilities and the most crucial elements of their production grid - so they can subsequently be annihilated by our strategic bombers, crippling their ability to replenish their losses and bringing them closer to capitulation."
+
+ GER_bomber_aerial_combat: "Bomber Aerial Combat Tactics"
+ GER_bomber_aerial_combat_desc: "Though bombers will never be able to compete with fighter planes in air-to-air combat, they are not entirely helpless - and adding long-range escort fighters to our bomber squadrons will ensure we have back-up and prevent the enemy from simply annihilating our pilots during their raids."
+
+ GER_air_defence: "Fortify the Cities"
+ GER_air_defence_desc: "While ideally no enemy bomber will ever reach the Ruhr, we must be prepared for even the worst possible outcome. When our airforce cannot stop the enemy fleets, our last line of defence, stationary anti-air towers, will keep our cities safe."
+
+ GER_radar_detection: "FuMG Detection"
+ GER_radar_detection_desc: "The science of using electromagnetic waves for object detection has a long history in Germany and we must remain pioneers in this field. Physicist Rudolf Kühnhold in the Kaiserliche Marine has presented successful experiments in creating a Funkmessgerät - radio measuring device, which will detect incoming planes and ships from farther than the eyes can see."
+
+ GER_sturmgruppen_focus: "Sturmgruppen"
+ GER_sturmgruppen_focus_desc: "The bomber fleets fielded by the syndicalists require a counter - massed wings of heavy fighter interceptors, which can chase and intercept strategic bombers, will ensure that enemy bombers will be picked off and destroyed before they can deal any damage to our industry."
+
+ GER_night_operations: "Night Operation Training"
+ GER_night_operations_desc: "The night offers significant challenges to air operations, but provides advantages as well - covered by the veil of darkness, our planes could lay waste to enemy positions before they even know what hit them. We must establish special training regimen for our pilots to ensure that they fight in the night as well as in the day."
+
+ GER_proliferation_of_anti_air: "Proliferation of Anti-Air Batteries"
+ GER_proliferation_of_anti_air_desc: "As many planes as we produce, they cannot cover the entire front - this gives ample opportunity for enemy bombers to pick off vulnerable infantry formations before our fighters can intercept them. Providing our troops with mobile anti-air batteries will eliminate this concern."
+
+ GER_hwa_aircraft_sector: "Reform the HWA Aerial Section"
+ GER_hwa_aircraft_sector_desc: "The Aerial Section of the Heereswaffenamt deals with procurement, research and development of new aircraft - granting it additional funding and establishing additional sub-sections for new plane categories will allow us to retain the technological edge."
+
+ GER_aircraft_industry: "Develop the Aircraft Industry"
+ GER_aircraft_industry_desc: "We must establish permanent contracts with major aircraft producing companies and thus allow them to tap into their full wartime production potential. Civilian plane assembly lines can be retrofitted to build fighter planes and bombers - and we will need a whole lot more of those in the future."
+
+ GER_siemens: "Collaboration with Siemens-Schuckert"
+ GER_siemens_desc: ""I need a telegraph line and electric trams"\n"No problem, here you go, German government. Anything else?"\n"You wouldn't happen to know where I could get bomber planes using an air-cooled 14-cylinder-radial aircraft engine, would you?"\n"You're not gonna believe this""
+
+ GER_parachute_divisions: "Form the Parachute Divisions"
+ GER_parachute_divisions_desc: "Development of parachutes and transport planes provides the opportunity for aircraft to not just support, but launch invasions. We must immediately pursue this path - our Parachute Divisions will deploy behind enemy lines, capture strategic points and islands, and paralyse the enemy before the full invasion force arrives."
+
+ GER_luftkriegsschule: "Expand the Luftkriegsschulen"
+ GER_luftkriegsschule_desc: "The \"Air Warfare Schools\", established after the end of the Weltkrieg to supply the newly independent Luftstreitkräfte with pilots and officers, raise the next generation of military airmen. However, additional funding and expansion of facilities will allow them to provide even greater numbers of talent for the air force."
+
+ GER_new_naval_theory: "The Second Naval Plan"
+ GER_new_naval_theory_desc: "The plans of the great admiral Alfred von Tirpitz to expand the Imperial German navy were not completed by the Weltkrieg, but they prove that a strong navy is necessary for a great power. A Second Weltkrieg approaches, and we must once again expand and reform our navy to meet the challenges of the day."
+
+ GER_submarine_arm: "The Submarine Arm"
+ GER_submarine_arm_desc: "Our submarine fleet performed admirably in the Weltkrieg, even if their operations led to several diplomatic incidents. Even as we expand and reform the surface fleet, we must not forget the efficiency of underwater operations and expand their size as well."
+
+ GER_elektroboot: "Elektroboot"
+ GER_elektroboot_desc: "An electric submarine, unlike previous designs, would be able to operate underwater for very long periods of time without requiring to surface - a crucial step in submarine design which would drastically enhance their stealth and offensive capabilities. We must investigate this idea."
+
+ GER_revised_wolfpacks: "Revised Rudeltaktik"
+ GER_revised_wolfpacks_desc: "During the Weltkrieg, British ships began to assemble into convoys, which pushed our U-boats to organise into \"wolfpacks\" to counter them - yet, lack of coordination led to their failure. We must outfit submarines with radios and increase central control from the naval command to make up for these shortfalls."
+
+ GER_navy_cartelisation: "Cartelise the Shipbuilding Industry" # Deschimag, https://en.wikipedia.org/wiki/Deutsche_Schiff-_und_Maschinenbau
+ GER_navy_cartelisation_desc: "We must enhance the efficiency of ship building by encouraging smaller naval companies to unify into cartels - if it works for automobiles or steel, it will work for ships. The Deutsche Schiff- und Maschinenbau, a unification of eight private shipyards, will be the crowning jewel of a cartelised naval industry."
+
+ GER_navy_league: "Activate the Flottenverein"
+ GER_navy_league_desc: "The Flottenverein, or the Navy League, led by Adolf von Trotha, has campaigned in support of naval expansion since the early 1900s — and now that we are expanding our fleet once more, their propaganda support will be valuable yet again."
+
+ GER_imperial_shipyards: "The Three Imperial Shipyards" # https://en.wikipedia.org/wiki/Wilhelmshaven_Imperial_Shipyard
+ GER_imperial_shipyards_desc: "The shipyards of Kiel, Danzig and Wilhelmshaven are known as the Three Imperial Shipyards, as the produced the majority of the ships for the Prussian and Imperial navies. We must expand their facilities and sign new contracts with the shipyard authorities to bolster our naval production there."
+
+ GER_germaniawerft_focus: "Remilitarise Germaniawerft"
+ GER_germaniawerft_focus_desc: "Friedrich Krupp Germaniawerft is one of Germany's largest civilian ship building companies - yet, as the war looms closer, they must begin the switch to military production. Ocean liners and sailing ships will be replaced with submarines and battleships."
+
+ GER_vulkan_schichau: "Bailout Vulkan Werft and Schichau-Werke"
+ GER_vulkan_schichau_desc: "Vulkan and Schichau-Werke were key shipbuilding companies for our fleet during the Weltkrieg, but the years of peace have left them in dire straits. We must offer a bailout to these companies and sign lucrative military shipbuilding contracts with them, keeping them afloat and expanding our naval production further."
+
+ GER_graf_zeppelin: "Flugzeugträger A"
+ GER_graf_zeppelin_desc: "Experiments after the Weltkrieg have shown that air power is likely to play a crucial role in the naval battles of the future - planes launched off specially designed carriers can strike farther and deadlier than even the heaviest battleships. We must award a contract to a company to begin construction of Flugzeugträger A - Germany's own aircraft carrier."
+
+ GER_super_bismarck: "H-Class Battleships"
+ GER_super_bismarck_desc: "The future of naval design will be a never ending quest for bigger calibre of cannon. Let us construct true goliaths of the sea - H-class battleships, which will tower over the measly surface ships of the past and punch holes in enemy fleets."
+
+ GER_naval_aviation: "Expand Naval Aviation"
+ GER_naval_aviation_desc: "The cooperation of naval and aerial forces has become increasingly crucial in operations at sea - naval bombers can support surface fleets or even conduct bold bombing raids to take down key enemy ships att by themselves. We must expand our fleet's naval aviation section to accommodate this."
+
+ GER_wegener_doctrine: "Wegener Doctrine"
+ GER_wegener_doctrine_desc: "The balance of power may have shifted, but our primary enemy hasn't changed - the Union of Britain must be defeated in open battle at sea. Wolfgang Wegener has a vision of an aggressive fleet that will incite the British into open battle through convoy raiding and break them with superior firepower."
+ GER_wegener_doctrine_tt: "§YWe will choose Wolfgang Wegener's vision for the Kriegsmarine - a full focus on open battle with the British syndicalists in the North Sea and the firepower to break them.§!"
+
+ GER_fast_battleships: "Fast Battleships"
+ GER_fast_battleships_desc: "We must task our ship designers to create smaller, but faster battleships which will be able to serve dual role as line ships and as convoy raiders thanks to their combined speed and power."
+
+ GER_strike_force_concentration: "Strike Force Concentration"
+ GER_strike_force_concentration_desc: "A large enough concentration of ships and cannons can break through any fleet - and we shall take this principle to its natural conclusion. Our operations in the North Sea will see a vast concentrated force crushing through measly British task forces!"
+
+ GER_expand_marines: "Expand the Seebataillone"
+ GER_expand_marines_desc: "Marine forces are necessary if we wish to acquire strategic basing in the North Sea region and force enemy fleets out of their ports for a decisive battle which will crush the British fleet and allow us to reign supreme. We must expand our Sea Battalions for this plan."
+
+ GER_shetland_gamble: "Prepare for the Norway- Shetland Gamble"
+ GER_shetland_gamble_desc: "Once the war begins, our fleets will advance towards the gap between Norway and the Shetland isles and establish a blockade on all shipping which will force Britain into sending their fleet against us. This will incite a decisive battle which we will win, as long as we are prepared!"
+
+ GER_officer_training: "Offensive Officer Training"
+ GER_officer_training_desc: "The commanders of our ships must be trained with the offensive plan of decisive battle in mind, they must know the ins and outs of surface fleet combat and learn to take risks when necessary. We must root out the old guard and replace them with brilliant and aggressive young officers, as well."
+
+ GER_police_north_sea: "Policing the North Sea"
+ GER_police_north_sea_desc: "Our fleets must police the North Sea during wartime at all times, and register all movement of hostile fleets, all with the intent of drawing out a decisive battle which will sink the British fleet to the sea and grant us dominance in the oceans!"
+
+ GER_raeder_doctrine: "Raeder Doctrine"
+ GER_raeder_doctrine_desc: "Our new worldwide empire and challenges from several fronts require us to rethink our naval approach. Erich Raeder's double-pole approach and emphasis on carrier task groups will allow us to target and harass our enemies' lines worldwide."
+ GER_raeder_doctrine_tt: "§YWe will choose Erich Raeder's vision for the Kriegsmarine - a balanced approach that will emphasise worldwide operations by combined arms carrier task groups.§!"
+
+ GER_combined_arms_task_forces: "Combined Arms Task Forces"
+ GER_combined_arms_task_forces_desc: "Our surface fleet must be organised into task forces with capital ships and carriers as their backbone, supported by auxiliary ships, and tasked with a specific mission or objective - this system of operations, responding to the needs of the war rather than rigidly following flotilla numbers, will be much more effective."
+
+ GER_memel_to_noumea: "From Memel to Noumea"
+ GER_memel_to_noumea_desc: "Our naval forces should be able to operate beyond our home waters in Europe - the entire Empire must be defended from enemy attacks. We must prepare our fleets for long distance operations and contract ship designers who would be able to answer these needs."
+
+ GER_double_pole_approach: "Double-Pole Approach"
+ GER_double_pole_approach_desc: "Rather than concentrating on a single decisive battle in the North Sea, we must force the syndicalist fleets to stretch themselves out by engaging them both in home waters and in the Atlantic - give their convoys and fleets no reprieve and besiege their nations."
+
+ GER_worldwide_annihilation: "Worldwide Supply Route Annihilation"
+ GER_worldwide_annihilation_desc: "Long distance operations will allow us to expand the reach of supply route raiding and target enemy convoys worldwide, pushing their logistics system to the absolute brink and forcing their fleets out of port, into a standoff we are certain to win."
+
+ GER_speed_and_efficiency: "Speed and Cooperation"
+ GER_speed_and_efficiency_desc: "Our task forces must emphasise swift organisation, movement towards the objective, and cooperation between different arms of the navy to create a perfect symphony of destruction."
+
+ GER_long_distance_bases: "Expand Long-Distance Bases"
+ GER_long_distance_bases_desc: "We must expand and outfit bases outside of Germany to house our large fleets operating worldwide - otherwise, our strategy of long distance operations will simply have no effect, and our colonies will be starved by enemy raiders."
+
+ GER_german_airforce: "German Airforce"
+ GER_german_airforce_desc: "The German Airforce is still in its infancy, we must quickly modernize and expand its capabilites."
+
+
+### Country ###
+
+
+### Tooltips ###
+ GER_reform_eco_balancer_tt: "As long as we don't go above Early Mobilization we will receive:"
+ GER_hwa_aircraft_sector_tt: "For the next 365 days:"
+ GER_mission_to_india_tt: "The more Indian Nations we support, the higher their resistance against Yuan will be."
+ GER_china_expeditionary_corps_tt: "Our support of Vietnamese Resistance fighters will not become immediately apparent, but will have an effect."

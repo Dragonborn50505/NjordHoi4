@@ -99,35 +99,6 @@ ideas = {
 			}
 		}
 
-		PRE_army_in_neglect_test_idea = {
-			picture = SPR_disbanded_army
-			modifier = {
-				experience_gain_army_factor = -0.5
-				political_power_gain = 0.1
-				training_time_army_factor = 0.25
-				army_defence_against_major_factor = -0.1
-				army_org_factor = 0.05
-				breakthrough_factor = 0.1
-				army_infantry_attack_factor = 0.1
-				army_infantry_defence_factor = 0.1
-			}
-		}
-
-		PRE_modern_kriegsmarine_test = {
-			picture = NORDIC_navy_democratic
-			modifier = {
-				industrial_capacity_dockyard = 0.05
-				consumer_goods_factor = 0.1
-			}
-			equipment_bonus = {
-				mio_cat_eq_all_cruiser = {
-					build_cost_ic = -0.05
-				}
-				mio_cat_eq_all_destroyer = {
-					build_cost_ic = -0.05
-				}
-			}
-		}
 
 		PRE_pacifist_accord = {
 			picture = SWI_spirit_of_helvetia_defensive_peace
@@ -140,7 +111,6 @@ ideas = {
 		}
 
 		PRE_pacifist_accord_2 = {
-			name = PRE_pacifist_accord
 			picture = SWI_spirit_of_helvetia_defensive_peace
 			modifier = {
 				political_power_cost = 0.05
@@ -183,6 +153,8 @@ ideas = {
 			modifier = {
 				monthly_population = 0.2
 				consumer_goods_factor = 0.05
+				political_power_factor = 0.05
+				war_stability_factor = 0.05
 			}
 		}
 
@@ -259,9 +231,10 @@ ideas = {
 		PRE_expanded_welfare_system = {
 			picture = ARG_social_welfare_fund_ns
 			modifier = {
-				stability_factor = 0.1
+				party_popularity_stability_factor = 0.1
 				consumer_goods_factor = 0.05
 				monthly_population = 0.1
+				research_speed_factor = 0.05
 			}
 		}
 
@@ -308,6 +281,7 @@ ideas = {
 		}
 
 		PRE_university_of_electrical_research_2 = {
+			name = PRE_university_of_electrical_research
 			picture = generic_energy_concern
 			modifier = {
 				factory_energy_consumption = -0.1
@@ -349,7 +323,95 @@ ideas = {
 			}
 		}
 
+		PRE_railway_guns = {
+			picture = SWE_let_fly_all_guns
+			modifier = {
+				railway_gun_bombardment_factor = 0.25
+				fortification_damage = 0.1
+				fortification_collateral_chance = 0.1
+			}
+			equipment_bonus = {
+				railway_gun_equipment = {
+					build_cost_ic = -0.05
+				}
+				super_heavy_railway_gun_equipment = {
+					build_cost_ic = -0.05
+				}
+			}
+		}
 
+		PRE_prussian_welfare_state = {
+			picture = GER_wirtschaftswunder
+			modifier = {
+				monthly_population = 0.4
+				consumer_goods_factor = 0.1
+				political_power_factor = 0.1
+				party_popularity_stability_factor = 0.25
+				war_stability_factor = 0.1
+				research_speed_factor = 0.1
+			}
+		}
+
+		PRE_norwegian_lumber_industry = {
+			picture = INS_cheap_lumber
+			modifier = {
+				global_building_slots = 1
+			}
+			research_bonus = {
+				excavation_tech = 0.1
+			}
+		}
+
+		PRE_air_production_bonus = {
+			picture = man_five_year_plan_air
+			modifier = {
+				production_speed_air_base_factor = 0.25
+			}
+			equipment_bonus = {
+				mio_cat_eq_all_small_plane = {
+					build_cost_ic = -0.05
+				}
+				mio_cat_eq_all_medium_plane = {
+					build_cost_ic = -0.05
+				}
+				mio_cat_eq_all_large_plane = {
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		PRE_prussian_immigration = {
+			picture = generic_immigration
+			modifier = {
+				monthly_population = 0.25
+			}
+		}
+
+		PRE_prussian_influx_of_money = {
+			picture = SPR_relocate_the_gold_reserves
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = PRE
+				trade_cost_for_target_factor = -0.25
+				extra_trade_to_target_factor = 0.25
+			}
+		}
+
+		PRE_prussian_single_market = {
+			picture = SPR_relocate_the_gold_reserves
+			modifier = {
+				consumer_goods_factor = -0.1
+				industrial_capacity_dockyard = 0.1
+				industrial_capacity_factory = 0.1
+			}
+			targeted_modifier = {
+				tag = PRE
+				cic_to_target_factor = 0.05
+				mic_to_target_factor = 0.05
+			}
+		}
 
 		CHI_political_corruption_in_the_administration = {
 			picture = ARG_political_corruption_modifier
@@ -683,7 +745,7 @@ ideas = {
 				training_time_army_factor = 0.35
 				war_support_factor = -0.4
 				production_speed_arms_factory_factor = -0.4
-				conscription = -0.015
+				conscription = -0.01
 				experience_loss_factor = 0.35
 			}
 		}
@@ -1040,6 +1102,1102 @@ ideas = {
 				}
 				mio_cat_eq_all_carrier = {
 					build_cost_ic = -0.05
+				}
+			}
+		}
+
+
+		GER_emergency_workplace_training_programs = {
+			picture = ARG_public_works_investment
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+
+		GER_neue_wirtschaft_1 = {
+			picture = SOV_third_five_year_plan_military
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = -0.1
+			}
+		}
+		GER_neue_wirtschaft_2 = {
+			name = GER_neue_wirtschaft_1
+			picture = SOV_third_five_year_plan_military
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.1
+				line_change_production_efficiency_factor = 0.05
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = -0.05
+			}
+		}
+		GER_neue_wirtschaft_3 = {
+			name = GER_neue_wirtschaft_1
+			picture = SOV_third_five_year_plan_military
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.1
+				line_change_production_efficiency_factor = 0.05
+				production_lack_of_resource_penalty_factor = -0.05
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+		GER_neue_wirtschaft_4 = {
+			name = GER_neue_wirtschaft_1
+			picture = SOV_third_five_year_plan_military
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.15
+				line_change_production_efficiency_factor = 0.1
+				production_lack_of_resource_penalty_factor = -0.1
+				industrial_capacity_factory = 0.15
+			}
+		}
+
+		GER_ersatz_materials = {
+			picture = GER_vereinigte_stahlwerke
+			modifier = {
+				production_lack_of_resource_penalty_factor = -0.2
+				production_oil_factor = 0.25
+				fuel_gain_factor_from_states = 0.25
+				max_fuel_factor = 0.15
+				production_speed_synthetic_refinery_factor = 0.15
+			}
+		}
+
+		GER_reform_eco_balancer = {
+			allowed = {
+				NOT = {
+					has_idea = partial_economic_mobilisation
+					has_idea = war_economy
+					has_idea = tot_economic_mobilisation
+				}
+			}
+			picture = GER_reichswerke
+			modifier = {
+				consumer_goods_factor = -0.3
+				industrial_capacity_factory = -0.1
+				production_speed_infrastructure_factor = 0.25
+				production_speed_industrial_complex_factor = 0.25
+			}
+		}
+
+		GER_reform_eco_2 = {
+			picture = SOV_third_five_year_plan_civilian
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		GER_reform_eco_3 = {
+			name = GER_reform_eco_2
+			picture = SOV_third_five_year_plan_civilian
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = 0.05
+				consumer_goods_factor = -0.1
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+
+		GER_reform_eco_4 = {
+			name = GER_reform_eco_3
+			picture = SOV_third_five_year_plan_civilian
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = 0.05
+				consumer_goods_factor = -0.15
+				production_factory_start_efficiency_factor = 0.1
+				global_building_slots_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+
+		GER_debt_restructuring_idea = {
+			picture = AST_liberty_loans
+			modifier = {
+				political_power_gain = 0.25
+				production_speed_buildings_factor = 0.05
+				consumer_goods_factor = 0.1
+			}
+		}
+
+		GER_adgb_idea = {
+			picture = ger_rebuild_the_nation
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				political_power_factor = 0.05
+			}
+		}
+
+		GER_price_controls_idea = {
+			picture = SIA_redirected_military_funds
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.1
+				industrial_capacity_factory = -0.1
+			}
+		}
+
+		GER_constitutional_deadlock = {
+			picture = EST_democratic_opposition
+			modifier = {
+				war_support_factor = -0.25
+				party_popularity_stability_factor = -0.25
+				political_power_factor = -0.25
+				drift_defence_factor = -0.25
+			}
+		}
+
+		GER_constitutional_deadlock_2 = {
+			name = GER_constitutional_deadlock
+			picture = EST_democratic_opposition
+			modifier = {
+				war_support_factor = -0.15
+				party_popularity_stability_factor = -0.15
+				political_power_factor = -0.15
+				drift_defence_factor = -0.1
+			}
+		}
+
+		GER_constitutional_deadlock_3 = {
+			name = GER_constitutional_deadlock
+			picture = EST_democratic_opposition
+			modifier = {
+				war_support_factor = -0.05
+				political_power_factor = -0.05
+				party_popularity_stability_factor = -0.05
+			}
+		}
+
+		GER_support_of_the_zentrum = {
+			picture = CZE_taticek_of_czechoslovakia
+			modifier = {
+				war_support_factor = 0.05
+				political_power_factor = 0.05
+				recruitable_population_factor = 0.05
+				democratic_drift = 0.01
+			}
+		}
+
+		GER_support_of_the_industrialists = {
+			picture = CZE_vojtech_tuka
+			modifier = {
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.05
+				line_change_production_efficiency_factor = 0.05
+				radical_drift = 0.01
+			}
+		}
+
+		GER_the_propaganda_machine = {
+			picture = SWI_spirit_of_helvetia_aggressive_war
+			modifier = {
+				weekly_casualties_war_support = 0.002
+				recruitable_population_factor = 0.05
+				war_support_factor = 0.05
+				absolutist_drift = 0.03
+				fascism_drift = 0.01
+			}
+		}
+
+		GER_the_ruhrkampf = {
+			picture = SPR_anarchist_society
+			modifier = {
+				communism_drift = 0.05
+				industrial_capacity_factory = -0.15
+				local_resources_factor = -0.15
+				factory_energy_consumption = 0.1
+				energy_gain_factor = -0.15
+			}
+		}
+
+		GER_the_ruhrkampf_2 = {
+			name = GER_the_ruhrkampf
+			picture = SPR_anarchist_society
+			modifier = {
+				communism_drift = 0.03
+				industrial_capacity_factory = -0.1
+				local_resources_factor = -0.1
+				factory_energy_consumption = 0.1
+				energy_gain_factor = -0.1
+			}
+		}
+
+		GER_the_ruhrkampf_3 = {
+			name = GER_the_ruhrkampf
+			picture = SPR_anarchist_society
+			modifier = {
+				communism_drift = 0.01
+				industrial_capacity_factory = -0.05
+				local_resources_factor = -0.05
+				factory_energy_consumption = 0.1
+				energy_gain_factor = -0.05
+			}
+		}
+
+		GER_weltpolitik_start = {
+			picture = soviet_german_friendship
+			modifier = {
+				air_volunteer_cap = 1
+				send_volunteer_size = 1
+				send_volunteers_tension = -1
+			}
+		}
+
+		GER_weltpolitik_2 = {
+			name = GER_weltpolitik_start
+			picture = soviet_german_friendship
+			modifier = {
+				air_volunteer_cap = 1
+				send_volunteer_size = 1
+				send_volunteers_tension = -1
+				experience_gain_army = 0.03
+				experience_gain_navy = 0.03
+				experience_gain_air = 0.03
+			}
+		}
+
+		GER_weltpolitik_3 = {
+			name = GER_weltpolitik_start
+			picture = soviet_german_friendship
+			modifier = {
+				air_volunteer_cap = 1
+				send_volunteer_size = 1
+				send_volunteers_tension = -1
+				experience_gain_army = 0.06
+				experience_gain_navy = 0.06
+				experience_gain_air = 0.06
+			}
+		}
+
+		GER_weltpolitik_4 = {
+			name = GER_weltpolitik_start
+			picture = soviet_german_friendship
+			modifier = {
+				planning_speed = 0.15
+				max_command_power_mult = 0.1
+				air_volunteer_cap = 2
+				send_volunteer_size = 2
+				send_volunteers_tension = -1
+				experience_gain_army = 0.09
+				experience_gain_navy = 0.09
+				experience_gain_air = 0.09
+			}
+		}
+
+		GER_weltpolitik_5 = {
+			name = GER_weltpolitik_start
+			picture = soviet_german_friendship
+			modifier = {
+				max_planning_factor = 0.05
+				planning_speed = 0.15
+				max_command_power = 15
+				command_power_gain_mult = 0.1
+				max_command_power_mult = 0.15
+				air_volunteer_cap = 2
+				send_volunteer_size = 2
+				send_volunteers_tension = -1
+				experience_gain_army = 0.12
+				experience_gain_navy = 0.12
+				experience_gain_air = 0.12
+			}
+		}
+
+		GER_weltpolitik_6 = {
+			name = GER_weltpolitik_start
+			picture = soviet_german_friendship
+			modifier = {
+				max_planning_factor = 0.05
+				planning_decay_rate_factor = -0.05
+				planning_speed = 0.15
+				max_command_power = 15
+				command_power_gain_mult = 0.15
+				max_command_power_mult = 0.25
+				air_volunteer_cap = 2
+				send_volunteer_size = 2
+				send_volunteers_tension = -1
+				experience_gain_army = 0.15
+				experience_gain_navy = 0.15
+				experience_gain_air = 0.15
+				coordination_bonus = 0.05
+			}
+		}
+
+		GER_weltpolitik_7 = {
+			name = GER_weltpolitik_start
+			picture = soviet_german_friendship
+			modifier = {
+				max_planning_factor = 0.05
+				planning_decay_rate_factor = -0.05
+				command_abilities_cost_factor = -0.2
+				planning_speed = 0.25
+				max_command_power = 25
+				command_power_gain_mult = 0.2
+				max_command_power_mult = 0.25
+				air_volunteer_cap = 3
+				send_volunteer_size = 3
+				send_volunteers_tension = -1
+				experience_gain_army = 0.15
+				experience_gain_navy = 0.15
+				experience_gain_air = 0.15
+				coordination_bonus = 0.05
+				land_reinforce_rate = 0.05
+			}
+		}
+
+		GER_weltpolitik_7 = {
+			name = GER_weltpolitik_start
+			picture = soviet_german_friendship
+			modifier = {
+				max_planning_factor = 0.05
+				planning_decay_rate_factor = -0.1
+				command_abilities_cost_factor = -0.2
+				planning_speed = 0.25
+				max_command_power = 40
+				command_power_gain_mult = 0.2
+				max_command_power_mult = 0.3
+				air_volunteer_cap = 3
+				send_volunteer_size = 3
+				send_volunteers_tension = -1
+				experience_gain_army = 0.15
+				experience_gain_navy = 0.15
+				experience_gain_air = 0.15
+				coordination_bonus = 0.05
+				land_reinforce_rate = 0.05
+			}
+		}
+
+		GER_weltpolitik_8 = {
+			name = GER_weltpolitik_start
+			picture = soviet_german_friendship
+			modifier = {
+				max_planning_factor = 0.1
+				planning_decay_rate_factor = -0.1
+				command_abilities_cost_factor = -0.2
+				planning_speed = 0.25
+				max_command_power = 40
+				command_power_gain_mult = 0.2
+				max_command_power_mult = 0.3
+				air_volunteer_cap = 3
+				send_volunteer_size = 3
+				send_volunteers_tension = -1
+				experience_gain_army = 0.15
+				experience_gain_navy = 0.15
+				experience_gain_air = 0.15
+				coordination_bonus = 0.05
+				land_reinforce_rate = 0.05
+			}
+		}
+
+		GER_financing_prussian_expedition = {
+			picture = ger_mefo_bills_payment
+			modifier = {
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+				consumer_goods_factor = 0.1
+			}
+		}
+
+		GER_PRE_financed_swedish_war = {
+			picture = ger_mefo_bills_payment
+			modifier = {
+				weekly_manpower = 250
+				planning_speed = 0.25
+				army_attack_speed_factor = 0.05
+				experience_gain_army_factor = 0.1
+			}
+		}
+
+		GER_USA_the_prittwitz_plans = {
+			picture = AFG_work_with_ger_intel_bonus
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = CSA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+
+		GER_abteilung_iii_b = {
+			picture = generic_secret_police
+			modifier = {
+				intel_network_gain = 0.2
+				operative_slot = 1
+			}
+		}
+
+		GER_SRI_temporary_catholic_resurgence = {
+			picture = ITA_papal_state_ns
+			modifier = {
+				recruitable_population_factor = -0.05
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				communism_drift = -0.01
+				land_reinforce_rate = -0.02
+			}
+			targeted_modifier = {
+				tag = GER
+				defense_bonus_against = -0.1
+			}
+		}
+
+		GER_RUS_german_economic_influence = {
+			picture = GER_economy_of_conquest
+			modifier = {
+				min_export = 0.2
+				war_support_factor = -0.1
+			}
+			targeted_modifier = {
+				tag = GER
+				cic_to_target_factor = 0.1
+			}
+		}
+
+		GER_POL_german_sabotage = {
+			picture = GER_economy_of_conquest
+			modifier = {
+				recruitable_population_factor = -0.05
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				land_reinforce_rate = -0.02
+				army_speed_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = GER
+				defense_bonus_against = -0.1
+			}
+		}
+
+		GER_military_mission_generic = {
+			picture = german_advisors
+			modifier = {
+				recruitable_population_factor = 0.05
+				army_morale_factor = 0.1
+				land_reinforce_rate = 0.05
+				training_time_army_factor = -0.15
+			}
+		}
+
+		GER_military_mission_generic_2 = {
+			name = GER_military_mission_generic
+			picture = german_advisors
+			modifier = {
+				recruitable_population_factor = 0.1
+				org_loss_at_low_org_factor = -0.15
+				land_reinforce_rate = 0.15
+				training_time_army_factor = -0.2
+				army_org_regain = 0.2
+			}
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.1
+			}
+		}
+
+		GER_middle_eastern_trade = {
+			picture = german_advisors
+			modifier = {
+				local_resources_factor = 0.1
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+			targeted_modifier = {
+				tag = GER
+				trade_cost_for_target_factor = -0.25
+				extra_trade_to_target_factor = 0.1
+			}
+		}
+
+		GER_secured_supply = {
+			picture = generic_logistics
+			modifier = {
+				army_fuel_capacity_factor = 0.1
+				supply_node_range = 0.05
+				supply_combat_penalties_on_core_factor = -0.1
+			}
+			equipment_bonus = {
+				train_equipment = {
+					build_cost_ic = -0.15
+					armor_value = 0.1
+					anti_air_attack = 0.15
+				}
+			}
+		}
+
+		GER_research_advances = {
+			picture = generic_research_bonus
+			modifier = {
+				research_speed_factor = 0.05
+			}
+			research_bonus = {
+				mio_cat_all_artillery_equipment = 0.05
+				infantry_tech = 0.05
+				support_tech = 0.05
+			}
+		}
+
+		GER_motorisation_idea = {
+			picture = FRA_motorized_focus
+			equipment_bonus = {
+				motorized_equipment = {
+					build_cost_ic = -0.1
+				}
+				mechanized_equipment = {
+					build_cost_ic = -0.1
+				}
+			}
+		}
+
+		GER_maneuovre_warfare_1 = {
+			picture = GER_aufrustung
+			modifier = {
+				breakthrough_factor = 0.05
+			}
+		}
+
+		GER_maneuovre_warfare_2 = {
+			name = GER_maneuovre_warfare_1
+			picture = GER_aufrustung
+			modifier = {
+				breakthrough_factor = 0.05
+				army_armor_speed_factor = 0.05
+			}
+		}
+
+		GER_maneuovre_warfare_2_panzers = {
+			name = GER_maneuovre_warfare_1
+			picture = GER_aufrustung
+			modifier = {
+				breakthrough_factor = 0.05
+			}
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05
+					reliability_factor = 0.1
+				}
+			}
+		}
+
+		GER_maneuovre_warfare_2_spgs = {
+			name = GER_maneuovre_warfare_1
+			picture = GER_aufrustung
+			modifier = {
+				breakthrough_factor = 0.05
+			}
+			equipment_bonus = {
+				mio_cat_eq_all_tank_destroyers = {
+					breakthrough = 0.1
+					soft_attack = 0.1
+				}
+				heavy_tank_artillery_chassis = {
+					breakthrough = 0.1
+					hard_attack = 0.1
+					ap_attack = 0.1
+				}
+				medium_tank_artillery_chassis = {
+					breakthrough = 0.1
+					hard_attack = 0.1
+					ap_attack = 0.1
+				}
+				light_tank_artillery_chassis = {
+					breakthrough = 0.1
+					hard_attack = 0.1
+					ap_attack = 0.1
+				}
+			}
+		}
+
+		GER_maneuovre_warfare_3_spgs = {
+			name = GER_maneuovre_warfare_1
+			picture = GER_aufrustung
+			modifier = {
+				breakthrough_factor = 0.05
+				army_armor_speed_factor = 0.05
+			}
+			equipment_bonus = {
+				mio_cat_eq_all_tank_destroyers = {
+					breakthrough = 0.1
+					soft_attack = 0.1
+				}
+				heavy_tank_artillery_chassis = {
+					breakthrough = 0.1
+					hard_attack = 0.1
+					ap_attack = 0.1
+				}
+				medium_tank_artillery_chassis = {
+					breakthrough = 0.1
+					hard_attack = 0.1
+					ap_attack = 0.1
+				}
+				light_tank_artillery_chassis = {
+					breakthrough = 0.1
+					hard_attack = 0.1
+					ap_attack = 0.1
+				}
+			}
+		}
+
+		GER_maneuovre_warfare_3_panzers = {
+			name = GER_maneuovre_warfare_1
+			picture = GER_aufrustung
+			modifier = {
+				breakthrough_factor = 0.05
+				army_armor_speed_factor = 0.05
+			}
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05
+					reliability_factor = 0.1
+				}
+			}
+		}
+
+		GER_rocket_designs = {
+			picture = generic_artillery_manufacturer_1
+			equipment_bonus = {
+				rocket_artillery_equipment = {
+					soft_attack = 0.1
+					build_cost_ic = -0.1
+				}
+				motorized_rocket_equipment = {
+					soft_attack = 0.1
+					build_cost_ic = -0.1
+				}
+			}
+		}
+
+		GER_krupp_railway_guns = {
+			picture = generic_railroads
+			modifier = {
+				railway_gun_bombardment_factor = 0.2
+			}
+			equipment_bonus = {
+				railway_gun_equipment = {
+					build_cost_ic = -0.1
+				}
+				super_heavy_railway_gun_equipment = {
+					build_cost_ic = -0.1
+				}
+			}
+		}
+
+		GER_armour_design_renewal = {
+			picture = generic_acquire_tanks
+			research_bonus = {
+				armor = 0.1
+			}
+		}
+
+		GER_enigma_rotors = {
+			picture = generic_secret_police
+			modifier = {
+				intelligence_agency_defense = 1
+				army_intel_to_others = -5
+				foreign_subversive_activites = -0.25
+			}
+		}
+
+		GER_air_production_bonus = {
+			picture = man_five_year_plan_air
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+			equipment_bonus = {
+				mio_cat_eq_all_small_plane = {
+					build_cost_ic = -0.05
+				}
+				mio_cat_eq_all_medium_plane = {
+					build_cost_ic = -0.05
+				}
+				mio_cat_eq_all_large_plane = {
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		GER_aircraft_production_improvements = {
+			name = GER_air_production_bonus
+			on_remove = {
+				add_ideas = GER_air_production_bonus
+			}
+			picture = man_five_year_plan_air
+			equipment_bonus = {
+				mio_cat_eq_all_small_plane = {
+					build_cost_ic = -0.075
+				}
+				mio_cat_eq_all_medium_plane = {
+					build_cost_ic = -0.075
+				}
+				mio_cat_eq_all_large_plane = {
+					build_cost_ic = -0.075
+				}
+			}
+		}
+
+		GER_submarine_focus = {
+			picture = generic_navy_submarines
+			modifier = {
+				navy_submarine_attack_factor = 0.05
+				navy_submarine_defence_factor = 0.05
+			}
+			equipment_bonus = {
+				submarine = {
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		GER_submarine_focus_2 = {
+			name = GER_submarine_focus
+			picture = generic_navy_submarines
+			modifier = {
+				navy_submarine_attack_factor = 0.1
+				navy_submarine_defence_factor = 0.1
+				convoy_raiding_efficiency_factor = 0.1
+			}
+			equipment_bonus = {
+				submarine = {
+					build_cost_ic = -0.05
+					surface_visibility = -0.05
+				}
+			}
+		}
+
+		GER_navy_wegener_doctrine = {
+			picture = generic_navy_bonus
+			modifier = {
+				navy_capital_ship_attack_factor = 0.05
+				navy_capital_ship_defence_factor = 0.05
+				navy_screen_attack_factor = 0.05
+				navy_screen_defence_factor = 0.05
+			}
+			equipment_bonus = {
+				mio_cat_eq_all_battleship = {
+					build_cost_ic = -0.1
+				}
+				mio_cat_eq_all_cruiser = {
+					build_cost_ic = -0.1
+				}
+			}
+		}
+
+		GER_navy_wegener_doctrine_fast_bbs_2 = {
+			name = GER_navy_wegener_doctrine
+			picture = generic_navy_bonus
+			modifier = {
+				navy_capital_ship_attack_factor = 0.05
+				navy_capital_ship_defence_factor = 0.05
+				navy_screen_attack_factor = 0.05
+				navy_screen_defence_factor = 0.05
+				critical_receive_chance = -0.05
+			}
+			equipment_bonus = {
+				mio_cat_eq_all_battleship = {
+					build_cost_ic = -0.1
+					maximum_speed = 0.1
+				}
+				mio_cat_eq_all_cruiser = {
+					build_cost_ic = -0.1
+					maximum_speed = 0.1
+				}
+			}
+		}
+
+		GER_navy_wegener_doctrine_strike_force_2 = {
+			name = GER_navy_wegener_doctrine
+			picture = generic_navy_bonus
+			modifier = {
+				navy_capital_ship_attack_factor = 0.05
+				navy_capital_ship_defence_factor = 0.05
+				navy_screen_attack_factor = 0.05
+				navy_screen_defence_factor = 0.05
+				naval_coordination = 0.1
+				strike_force_movement_org_loss = -0.1
+			}
+			equipment_bonus = {
+				mio_cat_eq_all_battleship = {
+					build_cost_ic = -0.1
+				}
+				mio_cat_eq_all_cruiser = {
+					build_cost_ic = -0.1
+				}
+			}
+		}
+
+		GER_navy_wegener_doctrine_strike_force_fast_bbs_2 = {
+			name = GER_navy_wegener_doctrine
+			picture = generic_navy_bonus
+			modifier = {
+				navy_capital_ship_attack_factor = 0.05
+				navy_capital_ship_defence_factor = 0.05
+				navy_screen_attack_factor = 0.05
+				navy_screen_defence_factor = 0.05
+				naval_coordination = 0.1
+				strike_force_movement_org_loss = -0.1
+				critical_receive_chance = -0.05
+			}
+			equipment_bonus = {
+				mio_cat_eq_all_battleship = {
+					build_cost_ic = -0.1
+					maximum_speed = 0.1
+				}
+				mio_cat_eq_all_cruiser = {
+					build_cost_ic = -0.1
+					maximum_speed = 0.1
+				}
+			}
+		}
+
+		GER_navy_wegener_doctrine_strike_force_fast_bbs_3 = {
+			name = GER_navy_wegener_doctrine
+			picture = generic_navy_bonus
+			modifier = {
+				navy_capital_ship_attack_factor = 0.1
+				navy_capital_ship_defence_factor = 0.1
+				navy_screen_attack_factor = 0.1
+				navy_screen_defence_factor = 0.1
+				naval_coordination = 0.15
+				strike_force_movement_org_loss = -0.15
+				critical_receive_chance = -0.05
+				ships_at_battle_start = 0.1
+			}
+			equipment_bonus = {
+				mio_cat_eq_all_battleship = {
+					build_cost_ic = -0.1
+					maximum_speed = 0.1
+				}
+				mio_cat_eq_all_cruiser = {
+					build_cost_ic = -0.1
+					maximum_speed = 0.1
+				}
+			}
+		}
+
+
+		GER_navy_raeder_doctrine = {
+			picture = generic_coastal_defense_ships
+			modifier = {
+				navy_screen_attack_factor = 0.05
+				navy_screen_defence_factor = 0.05
+				naval_detection = 0.1
+			}
+			equipment_bonus = {
+				mio_cat_eq_all_cruiser = {
+					build_cost_ic = -0.1
+				}
+				mio_cat_eq_all_destroyer = {
+					build_cost_ic = -0.1
+				}
+				mio_cat_eq_all_carrier = {
+					build_cost_ic = -0.1
+				}
+			}
+		}
+
+		GER_navy_raeder_doctrine_naval_aviation_2 = {
+			name = GER_navy_raeder_doctrine
+			picture = generic_coastal_defense_ships
+			modifier = {
+				navy_screen_attack_factor = 0.05
+				navy_screen_defence_factor = 0.05
+				naval_detection = 0.1
+				navy_anti_air_attack_factor = 0.1
+			}
+			equipment_bonus = {
+				mio_cat_eq_all_cruiser = {
+					build_cost_ic = -0.1
+					anti_air_attack = 0.1
+				}
+				mio_cat_eq_all_destroyer = {
+					build_cost_ic = -0.1
+					anti_air_attack = 0.1
+				}
+				mio_cat_eq_all_carrier = {
+					build_cost_ic = -0.1
+					anti_air_attack = 0.1
+				}
+			}
+		}
+
+		GER_navy_raeder_doctrine_global_fleet_2 = {
+			name = GER_navy_raeder_doctrine
+			picture = generic_coastal_defense_ships
+			modifier = {
+				navy_screen_attack_factor = 0.05
+				navy_screen_defence_factor = 0.05
+				naval_detection = 0.1
+				navy_max_range_factor = 0.1
+				naval_retreat_speed = 0.1
+			}
+			equipment_bonus = {
+				mio_cat_eq_all_cruiser = {
+					build_cost_ic = -0.1
+					lg_attack = 0.1
+				}
+				mio_cat_eq_all_destroyer = {
+					build_cost_ic = -0.1
+					lg_attack = 0.1
+				}
+				mio_cat_eq_all_carrier = {
+					build_cost_ic = -0.1
+					surface_detection = 0.1
+				}
+			}
+		}
+
+		GER_navy_raeder_doctrine_naval_aviation_global_fleet_2 = {
+			name = GER_navy_raeder_doctrine
+			picture = generic_coastal_defense_ships
+			modifier = {
+				navy_screen_attack_factor = 0.05
+				navy_screen_defence_factor = 0.05
+				naval_detection = 0.1
+				navy_max_range_factor = 0.1
+				naval_retreat_speed = 0.1
+				navy_anti_air_attack_factor = 0.1
+			}
+			equipment_bonus = {
+				mio_cat_eq_all_cruiser = {
+					build_cost_ic = -0.1
+					lg_attack = 0.1
+					anti_air_attack = 0.1
+				}
+				mio_cat_eq_all_destroyer = {
+					build_cost_ic = -0.1
+					lg_attack = 0.1
+					anti_air_attack = 0.1
+				}
+				mio_cat_eq_all_carrier = {
+					build_cost_ic = -0.1
+					surface_detection = 0.1
+					anti_air_attack = 0.1
+				}
+			}
+		}
+
+		GER_navy_raeder_doctrine_naval_aviation_global_fleet_3 = {
+			name = GER_navy_raeder_doctrine
+			picture = generic_coastal_defense_ships
+			modifier = {
+				navy_screen_attack_factor = 0.1
+				navy_screen_defence_factor = 0.1
+				naval_detection = 0.1
+				navy_max_range_factor = 0.1
+				naval_retreat_speed = 0.1
+				navy_anti_air_attack_factor = 0.1
+				navy_carrier_air_attack_factor = 0.1
+				navy_carrier_air_targetting_factor = 0.1
+				navy_carrier_air_agility_factor = 0.1
+			}
+			equipment_bonus = {
+				mio_cat_eq_all_cruiser = {
+					build_cost_ic = -0.1
+					lg_attack = 0.1
+					anti_air_attack = 0.1
+				}
+				mio_cat_eq_all_destroyer = {
+					build_cost_ic = -0.1
+					lg_attack = 0.1
+					anti_air_attack = 0.1
+				}
+				mio_cat_eq_all_carrier = {
+					build_cost_ic = -0.1
+					surface_detection = 0.1
+					anti_air_attack = 0.1
+				}
+			}
+		}
+
+
+		GER_navy_league_idea = {
+			picture = INS_guided_economy
+			modifier = {
+				naval_morale_factor = 0.15
+				experience_gain_navy = 0.05
+				industrial_capacity_dockyard = 0.15
+				industrial_capacity_factory = -0.05
+			}
+			equipment_bonus = {
+				convoy = {
+					build_cost_ic = -0.05
+				}
+				submarine = {
+					build_cost_ic = -0.05
+				}
+				mio_cat_eq_all_destroyer = {
+					build_cost_ic = -0.05
+				}
+				mio_cat_eq_all_cruiser = {
+					build_cost_ic = -0.05
+				}
+				mio_cat_eq_all_battleship = {
+					build_cost_ic = -0.05
+				}
+				mio_cat_eq_all_carrier = {
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		GER_destroyer_production = {
+			picture = generic_coastal_navy
+			modifier = {
+				naval_detection = 0.05
+			}
+			equipment_bonus = {
+				mio_cat_eq_all_destroyer = {
+					build_cost_ic = -0.1
+				}
+			}
+		}
+
+		GER_cruiser_production = {
+			picture = generic_sea_focused_navy
+			modifier = {
+				screening_efficiency = 0.05
+			}
+			equipment_bonus = {
+				mio_cat_eq_all_cruiser = {
+					build_cost_ic = -0.1
+				}
+			}
+		}
+
+
+		GER_carrier_production = {
+			picture = generic_navy_carrier_bonus
+			modifier = {
+				carrier_capacity_penalty_reduction = -0.2
+			}
+			equipment_bonus = {
+				mio_cat_eq_all_carrier = {
+					build_cost_ic = -0.1
+				}
+			}
+		}
+
+		GER_superheavy_ship_production = {
+			picture = eng_steady_as_she_goes
+			modifier = {
+				naval_has_potf_in_combat_attack = 0.05
+				naval_has_potf_in_combat_defense = 0.05
+			}
+			equipment_bonus = {
+				mio_cat_eq_all_battleship = {
+					build_cost_ic = -0.1
 				}
 			}
 		}

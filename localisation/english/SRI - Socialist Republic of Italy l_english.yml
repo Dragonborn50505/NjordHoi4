@@ -1,12 +1,10 @@
 ﻿l_english:
 ### Tooltips ###
+ SRI_italian_socialism_dynamic_modifier: "Il Progetto Socialista Italiano"
  SRI_istituto_per_la_ricostruzione_industriale_modifier: "Istituto per la Ricostruzione Industriale"
-
- SRI_legione_proletaria_custom_modifier_tooltip: "[ROOT.SRI_GetLegioneProletariaCustomModifierTooltip]"
-
-
- SRI_cda_custom_modifier_tooltip: "[ROOT.SRI_GetCDACustomModifierTooltip]"
- SRI_ismm_custom_modifier_tooltip: "[ROOT.SRI_GetISMMCustomModifierTooltip]"
+ SRI_legione_proletaria_modifier: "Legione Proletaria"
+ SRI_citta_del_aria_modifier: "Città del'Aria"
+ SRI_istituto_di_studi_militari_marittimi_modifier: "Istituto di Studi Militari Marittimi"
 
 ### Country ###
  ITA_focus: "Socialist Republic of Italy Focus Tree"

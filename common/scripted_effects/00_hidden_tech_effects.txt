@@ -412,3 +412,7 @@ enable_tactic_banzai_charge = {
 enable_tactic_grand_banzai_charge = {
 	unlock_tactic = tactic_grand_banzai_charge
 }
+
+enable_tactic_masterful_delay = {
+	unlock_tactic = tactic_masterful_delay
+}

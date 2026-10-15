@@ -32,9 +32,6 @@ focus_tree = {
 		x = 7
 		y = 0
 
-		available = {
-			always = no
-		}
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			add_political_power = 50
@@ -54,9 +51,6 @@ focus_tree = {
 		x = -2
 		y = 1
 
-		available = {
-			has_country_flag = DEN_recovery_preparedness
-		}
 
 		prerequisite = {
 			focus = DEN_black_monday
@@ -80,9 +74,6 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		available = {
-			has_country_flag = DEN_recovery_preparedness
-		}
 
 		prerequisite = {
 			focus = DEN_black_monday
@@ -106,9 +97,6 @@ focus_tree = {
 		x = 2
 		y = 1
 
-		available = {
-			has_country_flag = DEN_recovery_preparedness
-		}
 
 		prerequisite = {
 			focus = DEN_black_monday
@@ -146,6 +134,9 @@ focus_tree = {
 				limit = {
 					is_core_of = root
 					is_in_home_area = yes
+				}
+				prioritize = {
+					446
 				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -314,21 +305,28 @@ focus_tree = {
 		y = 4
 
 		prerequisite = {
-			focus = DEN_create_valutacentralen
+			focus = DEN_bail_out_industries
 		}
 		prerequisite = {
-			focus = DEN_bail_out_industries
 			focus = DEN_avoid_bailouts
+		}
+		prerequisite = {
+			focus = DEN_create_valutacentralen
+
 		}
 		ai_will_do = { factor = 250 }
 
 		completion_reward = {
+			add_stability = 0.1
+			custom_effect_tooltip = generic_skip_one_line_tt
 			remove_ideas = PRE_economic_downturn_4
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_add_dynmod
 				DYNMOD = PRE_land_military_industrialization_dynamic_modifier
 			}
+			remove_ideas = PRE_reichstag_controlled_by_opposition_2
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_dynamic_modifier = {
 				modifier = PRE_land_military_industrialization_dynamic_modifier
 			}
@@ -352,16 +350,32 @@ focus_tree = {
 		ai_will_do = { factor = 250 }
 
 		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+					is_in_home_area = yes
+				}
+				prioritize = {
+					452
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_land_military_industrialization_dynamic_modifier
 			}
 			add_to_variable = {
-				PRE_land_military_industrialization_dynamic_modifier_industrial_capacity_factory = 0.02
+				PRE_land_military_industrialization_dynamic_modifier_industrial_capacity_factory = 0.05
 				tooltip = industrial_capacity_factory_tt
 			}
 			add_to_variable = {
-				PRE_land_military_industrialization_dynamic_modifier_industrial_capacity_dockyard = 0.02
+				PRE_land_military_industrialization_dynamic_modifier_industrial_capacity_dockyard = 0.05
 				tooltip = industrial_capacity_dockyard_tt
 			}
 		}
@@ -392,7 +406,7 @@ focus_tree = {
 				DYNMOD = PRE_land_military_industrialization_dynamic_modifier
 			}
 			add_to_variable = {
-				PRE_land_military_industrialization_dynamic_modifier_production_speed_buildings_factor = 0.025
+				PRE_land_military_industrialization_dynamic_modifier_production_speed_buildings_factor = 0.05
 				tooltip = production_speed_buildings_factor_tt
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -428,6 +442,10 @@ focus_tree = {
 					is_core_of = root
 					is_in_home_area = yes
 				}
+				prioritize = {
+					448
+				}
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
@@ -439,6 +457,10 @@ focus_tree = {
 					is_core_of = root
 					is_in_home_area = yes
 				}
+				prioritize = {
+					452
+				}
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
@@ -450,6 +472,10 @@ focus_tree = {
 					is_core_of = root
 					is_in_home_area = yes
 				}
+				prioritize = {
+					453
+				}
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
@@ -525,11 +551,11 @@ focus_tree = {
 				DYNMOD = PRE_land_military_industrialization_dynamic_modifier
 			}
 			add_to_variable = {
-				PRE_land_military_industrialization_dynamic_modifier_production_factory_efficiency_gain_factor = 0.025
+				PRE_land_military_industrialization_dynamic_modifier_production_factory_efficiency_gain_factor = 0.05
 				tooltip = production_factory_efficiency_gain_factor_tt
 			}
 			add_to_variable = {
-				PRE_land_military_industrialization_dynamic_modifier_production_speed_buildings_factor = 0.025
+				PRE_land_military_industrialization_dynamic_modifier_production_speed_buildings_factor = 0.05
 				tooltip = production_speed_buildings_factor_tt
 			}
 		}
@@ -561,11 +587,11 @@ focus_tree = {
 				DYNMOD = PRE_land_military_industrialization_dynamic_modifier
 			}
 			add_to_variable = {
-				PRE_land_military_industrialization_dynamic_modifier_industrial_capacity_factory = 0.02
+				PRE_land_military_industrialization_dynamic_modifier_industrial_capacity_factory = 0.05
 				tooltip = industrial_capacity_factory_tt
 			}
 			add_to_variable = {
-				PRE_land_military_industrialization_dynamic_modifier_industrial_capacity_dockyard = 0.02
+				PRE_land_military_industrialization_dynamic_modifier_industrial_capacity_dockyard = 0.05
 				tooltip = industrial_capacity_dockyard_tt
 			}
 		}
@@ -598,11 +624,11 @@ focus_tree = {
 				DYNMOD = PRE_land_military_industrialization_dynamic_modifier
 			}
 			add_to_variable = {
-				PRE_land_military_industrialization_dynamic_modifier_industrial_capacity_factory = 0.02
+				PRE_land_military_industrialization_dynamic_modifier_industrial_capacity_factory = 0.05
 				tooltip = industrial_capacity_factory_tt
 			}
 			add_to_variable = {
-				PRE_land_military_industrialization_dynamic_modifier_industrial_capacity_dockyard = 0.02
+				PRE_land_military_industrialization_dynamic_modifier_industrial_capacity_dockyard = 0.05
 				tooltip = industrial_capacity_dockyard_tt
 			}
 		}
@@ -639,7 +665,7 @@ focus_tree = {
 			}
 			add_to_variable = {
 				PRE_land_military_industrialization_dynamic_modifier_production_factory_efficiency_gain_factor = 0.05
-				tooltip = production_factory_max_efficiency_factor_tt
+				tooltip = production_factory_efficiency_gain_factor_tt
 			}
 		}
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY FOCUS_FILTER_PRODUCTION }
@@ -851,7 +877,7 @@ focus_tree = {
 				DYNMOD = PRE_land_military_industrialization_dynamic_modifier
 			}
 			add_to_variable = {
-				PRE_land_military_industrialization_dynamic_modifier_production_speed_buildings_factor = 0.025
+				PRE_land_military_industrialization_dynamic_modifier_production_speed_buildings_factor = 0.05
 				tooltip = production_speed_buildings_factor_tt
 			}
 			add_to_variable = {
@@ -867,6 +893,24 @@ focus_tree = {
 				limit = {
 					is_core_of = root
 					is_in_home_area = yes
+				}
+				prioritize = {
+					444
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+					is_in_home_area = yes
+				}
+				prioritize = {
+					444
 				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -903,8 +947,8 @@ focus_tree = {
 				DYNMOD = PRE_land_military_industrialization_dynamic_modifier
 			}
 			add_to_variable = {
-				PRE_land_military_industrialization_dynamic_modifier_production_speed_buildings_factor = 0.025
-				tooltip = production_speed_buildings_factor_tt
+				PRE_land_military_industrialization_dynamic_modifier_production_factory_efficiency_gain_factor = 0.05
+				tooltip = production_factory_efficiency_gain_factor_tt
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_timed_idea = {
@@ -934,21 +978,22 @@ focus_tree = {
 		ai_will_do = { factor = 250 }
 
 		completion_reward = {
-			custom_effect_tooltip = {
-				localization_key = tooltip_modify_dynmod
-				DYNMOD = PRE_land_military_industrialization_dynamic_modifier
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+					is_in_home_area = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
 			}
-			add_to_variable = {
-				PRE_land_military_industrialization_dynamic_modifier_production_speed_buildings_factor = 0.025
-				tooltip = production_speed_buildings_factor_tt
-			}
-			add_to_variable = {
-				PRE_land_military_industrialization_dynamic_modifier_industrial_capacity_factory = 0.02
-				tooltip = industrial_capacity_factory_tt
-			}
-			add_to_variable = {
-				PRE_land_military_industrialization_dynamic_modifier_industrial_capacity_dockyard = 0.02
-				tooltip = industrial_capacity_factory_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_offsite_building = {
+				type = industrial_complex
+				level = 2
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_PRODUCTION }
@@ -981,12 +1026,8 @@ focus_tree = {
 				DYNMOD = PRE_land_military_industrialization_dynamic_modifier
 			}
 			add_to_variable = {
-				PRE_land_military_industrialization_dynamic_modifier_production_factory_efficiency_gain_factor = 0.025
+				PRE_land_military_industrialization_dynamic_modifier_production_factory_efficiency_gain_factor = 0.05
 				tooltip = production_factory_efficiency_gain_factor_tt
-			}
-			add_to_variable = {
-				PRE_land_military_industrialization_dynamic_modifier_production_speed_buildings_factor = 0.025
-				tooltip = production_speed_buildings_factor_tt
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_PRODUCTION }
@@ -1012,13 +1053,12 @@ focus_tree = {
 		ai_will_do = { factor = 500 }
 
 		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_land_military_industrialization_dynamic_modifier
-			}
-			add_to_variable = {
-				PRE_land_military_industrialization_dynamic_modifier_production_factory_efficiency_gain_factor = 0.025
-				tooltip = production_factory_efficiency_gain_factor_tt
 			}
 			add_to_variable = {
 				PRE_land_military_industrialization_dynamic_modifier_consumer_goods_factor = -0.03
@@ -1045,6 +1085,15 @@ focus_tree = {
 		ai_will_do = { factor = 500 }
 
 		completion_reward = {
+			custom_effect_tooltip = NJORD_pre_combine_ideas
+			effect_tooltip = {
+				add_ideas = PRE_prussian_welfare_state
+			}
+			hidden_effect = {
+				remove_ideas = PRE_universal_healthcare
+				remove_ideas = PRE_expanded_welfare_system
+				add_ideas = PRE_prussian_welfare_state
+			}
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_land_military_industrialization_dynamic_modifier
@@ -1052,10 +1101,6 @@ focus_tree = {
 			add_to_variable = {
 				PRE_land_military_industrialization_dynamic_modifier_production_factory_max_efficiency_factor = 0.05
 				tooltip = production_factory_max_efficiency_factor_tt
-			}
-			add_to_variable = {
-				PRE_land_military_industrialization_dynamic_modifier_production_factory_efficiency_gain_factor = 0.05
-				tooltip = production_factory_efficiency_gain_factor_tt
 			}
 			add_to_variable = {
 				PRE_land_military_industrialization_dynamic_modifier_line_change_production_efficiency_factor = 0.05
@@ -1076,13 +1121,22 @@ focus_tree = {
 		cost = 5
 
 		x = 15
-		y = 1
+		y = 0
 
 		ai_will_do = { factor = 100 }
 
+		available = {
+			has_completed_focus = DEN_kanslergaden
+		}
+
 		completion_reward = {
 			capital_scope = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
 				add_building_construction = {
 					type = dockyard
 					level = 1
@@ -1124,6 +1178,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_political_power = 25
+			add_stability = 0.05
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = PRE_prussian_state_radio
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
@@ -1150,6 +1207,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_political_power = 50
+			add_war_support = 0.05
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = PRE_prussian_state_radio
 				add_idea = PRE_prussian_radio_and_film_institute
@@ -1184,6 +1244,9 @@ focus_tree = {
 					is_core_of = root
 					is_in_home_area = yes
 				}
+				prioritize = {
+					450
+				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -1195,6 +1258,9 @@ focus_tree = {
 				limit = {
 					is_core_of = root
 					is_in_home_area = yes
+				}
+				prioritize = {
+					446
 				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -1216,6 +1282,12 @@ focus_tree = {
 		x = 2
 		y = 2
 
+		available = {
+			controls_state = 447
+			controls_state = 449
+			controls_state = 448
+		}
+
 		prerequisite = {
 			focus = DEN_enlarge_industry
 		}
@@ -1228,11 +1300,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			random_owned_controlled_state = { # CHANGE TO DANISH STATES
-				limit = {
-					is_core_of = root
-					is_in_home_area = yes
-				}
+			447 = { 
 				NJORD_upgrade_state_category = yes
 				add_building_construction = {
 					type = industrial_complex
@@ -1240,11 +1308,15 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			random_owned_controlled_state = { # CHANGE TO DANISH STATES
-				limit = {
-					is_core_of = root
-					is_in_home_area = yes
+			449 = { 
+				NJORD_upgrade_state_category = yes
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
 				}
+			}
+			448 = { 
 				NJORD_upgrade_state_category = yes
 				add_building_construction = {
 					type = industrial_complex
@@ -1257,13 +1329,17 @@ focus_tree = {
 	}
 
 	focus = {
-		id = DEN_Jutland_Development
+		id = DEN_Jutland_Development # POMMERANIAN DEVELOPMENT
 		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5
 
 		relative_position_id = DEN_invest_in_maersk
 		x = 0
 		y = 1
+
+		available = {
+			controls_state = 452
+		}
 
 		prerequisite = {
 			focus = DEN_invest_in_maersk
@@ -1277,18 +1353,15 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			random_owned_controlled_state = { # CHANGE TO DANISH STATES
-				limit = {
-					is_core_of = root
-					is_in_home_area = yes
-				}
+			452 = { # CHANGE TO DANISH STATES
 				NJORD_upgrade_state_category = yes
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = DEN_Jutland_Development
 				bonus = 0.5
@@ -1308,6 +1381,11 @@ focus_tree = {
 		x = 0
 		y = 2
 
+		available = {
+			controls_state = 452
+			controls_state = 453
+		}
+
 		prerequisite = {
 			Focus = DEN_Jutland_Development
 		}
@@ -1320,17 +1398,123 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			random_owned_controlled_state = { # CHANGE TO DANISH STATES
-				limit = {
-					is_core_of = root
-					is_in_home_area = yes
-				}
-				NJORD_upgrade_state_category = yes
+			add_tech_bonus = {
+				name = DEN_Jutland_Highway
+				bonus = 0.5
+				uses = 2
+				category = construction_tech
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			450 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
+			}
+			447 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			449 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			448 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			452 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			453 = { 
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = DEN_mining_efforts
+		icon = GFX_focus_generic_mining_industry
+		cost = 5
+
+		relative_position_id = DEN_invest_in_maersk
+		x = 0
+		y = 3
+
+		available = {
+			controls_state = 452
+			controls_state = 453
+		}
+
+		prerequisite = {
+			Focus = DEN_Jutland_Highway
+		}
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 4
+				has_completed_focus = DEN_recovery
+			}
+		}
+
+		completion_reward = {
+			452 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_resource = {
+					type = steel
+					amount = 4
+				}
+				add_resource = {
+					type = coal
+					amount = 2
+				}
+			}
+			453 = { 
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_resource = {
+					type = steel
+					amount = 6
+				}
+				add_resource = {
+					type = aluminium
+					amount = 4
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = PRE_land_military_industrialization_dynamic_modifier
+			}
+			add_to_variable = {
+				PRE_land_military_industrialization_dynamic_modifier_local_resources_factor = 0.05
+				tooltip = local_resources_factor_tt
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -1364,6 +1548,9 @@ focus_tree = {
 					is_core_of = root
 					is_in_home_area = yes
 				}
+				prioritize = {
+					442
+				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
@@ -1382,6 +1569,9 @@ focus_tree = {
 					is_core_of = root
 					is_in_home_area = yes
 				}
+				prioritize = {
+					443
+				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
@@ -1399,69 +1589,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = DEN_improve_sjaelland_infra # IMPROVE NORWEGIAN INFRASTRUCTURE SOUTH
+		id = DEN_improve_sjaelland_infra_south # IMPROVE NORWEGIAN INFRASTRUCTURE SOUTH
 		icon = GFX_focus_NOR_complete_the_sourthern_railway_network
-		cost = 5
-
-		relative_position_id = DEN_invest_in_maersk
-		x = -3
-		y = 4
-
-		prerequisite = {
-			focus = DEN_expand_kastrup
-		}
-		ai_will_do = {
-			factor = 25
-			modifier = {
-				factor = 4
-				has_completed_focus = DEN_recovery
-			}
-		}
-
-		completion_reward = {
-			random_owned_controlled_state = { # CHANGE TO NORWEGIAN STATE
-				limit = {
-					is_core_of = root
-					is_in_home_area = yes
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = { # CHANGE TO NORWEGIAN STATE
-				limit = {
-					is_core_of = root
-					is_in_home_area = yes
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = { # CHANGE TO NORWEGIAN STATE
-				limit = {
-					is_core_of = root
-					is_in_home_area = yes
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_INDUSTRY }
-	}
-
-	focus = {
-		id = DEN_improve_sjaelland_infra # IMPROVE NORWEGIAN INFRASTRUCTURE NORTH
-		icon = GFX_focus_NOR_build_the_northern_rail
 		cost = 5
 
 		relative_position_id = DEN_invest_in_maersk
@@ -1485,36 +1614,184 @@ focus_tree = {
 					is_core_of = root
 					is_in_home_area = yes
 				}
+				prioritize = {
+					442
+				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
+				add_resource = {
+					type = steel
+					amount = 4
+				}
+				add_resource = {
+					type = tungsten
+					amount = 2
+				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_controlled_state = { # CHANGE TO NORWEGIAN STATE
 				limit = {
 					is_core_of = root
 					is_in_home_area = yes
 				}
+				prioritize = {
+					443
+				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
+				add_resource = {
+					type = steel
+					amount = 3
+				}
+				add_resource = {
+					type = coal
+					amount = 2
+				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_controlled_state = { # CHANGE TO NORWEGIAN STATE
 				limit = {
 					is_core_of = root
 					is_in_home_area = yes
 				}
+				prioritize = {
+					441
+				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
+				add_resource = {
+					type = aluminium
+					amount = 5
+				}
+				add_resource = {
+					type = chromium
+					amount = 3
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = DEN_improve_sjaelland_infra_north # IMPROVE NORWEGIAN INFRASTRUCTURE NORTH
+		icon = GFX_focus_NOR_build_the_northern_rail
+		cost = 5
+
+		relative_position_id = DEN_invest_in_maersk
+		x = -3
+		y = 4
+
+		prerequisite = {
+			focus = DEN_expand_kastrup
+		}
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 4
+				has_completed_focus = DEN_recovery
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = { # CHANGE TO NORWEGIAN STATE
+				limit = {
+					is_core_of = root
+					is_in_home_area = yes
+				}
+				prioritize = {
+					441
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_resource = {
+					type = steel
+					amount = 8
+				}
+				add_resource = {
+					type = tungsten
+					amount = 4
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			random_owned_controlled_state = { # CHANGE TO NORWEGIAN STATE
+				limit = {
+					is_core_of = root
+					is_in_home_area = yes
+				}
+				prioritize = {
+					485
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_resource = {
+					type = steel
+					amount = 4
+				}
+				add_resource = {
+					type = aluminium
+					amount = 2
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = DEN_norwegian_lumber_industry
+		icon = GFX_focus_INS_import_lumber
+		cost = 5
+
+		relative_position_id = DEN_improve_sjaelland_infra_north
+		x = 1
+		y = 1
+
+		prerequisite = {
+			focus = DEN_improve_sjaelland_infra_north
+		}
+		prerequisite = {
+			focus = DEN_improve_sjaelland_infra_south
+		}
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 4
+				has_completed_focus = DEN_recovery
+			}
+		}
+
+		completion_reward = {
+			add_ideas = PRE_norwegian_lumber_industry
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = PRE_land_military_industrialization_dynamic_modifier
+			}
+			add_to_variable = {
+				PRE_land_military_industrialization_dynamic_modifier_local_resources_factor = 0.05
+				tooltip = local_resources_factor_tt
+			}
+			add_to_variable = {
+				PRE_land_military_industrialization_dynamic_modifier_production_speed_buildings_factor = 0.05
+				tooltip = production_speed_buildings_factor_tt
 			}
 		}
 		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_INDUSTRY }
@@ -1523,7 +1800,7 @@ focus_tree = {
 	focus = {
 		id = DEN_support_the_tiftp # RESEARCH SLOT
 		icon = GFX_focus_NORDIC_dem_research
-		cost = 10
+		cost = 5
 
 		relative_position_id = DEN_invest_in_maersk
 		x = 4
@@ -1559,11 +1836,7 @@ focus_tree = {
 	focus = {
 		id = DEN_fund_the_copenhagen_university # FOUND THE HAMBURG UNIVERSITY
 		icon = GFX_focus_NORDIC_dem_capstone_research
-		cost = 10
-
-		available = {
-			has_completed_focus = DEN_recovery
-		}
+		cost = 5
 
 		relative_position_id = DEN_invest_in_maersk
 		x = 4
@@ -1626,6 +1899,9 @@ focus_tree = {
 					is_core_of = root
 					is_in_home_area = yes
 				}
+				prioritize = {
+					446
+				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
@@ -1642,7 +1918,9 @@ focus_tree = {
 			random_owned_controlled_state = { # CHANGE TO SWEDISH STATE
 				limit = {
 					is_core_of = root
-					is_in_home_area = yes
+				}
+				prioritize = {
+					445
 				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -1669,6 +1947,9 @@ focus_tree = {
 		x = 1
 		y = 4
 
+		available = {
+			controls_state = 446
+		}
 		prerequisite = {
 			focus = DEN_expand_belt_ferry
 		}
@@ -1681,11 +1962,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			random_owned_controlled_state = { # CHANGE TO SCANIAN STATE
-				limit = {
-					is_core_of = root
-					is_in_home_area = yes
-				}
+			446 = { # CHANGE TO SCANIAN STATE
 				NJORD_upgrade_state_category = yes
 				add_building_construction = {
 					type = infrastructure
@@ -1718,7 +1995,7 @@ focus_tree = {
 			focus = DEN_bridge_designs
 		}
 		prerequisite = {
-			focus = DEN_improve_sjaelland_infra
+			focus = DEN_improve_sjaelland_infra_south
 		}
 		ai_will_do = {
 			factor = 25
@@ -1859,7 +2136,7 @@ focus_tree = {
 			add_doctrine_cost_reduction = {
 				name = DEN_doctrinal_advancements
 				cost_reduction = 0.5
-				uses = 3
+				uses = 1
 				category = land_doctrine
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -1925,7 +2202,7 @@ focus_tree = {
 
 	focus = {
 		id = DEN_equipment_upgrades
-		icon = GFX_goal_generic_design_equipment_standards
+		icon = GFX_focus_PRC_equipment_from_copper_coins
 		cost = 5
 
 		relative_position_id = DEN_standardised_training
@@ -2052,7 +2329,7 @@ focus_tree = {
 				tooltip = mobilization_laws_cost_factor_tt
 			}
 			add_to_variable = {
-				PRE_army_dynamic_modifier_political_power_gain = 0.1
+				PRE_army_dynamic_modifier_political_power_gain = -0.1
 				tooltip = political_power_gain_tt
 			}
 		}
@@ -2077,6 +2354,15 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_war_support = 0.05
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_mastery_bonus = {
+				name = DEN_focus_on_defensive
+				bonus = 0.1
+				days = 365
+				track = operations
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_army_dynamic_modifier
@@ -2121,11 +2407,11 @@ focus_tree = {
 				DYNMOD = PRE_army_dynamic_modifier
 			}
 			add_to_variable = {
-				PRE_army_dynamic_modifier_army_artillery_attack_factor = 0.05
+				PRE_army_dynamic_modifier_army_artillery_attack_factor = 0.1
 				tooltip = army_artillery_attack_factor_tt
 			}
 			add_to_variable = {
-				PRE_army_dynamic_modifier_army_artillery_defence_factor = 0.05
+				PRE_army_dynamic_modifier_army_artillery_defence_factor = 0.1
 				tooltip = army_artillery_defence_factor_tt
 			}
 		}
@@ -2150,6 +2436,20 @@ focus_tree = {
 		completion_reward = {
 			every_army_leader = { add_planning = 1 }
 			custom_effect_tooltip = generic_skip_one_line_tt
+			add_tech_bonus = {
+				name = DEN_modernize_support_equipment
+				bonus = 0.5
+				uses = 1
+				ahead_reduction = 0.5
+				category = infantry_weapons
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_mastery_bonus = {
+				name = DEN_modernize_support_equipment
+				bonus = 0.1
+				days = 365
+				track = combat_support
+			}
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_army_dynamic_modifier
@@ -2177,6 +2477,7 @@ focus_tree = {
 
 		prerequisite = {
 			focus = DEN_fortify_jutland
+			focus = DEN_modernize_support_equipment
 			focus = DEN_fortress_fyn
 		}
 		ai_will_do = { factor = 40 }
@@ -2216,7 +2517,7 @@ focus_tree = {
 				DYNMOD = PRE_army_dynamic_modifier
 			}
 			add_to_variable = {
-				PRE_army_dynamic_modifier_initiative_factor = 0.04
+				PRE_army_dynamic_modifier_initiative_factor = 0.02
 				tooltip = initiative_factor_tt
 			}
 			add_to_variable = {
@@ -2246,7 +2547,6 @@ focus_tree = {
 				name = DEN_utilise_irregular_formations
 				bonus = 0.5
 				uses = 2
-				category = cat_anti_tank
 				category = mio_cat_artillery
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -2273,6 +2573,13 @@ focus_tree = {
 		ai_will_do = { factor = 40 }
 
 		completion_reward = {
+			add_mastery_bonus = {
+				name = DEN_unwavering_morale
+				bonus = 0.1
+				days = 365
+				track = infantry
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_army_dynamic_modifier
@@ -2292,8 +2599,8 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_doctrine_cost_reduction = {
 				name = DEN_unwavering_morale
-				cost_reduction = 0.35
-				uses = 2
+				cost_reduction = 0.5
+				uses = 1
 				category = land_doctrine
 			}
 		}
@@ -2316,6 +2623,8 @@ focus_tree = {
 		ai_will_do = { factor = 40 }
 
 		completion_reward = {
+			army_experience = 20
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_army_dynamic_modifier
@@ -2348,6 +2657,7 @@ focus_tree = {
 
 		prerequisite = {
 			focus = DEN_fortify_jutland
+			focus = DEN_modernize_support_equipment
 			focus = DEN_fortress_fyn
 		}
 		ai_will_do = { factor = 6 }
@@ -2390,6 +2700,7 @@ focus_tree = {
 
 		prerequisite = {
 			focus = DEN_establish_flyvevabnet
+			focus = DEN_utilise_irregular_formations
 		}
 		ai_will_do = { factor = 6 }
 
@@ -2450,7 +2761,7 @@ focus_tree = {
 				tooltip = industry_repair_tt
 			}
 			add_to_variable = {
-				PRE_land_military_industrialization_dynamic_modifier_industry_air_damage_factor = 0.1
+				PRE_land_military_industrialization_dynamic_modifier_industry_air_damage_factor = -0.1
 				tooltip = industry_air_damage_factor_tt
 			}
 		}
@@ -2493,8 +2804,8 @@ focus_tree = {
 				DYNMOD = PRE_airforce_dynamic_modifier
 			}
 			add_to_variable = {
-				PRE_airforce_dynamic_modifier_ground_attack_factor = 0.05
-				tooltip = ground_attack_factor_tt
+				PRE_airforce_dynamic_modifier_air_close_air_support_org_damage_factor = 0.05
+				tooltip = air_close_air_support_org_damage_factor_tt
 			}
 			add_to_variable = {
 				PRE_airforce_dynamic_modifier_air_bombing_targetting = 0.05
@@ -2514,6 +2825,7 @@ focus_tree = {
 		y = 5
 
 		prerequisite = {
+			focus = DEN_artillery_improvements
 			focus = DEN_home_air_defense
 			focus = DEN_support_on_the_battlefield
 		}
@@ -2542,8 +2854,8 @@ focus_tree = {
 				tooltip = acclimatization_cold_climate_gain_factor_tt
 			}
 			add_to_variable = {
-				PRE_army_dynamic_modifier_out_of_supply_factor = -0.05
-				tooltip = out_of_supply_factor_tt
+				PRE_army_dynamic_modifier_winter_attrition_factor = -0.1
+				tooltip = winter_attrition_factor_tt
 			}
 		}
 		search_filters = { FOCUS_FILTER_AIRFORCE_BONUS }
@@ -2559,10 +2871,9 @@ focus_tree = {
 		y = 5
 
 		prerequisite = {
+			focus = DEN_artillery_improvements
 			focus = DEN_home_air_defense
 			focus = DEN_support_on_the_battlefield
-		}
-		prerequisite = {
 			focus = DEN_unwavering_morale
 		}
 		ai_will_do = { factor = 6 }
@@ -2577,11 +2888,7 @@ focus_tree = {
 				DYNMOD = PRE_army_dynamic_modifier
 			}
 			add_to_variable = {
-				PRE_army_dynamic_modifier_acclimatization_cold_climate_gain_factor = 0.1
-				tooltip = acclimatization_cold_climate_gain_factor_tt
-			}
-			add_to_variable = {
-				PRE_army_dynamic_modifier_out_of_supply_factor = -0.05
+				PRE_army_dynamic_modifier_out_of_supply_factor = -0.1
 				tooltip = out_of_supply_factor_tt
 			}
 		}
@@ -2594,14 +2901,13 @@ focus_tree = {
 		cost = 5
 
 		relative_position_id = DEN_danish_rearmament_programme
-		x = -6
+		x = -8
 		y = 5
 
 		prerequisite = {
+			focus = DEN_artillery_improvements
 			focus = DEN_home_air_defense
 			focus = DEN_support_on_the_battlefield
-		}
-		prerequisite = {
 			focus = DEN_unwavering_morale
 		}
 		ai_will_do = { factor = 6 }
@@ -2622,8 +2928,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = DEN_legged_infantry # PROP UP THE COLONIAL BATTALIONS
-		icon = GFX_focus_INS_recognize_moestopos_batallion
+		id = DEN_railway_guns
+		icon = GFX_focus_generic_railway_gun
 		cost = 5
 
 		relative_position_id = DEN_danish_rearmament_programme
@@ -2634,9 +2940,46 @@ focus_tree = {
 		prerequisite = {
 			focus = DEN_artillery_improvements
 		}
+
+		available = {
+			has_tech = railway_gun
+			controls_state = 448
+		}
+
+		completion_reward = {
+			add_ideas = PRE_railway_guns
+			custom_effect_tooltip = generic_skip_one_line_tt
+			complete_special_project = {
+				project = sp:sp_land_super_heavy_railway_gun
+				show_modifiers = no
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			capital_scope = {
+				create_railway_gun = {
+					equipment = railway_gun_equipment_1
+					name = railway_gun
+					location = 6389
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS }
+	}
+
+	focus = {
+		id = DEN_legged_infantry # PROP UP THE COLONIAL BATTALIONS
+		icon = GFX_focus_INS_recognize_moestopos_batallion
+		cost = 5
+
+		relative_position_id = DEN_danish_rearmament_programme
+		x = -7
+		y = 6
+
+		ai_will_do = { factor = 40 }
 		prerequisite = {
-			focus = DEN_home_air_defense
-			focus = DEN_support_on_the_battlefield
+			focus = DEN_URBAN_WARFARE
+		}
+		prerequisite = {
+			focus = DEN_mountain_training
 		}
 
 		completion_reward = {
@@ -2649,12 +2992,64 @@ focus_tree = {
 				tooltip = required_garrison_factor_tt
 			}
 			add_to_variable = {
-				PRE_army_dynamic_modifier_training_time_factor = -0.1
-				tooltip = training_time_army_factor_tt
-			}
-			add_to_variable = {
 				PRE_army_dynamic_modifier_acclimatization_hot_climate_gain_factor = 0.1
 				tooltip = acclimatization_hot_climate_gain_factor_tt
+			}
+			add_to_variable = {
+				PRE_army_dynamic_modifier_heat_attrition_factor = -0.1
+				tooltip = heat_attrition_factor_tt
+			}
+			add_to_variable = {
+				PRE_army_dynamic_modifier_no_supply_grace = 12
+				tooltip = no_supply_grace_tt
+			}
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS }
+	}
+
+	focus = {
+		id = DEN_night_time_warfare # NIGHT TIME WARFARE
+		icon = GFX_focus_SIA_night_time_training
+		cost = 5
+
+		relative_position_id = DEN_danish_rearmament_programme
+		x = -5
+		y = 6
+
+		ai_will_do = { factor = 40 }
+		prerequisite = {
+			focus = DEN_mountain_training
+		}
+		prerequisite = {
+			focus = DEN_conventional_airforce
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = DEN_night_time_warfare
+				uses = 1
+				ahead_reduction = 1
+				bonus = 1
+				category = night_vision
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			enable_tech_improved_recon_units = yes
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = PRE_army_dynamic_modifier
+			}
+			add_to_variable = {
+				PRE_army_dynamic_modifier_land_night_attack = 0.15
+				tooltip = land_night_attack_tt
+			}
+			add_to_variable = {
+				PRE_army_dynamic_modifier_initiative_factor = 0.02
+				tooltip = initiative_factor_tt
+			}
+			add_to_variable = {
+				PRE_army_dynamic_modifier_recon_factor = 0.15
+				tooltip = recon_factor_tt
 			}
 		}
 		search_filters = { FOCUS_FILTER_ARMY_BONUS }
@@ -2684,6 +3079,9 @@ focus_tree = {
 				category = air_doctrine
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
+			add_dynamic_modifier = {
+				modifier = PRE_airforce_dynamic_modifier
+			}
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_airforce_dynamic_modifier
@@ -2699,6 +3097,66 @@ focus_tree = {
 			add_to_variable = {
 				PRE_airforce_dynamic_modifier_air_equipment_upgrade_xp_cost = -0.1
 				tooltip = air_equipment_upgrade_xp_cost_tt
+			}
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS }
+	}
+
+	focus = {
+		id = DEN_build_air_bases # AIR TRAINING SCHOOLS
+		icon = GFX_focus_generic_air_bases
+		cost = 5
+
+		relative_position_id = DEN_danish_rearmament_programme
+		x = 7
+		y = 2
+
+		prerequisite = {
+			focus = DEN_unconventional_warfare
+		}
+		ai_will_do = { factor = 40 }
+
+		completion_reward = {
+			add_ideas = PRE_air_production_bonus
+			custom_effect_tooltip = generic_skip_one_line_tt
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+					is_in_home_area = yes
+				}
+				prioritize = {
+					447
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+					is_in_home_area = yes
+				}
+				prioritize = {
+					452
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+					is_in_home_area = yes
+				}
+				prioritize = {
+					445
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+				}
 			}
 		}
 		search_filters = { FOCUS_FILTER_ARMY_BONUS }
@@ -2743,7 +3201,7 @@ focus_tree = {
 
 	focus = {
 		id = DEN_reestablish_marineregimentet # BRAVE ACE FIGHTERS
-		icon = GFX_focus_generic_multi_role_aircraft
+		icon = GFX_focus_CHI_formalise_training_regime
 		cost = 5
 
 		relative_position_id = DEN_danish_rearmament_programme
@@ -2752,6 +3210,9 @@ focus_tree = {
 
 		prerequisite = {
 			focus = DEN_form_jaegerkorpset
+		}
+		prerequisite = {
+			focus = DEN_offensive_air_efforts
 		}
 		ai_will_do = { factor = 40 }
 
@@ -2780,11 +3241,11 @@ focus_tree = {
 
 	focus = {
 		id = DEN_intensify_defenses # STRAT BOMBINGS
-		icon = GFX_goal_generic_air_bomber
+		icon = GFX_focus_generic_multi_role_aircraft
 		cost = 5
 
 		relative_position_id = DEN_danish_rearmament_programme
-		x = 10
+		x = 9
 		y = 2
 
 		prerequisite = {
@@ -2795,10 +3256,18 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = DEN_intensify_defenses
-				bonus = 0.75
+				bonus = 1
 				uses = 1
-				category = cat_strategic_bomber
+				category = mio_cat_all_medium_aircraft_and_modules
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_mastery_bonus = {
+				name = DEN_intensify_defenses
+				bonus = 0.1
+				days = 365
+				track = medium_aircraft
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_airforce_dynamic_modifier
@@ -2825,15 +3294,25 @@ focus_tree = {
 		y = 4
 
 		prerequisite = {
-			focus = DEN_form_jaegerkorpset
 			focus = DEN_offensive_air_efforts
 		}
 		ai_will_do = { factor = 40 }
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = DEN_increased_reserve_units
+				bonus = 0.5
+				uses = 2
+				category = cat_air_bombs
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_airforce_dynamic_modifier
+			}
+			add_to_variable = {
+				PRE_airforce_dynamic_modifier_ground_attack_factor = 0.05
+				tooltip = ground_attack_factor_tt
 			}
 			add_to_variable = {
 				PRE_airforce_dynamic_modifier_air_close_air_support_org_damage_factor = 0.05
@@ -2849,7 +3328,7 @@ focus_tree = {
 		cost = 5
 
 		relative_position_id = DEN_danish_rearmament_programme
-		x = 6
+		x = 5
 		y = 2
 
 		prerequisite = {
@@ -2868,6 +3347,7 @@ focus_tree = {
 				PRE_army_dynamic_modifier_recon_factor = 0.1
 				tooltip = recon_factor_tt
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_airforce_dynamic_modifier
@@ -2886,7 +3366,7 @@ focus_tree = {
 
 	focus = {
 		id = DEN_invest_in_fighter
-		icon = GFX_goal_generic_air_fighter
+		icon = GFX_focus_PER_luftwaffe_planes
 		cost = 5
 
 		relative_position_id = DEN_danish_rearmament_programme
@@ -2901,15 +3381,18 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = DEN_invest_in_fighter
-				bonus = 1
-				uses = 1
+				bonus = 0.5
+				uses = 3
 				category = light_fighter
-			}
-			add_tech_bonus = {
-				name = DEN_invest_in_fighter
-				bonus = 1
-				uses = 1
 				category = cat_air_guns
+				category = cat_air_engine
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_mastery_bonus = {
+				name = DEN_invest_in_fighter
+				bonus = 0.1
+				days = 365
+				track = fighter_aircraft
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_AIRFORCE_BONUS FOCUS_FILTER_AIR_XP }
@@ -2957,12 +3440,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = DEN_armour_experiments # THE TERROR BOMBINGS
+		id = DEN_armour_experiments # Strategic Bombings
 		icon = GFX_focus_SWE_marauder_bombers
 		cost = 5
 
 		relative_position_id = DEN_danish_rearmament_programme
-		x = 10
+		x = 9
 		y = 4
 
 		prerequisite = {
@@ -2981,12 +3464,67 @@ focus_tree = {
 				show_modifiers = no
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
+			add_tech_bonus = {
+				name = DEN_armour_experiments
+				bonus = 1
+				uses = 1
+				category = cat_strategic_bomber
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_mastery_bonus = {
+				name = DEN_armour_experiments
+				bonus = 0.1
+				days = 365
+				track = heavy_aircraft
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_airforce_dynamic_modifier
 			}
 			add_to_variable = {
-				PRE_airforce_dynamic_modifier_strategic_bomb_visibility = -0.1
+				PRE_airforce_dynamic_modifier_strategic_bomb_visibility = -0.05
+				tooltip = strategic_bomb_visibility_tt
+			}
+			add_to_variable = {
+				PRE_airforce_dynamic_modifier_air_strategic_bomber_bombing_factor = 0.05
+				tooltip = air_strategic_bomber_bombing_factor_tt
+			}
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_RESEARCH FOCUS_FILTER_PRODUCTION }
+	}
+
+	focus = {
+		id = DEN_terror_bombings # Terror Bombings
+		icon = GFX_focus_NORDIC_dem_selector_research
+		cost = 5
+
+		relative_position_id = DEN_danish_rearmament_programme
+		x = 8
+		y = 5
+
+		prerequisite = {
+			focus = DEN_rule_the_skies
+		}
+		prerequisite = {
+			focus = DEN_armour_experiments
+		}
+		ai_will_do = { factor = 6 }
+
+		completion_reward = {
+			add_ideas = PRE_terror_bombings
+			custom_effect_tooltip = generic_skip_one_line_tt
+			complete_special_project = {
+				project = sp:sp_rockets_flying_bomb
+				show_modifiers = no
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = PRE_airforce_dynamic_modifier
+			}
+			add_to_variable = {
+				PRE_airforce_dynamic_modifier_strategic_bomb_visibility = -0.05
 				tooltip = strategic_bomb_visibility_tt
 			}
 			add_to_variable = {
@@ -3003,7 +3541,7 @@ focus_tree = {
 		cost = 5
 
 		relative_position_id = DEN_danish_rearmament_programme
-		x = 9
+		x = 8
 		y = 3
 
 		ai_will_do = { factor = 6 }
@@ -3014,16 +3552,18 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = DEN_expand_the_bomber_regiments
-				bonus = 1
-				uses = 1
+				bonus = 0.5
+				uses = 3
 				category = cas_bomber
-				category = tactical_bomber
+				category = cat_air_guns
+				category = cat_air_engine
 			}
-			add_tech_bonus = {
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_mastery_bonus = {
 				name = DEN_expand_the_bomber_regiments
-				bonus = 1
-				uses = 1
-				category = cat_air_bombs
+				bonus = 0.1
+				days = 365
+				track = strike_aircraft
 			}
 		}
 		search_filters = { FOCUS_FILTER_AIRFORCE_BONUS FOCUS_FILTER_RESEARCH FOCUS_FILTER_AIR_XP }
@@ -3060,8 +3600,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = DEN_surprise_element # LONG RANGE FIGHTERS
-		icon = GFX_SOV_long_range_aircraft_ccp_2d_sov_compatibility
+		id = DEN_surprise_element # Surprise Element
+		icon = GFX_focus_usa_escort_fighters
 		cost = 5
 
 		relative_position_id = DEN_danish_rearmament_programme
@@ -3092,7 +3632,7 @@ focus_tree = {
 
 	focus = {
 		id = DEN_motorisation_focus # INVEST IN JET FIGHTERS
-		icon = GFX_focus_generic_jet_planes
+		icon = GFX_focus_NORDIC_dem_capstone_airforce
 		cost = 10
 
 		relative_position_id = DEN_danish_rearmament_programme
@@ -3123,9 +3663,51 @@ focus_tree = {
 	}
 
 	focus = {
-		id = DEN_self_defense_fleet
-		icon = GFX_focus_generic_navy_battleship2
+		id = DEN_prussian_fleet # INVEST IN JET FIGHTERS
+		icon = GFX_focus_NORDIC_dem_navy
 		cost = 5
+
+		relative_position_id = DEN_danish_rearmament_programme
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = DEN_danish_rearmament_programme
+		}
+		ai_will_do = { factor = 40 }
+
+		completion_reward = {
+			navy_experience = 50
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				name = DEN_prussian_fleet
+				uses = 1
+				category = naval_doctrine
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_tech_bonus = {
+				name = DEN_prussian_fleet
+				bonus = 0.5
+				uses = 2
+				category = mio_cat_tech_all_destroyer_and_modules
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_dynamic_modifier = {
+				modifier = PRE_navy_dynamic_modifier
+			}
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_RESEARCH FOCUS_FILTER_PRODUCTION }
+	}
+
+	focus = {
+		id = DEN_self_defense_fleet
+		icon = GFX_focus_generic_cruiser2
+		cost = 5
+
+		prerequisite = {
+			focus = DEN_prussian_fleet
+		}
 
 		relative_position_id = DEN_danish_rearmament_programme
 		x = -1
@@ -3143,6 +3725,13 @@ focus_tree = {
 
 		completion_reward = {
 			navy_experience = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_mastery_bonus = {
+				name = DEN_self_defense_fleet
+				bonus = 0.1
+				days = 365
+				track = screens
+			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
@@ -3166,16 +3755,17 @@ focus_tree = {
 
 	focus = {
 		id = DEN_seaworthy_fleet
-		icon = GFX_goal_generic_sea_focused_navy2
+		icon = GFX_focus_generic_navy_battleship2
 		cost = 5
 
 		relative_position_id = DEN_danish_rearmament_programme
 		x = 1
 		y = 2
 
-		mutually_exclusive = {
-			focus = DEN_self_defense_fleet
+		prerequisite = {
+			focus = DEN_prussian_fleet
 		}
+
 		ai_will_do = {
 			factor = 5
 			modifier = {
@@ -3186,6 +3776,13 @@ focus_tree = {
 
 		completion_reward = {
 			navy_experience = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_mastery_bonus = {
+				name = DEN_seaworthy_fleet
+				bonus = 0.1
+				days = 365
+				track = capital_ships
+			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
@@ -3218,11 +3815,11 @@ focus_tree = {
 
 		prerequisite = {
 			focus = DEN_self_defense_fleet
-			focus = DEN_seaworthy_fleet
 		}
 		ai_will_do = { factor = 20 }
 
 		completion_reward = {
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_navy_dynamic_modifier
@@ -3270,6 +3867,12 @@ focus_tree = {
 			focus = DEN_modernize_Sovaernet
 		}
 		completion_reward = {
+			add_tech_bonus = {
+				name = DEN_proper_surface_fleet
+				bonus = 0.5
+				uses = 3
+				category = ship_modules_tech
+			}
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_navy_dynamic_modifier
@@ -3305,6 +3908,15 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = DEN_proper_surface_fleet
+				bonus = 1
+				uses = 1
+				ahead_reduction = 1
+				category = cat_ship_light_battery
+				category = cat_ship_medium_battery
+				category = cat_ship_heavy_battery
+			}
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_navy_dynamic_modifier
@@ -3314,12 +3926,12 @@ focus_tree = {
 				tooltip = ships_at_battle_start_tt
 			}
 			add_to_variable = {
-				PRE_navy_dynamic_modifier_naval_has_potf_in_combat_attack = 0.1
-				tooltip = naval_has_potf_in_combat_attack_tt
-			}
-			add_to_variable = {
 				PRE_navy_dynamic_modifier_navy_org_factor = 0.05
 				tooltip = navy_org_factor_tt
+			}
+			add_to_variable = {
+				PRE_navy_dynamic_modifier_naval_has_potf_in_combat_attack = 0.1
+				tooltip = naval_has_potf_in_combat_attack_tt
 			}
 		}
 		search_filters = { FOCUS_FILTER_NAVY_BONUS }
@@ -3336,7 +3948,6 @@ focus_tree = {
 
 		ai_will_do = { factor = 20 }
 		prerequisite = {
-			focus = DEN_self_defense_fleet
 			focus = DEN_seaworthy_fleet
 		}
 
@@ -3365,6 +3976,7 @@ focus_tree = {
 					rear_1_custom_slot = ship_medium_battery_1
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_equipment_production = {
 				equipment = {
 					type = ship_hull_cruiser_2
@@ -3389,6 +4001,7 @@ focus_tree = {
 				name = "HDMS Konge Frederik"
 				progress = 0.5
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			create_equipment_variant = {
 				name = "Nisse Class"
 				type = ship_hull_light_2
@@ -3405,6 +4018,7 @@ focus_tree = {
 					rear_1_custom_slot = ship_depth_charge_1
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_equipment_production = {
 				equipment = {
 					type = ship_hull_light_2
@@ -3496,12 +4110,17 @@ focus_tree = {
 		ai_will_do = { factor = 20 }
 		prerequisite = {
 			focus = DEN_anti_air_improvements
-		}
-		prerequisite = {
 			focus = DEN_modernize_Sovaernet
 		}
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = DEN_fleet_bulwark
+				bonus = 0.5
+				uses = 2
+				category = mio_cat_tech_all_screen_ship_and_modules
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_navy_dynamic_modifier
@@ -3538,6 +4157,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = DEN_battle_ready_fleet
+				bonus = 0.5
+				uses = 2
+				category = mio_cat_tech_all_capital_ship_and_modules
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_navy_dynamic_modifier
@@ -3576,6 +4202,15 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = DEN_danish_way_of_warfare
+				bonus = 0.75
+				uses = 2
+				category = radar_tech
+				technology = fire_control_methods_1
+				technology = fire_control_methods_2
+				technology = fire_control_methods_3
+			}
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_navy_dynamic_modifier
@@ -3644,7 +4279,7 @@ focus_tree = {
 
 	focus = {
 		id = DEN_danish_admiralty
-		icon = GFX_goal_generic_naval_command
+		icon = GFX_focus_generic_naval_discipline
 		cost = 5
 
 		relative_position_id = DEN_danish_rearmament_programme
@@ -3654,15 +4289,26 @@ focus_tree = {
 		ai_will_do = { factor = 20 }
 		prerequisite = {
 			focus = DEN_battle_ready_fleet
-			focus = DEN_surprise_element
 		}
 
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = DEN_danish_admiralty
-				cost_reduction = 0.5
-				uses = 3
+				cost_reduction = 0.75
+				uses = 1
 				category = naval_doctrine
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_tech_bonus = {
+				name = DEN_danish_admiralty
+				bonus = 0.5
+				uses = 3
+				technology = fire_control_methods_1
+				technology = fire_control_methods_2
+				technology = fire_control_methods_3
+				technology = damage_control_1
+				technology = damage_control_2
+				technology = damage_control_3
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			every_navy_leader = {
@@ -3689,15 +4335,70 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_NAVY_BONUS }
 	}
 
-### POL TREE ###
 	focus = {
-		id = DEN_constitutional_crisis
-		icon = GFX_focus_LAT_suspend_constitution_of_latvia
+		id = DEN_prussian_air_naval_fleet
+		icon = GFX_focus_generic_air_carrier
 		cost = 5
 
 		relative_position_id = DEN_danish_rearmament_programme
+		x = 1
+		y = 6
+
+		ai_will_do = { factor = 20 }
+		prerequisite = {
+			focus = DEN_danish_admiralty
+			focus = DEN_danish_way_of_warfare
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = DEN_danish_admiralty
+				bonus = 1
+				uses = 1
+				category = mio_cat_tech_all_carrier_and_modules
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_mastery_bonus = {
+				name = DEN_prussian_air_naval_fleet
+				bonus = 0.1
+				days = 365
+				track = carriers
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = PRE_navy_dynamic_modifier
+			}
+			add_to_variable = {
+				PRE_navy_dynamic_modifier_sortie_efficiency = 0.1
+				tooltip = sortie_efficiency_tt
+			}
+			add_to_variable = {
+				PRE_navy_dynamic_modifier_navy_carrier_air_attack_factor = 0.05
+				tooltip = navy_carrier_air_attack_factor_tt
+			}
+			add_to_variable = {
+				PRE_navy_navy_carrier_air_targetting_factor = 0.05
+				tooltip = navy_carrier_air_targetting_factor_tt
+			}
+			add_to_variable = {
+				PRE_navy_navy_carrier_air_agility_factor = 0.05
+				tooltip = navy_carrier_air_agility_factor_tt
+			}
+		}
+		search_filters = { FOCUS_FILTER_NAVY_BONUS }
+	}
+
+
+### POL TREE ###
+	focus = {
+		id = DEN_establish_the_atlantic_federation
+		icon = GFX_focus_NORDIC_dem_form_alliance
+		cost = 5
+
+		relative_position_id = DEN_Military_Industry
 		x = 0
-		y = 8
+		y = 3
 
 		ai_will_do = { factor = 100 }
 		available = {
@@ -3705,19 +4406,645 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_stability = 0.05
-			add_political_power = 50
+			add_political_power = 25
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_popularity = {
 				ideology = democratic
 				popularity = 0.05
 			}
-			add_popularity = {
-				ideology = absolutist
-				popularity = 0.05
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_dynamic_modifier = {
+				modifier = PRE_the_atlantic_federation_dynamic_modifier
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			ICE = {
+				add_political_power = 25
+				add_dynamic_modifier = {
+					modifier = PRE_the_atlantic_federation_dynamic_modifier
+				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			remove_ideas = PRE_reichstag_controlled_by_opposition_2
+			QUE = {
+				add_political_power = 25
+				add_dynamic_modifier = {
+					modifier = PRE_the_atlantic_federation_dynamic_modifier
+				}
+			}
+			USA = {
+				add_political_power = 25
+				add_dynamic_modifier = {
+					modifier = PRE_the_atlantic_federation_dynamic_modifier
+				}
+			}
+			X63 = {
+				add_political_power = 25
+				add_dynamic_modifier = {
+					modifier = PRE_the_atlantic_federation_dynamic_modifier
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 		}
 		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
 	}
+
+	focus = {
+		id = DEN_atlantic_defence_union
+		icon = GFX_focus_RAJ_seek_allies_with_the_muslim_league
+		cost = 5
+
+		relative_position_id = DEN_establish_the_atlantic_federation
+		x = -2
+		y = 1
+
+		ai_will_do = { factor = 100 }
+
+		prerequisite = {
+			focus = DEN_establish_the_atlantic_federation
+		}
+
+		completion_reward = {
+			add_manpower = 20000
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = NJORD_PRE_all_members_of_the_atlantic_federation_gets
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = PRE_the_atlantic_federation_dynamic_modifier
+			}
+			add_to_variable = {
+				PRE_the_atlantic_federation_dynamic_modifier_max_command_power_mult = 0.15
+				tooltip = max_command_power_mult_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			ICE = {
+				add_manpower = 20000
+			}
+			QUE = {
+				add_manpower = 20000
+			}
+			USA = {
+				add_manpower = 20000
+			}
+			X63 = {
+				add_manpower = 20000
+			}
+		}
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
+	}
+
+	focus = {
+		id = DEN_atlantic_investments
+		icon = GFX_focus_AST_liberty_loans
+		cost = 5
+
+		relative_position_id = DEN_establish_the_atlantic_federation
+		x = 0
+		y = 1
+
+		ai_will_do = { factor = 100 }
+
+		prerequisite = {
+			focus = DEN_establish_the_atlantic_federation
+		}
+
+		completion_reward = {
+			add_cic = 1500
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = NJORD_PRE_all_members_of_the_atlantic_federation_gets
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = PRE_the_atlantic_federation_dynamic_modifier
+			}
+			add_to_variable = {
+				PRE_the_atlantic_federation_dynamic_modifier_industrial_factory_donations = 1
+				tooltip = industrial_factory_donations_tt
+			}
+			add_to_variable = {
+				PRE_the_atlantic_federation_dynamic_modifier_military_factory_donations = 1
+				tooltip = military_factory_donations_tt
+			}
+			add_to_variable = {
+				PRE_the_atlantic_federation_dynamic_modifier_dockyard_donations = 1
+				tooltip = dockyard_donations_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			ICE = {
+				add_cic = 1500
+			}
+			QUE = {
+				add_cic = 1500
+			}
+			USA = {
+				add_cic = 1500
+			}
+			X63 = {
+				add_cic = 1500
+			}
+		}
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
+	}
+
+	focus = {
+		id = DEN_atlantic_scientist_conference
+		icon = GFX_focus_generic_university_2
+		cost = 5
+
+		relative_position_id = DEN_establish_the_atlantic_federation
+		x = 2
+		y = 1
+
+		ai_will_do = { factor = 100 }
+
+		prerequisite = {
+			focus = DEN_establish_the_atlantic_federation
+		}
+
+		completion_reward = {
+			add_research_slot = 1
+			custom_effect_tooltip = generic_skip_one_line_tt
+			ICE = {
+				add_research_slot = 1
+			}
+			QUE = {
+				add_research_slot = 1
+			}
+			USA = {
+				add_research_slot = 1
+			}
+			X63 = {
+				add_research_slot = 1
+			}
+		}
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
+	}
+
+	focus = {
+		id = DEN_bio_technical_institute
+		icon = GFX_focus_generic_university_3
+		cost = 5
+
+		relative_position_id = DEN_atlantic_scientist_conference
+		x = 1
+		y = 1
+
+		ai_will_do = { factor = 100 }
+
+		prerequisite = {
+			focus = DEN_atlantic_scientist_conference
+		}
+
+		completion_reward = {
+			modify_building_resources = {
+				building = synthetic_refinery
+				resource = rubber
+				amount = 2
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+					free_building_slots = { building = synthetic_refinery size < 3 include_locked = yes }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			ICE = {
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = ICE
+						free_building_slots = { building = synthetic_refinery size > 3 include_locked = yes }
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = synthetic_refinery
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			QUE = {
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = QUE
+						free_building_slots = { building = synthetic_refinery size < 3 include_locked = yes }
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = synthetic_refinery
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			USA = {
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = USA
+						free_building_slots = { building = synthetic_refinery size < 3 include_locked = yes }
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = synthetic_refinery
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			X63 = {
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = X63
+						free_building_slots = { building = synthetic_refinery size > 0 include_locked = yes }
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = synthetic_refinery
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
+	}
+
+	focus = {
+		id = DEN_bio_propose_single_market
+		icon = GFX_focus_GER_establish_protectorates_in_america
+		cost = 5
+
+		relative_position_id = DEN_atlantic_passport_convention
+		x = 1
+		y = 1
+
+		ai_will_do = { factor = 100 }
+
+		prerequisite = {
+			focus = DEN_atlantic_passport_convention
+		}
+
+		prerequisite = {
+			focus = DEN_atlantic_monetary_union
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = NJORD_PRE_all_members_of_the_atlantic_federation_gets
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = PRE_the_atlantic_federation_dynamic_modifier
+			}
+			add_to_variable = {
+				PRE_the_atlantic_federation_dynamic_modifier_monthly_population = 0.1
+				tooltip = monthly_population_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			ICE = {
+				add_ideas = PRE_prussian_single_market
+			}
+			QUE = {
+				add_ideas = PRE_prussian_single_market
+			}
+			USA = {
+				add_ideas = PRE_prussian_single_market
+			}
+			X63 = {
+				add_ideas = PRE_prussian_single_market
+			}
+		}
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
+	}
+
+	focus = {
+		id = DEN_atlantic_passport_convention
+		icon = GFX_focus_generic_immigration
+		cost = 5
+
+		relative_position_id = DEN_atlantic_investments
+		x = -1
+		y = 1
+
+		ai_will_do = { factor = 100 }
+
+		prerequisite = {
+			focus = DEN_atlantic_investments
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = NJORD_PRE_all_members_of_the_atlantic_federation_gets
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = PRE_the_atlantic_federation_dynamic_modifier
+			}
+			add_to_variable = {
+				PRE_the_atlantic_federation_dynamic_modifier_monthly_population = 0.15
+				tooltip = monthly_population_tt
+			}
+			add_to_variable = {
+				PRE_the_atlantic_federation_dynamic_modifier_line_change_production_efficiency_factor = 0.1
+				tooltip = line_change_production_efficiency_factor_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			ICE = {
+				add_timed_idea = {
+					idea = PRE_prussian_immigration
+					days = 730
+				}
+			}
+			QUE = {
+				add_timed_idea = {
+					idea = PRE_prussian_immigration
+					days = 730
+				}
+			}
+			USA = {
+				add_timed_idea = {
+					idea = PRE_prussian_immigration
+					days = 730
+				}
+			}
+			X63 = {
+				add_timed_idea = {
+					idea = PRE_prussian_immigration
+					days = 730
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
+	}
+
+	focus = {
+		id = DEN_parliamentary_joint_sessions
+		icon = GFX_focus_generic_improve_the_administration_2
+		cost = 5
+
+		relative_position_id = DEN_atlantic_monetary_union
+		x = 1
+		y = 1
+
+		ai_will_do = { factor = 100 }
+
+		prerequisite = {
+			focus = DEN_atlantic_monetary_union
+		}
+
+		prerequisite = {
+			focus = DEN_bio_technical_institute
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = NJORD_PRE_all_members_of_the_atlantic_federation_gets
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = PRE_the_atlantic_federation_dynamic_modifier
+			}
+			add_to_variable = {
+				PRE_the_atlantic_federation_dynamic_modifier_political_power_factor = 0.1
+				tooltip = political_power_factor_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			ICE = {
+				add_political_power = 100
+			}
+			QUE = {
+				add_political_power = 100
+			}
+			USA = {
+				add_political_power = 100
+			}
+			X63 = {
+				add_political_power = 100
+			}
+		}
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
+	}
+
+	focus = {
+		id = DEN_atlantic_monetary_union
+		icon = GFX_focus_GER_customs_union
+		cost = 5
+
+		relative_position_id = DEN_atlantic_investments
+		x = 1
+		y = 1
+
+		ai_will_do = { factor = 100 }
+
+		prerequisite = {
+			focus = DEN_atlantic_investments
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = NJORD_PRE_all_members_of_the_atlantic_federation_gets
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = PRE_the_atlantic_federation_dynamic_modifier
+			}
+			add_to_variable = {
+				PRE_the_atlantic_federation_dynamic_modifier_local_resources_factor = 0.1
+				tooltip = local_resources_factor_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			ICE = {
+				add_timed_idea = {
+					idea = PRE_prussian_influx_of_money
+					days = 730
+				}
+			}
+			QUE = {
+				add_timed_idea = {
+					idea = PRE_prussian_influx_of_money
+					days = 730
+				}
+			}
+			USA = {
+				add_timed_idea = {
+					idea = PRE_prussian_influx_of_money
+					days = 730
+				}
+			}
+			X63 = {
+				add_timed_idea = {
+					idea = PRE_prussian_influx_of_money
+					days = 730
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
+	}
+
+	focus = {
+		id = DEN_joint_military_acquisition
+		icon = GFX_focus_generic_arms_trade
+		cost = 5
+
+		relative_position_id = DEN_atlantic_defence_union
+		x = -1
+		y = 1
+
+		prerequisite = {
+			focus = DEN_atlantic_defence_union
+		}
+
+
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			add_equipment_subsidy = {
+				cic = 4000
+				equipment_type = infantry_equipment
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = NJORD_PRE_all_members_of_the_atlantic_federation_gets
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = PRE_the_atlantic_federation_dynamic_modifier
+			}
+			add_to_variable = {
+				PRE_the_atlantic_federation_dynamic_modifier_equipment_conversion_speed = 0.2
+				tooltip = equipment_conversion_speed_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			ICE = {
+				add_equipment_subsidy = {
+					cic = 4000
+					equipment_type = infantry_equipment
+				}
+			}
+			QUE = {
+				add_equipment_subsidy = {
+					cic = 4000
+					equipment_type = infantry_equipment
+				}
+			}
+			USA = {
+				add_equipment_subsidy = {
+					cic = 4000
+					equipment_type = infantry_equipment
+				}
+			}
+			X63 = {
+				add_equipment_subsidy = {
+					cic = 4000
+					equipment_type = infantry_equipment
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
+	}
+
+	focus = {
+		id = DEN_military_exchange_program
+		icon = GFX_focus_SIA_reverse_engineer_allied_tanks
+		cost = 5
+
+		prerequisite = {
+			focus = DEN_joint_military_acquisition
+		}
+
+		prerequisite = {
+			focus = DEN_atlantic_passport_convention
+		}
+
+		relative_position_id = DEN_joint_military_acquisition
+		x = 1
+		y = 1
+
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			army_experience = 50
+			navy_experience = 50
+			air_experience = 50
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = PRE_the_atlantic_federation_dynamic_modifier
+			}
+			add_to_variable = {
+				PRE_the_atlantic_federation_dynamic_modifier_command_power_gain_mult = 0.25
+				tooltip = command_power_gain_mult_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			ICE = {
+				army_experience = 50
+				navy_experience = 50
+				air_experience = 50
+			}
+			QUE = {
+				army_experience = 50
+				navy_experience = 50
+				air_experience = 50
+			}
+			USA = {
+				army_experience = 50
+				navy_experience = 50
+				air_experience = 50
+			}
+			X63 = {
+				army_experience = 50
+				navy_experience = 50
+				air_experience = 50
+			}
+		}
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
+	}
+
+
+	focus = {
+		id = DEN_the_unification_conference
+		icon = GFX_focus_GER_tend_to_the_future
+		cost = 5
+
+		relative_position_id = DEN_bio_propose_single_market
+		x = 0
+		y = 1
+
+		ai_will_do = { factor = 100 }
+
+		available = {
+			USA = {
+				exists = yes
+			}
+		}
+
+		prerequisite = {
+			focus = DEN_military_exchange_program
+		}
+
+		prerequisite = {
+			focus = DEN_bio_propose_single_market
+		}
+
+		prerequisite = {
+			focus = DEN_parliamentary_joint_sessions
+		}
+
+		completion_reward = {
+			hidden_effect = {
+				USA = {
+					every_core_state = {
+						add_core_of = PRE
+					}
+				}
+			}
+			annex_country = {
+				target = USA
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = NJORD_PRE_all_members_of_the_atlantic_federation_gets
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = PRE_the_atlantic_federation_dynamic_modifier
+			}
+			add_to_variable = {
+				PRE_the_atlantic_federation_dynamic_modifier_conscription_factor = 0.1
+				tooltip = conscription_factor_tt
+			}
+		}
+		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
+	}
+
 }

@@ -1,7 +1,6 @@
 ﻿l_english:
 
-
- # COMMONLY USED
+# COMMONLY USED
  tooltip_modify_dynmod: "Modify $DYNMOD|Y$ by"
  tooltip_add_dynmod_empty: "Add $DYNMOD|Y$."
  tooltip_add_dynmod: "Add $DYNMOD|Y$, which grants:"
@@ -10,7 +9,9 @@
  tooltip_add_tech_detailed: "Add technology: $NAME|Y$ ($TECH|Y$)."
  tooltip_enable_hidden_tech: "Enables $TECH|Y$\n$EFFECT$"
 
- empty_line: "\n"
+ NJORD_empty_line:0 " \n"
+
+
 
  tooltip_spawn_units: "Create $COUNT|Y$ $TYPE|Y$ divisions.\n"
  tooltip_spawn_unit: "Create a $TYPE|Y$ division.\n"
@@ -297,9 +298,10 @@
  modifier_army_sub_unit_paratrooper_defence_factor_tt: "$modifier_army_sub_unit_paratrooper_defence_factor$: $RIGHT|+=%2$"
  modifier_army_sub_unit_paratrooper_max_org_factor_tt: "$modifier_army_sub_unit_paratrooper_max_org_factor$: $RIGHT|+=%2$"
 
- modifier_army_sub_unit_assault_battalion_attack_factor_tt: "$modifier_army_sub_unit_assault_battalion_attack_factor$: $RIGHT|+=%2$"
- modifier_army_sub_unit_assault_battalion_defence_factor_tt: "$modifier_army_sub_unit_assault_battalion_defence_factor$: $RIGHT|+=%2$"
- modifier_army_sub_unit_assault_battalion_max_org_factor_tt: "$modifier_army_sub_unit_assault_battalion_max_org_factor$: $RIGHT|+=%2$"
+ modifier_army_sub_unit_blackshirt_assault_battalion_attack_factor_tt: "$modifier_army_sub_unit_blackshirt_assault_battalion_attack_factor$: $RIGHT|+=%2$"
+ modifier_army_sub_unit_blackshirt_assault_battalion_defence_factor_tt: "$modifier_army_sub_unit_blackshirt_assault_battalion_defence_factor$: $RIGHT|+=%2$"
+ modifier_army_sub_unit_blackshirt_assault_battalion_max_org_factor_tt: "$modifier_army_sub_unit_blackshirt_assault_battalion_max_org_factor$: $RIGHT|+=%2$"
+ modifier_army_sub_unit_blackshirt_assault_battalion_speed_factor_tt: "$modifier_army_sub_unit_blackshirt_assault_battalion_speed_factor$: $RIGHT|+=%2$"
 
  modifier_army_sub_unit_militia_attack_factor_tt: "$modifier_army_sub_unit_militia_attack_factor$: $RIGHT|+=%2$"
  modifier_army_sub_unit_militia_defence_factor_tt: "$modifier_army_sub_unit_militia_defence_factor$: $RIGHT|+=%2$"
@@ -640,10 +642,4 @@
  tech_elephant_sappers_terrain_effect: "  §Y$jungle$§!:\n    $STAT_ADJUSTER_MOVEMENT$[?0.05|=+1%]\n    $STAT_ADJUSTER_ATTACK$[?0.05|=+1%]\n    $STAT_ADJUSTER_DEFENCE$[?0.05|=+1%]\n  §Y$mountain$§!:\n    $STAT_ADJUSTER_MOVEMENT$[?0.05|=+1%]\n    $STAT_ADJUSTER_ATTACK$[?0.05|=+1%]\n    $STAT_ADJUSTER_DEFENCE$[?0.05|=+1%]"
 
  tech_improved_assault_battalion: "Improved Assault Battalion"
-
- # ITALY
- SRI_istituto_per_la_ricostruzione_industriale_modifier: "Istituto per la Ricostruzione Industriale"
- SRI_legione_proletaria_modifier: "Legione Proletaria"
- SRI_citta_del_aria_modifier: "Città del'Aria"
- SRI_istituto_di_studi_militari_marittimi_modifier: "Istituto di Studi Militari Marittimi"
 

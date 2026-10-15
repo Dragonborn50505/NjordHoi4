@@ -1,0 +1,26 @@
+spriteTypes = {
+	SpriteType = {# Rocket artillery
+		name = "GFX_goal_generic_rocket_artillery"
+		texturefile = "gfx/interface/goals/generic_rocket_artillery.png"
+	}
+
+	SpriteType = {# Enigma Machine
+		name = "GFX_goal_generic_machine"
+		texturefile = "gfx/interface/goals/generic_machine.png"
+	}
+
+	SpriteType = {# Air Bomber
+		name = "GFX_goal_generic_air_bomber_new"
+		texturefile = "gfx/interface/goals/generic_air_bomber_new.png"
+	}
+
+	SpriteType = {# Air CAS
+		name = "GFX_goal_generic_air_CAS_new"
+		texturefile = "gfx/interface/goals/generic_air_CAS_new.png"
+	}
+
+	SpriteType = {# Air CAS
+		name = "GFX_goal_generic_air_tactical_bomber_new"
+		texturefile = "gfx/interface/goals/generic_air_tactical_bomber_new.png"
+	}
+}
