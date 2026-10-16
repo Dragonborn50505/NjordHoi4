@@ -3,12 +3,6 @@ set_major = yes
 set_research_slots = 4
 add_named_threat = { threat = 0.648 name = infamy }
 
-declare_war_on = {
-	target = X07
-	type = take_core_state
-	generator = { 11 }
-}
-
 oob = "X93_OOB"
 if = {
 	limit = { has_dlc = "Man the Guns" }
