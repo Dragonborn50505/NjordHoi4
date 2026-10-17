@@ -2301,8 +2301,8 @@ focus_tree = {
 				tooltip = war_stability_factor_tt
 			}
             add_to_variable = {
-				GER_war_preparedness_recruitable_population_factor = 0.1
-				tooltip = recruitable_population_factor_tt
+				GER_war_preparedness_conscription_factor = 0.1
+				tooltip = conscription_factor_tt
 			}
         }
         search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_MANPOWER FOCUS_FILTER_GER_PREPAREDNESS }
@@ -2896,8 +2896,8 @@ focus_tree = {
 				tooltip = training_time_army_factor_tt
 			}
             add_to_variable = {
-				GER_imperial_army_recruitable_population_factor = -0.2
-				tooltip = recruitable_population_factor_tt
+				GER_imperial_army_conscription_factor = -0.2
+				tooltip = conscription_factor_tt
 			}
             
             mark_focus_tree_layout_dirty = yes
@@ -3372,8 +3372,8 @@ focus_tree = {
 				tooltip = army_morale_factor_tt
 			}
             add_to_variable = {
-				GER_imperial_army_recruitable_population_factor = 0.2
-				tooltip = recruitable_population_factor_tt
+				GER_imperial_army_conscription_factor = 0.2
+				tooltip = conscription_factor_tt
 			}
         }
         search_filters = { FOCUS_FILTER_ARMY_BONUS }

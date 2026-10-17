@@ -172,6 +172,11 @@ add_ideas = {
 	civilian_economy
 	export_focus
 	culture_amerikaner
+	AMERIKA_uneasy_peace
+	AMERIKA_CSA_peace_treaty
+	AMERIKA_lasting_prussian_influence
+	AMERIKA_nascent_industry
+	AMERIKA_unprepared_army_1
 }
 set_stability = 0.60
 set_war_support = 0.65

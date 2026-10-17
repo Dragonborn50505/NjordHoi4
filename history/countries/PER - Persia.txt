@@ -16,6 +16,8 @@ set_politics = {
     elections_allowed = no
 }
 
+enable_tech_irregulars = yes
+
 set_popularities = {
 	absolutist = 90
 	democratic = 7
@@ -81,6 +83,12 @@ add_ideas = {
 	civilian_economy
 	export_focus
 	culture_persian
+	PERSIA_the_last_of_the_free_persians
+	PERSIA_land_of_tribes_and_faiths
+	PERSIA_illiterate_population
+	PERSIA_opium_trade
+	PERSIA_tribal_armies
+	PERSIA_the_final_gambit
 }
 
 recruit_character = PER_reza_khan

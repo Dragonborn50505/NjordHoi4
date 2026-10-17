@@ -156,6 +156,11 @@ add_ideas = {
 	civilian_economy
 	export_focus
 	culture_amerikaner
+	CSA_uneasy_peace
+	CSA_american_propaganda
+	CSA_militarised_industry
+	CSA_army_recruitment
+	CSA_war_fervor
 }
 set_stability = 0.60
 set_war_support = 0.60

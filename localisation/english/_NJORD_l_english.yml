@@ -643,3 +643,96 @@
 
  tech_improved_assault_battalion: "Improved Assault Battalion"
 
+
+
+
+ # MISC COUNTRIES:
+ AMERIKA_uneasy_peace: "The Uneasy Peace"
+ AMERIKA_uneasy_peace_desc: "Ever since the end of the Amerikan War, the peace treaty signed between the glorious United States of Amerika and the dastardly Confederated States of America has not softened tensions between the two rivaling governments. On the contrary, the peace has left both parties disgruntled, wanting to reunify the East Coast under their flag. There is not tell when this uneasy peace will break out into open conflict, but soon, it will."
+
+ AMERIKA_CSA_peace_treaty: "Unfair Treaty"
+ AMERIKA_CSA_peace_treaty_desc: "The peace treaty signed at Monterrey bridge, the historical connection between our now two rival governments, laid the groundwork for an unfair treaty. The treaty stipulates that the Unites States of Amerika has to pay absurd 'War Reparations' for the cost of the war, economically hampering our industrial base."
+
+ AMERIKA_lasting_prussian_influence: "Lasting Prussian Influence"
+ AMERIKA_lasting_prussian_influence_desc: "Despite casting off the shackles of our former Prussian overlord, much of our trade and economy is still oriented to exporting consumer goods and raw resources back to Prussia. Despite this clear indication that Prussian colonialist exploitation hasn't entirely been eroded, many Prussian businessmen invest into 'New Preussland', causing much finance to flow our well."
+
+ AMERIKA_nascent_industry: "Nascent Industry"
+ AMERIKA_nascent_industry_desc: "The Amerikan economy is still quite undeveloped compared to some of its peers. We must quickly industrialise in order to rectify this situation."
+
+ AMERIKA_unprepared_army_1: "Unprepared Army"
+ AMERIKA_unprepared_army_1_desc: "The Amerikan War took a lasting toll on the structure and organisation of the Amerikan army. In order to fix this, we must build up a modernised and significantly large army before the 2nd Amerikan War inevitably breaks out."
+
+
+ CSA_american_propaganda: "American Propaganda"
+ CSA_american_propaganda_desc: "A great deal of effort has been made on propagandising the Reunification of the American Unions. Our propaganda apparatus is a well-oiled machine, constantly cherning out new leaflets and radio programs on 'The Plight of our Amerikan Siblings'."
+
+ CSA_uneasy_peace: "Ever since the end of the Amerikan War, the peace treaty signed between the dastardly United States of Amerika and the glorious Confederated States of America has not softened tensions between the two rivaling governments. On the contrary, the peace has left both parties disgruntled, wanting to reunify the East Coast under their flag. There is not tell when this uneasy peace will break out into open conflict, but soon, it will."
+
+ CSA_militarised_industry: "Heavily Militarised Industry"
+ CSA_militarised_industry_desc: "The Confederate States of America has since the end of the Amerikan War invested heavily into its arms industries and military production. This has come at a cost of civilian consumer goods lacking."
+
+ CSA_army_recruitment: "Brewing Tensions"
+ CSA_army_recruitment_desc: "Everyone can see the signs, on the horizon looms the inevitability of war. The Confederate States of America can see this especially clear. Therefore, a great deal of effort has been placed on quickly training, equipping and mustering a large army in the coming war."
+
+ CSA_war_fervor: "War Fervor"
+ CSA_war_fervor_desc: "The American people have been constantly reminded of the coming war, and what glory can be achieved by serving in the American Armed Forces."
+
+
+ ICE_king_knud_i: "King Knud I"
+ ICE_king_knud_i_desc: "The Icelandic king rules over a small, yet capable people, serving as a uniting and inspiring figure."
+
+ ICE_strikes_against_prussian_influence: "Ongoing Strikes"
+ ICE_strikes_against_prussian_influence_desc: "Much of the wealth is owned by Prussian naval officers, the Icelandic nobility and the Monarchy itself. This has caused quite an upstir in the Icelandic people, as many has taken to the streets with banners and slogans of 'wealth redistribution' and 'wealth taxes'."
+
+ ICE_icelandic_marine_training_base: "Legacy of the Vikings"
+ ICE_icelandic_marine_training_base_desc: "Icelands history as a 'Viking Nation' has inspired many sailors and naval officers to adopt the legacy and persona of the 'Vikings'."
+
+ ICE_prussian_admiralty_office: "Prussian Admiralty Office"
+ ICE_prussian_admiralty_office_desc: "Prussia has invested a great deal in constructing and maintaining a considerable Naval- and Admiralty College, available for Prussian naval officers and some Icelandic army personnel."
+
+ ICE_the_north_atlantic_fortress: "The North Atlantic Fortress"
+ ICE_the_north_atlantic_fortress_desc: "Iceland has for a long time been under the influence of Prussia. This has not come without its benefits, as much care has been taken to fortify the North Atlantic island into an impregnable naval fortress."
+
+
+ TURKESTAN_the_turkestan_miracle: "The Turkestan Miracle"
+ TURKESTAN_the_turkestan_miracle_desc: "Despite most of its neighbours getting conquered or subjugated by larger empires, the Central Asian tribes would remain spared by foreign invasion. Over time, the various tribes would eventually unite into larger collectives, forming kingdoms and tribal confederations. This, ultimately, resulted in a final consolidation, creating the now Union of the People's of Turkestan, a regional powerhouse of Uzbeks, Kyrgyz, Turks, Kazakhs, and other minor cultures and ethnicities."
+
+ TURKESTAN_tribal_armies: "Tribal Army Structure"
+ TURKESTAN_tribal_armies_desc: "The Turkestani army is not a united one, nor is it a modern one. Much of it consists of tribal levies, recruited and maintained by local organisations and tribal leaders. Therefore, the quality of the army varies immensely."
+
+ TURKESTAN_land_of_wide_steppes: "Land of Wide Steppes"
+ TURKESTAN_land_of_wide_steppes_desc: "Our society is traditionally quite nomadic, consisting in large part of wandering tribes migrating alongside their herds of livestock. The rise of railroads has revived many of the old cities and created new ones, though much of Turkestan still remains separated from the 'civilised' world."
+
+ TURKESTAN_union_of_turks_and_kazakhs: "Union of Turks and Kazakhs"
+ TURKESTAN_union_of_turks_and_kazakhs_desc: "The last to be unified with the Union of the People's of Turkestan were the Kazakhs. This unification came about rather uniquely, where Kazakh tribes and leaders, worried about the encroaching Russian Republic, would willingly join Turkestan without any treaties or deals having to be made. The integration of the Kazakh tribes has also provided us with a major pool of new recruits, willing to defend all of Turkestan with the same defiance and heroism as they would Kazakhstan."
+
+ TURKESTAN_cavalry_legacy: "Mastery of the Steppes"
+ TURKESTAN_cavalry_legacy_desc: "For hundreds of years, the tribes of Central Asia earned their reputation as preeminent riders and skirmishers, and the horse continues to be the backbone of our elite soldiers."
+
+ TURKESTAN_amun_darja_hydroplant: "Amun-Darja Hydroplant"
+ TURKESTAN_amun_darja_hydroplant_desc: "Our most recent construction project has resulted in the Amun-Darja Hydroplant. This power plant now provides Turkestan with more than half of its energy production. Though much of Turkestan is nowhere near close to having electricity, let alone industrialised, this construction project will serve as the groundwork for our slow, but steady, industrialisation."
+
+ TURKESTAN_breadbasket_of_central_asia: "Breadbasket of Central Asia"
+ TURKESTAN_breadbasket_of_central_asia_desc: "The Aral Sea, surrounded by fertile lands, has long been a prosperous bastion in Central Asia. Though much of it was for a long time disunited between squabbling tribes or looted during war or bandit raids, it was with the unification of Turkestan that much of its agricultural potential was put to full use. We produce a startling amount of food, feeding our citizens and filling our coffers from exporting the excess."
+
+
+ OTTOMANS_new_ottoman_empire: "The 'New' Ottoman Empire"
+ OTTOMANS_new_ottoman_empire_desc: "Many thought that the Ottoman Empire would fall into complete irrelevancy and disappear like many of the Empires of old. They thought wrong. Despite losing all of its previous territorial acquisitions from wars with Troians, Austrians, Poles and Russians, the Ottoman Empire has managed to survive its tribulations and challenges. As the 19th century ended and the 20th century began, the new Caliph of the Ottoman Empire declared that the legacy of 'Osman the Great' was still alive and well."
+
+ OTTOMANS_samara_kazan_bureacracy: "Tale of the Two Cities"
+ OTTOMANS_samara_kazan_bureacracy_desc: "The two most populated cities of the Ottoman Empire, Samara and Kazan, has remained its administrative center for decades. Despite distinct tensions bewtween the many branches of the Ottoman Empire's government offices, in recent years, the two historically rivalling cities has managed to overcome their differences and unite for the betterment of the Ottoman Empire."
+
+ OTTOMANS_communist_agitation: "Communist Agitation"
+ OTTOMANS_communist_agitation_desc: "While the initial reprisals against communist agitators proved damaging for their activites, there has since been a massive growth in both scale and militancy of organised labour, spurred on by the rather poor economic conditions and the legacy of the socialist revolution in Italy."
+
+ OTTOMANS_industrialisation_plan: "The Etatist Industrialisation Plan"
+ OTTOMANS_industrialisation_plan_desc: "The economy of the Ottoman Empire is rather underdeveloped and largely agrarian in nature. To combat this, the government has undertaken the 'Etatist Economic Plan', hoping to reform the country and its industry in a major way. The plan calls for rapid industrialisation and expansion of industrialised agriculture, often disregarding the growing threats of famine."
+
+ OTTOMANS_disorganised_armed_forces: "Disorganised Armed Forces"
+ OTTOMANS_disorganised_armed_forces_desc: "The strategies and tactics used by our military are incredibly dated, leading to disorganisation and a lack of innovation."
+
+ OTTOMANS_polish_railway_company: "The 'Polskie Koleje Panstwowe' Subsidiary"
+ OTTOMANS_polish_railway_company_desc: "The main part of the railway network is owned by subsidiaries of the Polish-owned railway companies. This arrangement ensures proper maintenance and control of the infrastructure between Poland and the Ottoman Empire, both for purposes of rapid military movements and ease of trade."
+
+ OTTOMANS_religious_peace: "Religious Peace"
+ OTTOMANS_religious_peace_desc: "Despite us formally being a Islamic nation, there resides a considerable Christian population, mainly Russians. To ensure that the Christians do not revolt against the government, many rights and broad religious freedoms has been given to the non-Muslim minorities of the Ottoman Empire."

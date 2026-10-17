@@ -230,7 +230,7 @@ SRI_italian_socialism_dynamic_modifier = { #NATIONAL SPIRIT
 	political_power_factor = SRI_italian_socialism_dynamic_modifier_political_power_factor
 	mobilization_speed = SRI_italian_socialism_dynamic_modifier_mobilization_speed
 	party_popularity_stability_factor = SRI_italian_socialism_dynamic_modifier_party_popularity_stability_factor
-	recruitable_population_factor = SRI_italian_socialism_dynamic_modifier_recruitable_population_factor
+	conscription_factor = SRI_italian_socialism_dynamic_modifier_conscription_factor
 	resistance_target = SRI_italian_socialism_dynamic_modifier_resistance_target 
 }
 
@@ -258,6 +258,8 @@ SRI_istituto_per_la_ricostruzione_industriale_modifier = {
 	local_resources_factor = SRI_iri_local_resources_factor
 
 	production_oil_factor = SRI_iri_production_oil_factor
+
+	research_speed_factor = SRI_iri_research_speed_factor
 }
 
 SRI_legione_proletaria_modifier = {
@@ -280,6 +282,7 @@ SRI_legione_proletaria_modifier = {
 	experience_gain_factor = SRI_ar_experience_gain_factor
 	out_of_supply_factor = SRI_ar_out_of_supply_factor
 	modifier_army_sub_unit_armored_car_recon_max_org_factor = SRI_ar_modifier_army_sub_unit_armored_car_recon_max_org_factor
+	recon_factor = SRI_ar_recon_factor
 	army_armor_attack_factor = SRI_ar_army_armor_attack_factor
 	conscription_factor = SRI_ar_conscription_factor
 	special_forces_cap = SRI_ar_special_forces_cap
@@ -375,7 +378,7 @@ GER_war_preparedness = {
 
 	# BONUSES GAINED FROM FOCUSES
 	conversion_cost_civ_to_mil_factor = GER_war_preparedness_conversion_cost_civ_to_mil_factor
-	recruitable_population_factor = GER_war_preparedness_recruitable_population_factor
+	conscription_factor = GER_war_preparedness_conscription_factor
 	supply_combat_penalties_on_core_factor = GER_war_preparedness_supply_combat_penalties_on_core_factor
 	weekly_bombing_war_support = GER_war_preparedness_weekly_bombing_war_support
 	weekly_convoys_war_support = GER_war_preparedness_weekly_convoys_war_support
@@ -407,7 +410,7 @@ GER_imperial_army = {
 
 	# BONUSES FROM FOOTSTEPS OF SEECKT
 	experience_gain_army_factor = GER_imperial_army_experience_gain_army_factor
-	recruitable_population_factor = GER_imperial_army_recruitable_population_factor
+	conscription_factor = GER_imperial_army_conscription_factor
 	training_time_army_factor = GER_imperial_army_training_time_army_factor
 	max_training = GER_imperial_army_max_training
 	army_attack_factor = GER_imperial_army_army_attack_factor

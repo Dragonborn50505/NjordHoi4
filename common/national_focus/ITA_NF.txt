@@ -169,10 +169,10 @@ focus_tree = {
 			}
 			else_if = {
 				limit = {
-					has_idea = SRI_scars_of_the_great_west_european_war_1
+					has_idea = SRI_scars_of_the_great_west_european_war
 				}
 				swap_ideas = {
-					remove_idea = SRI_scars_of_the_great_west_european_war_1
+					remove_idea = SRI_scars_of_the_great_west_european_war
 					add_idea = SRI_scars_of_the_great_west_european_war_2
 				}
 			}
@@ -312,10 +312,10 @@ focus_tree = {
 			}
 			else_if = {
 				limit = {
-					has_idea = SRI_scars_of_the_great_west_european_war_1
+					has_idea = SRI_scars_of_the_great_west_european_war
 				}
 				swap_ideas = {
-					remove_idea = SRI_scars_of_the_great_west_european_war_1
+					remove_idea = SRI_scars_of_the_great_west_european_war
 					add_idea = SRI_scars_of_the_great_west_european_war_2
 				}
 			}
@@ -899,8 +899,8 @@ focus_tree = {
 				tooltip = mobilization_speed_tt
 			}
 			add_to_variable = {
-				SRI_italian_socialism_dynamic_modifier_recruitable_population_factor = 0.05
-				tooltip = recruitable_population_factor_tt
+				SRI_italian_socialism_dynamic_modifier_conscription_factor = 0.05
+				tooltip = conscription_factor_tt
 			}
 		}
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -1260,10 +1260,10 @@ focus_tree = {
 			}
 			else_if = {
 				limit = {
-					has_idea = SRI_scars_of_the_great_west_european_war_1
+					has_idea = SRI_scars_of_the_great_west_european_war
 				}
 				swap_ideas = {
-					remove_idea = SRI_scars_of_the_great_west_european_war_1
+					remove_idea = SRI_scars_of_the_great_west_european_war
 					add_idea = SRI_scars_of_the_great_west_european_war_2
 				}
 			}
@@ -3312,8 +3312,8 @@ focus_tree = {
 				tooltip = modifier_army_sub_unit_armored_car_recon_max_org_factor_tt
 			}
 			add_to_variable = {
-				SRI_ar_modifier_army_sub_unit_light_tank_recon_max_org_factor = 0.1
-				tooltip = modifier_army_sub_unit_light_tank_recon_max_org_factor_tt
+				SRI_ar_recon_factor = 0.1
+				tooltip = recon_factor_tt
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {

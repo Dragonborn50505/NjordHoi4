@@ -157,12 +157,20 @@ add_opinion_modifier = { target = X97 modifier = negative_35 }
 add_opinion_modifier = { target = X98 modifier = positive_40 }
 add_opinion_modifier = { target = YEM modifier = negative_5 }
 
+enable_tech_irregulars = yes
+
 
 add_ideas = {
 	volunteer_only
 	civilian_economy
 	export_focus
 	culture_uzbek
+	TURKESTAN_the_turkestan_miracle
+	TURKESTAN_tribal_armies
+	TURKESTAN_land_of_wide_steppes
+	TURKESTAN_union_of_turks_and_kazakhs
+	TURKESTAN_cavalry_legacy
+	TURKESTAN_amun_darja_hydroplant
 }
 set_stability = 0.60
 set_war_support = 0.61

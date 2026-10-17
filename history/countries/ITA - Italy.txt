@@ -225,7 +225,7 @@ set_variable = { SRI_italian_communism_dynamic_modifier_drift_defence_factor = 0
 set_variable = { SRI_italian_socialism_dynamic_modifier_political_power_factor = 0 }
 set_variable = { SRI_italian_socialism_dynamic_modifier_mobilization_speed = 0 }
 set_variable = { SRI_italian_socialism_dynamic_modifier_party_popularity_stability_factor = 0 }
-set_variable = { SRI_italian_socialism_dynamic_modifier_recruitable_population_factor = 0 }
+set_variable = { SRI_italian_socialism_dynamic_modifier_conscription_factor = 0 }
 set_variable = { SRI_italian_socialism_dynamic_modifier_resistance_target = 0 }
 
 # ITALIAN INDUSTRY
@@ -258,7 +258,7 @@ set_variable = { SRI_ar_army_advisor_cost_factor = 0 }
 set_variable = { SRI_ar_experience_gain_factor = 0.1 }
 set_variable = { SRI_ar_out_of_supply_factor = 0 }
 set_variable = { SRI_ar_modifier_army_sub_unit_armored_car_recon_max_org_factor = 0 }
-set_variable = { SRI_ar_modifier_army_sub_unit_light_tank_recon_max_org_factor = 0 }
+set_variable = { SRI_ar_recon_factor = 0 }
 set_variable = { SRI_ar_army_armor_attack_factor = 0 }
 set_variable = { SRI_ar_conscription_factor = 0 }
 set_variable = { SRI_ar_special_forces_cap = 0 }
@@ -288,6 +288,8 @@ set_variable = { SRI_ar_modifier_army_sub_unit_blackshirt_assault_battalion_atta
 set_variable = { SRI_ar_modifier_army_sub_unit_blackshirt_assault_battalion_defence_factor = 0 }
 set_variable = { SRI_ar_modifier_army_sub_unit_blackshirt_assault_battalion_max_org_factor = 0 }
 set_variable = { SRI_ar_modifier_army_sub_unit_blackshirt_assault_battalion_speed_factor = 0 }
+set_variable = { SRI_ar_army_armor_speed_factor = 0 }
+
 
 # ITALIAN AIR
 set_variable = { SRI_cda_air_accidents_factor = 0 }
@@ -303,6 +305,7 @@ set_variable = { SRI_cda_air_superiority_bonus_in_combat = 0 }
 set_variable = { SRI_cda_air_intercept_efficiency = 0 }
 set_variable = { SRI_cda_air_power_projection_factor = 0 }
 set_variable = { SRI_cda_air_home_defence_factor = 0 }
+set_variable = { SRI_cda_naval_strike_attack_factor = 0 }
 
 # ITALIAN NAVY
 set_variable = { SRI_ismm_naval_doctrine_cost_factor = 0 }

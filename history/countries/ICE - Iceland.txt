@@ -142,7 +142,17 @@ add_ideas = {
 	civilian_economy
 	export_focus
 	culture_icelandic
+	ICE_king_knud_i
+	ICE_icelandic_marine_training_base
+	ICE_prussian_admiralty_office
+	ICE_the_north_atlantic_fortress
 }
+
+add_timed_idea = {
+	idea = ICE_strikes_against_prussian_influence
+	days = 365
+}
+
 set_stability = 0.60
 set_war_support = 0.78
 

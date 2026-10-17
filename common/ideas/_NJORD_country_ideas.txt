@@ -509,7 +509,7 @@ ideas = {
 			picture = CHI_neglected_countryside
 			modifier = {
 				research_speed_factor = -0.2
-				recruitable_population_factor = -0.33
+				conscription_factor = -0.33
 				war_support_factor = -0.25
 				master_ideology_drift = -0.05
 				local_resources_factor = -0.25
@@ -520,7 +520,7 @@ ideas = {
 			picture = CHI_neglected_countryside
 			modifier = {
 				research_speed_factor = -0.15
-				recruitable_population_factor = -0.22
+				conscription_factor = -0.22
 				war_support_factor = -0.2
 				master_ideology_drift = -0.03
 				local_resources_factor = -0.15
@@ -531,7 +531,7 @@ ideas = {
 			picture = CHI_neglected_countryside
 			modifier = {
 				research_speed_factor = -0.05
-				recruitable_population_factor = -0.11
+				conscription_factor = -0.11
 				war_support_factor = -0.1
 				master_ideology_drift = -0.01
 				local_resources_factor = -0.05
@@ -602,7 +602,7 @@ ideas = {
 			modifier = {
 				land_reinforce_rate = -0.05
 				army_org_factor = -0.05
-				recruitable_population_factor = -0.25
+				conscription_factor = -0.25
 				supply_consumption_factor = 0.1
 				army_morale_factor = -0.25
 				army_attack_factor = -0.05
@@ -617,7 +617,7 @@ ideas = {
 			modifier = {
 				land_reinforce_rate = -0.03
 				army_org_factor = -0.025
-				recruitable_population_factor = -0.15
+				conscription_factor = -0.15
 				supply_consumption_factor = 0.05
 				army_morale_factor = -0.15
 				army_attack_factor = -0.025
@@ -630,7 +630,7 @@ ideas = {
 			picture = CHI_corruption_armed_forces
 			modifier = {
 				land_reinforce_rate = -0.01
-				recruitable_population_factor = -0.05
+				conscription_factor = -0.05
 				supply_consumption_factor = 0.025
 				army_morale_factor = -0.1
 				command_power_gain_mult = -0.25
@@ -642,7 +642,7 @@ ideas = {
 			modifier = {
 				army_org_factor = -0.05
 				army_org_regain = -0.25
-				recruitable_population_factor = -0.25
+				conscription_factor = -0.25
 				out_of_supply_factor = 0.15
 				training_time_army_factor = 0.25
 				max_training = -0.25
@@ -654,7 +654,7 @@ ideas = {
 			picture = PRC_land_revolution_expedited
 			modifier = {
 				army_org_regain = -0.1
-				recruitable_population_factor = -0.1
+				conscription_factor = -0.1
 				out_of_supply_factor = 0.05
 				training_time_army_factor = 0.1
 				max_training = -0.1
@@ -794,7 +794,7 @@ ideas = {
 			modifier = {
 				stability_factor = -0.1
 				war_support_factor = -0.1
-				recruitable_population_factor = -0.1
+				conscription_factor = -0.1
 				fascism_drift = 0.05
 				radical_drift = 0.04
 				absolutist_drift = 0.03
@@ -808,7 +808,7 @@ ideas = {
 			modifier = {
 				stability_factor = -0.05
 				war_support_factor = -0.05
-				recruitable_population_factor = -0.05
+				conscription_factor = -0.05
 				fascism_drift = 0.03
 				radical_drift = 0.02
 			}
@@ -996,7 +996,7 @@ ideas = {
 			modifier = {
 				war_support_factor = 0.05
 				consumer_goods_factor = -0.1
-				recruitable_population_factor = 0.05
+				conscription_factor = 0.05
 				supply_consumption_factor = -0.05
 			}
 		}
@@ -1007,7 +1007,7 @@ ideas = {
 			modifier = {
 				war_support_factor = 0.1
 				consumer_goods_factor = -0.15
-				recruitable_population_factor = 0.1
+				conscription_factor = 0.1
 				supply_consumption_factor = -0.05
 			}
 		}
@@ -1282,7 +1282,7 @@ ideas = {
 			modifier = {
 				war_support_factor = 0.05
 				political_power_factor = 0.05
-				recruitable_population_factor = 0.05
+				conscription_factor = 0.05
 				democratic_drift = 0.01
 			}
 		}
@@ -1301,7 +1301,7 @@ ideas = {
 			picture = SWI_spirit_of_helvetia_aggressive_war
 			modifier = {
 				weekly_casualties_war_support = 0.002
-				recruitable_population_factor = 0.05
+				conscription_factor = 0.05
 				war_support_factor = 0.05
 				absolutist_drift = 0.03
 				fascism_drift = 0.01
@@ -1541,7 +1541,7 @@ ideas = {
 		GER_SRI_temporary_catholic_resurgence = {
 			picture = ITA_papal_state_ns
 			modifier = {
-				recruitable_population_factor = -0.05
+				conscription_factor = -0.05
 				stability_factor = -0.05
 				war_support_factor = -0.05
 				communism_drift = -0.01
@@ -1568,7 +1568,7 @@ ideas = {
 		GER_POL_german_sabotage = {
 			picture = GER_economy_of_conquest
 			modifier = {
-				recruitable_population_factor = -0.05
+				conscription_factor = -0.05
 				stability_factor = -0.05
 				war_support_factor = -0.05
 				land_reinforce_rate = -0.02
@@ -1583,7 +1583,7 @@ ideas = {
 		GER_military_mission_generic = {
 			picture = german_advisors
 			modifier = {
-				recruitable_population_factor = 0.05
+				conscription_factor = 0.05
 				army_morale_factor = 0.1
 				land_reinforce_rate = 0.05
 				training_time_army_factor = -0.15
@@ -1594,7 +1594,7 @@ ideas = {
 			name = GER_military_mission_generic
 			picture = german_advisors
 			modifier = {
-				recruitable_population_factor = 0.1
+				conscription_factor = 0.1
 				org_loss_at_low_org_factor = -0.15
 				land_reinforce_rate = 0.15
 				training_time_army_factor = -0.2
@@ -2199,6 +2199,512 @@ ideas = {
 				mio_cat_eq_all_battleship = {
 					build_cost_ic = -0.1
 				}
+			}
+		}
+
+		# MISC COUNTRIES
+		AMERIKA_uneasy_peace = {
+			allowed = {
+				CSA = {
+					exists = yes
+				}
+			}
+			picture = generic_usa_conflict
+			modifier = {
+				war_support_factor = 0.05
+				stability_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = CSA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+
+		AMERIKA_CSA_peace_treaty = {
+			allowed = {
+				CSA = {
+					exists = yes
+				}
+				NOT = {
+					has_war_with = CSA
+				}
+			}
+			picture = BEL_the_kings_surrender
+			modifier = {
+				consumer_goods_factor = 0.15
+			}
+			targeted_modifier = {
+				tag = CSA
+				cic_to_target_factor = 0.05
+				mic_to_target_factor = 0.05
+				consumer_goods_factor = -0.15
+			}
+		}
+
+		AMERIKA_lasting_prussian_influence = {
+			allowed = {
+				PRE = {
+					exists = yes
+				}
+			}
+			picture = GER_german_trade
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				min_export = 0.1
+			}
+			targeted_modifier = {
+				tag = PRE
+				trade_cost_for_target_factor = -0.25
+				extra_trade_to_target_factor = 0.25
+			}
+		}
+
+		AMERIKA_nascent_industry = {
+			allowed = {
+				NOT = {
+					num_of_factories = 25
+				}
+			}
+			picture = POL_disjointed_industry
+			modifier = {
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+				production_speed_buildings_factor = -0.05
+			}
+		}
+
+		AMERIKA_unprepared_army_1 = {
+			allowed = {
+				NOT = {
+					num_divisions = 30
+				}
+			}
+			on_remove = {
+				add_ideas = AMERIKA_unprepared_army_2
+			}
+			picture = chi_army_corruption
+			modifier = {
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+				army_morale_factor = -0.3
+				army_org_factor = -0.15
+				training_time_army_factor = 0.3
+			}
+		}
+
+		AMERIKA_unprepared_army_2 = {
+			name = AMERIKA_unprepared_army_1
+			allowed = {
+				NOT = {
+					num_divisions = 40
+				}
+			}
+			on_remove = {
+				add_ideas = AMERIKA_unprepared_army_3
+			}
+			picture = chi_army_corruption2
+			modifier = {
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				army_morale_factor = -0.2
+				army_org_factor = -0.1
+				training_time_army_factor = 0.2
+			}
+		}
+
+		AMERIKA_unprepared_army_3 = {
+			name = AMERIKA_unprepared_army_1
+			allowed = {
+				NOT = {
+					num_divisions = 50
+				}
+			}
+			picture = chi_army_corruption2
+			modifier = {
+				army_morale_factor = -0.1
+				army_org_factor = -0.05
+				training_time_army_factor = 0.1
+			}
+		}
+
+		CSA_american_propaganda = {
+			allowed = {
+				USA = {
+					exists = no
+				}
+			}
+			picture = ARG_eliminate_american_imperialism
+			modifier = {
+				war_stability_factor = 0.1
+				war_support_factor = 0.1
+				political_power_gain = 0.1
+				party_popularity_stability_factor = 0.15
+			}
+		}
+
+		CSA_uneasy_peace = {
+			allowed = {
+				USA = {
+					exists = no
+				}
+			}
+			picture = generic_usa_conflict
+			modifier = {
+				war_support_factor = 0.05
+				stability_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = USA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+
+		CSA_militarised_industry = {
+			picture = man_five_year_plan_industry
+			modifier = {
+				military_factory_donations = 3
+				industrial_factory_donations = 2
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = -0.3
+				consumer_goods_factor = 0.1
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+				}
+			}
+		}
+
+		CSA_army_recruitment = {
+			picture = FRA_national_mobilization_focus
+			modifier = {
+				army_org_regain = 0.1
+				training_time_army_factor = -0.25
+				experience_gain_army = 0.05
+				minimum_training_level = -0.1
+			}
+		}
+
+		CSA_war_fervor = {
+			picture = RAJ_private_military_complex
+			modifier = {
+				weekly_manpower = 300
+				army_attack_speed_factor = 0.05
+				breakthrough_factor = 0.05
+				resistance_growth_on_our_occupied_states = 0.25
+			}
+		}
+
+
+		ICE_king_knud_i = {
+			picture = ICE_knud_i
+			modifier = {
+				party_popularity_stability_factor = 0.25
+				political_power_gain = 0.1
+				absolutist_drift = 0.03
+				drift_defence_factor = 0.15
+			}
+		}
+
+		ICE_strikes_against_prussian_influence = {
+			picture = ICE_general_strike
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				industrial_capacity_dockyard = -0.15
+				industrial_capacity_factory = -0.15
+				democratic_drift = 0.01
+				communism_drift = 0.01
+				neutrality_drift = 0.01
+				fascism_drift = 0.01
+			}
+		}
+
+		ICE_icelandic_marine_training_base = {
+			picture = ICE_the_viking_spirit
+			modifier = {
+				unit_marine_design_cost_factor = -0.5
+				extra_marine_supply_grace = 24
+				modifier_army_sub_unit_marine_attack_factor = 0.05
+				modifier_army_sub_unit_marine_defence_factor = 0.05
+				modifier_army_sub_unit_marine_max_org_factor = 0.1
+				modifier_army_sub_unit_marine_speed_factor = 0.05
+			}
+		}
+
+		ICE_prussian_admiralty_office = {
+			picture = general_staff
+			allowed = {
+				PRE = {
+					exists = yes
+				}
+			}
+			modifier = {
+				weekly_manpower = 25
+				experience_gain_navy = 0.05
+				navy_org_factor = 0.15
+				naval_morale_factor = 0.1
+				production_speed_naval_base_factor = 0.25
+			}
+		}
+
+		ICE_the_north_atlantic_fortress = {
+			picture = FIN_coastal_batteries_effort
+			modifier = {
+				global_building_slots = 1
+				army_core_defence_factor = 0.1
+				coastal_bunker_effectiveness_factor = 0.15
+				production_speed_coastal_bunker_factor = 0.2
+			}
+		}
+
+
+		TURKESTAN_the_turkestan_miracle = {
+			picture = AFG_parliament_building
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = 0.2
+				research_speed_factor = 0.05
+				democratic_drift = 0.05
+				army_defence_against_major_factor = 0.1
+			}
+		}
+
+		TURKESTAN_tribal_armies = {
+			picture = tur_coordinated_balkan_armed_forces
+			modifier = {
+				training_time_army_factor = -0.15
+				modifier_army_sub_unit_irregular_infantry_attack_factor = 0.1
+				modifier_army_sub_unit_irregular_infantry_defence_factor = 0.15
+				weekly_manpower = 250
+				army_org_regain = -0.15
+				out_of_supply_factor = -0.15
+				attrition = -0.1
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.15
+					reliability_factor = -0.1
+				}
+			}
+		}
+
+		TURKESTAN_land_of_wide_steppes = {
+			picture = generic_agrarian_society
+			modifier = {
+				equipment_capture_factor = 0.05
+				supply_node_range = 0.5
+				supply_factor = -0.05
+				industrial_capacity_factory = -0.1
+				research_speed_factor = -0.1
+			}
+		}
+
+		TURKESTAN_breadbasket_of_central_asia = {
+			picture = generic_agrarian_reform
+			modifier = {
+				conscription = 0.005
+				monthly_population = 0.3
+				political_power_factor = 0.15
+				consumer_goods_factor = -0.3
+			}
+		}
+
+		TURKESTAN_union_of_turks_and_kazakhs = {
+			picture = tur_killigil_endustrileri
+			modifier = {
+				war_stability_factor = 0.1
+				compliance_growth_on_our_occupied_states = -0.05
+				modifier_army_sub_unit_irregular_infantry_max_org_factor = 0.05
+				weekly_manpower = 150
+				army_core_defence_factor = 0.05
+			}
+		}
+
+		TURKESTAN_cavalry_legacy = {
+			picture = generic_motorized_equipment_manufacturer_2
+			modifier = {
+				trait_cavalry_leader_xp_gain_factor = 0.25
+				unit_cavalry_design_cost_factor = -0.5
+				cavalry_attack_factor = 0.15
+				cavalry_defence_factor = 0.15
+				army_speed_factor = 0.1
+			}
+		}
+
+		TURKESTAN_amun_darja_hydroplant = {
+			picture = por_hydroelectric_power
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				consumer_goods_factor = -0.15
+				production_speed_buildings_factor = 0.05
+				factory_energy_consumption = -0.1
+			}
+		}
+
+
+		OTTOMANS_new_ottoman_empire = {
+			picture = PER_metropolitan_iran_idea
+			modifier = {
+				political_power_factor = 0.05
+				party_popularity_stability_factor = 0.25
+				army_attack_against_major_factor = 0.05
+				drift_defence_factor = 0.1
+			}
+		}
+		
+		OTTOMANS_samara_kazan_bureacracy = {
+			picture = tur_inanc_vergisi
+			modifier = {
+				conscription_factor = 0.15
+				stability_factor = 0.15
+				production_factory_max_efficiency_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = 0.05
+			}
+		}
+
+		OTTOMANS_communist_agitation = {
+			picture = AFG_communist_graduates
+			modifier = {
+				stability_weekly_factor = -0.001
+				communism_drift = 0.05
+				conscription_factor = -0.1
+				industrial_capacity_factory = -0.1
+				weekly_manpower = -25
+			}
+		}
+
+		OTTOMANS_industrialisation_plan = {
+			picture = tur_funkplan
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_speed_industrial_complex_factor = 0.25
+				production_speed_infrastructure_factor = 0.25
+				consumer_goods_factor = 0.1
+				monthly_population = -0.1
+			}
+		}
+
+		OTTOMANS_disorganised_armed_forces = {
+			picture = tur_disorganised_armed_forces
+			modifier = {
+				army_infantry_attack_factor = -0.05
+				army_infantry_defence_factor = -0.05
+				army_org_factor = -0.15
+				army_breakthrough_against_major_factor = -0.1
+				command_power_gain_mult = -0.33
+			}
+		}
+
+		OTTOMANS_polish_railway_company = {
+			picture = POL_pkp
+			allowed = {
+				X93 = {
+					exists = yes
+				}
+			}
+			modifier = {
+				min_export = 0.1
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.05
+				production_speed_rail_way_factor = 0.2
+			}
+			targeted_modifier = {
+				tag = X93
+				cic_to_target_factor = 0.05
+				trade_cost_for_target_factor = -0.25
+			}
+		}
+
+		OTTOMANS_religious_peace = {
+			picture = SOV_church_and_mosque
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.15
+				conscription_factor = 0.05
+				compliance_gain = 0.01
+			}
+		}
+
+
+		PERSIA_the_last_of_the_free_persians = {
+			picture = PER_metropolitan_iran_idea
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.15
+				army_core_defence_factor = 0.1
+				compliance_growth_on_our_occupied_states = -0.1
+			}
+		}
+
+		PERSIA_land_of_tribes_and_faiths = {
+			picture = AFG_economic_regionalism
+			modifier = {
+				political_power_factor = -0.2
+				global_building_slots_factor = -0.1
+				war_support_factor = -0.1
+				production_speed_buildings_factor = -0.15
+			}
+		}
+
+		PERSIA_opium_trade = {
+			picture = prc_permit_opium_trade
+			modifier = {
+				monthly_population = -0.1
+				consumer_goods_factor = -0.15
+				stability_factor = -0.1
+				political_power_cost = 0.1
+			}
+		}
+
+		PERSIA_illiterate_population = {
+			picture = PER_adult_literacy_idea
+			modifier = {
+				research_speed_factor = -0.15
+				production_factory_max_efficiency_factor = -0.15
+				production_factory_efficiency_gain_factor = -0.3
+				political_power_factor = 0.05
+			}
+		}
+
+		PERSIA_tribal_armies = {
+			picture = PER_adult_literacy_idea
+			modifier = {
+				resistance_damage_to_garrison_on_our_occupied_states = 0.15
+				army_attack_factor = -0.05
+				experience_gain_army_unit_factor = -0.05
+				org_loss_at_low_org_factor = -0.05
+				max_planning_factor = -0.05
+				modifier_army_sub_unit_irregular_infantry_attack_factor = 0.1
+				modifier_army_sub_unit_irregular_infantry_defence_factor = 0.1
+				modifier_army_sub_unit_irregular_infantry_max_org_factor = 0.15
+			}
+		}
+
+		PERSIA_the_final_gambit = {
+			allowed = {
+				NOT = {
+					all_core_state = {
+						is_owned_and_controlled_by = root
+					}
+				}
+			}
+			picture = SIA_desperate_gambit
+			modifier = {
+				stability_weekly_factor = -0.001
+				war_support_factor = 0.3
+				conscription_factor = 0.15
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+
+			targeted_modifier = {
+				tag = W67
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
 			}
 		}
 	}

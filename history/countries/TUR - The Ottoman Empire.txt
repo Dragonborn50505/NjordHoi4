@@ -13,6 +13,8 @@ set_technology = {
 
 # Research Bonuses
 
+enable_tech_irregulars = yes
+
 set_country_flag = conv_russia
 set_convoys = 0
 
@@ -100,9 +102,16 @@ add_ideas = {
 	civilian_economy
 	export_focus
 	culture_turkish
+	OTTOMANS_new_ottoman_empire
+	OTTOMANS_samara_kazan_bureacracy
+	OTTOMANS_industrialisation_plan
+	OTTOMANS_disorganised_armed_forces
+	OTTOMANS_communist_agitation
+	OTTOMANS_polish_railway_company
+	OTTOMANS_religious_peace
 }
-set_stability = 0.60
-set_war_support = 0.63
+set_stability = 0.4
+set_war_support = 0.3
 
 recruit_character = TUR_mustafa_ozer
 recruit_character = TUR_sukru_aktug'
