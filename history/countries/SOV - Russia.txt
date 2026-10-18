@@ -67,7 +67,7 @@ if = {
 # Research Bonuses
 
 set_country_flag = conv_russia
-set_convoys = 0
+set_convoys = 75
 
 set_politics = {
     ruling_party = democratic
@@ -77,11 +77,11 @@ set_politics = {
 }
 
 set_popularities = {
-	absolutist = 12
-	communism = 3
-	democratic = 77
-	fascism = 4
-	neutrality = 4
+	absolutist = 16
+	communism = 10
+	democratic = 54
+	fascism = 12
+	neutrality = 8
 }
 
 # DIPLOMACY
@@ -202,9 +202,11 @@ add_ideas = {
 	civilian_economy
 	export_focus
 	culture_russian
+	RUS_entrenched_opposition_1
+	RUS_federalist_deadlock
 }
-set_stability = 0.60
-set_war_support = 0.61
+set_stability = 0.6
+set_war_support = 0.3
 
 recruit_character = SOV_yegor_nikolayevich
 recruit_character = SOV_yevgeniy_skobelev

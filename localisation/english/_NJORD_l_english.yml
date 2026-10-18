@@ -16,6 +16,10 @@
  tooltip_spawn_units: "Create $COUNT|Y$ $TYPE|Y$ divisions.\n"
  tooltip_spawn_unit: "Create a $TYPE|Y$ division.\n"
  tooltip_advanced_spawn_unit: "Create a $TYPE|Y$ at $STRENGTH|O$ strength with experience level of $EXPERIENCE|L$ in $LOCATION|Y$\n"
+ tooltip_create_division_template: "Create $NAME|Y$ template, which has the following composition:$LINE_1$$LINE_2$$LINE_3$$LINE_4$$LINE_5$$LINE_6$$LINE_7$$LINE_8$$LINE_9$$LINE_10$$SUPPORT_1$$SUPPORT_2$$SUPPORT_3$$SUPPORT_4$$SUPPORT_5$[GetTemplateDeletionWarning]"
+ division_template_deletion_warning: "\nAny existing templates with the same name will be §Rdisbanded§!, refunding all manpower and equipment."
+ line_battalion_tt: "\n£indent £$ICON$ §Y$COUNT$ $NAME$§! line battalions"
+ support_battalion_tt: "\n£indent £$ICON$ §Y$NAME$§!"
 
 ###########################################################
 ### MODIFIERS (for use as tooltips in variable effects) ###
@@ -666,7 +670,8 @@
  CSA_american_propaganda: "American Propaganda"
  CSA_american_propaganda_desc: "A great deal of effort has been made on propagandising the Reunification of the American Unions. Our propaganda apparatus is a well-oiled machine, constantly cherning out new leaflets and radio programs on 'The Plight of our Amerikan Siblings'."
 
- CSA_uneasy_peace: "Ever since the end of the Amerikan War, the peace treaty signed between the dastardly United States of Amerika and the glorious Confederated States of America has not softened tensions between the two rivaling governments. On the contrary, the peace has left both parties disgruntled, wanting to reunify the East Coast under their flag. There is not tell when this uneasy peace will break out into open conflict, but soon, it will."
+ CSA_uneasy_peace: "The Uneasy Peace"
+ CSA_uneasy_peace_desc: "Ever since the end of the Amerikan War, the peace treaty signed between the dastardly United States of Amerika and the glorious Confederated States of America has not softened tensions between the two rivaling governments. On the contrary, the peace has left both parties disgruntled, wanting to reunify the East Coast under their flag. There is not tell when this uneasy peace will break out into open conflict, but soon, it will."
 
  CSA_militarised_industry: "Heavily Militarised Industry"
  CSA_militarised_industry_desc: "The Confederate States of America has since the end of the Amerikan War invested heavily into its arms industries and military production. This has come at a cost of civilian consumer goods lacking."

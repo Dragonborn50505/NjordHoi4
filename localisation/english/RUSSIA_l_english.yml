@@ -1,0 +1,17 @@
+﻿l_english:
+
+# TOOLTIPS
+ RUS_spg_designs_focus_tt: "§YDepending on the researched artillery and anti-tank technologies, the following variants will be created:§!"
+ RUS_ship_design_focus_tt: "\n§YDepending on the researched technologies, a ship variant will be created:§!"
+ RUS_ships_design_focus_tt: "\n§YDepending on the researched technologies, ship variants will be created:§!"
+ RUS_aircraft_design_tt: "\n§YDepending on the researched technologies, an aircraft variant will be created:§!"
+ RUS_project_m_design_tt: "\n§YDepending on the researched technologies, an aircraft variant can be created§!"
+ RUS_global_power_projection_tt: "\nMerges §YNaval National Spirits§! and modifies it by\n$MODIFIER_NAVY_MAX_RANGE_FACTOR$: §G15.00%§!\n$MODIFIER_INDUSTRIAL_CAPACITY_DOCKYARD_FACTOR$: §G10.00%§!"
+ RUS_franco_russian_treaty_tt: "If either @FRA §YFrance§! or @SOV §YRussia§! go to war with a §TMajor Nation§!, both countries will §Rlose§! the national spirit."
+
+ #IDEAS
+ RUS_franco_russian_trade_treaty: "Franco-Russian Treaty"
+ RUS_franco_russian_trade_treaty_desc: "Whatever here. \nIf either @FRA §YFrance§! or @SOV §YRussia§! go to war with a §TMajor Nation§!, both countries will §Rlose§! their national spirit."
+
+ # RUSSIAN FACTION
+ faction_moscow_accord: ""

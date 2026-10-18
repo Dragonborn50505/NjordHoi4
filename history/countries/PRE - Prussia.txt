@@ -374,10 +374,10 @@ set_variable = { PRE_the_atlantic_federation_dynamic_modifier_command_power_gain
 set_variable = { PRE_the_atlantic_federation_dynamic_modifier_conscription_factor = 0 }
 set_variable = { PRE_the_atlantic_federation_dynamic_modifier_equipment_conversion_speed = 0 }
 set_variable = { PRE_the_atlantic_federation_dynamic_modifier_line_change_production_efficiency_factor = 0 }
-set_variable = { PRE_the_atlantic_federation_dynamic_modifier_dockyard_donations = 0 }
-set_variable = { PRE_the_atlantic_federation_dynamic_modifier_industrial_factory_donations = 0 }
-set_variable = { PRE_the_atlantic_federation_dynamic_modifier_military_factory_donations = 0 }
-set_variable = { PRE_the_atlantic_federation_dynamic_modifier_political_power_factor = 0 }
+set_variable = { PRE_the_atlantic_federation_dynamic_modifier_dockyard_donations = 1 }
+set_variable = { PRE_the_atlantic_federation_dynamic_modifier_industrial_factory_donations = 1 }
+set_variable = { PRE_the_atlantic_federation_dynamic_modifier_military_factory_donations = 1 }
+set_variable = { PRE_the_atlantic_federation_dynamic_modifier_political_power_factor = 0.05 }
 set_variable = { PRE_the_atlantic_federation_dynamic_modifier_local_resources_factor = 0 }
 set_variable = { PRE_the_atlantic_federation_dynamic_modifier_monthly_population = 0 }
 

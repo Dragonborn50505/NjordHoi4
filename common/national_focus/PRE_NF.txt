@@ -321,10 +321,6 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			remove_ideas = PRE_economic_downturn_4
 			custom_effect_tooltip = generic_skip_one_line_tt
-			custom_effect_tooltip = {
-				localization_key = tooltip_add_dynmod
-				DYNMOD = PRE_land_military_industrialization_dynamic_modifier
-			}
 			remove_ideas = PRE_reichstag_controlled_by_opposition_2
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_dynamic_modifier = {
@@ -4406,44 +4402,147 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_stability = 0.05
-			add_political_power = 25
-			custom_effect_tooltip = generic_skip_one_line_tt
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.05
-			}
+			add_political_power = 50
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_dynamic_modifier = {
 				modifier = PRE_the_atlantic_federation_dynamic_modifier
 			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-			ICE = {
-				add_political_power = 25
-				add_dynamic_modifier = {
-					modifier = PRE_the_atlantic_federation_dynamic_modifier
+			if = {
+				limit = { 
+					ICE = {
+						exists = yes
+						NOT = {
+							is_subject_of = PRE
+						}
+					}
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				puppet = ICE
+				custom_effect_tooltip = generic_skip_one_line_tt
+				ICE = {
+					add_political_power = 25
+					add_dynamic_modifier = {
+						modifier = PRE_the_atlantic_federation_dynamic_modifier
+					}
 				}
 			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-			remove_ideas = PRE_reichstag_controlled_by_opposition_2
-			QUE = {
-				add_political_power = 25
-				add_dynamic_modifier = {
-					modifier = PRE_the_atlantic_federation_dynamic_modifier
+			else_if = {
+				limit = { 
+					ICE = {
+						exists = yes
+						is_subject_of = PRE
+					}
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				ICE = {
+					add_political_power = 25
+					add_dynamic_modifier = {
+						modifier = PRE_the_atlantic_federation_dynamic_modifier
+					}
 				}
 			}
-			USA = {
-				add_political_power = 25
-				add_dynamic_modifier = {
-					modifier = PRE_the_atlantic_federation_dynamic_modifier
+			if = {
+				limit = { 
+					QUE = {
+						exists = yes
+						NOT = {
+							is_subject_of = PRE
+						}
+					}
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				puppet = QUE
+				custom_effect_tooltip = generic_skip_one_line_tt
+				QUE = {
+					add_political_power = 25
+					add_dynamic_modifier = {
+						modifier = PRE_the_atlantic_federation_dynamic_modifier
+					}
 				}
 			}
-			X63 = {
-				add_political_power = 25
-				add_dynamic_modifier = {
-					modifier = PRE_the_atlantic_federation_dynamic_modifier
+			else_if = {
+				limit = { 
+					QUE = {
+						exists = yes
+						is_subject_of = PRE
+					}
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				QUE = {
+					add_political_power = 25
+					add_dynamic_modifier = {
+						modifier = PRE_the_atlantic_federation_dynamic_modifier
+					}
 				}
 			}
-			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = { 
+					USA = {
+						exists = yes
+						NOT = {
+							is_subject_of = PRE
+						}
+					}
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				puppet = USA
+				custom_effect_tooltip = generic_skip_one_line_tt
+				USA = {
+					add_political_power = 25
+					add_dynamic_modifier = {
+						modifier = PRE_the_atlantic_federation_dynamic_modifier
+					}
+				}
+			}
+			else_if = {
+				limit = { 
+					USA = {
+						exists = yes
+						is_subject_of = PRE
+					}
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				USA = {
+					add_political_power = 25
+					add_dynamic_modifier = {
+						modifier = PRE_the_atlantic_federation_dynamic_modifier
+					}
+				}
+			}
+			if = {
+				limit = { 
+					X63 = {
+						exists = yes
+						NOT = {
+							is_subject_of = PRE
+						}
+					}
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				puppet = X63
+				custom_effect_tooltip = generic_skip_one_line_tt
+				X63 = {
+					add_political_power = 25
+					add_dynamic_modifier = {
+						modifier = PRE_the_atlantic_federation_dynamic_modifier
+					}
+				}
+			}
+			else_if = {
+				limit = { 
+					X63 = {
+						exists = yes
+						is_subject_of = PRE
+					}
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				X63 = {
+					add_political_power = 25
+					add_dynamic_modifier = {
+						modifier = PRE_the_atlantic_federation_dynamic_modifier
+					}
+				}
+			}
 		}
 		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
 	}
@@ -4477,16 +4576,19 @@ focus_tree = {
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			ICE = {
-				add_manpower = 20000
+				add_manpower = 5000
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			QUE = {
-				add_manpower = 20000
+				add_manpower = 5000
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			USA = {
-				add_manpower = 20000
+				add_manpower = 5000
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			X63 = {
-				add_manpower = 20000
+				add_manpower = 5000
 			}
 		}
 		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
@@ -4529,16 +4631,19 @@ focus_tree = {
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			ICE = {
-				add_cic = 1500
+				add_cic = 500
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			QUE = {
-				add_cic = 1500
+				add_cic = 500
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			USA = {
-				add_cic = 1500
+				add_cic = 500
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			X63 = {
-				add_cic = 1500
+				add_cic = 500
 			}
 		}
 		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
@@ -4565,12 +4670,15 @@ focus_tree = {
 			ICE = {
 				add_research_slot = 1
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			QUE = {
 				add_research_slot = 1
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			USA = {
 				add_research_slot = 1
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			X63 = {
 				add_research_slot = 1
 			}
@@ -4603,12 +4711,11 @@ focus_tree = {
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = root
-					free_building_slots = { building = synthetic_refinery size < 3 include_locked = yes }
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = synthetic_refinery
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -4617,7 +4724,6 @@ focus_tree = {
 				random_owned_controlled_state = {
 					limit = {
 						is_core_of = ICE
-						free_building_slots = { building = synthetic_refinery size > 3 include_locked = yes }
 					}
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
@@ -4631,7 +4737,6 @@ focus_tree = {
 				random_owned_controlled_state = {
 					limit = {
 						is_core_of = QUE
-						free_building_slots = { building = synthetic_refinery size < 3 include_locked = yes }
 					}
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
@@ -4645,7 +4750,6 @@ focus_tree = {
 				random_owned_controlled_state = {
 					limit = {
 						is_core_of = USA
-						free_building_slots = { building = synthetic_refinery size < 3 include_locked = yes }
 					}
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
@@ -4659,7 +4763,6 @@ focus_tree = {
 				random_owned_controlled_state = {
 					limit = {
 						is_core_of = X63
-						free_building_slots = { building = synthetic_refinery size > 0 include_locked = yes }
 					}
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
@@ -4706,12 +4809,15 @@ focus_tree = {
 			ICE = {
 				add_ideas = PRE_prussian_single_market
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			QUE = {
 				add_ideas = PRE_prussian_single_market
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			USA = {
 				add_ideas = PRE_prussian_single_market
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			X63 = {
 				add_ideas = PRE_prussian_single_market
 			}
@@ -4755,18 +4861,21 @@ focus_tree = {
 					days = 730
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			QUE = {
 				add_timed_idea = {
 					idea = PRE_prussian_immigration
 					days = 730
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			USA = {
 				add_timed_idea = {
 					idea = PRE_prussian_immigration
 					days = 730
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			X63 = {
 				add_timed_idea = {
 					idea = PRE_prussian_immigration
@@ -4810,12 +4919,15 @@ focus_tree = {
 			ICE = {
 				add_political_power = 100
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			QUE = {
 				add_political_power = 100
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			USA = {
 				add_political_power = 100
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			X63 = {
 				add_political_power = 100
 			}
@@ -4855,18 +4967,21 @@ focus_tree = {
 					days = 730
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			QUE = {
 				add_timed_idea = {
 					idea = PRE_prussian_influx_of_money
 					days = 730
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			USA = {
 				add_timed_idea = {
 					idea = PRE_prussian_influx_of_money
 					days = 730
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			X63 = {
 				add_timed_idea = {
 					idea = PRE_prussian_influx_of_money
@@ -4910,25 +5025,28 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			ICE = {
 				add_equipment_subsidy = {
-					cic = 4000
+					cic = 1000
 					equipment_type = infantry_equipment
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			QUE = {
 				add_equipment_subsidy = {
-					cic = 4000
+					cic = 1000
 					equipment_type = infantry_equipment
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			USA = {
 				add_equipment_subsidy = {
-					cic = 4000
+					cic = 1000
 					equipment_type = infantry_equipment
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			X63 = {
 				add_equipment_subsidy = {
-					cic = 4000
+					cic = 1000
 					equipment_type = infantry_equipment
 				}
 			}
@@ -4969,24 +5087,24 @@ focus_tree = {
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			ICE = {
-				army_experience = 50
-				navy_experience = 50
-				air_experience = 50
+				army_experience = 25
+				navy_experience = 25
+				air_experience = 25
 			}
 			QUE = {
-				army_experience = 50
-				navy_experience = 50
-				air_experience = 50
+				army_experience = 25
+				navy_experience = 25
+				air_experience = 25
 			}
 			USA = {
-				army_experience = 50
-				navy_experience = 50
-				air_experience = 50
+				army_experience = 25
+				navy_experience = 25
+				air_experience = 25
 			}
 			X63 = {
-				army_experience = 50
-				navy_experience = 50
-				air_experience = 50
+				army_experience = 25
+				navy_experience = 25
+				air_experience = 25
 			}
 		}
 		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }

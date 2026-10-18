@@ -1,0 +1,186 @@
+spriteTypes = {
+	SpriteType = {# Rocket artillery
+		name = "GFX_goal_generic_rocket_artillery"
+		texturefile = "gfx/interface/goals/generic_rocket_artillery.png"
+	}
+
+	SpriteType = {# Enigma Machine
+		name = "GFX_goal_generic_machine"
+		texturefile = "gfx/interface/goals/generic_machine.png"
+	}
+
+	SpriteType = {# Air Bomber
+		name = "GFX_goal_generic_air_bomber_new"
+		texturefile = "gfx/interface/goals/generic_air_bomber_new.png"
+	}
+
+	SpriteType = {# Air CAS
+		name = "GFX_goal_generic_air_CAS_new"
+		texturefile = "gfx/interface/goals/generic_air_CAS_new.png"
+	}
+
+	SpriteType = {# Air TACS
+		name = "GFX_goal_generic_air_tactical_bomber_new"
+		texturefile = "gfx/interface/goals/generic_air_tactical_bomber_new.png"
+	}
+
+	SpriteType = {# Army High Command
+		name = "GFX_goal_generic_army_high_command"
+		texturefile = "gfx/interface/goals/generic_army_high_command.png"
+	}
+
+	SpriteType = {# Army High Command
+		name = "GFX_goal_RUS_training"
+		texturefile = "gfx/interface/goals/RUS_training.png"
+	}
+
+	SpriteType = {# White Legacy
+		name = "GFX_goal_RUS_white_legacy"
+		texturefile = "gfx/interface/goals/RUS_white_legacy.png"
+	}
+	
+	SpriteType = {# Armored Cars
+		name = "GFX_goal_generic_armored_cars"
+		texturefile = "gfx/interface/goals/generic_armored_cars.png"
+	}
+		
+	SpriteType = {# Russian With Flag
+		name = "GFX_goal_RUS_soldier_with_flag"
+		texturefile = "gfx/interface/goals/RUS_soldier_with_flag.png"
+	}
+			
+	SpriteType = {# Okhrana Intelligence Agency Focus
+		name = "GFX_goal_RUS_okhrana"
+		texturefile = "gfx/interface/goals/RUS_okhrana.png"
+	}
+
+	SpriteType = {# Okhrana Intelligence Agency Idea
+		name = "GFX_idea_RUS_okhrannoye_otdeleniye"
+		texturefile = "gfx/interface/ideas/RUS_okhrannoye_otdeleniye.png"
+	}
+
+	SpriteType = {# Investigate Corruption or just Generic Investigation
+		name = "GFX_goal_generic_investigate_corruption"
+		texturefile = "gfx/interface/goals/generic_investigate_corruption.png"
+	}
+	
+	SpriteType = {# Military Equipment
+		name = "GFX_goal_generic_military_equipment"
+		texturefile = "gfx/interface/goals/generic_military_equipment.png"
+	}
+		
+	SpriteType = {# Artillery Factories
+		name = "GFX_goal_generic_artillery_factories"
+		texturefile = "gfx/interface/goals/generic_artillery_factories.png"
+	}
+			
+	SpriteType = {# Mobile Rocket Artillery
+		name = "GFX_goal_generic_mobile_artillery_rocket"
+		texturefile = "gfx/interface/goals/generic_mobile_artillery_rocket.png"
+	}
+				
+	SpriteType = {# Anti-Fortification Idea
+		name = "GFX_idea_generic_anti_fortification"
+		texturefile = "gfx/interface/ideas/generic_anti_fortification.png"
+	}
+					
+	SpriteType = {# Tanks 3
+		name = "GFX_goal_generic_army_tanks3"
+		texturefile = "gfx/interface/goals/generic_army_tanks3.png"
+	}
+						
+	SpriteType = {# Russian Tank Academy
+		name = "GFX_idea_RUS_tank_academy"
+		texturefile = "gfx/interface/ideas/generic_army_tanks3.png"
+	}
+
+	SpriteType = {# All Armor Small
+		name = "GFX_unit_category_all_armor_icon_small"
+		texturefile = "gfx/interface/unit_category_all_armor_icon_small.png"
+	}
+
+	SpriteType = {# Army Icon Small
+		name = "GFX_unit_category_army_icon_small"
+		texturefile = "gfx/interface/unit_category_army_icon_small.png"
+	}
+
+	SpriteType = {# Category Cavalry Small
+		name = "GFX_unit_category_cavalry_icon_small"
+		texturefile = "gfx/interface/unit_category_cavalry_icon_small.png"
+	}
+
+	SpriteType = {# Category Frontline Small
+		name = "GFX_unit_category_front_line_icon_small"
+		texturefile = "gfx/interface/unit_category_front_line_icon_small.png"
+	}
+
+	SpriteType = {# Category Line Artillery Small
+		name = "GFX_unit_category_line_artillery_icon_small"
+		texturefile = "gfx/interface/unit_category_line_artillery_icon_small.png"
+	}
+
+	SpriteType = {# Category Support Battalions Small
+		name = "GFX_unit_category_support_battalions_icon_small"
+		texturefile = "gfx/interface/unit_category_support_battalions_icon_small.png"
+	}
+
+	SpriteType = {# Category Tanks Icon Small
+		name = "GFX_unit_category_tanks_icon_small"
+		texturefile = "gfx/interface/unit_category_tanks_icon_small.png"
+	}
+	
+	SpriteType = {# Russian Airforce
+		name = "GFX_goal_RUS_airforce"
+		texturefile = "gfx/interface/goals/RUS_airforce.png"
+	}
+
+	SpriteType = {# Air Fighter 2
+		name = "GFX_goal_generic_air_fighter2_new"
+		texturefile = "gfx/interface/goals/generic_air_fighter2_new.png"
+	}
+
+	SpriteType = {# Heavy Fighter
+		name = "GFX_goal_generic_air_heavy_fighter_new"
+		texturefile = "gfx/interface/goals/generic_air_heavy_fighter_new.png"
+	}
+
+	SpriteType = {# Strategic Bomber
+		name = "GFX_goal_generic_air_strategic_bomber_new"
+		texturefile = "gfx/interface/goals/generic_air_strategic_bomber_new.png"
+	}
+
+	SpriteType = {# Combined Bomber Offensive
+		name = "GFX_goal_Combined_Bomber_Offensive"
+		texturefile = "gfx/interface/goals/Combined_Bomber_Offensive.png"
+	}
+	
+	SpriteType = {# Russian Navy
+		name = "GFX_goal_RUS_navy"
+		texturefile = "gfx/interface/goals/RUS_navy.png"
+	}
+		
+	SpriteType = {# Naval Bomber
+		name = "GFX_goal_generic_air_naval_bomber2_new"
+		texturefile = "gfx/interface/goals/generic_air_naval_bomber2_new.png"
+	}
+		
+	SpriteType = {# Russian Undying Will
+		name = "GFX_goal_RUS_undying_will"
+		texturefile = "gfx/interface/goals/RUS_undying_will.png"
+	}
+			
+	SpriteType = {# Russian Republic Victorious
+		name = "GFX_goal_RUS_republic_victorious"
+		texturefile = "gfx/interface/goals/RUS_republic_victorious.png"
+	}
+				
+	SpriteType = {# Naval Carrier 2
+		name = "GFX_goal_generic_naval_carrier2"
+		texturefile = "gfx/interface/goals/generic_naval_carrier2.png"
+	}
+					
+	SpriteType = {# Mechanized Infantry
+		name = "GFX_goal_generic_mechanized_infantry"
+		texturefile = "gfx/interface/goals/generic_mechanized_infantry.png"
+	}
+}

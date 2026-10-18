@@ -775,7 +775,7 @@ ideas = {
 			picture = SPR_political_violence
 			modifier = {
 				political_power_cost = 0.4
-				stability_factor = -0.15
+				party_popularity_stability_factor = -0.15
 				communism_drift = -0.03
 			}
 		}
@@ -784,7 +784,7 @@ ideas = {
 			picture = SPR_political_violence
 			modifier = {
 				political_power_cost = 0.2
-				stability_factor = -0.05
+				party_popularity_stability_factor = -0.05
 				communism_drift = -0.01
 			}
 		}
@@ -792,13 +792,12 @@ ideas = {
 		SRI_italian_chetniks = {
 			picture = NOR_anti_communist_sentiment
 			modifier = {
-				stability_factor = -0.1
-				war_support_factor = -0.1
+				weekly_manpower = -50
 				conscription_factor = -0.1
-				fascism_drift = 0.05
-				radical_drift = 0.04
-				absolutist_drift = 0.03
-				neutrality_drift = 0.02
+				fascism_drift = 0.01
+				radical_drift = 0.01
+				absolutist_drift = 0.01
+				neutrality_drift = 0.01
 				democratic_drift = 0.01
 			}
 		}
@@ -806,11 +805,11 @@ ideas = {
 			name = SRI_italian_chetniks_2
 			picture = NOR_anti_communist_sentiment
 			modifier = {
-				stability_factor = -0.05
-				war_support_factor = -0.05
+				weekly_manpower = -25
 				conscription_factor = -0.05
-				fascism_drift = 0.03
-				radical_drift = 0.02
+				fascism_drift = 0.01
+				radical_drift = 0.01
+				absolutist_drift = 0.01
 			}
 		}
 
@@ -2202,6 +2201,880 @@ ideas = {
 			}
 		}
 
+		# RUSSIA SOV
+		RUS_entrenched_opposition_1 = {
+			picture = generic_democratic_opposition
+			modifier = {
+				political_power_gain = -0.8
+				drift_defence_factor = -0.25
+				stability_factor = -0.15
+				war_support_factor = -0.3
+				democratic_drift = -0.03
+			}
+		}
+
+		RUS_entrenched_opposition_2 = {
+			name = RUS_entrenched_opposition_1
+			picture = generic_democratic_opposition
+			modifier = {
+				political_power_gain = -0.6
+				drift_defence_factor = -0.15
+				stability_factor = -0.1
+				war_support_factor = -0.2
+				democratic_drift = -0.01
+			}
+		}
+
+		RUS_the_democratic_dictatorship_1 = {
+			picture = ARG_military_government
+			modifier = {
+				political_power_gain = -0.4
+				drift_defence_factor = -0.05
+				war_support_factor = -0.1
+				stability_factor = -0.05
+				drift_defence_factor = 0.05
+				democratic_drift = 0.01
+			}
+		}
+
+		RUS_the_democratic_dictatorship_2 = {
+			picture = ARG_military_government
+			modifier = {
+				political_power_gain = -0.2
+				drift_defence_factor = 0.15
+				democratic_drift = 0.03
+				party_popularity_stability_factor = 0.05
+				mobilization_laws_cost_factor = -0.25
+			}
+		}
+
+		RUS_the_democratic_dictatorship_3 = {
+			picture = ARG_military_government
+			modifier = {
+				war_stability_factor = 0.1
+				drift_defence_factor = 0.25
+				political_power_factor = 0.1
+				democratic_drift = 0.03
+				party_popularity_stability_factor = 0.1
+				mobilization_laws_cost_factor = -0.25
+			}
+		}
+
+		RUS_the_democratic_dictatorship_4 = {
+			picture = ARG_military_government
+			modifier = {
+				war_stability_factor = 0.2
+				drift_defence_factor = 0.25
+				political_power_factor = 0.15
+				democratic_drift = 0.05
+				party_popularity_stability_factor = 0.15
+				mobilization_laws_cost_factor = -0.5
+			}
+		}
+
+		RUS_army_commissars_idea = {
+			picture = SOV_smersh_ccp_sov_compatibility
+			modifier = {
+				army_morale_factor = 0.1
+				grant_medal_cost_factor = -0.5
+				field_officer_promotion_penalty = -0.25
+				experience_gain_army = 0.05
+			}
+		}
+
+		RUS_supreme_economic_council = {
+			picture = ARG_public_works_investment
+			modifier = {
+				conscription = -0.005
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = -0.1
+				stability_factor = -0.1
+				consumer_goods_factor = 0.1
+			}
+			research_bonus = {
+				industry = 0.1
+			}
+		}
+
+		RUS_supreme_economic_council_2 = {
+			name = RUS_supreme_economic_council
+			picture = ARG_public_works_investment
+			modifier = {
+				conscription = -0.0075
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = -0.2
+				stability_factor = -0.15
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = 0.1
+			}
+			research_bonus = {
+				industry = 0.1
+			}
+		}
+
+		RUS_supreme_economic_council_3 = {
+			name = RUS_supreme_economic_council
+			picture = ARG_public_works_investment
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = -0.2
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				line_change_production_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.05
+			}
+			research_bonus = {
+				industry = 0.1
+			}
+		}
+
+		RUS_supreme_economic_council_4 = {
+			name = RUS_supreme_economic_council
+			picture = ARG_public_works_investment
+			modifier = {
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = -0.3
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				line_change_production_efficiency_factor = 0.1
+				consumer_goods_factor = -0.05
+			}
+			research_bonus = {
+				industry = 0.1
+			}
+		}
+
+		RUS_artels = {
+			picture = FIN_finnish_federation_of_trade_unions_light
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				democratic_drift = 0.03
+			}
+		}
+
+		RUS_artels_chamber = {
+			picture = FIN_finnish_federation_of_trade_unions_heavy
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.1
+			}
+		}
+
+		RUS_artels_chamber_2 = {
+			name = RUS_artels_chamber
+			picture = FIN_finnish_federation_of_trade_unions_heavy
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.15
+				conversion_cost_civ_to_mil_factor = -0.15
+				conversion_cost_mil_to_civ_factor = -0.15
+			}
+		}
+
+		RUS_federalist_deadlock = {
+			picture = JAP_collapsing_government
+			modifier = {
+				economic_law_cost_factor = 0.5
+				trade_laws_cost_factor = 0.5
+				political_power_factor = -0.1
+				political_advisor_cost_factor = 0.25
+			}
+		}
+
+		RUS_federalism_cleared_up = {
+			picture = SOV_rebuild_the_savior_cathedral_ccp_sov_compatibility
+			modifier = {
+				stability_weekly_factor = 0.001
+				political_power_gain = 0.1
+				political_advisor_cost_factor = -0.25
+			}
+		}
+
+		RUS_army_test = {
+			picture = generic_manpower_bonus
+			modifier = {
+				mobilization_speed = 0.05
+				land_reinforce_rate = 0.01
+				army_artillery_attack_factor = 0.1
+				army_artillery_defence_factor = 0.1
+				max_planning_factor = 0.1
+				planning_speed = 0.15
+				experience_gain_army_unit_factor = 0.2
+				army_org_factor = 0.05
+				army_org_regain = 0.05
+				coordination_bonus = 0.05
+				experience_gain_army_factor = 0.15
+				training_time_army_factor = 0.1
+				experience_loss_factor = -0.25
+				air_close_air_support_org_damage_factor = 0.1
+				breakthrough_factor = 0.05
+				army_infantry_attack_factor = 0.05
+				army_infantry_defence_factor = 0.05
+				army_armor_attack_factor = 0.05
+				army_armor_defence_factor = 0.05
+				motorized_attack_factor = 0.05
+				motorized_defence_factor = 0.05
+				mechanized_attack_factor = 0.05
+				mechanized_defence_factor = 0.05
+				org_loss_when_moving = -0.1
+				army_morale_factor = 0.1
+				army_attack_speed_factor = 0.05
+				conscription_factor = 0.05
+				weekly_bombing_war_support = 0.004
+				conscription = 0.005
+			}
+		}
+
+		RUS_deception = {
+			picture = SOV_smersh_ccp_sov_compatibility
+			modifier = {
+				recon_factor = 0.25
+				army_intel_to_others = -10
+				cas_damage_reduction = 0.1
+				enemy_army_bonus_air_superiority_factor = -0.1
+			}
+		}
+
+		RUS_winter_equipment = {
+			picture = SOV_siberian_lessons_ccp_sov_compatibility
+			modifier = {
+				winter_attrition_factor = -0.15
+				no_supply_grace = 12
+				acclimatization_cold_climate_gain_factor = 0.2
+				modifier_army_sub_unit_long_range_patrol_support_attack_factor = 0.1
+				modifier_army_sub_unit_long_range_patrol_support_defence_factor = 0.1
+			}
+		}
+
+		RUS_russian_cause_idea = {
+			picture = FRA_scw_intervention_nationalists_focus
+			modifier = {
+				army_morale_factor = 0.05
+				conscription = 0.005
+				army_attack_speed_factor = 0.05
+			}
+		}
+
+		RUS_okhrana_1 = {
+			picture = RUS_okhrannoye_otdeleniye
+			modifier = {
+				stability_factor = 0.05
+				operative_slot = 1
+				political_power_gain = 0.05
+				resistance_target = -0.05
+			}
+		}
+
+		RUS_okhrana_2 = {
+			name = RUS_okhrana_1
+			picture = RUS_okhrannoye_otdeleniye
+			modifier = {
+				stability_factor = 0.05
+				operative_slot = 1
+				political_power_gain = 0.05
+				resistance_target = -0.05
+				intel_network_gain_factor = 0.2
+				decryption_power_factor = 0.1
+			}
+		}
+
+		RUS_okhrana_3 = {
+			name = RUS_okhrana_1
+			picture = RUS_okhrannoye_otdeleniye
+			modifier = {
+				foreign_subversive_activites = -0.15
+				stability_factor = 0.1
+				operative_slot = 2
+				political_power_gain = 0.05
+				resistance_target = -0.1
+				intel_network_gain_factor = 0.2
+				decryption_power_factor = 0.1
+			}
+		}
+
+		RUS_SMERSH = {
+			picture = RAJ_a_policy_of_silence
+			modifier = {
+				enemy_operative_detection_chance_factor = 0.1
+				enemy_operative_capture_chance_factor = 0.05
+				intel_from_combat_factor = 0.1
+				unit_military_police_design_cost_factor = -1
+				modifier_army_sub_unit_military_police_attack_factor = 0.1
+				modifier_army_sub_unit_military_police_defence_factor = 0.1
+				modifier_army_sub_unit_military_police_max_org_factor = 0.2
+			}
+		}
+
+		RUS_order_267_idea = {
+			picture = PRC_hundred_regiments_offensive
+			modifier = {
+				mobilization_speed = 0.25
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				org_loss_at_low_org_factor = -0.15
+				army_org_regain = -0.1
+				pocket_penalty = -0.25
+				resistance_damage_to_garrison_on_our_occupied_states = 0.05
+			}
+		}
+
+		RUS_military_production_idea_1 = {
+			picture = SOV_third_five_year_plan_military
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+			}
+		}
+
+		RUS_military_production_idea_2 = {
+			name = RUS_military_production_idea_1
+			picture = SOV_third_five_year_plan_military
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+				}
+				support_equipment = {
+					build_cost_ic = -0.05
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		RUS_military_production_idea_artillery_3 = {
+			name = RUS_military_production_idea_1
+			picture = SOV_third_five_year_plan_military
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				unit_artillery_brigade_design_cost_factor = -0.5
+				unit_artillery_design_cost_factor = -0.5
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+				}
+				support_equipment = {
+					build_cost_ic = -0.1
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.1
+				}
+				anti_air_equipment = {
+					build_cost_ic = -0.1
+				}
+				anti_tank_equipment = {
+					build_cost_ic = -0.1
+				}
+			}
+		}
+
+		RUS_military_production_idea_mechanization_3 = {
+			name = RUS_military_production_idea_1
+			picture = SOV_third_five_year_plan_military
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				unit_motorized_design_cost_factor = -0.5
+				unit_mechanized_design_cost_factor = -0.5
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+				}
+				support_equipment = {
+					build_cost_ic = -0.05
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.05
+				}
+				motorized_equipment = {
+					build_cost_ic = -0.1
+				}
+				mechanized_equipment = {
+					build_cost_ic = -0.1
+				}
+			}
+		}
+
+		RUS_military_production_idea_artillery_mechanization_4 = {
+			name = RUS_military_production_idea_1
+			picture = SOV_third_five_year_plan_military
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				unit_motorized_design_cost_factor = -0.5
+				unit_mechanized_design_cost_factor = -0.5
+				unit_artillery_brigade_design_cost_factor = -0.5
+				unit_artillery_design_cost_factor = -0.5
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+				}
+				support_equipment = {
+					build_cost_ic = -0.1
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.1
+				}
+				anti_air_equipment = {
+					build_cost_ic = -0.1
+				}
+				anti_tank_equipment = {
+					build_cost_ic = -0.1
+				}
+				motorized_equipment = {
+					build_cost_ic = -0.1
+				}
+				mechanized_equipment = {
+					build_cost_ic = -0.1
+				}
+			}
+		}
+
+		RUS_motorization_initative = {
+			picture = INS_cheap_lumber
+			modifier = {
+				truck_attrition_factor = -0.15
+				supply_node_range = 0.05
+				supply_combat_penalties_on_core_factor = -0.15
+			}
+			equipment_bonus = {
+				motorized_equipment = {
+					fuel_consumption_factor = -0.05
+					reliability_factor = 0.1
+				}
+			}
+		}
+
+		RUS_IRD = {
+			picture = generic_anti_fortification
+			modifier = {
+				rocket_attack_factor = 0.1
+			}
+			research_bonus = {
+				rocketry = 0.15
+			}
+			equipment_bonus = {
+				rocket_artillery_equipment = {
+					ap_attack = 1
+					breakthrough = 0.15
+					soft_attack = 0.15
+					build_cost_ic = -0.1
+				}
+				motorized_rocket_equipment = {
+					ap_attack = 1
+					breakthrough = 0.15
+					soft_attack = 0.15
+					build_cost_ic = -0.1
+				}
+				rocket_interceptor_equipment = {
+					reliability_factor = 0.1
+					maximum_speed = 0.1
+					air_agility = 0.1
+					air_defense = 0.1
+					build_cost_ic = -0.1
+				}
+			}
+		}
+
+		RUS_academy_of_black_epaulettes_idea = {
+			picture = RUS_tank_academy
+			modifier = {
+				army_armor_speed_factor = 0.05
+				modifier_army_sub_unit_light_tank_recon_max_org_factor = 0.2
+				trait_panzer_leader_xp_gain_factor = 0.25
+				unit_light_armor_design_cost_factor = -0.5
+				unit_medium_armor_design_cost_factor = -0.5
+				unit_heavy_armor_design_cost_factor = -0.5
+			}
+		}
+
+		RUS_cossack_host = {
+			picture = ETH_national_studs
+			modifier = {
+				trait_cavalry_leader_xp_gain_factor = 0.25
+				cavalry_attack_factor = 0.1
+				cavalry_defence_factor = 0.1
+				unit_cavalry_design_cost_factor = -0.5
+				weekly_manpower = 200
+			}
+		}
+
+		RUS_state_aviation_bureau_1 = {
+			picture = man_five_year_plan_air
+			equipment_bonus = {
+				mio_cat_eq_all_small_plane = {
+					build_cost_ic = -0.05
+				}
+				mio_cat_eq_all_medium_plane = {
+					build_cost_ic = -0.05
+				}
+				mio_cat_eq_all_large_plane = {
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		RUS_state_aviation_bureau_2 = {
+			name = RUS_state_aviation_bureau_1
+			picture = man_five_year_plan_air
+			equipment_bonus = {
+				mio_cat_eq_all_small_plane = {
+					build_cost_ic = -0.1
+				}
+				mio_cat_eq_all_medium_plane = {
+					build_cost_ic = -0.1
+				}
+				mio_cat_eq_all_large_plane = {
+					build_cost_ic = -0.1
+				}
+			}
+		}
+
+		RUS_army_of_air_1 = {
+			picture = SWE_land_air_warfare
+			modifier = {
+				ground_attack_factor = 0.05
+				air_superiority_efficiency = 0.05
+			}
+		}
+
+		RUS_army_of_air_2 = {
+			name = RUS_army_of_air_1
+			picture = SWE_land_air_warfare
+			modifier = {
+				ground_attack_factor = 0.1
+				air_superiority_efficiency = 0.05
+				air_superiority_bonus_in_combat = 0.15
+			}
+		}
+
+		RUS_army_of_air_3 = {
+			name = RUS_army_of_air_1
+			picture = SWE_land_air_warfare
+			modifier = {
+				ground_attack_factor = 0.15
+				air_superiority_efficiency = 0.1
+				air_superiority_bonus_in_combat = 0.15
+				air_cas_present_factor = 0.05
+				air_ace_generation_chance_factor = 0.33
+			}
+		}
+
+		RUS_strategic_dimension_1 = {
+			picture = SWE_marauder_bombers
+			modifier = {
+				air_bombing_targetting = 0.1
+				air_power_projection_factor = 0.1
+			}
+			research_bonus = {
+				heavy_air = 0.1
+			}
+		}
+
+		RUS_strategic_dimension_2 = {
+			name = RUS_strategic_dimension_1
+			picture = SWE_marauder_bombers
+			modifier = {
+				air_bombing_targetting = 0.1
+				air_power_projection_factor = 0.1
+				air_strategic_bomber_bombing_factor = 0.1
+				air_range_factor = 0.15
+			}
+			research_bonus = {
+				heavy_air = 0.1
+			}
+		}
+
+		RUS_strategic_dimension_3 = {
+			name = RUS_strategic_dimension_1
+			picture = SWE_marauder_bombers
+			modifier = {
+				air_strategic_bomber_defence_factor = 0.1
+				air_strategic_bomber_night_penalty = -0.25
+				strategic_bomb_visibility = -0.1
+				air_bombing_targetting = 0.1
+				air_power_projection_factor = 0.1
+				air_strategic_bomber_bombing_factor = 0.2
+				air_range_factor = 0.2
+			}
+			research_bonus = {
+				heavy_air = 0.1
+			}
+		}
+
+		RUS_attack_submarine_idea_1 = {
+			picture = generic_navy_submarines
+			modifier = {
+				naval_torpedo_reveal_chance_factor = -0.15
+				navy_submarine_attack_factor = 0.1
+				navy_submarine_defence_factor = 0.1
+			}
+		}
+
+		RUS_attack_submarine_idea_2 = {
+			name = RUS_attack_submarine_idea_1
+			picture = generic_navy_submarines
+			modifier = {
+				naval_torpedo_reveal_chance_factor = -0.25
+				navy_submarine_attack_factor = 0.15
+				navy_submarine_defence_factor = 0.15
+			}
+			equipment_bonus = {
+				submarine = {
+					max_strength = 5
+					sub_visibility = -0.05
+				}
+				cruiser_submarine = {
+					max_strength = 5
+					sub_visibility = -0.05
+				}
+			}
+		}
+
+		RUS_coastal_support = {
+			picture = SWE_coastal_support
+			modifier = {
+				shore_bombardment_bonus = 0.25
+				naval_heavy_gun_hit_chance_factor = 0.1
+				coastal_bunker_effectiveness_factor = 0.15
+			}
+		}
+
+		RUS_blue_seas_fleet = {
+			picture = URG_navy
+			modifier = {
+				shore_bombardment_bonus = 0.25
+				naval_heavy_gun_hit_chance_factor = 0.1
+				coastal_bunker_effectiveness_factor = 0.15
+				naval_torpedo_reveal_chance_factor = -0.25
+				navy_submarine_attack_factor = 0.15
+				navy_submarine_defence_factor = 0.15
+				industrial_capacity_dockyard = 0.1
+				navy_max_range_factor = 0.15
+			}
+			equipment_bonus = {
+				submarine = {
+					max_strength = 5
+					sub_visibility = -0.05
+				}
+				cruiser_submarine = {
+					max_strength = 5
+					sub_visibility = -0.05
+				}
+			}
+		}
+
+		RUS_invade_prussia = {
+			picture = generic_naval_invasion
+			modifier = {
+				invasion_preparation = -0.25
+				naval_invasion_penalty = -0.1
+				naval_invasion_planning_bonus_speed = 0.15
+			}
+			targeted_modifier = {
+				tag = PRE
+				breakthrough_bonus_against = 0.1
+			}
+		}
+
+		RUS_invade_japan = {
+			picture = generic_naval_invasion
+			modifier = {
+				invasion_preparation = -0.25
+				naval_invasion_penalty = -0.1
+				naval_invasion_planning_bonus_speed = 0.15
+			}
+			targeted_modifier = {
+				tag = JAP
+				breakthrough_bonus_against = 0.1
+			}
+		}
+
+		RUS_naval_rearmament = {
+			picture = SOV_modernize_the_far_eastern_fleet_ccp_sov_compatibility
+			modifier = {
+				repair_speed_factor = 0.15
+				refit_ic_cost = -0.25
+				refit_speed = 0.15
+			}
+			equipment_bonus = {
+				convoy = {
+					build_cost_ic = -0.1
+				}
+				submarine = {
+					build_cost_ic = -0.1
+				}
+				screen_ship = {
+					build_cost_ic = -0.1
+				}
+				capital_ship = {
+					build_cost_ic = -0.1
+				}
+				carrier = {
+					build_cost_ic = -0.1
+				}
+			}
+		}
+
+		RUS_the_volunteer_brigades = {
+			picture = ETH_peacekeeping_forces
+			modifier = {
+				send_volunteer_size = 1
+				army_experience_from_volunteers = 0.25
+				send_volunteers_tension = -1
+			}
+		}
+
+		RUS_caucasian_military_mission = {
+			picture = ETH_peacekeeping_forces
+			modifier = {
+				max_planning_factor = 0.1
+				experience_gain_army = 0.05
+			}
+			targeted_modifier = {
+				tag = X93
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = W31
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		RUS_prussian_payment_for_hammerfest = {
+			allowed = {
+				NOT = {
+					has_war_with = SOV
+				}
+			}
+			picture = can_wartime_prices_and_trade_board
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = SOV
+				industrial_factory_donations = 3
+				cic_to_target_factor = 0.05
+			}
+		}
+
+		RUS_final_build_up_for_war = {
+			allowed = {
+				NOT = {
+					has_war_with = X93
+				}
+			}
+			picture = chi_wargaming_division
+			modifier = {
+				consumer_goods_factor = -0.05
+				training_time_army_factor = -0.15
+				mobilization_speed = 0.15
+				production_speed_arms_factory_factor = 0.15
+			}
+		}
+
+		RUS_sabotaged_defences = {
+			picture = SOV_organize_wreckers
+			modifier = {
+				army_speed_factor = -0.05
+				mobilization_speed = -0.05
+				conscription_factor = -0.05
+				land_reinforce_rate = -0.02
+				land_bunker_effectiveness_factor = -0.05
+			}
+		}
+
+		RUS_franco_russian_trade_treaty = {
+			allowed = {
+				FRA = {
+					has_war_with_major = no
+				}
+				SOV = {
+					has_war_with_major = no
+				}
+			}
+			picture = can_wartime_prices_and_trade_board
+			modifier = {
+				consumer_goods_factor = -0.05
+				research_speed_factor = 0.05
+				country_resource_oil = -20
+			}
+			targeted_modifier = {
+				tag = FRA
+				extra_trade_to_target_factor = 0.1
+				trade_cost_for_target_factor = -0.25
+			}
+		}
+
+		RUS_russo_french_trade_treaty = {
+			allowed = {
+				FRA = {
+					has_war_with_major = no
+				}
+				SOV = {
+					has_war_with_major = no
+				}
+			}
+			picture = can_wartime_prices_and_trade_board
+			modifier = {
+				consumer_goods_factor = 0.05
+				fuel_gain_factor = 0.15
+				country_resource_oil = 20
+			}
+			targeted_modifier = {
+				tag = SOV
+				extra_trade_to_target_factor = 0.1
+				trade_cost_for_target_factor = -0.25
+			}
+		}
+
+		RUS_russian_support = {
+			allowed = {
+				SOV = {
+					exists = yes
+				}
+			}
+			picture = SOV_siberian_lessons_ccp_sov_compatibility
+			modifier = {
+				acclimatization_cold_climate_gain_factor = 0.25
+				winter_attrition_factor = -0.25
+				supply_combat_penalties_on_core_factor = -0.15
+				military_factory_donations = 5
+				industrial_factory_donations = 4
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.15
+					reliability_factor = -0.05
+				}
+			}
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+		}
+
 		# MISC COUNTRIES
 		AMERIKA_uneasy_peace = {
 			allowed = {
@@ -2622,8 +3495,8 @@ ideas = {
 		OTTOMANS_religious_peace = {
 			picture = SOV_church_and_mosque
 			modifier = {
-				stability_factor = 0.15
-				war_support_factor = 0.15
+				stability_factor = 0.05
+				war_support_factor = 0.05
 				conscription_factor = 0.05
 				compliance_gain = 0.01
 			}
