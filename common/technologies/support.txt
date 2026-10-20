@@ -167,6 +167,8 @@ technologies = {
 	tech_engineers2 = {
 
 		engineer = {
+			max_strength = 1
+			breakthrough = 0.1
 			entrenchment = 0.50
 			fort = {
 				defence = 0.10
@@ -175,15 +177,21 @@ technologies = {
 		}
 
 		assault_engineer = {
+			max_strength = 1
 			breakthrough = 0.1
+			entrenchment = 0.50
 			fort = {
 				attack = 0.15
+				defence = 0.05
 			}
 		}
 
 		armored_engineer = {
-			entrenchment = 1
+			max_strength = 1
+			breakthrough = 0.1
+			entrenchment = 0.50
 			fort = {
+				attack = 0.05
 				defence = 0.15
 			}
 		}
@@ -248,26 +256,32 @@ technologies = {
 		}
 
 		engineer = {
+			max_strength = 1
+			breakthrough = 0.1
 			entrenchment = 0.50
 			river = {
-				attack = 0.1
 				defence = 0.10
+				attack = 0.10
 			}
 		}
 
 		assault_engineer = {
+			max_strength = 1
 			breakthrough = 0.1
+			entrenchment = 0.50
 			river = {
-				attack = 0.1
+				attack = 0.15
+				defence = 0.05
 			}
 		}
 
 		armored_engineer = {
-			entrenchment = 1
+			max_strength = 1
+			breakthrough = 0.1
+			entrenchment = 0.50
 			river = {
 				attack = 0.05
-				defence = 0.05
-				movement = 0.15
+				defence = 0.15
 			}
 		}
 
@@ -340,7 +354,9 @@ technologies = {
 	tech_engineers4 = {
 
 		engineer = {
+			max_strength = 1
 			entrenchment = 0.50
+			breakthrough = 0.1
 			urban = {
 				attack = 0.1
 				defence = 0.1
@@ -348,17 +364,22 @@ technologies = {
 		}
 
 		assault_engineer = {
+			max_strength = 1
+			entrenchment = 0.50
 			breakthrough = 0.1
 			urban = {
 				attack = 0.15
+				defence = 0.05
 			}
 		}
 
 		armored_engineer = {
-			entrenchment = 1
+			max_strength = 1
+			entrenchment = 0.50
+			breakthrough = 0.1
 			urban = {
 				defence = 0.15
-				movement = 0.15
+				attack = 0.05
 			}
 		}
 
@@ -491,11 +512,32 @@ technologies = {
 	tech_recon2 = {
 
 		category_recon = {
+			max_strength = 1
 			recon = 2
-		}
-
-		helicopter_recon = {
-			recon = 1
+			forest = {
+				movement = 0.01
+			}
+			hills = {
+				movement = 0.01
+			}
+			mountain = {
+				movement = 0.01
+			}
+			jungle = {
+				movement = 0.01
+			}
+			marsh = {
+				movement = 0.01
+			}
+			plains = {
+				movement = 0.01
+			}
+			desert = {
+				movement = 0.01
+			}
+			river = {
+				movement = 0.01
+			}
 		}
 
 		path = {
@@ -538,15 +580,32 @@ technologies = {
 	tech_recon3 = {
 
 		category_recon = {
+			max_strength = 1
 			recon = 2
-		}
-
-		helicopter_recon = {
-			recon = 1
-		}
-
-		helicopter_brigade = {
-			recon = 2
+			forest = {
+				movement = 0.01
+			}
+			hills = {
+				movement = 0.01
+			}
+			mountain = {
+				movement = 0.01
+			}
+			jungle = {
+				movement = 0.01
+			}
+			marsh = {
+				movement = 0.01
+			}
+			plains = {
+				movement = 0.01
+			}
+			desert = {
+				movement = 0.01
+			}
+			river = {
+				movement = 0.01
+			}
 		}
 
 		path = {
@@ -588,11 +647,32 @@ technologies = {
 	tech_recon4 = {
 
 		category_recon = {
+			max_strength = 1
 			recon = 2
-		}
-
-		helicopter_recon = {
-			recon = 2
+			forest = {
+				movement = 0.01
+			}
+			hills = {
+				movement = 0.01
+			}
+			mountain = {
+				movement = 0.01
+			}
+			jungle = {
+				movement = 0.01
+			}
+			marsh = {
+				movement = 0.01
+			}
+			plains = {
+				movement = 0.01
+			}
+			desert = {
+				movement = 0.01
+			}
+			river = {
+				movement = 0.01
+			}
 		}
 
 		research_cost = 2.0
@@ -672,10 +752,18 @@ technologies = {
 	tech_military_police2 = {
 
 		military_police = {
+			max_strength = 1
+			default_morale = 0.05
 			suppression_factor = 0.1
+			battalion_mult = {
+				category = category_all_infantry
+				default_morale = 0.05
+			}
 		}
 
 		motorized_military_police = {
+			max_strength = 1
+			default_morale = 0.05
 			suppression_factor = 0.1
 			battalion_mult = {
 				category = category_vehicle_infantry
@@ -713,10 +801,18 @@ technologies = {
 	tech_military_police3 = {
 
 		military_police = {
+			max_strength = 1
+			default_morale = 0.05
 			suppression_factor = 0.1
+			battalion_mult = {
+				category = category_all_infantry
+				default_morale = 0.05
+			}
 		}
 
 		motorized_military_police = {
+			max_strength = 1
+			default_morale = 0.05
 			suppression_factor = 0.1
 			battalion_mult = {
 				category = category_vehicle_infantry
@@ -753,10 +849,18 @@ technologies = {
 	tech_military_police4 = {
 
 		military_police = {
+			max_strength = 1
+			default_morale = 0.05
 			suppression_factor = 0.1
+			battalion_mult = {
+				category = category_all_infantry
+				default_morale = 0.05
+			}
 		}
 
 		motorized_military_police = {
+			max_strength = 1
+			default_morale = 0.05
 			suppression_factor = 0.1
 			battalion_mult = {
 				category = category_vehicle_infantry
@@ -855,14 +959,17 @@ technologies = {
 	tech_maintenance_company2 = {
 
 		maintenance_company = {
+			max_strength = 1
 			reliability_factor = 0.05
+			recovery = 0.01
 			equipment_capture_factor = 0.05
 		}
 
 		armored_maintenance = {
-			reliability_factor = 0.02
+			max_strength = 1
+			reliability_factor = 0.05
 			recovery = 0.03
-			equipment_capture_factor = 0.1
+			equipment_capture_factor = 0.05
 		}
 
 		enable_equipment_modules = {
@@ -908,30 +1015,28 @@ technologies = {
 	}
 
 	tech_maintenance_company3 = {
-
 		maintenance_company = {
+			max_strength = 1
 			reliability_factor = 0.05
-
+			recovery = 0.01
 			battalion_mult = {
-				category = category_all_armor
+				category = category_all_infantry
 				equipment_capture_factor = 0.01
 				add = yes
 				display_as_percentage = yes
 			}
-
 		}
 
 		armored_maintenance = {
-			reliability_factor = 0.02
+			max_strength = 1
+			reliability_factor = 0.05
 			recovery = 0.03
-
 			battalion_mult = {
 				category = category_all_armor
 				equipment_capture_factor = 0.02
 				add = yes
 				display_as_percentage = yes
 			}
-
 		}
 
 		path = {
@@ -973,14 +1078,15 @@ technologies = {
 	tech_maintenance_company4 = {
 
 		maintenance_company = {
+			max_strength = 1
 			reliability_factor = 0.05
-			equipment_capture_factor = 0.05
+			recovery = 0.01
 		}
 
 		armored_maintenance = {
-			reliability_factor = 0.02
+			max_strength = 1
+			reliability_factor = 0.05
 			recovery = 0.03
-			equipment_capture_factor = 0.1
 		}
 
 		research_cost = 2.0
@@ -1076,17 +1182,24 @@ technologies = {
 	tech_field_hospital2 = {
 
 		field_hospital = {
+			max_strength = 1
 			casualty_trickleback = 0.10
 			experience_loss_factor = -0.10
-		}
-
-		helicopter_field_hospital = {
-			casualty_trickleback = 0.12
-			experience_loss_factor = -0.08
 
 			battalion_mult = {
 				category = category_all_infantry
-				default_morale = 0.05
+				max_strength = 0.1
+			}
+		}
+
+		helicopter_field_hospital = {
+			max_strength = 1
+			casualty_trickleback = 0.1
+			experience_loss_factor = -0.1
+
+			battalion_mult = {
+				category = category_all_infantry
+				max_strength = 0.1
 			}
 		}
 
@@ -1132,27 +1245,24 @@ technologies = {
 	tech_field_hospital3 = {
 
 		field_hospital = {
-			casualty_trickleback = 0.1
+			max_strength = 1
+			casualty_trickleback = 0.10
 			experience_loss_factor = -0.10
-		}
-
-		helicopter_field_hospital = {
-			casualty_trickleback = 0.12
-			experience_loss_factor = -0.08
 
 			battalion_mult = {
 				category = category_all_infantry
-				default_morale = 0.05
+				max_strength = 0.1
 			}
 		}
 
-		helicopter_brigade = {
-			casualty_trickleback = 0.15
+		helicopter_field_hospital = {
+			max_strength = 1
+			casualty_trickleback = 0.1
 			experience_loss_factor = -0.1
 
 			battalion_mult = {
 				category = category_all_infantry
-				default_morale = 0.05
+				max_strength = 0.1
 			}
 		}
 
@@ -1197,17 +1307,24 @@ technologies = {
 	tech_field_hospital4 = {
 
 		field_hospital = {
-			casualty_trickleback = 0.1
+			max_strength = 1
+			casualty_trickleback = 0.10
 			experience_loss_factor = -0.10
-		}
-
-		helicopter_field_hospital = {
-			casualty_trickleback = 0.12
-			experience_loss_factor = -0.08
 
 			battalion_mult = {
 				category = category_all_infantry
-				default_morale = 0.05
+				max_strength = 0.1
+			}
+		}
+
+		helicopter_field_hospital = {
+			max_strength = 1
+			casualty_trickleback = 0.1
+			experience_loss_factor = -0.1
+
+			battalion_mult = {
+				category = category_all_infantry
+				max_strength = 0.1
 			}
 		}
 
@@ -1327,13 +1444,18 @@ technologies = {
 
 	tech_logistics_company2 = {
 
+		no_supply_grace = 4
+
 		logistics_company = {
+			max_strength = 1
 			supply_consumption_factor = -0.1
 			fuel_consumption_factor = -0.05
 		}
 
 		helicopter_transport = {
-			supply_consumption_factor = -0.12
+			max_strength = 1
+			supply_consumption_factor = -0.1
+			fuel_consumption_factor = -0.05
 		}
 
 		path = {
@@ -1377,17 +1499,18 @@ technologies = {
 
 	tech_logistics_company3 = {
 
+		no_supply_grace = 4
+
 		logistics_company = {
+			max_strength = 1
 			supply_consumption_factor = -0.1
 			fuel_consumption_factor = -0.05
 		}
 
 		helicopter_transport = {
-			supply_consumption_factor = -0.12
-		}
-
-		helicopter_brigade = {
-			supply_consumption_factor = -0.12
+			max_strength = 1
+			supply_consumption_factor = -0.1
+			fuel_consumption_factor = -0.05
 		}
 
 		path = {
@@ -1430,13 +1553,18 @@ technologies = {
 	}
 	tech_logistics_company4 = {
 
+		no_supply_grace = 4
+
 		logistics_company = {
+			max_strength = 1
 			supply_consumption_factor = -0.1
 			fuel_consumption_factor = -0.05
 		}
 
 		helicopter_transport = {
-			supply_consumption_factor = -0.15
+			max_strength = 1
+			supply_consumption_factor = -0.1
+			fuel_consumption_factor = -0.05
 		}
 
 		research_cost = 2.0
@@ -1526,14 +1654,20 @@ technologies = {
 	tech_signal_company2 = {
 
 		signal_company = {
-			initiative = 0.12
+			max_strength = 1
+			initiative = 0.08
+			battalion_mult = {
+				category = category_artillery
+				max_organisation = 0.02
+			}
 		}
 
 		armored_signal = {
+			max_strength = 1
 			initiative = 0.08
 			battalion_mult = {
 				category = category_all_armor
-				breakthrough = 0.01
+				max_organisation = 0.02
 			}
 		}
 
@@ -1578,14 +1712,20 @@ technologies = {
 	tech_signal_company3 = {
 
 		signal_company = {
-			initiative = 0.12
+			max_strength = 1
+			initiative = 0.08
+			battalion_mult = {
+				category = category_artillery
+				max_organisation = 0.02
+			}
 		}
 
 		armored_signal = {
+			max_strength = 1
 			initiative = 0.08
 			battalion_mult = {
 				category = category_all_armor
-				breakthrough = 0.01
+				max_organisation = 0.02
 			}
 		}
 
@@ -1629,14 +1769,20 @@ technologies = {
 	tech_signal_company4 = {
 
 		signal_company = {
-			initiative = 0.12
+			max_strength = 1
+			initiative = 0.08
+			battalion_mult = {
+				category = category_artillery
+				max_organisation = 0.02
+			}
 		}
 
 		armored_signal = {
+			max_strength = 1
 			initiative = 0.08
 			battalion_mult = {
 				category = category_all_armor
-				breakthrough = 0.01
+				max_organisation = 0.02
 			}
 		}
 
@@ -1765,6 +1911,9 @@ technologies = {
 		enable_equipments = {
 			train_equipment_2
 		}
+
+		supply_node_range = 0.05
+		supply_factor = 0.05
 
 		research_cost = 1.5
 		start_year = 1939
@@ -2247,9 +2396,6 @@ technologies = {
 		logistics_company = {
 			supply_consumption_factor = -0.15
 		}
-
-		research_cost = 1
-		start_year = 1936
 
 		categories = {
 			support_tech

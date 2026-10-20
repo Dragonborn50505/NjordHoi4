@@ -76,6 +76,19 @@ technologies = {
 		# units with radios can more efficiently join combats when there is room
 		land_reinforce_rate = 0.02
 		coordination_bonus = 0.02
+		ground_attack_factor = 0.02
+
+		category_artillery = {
+			default_morale = 0.05
+			defense = 0.02
+			breakthrough = 0.02
+		}
+
+		category_support_battalions = {
+			default_morale = 0.05
+			defense = 0.02
+			breakthrough = 0.02
+		}
 		
 		path = {
 			leads_to_tech = improved_radio 
@@ -128,6 +141,19 @@ technologies = {
 		# units with radios can more efficiently join combats when there is room
 		land_reinforce_rate = 0.02
 		coordination_bonus = 0.02
+		ground_attack_factor = 0.02
+
+		category_light_infantry = {
+			default_morale = 0.05
+			defense = 0.02
+			breakthrough = 0.02
+		}
+
+		category_mobile_and_mobile_combat_sup = {
+			default_morale = 0.05
+			defense = 0.02
+			breakthrough = 0.02
+		}
 		
 		path = {
 			leads_to_tech = advanced_radio 
@@ -174,8 +200,21 @@ technologies = {
 	advanced_radio = {
 
 		# units with radios can more efficiently join combats when there is room
-		land_reinforce_rate = 0.01
+		land_reinforce_rate = 0.02
 		coordination_bonus = 0.02
+		ground_attack_factor = 0.02
+
+		category_all_armor = {
+			default_morale = 0.05
+			defense = 0.02
+			breakthrough = 0.02
+		}
+
+		category_vehicle_infantry = {
+			default_morale = 0.05
+			defense = 0.02
+			breakthrough = 0.02
+		}
 		
 		start_year = 1941
 		
@@ -222,6 +261,12 @@ technologies = {
 			}
 		}
 
+		coordination_bonus = 0.01
+		air_accidents_factor = -0.02
+		air_weather_penalty = -0.02
+		air_detection = 0.02
+		naval_strike_targetting_factor = 0.02
+
 		enable_building = {
 			building = radar_station
 			level = 1
@@ -263,6 +308,11 @@ technologies = {
 		}
 
 		is_special_project_tech = yes
+
+		air_accidents_factor = -0.02
+		air_weather_penalty = -0.02
+		air_detection = 0.02
+		naval_strike_targetting_factor = 0.02
 		
 		coordination_bonus = 0.01
 		research_cost = 1.25
@@ -371,8 +421,14 @@ technologies = {
 		}
 		is_special_project_tech = yes
 		special_project_specialization = { specialization_air specialization_nuclear }
-		coordination_bonus = 0.02
+		coordination_bonus = 0.01
 		static_anti_air_hit_chance_factor = 0.2
+		static_anti_air_damage_factor = 0.05
+
+		air_accidents_factor = -0.02
+		air_weather_penalty = -0.02
+		air_detection = 0.02
+		naval_strike_targetting_factor = 0.02
 
 		enable_equipment_modules = { 
 			air_air_radar_1
@@ -418,7 +474,6 @@ technologies = {
 			building = radar_station
 			level = 5
 		}
-		coordination_bonus = 0.01
 		enable_equipment_modules = {
 			air_air_radar_2
 			ship_radar_3
@@ -427,6 +482,12 @@ technologies = {
 		special_project_specialization = { specialization_air specialization_nuclear }
 
 		static_anti_air_hit_chance_factor = 0.2
+		static_anti_air_damage_factor = 0.05
+		coordination_bonus = 0.01
+		air_accidents_factor = -0.02
+		air_weather_penalty = -0.02
+		air_detection = 0.02
+		naval_strike_targetting_factor = 0.02
 		
 		path = {
 			leads_to_tech = monopulse_radar 
@@ -467,7 +528,6 @@ technologies = {
 			building = radar_station
 			level = 6
 		}
-		coordination_bonus = 0.01
 		enable_equipment_modules = { 
 			ship_radar_4
 			air_ground_radar_2
@@ -476,6 +536,12 @@ technologies = {
 		special_project_specialization = { specialization_air specialization_nuclear }
 		
 		static_anti_air_hit_chance_factor = 0.2
+		static_anti_air_damage_factor = 0.05
+		coordination_bonus = 0.01
+		air_accidents_factor = -0.02
+		air_weather_penalty = -0.02
+		air_detection = 0.02
+		naval_strike_targetting_factor = 0.02
 		
 		research_cost = 1.25
 		start_year = 1942
@@ -644,7 +710,7 @@ technologies = {
 	advanced_computing_machine = {
 
 		# small boost to research speed
-		research_speed_factor = 0.08
+		research_speed_factor = 0.1
 		
 		path = {
 			leads_to_tech = advanced_encryption 
@@ -689,13 +755,10 @@ technologies = {
 	basic_encryption = {
 
 		# encryption 1
-		encryption = 1
+		encryption = 0.25
 		
 		research_cost = 1
 		start_year = 1938
-		allow_branch = {
-			NOT = { has_dlc = "La Resistance" }
-		}
 		folder = {
 			name = electronics_folder
 			position = { x = @encryption_x y = 6 }
@@ -722,10 +785,7 @@ technologies = {
 	improved_encryption = {
 
 		# encryption 2
-		encryption = 1
-		allow_branch = {
-			NOT = { has_dlc = "La Resistance" }
-		}
+		encryption = 0.25
 		research_cost = 1
 		start_year = 1940
 		
@@ -755,10 +815,7 @@ technologies = {
 	advanced_encryption = {
 
 		# encryption 3
-		encryption = 1
-		allow_branch = {
-			NOT = { has_dlc = "La Resistance" }
-		}
+		encryption = 0.25
 		research_cost = 1
 		start_year = 1942
 		
@@ -788,10 +845,7 @@ technologies = {
 	basic_decryption = {
 
 		# decryption 1
-		decryption = 1
-		allow_branch = {
-			NOT = { has_dlc = "La Resistance" }
-		}
+		decryption = 0.25
 		research_cost = 1.5
 		start_year = 1938
 		
@@ -817,10 +871,7 @@ technologies = {
 	improved_decryption = {
 
 		# decryption 2
-		decryption = 1
-		allow_branch = {
-			NOT = { has_dlc = "La Resistance" }
-		}
+		decryption = 0.25
 		research_cost = 1.5
 		start_year = 1940
 		
@@ -846,10 +897,7 @@ technologies = {
 	advanced_decryption = {
 
 		# decryption 3
-		decryption = 1
-		allow_branch = {
-			NOT = { has_dlc = "La Resistance" }
-		}
+		decryption = 0.25
 		research_cost = 1.5
 		start_year = 1942
 		
@@ -1031,6 +1079,7 @@ technologies = {
 		}
 
 		bunker_max_level_terrain_limit = 1
+		land_bunker_effectiveness_factor = 0.05
 		
 		research_cost = 1.5
 		start_year = 1938
@@ -1052,7 +1101,8 @@ technologies = {
 
 	land_fort_tech_2 = {
 
-		bunker_max_level_terrain_limit = 1
+		bunker_max_level_terrain_limit = 2
+		land_bunker_effectiveness_factor = 0.05
 		
 		research_cost = 1.5
 		start_year = 1940
@@ -1082,6 +1132,7 @@ technologies = {
 		}
 
 		coastal_bunker_max_level_terrain_limit = 1
+		coastal_bunker_effectiveness_factor = 0.05
 		
 		research_cost = 1.5
 		start_year = 1936
@@ -1104,6 +1155,7 @@ technologies = {
 	coastal_fort_tech_2 = {
 
 		coastal_bunker_max_level_terrain_limit = 2
+		coastal_bunker_effectiveness_factor = 0.05
 		
 		research_cost = 1.5
 		start_year = 1940
@@ -1217,18 +1269,22 @@ technologies = {
 			rocket_engine_1
 		}
 		
-		#rocket_artillery = { # Effects moved to the next rocket tech
-		#	soft_attack = 0.05
-		#}
-		#rocket_artillery_brigade = {
-		#	soft_attack = 0.05
-		#}
-		#mot_rocket_artillery_brigade = {
-		#	soft_attack = 0.05
-		#}
-		#motorized_rocket_brigade = {
-		#	soft_attack = 0.05
-		#}
+		rocket_artillery = { # Effects moved to the next rocket tech
+			ap_attack = 0.25
+			hard_attack = 0.1
+		}
+		rocket_artillery_brigade = {
+			ap_attack = 0.25
+			hard_attack = 0.1
+		}
+		mot_rocket_artillery_brigade = {
+			ap_attack = 0.25
+			hard_attack = 0.1
+		}
+		motorized_rocket_brigade = {
+			ap_attack = 0.25
+			hard_attack = 0.1
+		}
 		
 	#	path = {
 	#		leads_to_tech = improved_rocket_engines 
@@ -1281,19 +1337,24 @@ technologies = {
 
 		rocket_artillery = {
 			soft_attack = 0.1
+			ap_attack = 0.25
 		}
 		rocket_artillery_brigade = {
 			soft_attack = 0.1
+			ap_attack = 0.25
 		}
 		mot_rocket_artillery_brigade = {
 			soft_attack = 0.1
+			ap_attack = 0.25
 		}
 		motorized_rocket_brigade = {
 			soft_attack = 0.1
+			ap_attack = 0.25
 		}
 		
 		rocket_battery = {
 			soft_attack = 0.1
+			ap_attack = 0.25
 		}
 
 		research_cost = 1
@@ -1326,6 +1387,22 @@ technologies = {
 		special_project_specialization = { specialization_air }
 
 		is_special_project_tech = yes
+
+		rocket_artillery = {
+			ap_attack = 0.5
+		}
+		rocket_artillery_brigade = {
+			ap_attack = 0.5
+		}
+		mot_rocket_artillery_brigade = {
+			ap_attack = 0.5
+		}
+		motorized_rocket_brigade = {
+			ap_attack = 0.5
+		}
+		rocket_battery = {
+			ap_attack = 0.5
+		}
 		
 		enable_equipment_modules = { 
 			rocket_propelled_bombs
@@ -1363,6 +1440,22 @@ technologies = {
 		special_project_specialization = { specialization_air }
 		
 		is_special_project_tech = yes
+
+		rocket_artillery = {
+			ap_attack = 1
+		}
+		rocket_artillery_brigade = {
+			ap_attack = 1
+		}
+		mot_rocket_artillery_brigade = {
+			ap_attack = 1
+		}
+		motorized_rocket_brigade = {
+			ap_attack = 1
+		}
+		rocket_battery = {
+			ap_attack = 1
+		}
 
 		enable_equipment_modules = { 
 			improved_rocket_propelled_bombs
@@ -1533,7 +1626,7 @@ technologies = {
 	
 	atomic_research = {
 
-		research_speed_factor = 0.04
+		research_speed_factor = 0.06
 		
 		#path = {
 		#	leads_to_tech = nuclear_reactor 

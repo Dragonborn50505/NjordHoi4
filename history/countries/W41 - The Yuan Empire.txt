@@ -193,14 +193,17 @@ add_ideas = {
 	civilian_economy
 	export_focus
 	culture_kirgiz
-	CHI_political_corruption_in_the_administration
-	CHI_inflation_levels_3
-	CHI_heavily_neglected_countryside
-	CHI_illicit_trading_1
-	CHI_corruption_in_the_armed_forces
-	CHI_overbloated_military
-	CHI_resistance_sentiment_1
-	CHI_a_new_chinese_century
+	CHI_legitimacy_of_the_monarchy_1
+	CHI_corruption_in_the_administration_1
+	CHI_inefficient_economy_1
+	CHI_national_debt_1
+	CHI_corruption_in_the_armed_forces_1
+	CHI_stalled_80_division_reform_plan
+	CHI_court_of_the_jade_marshal
+	CHI_conservative_high_command_1
+	CHI_neglected_country_side_1
+	CHI_illicit_trade
+	CHI_growing_separatism_1
 }
 set_stability = 0.60
 set_war_support = 0.60

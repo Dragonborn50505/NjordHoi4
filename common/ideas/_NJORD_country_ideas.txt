@@ -1,5 +1,6 @@
 ideas = {
 	country = {
+		# PRUSSIA
 		PRE_reichstag_controlled_by_opposition = {
 			picture = generic_democratic_opposition
 			modifier = {
@@ -412,319 +413,6 @@ ideas = {
 				mic_to_target_factor = 0.05
 			}
 		}
-
-		CHI_political_corruption_in_the_administration = {
-			picture = ARG_political_corruption_modifier
-			modifier = {
-				industry_free_repair_factor = -0.25
-				industry_repair_factor = -0.25
-				consumer_goods_factor = 0.25
-				political_power_gain = 0.35
-				mobilization_laws_cost_factor = 1
-			}
-		}
-
-		CHI_slight_political_corruption_in_the_administration = {
-			picture = ARG_political_corruption_modifier
-			modifier = {
-				industry_free_repair_factor = -0.15
-				industry_repair_factor = -0.15
-				consumer_goods_factor = 0.15
-				political_power_gain = 0.25
-				mobilization_laws_cost_factor = 0.75
-			}
-		}
-
-		CHI_slight_political_corruption_in_the_administration = {
-			picture = ARG_political_corruption_modifier
-			modifier = {
-				industry_free_repair_factor = -0.05
-				industry_repair_factor = -0.05
-				consumer_goods_factor = 0.05
-				political_power_gain = 0.15
-				mobilization_laws_cost_factor = 0.5
-			}
-		}
-
-		CHI_minor_political_corruption_in_the_administration = {
-			picture = ARG_political_corruption_modifier
-			modifier = {
-				political_power_gain = 0.05
-				mobilization_laws_cost_factor = 0.25
-			}
-		}
-
-		CHI_inflation_levels_1 = {
-			picture = chi_hyper_inflation
-			modifier = {
-				consumer_goods_factor = 0.05
-				production_speed_buildings_factor = -0.05
-				industrial_capacity_dockyard = -0.05
-				industrial_capacity_factory = -0.05
-				production_factory_efficiency_gain_factor = -0.05
-			}
-		}
-		CHI_inflation_levels_2 = {
-			picture = chi_hyper_inflation2
-			modifier = {
-				consumer_goods_factor = 0.075
-				production_speed_buildings_factor = -0.075
-				industrial_capacity_dockyard = -0.075
-				industrial_capacity_factory = -0.075
-				production_factory_efficiency_gain_factor = -0.1
-			}
-		}
-		CHI_inflation_levels_3 = {
-			picture = chi_hyper_inflation3
-			modifier = {
-				consumer_goods_factor = 0.1
-				production_speed_buildings_factor = -0.1
-				industrial_capacity_dockyard = -0.1
-				industrial_capacity_factory = -0.1
-				production_factory_efficiency_gain_factor = -0.15
-			}
-		}
-		CHI_inflation_levels_4 = {
-			picture = chi_hyper_inflation4
-			modifier = {
-				consumer_goods_factor = 0.125
-				production_speed_buildings_factor = -0.125
-				industrial_capacity_dockyard = -0.125
-				industrial_capacity_factory = -0.125
-				production_factory_efficiency_gain_factor = -0.2
-			}
-		}
-		CHI_inflation_levels_5 = {
-			picture = chi_hyper_inflation5
-			modifier = {
-				consumer_goods_factor = 0.15
-				production_speed_buildings_factor = -0.15
-				industrial_capacity_dockyard = -0.15
-				industrial_capacity_factory = -0.15
-				production_factory_efficiency_gain_factor = -0.25
-			}
-		}
-
-		CHI_heavily_neglected_countryside = {
-			picture = CHI_neglected_countryside
-			modifier = {
-				research_speed_factor = -0.2
-				conscription_factor = -0.33
-				war_support_factor = -0.25
-				master_ideology_drift = -0.05
-				local_resources_factor = -0.25
-			}
-		}
-
-		CHI_slightly_neglected_countryside = {
-			picture = CHI_neglected_countryside
-			modifier = {
-				research_speed_factor = -0.15
-				conscription_factor = -0.22
-				war_support_factor = -0.2
-				master_ideology_drift = -0.03
-				local_resources_factor = -0.15
-			}
-		}
-
-		CHI_neglected_countryside = {
-			picture = CHI_neglected_countryside
-			modifier = {
-				research_speed_factor = -0.05
-				conscription_factor = -0.11
-				war_support_factor = -0.1
-				master_ideology_drift = -0.01
-				local_resources_factor = -0.05
-			}
-		}
-
-		CHI_the_treaty_ports = {
-			picture = CHI_nine_power_treaty_sea
-			modifier = {
-				min_export = 0.1
-				enemy_justify_war_goal_time = 0.1
-			}
-			research_bonus = {
-				industry = 0.05
-				electronics = 0.05
-			}
-			targeted_modifier = {
-				tag = IRE
-				extra_trade_to_target_factor = 0.05
-				trade_cost_for_target_factor = -0.1
-				industrial_factory_donations = 3
-			}
-			targeted_modifier = {
-				tag = PRE
-				extra_trade_to_target_factor = 0.05
-				trade_cost_for_target_factor = -0.1
-				industrial_factory_donations = 3
-			}
-			targeted_modifier = {
-				tag = FRA
-				extra_trade_to_target_factor = 0.05
-				trade_cost_for_target_factor = -0.1
-				industrial_factory_donations = 3
-			}
-		}
-
-		CHI_illicit_trading_0 = {
-			picture = CHI_illicit_trade_0
-			modifier = {
-				consumer_goods_factor = 0.05
-				monthly_population = 0.05
-				stability_factor = 0.1
-			}
-		}
-
-		CHI_illicit_trading_1 = {
-			picture = CHI_illicit_trade_1
-			modifier = {
-				consumer_goods_factor = -0.1
-				monthly_population = -0.1
-				stability_factor = -0.1
-				production_factory_start_efficiency_factor = -0.05
-			}
-		}
-
-		CHI_illicit_trading_2 = {
-			picture = CHI_illicit_trade_2
-			modifier = {
-				consumer_goods_factor = -0.15
-				stability_factor = -0.15
-				monthly_population = -0.2
-				production_factory_start_efficiency_factor = -0.1
-			}
-		}
-
-		CHI_corruption_in_the_armed_forces = {
-			picture = CHI_corruption_armed_forces
-			modifier = {
-				land_reinforce_rate = -0.05
-				army_org_factor = -0.05
-				conscription_factor = -0.25
-				supply_consumption_factor = 0.1
-				army_morale_factor = -0.25
-				army_attack_factor = -0.05
-				army_defence_factor = -0.05
-				max_dig_in = -1
-				command_power_gain_mult = -0.75
-			}
-		}
-
-		CHI_slight_corruption_in_the_armed_forces = {
-			picture = CHI_corruption_armed_forces
-			modifier = {
-				land_reinforce_rate = -0.03
-				army_org_factor = -0.025
-				conscription_factor = -0.15
-				supply_consumption_factor = 0.05
-				army_morale_factor = -0.15
-				army_attack_factor = -0.025
-				army_defence_factor = -0.025
-				command_power_gain_mult = -0.5
-			}
-		}
-
-		CHI_minor_corruption_in_the_armed_forces = {
-			picture = CHI_corruption_armed_forces
-			modifier = {
-				land_reinforce_rate = -0.01
-				conscription_factor = -0.05
-				supply_consumption_factor = 0.025
-				army_morale_factor = -0.1
-				command_power_gain_mult = -0.25
-			}
-		}
-
-		CHI_overbloated_military = {
-			picture = PRC_land_revolution_expedited
-			modifier = {
-				army_org_factor = -0.05
-				army_org_regain = -0.25
-				conscription_factor = -0.25
-				out_of_supply_factor = 0.15
-				training_time_army_factor = 0.25
-				max_training = -0.25
-				breakthrough_factor = -0.1
-			}
-		}
-
-		CHI_slightly_overbloated_military = {
-			picture = PRC_land_revolution_expedited
-			modifier = {
-				army_org_regain = -0.1
-				conscription_factor = -0.1
-				out_of_supply_factor = 0.05
-				training_time_army_factor = 0.1
-				max_training = -0.1
-				breakthrough_factor = -0.05
-			}
-		}
-
-		CHI_resistance_sentiment_1 = {
-			picture = chi_war_of_resistance3
-			modifier = {
-				required_garrison_factor = 0.33
-				resistance_growth = 0.075
-				compliance_growth = -0.075
-				party_popularity_stability_factor = -0.15
-			}
-		}
-
-		CHI_resistance_sentiment_2 = {
-			picture = chi_war_of_resistance2
-			modifier = {
-				required_garrison_factor = 0.22
-				resistance_growth = 0.05
-				compliance_growth = -0.05
-				party_popularity_stability_factor = -0.1
-			}
-		}
-
-		CHI_resistance_sentiment_3 = {
-			picture = chi_war_of_resistance
-			modifier = {
-				required_garrison_factor = 0.11
-				resistance_growth = 0.025
-				compliance_growth = -0.025
-				party_popularity_stability_factor = -0.05
-			}
-		}
-
-		CHI_a_new_chinese_century = {
-			picture = CHI_a_new_middle_kingdom
-			modifier = {
-				political_power_factor = 0.1
-				army_experience_from_volunteers = 0.25
-				send_volunteer_size = 1
-			}
-		}
-
-		CHI_a_new_chinese_century_2 = {
-			picture = CHI_a_new_middle_kingdom
-			modifier = {
-				war_stability_factor = 0.1
-				drift_defence_factor = 0.15
-				political_power_factor = 0.1
-				army_experience_from_volunteers = 0.25
-				send_volunteer_size = 1
-				opinion_gain_monthly_factor = 0.25
-			}
-		}
-		CHI_a_new_chinese_century_3 = {
-			picture = CHI_a_new_middle_kingdom
-			modifier = {
-				war_stability_factor = 0.15
-				drift_defence_factor = 0.25
-				political_power_factor = 0.15
-				army_experience_from_volunteers = 0.33
-				send_volunteer_size = 2
-				opinion_gain_monthly_factor = 0.5
-				faction_trade_opinion_factor = 0.33
-			}
-		}
-
 
 
 		# ITALY STARTING: 
@@ -3072,6 +2760,433 @@ ideas = {
 				tag = SOV
 				attack_bonus_against = 0.05
 				defense_bonus_against = 0.05
+			}
+		}
+
+
+		# CHINA / YUAN EMPIRE
+		CHI_legitimacy_of_the_monarchy_1 = {
+			picture = man_low_legitimacy
+			modifier = {
+				political_power_factor = -0.1
+				compliance_gain = -0.01
+				stability_factor = -0.25
+				war_support_factor = -0.25
+				research_speed_factor = -0.05
+				drift_defence_factor = -0.35
+				conscription_factor = -0.35
+			}
+			rule = {
+				can_be_called_to_war = no
+				can_join_factions = no
+			}
+		}
+
+		CHI_legitimacy_of_the_monarchy_2 = {
+			picture = man_low_legitimacy2
+			modifier = {
+				political_power_factor = -0.05
+				compliance_gain = -0.01
+				stability_factor = -0.15
+				war_support_factor = -0.15
+				drift_defence_factor = -0.2
+				conscription_factor = -0.25
+			}
+			rule = {
+				can_be_called_to_war = no
+				can_join_factions = no
+			}
+		}
+
+		CHI_legitimacy_of_the_monarchy_3 = {
+			picture = man_low_legitimacy3
+			modifier = {
+				compliance_gain = -0.01
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				political_power_factor = 0.05
+				drift_defence_factor = -0.05
+				party_popularity_stability_factor = 0.1
+				conscription_factor = -0.15
+			}
+			rule = {
+				can_be_called_to_war = no
+				can_join_factions = no
+			}
+		}
+
+		CHI_legitimacy_of_the_monarchy_4 = {
+			picture = man_low_legitimacy4
+			modifier = {
+				compliance_gain = 0.01
+				political_power_factor = 0.1
+				party_popularity_stability_factor = 0.15
+				war_stability_factor = 0.1
+				org_loss_at_low_org_factor = 0.05
+				drift_defence_factor = 0.1
+				conscription_factor = -0.05
+			}
+		}
+
+		CHI_legitimacy_of_the_monarchy_5 = {
+			picture = man_low_legitimacy5
+			modifier = {
+				compliance_gain = 0.01
+				political_power_factor = 0.15
+				party_popularity_stability_factor = 0.25
+				war_stability_factor = 0.2
+				org_loss_at_low_org_factor = -0.1
+				drift_defence_factor = 0.25
+				conscription_factor = 0.05
+			}
+		}
+
+		CHI_corruption_in_the_administration_1 = {
+			picture = ARG_political_corruption_modifier
+			modifier = {
+				political_advisor_cost_factor = -0.25
+				political_power_gain = 0.35
+				consumer_goods_factor = 0.25
+				industry_repair_factor = -0.25
+				industry_free_repair_factor = -0.25
+			}
+		}
+
+		CHI_inefficient_economy_1 = {
+			picture = CHI_inefficient_economy
+			modifier = {
+				fuel_gain_factor = -0.5
+				production_factory_efficiency_gain_factor = -0.35
+				economic_law_cost_factor = 0.25
+				industrial_capacity_dockyard = -0.25
+				industrial_capacity_factory = -0.25
+			}
+		}
+
+		CHI_inefficient_economy_2 = {
+			picture = CHI_inefficient_economy
+			modifier = {
+				fuel_gain_factor = -0.35
+				production_factory_efficiency_gain_factor = -0.25
+				economic_law_cost_factor = 0.15
+				industrial_capacity_dockyard = -0.15
+				industrial_capacity_factory = -0.15
+			}
+		}
+
+		CHI_inefficient_economy_3 = {
+			picture = CHI_inefficient_economy
+			modifier = {
+				fuel_gain_factor = -0.15
+				production_factory_efficiency_gain_factor = -0.15
+				economic_law_cost_factor = 0.05
+				industrial_capacity_dockyard = -0.05
+				industrial_capacity_factory = -0.05
+			}
+		}
+
+		CHI_inefficient_economy_4 = {
+			picture = ARG_economic_reactivation
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.05
+				industrial_capacity_dockyard = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		CHI_inefficient_economy_5 = {
+			picture = ARG_economic_reactivation
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				industrial_capacity_dockyard = 0.1
+				industrial_capacity_factory = 0.1
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+
+		CHI_national_debt_1 = {
+			picture = chi_hyper_inflation5
+			modifier = {
+				trade_opinion_factor = -0.5
+				production_speed_buildings_factor = -0.2
+				economic_law_cost_factor = 0.25
+				trade_laws_cost_factor = 0.25
+			}
+		}
+
+		CHI_national_debt_2 = {
+			picture = chi_hyper_inflation4
+			modifier = {
+				trade_opinion_factor = -0.4
+				production_speed_buildings_factor = -0.15
+				economic_law_cost_factor = 0.15
+				trade_laws_cost_factor = 0.15
+			}
+		}
+
+		CHI_national_debt_3 = {
+			picture = chi_hyper_inflation3
+			modifier = {
+				trade_opinion_factor = -0.3
+				production_speed_buildings_factor = -0.1
+				economic_law_cost_factor = 0.05
+				trade_laws_cost_factor = 0.05
+			}
+		}
+
+		CHI_national_debt_4 = {
+			picture = chi_hyper_inflation2
+			modifier = {
+				trade_opinion_factor = -0.2
+				production_speed_buildings_factor = -0.05
+			}
+		}
+
+		CHI_national_debt_5 = {
+			picture = chi_hyper_inflation
+			modifier = {
+				trade_opinion_factor = -0.1
+			}
+		}
+
+		CHI_corruption_in_the_armed_forces_1 = {
+			picture = CHI_corruption_armed_forces
+			modifier = {
+				army_org_factor = -0.15
+				supply_consumption_factor = 0.1
+				army_morale_factor = -0.25
+				max_dig_in_factor = -0.15
+				army_attack_factor = -0.05
+				army_defence_factor = -0.15
+				conscription_factor = -0.25
+				experience_loss_factor = 0.1
+				command_power_gain_mult = -0.25
+				supply_combat_penalties_on_core_factor = -0.35
+			}
+		}
+
+		CHI_corruption_in_the_armed_forces_2 = {
+			name = CHI_corruption_in_the_armed_forces_1
+			picture = CHI_corruption_armed_forces
+			modifier = {
+				army_org_factor = -0.1
+				supply_consumption_factor = 0.05
+				army_morale_factor = -0.15
+				max_dig_in_factor = -0.1
+				army_defence_factor = -0.1
+				conscription_factor = -0.15
+				experience_loss_factor = 0.05
+				command_power_gain_mult = -0.15
+				supply_combat_penalties_on_core_factor = -0.2
+			}
+		}
+
+		CHI_corruption_in_the_armed_forces_3 = {
+			name = CHI_corruption_in_the_armed_forces_1
+			picture = CHI_corruption_armed_forces
+			modifier = {
+				army_org_factor = -0.05
+				army_morale_factor = -0.05
+				max_dig_in_factor = -0.05
+				army_defence_factor = -0.05
+				conscription_factor = -0.05
+				command_power_gain_mult = -0.05
+				supply_combat_penalties_on_core_factor = -0.05
+			}
+		}
+		
+
+		CHI_stalled_80_division_reform_plan = {
+			picture = CHI_protracted_warfare
+			modifier = {
+				promote_cost_factor = -0.25
+				training_time_army_factor = -0.1
+				army_org_regain = -0.1
+				land_doctrine_cost_factor = 0.05
+				experience_gain_army_factor = -0.1
+				max_dig_in = 1
+			}
+		}
+
+		CHI_court_of_the_jade_marshal = {
+			picture = CHI_cult_of_shek
+			modifier = {
+				experience_gain_army_factor = 0.15
+				neutrality_drift = 0.01
+				command_power_gain_mult = 0.1
+				planning_speed = -0.1
+				max_command_power = 25
+				army_defence_factor = 0.05
+				experience_gain_factor = 0.05
+			}
+		}
+
+		CHI_conservative_high_command_1 = {
+			picture = ETH_conservative_high_command
+			modifier = {
+				experience_gain_factor = -0.15
+				dig_in_speed_factor = -0.15
+				land_doctrine_cost_factor = 0.25
+				conscription = -0.003
+				planning_speed = -0.25
+				command_power_gain_mult = -0.25
+				max_command_power_mult = -0.15
+				experience_gain_air_factor = -0.2
+				air_accidents_factor = 0.25
+				army_attack_against_major_factor = 0.1
+			}
+			research_bonus = {
+				armor = -0.25
+				air_equipment = -0.25
+			}
+		}
+
+		CHI_conservative_high_command_2 = {
+			name = CHI_conservative_high_command_1
+			picture = ETH_conservative_high_command
+			modifier = {
+				experience_gain_factor = -0.1
+				dig_in_speed_factor = -0.1
+				land_doctrine_cost_factor = 0.1
+				conscription = -0.002
+				planning_speed = -0.15
+				command_power_gain_mult = -0.15
+				max_command_power_mult = -0.1
+				experience_gain_air_factor = -0.1
+				air_accidents_factor = 0.15
+			}
+			research_bonus = {
+				armor = -0.15
+				air_equipment = -0.15
+			}
+		}
+
+		CHI_conservative_high_command_3 = {
+			name = CHI_conservative_high_command_1
+			picture = ETH_conservative_high_command
+			modifier = {
+				experience_gain_factor = 0.05
+				dig_in_speed_factor = 0.05
+				conscription = -0.001
+				planning_speed = -0.1
+				command_power_gain_mult = -0.05
+				max_command_power_mult = -0.05
+				air_accidents_factor = 0.05
+			}
+			research_bonus = {
+				armor = -0.05
+				air_equipment = -0.05
+			}
+		}
+
+		CHI_neglected_country_side_1 = {
+			picture = CHI_neglected_countryside
+			modifier = {
+				research_speed_factor = -0.15
+				communism_drift = 0.05
+				conscription_factor = -0.35
+			}
+			research_bonus = {
+				electronics = -0.2
+			}
+		}
+
+		CHI_neglected_country_side_2 = {
+			name = CHI_neglected_country_side_1
+			picture = CHI_neglected_countryside
+			modifier = {
+				research_speed_factor = -0.1
+				communism_drift = 0.03
+				conscription_factor = -0.25
+			}
+			research_bonus = {
+				electronics = -0.1
+			}
+		}
+
+		CHI_neglected_country_side_3 = {
+			name = CHI_neglected_country_side_1
+			picture = CHI_neglected_countryside
+			modifier = {
+				research_speed_factor = -0.05
+				communism_drift = 0.01
+				conscription_factor = -0.15
+			}
+		}
+
+		CHI_illicit_trade = {
+			picture = CHI_illicit_trade_1
+			modifier = {
+				monthly_population = -0.05
+				consumer_goods_factor = -0.15
+				production_factory_efficiency_gain_factor = -0.05
+				political_power_cost = 0.1
+			}
+		}
+
+		CHI_illicit_trade_allowed = {
+			picture = CHI_illicit_trade_2
+			modifier = {
+				monthly_population = -0.1
+				consumer_goods_factor = -0.2
+				production_factory_efficiency_gain_factor = -0.1
+			}
+		}
+
+		CHI_illicit_trade_rooting_out = {
+			picture = CHI_illicit_trade_0
+			modifier = {
+				monthly_population = -0.05
+				consumer_goods_factor = -0.05
+				political_power_cost = 0.05
+				stability_factor = 0.05
+			}
+		}
+
+		CHI_illicit_trade_banned = {
+			picture = CHI_illicit_trade_0
+			modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.1
+			}
+		}
+
+		CHI_growing_separatism_1 = {
+			picture = AFG_economic_regionalism
+			modifier = {
+				resistance_target = 0.1
+				resistance_growth = 0.15
+				compliance_growth = -0.15
+				required_garrison_factor = 0.3
+				war_support_factor = -0.1
+				stability_factor = -0.1
+				root_out_resistance_effectiveness_factor = -0.35
+				weekly_manpower = -300
+			}
+		}
+
+		CHI_growing_separatism_2 = {
+			picture = AFG_economic_regionalism
+			modifier = {
+				resistance_target = 0.05
+				resistance_growth = 0.1
+				compliance_growth = -0.1
+				required_garrison_factor = 0.2
+				war_support_factor = -0.05
+				stability_factor = -0.05
+				root_out_resistance_effectiveness_factor = -0.25
+				weekly_manpower = -200
+			}
+		}
+
+		CHI_growing_separatism_3 = {
+			picture = AFG_economic_regionalism
+			modifier = {
+				resistance_growth = 0.05
+				compliance_growth = -0.05
+				required_garrison_factor = 0.1
+				root_out_resistance_effectiveness_factor = -0.15
+				weekly_manpower = -100
 			}
 		}
 
