@@ -839,7 +839,7 @@ focus_tree = {
 		cost = 5
 
 		relative_position_id = RUS_cult_of_vozhd
-		x = -1
+		x = 0
 		y = 3
 
 		prerequisite = {
@@ -2911,7 +2911,7 @@ focus_tree = {
 		#Intelligence Branch
 	focus = {
 		id = RUS_expand_okhrana
-		icon = GFX_goal_RUS_okhrana
+		icon = GFX_focus_generic_secret_service_agency
 		cost = 5
 		x = 7
 		y = 0
@@ -4205,7 +4205,7 @@ focus_tree = {
 
 	focus = {
 		id = RUS_update_equipment
-		icon = GFX_focus_generic_military_equipment
+		icon = GFX_goal_generic_military_equipment
 		cost = 5
 
 		relative_position_id = RUS_military_production
@@ -4291,7 +4291,7 @@ focus_tree = {
 		y = 1
 
 		available = {
-			252 = { is_owned_and_controlled_by = ROOT }
+			628 = { is_owned_and_controlled_by = ROOT }
 		}
 		prerequisite = {
 			focus = RUS_military_production
@@ -4646,7 +4646,7 @@ focus_tree = {
 	### Air Tree ###
 	focus = {
 		id = RUS_evaluate_VVFR
-		icon = GFX_goal_RUS_airforce
+		icon = GFX_SOV_long_range_aircraft_ccp_2d_sov_compatibility
 		cost = 5
 
 		x = 14
@@ -5540,7 +5540,7 @@ focus_tree = {
 	### Navy Tree ###
 	focus = {
 		id = RUS_inspect_VMFR
-		icon = GFX_goal_RUS_navy
+		icon = GFX_SOV_offensive_maritime_strategy_ccp_2d_sov_compatibility
 		cost = 5
 
 		relative_position_id = RUS_evaluate_VVFR

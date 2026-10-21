@@ -1120,14 +1120,14 @@ characters={
 	}
 
 	SOV_nikita_putyatin={
-		name="the captain"
+		name="Nikita 'The captain' Putyatin"
 		portraits={
 			civilian={
 				large="gfx/leaders/a.dds"
 			}
 		}
 		country_leader={
-			ideology=conservatism
+			ideology=populism
 			expire="1965.1.1.1"
 			id=-1
 		}

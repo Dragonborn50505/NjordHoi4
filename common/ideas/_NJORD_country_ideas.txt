@@ -1932,7 +1932,6 @@ ideas = {
 				drift_defence_factor = 0.15
 				democratic_drift = 0.03
 				party_popularity_stability_factor = 0.05
-				mobilization_laws_cost_factor = -0.25
 			}
 		}
 
@@ -2075,41 +2074,6 @@ ideas = {
 				stability_weekly_factor = 0.001
 				political_power_gain = 0.1
 				political_advisor_cost_factor = -0.25
-			}
-		}
-
-		RUS_army_test = {
-			picture = generic_manpower_bonus
-			modifier = {
-				mobilization_speed = 0.05
-				land_reinforce_rate = 0.01
-				army_artillery_attack_factor = 0.1
-				army_artillery_defence_factor = 0.1
-				max_planning_factor = 0.1
-				planning_speed = 0.15
-				experience_gain_army_unit_factor = 0.2
-				army_org_factor = 0.05
-				army_org_regain = 0.05
-				coordination_bonus = 0.05
-				experience_gain_army_factor = 0.15
-				training_time_army_factor = 0.1
-				experience_loss_factor = -0.25
-				air_close_air_support_org_damage_factor = 0.1
-				breakthrough_factor = 0.05
-				army_infantry_attack_factor = 0.05
-				army_infantry_defence_factor = 0.05
-				army_armor_attack_factor = 0.05
-				army_armor_defence_factor = 0.05
-				motorized_attack_factor = 0.05
-				motorized_defence_factor = 0.05
-				mechanized_attack_factor = 0.05
-				mechanized_defence_factor = 0.05
-				org_loss_when_moving = -0.1
-				army_morale_factor = 0.1
-				army_attack_speed_factor = 0.05
-				conscription_factor = 0.05
-				weekly_bombing_war_support = 0.004
-				conscription = 0.005
 			}
 		}
 

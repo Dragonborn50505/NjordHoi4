@@ -1,5 +1,18 @@
 ﻿l_english:
 
+### Focus Shortcuts ###
+ RUS_Navy_shortcut: "Navy"
+ RUS_Army_shortcut: "Army"
+ RUS_Airforce_shortcut: "Airforce"
+ RUS_Foreign_shortcut: "Foreign Policy"
+ RUS_Industry_shortcut: "Industry"
+ RUS_Savinkov_Political: "Internal Politics"
+ RUS_Democratic_Monarchic_political: "Internal Politics"
+ RUS_socialist_political: "Internal Politics"
+ RUS_Socialist_Army: "Army"
+ RUS_Boldyrev_Forpol: "Foreign Policy"
+ RUS_Socialist_Foreign_Policy: "Foreign Policy"
+
 # TOOLTIPS
  RUS_spg_designs_focus_tt: "§YDepending on the researched artillery and anti-tank technologies, the following variants will be created:§!"
  RUS_ship_design_focus_tt: "\n§YDepending on the researched technologies, a ship variant will be created:§!"
@@ -9,9 +22,448 @@
  RUS_global_power_projection_tt: "\nMerges §YNaval National Spirits§! and modifies it by\n$MODIFIER_NAVY_MAX_RANGE_FACTOR$: §G15.00%§!\n$MODIFIER_INDUSTRIAL_CAPACITY_DOCKYARD_FACTOR$: §G10.00%§!"
  RUS_franco_russian_treaty_tt: "If either @FRA §YFrance§! or @SOV §YRussia§! go to war with a §TMajor Nation§!, both countries will §Rlose§! the national spirit."
 
- #IDEAS
+#IDEAS
+ RUS_entrenched_opposition_1: "Entrenched Opposition"
+ RUS_entrenched_opposition_1_desc: "President Nikita Putyatin's efforts to transform Russia have thoroughly been blocked by a weakening but powerful opposition, largely concentrated around the staunch federalist and parliamentary clique. If the opposition is to be broken, the men leading it will have to be dealt with in some way..."
+ RUS_the_democratic_dictatorship_1: "Death Throes of Parliamentarism"
+ RUS_the_democratic_dictatorship_2: "'In pain, a new Russia is being born - a Russia that is neither Tsarist nor Bolshevik. But how much blood will be shed.'"
+ RUS_the_democratic_dictatorship_2_desc: "The 'Democratic Dictatorship' - New 'Republic'"
+ RUS_the_democratic_dictatorship_3: "The 'Democratic Dictatorship' - Taking Shape"
+ RUS_the_democratic_dictatorship_3_desc: "'In pain, a new Russia is being born - a Russia that is neither Tsarist nor Bolshevik. But how much blood will be shed.'"
+ RUS_the_democratic_dictatorship_4: "The 'Democratic Dictatorship' - Centralised Power"
+ RUS_the_democratic_dictatorship_4_desc: "'In pain, a new Russia is being born - a Russia that is neither Tsarist nor Bolshevik. But how much blood will be shed.'"
+ RUS_army_commissars_idea: "Instructor-Volunteers"
+ RUS_army_commissars_idea_desc: "An instructor-volunteer is the father and soul of his unit, who inspires and motivates his soldiers to a decisive fight against the enemies of the Motherland by his words and deeds."
+ RUS_artels: "Artelizatsiya"
+ RUS_artels_desc: "One of the oldest forms of workers' organisations in Russia, the artels, replace trade unions in factories and plants, with many workers joining them voluntarily to take advantage of the benefits provided to their members."
+ RUS_artels_chamber: "Torgpromart"
+ RUS_artels_chamber_desc: "The Committee on Trade, Industry and Artels unites all artels in the country and provides expert advice to the government, as well as monitors working conditions and the well-being of workers."
+ RUS_supreme_economic_council: "VES"
+ RUS_supreme_economic_council_desc: "Composed from the brightest minds of our generation, the Supreme Economic Council is a technocratic body that strives to modernise Russian industry by planning methods and turn Russia into the strongest economy in the world."
+ RUS_federalist_deadlock: "Federalist Deadlock"
+ RUS_federalist_deadlock_desc: "The Federalist structure of the Russian Republic has produced nothing but public scandals and political corruption, we must do away with it."
+ RUS_federalism_cleared_up: "Crackdown on Federalism"
+ RUS_federalism_cleared_up_desc: "With our recent crackdowns and arrests of the most problematic figures of the Federalist clique, the Federalist Parliament and Supreme Court, the 'Duma', has thankfully fallen into line behind our project of transforming Russian Democracy."
+ RUS_deception: "Maskirovka"
+ RUS_deception_desc: "False airfields with mock-up aircraft are set up on the borders while the real ones look abandoned, soldiers are supplied with camouflage suits en masse, and night movements are masked by the noise of aircraft flights and gunfire - this is the art of masking our true intentions and remaining invisible to our enemies."
+ RUS_winter_equipment: "Prepared For Winter"
+ RUS_winter_equipment_desc: "Food and oil rations are rationed out for our troops, logistic trucks and trains run day and night - regardless of weather - to supply crucial equipment, and our summer uniforms have been swapped out for proper winter coats that can survive the harsh weather of Russia."
+ RUS_russian_cause_idea: "The Russian Cause"
+ RUS_russian_cause_idea_desc: "The fight does not end - we are Russians, and we have a sacred duty to destroy the three-headed hydra of Kaiserism, Communism, and Liberal 'Democracies'.\nFatherland or death!"
+ RUS_okhrana: "The Department of State Security"
+ RUS_okhrana_desc: "While the name could be different, the Okhrana didn't change much. Informants, spies, provocateurs - all tools are good in the fight for the soul of the Motherland."
+ RUS_SMERSH: "SMERSH"
+ RUS_SMERSH_desc: "The Russian counter-intelligence is welded together by the sacrificial blood of fallen comrades and murdered agents, whose unwritten names calls for heroism and revenge - death to spies, death to saboteurs, and death to traitors!"
+ RUS_order_267_idea: "Prikaz No. 267"
+ RUS_order_267_idea_desc: "Wars aren't won with retreats, and industries falling to the advancing enemy could spell disaster in the near future. We must pull out all the stops to ensure a reversal of the situation."
+ RUS_military_production_idea_1: "Central Military-Industrial Committee"
+ RUS_military_production_idea_1_desc: "The TsVPK is formed from military industrialists and experienced staff officers who work together to devise the most effective ways to develop the Russian military industry - and to win the War of Motors."
+ RUS_motorization_initative: "Industry of Motors"
+ RUS_motorization_initative_desc: "In order to win the War of Motors, the TsVPK has put special attention on motorising our entire supply and logistics networks, allowing food, fuel, ammunition and fuel even our most out-of-reach headquarters."
+ RUS_IRD: "Expansion of IRD"
+ RUS_academy_of_black_epaulettes_idea: "Academy of Black Epaulettes"
+ RUS_academy_of_black_epaulettes_idea_desc: ""
+ RUS_cossack_host: "Calling of the Cossack Host"
+ RUS_cossack_host_desc: ""
+ RUS_state_aviation_bureau: "The State Aviation Directorate"
+ RUS_state_aviation_bureau_desc: "The State Aviation Directorate (Gosavia) is a new proposed office that will centralise the development and production of aircraft."
+ RUS_army_of_air: "Armies of the Air"
+ RUS_army_of_air_desc: "In General Aleksandr Lapchinsky's words, the air force is an expansion of the army in the third dimension. Instead of being a separate actor, it should be understood as another spatial dimension that both secures its field of operations - the sky - and utilises it to destroy enemies in all other dimensions."
+ RUS_strategic_dimension_idea: "The Strategic Dimension"
+ RUS_strategic_dimension_idea_desc: "The real value of aviation lies in its ability to change the global balance of power - and Russian aviation is ready to destroy factories in enemy territory and cripple their armaments production, rather than destroying enemy tanks and planes one by one on the battlefield."
+ RUS_attack_submarine_idea_1: "Attack Submarine Squadrons"
+ RUS_attack_submarine_idea_1_desc: "Russian submariners receive extensive training, their ships are prepared for long voyages and the absence of surface support. The new tactics reward the brave."
+ RUS_coastal_support: "Floating Battery Doctrine"
+ RUS_coastal_support_desc: "The defensive navy is a fundamentally wrong concept; only squadrons gathered around 'floating fortresses' can react in time and stop an enemy fleet approaching Russian shores."
+ RUS_blue_seas_fleet: "The High Seas Fleet"
+ RUS_blue_seas_fleet_desc: "Reorganised and upgraded to modern standards, the Russian navy is ready to challenge the other great powers - whether in home waters or on the blue seas.\nGod and the Saint Andrew's flag are with us!"
+ RUS_invade_prussia: "Operation Sadko"
+ RUS_invade_japan: "Operation Rozhestvensky"
+ RUS_naval_rearmament: "Third Naval Expansion Programme"
+ RUS_naval_rearmament_desc: "Designed to restore the Russian Navy to its place among world's navies and regain its former glory, the aim of the naval programme is to upgrade the old ships from glorified coffins to modern standards and to build modern vessels that can compete with German and International vessels."
+ RUS_the_volunteer_brigades: "The Hero Brigades"
+ RUS_the_volunteer_brigades_desc: ""
+ RUS_caucasian_military_mission: "Caucasian Military Mission"
+ RUS_prussian_payment_for_hammerfest: "Prussian Payments"
+ RUS_final_build_up_for_war: "The Final Preparations"
+ RUS_sabotaged_defences: "Sabotaged Defenses"
+ RUS_russian_support: "Russian Support"
+ RUS_russian_support_desc: ""
+ RUS_russo_french_trade_treaty: "Franco-Russian Treaty"
+ RUS_russo_french_trade_treaty_desc: "Whatever here. \nIf either @FRA §YFrance§! or @SOV §YRussia§! go to war with a §TMajor Nation§!, both countries will §Rlose§! their national spirit."
  RUS_franco_russian_trade_treaty: "Franco-Russian Treaty"
  RUS_franco_russian_trade_treaty_desc: "Whatever here. \nIf either @FRA §YFrance§! or @SOV §YRussia§! go to war with a §TMajor Nation§!, both countries will §Rlose§! their national spirit."
 
- # RUSSIAN FACTION
- faction_moscow_accord: ""
+
+### Focuses ###
+ Russia_Focus: "Russian Focus Tree"
+
+# POLITICAL FOCUSES
+ RUS_control_supreme_court: "Control the Supreme Court"
+ RUS_control_supreme_court_desc: "With the Opposition Bloc crumbling under their own hubris, the Supreme Court stands as one of the few institutional pillars still opposing Nikita. Fortunately, the reforms of 1935, which aimed to expand the power of the Duma, also allow it to issue a vote of no confidence for the Supreme Court. With a majority in the Duma, the judges will have no choice but to surrender to the people's will."
+
+ RUS_savinkov_constitution: "The 'Captain's' Constitution"
+ RUS_savinkov_constitution_desc: "The current Russian Constitution dates back to 1922 and is, in many respects, a cobbled-together relic of Russia's political turmoil. Russia's new Supreme Court, with the blessing of the Duma and State Council, must streamline the Constitution not only into a sounder legal document but also one that recognises National Populism as the embodied will of Russia's many peoples."
+
+ RUS_necessary_revenge: "The Necessary Revenge"
+ RUS_necessary_revenge_desc: "It is not a matter of politics, but rather a duty to the Russian people, to punish those who misled them and conspired against them. The entire socialist-liberal political elite of the Russian Republic is rotten to the core, only interested in foreign ideologies or personal gain. These men will have to go."
+
+ RUS_undercut_monarchists: "Crowns from the Eagles"
+ RUS_undercut_monarchists_desc: "There is no need to humour the Panslavic Tsarists any longer now that the new Constitution guarantees both the pre-eminence of the SZRS and Russia's republicanism. Besides, the rumoured connection between elements of the SOR leadership and German business interests is proof that their dedication to Russia's renewal is lacking. Those among the SOR with patriotism and good sense will join Nikita - the others can enjoy irrelevance."
+
+ RUS_army_commissars: "Army Commissars"
+ RUS_army_commissars_desc: "The most visible sign of the SZRS' growing influence in the Army has been the election of the so-called 'Instructor-Volunteers'. Ostensibly chosen for élan and competence, it is an open secret that these Instructors function as Svobodnik evangelists. Nikita's close ally, Karol Vendzyagolsky, has lobbied incessantly to see this position formalised to strengthen party influence in the ranks."
+
+ RUS_svobodniks: "Rise of the Svobodniks"
+ RUS_svobodniks_desc: "Complicated and ill-defined, the 'Svobodniks' as an organisation trace their origin to the first SZRS, founded to oppose the Tsarists before the eventual democratisation of Russia deemed them unnecessary. Since then, they have been everything from terrorists, to street thugs, to labour detachments, to now an increasingly influential paramilitary. With SZRS power entrenched, the time has come to establish a role for the Svobodniks worthy of their unique 'talents'."
+
+ RUS_establish_the_VES: "Establish the VES"
+ RUS_establish_the_VES_desc: "With global economic turbulences affecting Russia's economy, the government has called an emergency session to establish an institution capable of meeting the crisis. The proposed 'Supreme Economic Council' will be tasked with drafting plans to combat inflation and unemployment in the short term, alongside long-term plans for economic recovery that will see Russia emerge stronger than ever."
+
+ RUS_artelizatsiya: "Artelisation"
+ RUS_artelizatsiya_desc: "Trade unions, like syndicalism itself, are foreign imports that seek to destroy the spirit of Russia. The artel is an ancient institution, grounded on sharing tools, workspaces, and profits among volunteer members, who elect their own leaders. The SZRS have been vocal and generous backers for Russia's artels, and their support is invaluable in drawing workers away from the left."
+
+ RUS_voskhod: "The Voskhod Programme"
+ RUS_voskhod_desc: "The Voskhod, or 'Sunrise', is less a development plan and more an outright war on Russia's backwardness. With vast swathes of Russians living on subsistance farming or beging unemployed, the Voskhod aims to mobilise the nation into a vast 'Labour Army'. In return for necessities and eventually, land of their own, the Labour-Soldiers will be dispatched to rapidly industrialise or settle regions across Russia."
+
+ RUS_fate_of_federalism: "Fate of Federalism"
+ RUS_fate_of_federalism_desc: "Russia is a federal state, and shall remain so. However, the SZRS has long tried to extend the president's powers at the regional level. While most of the gubernial Dumas are stuffed with patriots, there needs to be safeguards against local political sabotage."
+
+ RUS_declare_russian_state: "Declare the Russian State"
+ RUS_declare_russian_state_desc: "As other political parties have fractured in the face of petty infighting and defections, it has become increasingly clear that the SZRS is the only force capable of uniting and restoring Russia to its former glory. To weld the people into one single, unconquerable and all-destructive force - this is our aim, our conspiracy, and our task."
+
+ RUS_cult_of_vozhd: "State Cult of the Captain"
+ RUS_cult_of_vozhd_desc: "The past decades have proven that Russia's democracy is a sham marching to a coward's drum. The SRs and Kadets have soaked their hands in the blood of peasants. The All-Union Communist Party are nothing but whitewashed Bolsheviks. The military coddles itself with delusions of standing apart from politics. Only Nikita, who endured the biting cold of the Northern Ice March to free his Motherland, has the strength to see Russia restored."
+
+ RUS_catechism: "Catechism of a National Revolutionary"
+ RUS_catechism_desc: "The revolutionary is a doomed man. He has no private interests, sentiments, property, nor even a name of his own. His entire being is devoured by one purpose, one thought, one passion - the revolution. Heart and soul, not merely by word but by deed, he has severed every link with the social order and with the entire civilised world; with the laws and morality of that world. He is its merciless enemy and continues to inhabit it with only one purpose - to destroy it."
+ RUS_catechism_tt: "§gDoubles the effect of our previously take focus.§!"
+
+ RUS_revolution_in_spirit: "Revolution in Spirit"
+ RUS_revolution_in_spirit_desc: "The Third Russia is neither Orthodox-Tsarist, Populist Democracy nor Materialist-Bolshevik. The outdated ideas of organised, hierarchical spirituality must be sidelined in favour of a more dynamic and Symbolist understanding of the eternal Russian spirit and faith. Our task is nothing less than a great eschatological uprising against the modern world."
+
+ RUS_dealing_with_faith: "Ally with the Faith"
+ RUS_dealing_with_faith_desc: "Despite the Orthodox Church's support for Tsarism, they are undoubtedly an integral part of Russian civilisation. While the SZRS seeks to draw members from all faiths, an alliance of convenience with the Orthodox Church would give us a powerful ally close to the hearts of common Russians."
+
+ RUS_new_russian_culture: "New Russian Culture"
+ RUS_new_russian_culture_desc: "The typical Russian man looks into the past, towards Orthodoxy and the traditions that have always shaped the nation; but the new Russian man is different. He looks towards the future, he is a harbinger of modernity, and he is a heroic warrior who leads his people through difficult times. He leaves no room for mediocrity - only absolute dedication to Russia and its people."
+
+ RUS_vanguard_of_knights_of_terror: "Vanguard of the Knights of Terror"
+ RUS_vanguard_of_knights_of_terror_desc: "Fate has blessed the Russian people with indomitable men to lead them through the storms of history. Ivan the Terrible, Peter the Great, Catherine the Great - and now Nikita 'The Captain' Putaytin. Loyalty to our leader must be absolute, as is his drive to strengthen Russia. On every level of society, the principle of unquestionable loyalty must be implemented."
+
+ RUS_russian_cause: "The Russian Cause"
+ RUS_russian_cause_desc: "The SZRS has traditionally relied on sympathetic junior officers to counteract the scepticism of the military's upper echelons. However, with Nikita's regime appearing more stable, and with notable successes on the economic front, many fence-sitting officers have warmed up to National Populism. The Russian path will go through the night and darkness, through blood and death, but it will be the path to a new dawn."
+
+ RUS_gosstrazha: "Gosstrazha"
+ RUS_gosstrazha_desc: "The State Guard (Gosstrazha) was abolished in 1927 after having done admirable work in pacifying the country of Bolshevik terrorists and Tsarists influences. With the Captain's order, a new organisation focused on internal stability will be formed, separate from the Ministry of Interior, staffed by true believers in the SZRS' cause, and controlled by the party, not by the military."
+
+ RUS_labour_conscription: "Labour Conscription"
+ RUS_labour_conscription_desc: "A bourgeois asks: what can I gain from this? But a true Russian worker asks: what can my Motherland gain from this? Work should benefit the state, as the state benefits the worker."
+
+ RUS_teleological_planning: "Teleological Industrial Planning"
+ RUS_teleological_planning_desc: "How could the voter understand the complexity of the national economy? He has neither the means nor the will for it. Therefore, this burden in its entirety will be taken up by the experts of the VES, who will expand their planning prerogatives to various other sectors of public life."
+
+ RUS_solidarist_representation: "Corporatist Representation"
+ RUS_solidarist_representation_desc: "Will the Russian economy go from the hands of unelected businessmen to the hands of unelected technocrats? This has been a worry of the common Russian, and to soothe it, the Ministry of Finance has decided to found the Committee for Trade, Industry and Artels, where the worker and the engineer both can have their voices heard in matters of their own specialty."
+
+ RUS_economic_organisation_of_eurasia: "Council for The Generator Cities"
+ RUS_economic_organisation_of_eurasia_desc: "The collection of Generator Cities' sphere of influence now stretches far and wide like never before, but we have yet to take full advantage of it. We will harness all of Russia's resources to become the most powerful bloc in the world."
+
+ RUS_third_russia: "The Third Russian Revolution"
+ RUS_third_russia_desc: "The Third Russia is Nikita's Übermensch: a new organism, ascended and capable of creating its own values to replace those of the Materialist West. It would live not in honour of the glories of the past but for the necessities of the present, with its gaze fixed upon the great, messianic future. It is the duty of Russia to lead the world into a new age of spiritual enlightenment."
+
+#ECO TREE
+ RUS_relief_work: "Organise Relief Work"
+ RUS_relief_work_desc: "The Russian economy has been stagnant, and in times like these, drastic measures are needed. The creation of a public works programme will ensure that unemployment does not reach the bottom of the pit, allowing everyday Russians to get back on their feet and for a modicum of economic prosperity."
+
+ RUS_modernise_transsiberian: "Modernise the Trans-Siberian Railway"
+ RUS_modernise_transsiberian_desc: "From Moscow to Kamchatka, the Trans-Siberian Railway is a lifeblood of the Russian economy. Its importance cannot be understated. Updating its rail lines will help keep our economy afloat."
+
+ RUS_urban_housing_projects: "Urban Housing Programme"
+ RUS_urban_housing_projects_desc: "The economic crisis has left many Russians homeless, and we cannot afford to have so many on the streets. A government-subsidised programme will attempt to address this and hopefully get the average Russian back on their feet."
+
+ RUS_industrialise_siberia: "Siberian Development Programme"
+ RUS_industrialise_siberia_desc: "Beneath the Siberian soil, there's an immense untapped wealth of resources. Metals, minerals and fuels that surpass the output of entire empires are within our reach. By investing capital and expertise into the neglected regions of our east, we can turn Siberia into an economic powerhouse as the crown jewel of our resource industry."
+
+ RUS_electronics_focus: "The Electronic Calculating Machine"
+ RUS_electronics_focus_desc: "The latest advancements have seen electronics become more relevant than ever before in espionage and military planning - and the All-Russian Electrotechnical Institute took first steps in development of modern computing machines. A group of scientists under Sergey Lebedev, Vladimir Lukyanov and Bashir Rameyev issued a letter to the government asking for additional funding into the field."
+
+ RUS_new_refineries: "Synthetic Chemistry"
+ RUS_new_refineries_desc: "The latest years have seen the creation of the world's first synthetic rubbers, and various Russian rubber companies are beginning to capitalise on this. This should hopefully help us reduce our reliance on imported rubber."
+
+ RUS_industrialise_eastern_europe: "Develop the Heartlands"
+ RUS_industrialise_eastern_europe_desc: "Russia's western and central regions have been the backbone of its economy, but many of our urban centres still lag behind our European adversaries. We can still afford further developments in these areas, especially in agricultural machinery and manufacturing."
+
+ RUS_industrialise_urals: "The Ural Programme"
+ RUS_industrialise_urals_desc: "When the industrial revolution came to Russia, its riches rarely stretched beyond the major cities. Beyond the Ural Mountains, many localities rely on the same trades that they have since Ivan IV's eastward expansion. Instead of further industrialising the already wealthy cities, it's high time that we brought the riches of the industrial revolution to the Urals and beyond."
+
+ RUS_academy_of_sciences: "Develop the Academy of Sciences"
+ RUS_academy_of_sciences_desc: "Russia can claim a legacy of engineering excellence, but it has consistently lacked enough qualified technical specialists to meet the pace of industrialisation. Reviving and expanding upon the old zemstvo-run network of vocational schools and technical colleges will not only bring education to the masses but also train a new, far larger generation of industrial specialists."
+
+
+# ARMY FOCUSES
+ RUS_address_the_army: "Address the Army"
+ RUS_address_the_army_desc: "Denikin, whose theories have dictated Russia's reforms for the past decade, argued that quality is a quantity of its own. This quality and offensive-oriented spirit has served us well for now, but with tensions rising around the world and the arms race intensifying, we cannot afford to hesitate if we are to maintain our military at the modern level."
+
+ RUS_improve_savinkov_line: "Improve the Nikita Line"
+ RUS_improve_savinkov_line_desc: "While we anticipate an offensive war, there is the very real possibility that Russia will be pushed back to its borders and beyond, and the vast front will make defending everywhere difficult. A defensive fortification line stretching from the Baltics to the Aral Sea will make such moves against us difficult."
+
+ RUS_military_production: "War of Motors"
+ RUS_military_production_desc: "Nothing in the world unites Russians quite like their antipathy for the humiliating peace treaty with Poland-Lithuani. The spirit of revanchism burns bright, but righteous indignation is just one step on a long journey. Russia must prepare herself for the mortal struggle to come - a war of minds and motors."
+
+ RUS_update_equipment: "GOST"
+ RUS_update_equipment_desc: "Established in 1925, the GOST or 'Gosudarstvenny Standart' is a set of technical guidelines intended to standardise all aspects of Russia's economy. For the military, it ensures that everything from rations to rifles to railroads meets the strict standards needed to survive the rigours of war."
+
+ RUS_nizhegorodsky_avtomobilny_focus: "Detroit-on-Kazan"
+ RUS_nizhegorodsky_avtomobilny_focus_desc: "Constructed in the early 30s with the help of the Ford Motor Company, 'NAZ', located in Kazan, boasts the largest and most productive automobile plant in Russia. Andrey Lipgart, the plant's stern but pioneering director, has proposed a new generation of vehicles adapted both to Russian roads and demands for mass production."
+
+ RUS_roads_of_courage: "Roads of Courage"
+ RUS_roads_of_courage_desc: "Wars are won not just by troops at the front, but also by the countless personnel who keep the machinery of war running smoothly. The Main Directorate of Rear proposed by the Stavka's quartermaster cadre would centralise the logistics services of all separate military branches."
+
+ RUS_science_of_victory: "Science of Victory"
+ RUS_science_of_victory_desc: "Nikolay Golovin's 'Neo-Suvorovian' theories have been controversial, with Nikita in particular opposing them, seeing them as being too Prussian-inspired and against the spirit of the army that destroyed the Red Menace. Golovin's thesis is to formulate a 'Russian Auftragstaktik', taking the best lessons from German military thinking."
+
+ RUS_permanent_stavka: "Permanent Unified Command"
+ RUS_permanent_stavka_desc: "In the Great War, the complete independence of the army and naval command staffs from each other created severe difficulties in joint operations and strategic planning. The importance of combined-arms warfare between the army, navy, and especially the air force in the next war cannot be overstated, so the branches must be unified under the command of a permanent Stavka in times of both peace and war."
+
+ RUS_russian_auftragstaktik: "Russian Auftragstaktik"
+ RUS_russian_auftragstaktik_desc: "The Russian army has been traditionally plagued by opaque and slow command hierarchies. The Prussians have solved this through decentralising decision-making into lower levels, fostering a culture where lower officers are encouraged to make tactical decisions based on the situation on the ground, instead of passively waiting for orders from their superiors."
+
+ RUS_reform_yunker_schools: "Three-tier Military Education"
+ RUS_reform_yunker_schools_desc: "Lack of officers compared to the size of our army has always been holding the Russian army back in our tactical flexibility. We need thorough reform: remove privileges of 'Yunker' Schools, create modern European three-tiered system and not focus on producing the absolute best officers, but as many qualified and reliable ones as we need."
+
+ RUS_unity_of_doctrine: "Unity of Doctrine"
+ RUS_unity_of_doctrine_desc: "The Russian officer corps is experienced and brilliant, but has vastly different approaches to doctrine. The Denikin reforms were always more concerned with organisational questions, and the generals were allowed to conduct war as they wished. But a Cossack General wages war in a very different way from an Artillery General - which is not desirable when seeking to achieve consistent military success."
+
+ RUS_hammer_of_suvorov: "The Hammer of Suvorov"
+ RUS_hammer_of_suvorov_desc: "Artillery is the Russian Army's hammer, and no compromises are acceptable between quality or quantity. One-piece barrels, optimised muzzle brakes, lightweight carriages, and interchangeable parts will ensure Russia's artillery is both world-class and built for mass production, which will allow large artillery units to be concentrated on the front lines."
+
+ RUS_battle_of_destruction: "Violins of Death"
+ RUS_battle_of_destruction_desc: "From Suvorov to Brusilov, Russia has always won its most spectacular victories through firepower and bravery. Russia's army is not a wall or a scalpel blade, but a hammer - a relentless force that will crush the body and spirit of everything in its path. Whatever Russian artillery cannot level, Russian shock troops will seize at gunpoint."
+
+ RUS_spirit_of_victory: "Will to Victory"
+ RUS_spirit_of_victory_desc: "What brought the Volunteer Army to the victory? We were outgunned, outnumbered, starving and lost. But we never lost faith, we never wavered, and our spirit was held high by the righteousness of our cause. This is the quality that Denikin's and Markov's reforms have always sought to maintain - the unwavering, offensive spirit of the Russian soldier."
+
+ RUS_expansion_of_guards: "Expansion of the Guards Formations"
+ RUS_expansion_of_guards_desc: "Whether they call themselves 'Assault', 'Guards', 'Death', or 'Volunteer' units, these formations serve the same purpose - concentrating the best troops where they can do the most damage. These first-rate units are to form the heart of the Russian Army, clearing paths through even the most stubborn of enemy resistance, and motivating their comrades with unmatched bravery and self-sacrifice."
+
+ RUS_new_cavalry: "The New Cavalry"
+ RUS_new_cavalry_desc: "Horses are indispensable for the Russian Army, but the realities of modern war cannot be ignored. In his book 'The New Cavalry', Yevgeny Messner formulated a plan of 'cavalry-mechanised groups'. In his view, Russian cavalry traditions - ambitious manoeuvres across the steppe - are more relevant than ever, as long as the units are equipped in modern form."
+
+ RUS_separate_mechanised_divisions: "Separate Mechanised Divisions"
+ RUS_separate_mechanised_divisions_desc: "After a decade of development by the 'Black Epaulette' school of Russian officers, Separate Mechanised Divisions are finally capable of conducting independent operations. Inspired by the Panzer-Division, this column of steel and death will form the vanguard of the Russian armies in the wars to come."
+
+ RUS_propaganda_bureau_of_army: "Propaganda Agency of the Army"
+ RUS_propaganda_bureau_of_army_desc: "The OSVAG has done exemplary work in maintaining the morale of our own soldiers. While many old-school generals will scoff at the importance of propaganda, in the modern age of mass communications and armies, it is exactly the tool that can break and bolster the spirits of entire nations. For the sake of the nation's life, it is necessary to restore the army's will to die."
+
+ RUS_civic_militarism: "Civic Militarism"
+ RUS_civic_militarism_desc: "Emperor Aleksandr III once said that Russia has only two allies - the Russian Army and the Russian Navy. Together they are the guarantors of the Russian nation, the knights that protect Russia against the darkness. Every Russian should have pride in the army, and military service should be prized and venerated as the highest civic duty a man can perform."
+
+ RUS_encourage_heroism: "Education in Heroism"
+ RUS_encourage_heroism_desc: "What crippled the Bolsheviks was not technology or theory, but the simple ability of the common Russian soldier and officer. It is this rising generation of heroes we must put our faith in. Commanders like Denikin and Kornilov started from almost nothing - yet they got far with only their spirit and will."
+
+ RUS_steel_divisions: "Army of Steel"
+ RUS_steel_divisions_desc: "'Manoeuvre is the key to victory' - words first said by General Slashchyov, but which are now the maxim of a transformed Russian Army. Gone is the bulk and senseless waste of the Great War's 'Russian Steamroller'. Fleets of tanks and mobile infantry, steel-clad bogatyrs for an industrial age, stand ready to pierce the heart of German Europe."
+
+ RUS_maskirovka: "The Art of Deception"
+ RUS_maskirovka_desc: "Maskirovka, or Russian military deception, has long traditions in Russian military thinking. While the advantages of confusing one's enemy are obvious, the vast, forested spaces of Eastern Europe create the ideal conditions to create armies and invasions of phantoms."
+
+ RUS_academy_of_black_epaulettes: "The Academy of Black Epaulettes"
+ RUS_academy_of_black_epaulettes_desc: "General Markov and his Black Epaulettes - the young, bold and aggressive school of armour-minded officers - need a spiritual home of their own. The Military School of Mechanisation and Motorisation will be where the new generation of Russian military men will be forged."
+
+ RUS_motorisation: "Grand Mechanisation Programme"
+ RUS_motorisation_desc: "Grand ambition requires grand investment. Automobile and tractor plants across Russia will be joined under a new 'Specialised Machinebuilding Trust' (Spetsmash) that will answer directly to the Stavka. Streamlined production and management will allow vast quantities of tanks and wheeled vehicles to be produced more efficiently than otherwise possible."
+
+ RUS_NPP_tanks: "Direct-Support Armour"
+ RUS_NPP_tanks_desc: "Short for 'Direct-Support of Infantry', NPP tanks cover function just as much as they do form. Extensive resources for research and training have been allocated by the Stavka and the government to ensure that Russia's new generation of tanks integrates smoothly into combined arms operations."
+
+ RUS_expand_ird: "Expansion of IRD"
+ RUS_expand_ird_desc: "The Group for Research of Reactive Movement and Gas-Dynamic Laboratory were home to Russia's most brilliant rocket scientists. Since its foundation in 1934, IRD has been developing concepts for rocket-powered weapons, both for aeroplane armament and rocket artillery. Their first actual prototypes have been successful but have lacked funding for actual production."
+
+ RUS_desperate_measures: "Prikaz No. 267"
+ RUS_desperate_measures_desc: "The enemy throws new forces to the front without regard to heavy losses and penetrates deep into Russia, seizing new regions, destroying our cities and villages, and violating, plundering, and killing the Russian population. Some talk that we can retreat further to the east, but such talk is a falsehood, helpful only to our enemies. Russia is not a desert, but people. To retreat further means to waste ourselves and our Motherland. It is time to finish retreating. Not one step back!"
+
+ RUS_artillery_production: "Fund the GAU"
+ RUS_artillery_production_desc: "The GAU, or 'Main Artillery Directorate', is a venerable institution. Directed by Russia's top artillery engineer and industrialist, Vasily Grabin, it is tasked with developing new artillery and coordinating production. It has done an admirable job in modernising our arsenal on a limited budget. Given proper funding, the GAU can guarantee a steady flow of advanced guns to our growing Army."
+
+ RUS_mobilise_the_hosts: "Mobilise the Hosts"
+ RUS_mobilise_the_hosts_desc: "The Cossacks have for a long time enjoyed a mutually beneficial relationship with the Russian state, possessing a degree of autonomy in exchange for military service. As a new war dawns upon Russia, it is time they make good on that relationship. The Cossacks shall be united in the defence of the motherland!"
+
+ RUS_expand_okhrana: "Consolidate the Security Services"
+ RUS_expand_okhrana_desc: "Though its current form dates only to 1930, the Department of State Security boasts a long legacy of domestic espionage. The agency has excelled under its former director, Klavdy Foss, but its scope can be expanded beyond just tackling domestic extremism. Its powers overlap with primarily foreign intelligence-focused Special Purpose Department of the MVD (OON) and Fifth Department of the War Ministry. Consolidation is necessary for this bloated system."
+
+ RUS_codebreaking: "Establish the DRS"
+ RUS_codebreaking_desc: "The DRS, short for 'Cryptographic Intelligence Service', is a proposed Okhrana department dedicated to codebreaking. This department would both centralise cryptography under Okhrana supervision and be paired with the creation of special forces units dedicated to gathering cryptographic material in the field from enemy officers and signals hubs."
+
+ RUS_redemption: "Redemption of Guilt"
+ RUS_redemption_desc: "Sometimes soldiers commit crimes, sometimes even officers commit crimes. We have the institute of penal units for them, but this institute is small and used only from time to time. The Okhrana has proposed reorganisation of the penal units for their better use."
+
+# AIR FOCUSES
+ RUS_evaluate_VVFR: "Evaluate the VVFR"
+ RUS_evaluate_VVFR_desc: "The Voyenno-Vozdushny Flot Rossii (Military Air Fleet of Russia), an independent branch of the military since 1929, has evolved from a small bomber support group into a substantial force over the past few years. Nevertheless, many issues remain, including the replacement of obsolete or foreign aircraft and the reorganisation of air command."
+
+ RUS_new_airbases: "Air Defence Infrastructure"
+ RUS_new_airbases_desc: "The growing Russian air fleet is constantly in need of new bases from which to operate. A recently proposed programme involves the construction of new air bases along our borders with the Reichspakt to swiftly respond to a potential invasion, while also providing nearby support to ground forces if necessary."
+
+ RUS_state_aviation_bureau: "State Aviation Directorate"
+ RUS_state_aviation_bureau_desc: "Thus far, military aviation projects have largely been developed according to individual orders from the state and public contract bidding, which has not only led to leaks of classified material, but also left aircraft design and production up to the whims of private firms. The State Aviation Directorate (Gosavia) is a new proposed office that will centralise the development and production of aircraft."
+
+ RUS_radar_system: "The RUS System"
+ RUS_radar_system_desc: "Russia has experimented with electronic warfare since the Siege of Port Arthur, and great potential still remains untapped. The RUS (RadioUlavlivatel Samolyotov) Project is a reform to signals intelligence intended to concentrate electronic warfare resources in the most vital areas behind the lines. Greater stocks of radios, jamming transmitters, and cryptography machines will ensure that enemy communications are as disrupted as ours are secure."
+
+ RUS_the_flying_tank: "The Flying Tank"
+ RUS_the_flying_tank_desc: "A proposed assault aircraft, nicknamed the 'flying tank' by the Ilyushin design team for its armoured fuselage, has delivered promising results in recent competitions. Though it may not be as manoeuvrable as other CAS aircraft, the Russian design can operate effectively even under direct enemy fire. With an increase in funding, OSOAVIA is confident it can complete the project in the near future."
+
+ RUS_polikarpov_fighters: "King Polikarpov"
+ RUS_polikarpov_fighters_desc: "Nikolay Polikarpov, nicknamed 'the King of Fighters' by his colleagues at Duks, is one of the pioneers of modern Russian aviation. A consistent winner of military contract competitions since the early 1930s, his aircraft are the backbone of Russia's fighter force. With war clouds gathering, Polikarpov has promised to accelerate the rollout of a new generation of fighters to keep pace with developments in Germany and France."
+
+ RUS_enter_hundred: "Enter the Sotnya"
+ RUS_enter_hundred_desc: "With the growing need for bomber aircraft, it has become clear that resources must be redirected from other, less immediately useful investments like high-altitude fighter projects. Fortunately for us, Vladimir Petlyakov's 'Sotnya' (Hundred) is at the junction of several classes of aircraft and can be quickly converted into an excellent dive bomber."
+
+ RUS_over_the_northern_skies: "Over the Northern Skies"
+ RUS_over_the_northern_skies_desc: "The rather hostile situation on Russia's eastern border requires a new aircraft that can withstand both Japanese aviation and protect the Pacific Fleet from enemy carriers. Proposed by Aleksandr Seversky on the basis of his experience in the United States, the new long range planes can accompany our ships into hostile waters and harass an enemy far from home bases."
+
+ RUS_army_of_air: "Armies of the Air"
+ RUS_army_of_air_desc: "In General Aleksandr Lapchinsky's words, the air force is an expansion of the army in the third dimension. Instead of being a separate actor, it should be understood as another spatial dimension that both secures its field of operations - the sky - and utilises it to destroy enemies in all other dimensions."
+
+ RUS_combined_arms_exercises: "Combined Arms Exercises"
+ RUS_combined_arms_exercises_desc: "The concept of combined arms is simple enough, but its implementation requires rigorous drilling. Land forces must be taught to rely on air forces when necessary and to feed them with accurate information, and the pilots themselves must understand their role as soldiers in the sky, not as individualistic bogatyrs."
+
+ RUS_personal_heroism: "Personal Heroism"
+ RUS_personal_heroism_desc: "Russia's aviation academies have a wealth of experience, but their teaching is hindered by poorly-enforced curricula and ego-driven philosophical rivalries between schools. General Vyacheslav Baranov has proposed a harsh campaign to bring all academies up to a national standard, while also implementing a cooperative mentoring programme focusing on the personal ability and initiative of the trainees."
+
+ RUS_fighter_bomber_synergy: "Fighter-Bomber Synergy"
+ RUS_fighter_bomber_synergy_desc: "Fundamentally, the air force is divided based on the dimension of their targets. The destruction of aerial targets is useless on its own if it cannot be followed by the destruction of land-based targets. Coordination between these two roles is a core of efficient operational air warfare."
+
+ RUS_bomber_clique: "The Terror Doctrine"
+ RUS_bomber_clique_desc: "The air force is not a mere tool of the army, but a new kind of beast entirely. It allows us to target anything within a thousand miles: bridges, supply depots, headquarters, factories, and even civilian populations. Instead of being relegated to support roles, the VVFR should embrace its destiny as a harbinger of global destruction."
+
+ RUS_long_range_bomber_command: "Directorate of Long-Range Action"
+ RUS_long_range_bomber_command_desc: "The bombing force needs its own general staff, organised into what is essentially an air front. The Directorate of Long-Range Action (UDD) shall wield Russia's air power with the utmost precision and efficiency, handling both target acquisition and destruction."
+
+ RUS_create_the_VDV: "Expand the ADV"
+ RUS_create_the_VDV_desc: "Russia's airborne troops, having conducted their first parachute exercises in 1935, are the brainchild of General Vyacheslav Baranov, who has promoted the idea of paratroopers since the 1920s. ADV (Avia-Desantnye Voyska, or Air-Landing Forces) was formed as the experimental force, and now it is their time to prove themselves."
+
+ RUS_operational_independence: "Operational Independence"
+ RUS_operational_independence_desc: "The new VVFR can finally take pride in being its own branch entirely, with its own doctrine and command, standing proudly alongside the Army and the Navy. And it is merely a start - the future belongs to air power, as Seversky has always claimed."
+
+ RUS_total_avitational_mobilisation: "Total Aviational Mobilisation"
+ RUS_total_avitational_mobilisation_desc: "The rapid expansion of Russia's aircraft inventory and aviator cadres has made the VVFR one of the most powerful air forces in the world. Nevertheless, to prevent the current state of the VVFR from being simply a momentary advantage, the Stavka has prepared a plan for the consistent growth of the Russian air fleet, grounded on the streamlining of production lines paired with a new phase of expansion for aviation schools and youth clubs."
+
+ RUS_rds_1: "RDS-1"
+ RUS_rds_1_desc: "The 'Reactive Engine Special, model 1' is a nondescript name for the highly classified project assigned to a team under the leadership of renowned nuclear physicist Igor Kurchatov. Fragmentary reports from the Okhrana show a growing interest in secretive atomic research across the globe. The potential power released by the splitting of the atom is terrifying to contemplate, and Russia must ensure it is not left on the sidelines of history by such a weapon."
+
+ RUS_project_m: "Project M"
+ RUS_project_m_desc: "The 'Motor' Project, a revised successor of an earlier Project M rather unhelpfully labelled 'Minethrower', is an ongoing effort to fulfil the State Aviation Directorate's demand for a practical turbojet engine. This is no easy task, but early experiments have proved promising, and such an engine reaching mass production would give Russian aircraft a monumental advantage over the propeller-driven aircraft of their enemies."
+
+# NAVY FOCUSES
+ RUS_inspect_VMFR: "Evaluate the VMFR"
+ RUS_inspect_VMFR_desc: "The Voyenno-Morskoy Flot Rossii (Military Maritime Fleet of Russia) was severely damaged during the Russian Civil War and the ensuing economic crisis. Despite recent efforts, the current Russian Navy is still a far cry even from the old Imperial fleet. However, the Maritime Ministry has long prepared ambitious reform plans that could turn around the Navy's fortunes."
+
+ RUS_promote_new_blood: "Promote New Blood"
+ RUS_promote_new_blood_desc: "There are still many naval officers of the old era serving in the fleet, even though a lot of young talent has been favoured in promotions. But as the old generation is increasingly retiring, a new influx of gifted naval officers is needed. More resources need to be put into naval education to ensure a steady flow of gifted men for the navy."
+
+ RUS_garden_of_explosives: "Garden of Explosives"
+ RUS_garden_of_explosives_desc: "The art of mine-laying is perhaps what made Kolchak a legend of defensive naval operations. Under his direction, the Baltic Sea was made into a cold, wet hell for German shipping. So it shall be once more!"
+
+ RUS_torpedo_bomber_project: "Ships of the Air"
+ RUS_torpedo_bomber_project_desc: "The notable lack of modern aircraft in the VMFR has led to a somewhat belated project to bring such an aircraft into Russia's armoury. Major aircraft engineers such as Ilyushin and Tupolev have already received orders and additional funding to start developing not only new naval bombers, but also more powerful and reliable anti-ship ordnance."
+
+ RUS_naval_infantry: "Naval Guards Infantry"
+ RUS_naval_infantry_desc: "Experiences in the Great War and Civil War have proven the value of dedicated naval infantry units. Admiral Kolchak has patronised small brigades of 'Naval Riflemen' since first establishing them in 1919, but attempts to expand have been stonewalled by Army obstructionism. The Naval Riflemen's independence under Navy command must be recognised, and their numbers increased to finally make them a force to be reckoned with."
+
+ RUS_attack_submarine_brigades: "Attack Submarine Squadrons"
+ RUS_attack_submarine_brigades_desc: "The disparity of naval assets between the VMFR and the Kaiserliche Marine, in particular the large surface fleets, shows that an alternative approach to winning the naval war at sea may be pursued. To that end, the submarine forces are to be completely reorganised into squadrons, for no matter how big the shield may be, one cannot defend from all directions, and the vastness of the underwater seas offers no shortage of attack vectors."
+
+ RUS_new_generation_hunters: "Hunters of the New Generation"
+ RUS_new_generation_hunters_desc: "'Cruiser Submarine' theories, which advocate for greater independence and initiative for submarine forces, have gained increasing traction in the Maritime Ministry. This is an innovative tactic for the Russian Navy, which has traditionally relied on the interaction of surface and submarine ships, but it also requires the significant modernisation of the ageing submarine fleet."
+
+ RUS_floating_battery_doctrine: "Floating Battery Doctrine"
+ RUS_floating_battery_doctrine_desc: "With the launching of the 'Izmail Class' Battleship 'General Alekseyev' in 1930, came a glimpse of Kolchak's vision for the future of the Russian surface fleet. A fleet that would be concentrated around large vessels packed with enormous firepower, being able to engage in stand-off attacks against targets at long ranges."
+
+ RUS_armored_destroyer: "The Armoured Destroyer"
+ RUS_armored_destroyer_desc: "The concept of Armoured Destroyers was born out of the rather deplorable state of the Russian Navy in the late 20s. While our plans aim to restore the VMFR to its former glory, this cannot be done overnight, and ships are needed today. The concept itself advocates for the creation of larger 'Destroyer Leaders', which can take on the role of cruisers or even replace our conventional destroyers outright."
+
+ RUS_naval_engineers: "Naval Engineers"
+ RUS_naval_engineers_desc: "For the past century, the engineering and technical staff of the Russian Navy has served mainly in the Corps of Ship Engineers. The Corps, made up of civil servants only hired by the Navy on contract, is an outdated institution. The proposed replacement of the Corps of Ship Engineers by the Naval Engineering Service will increase the efficiency and integration of our technical staff."
+
+ RUS_linkor_programme: "Linkor Programme"
+ RUS_linkor_programme_desc: "'Linkor', a shortening from 'Lineyny Korabl' (Ship of the Line), is a Russian designation for battleships. Listed as a headliner element of the High Seas Shipbuilding Programme, the construction of new battleships will allow our fleet to emerge from its terrible state and, finally, compete with the fleets of other countries on equal footing."
+
+ RUS_kronstadt_project: "Kronstadt Project"
+ RUS_kronstadt_project_desc: "The Kronstadt Project, proposed by one of the brilliant admirals of the new generation, Nikolay Kuznetsov, became the subject of heated discussions at the Maritime Ministry. The final design of the aircraft carrier it proposed was adopted as part of the High Seas Fleet project, despite the rather ambiguous attitude towards it. However, even after being accepted, the project requires additional funding to complete."
+
+ RUS_global_power_projection: "Renewal of the High Seas Navy"
+ RUS_global_power_projection_desc: "The High Seas Fleet Project, the vision that our Maritime Ministry has been striving towards for over a decade, is now closer than ever. Our new role in the world calls for the ability to project power over vast distances, in the high seas of the world, and for this, we need a new, stronger fleet of capital ships."
+
+ RUS_operation_sadko: "Operation Sadko"
+ RUS_operation_sadko_desc: "The Prussians hide away in their naval bases as they are effortlessly smashed by Russia's army. Foolishly, they believe that the Russian navy is no match for them - but our latest naval reforms will show them otherwise. For the first time in hundreds of years, foreign boots will be marching on Copenhagen."
+
+ RUS_operation_rozhestvensky: "Operation Rozhestvensky"
+ RUS_operation_rozhestvensky_desc: "Our nation is at war with Ireland. It has been decades since the Irish Navy crushed the Spanish Armada, but it's finally time for a reckoning. The new Russian High Seas Fleet shall serve as the vanguard to a full naval invasion of the Irish islands."
+
+ RUS_third_naval_armament_program: "Third Naval Armament Programme"
+ RUS_third_naval_armament_program_desc: "In 1923, Kolchak launched a naval programme for the repair and retrofitting of the ageing Russian Navy. In 1927, he started a second two-stage naval programme for the construction of the first post-Great War light ships that lasted until 1935. Despite this, the VMFR is still severely outdated, and many issues continue to plague our dockyards. We are going to need a new naval programme, one that will aim for the total rearmament of the VMFR."
+
+ RUS_yekaterinas_legacy: "Yekaterina's Legacy"
+ RUS_yekaterinas_legacy_desc: "Created during the reign of Catherine the Great, the Black Sea Fleet was one of the main powers in Russia's continuous wars with the Turks. Now, after the loss of Crimea, the Black Sea Fleet is based in Novorossiysk, the port capacities of which are nowhere near that of lost Sevastopol. If we want to compete with the Reichspakt and Ottomans in the Black Sea, then Novorossiysk must be transformed into a home fit for a world-class fleet."
+
+ RUS_petrograd_dockyards: "Gateway to the Baltic"
+ RUS_petrograd_dockyards_desc: "Petrograd, the largest port in Russia, has fallen into decay over the past 15 years. The Baltic and Admiralty shipyards have lost half of their capabilities, and the port facilities of Kronstadt are teetering on the brink of scandalous neglect. A broad programme of repair and remediation must be initiated at once if Russia is to stand a chance of catching up with her rivals on the high seas."
+
+ RUS_eastern_shores: "Dalzavod"
+ RUS_eastern_shores_desc: "The Pacific Fleet, created in 1932 from the Siberian and Amur flotillas, is in a deplorable state. The defeat in the Russo-Japanese War and the unrest of the Civil War have both left deep scars. The Dalzavod shipyards of Vladivostok used to be one of the largest in the empire, and if we are to restore our grip on the Pacific, it needs to be a great harbour again."
+
+ RUS_kolchaks_dream: "Kolchak's Dream"
+ RUS_kolchaks_dream_desc: "The active use of the Northern Sea Route began in 1919, and it continued after the Civil War thanks to Admiral Kolchak's significant personal investment and support. In connection with the high-profile exploration of the Arctic, and especially the Northern Sea Route in the past few years, the Northern Sea Route Committee has proposed an ambitious plan to transform Arkhangelsk into a communications and shipbuilding hub for the entire region."
+
+###Foreign Policy###
+ RUS_third_europe: "Third Europe"
+ RUS_third_europe_desc: "In the post-Great War world, two political blocs have emerged: the first directed from Berlin, subjugating much of Central Europe, and the second directed from Rome, calling for socialist revolution all across the world. Moscow has never been part of either, and as we reaffirm our ambitions, this third bloc shall become a reality, liberating Europe from the Kaiser's slave armies and Bolshevism."
+
+ RUS_end_vilnius_agreement: "End the Vilnius Agreement"
+ RUS_end_vilnius_agreement_desc: "The Vilnius Accord in 1926 was the final humiliation. Gripped by the economic crisis, President Aleksandr Guchkov signed a deal with the Devil and gave Poland considerable access and benefits to the Russian economy. Yes, this led to economic growth - but also the entrenchment of Polish and German capital in Russia."
+
+ RUS_petrograd_security: "Petrograd Security"
+ RUS_petrograd_security_desc: "Petrograd is now the former capital for a reason; as it is situated close to the Baltic Countries and Prussian's invasion fleet, any great powers could use these countries as a base through which to decisively strike and occupy the city, delivering a significant blow to our morale and industry. If we are to protect it, security measures with our neighbours must be made regardless of their opposition."
+
+ RUS_sponsor_belgrade: "Sponsor Transcaucasia"
+ RUS_sponsor_belgrade_desc: "Poland, Austria, Troia - a trifecta of states have begun to band together in opposition to our Transcaucasian allies. Few in Europe are as amicable to us as they are, and through cooperation with them we can ensure that they, as well as us, can accomplish our dreams of a new European order."
+
+ RUS_operation_yekaterina: "Finalise Operation Yekaterina"
+ RUS_operation_yekaterina_desc: "If total war with Poland is to be Russia's fate, we must develop specific plans for said war. Operation Yekaterina, as it is codenamed, will lay out the details of an offensive strike into Eastern Europe unlike anything ever seen before, not in Europe nor the world. To develop the operation, we shall assemble the high-ranking generals from the Stavka and work out any differences in thought."
+
+ RUS_fifth_column: "The Fifth Columnists"
+ RUS_fifth_column_desc: "The entire basis of the Ostwall's security is that they are held up in part by the German and Polish armed forces and in part by forced anti-Russian sentiment. They seem to underestimate the fact that much of Eastern Europe despises Berlin just as much, a fact that we will utilise to our greatest potential. We will arm and organise dissidents all throughout Poland to spread as much chaos as possible and help secure our war aims."
+
+ RUS_preemptive_war: "The Pre-Emptive War"
+ RUS_preemptive_war_desc: "The time to avenge Russia's humiliation has finally arrived. The Polish 'Hussars' and Teutonic slavemasters will be smashed from Eastern Europe, but we will not rest until our banners have been draped across the Reichstag. Arise, mighty motherland, arise for the final struggle!"
+
+#Global branch
+ RUS_the_american_ice_march: "The Greenland Ice March"
+ RUS_the_american_ice_march_desc: "The Second Greenland War has broken out, and our allies in Canada is now being threatened by the same menace that we faced decades years ago. We must help them - both for their sake and ours."
+
+ RUS_restoration_of_AMTORG: "Restoration of the AMTORG"
+ RUS_restoration_of_AMTORG_desc: "The brutal 'cold' war in Greenland has finished, a victor finally emerging from the terrible slog of brother fighting brother. Greenlandish trade is incredibly beneficial for us as a nation, and there is no doubt that they are in desperate need of assistance. We shall subsume Canada into our greater Generator Collective."
+
+ RUS_franco_russian_treaty: "Franco-Russian Treaty"
+ RUS_franco_russian_treaty_desc: "The reality is that Russia is not the only one vying to conquer Germany. France's participation in the war will be a necessary factor if we are to overturn the old order. For now, we must put our ideological squabbles aside and work together to defeat the German menace. As the first step, a trade agreement will be proposed for the benefit of both sides, which will allow for the provision of Russian raw materials to the west while we reap the rewards of their high-quality technology."
+
+ RUS_kama_tank_centre: "The Kama Training Centre"
+ RUS_kama_tank_centre_desc: "Deepening ties with France in the West have led to a suggestion to create a centre for development and training in armoured warfare, where we can share research and experience. Cooperation between Kazan and Marseille (KaMa) faculties will be organised."
+
+ #Asia Branch
+ RUS_white_sun_of_desert: "White Sun of the Steppes"
+ RUS_white_sun_of_desert_desc: "The 1929 Christmas coup may have failed, but it caused enough chaos to make our influence in the Ottoman Empire deteriorate. An intervention to restore order in these lawless lands has been a long time coming, the reconquest of Kazan and Samara shall be a demonstration of Russian power!"
+
+ RUS_annex_the_bandit_states: "Annex the Bandit State"
+ RUS_annex_the_bandit_states_desc: "The Ottoman Empire has been committing many crimes against the Russian population and our reputation. They have terrorised the region with their poor governance and vicious banditry for many years, and it is now time to bring them back into the fold."
+
+ RUS_pacify_the_frontier: "Pacify the Steppes"
+ RUS_pacify_the_frontier_desc: "Conquering the region of Kazan and Samara has been beneficial to us, that much is true. Yet we do not need the empty steppes to be ruled directly to keep our influence in the region. Cultivating the Turks into a strong and subordinate ally would make the area much more secure. Demanding they deal with their own bandits would also save our troops from fighting against a likely never-ending infestation in the area, something that the common soldier will appreciate."
+
+ RUS_exploit_central_asia: "Progress to the Steppes"
+ RUS_exploit_central_asia_desc: "The lawlessness and banditry that penetrates the steppes of the Ottoman Empire has consistently prevented it from being a particularly resourceful region. Through proper investment, perhaps we can mitigate this."
+
+ RUS_mission_to_teheran: "Mission to Khiva"
+ RUS_mission_to_teheran_desc: "A complex relationship has developed between us and the Turkestan state. On one hand, the region has remained amicable in their relations to Russia, on the other, a quick and decisive military operation would put this once-lawless land under our control with ease."
