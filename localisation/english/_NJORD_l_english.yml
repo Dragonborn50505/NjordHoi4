@@ -653,6 +653,8 @@
  # MISC COUNTRIES:
  AMERIKA_uneasy_peace: "The Uneasy Peace"
  AMERIKA_uneasy_peace_desc: "Ever since the end of the Amerikan War, the peace treaty signed between the glorious United States of Amerika and the dastardly Confederated States of America has not softened tensions between the two rivaling governments. On the contrary, the peace has left both parties disgruntled, wanting to reunify the East Coast under their flag. There is not tell when this uneasy peace will break out into open conflict, but soon, it will."
+ AMERIKA_uneasy_peace_open_war: "The 2nd Amerikan War"
+ AMERIKA_uneasy_peace_open_war_desc: "The end of the Amerikan War left both parties with unfinished ambitions and goals. Neither the United States of Amerika, nor the Confederate States of America will stop their hostilities until one or the other is defeated."
 
  AMERIKA_CSA_peace_treaty: "Unfair Treaty"
  AMERIKA_CSA_peace_treaty_desc: "The peace treaty signed at Monterrey bridge, the historical connection between our now two rival governments, laid the groundwork for an unfair treaty. The treaty stipulates that the Unites States of Amerika has to pay absurd 'War Reparations' for the cost of the war, economically hampering our industrial base."
@@ -666,13 +668,81 @@
  AMERIKA_unprepared_army_1: "Unprepared Army"
  AMERIKA_unprepared_army_1_desc: "The Amerikan War took a lasting toll on the structure and organisation of the Amerikan army. In order to fix this, we must build up a modernised and significantly large army before the 2nd Amerikan War inevitably breaks out."
 
+ #CSA / AMERICA
+ #FOCUSES
+ CSA_last_bastion_of_american_democracy: "Last Bastion of American Democracy"
+ CSA_last_bastion_of_american_democracy_desc: "The First Reclamation Army failed in their goals of uniting America that is free from foreing oppression and Prussian influence. The years since has not always been kind to us, thousands of good Minutemen have been martyred. But we hold on, as the Second Reclamation Army prepares itself for the 2nd American War."
+
+ CSA_prepare_the_second_reclamation_army: "Prepare the Second Reclamation Army"
+ CSA_prepare_the_second_reclamation_army_desc: "Once believed to be the army capable of unifying America, the Reclamation Army split apart during the Northern Expedition. After several decades, the Second Reclamation Army has been bolstered by new recruits and returned with its full strength - hoping to carry out one last Expedition for unification."
+
+ CSA_enforce_discipline: "Enforce Discipline"
+ CSA_enforce_discipline_desc: "As the various Militiamen are comprised of volunteer recruits and veterans from the Northern Expedition, much of its training is haphazard and not up to date with modern military warfare. We must rectify the Militias into a formidable fighting force, one capable of discipline and respect."
+
+ CSA_employ_sabotage_operations: "Sabotage Operations"
+ CSA_employ_sabotage_operations_desc: "Outnumbered and outgunned, for years, Guerilla Militias residing in Amerika has learned that fights can be won by unconvential means. There are ways that a people can fight and we will encourage our forces to infiltrate and sabotage our enemies lines, sabotaging machineries and halting military production."
+
+ CSA_fortify_our_positions: "Fortify our Positions"
+ CSA_fortify_our_positions_desc: "For years, the mountains and forests of America has remained a highly defensive and militarised border. With war once again on the horizon, it will do us well to ensure that our defences and fortifications are adequately prepared."
+
+ CSA_rally_war_support: "Rally the Minutemen"
+ CSA_rally_war_support_desc: "Since the foundation of the Minutemen Militias - the leading officers and generals have been tasked in training and educating the Militias to organise themselves. If America is to be united again, then we must encourage the militias to defend this freedom."
+
+ CSA_encourage_war_bonds: "Encourage War Bonds"
+ CSA_encourage_war_bonds_desc: "Ammunition, guns, artillery pieces and other military equipment costs money and resources, far more than our small country can afford. In order to scrounge up the money we need, we can print 'War Bonds', allowing civilians to invest in the victory of our armies."
+
+ CSA_petition_for_international_aid: "Petition for International Aid"
+ CSA_petition_for_international_aid_desc: "Since our foundations, we have relied on a decent amount of international aid and recognition. So far, we have maintained cordial ties with other European powers willing to support our reclamation of America. Let us send the message - that we will be in need of their help in this coming grave hour."
+ CSA_petition_for_international_aid_TT: "We will send telegrams to various European powers, asking for anything they can spare."
+
+ CSA_add_fuel_to_the_fires: "Adding Fuel to the Fire"
+ CSA_add_fuel_to_the_fires_desc: "As we lack the industrial base of our rival neighbour, and we lack the access to properly fund the arms industry we have, civilians have been granted the task of creating new rifle patterns and arms. Until we manage to successfully establish a true American Government, we must do all we can to arm our Minutemen and soldiers."
+
+ CSA_hoard_supplies: "Hoard Supplies"
+ CSA_hoard_supplies_desc: "With the brink of war coming ever closer, we must reorient our entire society to military needs. Appropriating civilian trucks and trains will allow us to redirect them to military uses."
+
+ CSA_rally_all_conscriptions: "Rally All Conscriptions"
+ CSA_rally_all_conscriptions_desc: "As instructed by our founder, the American government is to lead the American people to break their chains of foreign oppression and Prussian influence. Let us rally all men and women, from the countryside and the cities, to join together and participate in our Reclamation once again."
+
+ CSA_all_for_america: "All for America"
+ CSA_all_for_america_desc: "With our Minutemen Militias and regular soldiers drilled and ready for war, it is high time we let our ideals of self-sacrifice, honour, and bravery inspire us to carry on the spirit of the Northern Expedition. A 2nd American War will be declared, for the unification of America!"
 
  CSA_american_propaganda: "American Propaganda"
  CSA_american_propaganda_desc: "A great deal of effort has been made on propagandising the Reunification of the American Unions. Our propaganda apparatus is a well-oiled machine, constantly cherning out new leaflets and radio programs on 'The Plight of our Amerikan Siblings'."
 
  CSA_uneasy_peace: "The Uneasy Peace"
  CSA_uneasy_peace_desc: "Ever since the end of the Amerikan War, the peace treaty signed between the dastardly United States of Amerika and the glorious Confederated States of America has not softened tensions between the two rivaling governments. On the contrary, the peace has left both parties disgruntled, wanting to reunify the East Coast under their flag. There is not tell when this uneasy peace will break out into open conflict, but soon, it will."
+ CSA_uneasy_peace_open_war: "Open War"
+ CSA_uneasy_peace_open_war_desc: "Ever since the end of the Amerikan War, the peace treaty signed between the dastardly United States of Amerika and the glorious Confederated States of America has not softened tensions between the two rivaling governments. On the contrary, the peace has left both parties disgruntled, wanting to reunify the East Coast under their flag. Now, with the outbreak of war between us, the time has come for reunification."
 
+ CSA_army_discipline: "Army Discipline"
+ CSA_army_discipline_desc: ""
+
+ CSA_sabotage: "Minutemen Sabotage Operations"
+ CSA_sabotage_desc: ""
+
+ CSA_war_bonds: "War Bonds"
+ CSA_war_bonds_desc: ""
+
+ CSA_the_2nd_amerikan_war_1: "The 2nd Amerikan War - Phase 1"
+ CSA_the_2nd_amerikan_war_1_desc: "A house divided against itself cannot stand."
+
+ CSA_the_2nd_amerikan_war_2: "The 2nd Amerikan War - Phase 2"
+ CSA_the_2nd_amerikan_war_2_desc: "It is well that war is so terrible, else we would grow too fond of it."
+
+ CSA_the_2nd_amerikan_war_3: "The 2nd Amerikan War - Phase 2"
+ CSA_the_2nd_amerikan_war_3_desc: "War means fighting, and fighting means killing."
+
+ USA_the_2nd_amerikan_war_1: "The 2nd Amerikan War - Phase 1"
+ USA_the_2nd_amerikan_war_1_desc: "A house divided against itself cannot stand."
+
+ USA_the_2nd_amerikan_war_2: "The 2nd Amerikan War - Phase 2"
+ USA_the_2nd_amerikan_war_2_desc: "It is well that war is so terrible, else we would grow too fond of it."
+
+ USA_the_2nd_amerikan_war_3: "The 2nd Amerikan War - Phase 2"
+ USA_the_2nd_amerikan_war_3_desc: "War means fighting, and fighting means killing."
+ 
+ 
  CSA_militarised_industry: "Heavily Militarised Industry"
  CSA_militarised_industry_desc: "The Confederate States of America has since the end of the Amerikan War invested heavily into its arms industries and military production. This has come at a cost of civilian consumer goods lacking."
 

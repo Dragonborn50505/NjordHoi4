@@ -480,6 +480,7 @@ focus_tree = {
 				ruling_party = democratic
 				elections_allowed = no
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			set_cosmetic_tag = SOV_union_radical
 			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
@@ -792,7 +793,6 @@ focus_tree = {
 		y = 2
 
 		prerequisite = {
-			focus = RUS_revolution_in_spirit
 			focus = RUS_dealing_with_faith
 		}
 		mutually_exclusive = {
@@ -807,7 +807,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			add_stability = 0.1
+			add_political_power = 75
 			add_popularity = {
 				ideology = democratic
 				popularity = 0.1
@@ -1307,14 +1307,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = RUS_gosstrazha
-		}
-		prerequisite = {
-			focus = RUS_solidarist_representation
-			focus = RUS_teleological_planning
-		}
-		prerequisite = {
-			focus = RUS_revolution_in_spirit
-			focus = RUS_dealing_with_faith
 		}
 		ai_will_do = {
 			factor = 1000
@@ -3318,14 +3310,14 @@ focus_tree = {
 				random_owned_controlled_state = {
 					damage_building = {
 						type = arms_factory
-						damage = 1
+						damage = 0.25
 						repair_speed_modifier = -0.25
 					}
 				}
 				random_owned_controlled_state = {
 					damage_building = {
 						type = arms_factory
-						damage = 1
+						damage = 0.25
 						repair_speed_modifier = -0.25
 					}
 				}

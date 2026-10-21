@@ -21,6 +21,15 @@
  RUS_project_m_design_tt: "\n§YDepending on the researched technologies, an aircraft variant can be created§!"
  RUS_global_power_projection_tt: "\nMerges §YNaval National Spirits§! and modifies it by\n$MODIFIER_NAVY_MAX_RANGE_FACTOR$: §G15.00%§!\n$MODIFIER_INDUSTRIAL_CAPACITY_DOCKYARD_FACTOR$: §G10.00%§!"
  RUS_franco_russian_treaty_tt: "If either @FRA §YFrance§! or @SOV §YRussia§! go to war with a §TMajor Nation§!, both countries will §Rlose§! the national spirit."
+ RUS_catechism_tt: "§gDoubles the effect of our previously taken focus.§!"
+
+# LEADER TRAITS
+ RUS_supreme_commander: "Supreme Commander"
+ RUS_cultof_the_leader: "Cult of the Captain"
+
+# DYNAMIC MODIFIERS
+ RUS_new_london: "'New London"
+ RUS_army: "The Russian Armed Forces"
 
 #IDEAS
  RUS_entrenched_opposition_1: "Entrenched Opposition"
@@ -137,7 +146,6 @@
 
  RUS_catechism: "Catechism of a National Revolutionary"
  RUS_catechism_desc: "The revolutionary is a doomed man. He has no private interests, sentiments, property, nor even a name of his own. His entire being is devoured by one purpose, one thought, one passion - the revolution. Heart and soul, not merely by word but by deed, he has severed every link with the social order and with the entire civilised world; with the laws and morality of that world. He is its merciless enemy and continues to inhabit it with only one purpose - to destroy it."
- RUS_catechism_tt: "§gDoubles the effect of our previously take focus.§!"
 
  RUS_revolution_in_spirit: "Revolution in Spirit"
  RUS_revolution_in_spirit_desc: "The Third Russia is neither Orthodox-Tsarist, Populist Democracy nor Materialist-Bolshevik. The outdated ideas of organised, hierarchical spirituality must be sidelined in favour of a more dynamic and Symbolist understanding of the eternal Russian spirit and faith. Our task is nothing less than a great eschatological uprising against the modern world."
@@ -147,6 +155,15 @@
 
  RUS_new_russian_culture: "New Russian Culture"
  RUS_new_russian_culture_desc: "The typical Russian man looks into the past, towards Orthodoxy and the traditions that have always shaped the nation; but the new Russian man is different. He looks towards the future, he is a harbinger of modernity, and he is a heroic warrior who leads his people through difficult times. He leaves no room for mediocrity - only absolute dedication to Russia and its people."
+
+ RUS_national_solidarism: "National Solidarism"
+ RUS_national_solidarism_desc: "Societies do not prosper on submission to an all-powerful tyrant, but on the organisation of people through justice, solidarity, freedom and law. At heart, the Russian people have always fought for this society: one based on these principles, of Christian love for one another, not on the basis of class or party."
+
+ RUS_yevraziystvo: "The Generator's Manifesto"
+ RUS_yevraziystvo_desc: "The Generator Cities are not afraid of contradictions. They know that life is made of them. The people of the Generator Cities live in oppositions. Russia does not simply belong to the Asiatic East or European West; it has combined elements of both to create its own culture, distinct from the rest of the world. Rather than being alien to the Generator spirit as many of Russia's leaders have been, we will embrace our Pan-Eurasian roots, which undeniably form a strong part of Russian culture."
+
+ RUS_centralise_party: "Enforce Doctrinal Purity"
+ RUS_centralise_party_desc: "The SZRS' transformation into a mass party has come with various negatives. In particular, newer ideological strains within it have formed, threatening the unity of the party as a whole. Those who joined the party out of opportunism lack true faith in Russia, and these men will have to go for the party to be Russia's organ."
 
  RUS_vanguard_of_knights_of_terror: "Vanguard of the Knights of Terror"
  RUS_vanguard_of_knights_of_terror_desc: "Fate has blessed the Russian people with indomitable men to lead them through the storms of history. Ivan the Terrible, Peter the Great, Catherine the Great - and now Nikita 'The Captain' Putaytin. Loyalty to our leader must be absolute, as is his drive to strengthen Russia. On every level of society, the principle of unquestionable loyalty must be implemented."

@@ -11,847 +11,499 @@ focus_tree = {
 	}
 	
 	default = no
-	
-	shared_focus = army_effort
-	shared_focus = aviation_effort
-	shared_focus = naval_effort
-	shared_focus = industrial_effort
-	shared_focus = political_effort
 
 	focus = {
-		id = border_disputesCSAGER
-		icon = GFX_goal_generic_more_territorial_claims
-		text = border_disputesGER
-		x = 28
+		id = CSA_last_bastion_of_american_democracy
+		icon = GFX_focus_CHI_demonstrate_our_resolve
+		x = 5
 		y = 0
-		cost = 10
-		available = {
-			is_subject = no
-			has_war = no
-			GER = {
-				exists = yes
-				not_allies_or_subjects = yes
-				owns_state = 146
-			}
-		}
+		cost = 5
 		completion_reward = {
-			add_war_support = 0.05
+			add_stability = 0.05
+			add_political_power = 50
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_override_tooltip = {
+				tooltip = {
+					localization_key = tooltip_create_division_template
+					NAME = "Minutemen Militias"
+					LINE_1 = { localization_key = line_battalion_tt NAME = militia ICON = GFX_unit_militia_icon_small COUNT = 9 }
+					SUPPORT_1 = { localization_key = support_battalion_tt NAME = artillery ICON = GFX_unit_artillery_icon_small }
+				}
+				if = {
+					limit = { has_template = "Minutemen Militias" }
+					delete_unit_template_and_units = { division_template = "Minutemen Militias" disband = yes } #no cheating
+				}
+				division_template = {
+					name = "Minutemen Militias"
+					regiments = {
+						militia = { x = 0 y = 0 }
+						militia = { x = 0 y = 1 }
+						militia = { x = 0 y = 2 }
+						militia = { x = 1 y = 0 }
+						militia = { x = 1 y = 1 }
+						militia = { x = 1 y = 2 }
+						militia = { x = 2 y = 0 }
+						militia = { x = 2 y = 1 }
+						militia = { x = 2 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+					}
+				}
+			}
+			capital_scope = {
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = tooltip_spawn_units
+						COUNT = 2
+						TYPE = "Minutemen Militias"
+					}
+					create_unit = {
+						division = "division_template = \"Minutemen Militias\" start_experience_factor = 1"
+						owner = ROOT
+						count = 2
+					}
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				has_government = democratic
-			}
-
-			modifier = {
-				factor = 0
-				has_government = neutrality
-			}
-			modifier = {
-				factor = 0
-				has_opinion = { target = GER value > 0 }
-			}
-			modifier = {
-				factor = 0
-				GER = { in_weak_faction = no }
-			}
-			modifier = {
-				factor = 0
-				any_country = {
-					has_subject = GER
-					in_weak_faction = no
-				}
-			}
-			modifier = {
-				factor = 0
-				date < 1938.8.1
-			}
-			modifier = {
-				factor = 0
-				threat > 0.25
-				date < 1939.4.1
-			}
-			modifier = {
-				factor = 0
-				threat > 0.4
-				date < 1939.8.1
-			}
-			modifier = {
-				factor = 0
-				threat > 0.5
-			}
-			modifier = {
-				factor = 2
-				GER = { surrender_progress > 0.2 }
-			}
 		}
 	}
 
 	focus = {
-		id = assert_claimsCSAGER
-		icon = GFX_goal_generic_territory_or_war
-		text = assert_claimsGER
-		prerequisite = { focus = border_disputesCSAGER }
-		x = 0
+		id = CSA_prepare_the_second_reclamation_army
+		icon = GFX_focus_PRC_arms_recovery_efforts
+		x = -1
 		y = 1
-		relative_position_id = border_disputesCSAGER
-		cost = 10
-		available = {
-			date > 1938.10.1
-			is_subject = no
-			has_war = no
-			GER = {
-				exists = yes
-				not_allies_or_subjects = yes
-				owns_state = 146
-			}
+		relative_position_id = CSA_last_bastion_of_american_democracy
+		prerequisite = {
+			focus = CSA_last_bastion_of_american_democracy
 		}
-		completion_reward = {
-			add_state_claim = 146
-			add_named_threat = { threat = 3 name = neighbor_war_NF_threat }
-			hidden_effect = {
-				GER = { country_event = { id = reconquest_news.1 } }
-			}
-		}
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				has_government = democratic
-			}
-
-			modifier = {
-				factor = 0
-				has_government = neutrality
-			}
-			modifier = {
-				factor = 0
-				has_opinion = { target = GER value > 0 }
-			}
-			modifier = {
-				factor = 0
-				GER = { in_weak_faction = no }
-			}
-			modifier = {
-				factor = 0
-				any_country = {
-					has_subject = GER
-					in_weak_faction = no
-				}
-			}
-			modifier = {
-				factor = 0
-				date < 1938.8.1
-			}
-			modifier = {
-				factor = 0
-				threat > 0.25
-				date < 1939.4.1
-			}
-			modifier = {
-				factor = 0
-				threat > 0.4
-				date < 1939.8.1
-			}
-			modifier = {
-				factor = 0
-				threat > 0.5
-			}
-			modifier = {
-				factor = 2
-				GER = { surrender_progress > 0.2 }
-			}
-		}
-	}
-
-	focus = {
-		id = prepare_for_warCSAGER
-		icon = GFX_goal_generic_position_armies
-		text = prepare_for_warGER
-		prerequisite = { focus = assert_claimsCSAGER }
-		bypass = {
-			has_war_with = GER
-		}
-		x = 0
-		y = 1
-		relative_position_id = assert_claimsCSAGER
-		cost = 10
-		available = {
-			is_subject = no
-			has_war = no
-			GER = {
-				exists = yes
-				not_allies_or_subjects = yes
-				owns_state = 146
-			}
-		}
-		completion_reward = {
-			add_manpower = 10000
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-
-	focus = {
-		id = neighbor_warCSAGER
-		icon = GFX_goal_generic_occupy_states_ongoing_war
-		text = neighbor_warGER
-		prerequisite = { focus = prepare_for_warCSAGER }
-		bypass = {
-			has_war_with = GER
-		}
-		x = 0
-		y = 1
-		relative_position_id = prepare_for_warCSAGER
-		cost = 10
-		available = {
-			is_subject = no
-			has_war = no
-			GER = {
-				exists = yes
-				not_allies_or_subjects = yes
-				owns_state = 146
-			}
-		}
-		completion_reward = {
-			declare_war_on = {
-				target = GER
-				type = take_state_focus
-				generator = { 146 }
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-
-	focus = {
-		id = border_disputesCSAPRE
-		icon = GFX_goal_generic_more_territorial_claims
-		text = border_disputesPRE
-		x = 30
-		y = 0
-		cost = 10
-		available = {
-			is_subject = no
-			has_war = no
-			PRE = {
-				exists = yes
-				not_allies_or_subjects = yes
-				owns_state = 448
-			}
-		}
+		cost = 5
 		completion_reward = {
 			add_war_support = 0.05
+			add_command_power = 50
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_manpower = 15000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1500
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			capital_scope = {
+				create_unit = {
+					division = "division_template = \"Minutemen Militias\" start_experience_factor = 0.3"
+					owner = ROOT
+					count = 2
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				has_government = democratic
-			}
-
-			modifier = {
-				factor = 0
-				has_government = neutrality
-			}
-			modifier = {
-				factor = 0
-				has_opinion = { target = PRE value > 0 }
-			}
-			modifier = {
-				factor = 0
-				PRE = { in_weak_faction = no }
-			}
-			modifier = {
-				factor = 0
-				any_country = {
-					has_subject = PRE
-					in_weak_faction = no
-				}
-			}
-			modifier = {
-				factor = 0
-				date < 1938.8.1
-			}
-			modifier = {
-				factor = 0
-				threat > 0.25
-				date < 1939.4.1
-			}
-			modifier = {
-				factor = 0
-				threat > 0.4
-				date < 1939.8.1
-			}
-			modifier = {
-				factor = 0
-				threat > 0.5
-			}
-			modifier = {
-				factor = 2
-				PRE = { surrender_progress > 0.2 }
-			}
 		}
 	}
 
 	focus = {
-		id = assert_claimsCSAPRE
-		icon = GFX_goal_generic_territory_or_war
-		text = assert_claimsPRE
-		prerequisite = { focus = border_disputesCSAPRE }
-		x = 0
-		y = 1
-		relative_position_id = border_disputesCSAPRE
-		cost = 10
-		available = {
-			date > 1938.3.1
-			is_subject = no
-			has_war = no
-			PRE = {
-				exists = yes
-				not_allies_or_subjects = yes
-				owns_state = 448
-			}
+		id = CSA_enforce_discipline
+		icon = GFX_focus_generic_military_academy
+		x = -2
+		y = 2
+		relative_position_id = CSA_last_bastion_of_american_democracy
+		prerequisite = {
+			focus = CSA_prepare_the_second_reclamation_army
 		}
-		completion_reward = {
-			add_state_claim = 448
-			add_named_threat = { threat = 3 name = neighbor_war_NF_threat }
-			hidden_effect = {
-				PRE = { country_event = { id = reconquest_news.1 } }
-			}
-		}
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				has_government = democratic
-			}
-
-			modifier = {
-				factor = 0
-				has_government = neutrality
-			}
-			modifier = {
-				factor = 0
-				has_opinion = { target = PRE value > 0 }
-			}
-			modifier = {
-				factor = 0
-				PRE = { in_weak_faction = no }
-			}
-			modifier = {
-				factor = 0
-				any_country = {
-					has_subject = PRE
-					in_weak_faction = no
-				}
-			}
-			modifier = {
-				factor = 0
-				date < 1938.8.1
-			}
-			modifier = {
-				factor = 0
-				threat > 0.25
-				date < 1939.4.1
-			}
-			modifier = {
-				factor = 0
-				threat > 0.4
-				date < 1939.8.1
-			}
-			modifier = {
-				factor = 0
-				threat > 0.5
-			}
-			modifier = {
-				factor = 2
-				PRE = { surrender_progress > 0.2 }
-			}
-		}
-	}
-
-	focus = {
-		id = prepare_for_warCSAPRE
-		icon = GFX_goal_generic_position_armies
-		text = prepare_for_warPRE
-		prerequisite = { focus = assert_claimsCSAPRE }
-		bypass = {
-			has_war_with = PRE
-		}
-		x = 0
-		y = 1
-		relative_position_id = assert_claimsCSAPRE
-		cost = 10
-		available = {
-			is_subject = no
-			has_war = no
-			PRE = {
-				exists = yes
-				not_allies_or_subjects = yes
-				owns_state = 448
-			}
-		}
-		completion_reward = {
-			add_manpower = 10000
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-
-	focus = {
-		id = neighbor_warCSAPRE
-		icon = GFX_goal_generic_occupy_states_ongoing_war
-		text = neighbor_warPRE
-		prerequisite = { focus = prepare_for_warCSAPRE }
-		bypass = {
-			has_war_with = PRE
-		}
-		x = 0
-		y = 1
-		relative_position_id = prepare_for_warCSAPRE
-		cost = 10
-		available = {
-			is_subject = no
-			has_war = no
-			PRE = {
-				exists = yes
-				not_allies_or_subjects = yes
-				owns_state = 448
-			}
-		}
-		completion_reward = {
-			declare_war_on = {
-				target = PRE
-				type = take_state_focus
-				generator = { 448 }
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-
-	focus = {
-		id = border_disputesCSAUSA
-		icon = GFX_goal_generic_more_territorial_claims
-		text = border_disputesUSA
-		x = 32
-		y = 0
-		cost = 10
-		available = {
-			is_subject = no
-			has_war = no
-			USA = {
-				exists = yes
-				not_allies_or_subjects = yes
-				owns_state = 633
-			}
-		}
+		cost = 5
 		completion_reward = {
 			add_war_support = 0.05
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_timed_idea = {
+				idea = CSA_army_discipline
+				days = 365
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			capital_scope = {
+				create_unit = {
+					division = "division_template = \"Minutemen Militias\" start_experience_factor = 0.3"
+					owner = ROOT
+					count = 1
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				has_government = democratic
-			}
-
-			modifier = {
-				factor = 0
-				has_government = neutrality
-			}
-			modifier = {
-				factor = 0
-				has_opinion = { target = USA value > 0 }
-			}
-			modifier = {
-				factor = 0
-				USA = { in_weak_faction = no }
-			}
-			modifier = {
-				factor = 0
-				any_country = {
-					has_subject = USA
-					in_weak_faction = no
-				}
-			}
-			modifier = {
-				factor = 0
-				date < 1938.8.1
-			}
-			modifier = {
-				factor = 0
-				threat > 0.25
-				date < 1939.4.1
-			}
-			modifier = {
-				factor = 0
-				threat > 0.4
-				date < 1939.8.1
-			}
-			modifier = {
-				factor = 0
-				threat > 0.5
-			}
-			modifier = {
-				factor = 2
-				USA = { surrender_progress > 0.2 }
-			}
 		}
 	}
 
 	focus = {
-		id = assert_claimsCSAUSA
-		icon = GFX_goal_generic_territory_or_war
-		text = assert_claimsUSA
-		prerequisite = { focus = border_disputesCSAUSA }
-		x = 0
-		y = 1
-		relative_position_id = border_disputesCSAUSA
-		cost = 10
-		available = {
-			date > 1939.3.1
-			is_subject = no
-			has_war = no
+		id = CSA_employ_sabotage_operations
+		icon = GFX_focus_SOV_organize_wreckers
+		x = -2
+		y = 4
+		relative_position_id = CSA_last_bastion_of_american_democracy
+		prerequisite = {
+			focus = CSA_enforce_discipline
+		}
+		cost = 5
+		completion_reward = {
+			army_experience = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
 			USA = {
-				exists = yes
-				not_allies_or_subjects = yes
-				owns_state = 633
+				add_timed_idea = {
+					idea = CSA_sabotage
+					days = 90
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				random_owned_controlled_state = {
+					damage_building = {
+						type = industrial_complex
+						damage = 0.25
+						repair_speed_modifier = -0.25
+					}
+				}
+				random_owned_controlled_state = {
+					damage_building = {
+						type = arms_factory
+						damage = 0.25
+						repair_speed_modifier = -0.25
+					}
+				}
 			}
 		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = CSA_fortify_our_positions
+		icon = GFX_goal_generic_fortify_city
+		x = -1
+		y = 1
+		relative_position_id = CSA_last_bastion_of_american_democracy
+		prerequisite = {
+			focus = CSA_last_bastion_of_american_democracy
+		}
+		cost = 5
 		completion_reward = {
-			add_state_claim = 633
-			add_named_threat = { threat = 3 name = neighbor_war_NF_threat }
+			add_command_power = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			every_owned_state = {
+				limit = {
+                    OR = {
+                        state = 169
+                        state = 167
+                        state = 168
+                        state = 150
+                        state = 165
+                        state = 164
+                        state = 163
+                        state = 162
+                    }
+					is_fully_controlled_by = ROOT
+					any_neighbor_state = { is_owned_and_controlled_by = USA }
+				}
+				add_building_construction = {
+					type = bunker
+					province = {
+					all_provinces = yes
+						limit_to_border = yes
+					}
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 500
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = CSA_rally_war_support
+		icon = GFX_focus_generic_limited_social_mobilization
+		x = -2
+		y = 2
+		relative_position_id = CSA_last_bastion_of_american_democracy
+		prerequisite = {
+			focus = CSA_fortify_our_positions
+		}
+		cost = 5
+		completion_reward = {
+			add_command_power = 25
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_manpower = 20000
+			custom_effect_tooltip = generic_skip_one_line_tt
+			capital_scope = {
+				create_unit = {
+					division = "division_template = \"Minutemen Militias\" start_experience_factor = 0.3"
+					owner = ROOT
+					count = 1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = CSA_encourage_war_bonds
+		icon = GFX_focus_SWI_issue_war_bonds
+		x = -2
+		y = 4
+		relative_position_id = CSA_last_bastion_of_american_democracy
+		prerequisite = {
+			focus = CSA_rally_war_support
+		}
+		cost = 5
+		completion_reward = {
+			add_timed_idea = {
+				idea = CSA_war_bonds
+				days = 180
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = CSA_petition_for_international_aid
+		icon = GFX_focus_BRA_ethical_internationalism
+		x = 0
+		y = 2
+		relative_position_id = CSA_last_bastion_of_american_democracy
+		prerequisite = {
+			focus = CSA_prepare_the_second_reclamation_army
+			focus = CSA_fortify_our_positions
+		}
+		cost = 5
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = CSA_petition_for_international_aid_TT
 			hidden_effect = {
-				USA = { country_event = { id = reconquest_news.1 } }
-			}
-		}
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				has_government = democratic
-			}
-
-			modifier = {
-				factor = 0
-				has_government = neutrality
-			}
-			modifier = {
-				factor = 0
-				has_opinion = { target = USA value > 0 }
-			}
-			modifier = {
-				factor = 0
-				USA = { in_weak_faction = no }
-			}
-			modifier = {
-				factor = 0
-				any_country = {
-					has_subject = USA
-					in_weak_faction = no
+				IRE = {
+					country_event = CSA_events.1 #asks for guns and volunteers
+				}
+				SPR = {
+					country_event = CSA_events.1 #asks for guns and volunteers
+				}
+				FRA = {
+					country_event = CSA_events.1 #asks for guns and volunteers
+				}
+				SOV = {
+					country_event = CSA_events.1 #asks for guns and volunteers
+				}
+				ITA = {
+					country_event = CSA_events.1 #asks for guns and volunteers
 				}
 			}
-			modifier = {
-				factor = 0
-				date < 1938.8.1
-			}
-			modifier = {
-				factor = 0
-				threat > 0.25
-				date < 1939.4.1
-			}
-			modifier = {
-				factor = 0
-				threat > 0.4
-				date < 1939.8.1
-			}
-			modifier = {
-				factor = 0
-				threat > 0.5
-			}
-			modifier = {
-				factor = 2
-				USA = { surrender_progress > 0.2 }
-			}
-		}
-	}
-
-	focus = {
-		id = prepare_for_warCSAUSA
-		icon = GFX_goal_generic_position_armies
-		text = prepare_for_warUSA
-		prerequisite = { focus = assert_claimsCSAUSA }
-		bypass = {
-			has_war_with = USA
-		}
-		x = 0
-		y = 1
-		relative_position_id = assert_claimsCSAUSA
-		cost = 10
-		available = {
-			is_subject = no
-			has_war = no
-			USA = {
-				exists = yes
-				not_allies_or_subjects = yes
-				owns_state = 633
-			}
-		}
-		completion_reward = {
-			add_manpower = 10000
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 1
 		}
 	}
 
 	focus = {
-		id = neighbor_warCSAUSA
-		icon = GFX_goal_generic_occupy_states_ongoing_war
-		text = neighbor_warUSA
-		prerequisite = { focus = prepare_for_warCSAUSA }
-		bypass = {
-			has_war_with = USA
+		id = CSA_add_fuel_to_the_fires
+		icon = GFX_goal_generic_military_equipment
+		x = -1
+		y = 3
+		relative_position_id = CSA_last_bastion_of_american_democracy
+		prerequisite = {
+			focus = CSA_petition_for_international_aid
 		}
-		x = 0
-		y = 1
-		relative_position_id = prepare_for_warCSAUSA
-		cost = 10
-		available = {
-			is_subject = no
-			has_war = no
-			USA = {
-				exists = yes
-				not_allies_or_subjects = yes
-				owns_state = 633
+		cost = 5
+		completion_reward = {
+			add_offsite_building = {
+				type = arms_factory
+				level = 2
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2500
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 750
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 550
 			}
 		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = CSA_hoard_supplies
+		icon = GFX_focus_generic_reinforcing_the_supply_network
+		x = 1
+		y = 3
+		relative_position_id = CSA_last_bastion_of_american_democracy
+		prerequisite = {
+			focus = CSA_petition_for_international_aid
+		}
+		cost = 5
 		completion_reward = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 2
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 250
+			}
+			add_equipment_to_stockpile = {
+				type = train_equipment
+				amount = 15
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = CSA_rally_all_conscriptions
+		icon = GFX_focus_usa_recruit_the_free_corps
+		x = 0
+		y = 4
+		relative_position_id = CSA_last_bastion_of_american_democracy
+		prerequisite = {
+			focus = CSA_petition_for_international_aid
+		}
+		cost = 5
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = extensive_conscription
+			custom_effect_tooltip = generic_skip_one_line_tt
+			capital_scope = {
+				create_unit = {
+					division = "division_template = \"Minutemen Militias\" start_experience_factor = 0.3"
+					owner = ROOT
+					count = 4
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = CSA_all_for_america
+		icon = GFX_focus_generic_attack_usa
+		x = 0
+		y = 4
+		relative_position_id = CSA_last_bastion_of_american_democracy
+
+		will_lead_to_war_with = USA
+
+		prerequisite = {
+			focus = CSA_petition_for_international_aid
+		}
+		cost = 5
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			declare_war_on = {
 				target = USA
-				type = take_state_focus
-				generator = { 633 }
+				type = annex_everything
 			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-
-	focus = {
-		id = border_disputesCSAFRA
-		icon = GFX_goal_generic_more_territorial_claims
-		text = border_disputesFRA
-		x = 34
-		y = 0
-		cost = 10
-		available = {
-			is_subject = no
-			has_war = no
-			FRA = {
-				exists = yes
-				not_allies_or_subjects = yes
-				owns_state = 128
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_timed_idea = {
+				idea = CSA_the_2nd_amerikan_war_1
+				days = 60
 			}
-		}
-		completion_reward = {
-			add_war_support = 0.05
+			hidden_effect = {
+				USA = {
+					add_timed_idea = {
+						idea = USA_the_2nd_amerikan_war_1
+						days = 60
+					}
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			capital_scope = {
+				create_unit = {
+					division = "division_template = \"Minutemen Militias\" start_experience_factor = 0.3"
+					owner = ROOT
+					count = 2
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				has_government = democratic
-			}
+		}
 
-			modifier = {
-				factor = 0
-				has_government = neutrality
+		
+	}
+
+	focus = {
+		id = CSA_all_for_america
+		icon = GFX_focus_generic_attack_usa
+		x = 0
+		y = 5
+		relative_position_id = CSA_last_bastion_of_american_democracy
+
+		available = {
+			USA = {
+				exists = no
 			}
-			modifier = {
-				factor = 0
-				has_opinion = { target = FRA value > 0 }
+		}
+
+		prerequisite = {
+			focus = CSA_all_for_america
+		}
+		cost = 5
+		completion_reward = {
+			add_stability = 0.15
+			add_war_support = 0.15
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
 			}
-			modifier = {
-				factor = 0
-				FRA = { in_weak_faction = no }
-			}
-			modifier = {
-				factor = 0
-				any_country = {
-					has_subject = FRA
-					in_weak_faction = no
+			add_political_power = 100
+			custom_effect_tooltip = generic_skip_one_line_tt
+			every_owned_state = {
+				limit = {
+					is_core_of = USA
+					NOT = {
+						is_core_of = root
+					}
 				}
-			}
-			modifier = {
-				factor = 0
-				date < 1938.8.1
-			}
-			modifier = {
-				factor = 0
-				threat > 0.25
-				date < 1939.4.1
-			}
-			modifier = {
-				factor = 0
-				threat > 0.4
-				date < 1939.8.1
-			}
-			modifier = {
-				factor = 0
-				threat > 0.5
-			}
-			modifier = {
-				factor = 2
-				FRA = { surrender_progress > 0.2 }
-			}
-		}
-	}
-
-	focus = {
-		id = assert_claimsCSAFRA
-		icon = GFX_goal_generic_territory_or_war
-		text = assert_claimsFRA
-		prerequisite = { focus = border_disputesCSAFRA }
-		x = 0
-		y = 1
-		relative_position_id = border_disputesCSAFRA
-		cost = 10
-		available = {
-			date > 1939.8.1
-			is_subject = no
-			has_war = no
-			FRA = {
-				exists = yes
-				not_allies_or_subjects = yes
-				owns_state = 128
-			}
-		}
-		completion_reward = {
-			add_state_claim = 128
-			add_named_threat = { threat = 3 name = neighbor_war_NF_threat }
-			hidden_effect = {
-				FRA = { country_event = { id = reconquest_news.1 } }
+				add_core_of = root
 			}
 		}
 		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				has_government = democratic
-			}
-
-			modifier = {
-				factor = 0
-				has_government = neutrality
-			}
-			modifier = {
-				factor = 0
-				has_opinion = { target = FRA value > 0 }
-			}
-			modifier = {
-				factor = 0
-				FRA = { in_weak_faction = no }
-			}
-			modifier = {
-				factor = 0
-				any_country = {
-					has_subject = FRA
-					in_weak_faction = no
-				}
-			}
-			modifier = {
-				factor = 0
-				date < 1938.8.1
-			}
-			modifier = {
-				factor = 0
-				threat > 0.25
-				date < 1939.4.1
-			}
-			modifier = {
-				factor = 0
-				threat > 0.4
-				date < 1939.8.1
-			}
-			modifier = {
-				factor = 0
-				threat > 0.5
-			}
-			modifier = {
-				factor = 2
-				FRA = { surrender_progress > 0.2 }
-			}
+			factor = 1
 		}
+
+		
 	}
-
-	focus = {
-		id = prepare_for_warCSAFRA
-		icon = GFX_goal_generic_position_armies
-		text = prepare_for_warFRA
-		prerequisite = { focus = assert_claimsCSAFRA }
-		bypass = {
-			has_war_with = FRA
-		}
-		x = 0
-		y = 1
-		relative_position_id = assert_claimsCSAFRA
-		cost = 10
-		available = {
-			is_subject = no
-			has_war = no
-			FRA = {
-				exists = yes
-				not_allies_or_subjects = yes
-				owns_state = 128
-			}
-		}
-		completion_reward = {
-			add_manpower = 10000
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-
-	focus = {
-		id = neighbor_warCSAFRA
-		icon = GFX_goal_generic_occupy_states_ongoing_war
-		text = neighbor_warFRA
-		prerequisite = { focus = prepare_for_warCSAFRA }
-		bypass = {
-			has_war_with = FRA
-		}
-		x = 0
-		y = 1
-		relative_position_id = prepare_for_warCSAFRA
-		cost = 10
-		available = {
-			is_subject = no
-			has_war = no
-			FRA = {
-				exists = yes
-				not_allies_or_subjects = yes
-				owns_state = 128
-			}
-		}
-		completion_reward = {
-			declare_war_on = {
-				target = FRA
-				type = take_state_focus
-				generator = { 128 }
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-
 }

@@ -41,11 +41,11 @@ categories =  {
 		}
 
 		units = {
-			attack = -0.15
+			attack = -0.2
 			#movement = -0.2
 		}
 
-		enemy_army_bonus_air_superiority_factor = -0.1
+		enemy_army_bonus_air_superiority_factor = -0.25 #Hiding is easier
 		
 		supply_flow_penalty_factor = 0.08
 		
@@ -67,7 +67,7 @@ categories =  {
 		}
 
 		units = {
-			attack = -0.25
+			attack = -0.3
 			#movement = -0.2
 		}
 		enemy_army_bonus_air_superiority_factor = -0.05
@@ -93,11 +93,11 @@ categories =  {
 		}
 
 		units = {
-			attack = -0.5
+			attack = -0.6
 			#movement = -0.4
 		}
 
-		enemy_army_bonus_air_superiority_factor = -0.10
+		enemy_army_bonus_air_superiority_factor = -0.15
 		
 		supply_flow_penalty_factor = 0.12
 		
@@ -116,6 +116,8 @@ categories =  {
 			bunker = 5
 			coastal_bunker = 6
 		}
+
+		enemy_army_bonus_air_superiority_factor = 0.05 # Flat ahh ground, nowhere to hide
 	}
 	
 	urban = {
@@ -132,11 +134,11 @@ categories =  {
 		}
 
 		units = {
-			attack = -0.3
+			attack = -0.4
 			#movement = -0.2
 		}
 
-		enemy_army_bonus_air_superiority_factor = -0.50
+		enemy_army_bonus_air_superiority_factor = -0.4
 				
 		supply_flow_penalty_factor = -0.2
 	}
@@ -162,11 +164,11 @@ categories =  {
 			#movement = -0.3
 		}
 
-		enemy_army_bonus_air_superiority_factor = -0.25
+		enemy_army_bonus_air_superiority_factor = -0.3
 		
 		sickness_chance = 1.0
 		
-		supply_flow_penalty_factor = 0.16
+		supply_flow_penalty_factor = 0.3 #Jungles are quite laborious to get supply through
 		
 		truck_attrition_factor = 3.0
 	}	
@@ -193,7 +195,7 @@ categories =  {
 		
 		sickness_chance = 1.0
 		
-		supply_flow_penalty_factor = 0.16
+		supply_flow_penalty_factor = 0.25
 		
 		truck_attrition_factor = 4.0
 	}
@@ -213,8 +215,10 @@ categories =  {
 		}
 		
 		sickness_chance = 1.0
+
+		enemy_army_bonus_air_superiority_factor = 0.05 # Flat ahh ground, nowhere to hide
 		
-		supply_flow_penalty_factor = 0.14
+		supply_flow_penalty_factor = 0.16
 		
 		truck_attrition_factor = 0.5
 	}
@@ -272,7 +276,7 @@ categories =  {
 		sound_type = sea
 		
 		submarine = {
-			navy_visibility = 0.33
+			navy_visibility = 0.5 # Not deep seas, easy to find
 		}
 		positioning = -0.05
 		naval_mine_hit_chance = -0.5
