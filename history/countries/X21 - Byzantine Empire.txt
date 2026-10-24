@@ -141,9 +141,17 @@ add_ideas = {
 	civilian_economy
 	export_focus
 	culture_notios
+	BYZ_last_roman_empire
+	BYZ_land_down_under
+	BYZ_byzantine_immigration_bureau
+	BYZ_platonian_pillar
+	BYZ_hoplite_pillar
+	BYZ_alexanderian_pillar
+	BYZ_non_existent_industry
+	BYZ_agrarian_exports
 }
-set_stability = 0.60
-set_war_support = 0.61
+set_stability = 0.5
+set_war_support = 0.2
 
 recruit_character = X21_evripidis_nider
 recruit_character = X21_adamantios_kallergis

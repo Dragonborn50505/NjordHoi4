@@ -171,6 +171,9 @@ add_ideas = {
 	civilian_economy
 	export_focus
 	culture_geheimnisdeutsch
+	CAN_agrarian_nation_1
+	CAN_defunded_army_1
+	CAN_newfoundlander_nationalism
 }
 set_stability = 0.60
 set_war_support = 0.60

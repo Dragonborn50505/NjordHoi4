@@ -581,3 +581,100 @@ RUS_army = {
 	weekly_bombing_war_support = RUS_army_weekly_bombing_war_support
 	conscription = RUS_army_conscription
 }
+
+# ADDED AT START
+CAN_army = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_manpower_bonus
+	# STARTING
+	mobilization_speed = CAN_army_mobilization_speed # 5%
+
+	# EXTRA FROM FOCUSES 
+	army_infantry_attack_factor = CAN_army_army_infantry_attack_factor
+	army_infantry_defence_factor = CAN_army_army_infantry_defence_factor
+	experience_gain_army_factor = CAN_army_experience_gain_army_factor 
+	experience_loss_factor = CAN_army_experience_loss_factor
+	army_morale_factor = CAN_army_army_morale_factor 
+	army_artillery_attack_factor = CAN_army_army_artillery_attack_factor
+	army_artillery_defence_factor = CAN_army_army_artillery_defence_factor
+	coordination_bonus = CAN_army_coordination_bonus
+	army_org_factor = CAN_army_army_org_factor
+	army_org_regain = CAN_army_army_org_regain
+	motorized_attack_factor = CAN_army_motorized_attack_factor 
+	motorized_defence_factor = CAN_army_motorized_defence_factor 
+	army_armor_attack_factor = CAN_army_army_armor_attack_factor
+	army_armor_defence_factor = CAN_army_army_armor_defence_factor
+	mechanized_attack_factor = CAN_army_mechanized_attack_factor
+	mechanized_defence_factor = CAN_army_mechanized_defence_factor
+	org_loss_when_moving = CAN_army_org_loss_when_moving
+	max_planning_factor = CAN_army_max_planning_factor
+	planning_speed = CAN_army_planning_speed
+	breakthrough_factor = CAN_army_breakthrough_factor
+}
+
+
+CAN_air = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_aircraft_support
+	# STARTING
+	air_doctrine_cost_factor = CAN_air_air_doctrine_cost_factor
+	air_advisor_cost_factor = CAN_air_air_advisor_cost_factor
+	air_accidents_factor = CAN_air_air_accidents_factor
+
+	# EXTRA FROM FOCUSES 
+	air_cas_present_factor = CAN_air_air_cas_present_factor 
+	air_close_air_support_org_damage_factor = CAN_air_air_close_air_support_org_damage_factor
+	air_mission_efficiency = CAN_air_air_mission_efficiency 
+	air_superiority_efficiency = CAN_air_air_superiority_efficiency
+	ace_effectiveness_factor = CAN_air_ace_effectiveness_factor
+	air_ace_generation_chance_factor = CAN_air_air_ace_generation_chance_factor
+	ground_attack_factor = CAN_air_ground_attack_factor
+	air_escort_efficiency = CAN_air_air_escort_efficiency
+	air_bombing_targetting = CAN_air_air_bombing_targetting 
+	air_home_defence_factor = CAN_air_air_home_defence_factor 
+	air_power_projection_factor = CAN_air_air_power_projection_factor
+	air_defence_factor = CAN_air_air_defence_factor
+	air_attack_factor = CAN_air_air_attack_factor
+	air_agility_factor = CAN_air_air_agility_factor
+}
+
+CAN_navy = {
+	enable = { always = yes }
+	icon = GFX_idea_yarrow_shipbuilders
+	# STARTING
+	naval_doctrine_cost_factor = CAN_navy_naval_doctrine_cost_factor
+	refit_ic_cost = CAN_navy_refit_ic_cost
+	refit_speed = CAN_navy_refit_speed
+	naval_coordination = CAN_navy_naval_coordination
+	
+	# EXTRA FROM FOCUS
+	refit_ic_cost = CAN_navy_refit_ic_cost
+	refit_speed = CAN_navy_refit_speed
+	repair_speed_factor = CAN_navy_repair_speed_factor
+	naval_critical_score_chance_factor = CAN_navy_naval_critical_score_chance_factor
+	navy_capital_ship_attack_factor = CAN_navy_navy_capital_ship_attack_factor
+	navy_capital_ship_defence_factor = CAN_navy_navy_capital_ship_defence_factor 
+	naval_heavy_gun_hit_chance_factor = CAN_navy_naval_heavy_gun_hit_chance_factor 
+	consumer_goods_factor = CAN_navy_consumer_goods_factor
+	navy_carrier_air_attack_factor = CAN_navy_navy_carrier_air_attack_factor 
+	naval_strike_agility_factor = CAN_navy_naval_strike_agility_factor
+	navy_carrier_air_targetting_factor = CAN_navy_navy_carrier_air_targetting_factor 
+	positioning = CAN_navy_positioning
+	naval_hit_chance = CAN_navy_naval_hit_chance
+	spotting_chance = CAN_navy_spotting_chance
+	naval_detection = CAN_navy_naval_detection
+	naval_invasion_penalty = CAN_navy_naval_invasion_penalty
+	amphibious_invasion = CAN_navy_amphibious_invasion  
+	invasion_preparation = CAN_navy_invasion_preparation 
+	convoy_escort_efficiency = CAN_navy_convoy_escort_efficiency
+	convoy_retreat_speed = CAN_navy_convoy_retreat_speed
+	experience_gain_navy_unit_factor = CAN_navy_experience_gain_navy_unit_factor
+	naval_speed_factor = CAN_navy_naval_speed_factor
+	navy_max_range_factor = CAN_navy_navy_max_range_factor 
+	navy_screen_attack_factor = CAN_navy_navy_screen_attack_factor
+	navy_screen_defence_factor = CAN_navy_navy_screen_defence_factor
+	screening_efficiency = CAN_navy_screening_efficiency
+	sortie_efficiency = CAN_navy_sortie_efficiency
+	navy_weather_penalty = CAN_navy_navy_weather_penalty 
+	navy_submarine_detection_factor = CAN_navy_navy_submarine_detection_factor 
+}

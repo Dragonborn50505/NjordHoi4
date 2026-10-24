@@ -29,7 +29,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/generic_army_high_command.png"
 	}
 
-	SpriteType = {# Army High Command
+	SpriteType = {# Russian Training
 		name = "GFX_goal_RUS_training"
 		texturefile = "gfx/interface/goals/RUS_training.png"
 	}
@@ -91,7 +91,7 @@ spriteTypes = {
 						
 	SpriteType = {# Russian Tank Academy
 		name = "GFX_idea_RUS_tank_academy"
-		texturefile = "gfx/interface/ideas/generic_army_tanks3.png"
+		texturefile = "gfx/interface/ideas/RUS_tank_academy.png"
 	}
 
 	SpriteType = {# All Armor Small

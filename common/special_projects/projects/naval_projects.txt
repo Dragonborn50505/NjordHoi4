@@ -3480,14 +3480,6 @@ sp_naval_support_ships = {
 			support_ship_1
 			repair_ship_1
 		}
-
-		enable_equipment_modules = {
-			 
-		}
-
-		enable_subunits = { 
-			
-		}
 	}
 	generic_prototype_rewards = {
 		sp_naval_generic_reward_scientist_xp_1

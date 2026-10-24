@@ -3886,5 +3886,1145 @@ ideas = {
 				defense_bonus_against = 0.1
 			}
 		}
+
+		
+		# CANADA / QUEBEC
+		CAN_defunded_army_1 = {
+			picture = chi_forced_conscription
+			modifier = {
+				war_support_factor = -0.3
+				army_morale_factor = -0.3
+				production_speed_arms_factory_factor = -0.3
+				political_power_gain = 0.2
+				production_factory_max_efficiency_factor = -0.1
+				mobilization_speed = -0.3
+				training_time_army_factor = 0.2
+				mobilization_laws_cost_factor = 1
+			}
+		}
+
+		CAN_defunded_army_2 = {
+			picture = chi_forced_conscription
+			modifier = {
+				war_support_factor = -0.15
+				army_morale_factor = -0.15
+				production_speed_arms_factory_factor = -0.15
+				political_power_gain = 0.1
+				production_factory_max_efficiency_factor = -0.05
+			}
+		}
+
+		CAN_newfoundlander_nationalism = {
+			picture = tfv_can_conscription_crisis
+			modifier = {
+				war_support_factor = -0.15
+				conscription_factor = -0.15
+				political_power_cost = 0.15
+			}
+		}
+
+		CAN_agrarian_nation_1 = {
+			picture = generic_agrarian_reform
+			modifier = {
+				monthly_population = 0.25
+				consumer_goods_factor = 0.25
+				industrial_capacity_dockyard = -0.25
+				industrial_capacity_factory = -0.25
+				production_speed_buildings_factor = -0.25
+				production_factory_max_efficiency_factor = -0.1
+			}
+		}
+
+		CAN_agrarian_nation_2 = {
+			picture = generic_agrarian_reform
+			modifier = {
+				monthly_population = 0.2
+				consumer_goods_factor = 0.15
+				industrial_capacity_dockyard = -0.15
+				industrial_capacity_factory = -0.15
+				production_speed_buildings_factor = -0.15
+				production_factory_max_efficiency_factor = -0.05
+			}
+		}
+
+		CAN_agrarian_nation_3 = {
+			picture = generic_agrarian_reform
+			modifier = {
+				monthly_population = 0.15
+				consumer_goods_factor = 0.05
+				industrial_capacity_dockyard = -0.05
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = -0.05
+			}
+		}
+
+		CAN_industrial_nation_1 = {
+			picture = man_five_year_plan_industry
+			modifier = {
+				monthly_population = 0.1
+				consumer_goods_factor = -0.05
+				industrial_capacity_dockyard = 0.05
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+
+		CAN_industrial_nation_2 = {
+			picture = man_five_year_plan_industry
+			modifier = {
+				monthly_population = 0.1
+				consumer_goods_factor = -0.15
+				industrial_capacity_dockyard = 0.1
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+
+		CAN_industrial_nation_3 = {
+			picture = man_five_year_plan_industry
+			modifier = {
+				monthly_population = 0.1
+				consumer_goods_factor = -0.15
+				industrial_capacity_dockyard = 0.15
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+
+		CAN_national_housing_act_idea = {
+			picture = RAJ_tenancy_reforms
+			modifier = {
+				monthly_population = 0.05
+				global_building_slots_factor = 0.1
+			}
+		}
+
+		CAN_debt_adjustment_act = {
+			picture = generic_mild_economic_recovery
+			modifier = {
+				political_power_factor = -0.1
+				stability_weekly_factor = 0.003
+				production_speed_buildings_factor = 0.05
+			}
+		}
+
+		CAN_dollar_a_year_men_idea = {
+			picture = CAN_robert_manion
+			modifier = {
+				political_advisor_cost_factor = -0.25
+				political_power_gain = 0.1
+			}
+		}
+
+		CAN_national_steel_car = {
+			picture = canadian_car_foundry
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				production_lack_of_resource_penalty_factor = -0.05
+			}
+		}
+
+		CAN_qbc_idea_1 = {
+			picture = SWE_radiotjanst
+			modifier = {
+				political_power_factor = 0.05
+				drift_defence_factor = 0.15
+				democratic_drift = 0.01
+				mobilization_speed = 0.1
+				war_stability_factor = 0.1
+			}
+		}
+
+		CAN_qbc_idea_2 = {
+			picture = SWE_radiotjanst
+			modifier = {
+				political_power_factor = 0.1
+				drift_defence_factor = 0.25
+				democratic_drift = 0.03
+				mobilization_speed = 0.15
+				war_stability_factor = 0.2
+			}
+		}
+
+		CAN_nationalised_bank = {
+			picture = tur_balkan_central_bank_wealthy_greece
+			modifier = {
+				consumer_goods_factor = -0.05
+				economic_law_cost_factor = -0.25
+				trade_laws_cost_factor = -0.25
+			}
+		}
+
+		CAN_road_investments = {
+			picture = ARG_invest_in_roads
+			modifier = {
+				production_speed_infrastructure_factor = 0.2
+			}
+		}
+
+		CAN_national_railway_idea = {
+			picture = generic_railroads
+			modifier = {
+				production_speed_rail_way_factor = 0.2
+				production_speed_supply_node_factor = 0.2
+			}
+		}
+
+		ROM_uranium_supply_idea = {
+			picture = RAJ_uranium_tipped_bullets
+			modifier = {
+				production_speed_nuclear_facility_factor = 0.1
+				production_speed_nuclear_reactor_factor = 0.1
+				sp_nuclear_reactor_speed_factor = 0.1
+				energy_gain_factor = 0.1
+			}
+			research_bonus = {
+				nuclear = 0.1
+			}
+		}
+
+		CAN_wartime_prices_and_trade_board_idea = {
+			picture = can_wartime_prices_and_trade_board
+			modifier = {
+				min_export = -0.1
+				trade_opinion_factor = 0.15
+				trade_laws_cost_factor = -0.25
+				economic_law_cost_factor = -0.25
+			}
+		}
+
+		CAN_nrma_idea = {
+			picture = eng_imperial_conscription
+			modifier = {
+				war_support_factor = 0.05
+				conscription_factor = 0.1
+				weekly_manpower = 100
+			}
+		}
+
+		CAN_department_of_munitions_and_supply_1 = {
+			picture = generic_supply_lines
+			modifier = {
+				production_lack_of_resource_penalty_factor = -0.1
+				production_factory_start_efficiency_factor = 0.05
+				local_resources_factor = 0.05
+			}
+		}
+
+		CAN_department_of_munitions_and_supply_2 = {
+			name = CAN_department_of_munitions_and_supply_1
+			picture = generic_supply_lines
+			modifier = {
+				production_lack_of_resource_penalty_factor = -0.2
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.1
+				local_resources_factor = 0.1
+			}
+		}
+
+		CAN_dominion_rifle_association_idea = {
+			picture = CAN_canadian_pacific_railway
+			modifier = {
+				weekly_manpower = 50
+				training_time_army_factor = -0.15
+				experience_gain_army_unit_factor = 0.1
+				army_core_defence_factor = 0.05
+			}
+		}
+
+		CAN_arms_design_institute_1 = {
+			picture = AST_lithgow_arms
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+				}
+			}
+			research_bonus = {
+				infantry_tech = 0.05
+			}
+		}
+
+		CAN_arms_design_institute_artillery_2 = {
+			name = CAN_arms_design_institute_1
+			picture = AST_lithgow_arms
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.05
+				}
+				anti_air_equipment = {
+					build_cost_ic = -0.05
+				}
+				anti_tank_equipment = {
+					build_cost_ic = -0.05
+				}
+			}
+			research_bonus = {
+				infantry_tech = 0.05
+				mio_cat_all_artillery_equipment = 0.05
+			}
+		}
+
+		CAN_arms_design_institute_support_2 = {
+			name = CAN_arms_design_institute_1
+			picture = AST_lithgow_arms
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+				}
+				support_equipment = {
+					build_cost_ic = -0.05
+				}
+			}
+			research_bonus = {
+				infantry_tech = 0.05
+				support_tech = 0.05
+			}
+		}
+
+		CAN_arms_design_institute_support_artillery_2 = {
+			name = CAN_arms_design_institute_1
+			picture = AST_lithgow_arms
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+				}
+				support_equipment = {
+					build_cost_ic = -0.05
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.05
+				}
+				anti_air_equipment = {
+					build_cost_ic = -0.05
+				}
+				anti_tank_equipment = {
+					build_cost_ic = -0.05
+				}
+			}
+			research_bonus = {
+				infantry_tech = 0.05
+				support_tech = 0.05
+				mio_cat_all_artillery_equipment = 0.05
+			}
+		}
+
+		CAN_arms_design_institute_support_artillery_3 = {
+			name = CAN_arms_design_institute_1
+			picture = AST_lithgow_arms
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					breakthrough = 0.05
+				}
+				support_equipment = {
+					build_cost_ic = -0.1
+					reliability_factor = 0.05
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.1
+					soft_attack = 0.05
+				}
+				anti_air_equipment = {
+					build_cost_ic = -0.1
+					anti_air_attack = 0.05
+				}
+				anti_tank_equipment = {
+					build_cost_ic = -0.1
+					hard_attack = 0.05
+				}
+			}
+			research_bonus = {
+				infantry_tech = 0.1
+				support_tech = 0.1
+				mio_cat_all_artillery_equipment = 0.1
+			}
+		}
+
+		CAN_arms_design_institute_support_artillery_4 = {
+			name = CAN_arms_design_institute_1
+			picture = AST_lithgow_arms
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				rocket_attack_factor = 0.1
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					breakthrough = 0.05
+				}
+				support_equipment = {
+					build_cost_ic = -0.1
+					reliability_factor = 0.05
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.1
+					soft_attack = 0.05
+				}
+				anti_air_equipment = {
+					build_cost_ic = -0.1
+					anti_air_attack = 0.05
+				}
+				anti_tank_equipment = {
+					build_cost_ic = -0.1
+					hard_attack = 0.05
+				}
+				rocket_artillery_equipment = {
+					build_cost_ic = -0.1
+					breakthrough = 0.05
+				}
+				motorized_rocket_equipment = {
+					build_cost_ic = -0.1
+					breakthrough = 0.05
+				}
+			}
+			research_bonus = {
+				infantry_tech = 0.1
+				support_tech = 0.1
+				mio_cat_all_artillery_equipment = 0.1
+				rocketry = 0.1
+			}
+		}
+
+		CAN_the_ram_1 = {
+			picture = raj_heavy_vehicles_factory_avadi
+			modifier = {
+				army_armor_speed_factor = 0.05
+			}
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05
+					reliability_factor = 0.05
+				}
+			}
+			research_bonus = {
+				mio_cat_tech_all_armor_and_modules = 0.05
+			}
+		}
+
+		CAN_the_ram_2 = {
+			picture = raj_heavy_vehicles_factory_avadi
+			modifier = {
+				army_armor_speed_factor = 0.05
+				army_attack_against_major_factor = 0.05
+			}
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05
+					reliability_factor = 0.1
+					armor_value = 0.1
+					hardness = 0.05
+				}
+			}
+			research_bonus = {
+				mio_cat_tech_all_armor_and_modules = 0.1
+			}
+		}
+
+		CAN_angus_repair_and_tooling_shop = {
+			picture = SWE_gotaverken_retooled_for_rapid_repairs
+			modifier = {
+				industry_free_repair_factor = 0.25
+				industry_repair_factor = 0.25
+				equipment_conversion_speed = 0.2
+				equipment_capture_factor = 0.05
+				conversion_cost_civ_to_mil_factor = -0.15
+				conversion_cost_mil_to_civ_factor = -0.15
+			}
+		}
+
+		CAN_air_foundry_1 = {
+			picture = man_five_year_plan_air
+			equipment_bonus = {
+				mio_cat_eq_all_small_plane = {
+					build_cost_ic = -0.05
+				}
+				mio_cat_eq_all_medium_plane = {
+					build_cost_ic = -0.05
+				}
+				mio_cat_eq_all_large_plane = {
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		CAN_merchant_fleet_idea = {
+			picture = liberty_ships_focus
+			equipment_bonus = {
+				convoy = {
+					build_cost_ic = -0.15
+					anti_air_attack = 0.15
+					sub_attack = 0.15
+				}
+			}
+		}
+
+		CAN_support_ships = {
+			picture = INS_guided_economy
+			modifier = {
+				underway_replenishment_convoy_cost = -0.25
+				underway_replenishment_range = 0.25
+				extra_marine_supply_grace = 24
+				amphibious_invasion_defence = 0.25
+				shore_bombardment_bonus = 0.15
+			}
+			equipment_bonus = {
+				floating_harbor_equipment = {
+					build_cost_ic = -0.25
+				}
+			}
+		}
+
+		CAN_expert_marines_1 = {
+			picture = generic_naval_invasion
+			modifier = {
+				modifier_army_sub_unit_marine_attack_factor = 0.05
+				modifier_army_sub_unit_marine_defence_factor = 0.05
+				naval_invasion_capacity = 5
+				naval_invasion_planning_bonus_speed = 0.1
+				naval_invasion_division_cap = 1
+			}
+		}
+
+		CAN_expert_marines_2 = {
+			name = CAN_expert_marines_1
+			picture = generic_naval_invasion
+			modifier = {
+				modifier_army_sub_unit_marine_attack_factor = 0.1
+				modifier_army_sub_unit_marine_defence_factor = 0.1
+				modifier_army_sub_unit_marine_max_org_factor = 0.1
+				modifier_army_sub_unit_marine_speed_factor = 0.05
+				marines_special_forces_contribution_factor = -0.15
+				naval_invasion_capacity = 10
+				naval_invasion_planning_bonus_speed = 0.2
+				naval_invasion_division_cap = 2
+			}
+			equipment_bonus = {
+				amphibious_mechanized_equipment = {
+					build_cost_ic = -0.1
+					maximum_speed = 0.1
+					armor_value = 0.05
+				}
+				amphibious_tank_chassis = {
+					build_cost_ic = -0.1
+					maximum_speed = 0.1
+					armor_value = 0.05
+				}
+			}
+		}
+
+
+		# BYZANTINE EMPIRE
+		BYZ_last_roman_empire = {
+			picture = ITA_new_roman_empire_ns
+			modifier = {
+				war_support_factor = 0.1
+				army_core_defence_factor = 0.15
+				resistance_growth_on_our_occupied_states = 0.05
+				compliance_growth_on_our_occupied_states = -0.1
+			}
+		}
+
+		BYZ_land_down_under = {
+			picture = AST_australian_comforts_fund_idea
+			modifier = {
+				equipment_capture_factor = 0.05
+				supply_factor = -0.05
+				research_speed_factor = -0.1
+				supply_consumption_factor = -0.15
+				supply_node_range = 0.5
+				production_speed_rail_way_factor = -0.25
+			}
+		}
+
+		BYZ_byzantine_immigration_bureau = {
+			picture = generic_immigration
+			modifier = {
+				political_power_cost = 0.2
+				stability_factor = -0.1
+				monthly_population = 1.5
+				fascism_drift = 0.01
+				communism_drift = 0.01
+				radical_drift = 0.01
+				neutrality_drift = 0.01
+				democratic_drift = 0.01
+				absolutist_drift = 0.01
+				drift_defence_factor = -0.1
+				conscription_factor = 0.05
+			}
+		}
+
+		BYZ_platonian_pillar = { # GOVERNMENT STABILITY
+			picture = gre_venerate_the_ancient_hellenes_plato
+			modifier = {
+				political_advisor_cost_factor = 0.25
+				drift_defence_factor = 0.15
+				democratic_drift = 0.03
+				party_popularity_stability_factor = -0.1
+				opinion_gain_monthly_factor = 0.33
+				political_power_factor = 0.1
+				enemy_justify_war_goal_time = 0.33
+				enemy_declare_war_tension = 0.33
+			}
+		}
+
+		BYZ_hoplite_pillar = { # ARMY SITUATION
+			picture = gre_venerate_the_ancient_hellenes_hoplite
+			modifier = {
+				army_attack_factor = -0.05
+				army_defence_factor = 0.05
+				modifier_army_sub_unit_militia_attack_factor = 0.05
+				modifier_army_sub_unit_militia_defence_factor = 0.05
+				modifier_army_sub_unit_militia_max_org_factor = 0.15
+				weekly_manpower = 100
+				army_org_factor = -0.15
+				max_surrender_limit_offset = 0.1
+				land_reinforce_rate = -0.05
+				coordination_bonus = -0.05
+				land_doctrine_cost_factor = 0.25
+				resistance_damage_to_garrison_on_our_occupied_states = 0.15
+			}
+		}
+
+		BYZ_alexanderian_pillar = { # POLITICAL STABILITY
+			picture = gre_venerate_the_ancient_hellenes_alexander_the_great
+			modifier = {
+				political_power_gain = -0.2
+				stability_factor = -0.15
+				party_popularity_stability_factor = -0.1
+				surrender_limit = -0.1
+				trade_laws_cost_factor = 0.5
+				mobilization_laws_cost_factor = 0.5
+				economic_law_cost_factor = 0.5
+			}
+		}
+
+		BYZ_non_existent_industry = {
+			picture = SPA_recovering_from_the_civil_war
+			modifier = {
+				industrial_capacity_dockyard = -0.5
+				industrial_capacity_factory = -0.5
+				production_factory_max_efficiency_factor = -0.25
+				production_factory_efficiency_gain_factor = -0.5
+				production_speed_buildings_factor = -0.25
+				local_resources_factor = -0.25
+				monthly_population = 0.75
+				consumer_goods_factor = 0.15
+			}
+		}
+
+		BYZ_agrarian_exports = {
+			picture = ARG_argentine_beef_trade
+			modifier = {
+				min_export = -0.1
+				consumer_goods_factor = -0.3
+				trade_opinion_factor = 0.3
+				monthly_population = 0.25
+			}
+		}
+
+		WAL_the_prussian_legacy = {
+			picture = GER_german_military
+			modifier = {
+				stability_factor = 0.1
+				neutrality_drift = 0.01
+				democratic_drift = 0.01
+				absolutist_drift = 0.01
+				political_power_cost = 0.1
+			}
+		}
+
+		WAL_a_nation_without_a_people = {
+			picture = EST_republican_defence_league
+			modifier = {
+				drift_defence_factor = -0.15
+				party_popularity_stability_factor = -0.1
+				political_power_gain = -0.1
+				conscription_factor = -0.1
+				war_support_factor = -0.2
+			}
+		}
+
+		WAL_outset_of_the_great_lakes = {
+			picture = EST_republican_defence_league
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				trade_opinion_factor = 0.5
+				cic_construction_boost_factor = 0.05
+				resource_trade_cost_bonus_per_factory = 1
+				min_export = 0.1
+				industrial_capacity_dockyard = -0.05
+				industrial_capacity_factory = -0.05
+			}
+			targeted_modifier = {
+				tag = TEX
+				extra_trade_to_target_factor = 0.05
+				trade_cost_for_target_factor = -0.1
+			}
+			targeted_modifier = {
+				tag = QUE
+				extra_trade_to_target_factor = 0.05
+				trade_cost_for_target_factor = -0.1
+			}
+			targeted_modifier = {
+				tag = USA
+				extra_trade_to_target_factor = 0.05
+				trade_cost_for_target_factor = -0.1
+			}
+		}
+
+		WAL_the_failed_colony = {
+			picture = COG_colonial_maritime_company
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.15
+				production_factory_max_efficiency_factor = -0.1
+				industrial_capacity_dockyard = -0.15
+				industrial_capacity_factory = -0.15
+				production_speed_buildings_factor = -0.15
+				local_resources_factor = -0.3
+			}
+		}
+
+		WAL_brothers_across_the_lakes = {
+			picture = PHI_united_states_army_forces_in_the_far_east
+			modifier = {
+				opinion_gain_monthly_same_ideology_factor = 0.33
+				improve_relations_maintain_cost_factor = -0.5
+				monthly_population = 0.1
+				research_speed_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = QUE
+				cic_to_target_factor = 0.05
+				custom_modifier_tooltip = WAL_brothers_across_the_lakes_que_tt
+			}
+			targeted_modifier = {
+				tag = USA
+				cic_to_target_factor = 0.05
+				custom_modifier_tooltip = WAL_brothers_across_the_lakes_usa_tt
+			}
+		}
+
+		WAL_the_republican_constitution = {
+			picture = generic_constitutional_guarantees
+			modifier = {
+				master_ideology_drift = -0.01
+				political_power_factor = -0.2
+				stability_factor = -0.1
+				drift_defence_factor = -0.1
+				political_advisor_cost_factor = 0.5
+			}
+		}
+
+
+		#RUSSIAN AMERIKA/AMERICA / RUSSIAN CANADA
+		ALSK_the_republics_storehouse = {
+			allowed = {
+				has_war = no
+			}
+			on_remove = {
+				add_ideas = ALSK_the_republics_storehouse_at_war
+			}
+			picture = SOV_russian_corporate_state_ccp_sov_compatibility
+			modifier = {
+				local_resources_factor = 0.2
+				production_speed_industrial_complex_factor = -0.2
+				min_export = 0.1
+				industrial_capacity_dockyard = -0.1
+				industrial_capacity_factory = -0.1
+				overlord_trade_cost_factor = -0.3
+				autonomy_gain = -0.1
+				conscription_factor = -0.2
+				research_speed_factor = -0.1
+			}
+			targeted_modifier = {
+				tag = SOV
+				extra_trade_to_target_factor = 0.5
+				country_resource_oil = 10
+				country_resource_coal = 20
+			}
+		}
+
+		ALSK_the_republics_storehouse_at_war = {
+			name = ALSK_the_republics_storehouse
+			allowed = {
+				has_war = yes
+			}
+			on_remove = {
+				add_ideas = ALSK_the_republics_storehouse
+			}
+			picture = SOV_russian_corporate_state_ccp_sov_compatibility
+			modifier = {
+				local_resources_factor = 0.2
+				production_speed_industrial_complex_factor = -0.1
+				min_export = 0.05
+				industrial_capacity_dockyard = -0.05
+				industrial_capacity_factory = -0.05
+				overlord_trade_cost_factor = -0.15
+				autonomy_gain = 0.1
+				conscription_factor = 0.1
+				research_speed_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = SOV
+				extra_trade_to_target_factor = 0.25
+			}
+		}
+
+		ALSK_the_republic_in_retreat = {
+			picture = generic_democratic_opposition
+			allowed = {
+				SOV = {
+					NOT = {
+						has_completed_focus = RUS_declare_russian_state
+					}
+				}
+			}
+			on_remove = {
+				add_ideas = ALSK_the_national_populist_takeover
+			}
+			modifier = {
+				stability_weekly_factor = -0.001
+				political_power_factor = -0.1
+				democratic_drift = -0.01
+			}
+		}
+
+		ALSK_the_national_populist_takeover = {
+			picture = generic_fascist_workers
+			modifier = {
+				stability_factor = -0.1
+				political_power_factor = -0.15
+				democratic_drift = -0.03
+				autonomy_gain = -0.1
+				fascism_drift = 0.01
+				radical_drift = 0.01
+				war_stability_factor = 0.2
+			}
+		}
+
+		ALSK_an_outpost_for_russia = {
+			allowed = {
+				has_war = no
+			}
+			on_remove = {
+				add_ideas = ALSK_an_outpost_for_russia_at_war
+			}
+			picture = generic_supply_depot
+			modifier = {
+				out_of_supply_factor = -0.1
+				supply_consumption_factor = -0.05
+				license_purchase_cost = -0.75
+				master_build_autonomy_factor = 0.5
+				license_production_speed = 0.2
+				license_tech_difference_speed = 0.1
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.15
+					reliability_factor = -0.1
+				}
+			}
+			targeted_modifier = {
+				tag = SOV
+				custom_modifier_tooltip = ALSK_an_outpost_for_russia_tt
+			}
+		}
+
+		ALSK_an_outpost_for_russia_at_war = {
+			name = ALSK_an_outpost_for_russia
+			allowed = {
+				has_war = yes
+			}
+			on_remove = {
+				add_ideas = ALSK_an_outpost_for_russia
+			}
+			picture = generic_supply_depot
+			modifier = {
+				out_of_supply_factor = 0.1
+				supply_consumption_factor = 0.05
+				license_purchase_cost = -0.75
+				master_build_autonomy_factor = 0.5
+				license_production_speed = 0.2
+				license_tech_difference_speed = 0.1
+			}
+			targeted_modifier = {
+				tag = SOV
+				custom_modifier_tooltip = ALSK_an_outpost_for_russia_at_war_tt
+			}
+		}
+
+		ALSK_the_forgotten_frontier = {
+			allowed = {
+				SOV = {
+					has_war = no
+				}
+			}
+			picture = generic_fortify_the_borders
+			modifier = {
+				land_bunker_effectiveness_factor = 0.05
+				army_core_defence_factor = 0.05
+				resistance_damage_to_garrison_on_our_occupied_states = 0.05
+				max_dig_in = 1
+				training_time_army_factor = -0.15
+				conscription_factor = 0.05
+				breakthrough_factor = -0.05
+				weekly_manpower = 150
+			}
+			targeted_modifier = {
+				tag = SOV
+				custom_modifier_tooltip = ALSK_the_forgotten_frontier_tt
+			}
+			targeted_modifier = {
+				tag = W36
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = QUE
+				defense_bonus_against = 0.05
+			}
+		}
+
+		ALSK_the_forgotten_frontier_at_war = {
+			name = ALSK_the_forgotten_frontier
+			allowed = {
+				has_war = no
+			}
+			picture = BEL_the_kings_surrender
+			modifier = {
+				land_bunker_effectiveness_factor = -0.05
+				army_core_defence_factor = -0.05
+				resistance_damage_to_garrison_on_our_occupied_states = -0.05
+				dig_in_speed_factor = -0.15
+				conscription_factor = -0.05
+				breakthrough_factor = -0.1
+				army_attack_factor = -0.1
+			}
+			targeted_modifier = {
+				tag = SOV
+				custom_modifier_tooltip = ALSK_the_forgotten_frontier_at_war_tt
+			}
+			targeted_modifier = {
+				tag = W36
+				defense_bonus_against = -0.05
+			}
+			targeted_modifier = {
+				tag = QUE
+				defense_bonus_against = -0.05
+			}
+		}
+
+		ALSK_the_citizens_militia = {
+			picture = citizen_militia_2
+			modifier = {
+				army_org_factor = -0.2
+				modifier_army_sub_unit_militia_attack_factor = 0.05
+				modifier_army_sub_unit_militia_defence_factor = 0.05
+				modifier_army_sub_unit_militia_speed_factor = 0.05
+				modifier_army_sub_unit_militia_max_org_factor = 0.1
+				org_loss_at_low_org_factor = -0.1
+				army_morale_factor = 0.1
+				supply_combat_penalties_on_core_factor = -0.2
+			}
+		}
+
+		# GREENLAND
+		GREENLAND_two_shores_one_colony = {
+			picture = ARG_roca_runciman_new_partner
+			on_remove = {
+				add_ideas = GREENLAND_one_shore_two_colonies
+			}
+			allowed = {
+				NOT = {
+					owns_state = 517
+				}
+			}
+			modifier = {
+				political_power_gain = -0.2
+				war_support_factor = -0.2
+				stability_factor = -0.2
+			}
+		}
+
+		GREENLAND_one_shore_two_colonies = {
+			picture = ARG_roca_runciman_new_partner
+			allowed = {
+				owns_state = 517
+			}
+			modifier = {
+				political_power_gain = -0.1
+				war_support_factor = -0.1
+				stability_factor = -0.1
+			}
+		}
+
+		GREENLAND_the_north_pacific_lifeline = {
+			picture = INS_guided_economy
+			modifier = {
+				dockyard_donations = 3
+				production_speed_dockyard_factor = 0.1
+				industrial_capacity_dockyard = 0.2
+				trade_opinion_factor = 0.25
+				cic_construction_boost_factor = 0.05
+			}
+			equipment_bonus = {
+				convoy = {
+					build_cost_ic = -0.2
+				}
+			}
+			targeted_modifier = {
+				tag = JAP
+				trade_cost_for_target_factor = -0.15
+			}
+			targeted_modifier = {
+				tag = KOR
+				trade_cost_for_target_factor = -0.15
+			}
+			targeted_modifier = {
+				tag = W41
+				trade_cost_for_target_factor = -0.15
+			}
+		}
+
+		GREENLAND_forests_of_the_west = {
+			picture = INS_cheap_lumber
+			modifier = {
+				supply_node_range = -0.15
+				out_of_supply_factor = 0.05
+				production_speed_infrastructure_factor = -0.2
+				production_speed_rail_way_factor = -0.2
+				local_resources_factor = -0.2
+			}
+		}
+
+
+		# TRANSCAUCASIA
+		TRANS_a_crown_above_the_caucasus = {
+			picture = bra_monarchist_uprising
+			modifier = {
+				absolutist_drift = 0.01
+				drift_defence_factor = 0.1
+				party_popularity_stability_factor = 0.25
+				political_power_gain = -0.1
+				political_advisor_cost_factor = -0.5
+				resistance_growth = 0.05
+			}
+		}
+
+		TRANS_the_lost_lands_of_the_north = {
+			picture = BEL_legacy_of_the_great_war
+			modifier = {
+				war_stability_factor = 0.2
+				war_support_factor = 0.25
+				mobilization_speed = 0.15
+				mobilization_laws_cost_factor = -0.25
+				economic_law_cost_factor = -0.25
+				production_speed_arms_factory_factor = 0.15
+				army_core_attack_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = X93
+				attack_bonus_against = 0.05
+				breakthrough_bonus_against = 0.05
+			}
+		}
+
+		TRANS_a_kingdom_besieged = {
+			picture = FRA_fortification_focus
+			modifier = {
+				conscription = 0.01
+				army_core_defence_factor = 0.05
+				modifier_army_sub_unit_mountaineers_attack_factor = 0.1
+				modifier_army_sub_unit_mountaineers_defence_factor = 0.15
+				modifier_army_sub_unit_mountaineers_max_org_factor = 0.2
+				modifier_army_sub_unit_mountaineers_speed_factor = 0.05
+				max_dig_in = 1
+				dig_in_speed_factor = 0.2
+				max_dig_in_factor = 0.1
+				diplomatic_pressure_mission_factor = 0.25
+				join_faction_tension = -0.5
+			}
+		}
+
+		TRANS_demands_for_democracy = {
+			picture = EST_democratic_opposition
+			modifier = {
+				democratic_drift = 0.05
+				communism_drift = 0.04
+				fascism_drift = 0.03
+				neutrality_drift = 0.02
+				radical_drift = 0.01
+				drift_defence_factor = -0.25
+				political_power_factor = -0.1
+				stability_factor = -0.1
+				war_support_factor = -0.1
+			}
+		}
+
+		TRANS_the_armenian_question = {
+			picture = ARG_infamous_decade
+			modifier = {
+				compliance_gain = -0.01
+				stability_factor = -0.1
+				conscription_factor = -0.2
+				army_morale_factor = -0.3
+			}
+			targeted_modifier = {
+				tag = ARM
+				exiled_government_weekly_manpower = 200
+				exiled_divisions_attack_factor = 0.05
+				exiled_divisions_defense_factor = 0.05
+			}
+		}
+
+		TRANS_russian_advisors = {
+			picture = SOV_smersh_ccp_sov_compatibility
+			modifier = {
+				experience_gain_army_factor = 0.05
+				planning_speed = 0.1
+				max_planning_factor = 0.05
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					reliability_factor = 0.05
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.05
+					reliability_factor = 0.05
+				}
+				support_equipment = {
+					build_cost_ic = -0.05
+					reliability_factor = 0.05
+				}
+			}
+			targeted_modifier = {
+				tag = SOV
+				experience_gain_army = 0.01
+			}
+		}
 	}
 }

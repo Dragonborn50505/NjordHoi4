@@ -1,0 +1,5697 @@
+focus_tree = {
+	id = QUE_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = QUE
+		}
+	}
+	
+	default = no
+
+	focus = {
+		id = CAN_modernize_industry
+		icon = GFX_focus_generic_modernize_industry
+		x = 5
+		y = 0
+		
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAN_modernize_industry
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = QUE
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = CAN_wheat_board #SUPPORT FARMERS
+		icon = GFX_focus_generic_modernizing_agriculture
+		x = 2
+		y = 1
+		relative_position_id = CAN_modernize_industry
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 15
+		}
+		
+		prerequisite = {
+			focus = CAN_modernize_industry
+			focus = CAN_depression_recovery
+		}
+		
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			if = {
+				limit = { 
+					has_idea = CAN_agrarian_nation_1
+				}
+				swap_ideas = {
+					remove_idea = CAN_agrarian_nation_1
+					add_idea = CAN_agrarian_nation_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CAN_agrarian_nation_2
+				}
+				swap_ideas = {
+					remove_idea = CAN_agrarian_nation_2
+					add_idea = CAN_agrarian_nation_3
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CAN_agrarian_nation_3
+				}
+				swap_ideas = {
+					remove_idea = CAN_agrarian_nation_3
+					add_idea = CAN_industrial_nation_1
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CAN_industrial_nation_1
+				}
+				swap_ideas = {
+					remove_idea = CAN_industrial_nation_1
+					add_idea = CAN_industrial_nation_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CAN_industrial_nation_2
+				}
+				swap_ideas = {
+					remove_idea = CAN_industrial_nation_2
+					add_idea = CAN_industrial_nation_3
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = QUE
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_manpower = 50000
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = QUE
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_manpower = 30000
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = QUE
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_manpower = 15000
+			}
+		}
+	}
+		
+	focus = {
+		id = CAN_depression_recovery #HYDRELECTRIC ENERGY
+		icon = GFX_focus_generic_hydroelectric_energy
+		x = 4
+		y = 0
+		relative_position_id = CAN_modernize_industry
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			if = {
+				limit = { 
+					has_idea = CAN_agrarian_nation_1
+				}
+				swap_ideas = {
+					remove_idea = CAN_agrarian_nation_1
+					add_idea = CAN_agrarian_nation_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CAN_agrarian_nation_2
+				}
+				swap_ideas = {
+					remove_idea = CAN_agrarian_nation_2
+					add_idea = CAN_agrarian_nation_3
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CAN_agrarian_nation_3
+				}
+				swap_ideas = {
+					remove_idea = CAN_agrarian_nation_3
+					add_idea = CAN_industrial_nation_1
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CAN_industrial_nation_1
+				}
+				swap_ideas = {
+					remove_idea = CAN_industrial_nation_1
+					add_idea = CAN_industrial_nation_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CAN_industrial_nation_2
+				}
+				swap_ideas = {
+					remove_idea = CAN_industrial_nation_2
+					add_idea = CAN_industrial_nation_3
+				}
+			}
+			random_owned_controlled_state = { # SPECIFIC STATE INSTEAD
+				limit = {
+					is_core_of = QUE
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+				add_building_construction = { # NEEDS SPECIFIC PROVINCE ID
+					type = dam
+					level = 1
+				}
+			}
+		}
+	}
+		
+	focus = {
+		id = CAN_national_housing_act
+		icon = GFX_focus_generic_low_cost_housing
+		x = 0
+		y = 1
+		relative_position_id = CAN_depression_recovery
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER }
+
+		ai_will_do = {
+			factor = 3
+		}
+		
+		prerequisite = {
+			focus = CAN_depression_recovery
+		}
+
+
+		completion_reward = {
+			add_ideas = CAN_national_housing_act_idea
+			custom_effect_tooltip = generic_skip_one_line_tt
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+		
+	focus = {
+		id = CAN_debt_adjustment_act # DEBT ADJUSTMENTS AND CURRENCY REFORM
+		icon = GFX_focus_generic_reduce_unneccessary_expenditure
+		x = 0
+		y = 1
+		relative_position_id = CAN_wheat_board
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 15
+		}
+		
+		prerequisite = {
+			focus = CAN_national_housing_act
+			focus = CAN_wheat_board
+		}
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_timed_idea = {
+				idea = CAN_debt_adjustment_act
+				days = 180
+			}
+		}
+	}
+		
+	focus = {
+		id = CAN_enlist_the_unemployed # BIG INDUSTRY INVESTMENTS
+		icon = GFX_focus_generic_industry_investment
+		x = 0
+		y = 1
+		relative_position_id = CAN_national_housing_act
+		search_filters = { FOCUS_FILTER_MANPOWER }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 10
+				OR = {
+					has_war = yes
+					threat > 0.25
+				}
+			}
+		}
+		
+		prerequisite = {
+			focus = CAN_wheat_board
+		}
+
+		prerequisite =  {
+			focus = CAN_national_housing_act
+		}
+		
+		prerequisite =  {
+			focus = CAN_shutdown_relief_camps
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = { 
+					has_idea = CAN_agrarian_nation_1
+				}
+				swap_ideas = {
+					remove_idea = CAN_agrarian_nation_1
+					add_idea = CAN_agrarian_nation_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CAN_agrarian_nation_2
+				}
+				swap_ideas = {
+					remove_idea = CAN_agrarian_nation_2
+					add_idea = CAN_agrarian_nation_3
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CAN_agrarian_nation_3
+				}
+				swap_ideas = {
+					remove_idea = CAN_agrarian_nation_3
+					add_idea = CAN_industrial_nation_1
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CAN_industrial_nation_1
+				}
+				swap_ideas = {
+					remove_idea = CAN_industrial_nation_1
+					add_idea = CAN_industrial_nation_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CAN_industrial_nation_2
+				}
+				swap_ideas = {
+					remove_idea = CAN_industrial_nation_2
+					add_idea = CAN_industrial_nation_3
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = QUE
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = QUE
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+		
+	focus = {
+		id = CAN_war_economy
+		icon = GFX_focus_generic_military_industry
+		x = 1
+		y = 1
+		relative_position_id = CAN_enlist_the_unemployed
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite =  {
+			focus = CAN_enlist_the_unemployed
+		}
+		prerequisite =  {
+			focus = CAN_replace_men_in_the_industry
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = { 
+					has_idea = CAN_agrarian_nation_1
+				}
+				swap_ideas = {
+					remove_idea = CAN_agrarian_nation_1
+					add_idea = CAN_agrarian_nation_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CAN_agrarian_nation_2
+				}
+				swap_ideas = {
+					remove_idea = CAN_agrarian_nation_2
+					add_idea = CAN_agrarian_nation_3
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CAN_agrarian_nation_3
+				}
+				swap_ideas = {
+					remove_idea = CAN_agrarian_nation_3
+					add_idea = CAN_industrial_nation_1
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CAN_industrial_nation_1
+				}
+				swap_ideas = {
+					remove_idea = CAN_industrial_nation_1
+					add_idea = CAN_industrial_nation_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CAN_industrial_nation_2
+				}
+				swap_ideas = {
+					remove_idea = CAN_industrial_nation_2
+					add_idea = CAN_industrial_nation_3
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = QUE
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = QUE
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+		
+	focus = {
+		id = CAN_shutdown_relief_camps # TEXTILE FACTORIES
+		icon = GFX_focus_CHL_enlarge_the_textile_industries
+		x = 2
+		y = 1
+		relative_position_id = CAN_depression_recovery
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY }
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = {
+			focus = CAN_depression_recovery
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = { 
+					has_idea = CAN_agrarian_nation_1
+				}
+				swap_ideas = {
+					remove_idea = CAN_agrarian_nation_1
+					add_idea = CAN_agrarian_nation_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CAN_agrarian_nation_2
+				}
+				swap_ideas = {
+					remove_idea = CAN_agrarian_nation_2
+					add_idea = CAN_agrarian_nation_3
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CAN_agrarian_nation_3
+				}
+				swap_ideas = {
+					remove_idea = CAN_agrarian_nation_3
+					add_idea = CAN_industrial_nation_1
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CAN_industrial_nation_1
+				}
+				swap_ideas = {
+					remove_idea = CAN_industrial_nation_1
+					add_idea = CAN_industrial_nation_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CAN_industrial_nation_2
+				}
+				swap_ideas = {
+					remove_idea = CAN_industrial_nation_2
+					add_idea = CAN_industrial_nation_3
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = QUE
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = QUE
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+		
+	focus = {
+		id = CAN_dollar_a_year_men
+		icon = GFX_SOV_foreign_experts_ccp_2d_sov_compatibility
+		x = -2
+		y = 1
+		relative_position_id = CAN_modernize_industry
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+		
+		prerequisite = {
+			focus = CAN_depression_recovery
+			focus = CAN_modernize_industry
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 50
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = CAN_dollar_a_year_men_idea	
+		}
+	}
+	focus = {
+		id = CAN_sorel_steel_and_foundry
+		icon = GFX_focus_generic_steel_mill
+		prerequisite = { focus = CAN_dollar_a_year_men }
+		x = -4
+		y = 1
+		relative_position_id = CAN_dollar_a_year_men
+		cost = 5
+
+		ai_will_do = {
+			factor = 24
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+                name = CAN_sorel_steel_and_foundry
+                bonus = 1
+                uses = 1
+                category = excavation_tech
+            }	
+			custom_effect_tooltip = generic_skip_one_line_tt
+			random_owned_controlled_state = { # SPECIFIC STEEL STATE
+				prioritize = { 468 }
+				add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }		
+				add_resource = {
+					type = steel
+					amount = 12
+				}			
+			}
+			random_owned_controlled_state = { # SPECIFIC STEEL STATE
+				prioritize = { 468 }
+				add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }	
+				add_resource = {
+					type = steel
+					amount = 8
+				}		
+			}	
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH FOCUS_FILTER_RESOURCES}
+	}	
+	focus = {
+		id = CAN_sorel_industries
+		icon = GFX_focus_generic_military_industry
+		prerequisite = { focus = CAN_sorel_steel_and_foundry }
+		relative_position_id = CAN_sorel_steel_and_foundry
+		x = 0
+		y = 1		
+
+		cost = 5
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = { # THE TWO PREVIOUS STATES WITH STEEL
+				prioritize = { 468 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = { # THE TWO PREVIOUS STATES WITH STEEL
+				prioritize = { 468 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}	
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}		
+	focus = {
+		id = CAN_canadian_pacific_railways
+		icon = GFX_focus_generic_road_investment
+		x = -2
+		y = 1
+		relative_position_id = CAN_dollar_a_year_men
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+		
+		prerequisite = {
+			focus = CAN_dollar_a_year_men
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAN_canadian_pacific_railways
+				bonus = 0.5
+				uses = 1
+				ahead_reduction = 1
+				category = train_tech
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_timed_idea = {
+				idea = CAN_road_investments
+				days = 180
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size < 5
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size < 5
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size < 5
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+		
+	focus = {
+		id = CAN_national_steel_car
+		icon = GFX_focus_GER_kdf_wagen
+		x = 0
+		y = 2
+		relative_position_id = CAN_canadian_pacific_railways
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+		
+		prerequisite = {
+			focus = CAN_canadian_pacific_railways
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAN_national_steel_car
+				bonus = 1
+				uses = 1
+				category = cat_production
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = CAN_national_steel_car
+			custom_effect_tooltip = generic_skip_one_line_tt
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+		
+	focus = {
+		id = CAN_cbc_focus
+		icon = GFX_focus_SWE_radiotjanst
+		x = 0
+		y = 1
+		relative_position_id = CAN_dollar_a_year_men
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_STABILITY }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+		
+		prerequisite = {
+			focus = CAN_dollar_a_year_men
+		}
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 25
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = { 
+					has_idea = CAN_qbc_idea_1
+				}
+				swap_ideas = {
+					remove_idea = CAN_qbc_idea_1
+					add_idea = CAN_qbc_idea_2
+				}
+			}
+			else = {
+				add_ideas = CAN_qbc_idea_1
+			}	
+		}
+	}
+		
+	focus = {
+		id = CAN_bank_of_canada
+		icon = GFX_focus_CHL_strengthen_the_central_bank
+		x = 2
+		y = 1
+		relative_position_id = CAN_dollar_a_year_men
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+		
+		prerequisite = {
+			focus = CAN_dollar_a_year_men
+		}
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			add_political_power = 100
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = CAN_nationalised_bank
+		}
+	}
+		
+	focus = {
+		id = CAN_national_railway
+		icon = GFX_focus_generic_railroad
+		x = -1
+		y = 1
+		relative_position_id = CAN_bank_of_canada
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+		
+		prerequisite = {
+			focus = CAN_bank_of_canada
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = CAN_national_railway_idea
+				days = 180
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			build_railway = { # Build lots of railways
+				path = {
+					4345 9601 7291 12149
+				}
+			}
+			build_railway = { # Build lots of railways
+				path = {
+					4345 9601 7291 12149
+				}
+			}
+			build_railway = { # Build lots of railways
+				path = {
+					4345 9601 7291 12149
+				}
+			}
+		}
+	}
+		
+	focus = {
+		id = CAN_alcan
+		icon = GFX_focus_generic_aluminum
+		x = 3
+		y = 1
+		relative_position_id = CAN_bank_of_canada
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+		
+		prerequisite = {
+			focus = CAN_bank_of_canada
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAN_alcan
+				bonus = 0.5
+				uses = 3
+				category = excavation_tech
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			random_owned_controlled_state = { # SPECIFIC ALUMINIUM STATE
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_resource = {
+					type = aluminium
+					amount = 24
+				}
+			}
+			random_owned_controlled_state = { # SPECIFIC ALUMINIUM STATE
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_resource = {
+					type = aluminium
+					amount = 24
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH FOCUS_FILTER_RESOURCES }
+	}
+		
+	focus = {
+		id = CAN_imperial_oil_focus
+		icon = GFX_goal_generic_oil_refinery
+		x = -2
+		y = 1
+		relative_position_id = CAN_alcan
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+		
+		prerequisite = {
+			focus = CAN_alcan
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAN_imperial_oil_focus
+				bonus = 0.5
+				uses = 2
+				category = synth_resources
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt		
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = synthetic_refinery
+						size < 3
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = synthetic_refinery
+                    level = 1
+                    instant_build = yes 
+                }
+			}		
+		}
+		search_filters = { FOCUS_FILTER_RESOURCES FOCUS_FILTER_INDUSTRY }
+	}
+		
+	focus = {
+		id = CAN_establish_the_polymer_corporation
+		icon = GFX_focus_BRA_rubber_war
+		x = 0
+		y = 1
+		relative_position_id = CAN_imperial_oil_focus
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 0
+				date < 1941.1.1
+			}
+		}
+		
+		prerequisite = {
+			focus = CAN_imperial_oil_focus
+		}
+
+		available = {
+			has_tech = synth_oil_experiments
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAN_establish_the_polymer_corporation
+				bonus = 0.5
+				uses = 1
+				ahead_reduction = 1
+				category = synth_resources
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = synthetic_refinery
+						size < 3
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = synthetic_refinery
+                    level = 1
+                    instant_build = yes 
+                }
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = synthetic_refinery
+						size < 3
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = synthetic_refinery
+                    level = 1
+                    instant_build = yes 
+                }
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			modify_building_resources = {
+				building = synthetic_refinery
+				resource = rubber
+				amount = 2
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESOURCES FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+	}
+		
+	focus = {
+		id = CAN_uranium_mining
+		icon = GFX_focus_generic_uranium_extraction
+		x = 0
+		y = 1
+		relative_position_id = CAN_alcan
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+		
+		prerequisite = {
+			focus = CAN_alcan
+		}
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			add_ideas = ROM_uranium_supply_idea
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_tech_bonus = {
+				name = CAN_uranium_mining
+				bonus = 1
+				uses = 1
+				category = nuclear
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_breakthrough_progress = {
+				specialization = specialization_nuclear
+				value = 0.25
+			}
+		}
+	}
+
+	focus = {
+		id = CAN_nuclear_development
+		icon = GFX_focus_generic_nuclear_development
+		x = 0
+		y = 1
+		relative_position_id = CAN_uranium_mining
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+		
+		prerequisite = {
+			focus = CAN_uranium_mining
+		}
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			add_ideas = ROM_uranium_supply_idea
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_breakthrough_progress = {
+				specialization = specialization_nuclear
+				value = 0.5
+			}
+		}
+	}
+		
+	focus = {
+		id = CAN_resources_for_war_effort
+		icon = GFX_focus_GER_factories_for_resources
+		x = 2
+		y = 1
+		relative_position_id = CAN_alcan
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_RESOURCES }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+		}
+		
+		prerequisite = {
+			focus = CAN_alcan
+		}
+		prerequisite = {
+			focus = CAN_war_economy
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = { 
+					has_tech = excavation1
+				}
+				set_technology = {
+					excavation2 = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					has_tech = excavation2
+				}
+				set_technology = {
+					excavation3 = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					has_tech = excavation3
+				}
+				set_technology = {
+					excavation4 = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					has_tech = excavation4
+				}
+				set_technology = {
+					excavation5 = 1
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = CAN_resources_for_war_effort
+					bonus = 3.0
+					uses = 1
+					category = industry
+				}
+			}
+		}
+	}
+		
+		
+	focus = {
+		id = CAN_john_inglis_company
+		icon = GFX_focus_JAP_manchuria_airplane_manufacturing_company
+		x = 1
+		y = 1
+		relative_position_id = CAN_canadian_pacific_railways
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+		
+		prerequisite = {
+			focus = CAN_canadian_pacific_railways
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+		
+	focus = {
+		id = CAN_research_grants
+		icon = GFX_SOV_the_ussr_academy_of_sciences_ccp_2d_sov_compatibility
+		x = 1
+		y = 1
+		relative_position_id = CAN_john_inglis_company
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 15
+		}
+		
+		prerequisite = {
+			focus = CAN_john_inglis_company
+		}
+		
+		prerequisite = {
+			focus = CAN_national_railway
+		}
+
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+		
+	focus = {
+		id = CAN_war_measures_act
+		icon = GFX_focus_BEL_legacy_of_the_great_war
+		x = 5
+		y = 0
+		relative_position_id = CAN_depression_recovery
+
+
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 20
+				has_war = yes
+			}
+		}
+		
+
+		available = {
+			OR = {
+				has_war = yes
+				threat > 0.25
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_war_support = 0.05
+			add_political_power = 50
+		}
+	}
+		
+	focus = {
+		id = CAN_defence_of_canada_regulations
+		icon = GFX_focus_ARG_defense_and_democracy
+		x = 3
+		y = 1
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 2
+		}
+		relative_position_id = CAN_war_measures_act
+		prerequisite = {
+			focus = CAN_war_measures_act
+		}
+
+		available = {
+			has_war = yes
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = { 
+					has_idea = CAN_qbc_idea_1
+				}
+				swap_ideas = {
+					remove_idea = CAN_qbc_idea_1
+					add_idea = CAN_qbc_idea_2
+				}
+			}
+			else = {
+				add_ideas = CAN_qbc_idea_1
+			}		
+		}
+	}
+		
+	focus = {
+		id = CAN_wartime_prices_and_trade_board
+		icon = GFX_focus_SWE_rations
+		x = -1
+		y = 1
+		relative_position_id = CAN_war_measures_act
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+		
+		prerequisite = {
+			focus = CAN_war_measures_act
+		}
+
+		available = {
+		}
+		
+
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			add_ideas = limited_exports
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = CAN_wartime_prices_and_trade_board_idea
+		}
+	}
+		
+	focus = {
+		id = CAN_replace_men_in_the_industry
+		icon = GFX_focus_ARG_women_in_industry
+		x = -1
+		y = 1
+		
+		search_filters = { FOCUS_FILTER_MANPOWER }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 10
+				has_manpower < 30000
+			}
+		}
+		
+		prerequisite = {
+			focus = CAN_wartime_prices_and_trade_board
+		}
+		relative_position_id = CAN_wartime_prices_and_trade_board
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_manpower = 50000
+			custom_effect_tooltip = generic_skip_one_line_tt
+			upgrade_conscription_law = yes
+		}
+	}
+		
+	focus = {
+		id = CAN_conscription_crisis
+		icon = GFX_goal_tfv_can_forced_quebec_conscription
+		x = 1
+		y = 1
+		
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 30
+				has_manpower < 20000
+			}
+		}
+		
+		prerequisite = {
+			focus = CAN_wartime_prices_and_trade_board
+		}
+
+		relative_position_id = CAN_wartime_prices_and_trade_board
+
+		available = {
+			OR = {
+				has_manpower < 50000
+				has_war = yes
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_war_support = -0.05
+			add_stability = -0.05
+			custom_effect_tooltip = generic_skip_one_line_tt
+			remove_ideas = CAN_newfoundlander_nationalism
+			custom_effect_tooltip = generic_skip_one_line_tt
+			upgrade_conscription_law = yes
+		}
+	}
+		
+	focus = {
+		id = CAN_nrma
+		icon = GFX_focus_generic_full_social_mobilization
+		x = 1
+		y = 1
+		relative_position_id = CAN_war_measures_act
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+		
+		prerequisite = {
+			focus = CAN_war_measures_act
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_manpower = 50000
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = CAN_nrma_idea
+		}
+	}
+		
+	focus = {
+		id = CAN_department_of_munitions_and_supply
+		icon = GFX_focus_INS_military_equipment_contracts
+		x = 3
+		y = 1
+		relative_position_id = CAN_wartime_prices_and_trade_board
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+		
+		prerequisite = {
+			focus = CAN_nrma
+		}
+		prerequisite = {
+			focus = CAN_wartime_prices_and_trade_board
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = CAN_department_of_munitions_and_supply_1
+			custom_effect_tooltip = generic_skip_one_line_tt
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+		}
+	}
+		
+	focus = {
+		id = CAN_bits_and_pieces_program
+		icon = GFX_focus_PRC_equipment_from_copper_coins
+		x = -1
+		y = 1
+		relative_position_id = CAN_department_of_munitions_and_supply
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 6
+		}
+		
+		prerequisite = {
+			focus = CAN_department_of_munitions_and_supply
+		}
+
+		available = {
+		}
+		
+
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = CAN_department_of_munitions_and_supply_1
+				add_idea = CAN_department_of_munitions_and_supply_2
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+		}
+	}
+		
+	focus = {
+		id = CAN_nrc_expansion
+		icon = GFX_SOV_national_academies_of_sciences_ccp_2d_sov_compatibility
+		x = -1
+		y = 1
+		relative_position_id = CAN_bits_and_pieces_program
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 15
+		}
+		
+		prerequisite = {
+			focus = CAN_bits_and_pieces_program
+		}
+		
+		prerequisite = {
+			focus = CAN_replace_men_in_the_industry
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+		
+	############################
+	#####   ARMY SECTION   #####
+	############################
+		
+		
+		
+	focus = {
+		id = CAN_army_modernisation
+		icon = GFX_focus_generic_flight_instructors
+		x = 20
+		y = 0
+		
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_ARMY_XP }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			army_experience = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_doctrine_cost_reduction = {
+				name = CAN_army_modernisation
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = CAN_increase_budget
+		icon = GFX_focus_CZE_build_infantry
+		relative_position_id = CAN_army_modernisation
+		x = 2
+		y = 1
+		
+		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH }
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 8
+		}
+		
+		prerequisite = {
+			focus = CAN_army_modernisation
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			swap_ideas = {
+				remove_idea = CAN_defunded_army_1
+				add_idea = CAN_defunded_army_2
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = CAN_army
+			}
+			add_to_variable = {
+				CAN_army_mobilization_speed = 0.05
+				tooltip = mobilization_speed_tt
+			}
+			add_to_variable = {
+				CAN_army_army_infantry_attack_factor = 0.05
+				tooltip = army_infantry_attack_factor_tt
+			}
+			add_to_variable = {
+				CAN_army_army_infantry_defence_factor = 0.05
+				tooltip = army_infantry_defence_factor_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_doctrine_cost_reduction = {
+				name = CAN_increase_budget
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}	
+	
+	focus = {
+		id = can_rifle_association
+		icon = GFX_focus_CAN_rifle_association
+		relative_position_id = CAN_army_modernisation
+		x = 4
+		y = 1
+		
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+
+		cost = 5
+
+		available = {
+			OR = {
+				threat > 0.15
+				has_war = yes
+			}
+		}
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+		
+		prerequisite = {
+			focus = CAN_army_modernisation
+		}
+
+		completion_reward = {
+			add_manpower = 15000
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = CAN_army
+			}
+			add_to_variable = {
+				CAN_army_mobilization_speed = 0.05
+				tooltip = mobilization_speed_tt
+			}
+			add_to_variable = {
+				CAN_army_experience_gain_army_factor = 0.05
+				tooltip = experience_gain_army_factor_tt
+			}
+			add_to_variable = {
+				CAN_army_experience_loss_factor = -0.1
+				tooltip = experience_loss_factor_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = CAN_dominion_rifle_association_idea
+		}
+	}	
+
+	focus = {
+		id = CAN_increase_budget_more
+		icon = GFX_focus_CZE_army_reform
+		
+		relative_position_id = CAN_increase_budget
+		x = -2
+		y = 1	
+		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 12
+		}
+		
+		prerequisite = {
+			focus = CAN_increase_budget
+		}
+		
+		available = {
+			OR = {
+				threat > 0.2
+				has_war = yes
+			}
+		}
+		
+
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			if = {
+				limit = { 
+					has_idea = CAN_defunded_army_1
+				}
+				swap_ideas = {
+					remove_idea = CAN_defunded_army_1
+					add_idea = CAN_defunded_army_2
+				}
+			}
+			else = {
+				remove_ideas = CAN_defunded_army_2
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = CAN_army
+			}
+			add_to_variable = {
+				CAN_army_mobilization_speed = 0.05
+				tooltip = mobilization_speed_tt
+			}
+			add_to_variable = {
+				CAN_army_land_doctrine_cost_factor = -0.1
+				tooltip = land_doctrine_cost_factor_tt
+			}
+			add_to_variable = {
+				CAN_army_army_morale_factor = 0.1
+				tooltip = army_morale_factor_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_doctrine_cost_reduction = {
+				name = CAN_increase_budget_more
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+		
+	focus = {
+		id = CAN_british_designs
+		icon = GFX_goal_generic_military_equipment
+		x = 0
+		y = 1
+		relative_position_id = CAN_increase_budget
+		dynamic = yes
+		
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+		
+		prerequisite = {
+			focus = CAN_increase_budget
+		}
+		
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAN_british_designs
+				bonus = 0.5
+				uses = 3
+				category = infantry_weapons
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = CAN_army
+			}
+			add_to_variable = {
+				CAN_army_army_infantry_attack_factor = 0.05
+				tooltip = army_infantry_attack_factor_tt
+			}
+			add_to_variable = {
+				CAN_army_army_infantry_defence_factor = 0.05
+				tooltip = army_infantry_defence_factor_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = CAN_arms_design_institute_1
+		}
+	}
+		
+	focus = {
+		id = CAN_royal_canadian_artillery
+		icon = GFX_goal_generic_artillery_factories
+		x = -1
+		y = 1
+		relative_position_id = CAN_british_designs
+		
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+		
+		prerequisite = {
+			focus = CAN_british_designs
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = artillery_bonus
+				bonus = 0.5
+				uses = 3
+				category = mio_cat_all_artillery_equipment
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = CAN_army
+			}
+			add_to_variable = {
+				CAN_army_army_artillery_attack_factor = 0.1
+				tooltip = army_artillery_attack_factor_tt
+			}
+			add_to_variable = {
+				CAN_army_army_artillery_defence_factor = 0.1
+				tooltip = army_artillery_defence_factor_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = { 
+					has_idea = CAN_arms_design_institute_1
+				}
+				swap_ideas = {
+					remove_idea = CAN_arms_design_institute_1
+					add_idea = CAN_arms_design_institute_artillery_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CAN_arms_design_institute_support_2
+				}
+				swap_ideas = {
+					remove_idea = CAN_arms_design_institute_support_2
+					add_idea = CAN_arms_design_institute_support_artillery_2
+				}
+			}
+		}
+	}
+		
+	focus = {
+		id = CAN_walkie_talkie
+		icon = GFX_focus_generic_radio_communication
+		x = 1
+		y = 1
+		relative_position_id = CAN_british_designs
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+		
+		prerequisite = {
+			focus = CAN_british_designs
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAN_walkie_talkie
+				bonus = 0.5
+				uses = 3
+				category = electronics
+				category = signal_company_tech
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = CAN_army
+			}
+			add_to_variable = {
+				CAN_army_coordination_bonus = 0.05
+				tooltip = coordination_bonus_tt
+			}
+			add_to_variable = {
+				CAN_army_army_org_factor = 0.05
+				tooltip = army_org_factor_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = { 
+					has_idea = CAN_arms_design_institute_1
+				}
+				swap_ideas = {
+					remove_idea = CAN_arms_design_institute_1
+					add_idea = CAN_arms_design_institute_support_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CAN_arms_design_institute_artillery_2
+				}
+				swap_ideas = {
+					remove_idea = CAN_arms_design_institute_artillery_2
+					add_idea = CAN_arms_design_institute_support_artillery_2
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = CAN_royal_canadian_corps_of_signals
+		icon = GFX_goal_generic_machine
+		relative_position_id = CAN_walkie_talkie
+		x = 0
+		y = 1
+		dynamic = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+		
+		prerequisite = {
+			focus = CAN_walkie_talkie
+		}
+		
+
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAN_royal_canadian_corps_of_signals
+				bonus = 1.0
+				uses = 1
+				ahead_reduction = 1
+				category = signal_company_tech
+				category = electronics
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = CAN_army
+			}
+			add_to_variable = {
+				CAN_army_army_org_factor = 0.05
+				tooltip = army_org_factor_tt
+			}
+			add_to_variable = {
+				CAN_army_army_org_regain = 0.1
+				tooltip = army_org_regain_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			enable_tech_improved_encryption = yes
+			custom_effect_tooltip = generic_skip_one_line_tt
+			enable_tech_improved_decryption = yes
+		}
+	}	
+
+	focus = {
+		id = CAN_cmp_truck
+		icon = GFX_goal_generic_armored_cars
+		x = -1
+		y = 1
+		relative_position_id = CAN_army_modernisation
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		cost = 5
+		
+		prerequisite = {
+			focus = CAN_army_modernisation
+		}
+
+		ai_will_do = {
+			factor = 6
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAN_cmp_truck
+				bonus = 1
+				uses = 1
+				category = motorized_equipment
+			}
+			add_tech_bonus = {
+				name = CAN_cmp_truck
+				bonus = 1
+				uses = 1
+				ahead_reduction = 1
+				category = cat_armored_cars
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = CAN_army
+			}
+			add_to_variable = {
+				CAN_army_motorized_attack_factor = 0.1
+				tooltip = motorized_attack_factor_tt
+			}
+			add_to_variable = {
+				CAN_army_motorized_defence_factor = 0.1
+				tooltip = motorized_defence_factor_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			enable_tech_armored_car_spearhead = yes
+		}
+	}
+
+	focus = {
+		id = CAN_valentine_tank
+		icon = GFX_focus_NOR_rikstanken
+		x = -1
+		y = 1
+		relative_position_id = CAN_cmp_truck
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		cost = 5
+		
+		prerequisite = {
+			focus = CAN_cmp_truck
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = { 
+			add_tech_bonus = {
+				name = CAN_valentine_tank
+				ahead_reduction = 1
+				bonus = 1
+				uses = 1
+				category = cat_light_armor
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = CAN_army
+			}
+			add_to_variable = {
+				CAN_army_army_armor_attack_factor = 0.05
+				tooltip = army_armor_attack_factor_tt
+			}
+			add_to_variable = {
+				CAN_army_army_armor_defence_factor = 0.05
+				tooltip = army_armor_defence_factor_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					has_dlc = "No Step Back"
+					has_tech = advanced_light_tank_chassis
+				}
+				create_equipment_variant = {
+					name = "Valentine"
+					type = light_tank_chassis_3
+					parent_version = 1
+					modules = {
+						main_armament_slot = tank_close_support_gun
+						turret_type_slot = tank_light_three_man_tank_turret
+						suspension_type_slot = tank_bogie_suspension
+						armor_type_slot = tank_riveted_armor
+						engine_type_slot = tank_gasoline_engine
+						special_type_slot_1 = wet_ammo_storage
+						special_type_slot_2 = empty
+						special_type_slot_3 = smoke_launchers
+						special_type_slot_4 = empty
+					}
+					icon = "GFX_CAN_advanced_light_tank_medium"
+					upgrades = {
+						tank_nsb_engine_upgrade = 4
+						tank_nsb_armor_upgrade = 4
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_dlc = "No Step Back"
+					has_tech = improved_light_tank_chassis
+				}
+				create_equipment_variant = {
+					name = "Valentine"
+					type = light_tank_chassis_2
+					parent_version = 1
+					modules = {
+						main_armament_slot = tank_close_support_gun
+						turret_type_slot = tank_light_two_man_tank_turret
+						suspension_type_slot = tank_bogie_suspension
+						armor_type_slot = tank_riveted_armor
+						engine_type_slot = tank_gasoline_engine
+						special_type_slot_1 = wet_ammo_storage
+						special_type_slot_2 = empty
+						special_type_slot_3 = smoke_launchers
+						special_type_slot_4 = empty
+					}
+					icon = "GFX_CAN_advanced_light_tank_medium"
+					upgrades = {
+						tank_nsb_engine_upgrade = 4
+						tank_nsb_armor_upgrade = 4
+					}
+				}
+			}
+			else = {
+				create_equipment_variant = {
+					name = "Valentine"
+					type = light_tank_chassis_1
+					parent_version = 1
+					modules = {
+						main_armament_slot = tank_close_support_gun
+						turret_type_slot = tank_light_two_man_tank_turret
+						suspension_type_slot = tank_bogie_suspension
+						armor_type_slot = tank_riveted_armor
+						engine_type_slot = tank_gasoline_engine
+						special_type_slot_1 = wet_ammo_storage
+						special_type_slot_2 = empty
+						special_type_slot_3 = smoke_launchers
+						special_type_slot_4 = empty
+					}
+					icon = "GFX_CAN_advanced_light_tank_medium"
+					upgrades = {
+						tank_nsb_engine_upgrade = 4
+						tank_nsb_armor_upgrade = 4
+					}
+				}
+			}
+		}
+	}
+		
+	focus = {
+		id = CAN_canadian_armoured_corps
+		icon = GFX_goal_generic_army_tanks3
+		x = 1
+		y = 1
+		dynamic = yes
+		relative_position_id = CAN_valentine_tank
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		cost = 5
+		
+		prerequisite = {
+			focus = CAN_valentine_tank
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAN_canadian_armoured_corps
+				bonus = 1
+				uses = 1
+				category = armor
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = CAN_army
+			}
+			add_to_variable = {
+				CAN_army_army_armor_attack_factor = 0.05
+				tooltip = army_armor_attack_factor_tt
+			}
+			add_to_variable = {
+				CAN_army_army_armor_defence_factor = 0.05
+				tooltip = army_armor_defence_factor_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			complete_special_project = {
+				project = sp:sp_land_flamethrower_tank
+				show_modifiers = no
+			}
+		}
+	}
+		
+	focus = {
+		id = CAN_kangaroo
+		icon = GFX_goal_generic_mechanized_infantry
+		relative_position_id = CAN_canadian_armoured_corps
+		x = -2
+		y = 1
+		dynamic = yes
+		
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		cost = 5
+		
+		prerequisite = {
+			focus = CAN_canadian_armoured_corps
+			}
+
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAN_kangaroo
+				bonus = 1.0
+				uses = 1
+				ahead_reduction = 1
+				category = cat_mechanized_equipment
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = CAN_army
+			}
+			add_to_variable = {
+				CAN_army_mechanized_attack_factor = 0.1
+				tooltip = mechanized_attack_factor_tt
+			}
+			add_to_variable = {
+				CAN_army_mechanized_defence_factor = 0.1
+				tooltip = mechanized_defence_factor_tt
+			}
+			add_to_variable = {
+				CAN_army_org_loss_when_moving = -0.1
+				tooltip = org_loss_when_moving_tt
+			}
+		}
+	}
+	
+	focus = {
+		id = CAN_the_ram
+		icon = GFX_focus_generic_tank_assembly
+		relative_position_id = CAN_canadian_armoured_corps
+		x = 0
+		y = 1
+		dynamic = yes
+		
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		cost = 5
+		
+		prerequisite = {
+			focus = CAN_canadian_armoured_corps
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAN_the_ram
+				bonus = 1
+				uses = 1
+				category = cat_medium_armor
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = CAN_the_ram_1
+			custom_effect_tooltip = generic_skip_one_line_tt
+			complete_special_project = {
+				project = sp:sp_land_military_engineering_vehicles
+				show_modifiers = no
+			}
+		}
+	}
+		
+	focus = {
+		id = CAN_the_grizzly
+		icon = GFX_focus_generic_heavy_tank
+		relative_position_id = CAN_kangaroo
+		x = 1
+		y = 1
+		
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		cost = 10
+		
+		prerequisite = {
+			focus = CAN_kangaroo
+		}
+		prerequisite = {
+			focus = CAN_the_ram
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+		
+		
+		bypass = {
+			#has_tech = advanced_medium_tank
+		}
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAN_the_ram
+				bonus = 1
+				uses = 1
+				category = cat_medium_armor
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			swap_ideas = {
+				remove_idea = CAN_the_ram_1
+				add_idea = CAN_the_ram_2
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_breakthrough_progress = {
+				specialization = specialization_land
+				value = 0.75
+			}
+		}
+	}
+		
+	focus = {
+		id = CAN_retool_angus_shops
+		icon = GFX_focus_generic_tank_production
+		x = -1
+		y = 1
+		relative_position_id = CAN_valentine_tank
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		cost = 10
+		
+		prerequisite = {
+			focus = CAN_valentine_tank
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+		
+		available = {
+			has_war = yes
+		}
+		completion_reward = {
+			add_ideas = CAN_angus_repair_and_tooling_shop
+			custom_effect_tooltip = generic_skip_one_line_tt
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = CAN_small_arms_limited
+		icon = GFX_focus_generic_reorient_production
+		x = 0
+		y = 1
+		relative_position_id = CAN_royal_canadian_artillery
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+
+		cost = 10
+		
+		prerequisite = {
+			focus = CAN_royal_canadian_artillery
+		}
+
+		prerequisite = {
+			focus = CAN_walkie_talkie
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAN_small_arms_limited
+				bonus = 0.5
+				uses = 1
+				ahead_reduction = 1
+				category = infantry_weapons
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			swap_ideas = {
+				remove_idea = CAN_arms_design_institute_support_artillery_2
+				add_idea = CAN_arms_design_institute_support_artillery_3
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = CAN_land_mattress
+		icon = GFX_goal_generic_rocket_artillery
+		x = -1
+		y = 1
+		relative_position_id = CAN_small_arms_limited
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		cost = 5
+		
+		prerequisite = {
+			focus = CAN_small_arms_limited
+		}
+
+		ai_will_do = {
+			factor = 5
+		}		
+		bypass = {
+			has_tech = rocket_artillery
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = artillery_bonus
+				bonus = 1.0
+				uses = 2
+				category = rocketry
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			swap_ideas = {
+				remove_idea = CAN_arms_design_institute_support_artillery_3
+				add_idea = CAN_arms_design_institute_support_artillery_4
+			}
+		}
+	}
+
+	focus = {
+		id = CAN_camp_borden
+		icon = GFX_goal_generic_army_high_command
+		x = 1
+		y = 1
+		relative_position_id = CAN_small_arms_limited
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+
+		cost = 10
+		
+		prerequisite = {
+			focus = CAN_small_arms_limited
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = CAN_army
+			}
+			add_to_variable = {
+				CAN_army_max_planning_factor = 0.05
+				tooltip = max_planning_factor_tt
+			}
+			add_to_variable = {
+				CAN_army_planning_speed = 0.1
+				tooltip = planning_speed_factor_tt
+			}
+			add_to_variable = {
+				CAN_army_breakthrough_factor = 0.05
+				tooltip = breakthrough_factor_tt
+			}
+		}
+	}		
+		
+	############################
+	##### AIRFORCE SECTION #####
+	############################
+	
+	focus = {
+		id = CAN_start_the_expansion_of_the_rcaf
+		icon = GFX_focus_generic_air_research_boost
+		x = 28
+		y = 0
+		
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_AIR_XP }
+
+		cost = 5
+		
+
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			air_experience = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_doctrine_cost_reduction = {
+				name = CAN_start_the_expansion_of_the_rcaf
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+		
+	focus = {
+		id = CAN_appoint_air_chief
+		icon = GFX_focus_generic_pilot_training
+		x = 5
+		y = 1
+		relative_position_id = CAN_start_the_expansion_of_the_rcaf
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_POLITICAL }
+
+		cost = 5
+		
+		prerequisite = {
+			focus = CAN_start_the_expansion_of_the_rcaf
+		}
+
+		ai_will_do = {
+			factor = 7
+		}
+		completion_reward = {
+			air_experience = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = CAN_air
+			}
+			add_to_variable = {
+				CAN_air_air_doctrine_cost_factor = -0.15
+				tooltip = air_doctrine_cost_factor_tt
+			}
+			add_to_variable = {
+				CAN_air_air_advisor_cost_factor = -0.25
+				tooltip = air_advisor_cost_factor_tt
+			}
+			add_to_variable = {
+				CAN_air_air_accidents_factor = -0.15
+				tooltip = air_accidents_factor_tt
+			}
+		}
+	}
+		
+	focus = {
+		id = CAN_complete_separation_from_army
+		icon = GFX_focus_PRC_pilot_training
+		relative_position_id = CAN_appoint_air_chief
+		x = 0
+		y = 1
+		
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_POLITICAL }
+
+		cost = 5
+		
+		prerequisite = {
+			focus = CAN_appoint_air_chief
+		}
+
+		ai_will_do = {
+			factor = 7
+		}
+		completion_reward = {
+			air_experience = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = CAN_air
+			}
+			add_to_variable = {
+				CAN_air_air_doctrine_cost_factor = -0.15
+				tooltip = air_doctrine_cost_factor_tt
+			}
+			add_to_variable = {
+				CAN_air_ace_effectiveness_factor = 0.05
+				tooltip = ace_effectiveness_factor_tt
+			}
+			add_to_variable = {
+				CAN_air_air_ace_generation_chance_factor = 0.15
+				tooltip = air_ace_generation_chance_factor_tt
+			}
+		}
+	}
+
+	focus = {
+		id = CAN_western_air_command
+		icon = GFX_focus_generic_escort_efficiency
+		x = -2
+		y = 1
+		relative_position_id = CAN_start_the_expansion_of_the_rcaf
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_AIR_XP }
+
+		cost = 5
+		
+		prerequisite = {
+			focus = CAN_start_the_expansion_of_the_rcaf
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size < 9
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = CAN_air
+			}
+			add_to_variable = {
+				CAN_air_air_escort_efficiency = 0.05
+				tooltip = air_escort_efficiency_tt
+			}
+			add_to_variable = {
+				CAN_air_air_home_defence_factor = 0.1
+				tooltip = air_home_defence_factor_tt
+			}
+		}
+	}
+		
+	focus = {
+		id = CAN_hurricane # SPITFIRE
+		icon = GFX_goal_generic_air_fighter2_new
+		x = -1
+		y = 1
+		relative_position_id = CAN_western_air_command
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		
+		cost = 5
+		
+		prerequisite = {
+			focus = CAN_western_air_command
+			focus = CAN_eastern_air_command
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAN_hurricane
+				category = light_fighter
+				bonus = 0.5
+				uses = 2
+			}
+			add_tech_bonus = {
+				name = CAN_hurricane
+				bonus = 0.5
+				uses = 2
+				category = cat_air_engine
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_mastery_bonus = {
+				name = CAN_cas_support
+				bonus = 0.1
+				days = 365
+				track = fighter_aircraft
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = CAN_air
+			}
+			add_to_variable = {
+				CAN_air_air_superiority_efficiency = 0.05
+				tooltip = air_superiority_efficiency_tt
+			}
+			add_to_variable = {
+				CAN_air_air_power_projection_factor = 0.05
+				tooltip = air_power_projection_factor_tt
+			}
+		}
+	}
+
+	focus = {
+		id = CAN_toronto_island_airport
+		icon = GFX_focus_generic_air_bases
+		relative_position_id = CAN_start_the_expansion_of_the_rcaf
+		x = 3
+		y = 1
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		cost = 5
+		
+		prerequisite = {
+			focus = CAN_start_the_expansion_of_the_rcaf
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size < 9
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}				
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = CAN_air
+			}
+			add_to_variable = {
+				CAN_air_air_range_factor = 0.05
+				tooltip = air_range_factor_tt
+			}
+		}
+	}
+		
+	focus = {
+		id = CAN_eastern_air_command
+		icon = GFX_focus_generic_cas_aircraft
+		relative_position_id = CAN_start_the_expansion_of_the_rcaf
+		x = 0
+		y = 1
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_AIR_XP }
+
+		cost = 5
+		
+		prerequisite = {
+			focus = CAN_start_the_expansion_of_the_rcaf
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size < 9
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = CAN_air
+			}
+			add_to_variable = {
+				CAN_air_air_mission_efficiency = 0.05
+				tooltip = air_mission_efficiency_tt
+			}
+			add_to_variable = {
+				CAN_air_air_defence_factor = 0.05
+				tooltip = air_defence_factor_tt
+			}
+		}
+	}
+	
+	focus = {
+		id = CAN_rcaf_womens_division
+		icon = GFX_focus_SOV_women_in_aviation
+		relative_position_id = CAN_eastern_air_command
+		x = -1
+		y = 1
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		cost = 5
+		
+		prerequisite = {
+			focus = CAN_western_air_command
+			focus = CAN_eastern_air_command
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+		
+		available = {
+			OR = {
+				has_war = yes
+				threat > 0.25
+			}
+		}
+		
+
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			air_experience = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_manpower = 25000
+			custom_effect_tooltip = generic_skip_one_line_tt
+			set_rule = {
+				can_generate_female_aces = yes
+			}
+		}
+	}
+
+	focus = {
+		id = CAN_cas_support
+		icon = GFX_goal_generic_air_CAS_new
+		relative_position_id = CAN_eastern_air_command
+		x = -1
+		y = 1
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		cost = 5
+		
+		prerequisite = {
+			focus = CAN_western_air_command
+			focus = CAN_eastern_air_command
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAN_cas_support
+				category = cas_bomber
+				bonus = 0.5
+				uses = 2
+			}
+			add_tech_bonus = {
+				name = CAN_cas_support
+				bonus = 0.5
+				uses = 2
+				category = cat_air_bombs
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_mastery_bonus = {
+				name = CAN_cas_support
+				bonus = 0.1
+				days = 365
+				track = strike_aircraft
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = CAN_air
+			}
+			add_to_variable = {
+				CAN_air_ground_attack_factor = 0.1
+				tooltip = ground_attack_factor_tt
+			}
+			add_to_variable = {
+				CAN_air_air_close_air_support_org_damage_factor = 0.05
+				tooltip = air_close_air_support_org_damage_factor_tt
+			}
+		}
+	}
+		
+	focus = {
+		id = CAN_rcaf_station_borden # RADAR STATIONS
+		icon = GFX_focus_generic_energy
+		dynamic = yes
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		relative_position_id = CAN_rcaf_womens_division
+		x = 1
+		y = 1
+		cost = 5
+		
+		prerequisite = {
+			focus = CAN_rcaf_womens_division
+			focus = CAN_toronto_air_command
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = radar_station
+						size < 5
+					}
+				}
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = radar_station
+						size < 5
+					}
+				}
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					NOT = { is_special_project_completed = sp:sp_air_radar }
+				}
+				complete_special_project = {
+					project = sp:sp_air_radar
+					show_modifiers = no
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = CAN_rcaf_station_borden
+					bonus = 1
+					uses = 1
+					category = radar_tech
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = CAN_air
+			}
+			add_to_variable = {
+				CAN_air_air_bombing_targetting = 0.05
+				tooltip = air_bombing_targetting_tt
+			}
+		}
+	}
+	
+	focus = {
+		id = CAN_toronto_air_command # ANTI AIR
+		icon = GFX_focus_PRC_anti_air_effort
+		relative_position_id = CAN_toronto_island_airport
+		x = 0
+		y = 1
+
+		cost = 10
+		
+		prerequisite = {
+			focus = CAN_toronto_island_airport
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = { is_special_project_completed = sp:sp_naval_proximity_fuze }
+				}
+				complete_special_project = {
+					project = sp:sp_naval_proximity_fuze
+					show_modifiers = no
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				add_tech_bonus = {
+					name = CAN_toronto_air_command
+					bonus = 1
+					uses = 1
+					ahead_reduction = 1
+					technology = sp_shock_hardening_techniques
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = CAN_toronto_air_command
+					bonus = 1
+					uses = 1
+					ahead_reduction = 1
+					category = cat_anti_air
+				}
+				add_tech_bonus = {
+					name = CAN_toronto_air_command
+					bonus = 1
+					uses = 1
+					ahead_reduction = 1
+					technology = sp_shock_hardening_techniques
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = anti_air_building
+						size < 5
+					}
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = anti_air_building
+						size < 5
+					}
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = anti_air_building
+						size < 5
+					}
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = anti_air_building
+						size < 5
+					}
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+		
+	focus = {
+		id = CAN_canadian_car_and_foundry
+		icon = GFX_focus_generic_aircraft_production
+		relative_position_id = CAN_hurricane
+		x = 0
+		y = 1
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		cost = 5
+		
+		prerequisite = {
+			focus = CAN_hurricane
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory 
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = CAN_air_foundry_1
+		}
+	}
+		
+	focus = {
+		id = CAN_fairchild_aircraft_company
+		icon = GFX_goal_generic_air_tactical_bomber_new
+		relative_position_id = CAN_canadian_car_and_foundry
+		x = 1
+		y = 1
+		
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+
+		cost = 5
+		
+		prerequisite = {
+			focus = CAN_canadian_car_and_foundry
+		}
+		
+		prerequisite = {
+			focus = CAN_rcaf_station_borden
+		}
+
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAN_fairchild_aircraft_company
+				category = medium_air
+				bonus = 0.5
+				uses = 2
+			}
+			add_tech_bonus = {
+				name = CAN_fairchild_aircraft_company
+				bonus = 0.5
+				uses = 2
+				category = plane_modules_tech
+			}
+			add_mastery_bonus = {
+				name = CAN_fairchild_aircraft_company
+				bonus = 0.1
+				days = 365
+				track = medium_aircraft
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = CAN_air
+			}
+			add_to_variable = {
+				CAN_air_air_cas_present_factor = 0.05
+				tooltip = air_cas_present_factor_tt
+			}
+			add_to_variable = {
+				CAN_air_air_defence_factor = 0.05
+				tooltip = air_defence_factor_tt
+			}
+		}
+	}
+		
+	focus = {
+		id = CAN_victory_aircraft_company
+		icon = GFX_goal_generic_air_heavy_fighter_new
+		relative_position_id = CAN_rcaf_station_borden
+		x = -1
+		y = 1
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+
+		cost = 10
+		
+		prerequisite = {
+			focus = CAN_canadian_car_and_foundry
+		}
+		
+		prerequisite = {
+			focus = CAN_rcaf_station_borden
+		}
+
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAN_victory_aircraft_company
+				bonus = 0.5
+				uses = 2
+				category = cat_air_guns
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_mastery_bonus = {
+				name = CAN_victory_aircraft_company
+				bonus = 0.1
+				days = 365
+				track = strike_aircraft
+			}
+			add_mastery_bonus = {
+				name = CAN_victory_aircraft_company
+				bonus = 0.1
+				days = 365
+				track = medium_aircraft
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = CAN_air
+			}
+			add_to_variable = {
+				CAN_air_air_attack_factor = 0.05
+				tooltip = air_attack_factor_tt
+			}
+			add_to_variable = {
+				CAN_air_air_agility_factor = 0.05
+				tooltip = air_agility_factor_tt
+			}
+		}
+	}
+		
+	focus = {
+		id = CAN_bomber_group_no_6
+		icon = GFX_goal_generic_air_strategic_bomber_new
+		x = 1
+		y = 1
+		relative_position_id = CAN_fairchild_aircraft_company
+		
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		cost = 10
+		
+		prerequisite = {
+			focus = CAN_fairchild_aircraft_company
+			focus = CAN_victory_aircraft_company
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAN_bomber_group_no_6
+				bonus = 0.5
+				uses = 2
+				category = heavy_air
+			}
+			add_tech_bonus = {
+				name = CAN_bomber_group_no_6
+				bonus = 0.5
+				uses = 2
+				category = cat_air_bombs
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_mastery_bonus = {
+				name = CAN_bomber_group_no_6
+				bonus = 0.1
+				days = 365
+				track = heavy_aircraft
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = CAN_air
+			}
+			add_to_variable = {
+				CAN_air_air_mission_efficiency = 0.05
+				tooltip = air_mission_efficiency_tt
+			}
+			add_to_variable = {
+				CAN_air_air_power_projection_factor = 0.05
+				tooltip = air_power_projection_factor_tt
+			}
+			add_to_variable = {
+				CAN_air_air_range_factor = 0.05
+				tooltip = air_range_factor_tt
+			}
+		}
+	}
+		
+	############################
+	#####   NAVY SECTION   #####
+	############################
+	
+	focus = {
+		id = CAN_rebuilding_the_royal_canadian_navy
+		icon = GFX_focus_generic_large_navy
+		x = 38
+		y = 0
+		
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP }
+
+		cost = 5
+	
+		
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			navy_experience = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_doctrine_cost_reduction = {
+				name = CAN_rebuilding_the_royal_canadian_navy
+				cost_reduction = 0.5
+				uses = 1
+				category = naval_doctrine
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_dynamic_modifier = {
+				modifier = CAN_navy
+			}
+		}
+	}
+	
+	focus = {
+		id = CAN_halifax_shipyards
+		icon = GFX_goal_generic_expand_the_naval_industry
+		relative_position_id = CAN_rebuilding_the_royal_canadian_navy
+		x = -2
+		y = 1
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		cost = 5
+	
+		prerequisite = {
+			focus = CAN_rebuilding_the_royal_canadian_navy
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = { # NEEDS SPECIFIC STATE
+				limit = {
+					is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					province = 7361
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = CAN_navy
+			}
+			add_to_variable = {
+				CAN_navy_repair_speed_factor = 0.1
+				tooltip = repair_speed_factor_tt
+			}
+			add_to_variable = {
+				CAN_navy_refit_ic_cost = -0.05
+				tooltip = navy_refit_ic_cost_tt
+			}
+		}
+	}
+		
+	focus = {
+		id = CAN_sorel_shipyards
+		icon = GFX_focus_generic_refit_civilian_ships
+		relative_position_id = CAN_halifax_shipyards
+		x = -1
+		y = 1
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		cost = 5
+	
+		prerequisite = {
+			focus = CAN_halifax_shipyards
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = { # NEEDS SPECIFIC STATE
+				limit = {
+					is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = CAN_navy
+			}
+			add_to_variable = {
+				CAN_navy_refit_speed = 0.15
+				tooltip = refit_speed_tt
+			}
+			add_to_variable = {
+				CAN_navy_consumer_goods_factor = -0.05
+				tooltip = consumer_goods_factor_tt
+			}
+		}
+	}
+	focus = {
+		id = CAN_sorel_industries_naval_artillery
+		icon = GFX_focus_generic_battleship_guns
+		prerequisite = { focus = CAN_sorel_shipyards }
+		x = -2
+		y = 1
+		relative_position_id = CAN_sorel_shipyards
+
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+			has_completed_focus = CAN_sorel_industries
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAN_sorel_industries_naval_artillery
+				bonus = 0.5
+				uses = 2
+				category = cat_ship_light_battery
+			}
+			add_tech_bonus = {
+				name = CAN_sorel_industries_naval_artillery
+				bonus = 0.5
+				uses = 2
+				category = cat_ship_medium_battery
+			}
+			add_tech_bonus = {
+				name = CAN_sorel_industries_naval_artillery
+				bonus = 0.5
+				uses = 2
+				category = cat_ship_heavy_battery
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = { 
+					has_tech = fire_control_methods_3
+				}
+				add_tech_bonus = {
+					name = CAN_sorel_industries_naval_artillery
+					bonus = 0.5
+					uses = 2
+					category = ship_modules_tech
+				}
+			}
+			else_if = {
+				limit = { 
+					has_tech = fire_control_methods_2
+				}
+				set_technology = {
+					fire_control_methods_3 = 1
+				}
+			}
+			else_if = {
+				limit = { 
+					has_tech = fire_control_methods_1
+				}
+				set_technology = {
+					fire_control_methods_2 = 1
+				}
+			}
+			else = {
+				set_technology = {
+					fire_control_methods_1 = 1
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = CAN_navy
+			}
+			add_to_variable = {
+				CAN_navy_naval_hit_chance = 0.05
+				tooltip = naval_hit_chance_tt
+			}
+			add_to_variable = {
+				CAN_navy_naval_critical_score_chance_factor = 0.05
+				tooltip = naval_critical_score_chance_factor_tt
+			}
+		}
+	}
+	focus = {
+		id = CAN_sorel_naval_steel
+		prerequisite = { focus = CAN_sorel_industries_naval_artillery }
+		icon = GFX_focus_SIA_the_hammers_that_strike
+		x = 0
+		y = 1
+		relative_position_id = CAN_sorel_industries_naval_artillery
+		cost = 5
+		
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP }
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		available = {
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAN_sorel_naval_steel
+				bonus = 0.5
+				uses = 2
+				category = naval_armor
+			}	
+			add_tech_bonus = {
+				name = CAN_sorel_naval_steel
+				bonus = 0.5
+				uses = 3
+				technology = damage_control_1
+				technology = damage_control_2
+				technology = damage_control_3
+			}	
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = CAN_navy
+			}
+			add_to_variable = {
+				CAN_navy_navy_capital_ship_attack_factor = 0.05
+				tooltip = navy_capital_ship_attack_factor_tt
+			}
+			add_to_variable = {
+				CAN_navy_navy_capital_ship_defence_factor = 0.05
+				tooltip = navy_capital_ship_defence_factor_tt
+			}
+			add_to_variable = {
+				CAN_navy_naval_heavy_gun_hit_chance_factor = 0.05
+				tooltip = naval_heavy_gun_hit_chance_factor_tt
+			}
+		}
+	}		
+	focus = {
+		id = CAN_pykrete_carrier
+		icon = GFX_focus_GER_graf_zeppelin
+		prerequisite = { focus = CAN_sorel_naval_steel }
+	
+		relative_position_id = CAN_sorel_naval_steel
+		x = 0
+		y = 1
+		bypass = {
+
+		}	
+		cost = 10
+		allow_branch = {
+			has_dlc = "Gotterdammerung"
+		}
+		available = {
+			naval_facility > 0
+			num_of_naval_factories > 10
+			has_tech = basic_ship_hull_carrier
+		}
+	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	
+		completion_reward = {
+			if = {
+				limit = { 
+					has_tech = sp_refined_pykrete
+				}
+				add_breakthrough_progress = {
+					specialization = specialization_naval
+					value = 0.75
+				}	
+			}
+			else = {
+				add_breakthrough_progress = {
+					specialization = specialization_naval
+					value = 0.5
+				}	
+				custom_effect_tooltip = generic_skip_one_line_tt
+				complete_special_project = {
+					project = sp:sp_naval_ice_carrier
+					show_modifiers = no
+				}	
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_tech_bonus = {
+				name = sp_refined_pykrete
+				bonus = 0.5
+				uses = 2
+				category = pykrete_tech
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = CAN_navy
+			}
+			add_to_variable = {
+				CAN_navy_sortie_efficiency = 0.1
+				tooltip = sortie_efficiency_tt
+			}
+			add_to_variable = {
+				CAN_navy_navy_weather_penalty = -0.15
+				tooltip = navy_weather_penalty_tt
+			}
+		}
+	}		
+	focus = {
+		id = CAN_reopen_toronto_shipyards
+		icon = GFX_focus_POL_develop_polish_shipbuilding
+		relative_position_id = CAN_sorel_shipyards
+		x = 0
+		y = 1
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		cost = 5
+	
+		prerequisite = {
+			focus = CAN_sorel_shipyards
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = CAN_navy
+			}
+			add_to_variable = {
+				CAN_navy_repair_speed_factor = 0.1
+				tooltip = repair_speed_factor_tt
+			}
+			add_to_variable = {
+				CAN_navy_refit_ic_cost = -0.05
+				tooltip = refit_ic_cost_tt
+			}
+		}
+	}
+	
+	focus = {
+		id = CAN_focus_on_destroyers
+		icon = GFX_focus_generic_destroyer
+		relative_position_id = CAN_rebuilding_the_royal_canadian_navy
+		x = 1
+		y = 1
+		
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP }
+
+		cost = 5
+	
+		prerequisite = {
+			focus = CAN_rebuilding_the_royal_canadian_navy
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAN_focus_on_destroyers
+				bonus = 0.5
+				uses = 2
+				category = mio_cat_tech_all_destroyer_and_modules
+			}
+			add_tech_bonus = {
+				name = CAN_focus_on_destroyers
+				bonus = 0.5
+				uses = 2
+				category = asw_tech
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = CAN_navy
+			}
+			add_to_variable = {
+				CAN_navy_screening_efficiency = 0.1
+				tooltip = screening_efficiency_tt
+			}
+			add_to_variable = {
+				CAN_navy_naval_speed_factor = 0.05
+				tooltip = naval_speed_factor_tt
+			}			
+		}
+	}
+		
+	focus = {
+		id = CAN_protect_atlantic_shipping
+		icon = GFX_focus_generic_atlantic_coast
+		relative_position_id = CAN_focus_on_destroyers
+		x = 1
+		y = 1
+		
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		cost = 5
+	
+		prerequisite = {
+			focus = CAN_focus_on_destroyers
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = CAN_protect_atlantic_shipping
+				cost_reduction = 0.5
+				uses = 1
+				category = naval_doctrine
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = CAN_navy
+			}
+			add_to_variable = {
+				CAN_navy_convoy_escort_efficiency = 0.1
+				tooltip = convoy_escort_efficiency_factor_tt
+			}
+			add_to_variable = {
+				CAN_navy_convoy_retreat_speed = 0.05
+				tooltip = convoy_retreat_speed_tt
+			}	
+
+		}
+	}
+
+	focus = {
+		id = CAN_merchant_fleet
+		icon = GFX_focus_generic_merchant_fleet
+		relative_position_id = CAN_protect_atlantic_shipping
+		x = 0
+		y = 1
+		
+		cost = 5
+	
+		prerequisite = {
+			focus = CAN_protect_atlantic_shipping
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			add_ideas = CAN_merchant_fleet_idea
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 75
+				producer = root
+			}
+		}
+		search_filters = { FOCUS_FILTER_MILITARY_EQUIPMENT }
+	}
+		
+	focus = {
+		id = CAN_fight_the_uboats
+		icon = GFX_goal_generic_navy_anti_submarine
+		relative_position_id = CAN_protect_atlantic_shipping
+		x = 2
+		y = 1
+		
+
+		cost = 5
+	
+		prerequisite = {
+			focus = CAN_protect_atlantic_shipping
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = SPR_navy_modernization
+				bonus = 0.5
+				uses = 2
+				category = asw_tech
+			}	
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = CAN_navy
+			}
+			add_to_variable = {
+				CAN_navy_spotting_chance = 0.1
+				tooltip = spotting_chance_tt
+			}
+			add_to_variable = {
+				CAN_navy_naval_detection = 0.05
+				tooltip = naval_detection_tt
+			}	
+		}
+	}
+		
+	focus = {
+		id = CAN_degaussing
+		icon = GFX_focus_generic_mine_warfare
+		relative_position_id = CAN_fight_the_uboats
+		x = 0
+		y = 1
+
+		cost = 5
+	
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	
+		prerequisite = {
+			focus = CAN_fight_the_uboats
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_tech = degaussing
+				}
+				add_tech_bonus = {
+					name = CAN_degaussing
+					bonus = 1.0
+					uses = 1
+					category = naval_minesweeping
+				}
+				else = {
+					set_technology = {
+						degaussing = 1
+					}
+				}
+			}
+			add_breakthrough_progress = {
+				specialization = specialization_naval
+				value = 0.25
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = CAN_navy
+			}
+			add_to_variable = {
+				CAN_navy_navy_submarine_detection_factor = 0.1
+				tooltip = navy_submarine_detection_factor_tt
+			}
+			add_to_variable = {
+				CAN_navy_naval_detection = 0.05
+				tooltip = naval_detection_tt
+			}	
+		}
+	}
+		
+	focus = {
+		id = CAN_expand_the_navy # EXPAND THE NAVAL COLLEGE
+		icon = GFX_focus_generic_naval_discipline
+		relative_position_id = CAN_halifax_shipyards
+		x = 2
+		y = 1
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH }
+
+		cost = 5
+	
+		prerequisite = {
+			focus = CAN_halifax_shipyards
+			focus = CAN_focus_on_destroyers
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		available = {
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+		}
+		completion_reward = {
+			every_navy_leader = {
+				add_maneuver = 1
+			}	
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = CAN_navy
+			}
+			add_to_variable = {
+				CAN_navy_positioning = 0.1
+				tooltip = positioning_tt
+			}
+			add_to_variable = {
+				CAN_navy_experience_gain_navy_unit_factor = 0.1
+				tooltip = experience_gain_navy_unit_factor_tt
+			}					
+		}
+	}
+		
+	focus = {
+		id = CAN_the_pacific_ocean
+		icon = GFX_focus_SMB_blue_water_fleet
+		relative_position_id = CAN_expand_the_navy
+		x = 0
+		y = 2
+		
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP }
+
+		cost = 5
+	
+		prerequisite = {
+			focus = CAN_expand_the_navy
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = SPR_navy_modernization
+				bonus = 0.5
+				uses = 2
+				category = mio_cat_tech_all_cruiser_and_modules
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = CAN_navy
+			}
+			add_to_variable = {
+				CAN_navy_navy_max_range_factor = 0.1
+				tooltip = navy_max_range_factor_tt
+			}
+			add_to_variable = {
+				CAN_navy_navy_screen_attack_factor = 0.05
+				tooltip = navy_screen_attack_factor_tt
+			}
+			add_to_variable = {
+				CAN_navy_navy_screen_defence_factor = 0.05
+				tooltip = navy_screen_defence_factor_tt
+			}
+		}
+	}
+		
+	focus = {
+		id = CAN_support_ships # Fast Patrol Boats
+		icon = GFX_focus_SIA_river_patrols
+		relative_position_id = CAN_expand_the_navy
+		x = 1
+		y = 1
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		cost = 5
+	
+		prerequisite = {
+			focus = CAN_expand_the_navy
+			focus = CAN_focus_on_destroyers
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		completion_reward = {
+			add_ideas = CAN_support_ships	
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = { 
+					has_tech = tech_marine_bonus_2
+				}
+				hidden_effect = {
+					set_technology = {
+						tech_marine_bonus = 1
+						popup = no
+					}
+				}
+				effect_tooltip = {
+					custom_effect_tooltip = tech_marine_bonus_combined_tt
+					enable_tech_marine_bonus_combined = yes
+				}
+			}
+			else = {
+				enable_tech_marine_bonus = yes
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			complete_special_project = {
+				project = sp:sp_naval_support_ships
+				show_modifiers = no
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = CAN_navy
+			}
+			add_to_variable = {
+				CAN_navy_invasion_preparation = -0.1
+				tooltip = invasion_preparation_tt
+			}
+		}
+	}
+	
+	focus = {
+		id = CAN_ships_for_the_pacific # BATTLESHIP PROJECT
+		icon = GFX_focus_SIA_use_ships_as_generators
+		relative_position_id = CAN_the_pacific_ocean
+		x = -2
+		y = 1
+		
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP }
+
+		cost = 5
+	
+		prerequisite = {
+			focus = CAN_the_pacific_ocean
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAN_ships_for_the_pacific
+				bonus = 0.5
+				uses = 2
+				category = mio_cat_tech_all_capital_ship_and_modules
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = CAN_navy
+			}
+			add_to_variable = {
+				CAN_navy_navy_capital_ship_attack_factor = 0.05
+				tooltip = navy_capital_ship_attack_factor_tt
+			}
+			add_to_variable = {
+				CAN_navy_navy_capital_ship_defence_factor = 0.05
+				tooltip = navy_capital_ship_defence_factor_tt
+			}
+		}
+	}	
+		
+	focus = {
+		id = CAN_invasion_transports
+		icon = GFX_focus_generic_naval_invasion
+		relative_position_id = CAN_the_pacific_ocean
+		x = 0
+		y = 1
+		
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		cost = 5
+	
+		prerequisite = {
+			focus = CAN_the_pacific_ocean
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAN_invasion_transports
+				bonus = 0.5
+				uses = 2
+				category = tp_tech
+			}
+			add_tech_bonus = {
+				name = CAN_invasion_transports
+				bonus = 0.5
+				uses = 2
+				category = marine_tech
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = { 
+					has_tech = tech_marine_bonus
+				}
+				hidden_effect = {
+					set_technology = {
+						tech_marine_bonus_2 = 1
+						popup = no
+					}
+				}
+				effect_tooltip = {
+					custom_effect_tooltip = tech_marine_bonus_combined_tt
+					enable_tech_marine_bonus_combined = yes
+				}
+			}
+			else = {
+				enable_tech_marine_bonus_2 = yes
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = CAN_expert_marines_1
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = CAN_navy
+			}
+			add_to_variable = {
+				CAN_navy_naval_invasion_penalty = -0.05
+				tooltip = naval_invasion_penalty_tt
+			}
+			add_to_variable = {
+				CAN_navy_amphibious_invasion = 0.15
+				tooltip = amphibious_invasion_tt
+			}
+		}
+	}
+
+	focus = {
+		id = CAN_amphibious_armour
+		icon = GFX_focus_generic_naval_invasion_tank
+		relative_position_id = CAN_invasion_transports
+		x = 0
+		y = 1
+		
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		cost = 5
+	
+		prerequisite = {
+			focus = CAN_invasion_transports
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAN_amphibious_armour
+				bonus = 0.5
+				uses = 2
+				technology = amphibious_tank_chassis
+				technology = amphibious_drive
+				technology = amphibious_mechanized_infantry
+				technology = amphibious_mechanized_infantry_2
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			swap_ideas = {
+				remove_idea = CAN_expert_marines_1
+				add_idea = CAN_expert_marines_2
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = CAN_navy
+			}
+			add_to_variable = {
+				CAN_navy_naval_invasion_penalty = -0.05
+				tooltip = naval_invasion_penalty_tt
+			}
+			add_to_variable = {
+				CAN_navy_amphibious_invasion = 0.15
+				tooltip = amphibious_invasion_tt
+			}
+		}
+	}
+		
+	focus = {
+		id = CAN_rural_class_carriers
+		icon = GFX_goal_generic_navy_carrier
+		relative_position_id = CAN_the_pacific_ocean
+		x = 2
+		y = 1
+		
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP }
+
+		cost = 5
+	
+		prerequisite = {
+			focus = CAN_the_pacific_ocean
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			navy_experience = 10
+			add_tech_bonus = {
+				name = CAN_rural_class_carriers
+				bonus = 0.5
+				uses = 2
+				category = mio_cat_tech_all_carrier_and_modules
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = CAN_navy
+			}
+			add_to_variable = {
+				CAN_navy_navy_carrier_air_attack_factor = 0.05
+				tooltip = navy_carrier_air_attack_factor_tt
+			}
+			add_to_variable = {
+				CAN_navy_naval_strike_agility_factor = 0.05
+				tooltip = naval_strike_agility_factor_tt
+			}
+			add_to_variable = {
+				CAN_navy_navy_carrier_air_targetting_factor = 0.05
+				tooltip = navy_carrier_air_targetting_factor_tt
+			}
+		}
+	}
+		
+	################################
+	##### COMMONWEALTH SECTION #####
+	################################
+	
+	focus = {
+		id = CAN_trust_in_the_commonwealth #
+		icon = GFX_focus_GER_establish_protectorates_in_america
+		x = 53
+		y = 0
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		cost = 5
+		
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 10
+				is_historical_focus_on = yes
+			}
+		}
+
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+			USA = {
+				add_opinion_modifier = {
+					target = QUE
+					modifier = positive_50
+				}
+			}
+			X63 = {
+				add_opinion_modifier = {
+					target = QUE
+					modifier = positive_50
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = CAN_governor_general_in_power
+		icon = GFX_goal_generic_army_elite
+		relative_position_id = CAN_trust_in_the_commonwealth
+		x = -7
+		y = 1
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		cost = 10
+		
+		ai_will_do = {
+			factor = 6
+		}
+		
+		prerequisite = {
+			focus = CAN_strengthen_british_ties
+		}
+		
+		available = {
+			ENG = {
+				has_government = neutrality
+			}
+			OR = {
+				is_subject_of = ENG
+				is_in_faction_with = ENG
+				has_country_flag = britain_enforced_our_loyalty
+			}
+		}
+		completion_reward = {
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+			set_party_name = {
+				ideology = neutrality
+				name = "Imperial Loyalists"
+				long_name = "Imperial Loyalists"
+			}
+			if = {
+				limit = {
+					OR = {
+						date > 1940.2.11
+						has_country_flag = can_john_buchan_death
+					}
+				}
+				create_country_leader = {
+					name = "Alexander Cambridge"
+					picture = "gfx/leaders/CAN/portrait_CAN_Alexander_Cambridge.dds"
+					expire = "1965.1.1"
+					ideology = oligarchism
+					traits = {
+						governor_general
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = CAN_empower_the_military_faction
+		icon = GFX_goal_generic_army
+		relative_position_id = CAN_governor_general_in_power
+		x = -1
+		y = 1
+		
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY_XP }
+
+		cost = 5
+		
+		ai_will_do = {
+			factor = 6
+		}
+		
+		prerequisite = {
+			focus = CAN_governor_general_in_power
+		}
+		
+		available = {
+			has_government = neutrality
+			OR = {
+				is_subject_of = ENG
+				is_in_faction_with = ENG
+			}
+		}
+		completion_reward = {
+			army_experience = 25
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+		}
+	}
+	
+	focus = {
+		id = CAN_integrate_the_canadian_cadet_corps
+		icon = GFX_goal_small_infantry
+		relative_position_id = CAN_empower_the_military_faction
+		x = -1
+		y = 1
+		
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
+
+		cost = 5
+		
+		ai_will_do = {
+			factor = 6
+		}
+		
+		prerequisite = {
+			focus = CAN_empower_the_military_faction
+		}
+		
+		available = {
+			has_government = neutrality
+			OR = {
+				is_subject_of = ENG
+				is_in_faction_with = ENG
+			}
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+			add_ideas = CAN_canadian_cadet_corps_idea
+		}
+	}
+	
+	focus = {
+		id = CAN_root_out_traitors
+		icon = GFX_goal_generic_army_purges
+		relative_position_id = CAN_governor_general_in_power
+		x = 1
+		y = 1
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		cost = 5
+		
+		ai_will_do = {
+			factor = 6
+		}
+		
+		prerequisite = {
+			focus = CAN_governor_general_in_power
+		}
+		
+		available = {
+			has_government = neutrality
+			OR = {
+				is_subject_of = ENG
+				is_in_faction_with = ENG
+			}
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.2
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.1
+			}
+			add_stability = -0.05
+		}
+	}
+	
+	focus = {
+		id = CAN_god_save_the_king
+		text = ENG_god_save_the_king
+		icon = GFX_focus_eng_god_save_the_king
+		relative_position_id = CAN_governor_general_in_power
+		x = 0
+		y = 2
+		
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
+
+		cost = 10
+		
+		ai_will_do = {
+			factor = 6
+		}
+		
+		prerequisite = {
+			focus = CAN_empower_the_military_faction
+		}
+		
+		prerequisite = {
+			focus = CAN_root_out_traitors
+		}
+		
+		available = {
+			has_government = neutrality
+			OR = {
+				is_subject_of = ENG
+				is_in_faction_with = ENG
+			}
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+			add_war_support = 0.1
+		}
+	}
+	
+	focus = {
+		id = CAN_ask_for_newfoundland_and_labrador_gg
+		text = CAN_ask_for_newfoundland_and_labrador
+		icon = GFX_goal_CAN_newfoundland_labrador
+		relative_position_id = CAN_god_save_the_king
+		x = -1
+		y = 1
+		
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+
+		cost = 10
+		
+		ai_will_do = {
+			factor = 11
+		}
+
+		
+		prerequisite = {
+			focus = CAN_god_save_the_king
+		}
+		
+		available = {
+			has_government = neutrality
+			OR = {
+				is_subject_of = ENG
+				is_in_faction_with = ENG
+			}
+		}
+		
+		bypass = {
+			owns_state = 331
+			owns_state = 332
+		}
+		completion_reward = {
+			every_other_country = {
+				limit = { 
+					owns_state = 331
+					owns_state = 332
+				}
+				country_event = canada.9
+			}
+			if = {
+				limit = {
+					any_other_country = {
+						OR = {
+							owns_state = 331
+							owns_state = 332
+						}
+						NOT = {
+							AND = {
+								owns_state = 331
+								owns_state = 332
+							}
+						}
+					}
+				}
+				331 = {
+					owner = {
+						CAN = {
+							create_wargoal = {
+								type = take_state_focus
+								target = PREV
+								generator = { 331 }
+							}
+						}
+					}
+				}
+				332 = {
+					owner = {
+						CAN = {
+							create_wargoal = {
+								type = take_state_focus
+								target = PREV
+								generator = { 332 }
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = CAN_the_defense_of_canada
+		icon = GFX_goal_generic_city_chain_forts
+		relative_position_id = CAN_god_save_the_king
+		x = 1
+		y = 1
+		
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
+
+		cost = 10
+		
+		ai_will_do = {
+			factor = 6
+		}
+		
+		prerequisite = {
+			focus = CAN_god_save_the_king
+		}
+		
+		available = {
+			has_government = neutrality
+			OR = {
+				is_subject_of = ENG
+				is_in_faction_with = ENG
+			}
+		}
+		completion_reward = {
+			add_ideas = CAN_the_defense_of_canada_idea
+		}
+	}
+	
+	focus = {
+		id = CAN_claims_on_america
+		icon = GFX_focus_spa_the_war_of_vengeance
+		relative_position_id = CAN_the_defense_of_canada
+		x = -3
+		y = 1
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		cost = 10
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+		
+		prerequisite = {
+			focus = CAN_the_defense_of_canada
+		}
+	
+		
+		mutually_exclusive = {
+			
+        }
+		
+		available = {
+			has_government = neutrality
+			OR = {
+				is_subject_of = ENG
+				is_in_faction_with = ENG
+			}
+		}
+		
+
+
+		available_if_capitulated = yes
+
+
+	    completion_reward = {
+			add_state_claim = 463
+			add_state_claim = 386
+			add_state_claim = 385
+			add_state_claim = 357
+			add_state_claim = 921
+			add_state_claim = 990
+			add_state_claim	= 991
+			add_state_claim	= 992
+			add_state_claim = 993
+			custom_effect_tooltip = CAN_claims_on_america_tt
+		}
+	}	
+	
+	focus = {
+		id = CAN_defence_scheme_no1_gg
+		text = CAN_defence_scheme_no1
+		icon = GFX_goal_CAN_scheme_no1
+		relative_position_id = CAN_the_defense_of_canada
+		x = -1
+		y = 1
+		
+		search_filters = { FOCUS_FILTER_MILITARY_IMPROVEMENT FOCUS_FILTER_POLITICAL }
+
+		cost = 10
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+		
+		prerequisite = {
+			focus = CAN_the_defense_of_canada
+		}
+	
+		
+		mutually_exclusive = {
+			
+        }
+		
+		available = {
+			has_government = neutrality
+			OR = {
+				is_subject_of = ENG
+				is_in_faction_with = ENG
+			}
+		}
+		
+
+
+		available_if_capitulated = yes
+
+
+	    completion_reward = {
+			unlock_decision_tooltip = { 
+				decision = CAN_defence_scheme_no1
+				show_effect_tooltip = yes 
+				show_modifiers = yes 
+			}
+		}
+	}	
+	
+	focus = {
+		id = CAN_national_defense_funding
+		icon = GFX_focus_generic_tank_production
+		relative_position_id = CAN_the_defense_of_canada
+		x = 1
+		y = 1
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		cost = 10
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+		
+		prerequisite = {
+			focus = CAN_the_defense_of_canada
+		}
+	
+		
+		mutually_exclusive = {
+			
+        }
+		
+		available = {
+			has_government = neutrality
+			OR = {
+				is_subject_of = ENG
+				is_in_faction_with = ENG
+			}
+		}
+		
+
+
+		available_if_capitulated = yes
+
+
+	    completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}	
+	
+	focus = {
+		id = CAN_shadow_factories
+		icon = GFX_goal_generic_military_factories
+		relative_position_id = CAN_trust_in_the_commonwealth
+		x = -1
+		y = 2
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		cost = 10
+		
+		ai_will_do = {
+			factor = 6
+		}
+		
+		prerequisite = {
+			focus = CAN_trust_in_the_commonwealth
+		}
+		
+		available = {
+			is_in_faction_with = ENG
+			ENG = { has_government = ROOT }
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction =  {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction =  {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+		
+	focus = {
+		id = CAN_permanent_joint_defence_board
+		icon = GFX_goal_CAN_pjnd
+		relative_position_id = CAN_trust_in_the_commonwealth
+		x = 1
+		y = 2
+		
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY_XP FOCUS_FILTER_AIR_XP FOCUS_FILTER_NAVY_XP }
+
+		cost = 10
+		
+		ai_will_do = {
+			factor = 4
+		}
+		
+		prerequisite = {
+			focus = CAN_trust_in_the_commonwealth
+		}
+		
+		available = {
+			USA = { has_government = ROOT }
+		}
+		completion_reward = {
+			modify_tech_sharing_bonus = {
+				id = AMERIKAN_DEFENCE_COLLECTIVE_tech_sharing_group
+				bonus = 0.05
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			QUE = {
+				modify_tech_sharing_bonus = {
+					id = AMERIKAN_DEFENCE_COLLECTIVE_tech_sharing_group
+					bonus = 0.05
+				}
+			}
+			USA = {
+				modify_tech_sharing_bonus = {
+					id = AMERIKAN_DEFENCE_COLLECTIVE_tech_sharing_group
+					bonus = 0.05
+				}
+			}
+			X63 = {
+				modify_tech_sharing_bonus = {
+					id = AMERIKAN_DEFENCE_COLLECTIVE_tech_sharing_group
+					bonus = 0.05
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = CAN_first_special_service_force
+		icon = GFX_goal_generic_special_forces
+		relative_position_id = CAN_shadow_factories
+		x = 2
+		y = 2
+		
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		cost = 10
+		
+		prerequisite = {
+			focus = CAN_permanent_joint_defence_board
+			focus = CAN_shadow_factories
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1.0
+				uses = 2
+				category = marine_tech
+				category = para_tech
+			}
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				add_doctrine_cost_reduction = {
+					name = CAN_first_special_service_force
+					cost_reduction = 0.5
+					uses = 1
+					category = special_forces_doctrine
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = special_forces_bonus
+					bonus = 0.5
+					uses = 1
+					category = special_forces_training_tech 
+				}	
+			}			
+		}
+	}
+		
+	focus = {
+		id = CAN_frogmen_of_burma
+		icon = GFX_goal_CAN_commando
+		relative_position_id = CAN_shadow_factories
+		x = 0
+		y = 3
+		
+		search_filters = { FOCUS_FILTER_MILITARY_IMPROVEMENT FOCUS_FILTER_RESEARCH }
+
+		cost = 10
+		
+		prerequisite = {
+			focus = CAN_first_special_service_force
+			focus = CAN_shadow_factories
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+		
+		available = {
+			has_war = yes
+			is_in_faction_with = ENG
+		}
+		completion_reward = {
+			custom_effect_tooltip = frogmen_of_burma_tt
+			if = {
+				limit = {
+					NOT = { has_tech = marines }
+				}
+				set_technology = { marines = 1 }
+			}
+			set_technology = { CAN_frogmen_tech = 1 }
+			add_tech_bonus = {
+				name = CAN_frogmen_of_burma
+				bonus = 1.5
+				uses = 1
+				category = marine_tech
+			}	
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				add_doctrine_cost_reduction = {
+					name = CAN_frogmen_of_burma
+					cost_reduction = 0.4
+					uses = 1
+					category = cat_marines_doctrine
+					
+				}				
+			}
+			else = {
+				add_tech_bonus = {
+			            name = CAN_frogmen_of_burma
+			            bonus = 1.0
+			            uses = 1
+			            category = special_forces_training_tech 
+			    }	
+			}
+			hidden_effect = {
+				division_template = {
+					name = "Frogmen"
+					priority = 1
+	
+					regiments = {
+						marine = { x = 0 y = 0 }
+						marine = { x = 0 y = 1 }
+						marine = { x = 0 y = 2 }
+						marine = { x = 0 y = 3 }
+						marine = { x = 0 y = 4 }
+							
+						marine = { x = 1 y = 0 }
+						marine = { x = 1 y = 1 }
+						marine = { x = 1 y = 2 }
+						marine = { x = 1 y = 3 }
+						marine = { x = 1 y = 4 }
+					}
+					
+					support = {
+						recon = { x = 0 y = 0 }
+						engineer = { x = 0 y = 1 }
+					}
+				}
+				466 = {
+					create_unit = {
+						division = "name = \"Frogmen of Burma\" division_template = \"Frogmen\" start_experience_factor = 0.9" 
+						owner = ROOT
+					}
+				}
+			}
+			unlock_decision_tooltip = { decision = cite_a_marine_unit show_effect_tooltip = yes } 
+		}
+	}
+		
+	focus = {
+		id = CAN_montreal_laboratory
+		icon = GFX_goal_CAN_montreal_lab
+		relative_position_id = CAN_shadow_factories
+		x = 1
+		y = 1
+		
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		cost = 10
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		prerequisite = {
+			focus = CAN_shadow_factories
+		}
+		
+		available = {
+			is_in_faction_with = ENG
+			ENG = { has_government = ROOT }
+		}
+		
+
+		
+		completion_reward = {
+			custom_effect_tooltip = available_industrial_concern
+			show_ideas_tooltip = montreal_lab
+			IF = {
+				limit = {
+					NOT = {
+						has_tech = atomic_research
+					}
+				}
+				add_tech_bonus = {
+					name = CAN_montreal_laboratory
+					bonus = 1.0
+					uses = 1
+					category = nuclear
+				}
+				add_breakthrough_progress = {
+					specialization = specialization_nuclear
+					value = 0.5
+				}
+			}
+			ELSE = {
+				add_breakthrough_progress = {
+					specialization = specialization_nuclear
+					value = 0.8
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			ROOT = {
+				every_scientist = {
+					limit = {
+						has_scientist_level = {
+							specialization = specialization_nuclear
+							level > 0
+						}
+					}
+					add_scientist_xp = {
+						experience = 100
+						specialization = specialization_nuclear
+					}
+				}
+			}
+		}
+	}
+		
+	focus = {
+		id = CAN_tizard_visit
+		icon = GFX_goal_generic_scientific_exchange
+		relative_position_id = CAN_shadow_factories
+		x = -1
+		y = 1
+		
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		cost = 10
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		prerequisite = {
+			focus = CAN_shadow_factories
+		}
+		
+		available = {
+			is_in_faction_with = ENG
+			ENG = { 
+			has_government = ROOT 
+			has_completed_focus = tizard_mission_focus
+			}
+		}
+		
+
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			custom_effect_tooltip = available_industrial_concern
+			show_ideas_tooltip = CAN_research_enterprises_ltd
+			 custom_effect_tooltip = generic_skip_one_line_tt
+			add_tech_bonus = {
+                name = radar_focus
+                bonus = 1
+				uses = 1
+				category = radar_tech
+            }
+            custom_effect_tooltip = generic_skip_one_line_tt
+			add_breakthrough_progress = {
+				specialization = specialization_air
+				value = 0.25
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+            add_ideas = generic_radar_idea
+		}
+	}
+		
+	focus = {
+		id = CAN_commonwealth_air_training_plan
+		icon = GFX_goal_generic_airport
+		relative_position_id = CAN_trust_in_the_commonwealth
+		x = -3
+		y = 1
+		
+		search_filters = { FOCUS_FILTER_MILITARY_IMPROVEMENT FOCUS_FILTER_INDUSTRY }
+
+		cost = 10
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = {
+			focus = CAN_trust_in_the_commonwealth
+			focus = CAN_strengthen_british_ties
+		}
+		
+		available = {
+			is_in_faction_with = ENG
+			ENG = { has_government = ROOT }
+			has_war = yes
+		}
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = CAN_cwatp
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = available_military_high_command
+			show_ideas_tooltip = CAN_raymond_collishaw
+			if = {
+				limit = {
+					owns_state = 467
+				}
+				467 = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						owns_state = 468
+						AND = {
+							QUE = { exists = yes }
+							QUE = { is_subject_of = CAN }
+						}
+					}
+				}
+				468 = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					owns_state = 469
+				}
+				469 = {
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}		
+		
+	focus = {
+		id = CAN_build_fighters_for_the_empire
+		icon = GFX_goal_generic_air_production
+		relative_position_id = CAN_commonwealth_air_training_plan
+		x = 0
+		y = 1
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		cost = 10
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = {
+			focus = CAN_commonwealth_air_training_plan
+		}
+		
+		available = {
+			is_in_faction_with = ENG
+			ENG = { has_government = ROOT }
+			has_war = yes
+		}
+		
+
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			add_ideas = CAN_fighters
+		}
+	}
+	
+	focus = {
+		id = CAN_british_ships
+		icon = GFX_goal_navy_funding
+		relative_position_id = CAN_trust_in_the_commonwealth
+		x = -5
+		y = 1
+		
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		cost = 10
+		
+		ai_will_do = {
+			factor = 9
+		}
+		
+		prerequisite = {
+			focus = CAN_strengthen_british_ties
+			#focus = CAN_trust_in_the_commonwealth
+		}
+		
+		available = {
+			is_in_faction_with = ENG
+			ENG = { has_government = ROOT }
+			has_war = yes
+		}
+		completion_reward = {
+			custom_effect_tooltip = CAN_transfer_ships_tt
+			ENG = {
+				transfer_ship = {
+					prefer_name = "HMS Kempenfelt"
+					type = destroyer
+					target = CAN
+				}
+				transfer_ship = {
+					prefer_name = "HMS Crescent"
+					type = destroyer
+						target = CAN
+				}
+				transfer_ship = {
+					prefer_name = "HMS Crusader"
+					type = destroyer
+						target = CAN
+				}
+				transfer_ship = {
+					prefer_name = "HMS Comet"
+					type = destroyer
+						target = CAN
+				}
+				transfer_ship = {
+					prefer_name = "HMS Cygnet"
+					type = destroyer
+					target = CAN
+				}
+				transfer_ship = {
+					prefer_name = "HMS Diana"
+					type = destroyer
+					target = CAN
+				}
+			}
+		}
+	}
+		
+	focus = {
+		id = CAN_construct_the_cape_spear_forts
+		icon = GFX_goal_generic_fortification
+		relative_position_id = CAN_british_ships
+		x = 1
+		y = 2
+		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		prerequisite = {
+			focus = CAN_british_ships
+			focus = CAN_commonwealth_air_training_plan
+		}
+		
+		available = {
+			is_in_faction_with = ENG
+			ENG = { has_government = ROOT }
+			has_war = yes
+			OR = {
+				owns_state = 331
+				ENG = { owns_state = 331 }
+			}
+		}		completion_reward = {
+			331 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 12505
+					instant_build = yes
+				}
+			}
+			add_autonomy_ratio = {
+				value = 0.05
+				localization = CAN_construct_the_cape_spear_forts
+			}
+		}
+	}
+		
+	focus = {
+		id = CAN_CAMP_X
+		icon = GFX_goal_CAN_CAMP_X
+		relative_position_id = CAN_construct_the_cape_spear_forts
+		x = 1
+		y = 1
+
+		cost = 10
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		prerequisite = {
+			focus = CAN_construct_the_cape_spear_forts
+			focus = CAN_tizard_visit
+		}
+		
+		available = {
+			is_in_faction_with = ENG
+			ENG = { has_government = ROOT }
+			has_war = yes
+			OR = {
+				owns_state = 331
+				ENG = { owns_state = 331 }
+			}
+		}
+		
+
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = { has_dlc = "La Resistance" }
+				}
+				add_tech_bonus = {
+					name = CAN_CAMP_X
+					bonus = 1.0
+					uses = 1
+						category = computing_tech
+				}
+			}
+			else = {
+				add_ideas = CAN_CAMP_X_idea
+			}
+		}
+		search_filters = { FOCUS_FILTER_ESPIONAGE }
+	}
+		
+	focus = {
+		id = CAN_hydra
+		icon = GFX_goal_generic_engineering
+		relative_position_id = CAN_CAMP_X
+		x = 0
+		y = 1
+
+		cost = 10
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		prerequisite = {
+			focus = CAN_CAMP_X
+		}
+		
+		available = {
+			is_in_faction_with = ENG
+			ENG = { has_government = ROOT }
+			has_war = yes
+			OR = {
+				owns_state = 331
+				ENG = { owns_state = 331 }
+			}
+		}
+		
+
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = { has_dlc = "La Resistance" }
+				}
+				add_tech_bonus = {
+					name = CAN_hydra
+					bonus = 1.0
+					uses = 1
+					category = decryption_tech
+				}
+			}
+			else = {
+				hidden_effect = {
+					set_technology = { lar_decryption_bonus_tech = 1 }
+				}
+				custom_effect_tooltip = lar_decryption_bonus_tt	
+			}
+		}
+		search_filters = { FOCUS_FILTER_ESPIONAGE }
+	}
+	
+	focus = {
+		id = CAN_strengthen_british_ties
+		#text = AST_strengthen_british_ties
+		icon = GFX_focus_chi_british_cooperation
+		x = -4
+		y = 0
+		relative_position_id = CAN_trust_in_the_commonwealth
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+			OR = {
+				is_subject_of = ENG
+				AND = {
+					has_global_flag = ENG_decolonized
+					is_in_faction_with = ENG
+				}
+				ENG = {
+					has_government = ROOT
+				}
+			}
+		}
+		
+
+
+				completion_reward = {
+			add_stability = 0.05
+			ENG = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = AST_strengthened_british_ties
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_STABILITY }
+	}
+}

@@ -174,9 +174,24 @@ add_ideas = {
 	civilian_economy
 	export_focus
 	culture_amerikaner
+	WAL_the_prussian_legacy
+	WAL_the_republican_constitution
+	WAL_a_nation_without_a_people
+	WAL_the_failed_colony
+	WAL_outset_of_the_great_lakes
+	WAL_brothers_across_the_lakes
+}
+
+add_opinion_modifier = {
+	target = QUE
+	modifier = NJORD_brothers_across_the_lakes
+}
+add_opinion_modifier = {
+	target = USA
+	modifier = NJORD_brothers_across_the_lakes
 }
 set_stability = 0.60
-set_war_support = 0.60
+set_war_support = 0.4
 
 recruit_character = X63_darrell_bascom
 recruit_character = X63_frederick_krimmel
