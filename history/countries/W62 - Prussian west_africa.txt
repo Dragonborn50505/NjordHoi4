@@ -96,6 +96,12 @@ add_ideas = {
 	civilian_economy
 	export_focus
 	culture_north_german
+	PWA_a_colony_in_two_halves
+	PWA_the_results_of_assimilation
+	PWA_between_two_worlds
+	PWA_price_of_colonial_prosperity
+	PWA_the_red_tide
+	PWA_Kolonialgarde_Westafrika
 }
 set_stability = 0.60
 set_war_support = 0.64

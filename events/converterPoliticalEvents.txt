@@ -31,7 +31,7 @@ country_event = {
 	option = {
 		name = conv.political.1.b
 		ai_chance = {
-			factor = 0
+			base = 0
 		}
 		custom_effect_tooltip = impending_civil_war_tt
 	}
@@ -68,7 +68,7 @@ country_event = {
 	option = {
 		name = conv.political.2.b
 		ai_chance = {
-			factor = 0
+			base = 0
 		}
 		custom_effect_tooltip = impending_civil_war_tt
 	}
@@ -105,7 +105,7 @@ country_event = {
 	option = {
 		name = conv.political.3.b
 		ai_chance = {
-			factor = 0
+			base = 0
 		}
 		custom_effect_tooltip = impending_civil_war_tt
 	}
@@ -142,7 +142,7 @@ country_event = {
 	option = {
 		name = conv.political.4.b
 		ai_chance = {
-			factor = 0
+			base = 0
 		}
 		custom_effect_tooltip = impending_civil_war_tt
 	}
@@ -179,7 +179,7 @@ country_event = {
 	option = {
 		name = conv.political.5.b
 		ai_chance = {
-			factor = 0
+			base = 0
 		}
 		custom_effect_tooltip = impending_civil_war_tt
 	}
@@ -456,7 +456,7 @@ country_event = {
 		has_idea_with_trait = democratic_minister
 		NOT = { has_government = democratic }
 		NOT = { has_country_flag = democracy_opposition_formed }
-		is_puppet = no
+		is_subject = no
 		NOT = { democratic > 0.59 }
 	}
 
@@ -642,7 +642,7 @@ country_event = {
 	option = {
 		name = conv.political.21.a
 		ai_chance = {
-			factor = 0
+			base = 0
 		}
 		start_civil_war = {
 			ideology = absolutist
@@ -653,7 +653,7 @@ country_event = {
 	option = {
 		name = conv.political.21.b
 		ai_chance = {
-			factor = 0
+			base = 0
 		}
 		if = {
 			limit = {
@@ -745,7 +745,7 @@ country_event = {
 	option = {
 		name = conv.political.22.a
 		ai_chance = {
-			factor = 0
+			base = 0
 		}
 		start_civil_war = {
 			ideology = communism
@@ -756,7 +756,7 @@ country_event = {
 	option = {
 		name = conv.political.22.b
 		ai_chance = {
-			factor = 0
+			base = 0
 		}
 		if = {
 			limit = {
@@ -848,7 +848,7 @@ country_event = {
 	option = {
 		name = conv.political.23.a
 		ai_chance = {
-			factor = 0
+			base = 0
 		}
 		start_civil_war = {
 			ideology = democratic
@@ -859,7 +859,7 @@ country_event = {
 	option = {
 		name = conv.political.23.b
 		ai_chance = {
-			factor = 0
+			base = 0
 		}
 		if = {
 			limit = {
@@ -960,7 +960,7 @@ country_event = {
 	option = {
 		name = conv.political.24.a
 		ai_chance = {
-			factor = 0
+			base = 0
 		}
 		start_civil_war = {
 			ideology = fascism
@@ -971,7 +971,7 @@ country_event = {
 	option = {
 		name = conv.political.24.b
 		ai_chance = {
-			factor = 0
+			base = 0
 		}
 		if = {
 			limit = {
@@ -1063,7 +1063,7 @@ country_event = {
 	option = {
 		name = conv.political.25.a
 		ai_chance = {
-			factor = 0
+			base = 0
 		}
 		start_civil_war = {
 			ideology = radical
@@ -1074,7 +1074,7 @@ country_event = {
 	option = {
 		name = conv.political.25.b
 		ai_chance = {
-			factor = 0
+			base = 0
 		}
 		if = {
 			limit = {

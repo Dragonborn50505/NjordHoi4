@@ -1329,7 +1329,7 @@ technologies = {
 		land_night_attack = 0.1
 		air_carrier_night_penalty_reduction_factor = 0.05
 		night_spotting_chance = 0.05
-		air_night_penalty = 0.05
+		air_night_penalty = -0.05
 		air_strategic_bomber_night_penalty = -0.05
 		naval_night_attack = 0.05
 
@@ -1379,7 +1379,7 @@ technologies = {
 		land_night_attack = 0.1
 		air_carrier_night_penalty_reduction_factor = 0.05
 		night_spotting_chance = 0.05
-		air_night_penalty = 0.05
+		air_night_penalty = -0.05
 		air_strategic_bomber_night_penalty = -0.05
 		naval_night_attack = 0.05
 

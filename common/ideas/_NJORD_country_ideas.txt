@@ -2738,7 +2738,7 @@ ideas = {
 				war_support_factor = -0.25
 				research_speed_factor = -0.05
 				drift_defence_factor = -0.35
-				conscription_factor = -0.35
+				conscription_factor = -0.25
 			}
 			rule = {
 				can_be_called_to_war = no
@@ -2754,7 +2754,7 @@ ideas = {
 				stability_factor = -0.15
 				war_support_factor = -0.15
 				drift_defence_factor = -0.2
-				conscription_factor = -0.25
+				conscription_factor = -0.15
 			}
 			rule = {
 				can_be_called_to_war = no
@@ -2771,7 +2771,7 @@ ideas = {
 				political_power_factor = 0.05
 				drift_defence_factor = -0.05
 				party_popularity_stability_factor = 0.1
-				conscription_factor = -0.15
+				conscription_factor = -0.05
 			}
 			rule = {
 				can_be_called_to_war = no
@@ -2788,7 +2788,7 @@ ideas = {
 				war_stability_factor = 0.1
 				org_loss_at_low_org_factor = 0.05
 				drift_defence_factor = 0.1
-				conscription_factor = -0.05
+				conscription_factor = 0.05
 			}
 		}
 
@@ -2801,7 +2801,7 @@ ideas = {
 				war_stability_factor = 0.2
 				org_loss_at_low_org_factor = -0.1
 				drift_defence_factor = 0.25
-				conscription_factor = 0.05
+				conscription_factor = 0.15
 			}
 		}
 
@@ -2991,7 +2991,7 @@ ideas = {
 				experience_gain_factor = -0.15
 				dig_in_speed_factor = -0.15
 				land_doctrine_cost_factor = 0.25
-				conscription = -0.003
+				conscription = -0.002
 				planning_speed = -0.25
 				command_power_gain_mult = -0.25
 				max_command_power_mult = -0.15
@@ -3012,7 +3012,7 @@ ideas = {
 				experience_gain_factor = -0.1
 				dig_in_speed_factor = -0.1
 				land_doctrine_cost_factor = 0.1
-				conscription = -0.002
+				conscription = -0.001
 				planning_speed = -0.15
 				command_power_gain_mult = -0.15
 				max_command_power_mult = -0.1
@@ -3031,7 +3031,6 @@ ideas = {
 			modifier = {
 				experience_gain_factor = 0.05
 				dig_in_speed_factor = 0.05
-				conscription = -0.001
 				planning_speed = -0.1
 				command_power_gain_mult = -0.05
 				max_command_power_mult = -0.05
@@ -3050,9 +3049,6 @@ ideas = {
 				communism_drift = 0.05
 				conscription_factor = -0.35
 			}
-			research_bonus = {
-				electronics = -0.2
-			}
 		}
 
 		CHI_neglected_country_side_2 = {
@@ -3062,9 +3058,6 @@ ideas = {
 				research_speed_factor = -0.1
 				communism_drift = 0.03
 				conscription_factor = -0.25
-			}
-			research_bonus = {
-				electronics = -0.1
 			}
 		}
 
@@ -4149,7 +4142,7 @@ ideas = {
 				}
 			}
 			research_bonus = {
-				infantry_tech = 0.05
+				infantry_weapons = 0.05
 			}
 		}
 
@@ -4174,8 +4167,8 @@ ideas = {
 				}
 			}
 			research_bonus = {
-				infantry_tech = 0.05
-				mio_cat_all_artillery_equipment = 0.05
+				infantry_weapons = 0.05
+				artillery = 0.05
 			}
 		}
 
@@ -4194,8 +4187,7 @@ ideas = {
 				}
 			}
 			research_bonus = {
-				infantry_tech = 0.05
-				support_tech = 0.05
+				infantry_weapons = 0.05
 			}
 		}
 
@@ -4223,9 +4215,8 @@ ideas = {
 				}
 			}
 			research_bonus = {
-				infantry_tech = 0.05
-				support_tech = 0.05
-				mio_cat_all_artillery_equipment = 0.05
+				infantry_weapons = 0.05
+				artillery = 0.05
 			}
 		}
 
@@ -4258,9 +4249,8 @@ ideas = {
 				}
 			}
 			research_bonus = {
-				infantry_tech = 0.1
-				support_tech = 0.1
-				mio_cat_all_artillery_equipment = 0.1
+				infantry_weapons = 0.1
+				artillery = 0.1
 			}
 		}
 
@@ -4302,9 +4292,8 @@ ideas = {
 				}
 			}
 			research_bonus = {
-				infantry_tech = 0.1
-				support_tech = 0.1
-				mio_cat_all_artillery_equipment = 0.1
+				infantry_weapons = 0.1
+				artillery = 0.1
 				rocketry = 0.1
 			}
 		}
@@ -4321,7 +4310,7 @@ ideas = {
 				}
 			}
 			research_bonus = {
-				mio_cat_tech_all_armor_and_modules = 0.05
+				armor = 0.05
 			}
 		}
 
@@ -4340,7 +4329,7 @@ ideas = {
 				}
 			}
 			research_bonus = {
-				mio_cat_tech_all_armor_and_modules = 0.1
+				armor = 0.1
 			}
 		}
 
@@ -4403,9 +4392,7 @@ ideas = {
 			modifier = {
 				modifier_army_sub_unit_marine_attack_factor = 0.05
 				modifier_army_sub_unit_marine_defence_factor = 0.05
-				naval_invasion_capacity = 5
 				naval_invasion_planning_bonus_speed = 0.1
-				naval_invasion_division_cap = 1
 			}
 		}
 
@@ -4417,25 +4404,57 @@ ideas = {
 				modifier_army_sub_unit_marine_defence_factor = 0.1
 				modifier_army_sub_unit_marine_max_org_factor = 0.1
 				modifier_army_sub_unit_marine_speed_factor = 0.05
-				marines_special_forces_contribution_factor = -0.15
-				naval_invasion_capacity = 10
-				naval_invasion_planning_bonus_speed = 0.2
-				naval_invasion_division_cap = 2
+				naval_invasion_planning_bonus_speed = 0.1
 			}
 			equipment_bonus = {
 				amphibious_mechanized_equipment = {
 					build_cost_ic = -0.1
-					maximum_speed = 0.1
-					armor_value = 0.05
 				}
 				amphibious_tank_chassis = {
 					build_cost_ic = -0.1
-					maximum_speed = 0.1
-					armor_value = 0.05
 				}
 			}
 		}
 
+		CAN_security_establishment_1 = {
+			picture = generic_secret_police
+			modifier = {
+				operative_slot = 1
+			}
+		}
+
+		CAN_kustlander_arms_smuggling = {
+			picture = HUN_secret_rearmament
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+				}
+			}
+			targeted_modifier = {
+				tag = QUE
+				political_power_gain = 0.1
+			}
+		}
+
+		CAN_engineering_expertise = {
+			picture = generic_production_bonus
+			modifier = {
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+			research_bonus = {
+				electronics = 0.05
+			}
+			targeted_modifier = {
+				tag = PRE
+				industrial_factory_donations = 3
+			}
+		}
 
 		# BYZANTINE EMPIRE
 		BYZ_last_roman_empire = {
@@ -4569,15 +4588,14 @@ ideas = {
 		}
 
 		WAL_outset_of_the_great_lakes = {
-			picture = EST_republican_defence_league
+			picture = generic_coastal_navy
 			modifier = {
-				production_speed_buildings_factor = 0.1
 				trade_opinion_factor = 0.5
 				cic_construction_boost_factor = 0.05
 				resource_trade_cost_bonus_per_factory = 1
 				min_export = 0.1
-				industrial_capacity_dockyard = -0.05
-				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = 0.05
+				industrial_capacity_factory = 0.05
 			}
 			targeted_modifier = {
 				tag = TEX
@@ -4599,12 +4617,11 @@ ideas = {
 		WAL_the_failed_colony = {
 			picture = COG_colonial_maritime_company
 			modifier = {
-				production_factory_efficiency_gain_factor = -0.15
-				production_factory_max_efficiency_factor = -0.1
-				industrial_capacity_dockyard = -0.15
-				industrial_capacity_factory = -0.15
-				production_speed_buildings_factor = -0.15
-				local_resources_factor = -0.3
+				production_factory_efficiency_gain_factor = -0.1
+				industrial_capacity_dockyard = -0.05
+				industrial_capacity_factory = -0.05
+				production_speed_buildings_factor = -0.05
+				local_resources_factor = -0.1
 			}
 		}
 
@@ -4972,10 +4989,10 @@ ideas = {
 		TRANS_demands_for_democracy = {
 			picture = EST_democratic_opposition
 			modifier = {
-				democratic_drift = 0.05
-				communism_drift = 0.04
-				fascism_drift = 0.03
-				neutrality_drift = 0.02
+				democratic_drift = 0.01
+				communism_drift = 0.01
+				fascism_drift = 0.01
+				neutrality_drift = 0.01
 				radical_drift = 0.01
 				drift_defence_factor = -0.25
 				political_power_factor = -0.1
@@ -5024,6 +5041,520 @@ ideas = {
 			targeted_modifier = {
 				tag = SOV
 				experience_gain_army = 0.01
+			}
+		}
+
+
+		# PRUSSIAN WESTERN AFRICA
+		PWA_a_colony_in_two_halves = {
+			picture = AFG_economic_regionalism
+			modifier = {
+				political_power_factor = -0.2
+				production_speed_buildings_factor = -0.1
+				production_factory_max_efficiency_factor = -0.05
+				local_resources_factor = -0.1
+			}
+		}
+
+		PWA_the_results_of_assimilation = {
+			picture = AFG_placated_graduates
+			modifier = {
+				stability_factor = 0.1
+				compliance_growth = 0.05
+				research_speed_factor = 0.05
+				political_power_cost = 0.1
+				democratic_drift = 0.01
+			}
+		}
+
+		PWA_between_two_worlds = {
+			picture = COG_the_invisible_roof
+			modifier = {
+				stability_factor = -0.05
+				drift_defence_factor = -0.1
+				research_speed_factor = 0.05
+				political_power_gain = -0.1
+				neutrality_drift = 0.01
+			}
+		}
+
+		PWA_the_red_tide = {
+			picture = ETH_military_communism
+			modifier = {
+				communism_drift = 0.03
+				stability_factor = -0.1
+				political_power_factor = -0.1
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+			}
+		}
+
+		PWA_price_of_colonial_prosperity = {
+			picture = COG_ccci
+			modifier = {
+				consumer_goods_factor = -0.3
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				local_resources_factor = 0.25
+				resistance_growth = 0.05
+			}
+			targeted_modifier = {
+				tag = PRE
+				extra_trade_to_target_factor = 0.25
+				cic_to_target_factor = 0.1
+			}
+		}
+
+		PWA_Kolonialgarde_Westafrika = {
+			picture = COG_force_publique
+			modifier = {
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+				conscription_factor = -0.15
+				resistance_damage_to_garrison = -0.15
+				resistance_target = -0.05
+				army_org_factor = -0.2
+				mobilization_speed = -0.25
+				required_garrison_factor = -0.33
+				modifier_army_sub_unit_military_police_defence_factor = 0.2
+				modifier_army_sub_unit_military_police_max_org_factor = 0.2
+			}
+		}
+
+
+		# PRUSSIA NIGERIA
+		PNI_black_gold_and_dark_rubber = {
+			picture = autarkic_economy
+			modifier = {
+				production_speed_infrastructure_factor = 0.2
+				production_speed_industrial_complex_factor = 0.2
+				consumer_goods_factor = -0.15
+				production_speed_buildings_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = PRE
+				extra_trade_to_target_factor = 0.25
+				trade_cost_for_target_factor = -0.25
+			}
+		}
+
+		PNI_the_results_of_assimilation = {
+			picture = AFG_neutrality_graduates
+			modifier = {
+				stability_factor = 0.05
+				compliance_growth = 0.03
+				research_speed_factor = 0.03
+				political_power_cost = 0.1
+			}
+		}
+
+		PNI_the_nigerian_public_force = {
+			picture = COG_force_publique
+			modifier = {
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				conscription_factor = 0.05
+				resistance_damage_to_garrison = -0.15
+				resistance_target = -0.05
+				army_org_factor = 0.1
+				mobilization_speed = 0.05
+				required_garrison_factor = -0.33
+				land_reinforce_rate = 0.05
+				modifier_army_sub_unit_military_police_defence_factor = 0.2
+				modifier_army_sub_unit_military_police_max_org_factor = 0.2
+			}
+		}
+
+		PNI_memories_of_the_chad_war = {
+			picture = CHL_patagonian_giants
+			modifier = {
+				out_of_supply_factor = -0.25
+				army_speed_factor = 0.05
+				equipment_capture_factor = 0.05
+				experience_gain_factor = 0.2
+				experience_gain_army_unit_factor = 0.2
+				org_loss_at_low_org_factor = -0.15
+				army_morale_factor = 0.2
+			}
+			targeted_modifier = {
+				tag = ITA
+				defense_bonus_against = 0.1
+				attack_bonus_against = 0.1
+			}
+		}
+
+		PNI_arsenal_of_west_africa = {
+			picture = GER_carl_walther
+			modifier = {
+				military_factory_donations = 5
+				production_lack_of_resource_penalty_factor = -0.15
+				military_industrial_organization_funds_gain = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				equipment_conversion_speed = 0.2
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					soft_attack = 0.1
+					defense = 0.1
+				}
+				support_equipment = {
+					build_cost_ic = -0.1
+					reliability_factor = 0.1
+				}
+			}
+		}
+
+		PNI_the_calabar_question = {
+			picture = bul_supremacy_on_the_bosphorus
+			modifier = {
+				war_support_factor = 0.2
+				stability_factor = -0.1
+			}
+			targeted_modifier = {
+				tag = W46
+				defense_bonus_against = -0.05
+			}
+		}
+
+
+		# PRUSSIAN EQUATORIAL AFRICA
+		PEQ_a_colony_on_life_support = {
+			picture = raj_risk_of_famine
+			modifier = {
+				conscription_factor = -0.25
+				monthly_population = -0.15
+				production_speed_buildings_factor = -0.25
+				industrial_capacity_dockyard = -0.5
+				industrial_capacity_factory = -0.5
+				consumer_goods_factor = 0.5
+				local_resources_factor = -0.75
+			}
+		}
+
+		PEQ_beyond_libreville_and_bata = {
+			picture = AFG_parliament_building_damaged
+			modifier = {
+				monthly_population = -0.1
+				stability_factor = -0.15
+				compliance_growth = -0.1
+				research_speed_factor = -0.15
+				political_power_gain = -0.2
+				master_ideology_drift = -0.05
+			}
+		}
+
+		PEQ_an_imperial_anchorage = {
+			picture = generic_the_london_naval_treaty
+			modifier = {
+				industrial_capacity_dockyard = 0.05
+				repair_speed_factor = 0.1
+				refit_speed = 0.1
+				refit_ic_cost = -0.1
+				dockyard_donations = 1
+				production_speed_naval_base_factor = 0.05
+			}
+		}
+
+		PEQ_the_forgotten_possession = {
+			picture = ETH_customs_barrier_ITA
+			modifier = {
+				political_power_factor = -0.25
+				stability_factor = -0.1
+				trade_opinion_factor = -0.5
+				opinion_gain_monthly_factor = -0.25
+				improve_relations_maintain_cost_factor = 0.5
+			}
+		}
+
+		PEQ_non_existent_army = {
+			picture = chi_forced_conscription
+			modifier = {
+				conscription_factor = -0.5
+				army_attack_factor = -0.25
+				army_defence_factor = -0.25
+				army_org_factor = -0.5
+				surrender_limit = -0.75
+			}
+		}
+
+		PEQ_for_sale_to_the_highest_bidder = {
+			on_remove = {
+				random_list = {
+					10 = {
+						PRE = { annex_country = { target = W60 } }
+					}
+					10 = {
+						HOL = { annex_country = { target = W60 } }
+					}
+					10 = {
+						SPR = { annex_country = { target = W60 } }
+					}
+					10 = {
+						W31 = { annex_country = { target = W60 } }
+					}
+					10 = {
+						FRA = { annex_country = { target = W60 } }
+					}
+					10 = {
+						GER = { annex_country = { target = W60 } }
+					}
+					10 = {
+						X07 = { annex_country = { target = W60 } }
+					}
+					10 = {
+						W41 = { annex_country = { target = W60 } }
+					}
+					10 = {
+						X21 = { annex_country = { target = W60 } }
+					}
+					10 = {
+						JAP = { annex_country = { target = W60 } }
+					}
+				}
+				W60 = {
+					every_core_state = {
+						remove_core_of = W60
+					}
+				}
+			}
+			picture = ARG_political_corruption_modifier
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = 0.1
+				custom_modifier_tooltip = PEQ_for_sale_to_the_highest_bidder_TT
+			}
+			targeted_modifier = {
+				tag = PRE
+				political_power_gain = 0.01
+			}
+			targeted_modifier = {
+				tag = HOL
+				political_power_gain = 0.01
+			}
+			targeted_modifier = {
+				tag = SPR
+				political_power_gain = 0.01
+			}
+			targeted_modifier = {
+				tag = W31
+				political_power_gain = 0.01
+			}
+			targeted_modifier = {
+				tag = FRA
+				political_power_gain = 0.01
+			}
+			targeted_modifier = {
+				tag = GER
+				political_power_gain = 0.01
+			}
+			targeted_modifier = {
+				tag = X07
+				political_power_gain = 0.01
+			}
+			targeted_modifier = {
+				tag = W41
+				political_power_gain = 0.01
+			}
+			targeted_modifier = {
+				tag = X21
+				political_power_gain = 0.01
+			}
+			targeted_modifier = {
+				tag = JAP
+				political_power_gain = 0.01
+			}
+		}
+
+
+		# PRUSSIAN ARABIA 
+		PAR_bastion_of_arabia_and_the_indian_ocean = {
+			picture = PHI_philippine_naval_patrol
+			modifier = {
+				navy_max_range_factor = 0.25
+				naval_speed_factor = 0.1
+				naval_damage_factor = 0.1
+				naval_defense_factor = 0.1
+				coastal_bunker_effectiveness_factor = 0.15
+				experience_gain_navy = 0.2
+				experience_gain_navy_unit_factor = 0.2
+				naval_coordination = 0.15
+				weekly_manpower = 150
+				industrial_capacity_dockyard = 0.3
+			}
+			equipment_bonus = {
+				convoy = {
+					build_cost_ic = -0.1
+				}
+				mio_cat_eq_all_destroyer = {
+					build_cost_ic = -0.1
+				}
+				mio_cat_eq_all_cruiser = {
+					build_cost_ic = -0.1
+				}
+				mio_cat_eq_all_battleship = {
+					build_cost_ic = -0.1
+				}
+				mio_cat_eq_all_carrier = {
+					build_cost_ic = -0.1
+				}
+			}
+		}
+
+		PAR_the_arabian_marine_force = {
+			picture = eng_service_overseas
+			modifier = {
+				unit_marine_design_cost_factor = -0.75
+				modifier_army_sub_unit_marine_attack_factor = 0.1
+				modifier_army_sub_unit_marine_defence_factor = 0.1
+				modifier_army_sub_unit_marine_max_org_factor = 0.2
+				modifier_army_sub_unit_marine_speed_factor = 0.05
+				attrition = -0.15
+				naval_invasion_penalty = -0.15
+				no_supply_grace = 36
+				army_morale_factor = 0.2
+			}
+		}
+
+		PAR_black_gold_beneath_the_sands = {
+			picture = ARG_resource_extration_focus
+			modifier = {
+				fuel_gain_factor = 0.5
+				max_fuel_factor = 0.25
+				navy_fuel_consumption_factor = -0.1
+				consumer_goods_factor = -0.15
+				production_speed_infrastructure_factor = 0.1
+				supply_factor = 0.1
+				local_resources_factor = 0.15
+			}
+			research_bonus = {
+				excavation_tech = 0.1
+			}
+			targeted_modifier = {
+				tag = PRE
+				country_resource_oil = 10
+				base_fuel_gain = 300
+			}
+		}
+
+		PAR_masters_of_hormuz = {
+			picture = PHI_pearl_of_the_orient
+			modifier = {
+				cic_construction_boost_factor = 0.1
+				trade_opinion_factor = 0.5
+				resource_trade_cost_bonus_per_factory = 1
+				control_trade_mission_factor = 0.25
+				industrial_factory_donations = 5
+			}
+			targeted_modifier = {
+				tag = W66
+				extra_trade_to_target_factor = 0.1
+				trade_cost_for_target_factor = -0.25
+			}
+			targeted_modifier = {
+				tag = W67
+				extra_trade_to_target_factor = 0.1
+				trade_cost_for_target_factor = -0.25
+			}
+		}
+
+		PAR_join_international_training_missions = {
+			picture = ETH_peacekeeping_forces
+			modifier = {
+				land_doctrine_cost_factor = -0.15
+				naval_doctrine_cost_factor = -0.15
+				mastery_land_mastery_gain_factor = 0.1
+				mastery_naval_mastery_gain_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = PRE
+				experience_gain_army = 0.01
+				experience_gain_navy = 0.01
+			}
+			targeted_modifier = {
+				tag = FRA
+				experience_gain_army = 0.01
+				experience_gain_navy = 0.01
+			}
+			targeted_modifier = {
+				tag = HOL
+				experience_gain_army = 0.01
+				experience_gain_navy = 0.01
+			}
+			targeted_modifier = {
+				tag = W31
+				experience_gain_army = 0.01
+				experience_gain_navy = 0.01
+			}
+			targeted_modifier = {
+				tag = X07
+				experience_gain_army = 0.01
+				experience_gain_navy = 0.01
+			}
+		}
+
+
+		# BENGAL 
+		BEN_the_workshops_of_bengal = {
+			picture = man_five_year_plan_industry
+			modifier = {
+				conscription_factor = -0.05
+				global_building_slots_factor = 0.1
+				industrial_capacity_factory = 0.15
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+
+		BEN_spoils_of_prussia = {
+			picture = GER_economy_of_conquest
+			modifier = {
+				industrial_concern_cost_factor = -0.25
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_start_efficiency_factor = 0.05
+			}
+			research_bonus = {
+				industry = 0.1
+			}
+		}
+
+		BEN_the_yuan_threat = {
+			picture = CHI_cradle_of_civilization
+			modifier = {
+				dig_in_speed_factor = 0.2
+				max_dig_in = 1
+				army_core_defence_factor = 0.05
+				training_time_army_factor = -0.15
+				production_speed_bunker_factor = 0.2
+			}
+			targeted_modifier = {
+				tag = W41
+				defense_bonus_against = 0.1
+			}
+		}
+
+		BEN_rivalry_of_two_empires = {
+			picture = RAJ_a_tiger_unchained
+			modifier = {
+				war_support_factor = 0.1
+				political_power_factor = 0.1
+				army_attack_speed_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = PAK
+				defense_bonus_against = 0.05
+				attack_bonus_against = 0.05
+			}
+		}
+
+		BEN_assamese_communist_revolt = {
+			picture = RAJ_partition_chaos_less_bad
+			modifier = {
+				communism_drift = 0.05
+				conscription_factor = -0.1
+				stability_factor = -0.1
+				resistance_growth = 0.05
 			}
 		}
 	}

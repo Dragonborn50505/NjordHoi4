@@ -96,9 +96,18 @@ add_ideas = {
 	civilian_economy
 	export_focus
 	culture_north_german
+	PEQ_a_colony_on_life_support
+	PEQ_beyond_libreville_and_bata
+	PEQ_an_imperial_anchorage
+	PEQ_the_forgotten_possession
+	PEQ_non_existent_army
 }
-set_stability = 0.60
-set_war_support = 0.64
+add_timed_idea = {
+	idea = PEQ_for_sale_to_the_highest_bidder
+	days = 180
+}
+set_stability = 0.5
+set_war_support = 0.1
 
 recruit_character = W60_alfred_von_holstein_gottorp
 

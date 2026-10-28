@@ -131,6 +131,7 @@ focus_tree = {
 				}
 				add_manpower = 50000
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = QUE
@@ -143,6 +144,7 @@ focus_tree = {
 				}
 				add_manpower = 30000
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = QUE
@@ -221,18 +223,16 @@ focus_tree = {
 					add_idea = CAN_industrial_nation_3
 				}
 			}
-			random_owned_controlled_state = { # SPECIFIC STATE INSTEAD
-				limit = {
-					is_core_of = QUE
-				}
+			480 = { # SPECIFIC STATE INSTEAD
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 				}
-				add_building_construction = { # NEEDS SPECIFIC PROVINCE ID
+				add_building_construction = {
 					type = dam
 					level = 1
+					province = 7291
 				}
 			}
 		}
@@ -276,7 +276,7 @@ focus_tree = {
 		icon = GFX_focus_generic_reduce_unneccessary_expenditure
 		x = 0
 		y = 1
-		relative_position_id = CAN_wheat_board
+		relative_position_id = CAN_modernize_industry
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		cost = 5
@@ -286,8 +286,7 @@ focus_tree = {
 		}
 		
 		prerequisite = {
-			focus = CAN_national_housing_act
-			focus = CAN_wheat_board
+			focus = CAN_modernize_industry
 		}
 
 		available_if_capitulated = yes
@@ -627,7 +626,7 @@ focus_tree = {
 		id = CAN_sorel_steel_and_foundry
 		icon = GFX_focus_generic_steel_mill
 		prerequisite = { focus = CAN_dollar_a_year_men }
-		x = -4
+		x = -3
 		y = 1
 		relative_position_id = CAN_dollar_a_year_men
 		cost = 5
@@ -646,8 +645,7 @@ focus_tree = {
                 category = excavation_tech
             }	
 			custom_effect_tooltip = generic_skip_one_line_tt
-			random_owned_controlled_state = { # SPECIFIC STEEL STATE
-				prioritize = { 468 }
+			482 = { # SPECIFIC STEEL STATE
 				add_extra_state_shared_building_slots = 1
                 add_building_construction = {
                     type = industrial_complex
@@ -659,8 +657,8 @@ focus_tree = {
 					amount = 12
 				}			
 			}
-			random_owned_controlled_state = { # SPECIFIC STEEL STATE
-				prioritize = { 468 }
+			custom_effect_tooltip = generic_skip_one_line_tt
+			481 = { # SPECIFIC STEEL STATE
 				add_extra_state_shared_building_slots = 1
                 add_building_construction = {
                     type = industrial_complex
@@ -692,8 +690,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			random_owned_controlled_state = { # THE TWO PREVIOUS STATES WITH STEEL
-				prioritize = { 468 }
+			482 = { # THE TWO PREVIOUS STATES WITH STEEL
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -701,8 +698,8 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			random_owned_controlled_state = { # THE TWO PREVIOUS STATES WITH STEEL
-				prioritize = { 468 }
+			custom_effect_tooltip = generic_skip_one_line_tt
+			481 = { # THE TWO PREVIOUS STATES WITH STEEL
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -716,7 +713,7 @@ focus_tree = {
 	focus = {
 		id = CAN_canadian_pacific_railways
 		icon = GFX_focus_generic_road_investment
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = CAN_dollar_a_year_men
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
@@ -745,39 +742,28 @@ focus_tree = {
 				days = 180
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size < 5
-					}
-				}
+			476 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size < 5
-					}
-				}
+			477 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size < 5
-					}
+			479 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
 				}
+			}
+			475 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -829,7 +815,7 @@ focus_tree = {
 	focus = {
 		id = CAN_cbc_focus
 		icon = GFX_focus_SWE_radiotjanst
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = CAN_dollar_a_year_men
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_STABILITY }
@@ -873,7 +859,7 @@ focus_tree = {
 	focus = {
 		id = CAN_bank_of_canada
 		icon = GFX_focus_CHL_strengthen_the_central_bank
-		x = 2
+		x = 3
 		y = 1
 		relative_position_id = CAN_dollar_a_year_men
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -924,17 +910,27 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			build_railway = { # Build lots of railways
 				path = {
-					4345 9601 7291 12149
+					4872 4426 9615 6728 7185 5239
 				}
 			}
 			build_railway = { # Build lots of railways
 				path = {
-					4345 9601 7291 12149
+					4426 4875 1769 7899 4775 10718 777 602 12582 12278 9467 3640 11728 9585 9583 6797 9580 11567 3605 6625 4270 4345
 				}
 			}
 			build_railway = { # Build lots of railways
 				path = {
-					4345 9601 7291 12149
+					10718 12701 9740 761 13315
+				}
+			}
+			build_railway = { # Build lots of railways
+				path = {
+					4426 9615 6728 7185 5239
+				}
+			}
+			build_railway = { # Build lots of railways
+				path = {
+					761 4753 10605 7185 
 				}
 			}
 		}
@@ -943,7 +939,7 @@ focus_tree = {
 	focus = {
 		id = CAN_alcan
 		icon = GFX_focus_generic_aluminum
-		x = 3
+		x = 2
 		y = 1
 		relative_position_id = CAN_bank_of_canada
 
@@ -2659,7 +2655,7 @@ focus_tree = {
 	focus = {
 		id = CAN_appoint_air_chief
 		icon = GFX_focus_generic_pilot_training
-		x = 5
+		x = 4
 		y = 1
 		relative_position_id = CAN_start_the_expansion_of_the_rcaf
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_POLITICAL }
@@ -2842,7 +2838,7 @@ focus_tree = {
 		id = CAN_toronto_island_airport
 		icon = GFX_focus_generic_air_bases
 		relative_position_id = CAN_start_the_expansion_of_the_rcaf
-		x = 3
+		x = 2
 		y = 1
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -2936,7 +2932,7 @@ focus_tree = {
 		id = CAN_rcaf_womens_division
 		icon = GFX_focus_SOV_women_in_aviation
 		relative_position_id = CAN_eastern_air_command
-		x = -1
+		x = 1
 		y = 1
 		
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -2958,11 +2954,8 @@ focus_tree = {
 				threat > 0.25
 			}
 		}
-		
-
 
 		available_if_capitulated = yes
-
 
 		completion_reward = {
 			air_experience = 25
@@ -3036,17 +3029,15 @@ focus_tree = {
 	focus = {
 		id = CAN_rcaf_station_borden # RADAR STATIONS
 		icon = GFX_focus_generic_energy
-		dynamic = yes
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		relative_position_id = CAN_rcaf_womens_division
-		x = 1
-		y = 1
+		relative_position_id = CAN_toronto_island_airport
+		x = 0
+		y = 2
 		cost = 5
 		
 		prerequisite = {
-			focus = CAN_rcaf_womens_division
-			focus = CAN_toronto_air_command
+			focus = CAN_toronto_island_airport
 		}
 
 		ai_will_do = {
@@ -3113,14 +3104,15 @@ focus_tree = {
 	focus = {
 		id = CAN_toronto_air_command # ANTI AIR
 		icon = GFX_focus_PRC_anti_air_effort
-		relative_position_id = CAN_toronto_island_airport
+		relative_position_id = CAN_start_the_expansion_of_the_rcaf
 		x = 0
-		y = 1
+		y = 3
 
 		cost = 10
 		
 		prerequisite = {
-			focus = CAN_toronto_island_airport
+			focus = CAN_western_air_command
+			focus = CAN_eastern_air_command
 		}
 
 		ai_will_do = {
@@ -3221,7 +3213,7 @@ focus_tree = {
 		id = CAN_canadian_car_and_foundry
 		icon = GFX_focus_generic_aircraft_production
 		relative_position_id = CAN_hurricane
-		x = 0
+		x = 1
 		y = 1
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -3230,6 +3222,9 @@ focus_tree = {
 		
 		prerequisite = {
 			focus = CAN_hurricane
+		}
+		prerequisite = {
+			focus = CAN_cas_support
 		}
 
 		ai_will_do = {
@@ -3316,8 +3311,8 @@ focus_tree = {
 	focus = {
 		id = CAN_victory_aircraft_company
 		icon = GFX_goal_generic_air_heavy_fighter_new
-		relative_position_id = CAN_rcaf_station_borden
-		x = -1
+		relative_position_id = CAN_canadian_car_and_foundry
+		x = 3
 		y = 1
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
@@ -3578,7 +3573,7 @@ focus_tree = {
 		id = CAN_sorel_industries_naval_artillery
 		icon = GFX_focus_generic_battleship_guns
 		prerequisite = { focus = CAN_sorel_shipyards }
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = CAN_sorel_shipyards
 
@@ -3791,7 +3786,7 @@ focus_tree = {
 		id = CAN_reopen_toronto_shipyards
 		icon = GFX_focus_POL_develop_polish_shipbuilding
 		relative_position_id = CAN_sorel_shipyards
-		x = 0
+		x = 1
 		y = 1
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -3838,7 +3833,7 @@ focus_tree = {
 		id = CAN_focus_on_destroyers
 		icon = GFX_focus_generic_destroyer
 		relative_position_id = CAN_rebuilding_the_royal_canadian_navy
-		x = 1
+		x = 2
 		y = 1
 		
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP }
@@ -3935,7 +3930,7 @@ focus_tree = {
 		id = CAN_merchant_fleet
 		icon = GFX_focus_generic_merchant_fleet
 		relative_position_id = CAN_protect_atlantic_shipping
-		x = 0
+		x = -1
 		y = 1
 		
 		cost = 5
@@ -3967,7 +3962,7 @@ focus_tree = {
 		id = CAN_fight_the_uboats
 		icon = GFX_goal_generic_navy_anti_submarine
 		relative_position_id = CAN_protect_atlantic_shipping
-		x = 2
+		x = 1
 		y = 1
 		
 
@@ -4068,8 +4063,8 @@ focus_tree = {
 	focus = {
 		id = CAN_expand_the_navy # EXPAND THE NAVAL COLLEGE
 		icon = GFX_focus_generic_naval_discipline
-		relative_position_id = CAN_halifax_shipyards
-		x = 2
+		relative_position_id = CAN_rebuilding_the_royal_canadian_navy
+		x = 0
 		y = 1
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH }
@@ -4077,8 +4072,7 @@ focus_tree = {
 		cost = 5
 	
 		prerequisite = {
-			focus = CAN_halifax_shipyards
-			focus = CAN_focus_on_destroyers
+			focus = CAN_rebuilding_the_royal_canadian_navy
 		}
 		
 		ai_will_do = {
@@ -4178,25 +4172,6 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = CAN_support_ships	
-			custom_effect_tooltip = generic_skip_one_line_tt
-			if = {
-				limit = { 
-					has_tech = tech_marine_bonus_2
-				}
-				hidden_effect = {
-					set_technology = {
-						tech_marine_bonus = 1
-						popup = no
-					}
-				}
-				effect_tooltip = {
-					custom_effect_tooltip = tech_marine_bonus_combined_tt
-					enable_tech_marine_bonus_combined = yes
-				}
-			}
-			else = {
-				enable_tech_marine_bonus = yes
-			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			complete_special_project = {
 				project = sp:sp_naval_support_ships
@@ -4352,11 +4327,29 @@ focus_tree = {
 				technology = amphibious_mechanized_infantry_2
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = { 
+					has_tech = tech_marine_bonus_2
+				}
+				hidden_effect = {
+					set_technology = {
+						tech_marine_bonus = 1
+						popup = no
+					}
+				}
+				effect_tooltip = {
+					custom_effect_tooltip = tech_marine_bonus_combined_tt
+					enable_tech_marine_bonus_combined = yes
+				}
+			}
+			else = {
+				enable_tech_marine_bonus = yes
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = CAN_expert_marines_1
 				add_idea = CAN_expert_marines_2
 			}
-			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = CAN_navy
@@ -4444,7 +4437,6 @@ focus_tree = {
 			add_stability = 0.05
 			add_political_power = 25
 			custom_effect_tooltip = generic_skip_one_line_tt
-			
 			USA = {
 				add_opinion_modifier = {
 					target = QUE
@@ -4462,14 +4454,14 @@ focus_tree = {
 	
 	focus = {
 		id = CAN_governor_general_in_power
-		icon = GFX_goal_generic_army_elite
+		icon = GFX_focus_generic_secret_agent_operative
 		relative_position_id = CAN_trust_in_the_commonwealth
 		x = -7
 		y = 1
 		
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		cost = 10
+		cost = 5
 		
 		ai_will_do = {
 			factor = 6
@@ -4479,49 +4471,14 @@ focus_tree = {
 			focus = CAN_strengthen_british_ties
 		}
 		
-		available = {
-			ENG = {
-				has_government = neutrality
-			}
-			OR = {
-				is_subject_of = ENG
-				is_in_faction_with = ENG
-				has_country_flag = britain_enforced_our_loyalty
-			}
-		}
 		completion_reward = {
-			set_politics = {
-				ruling_party = neutrality
-				elections_allowed = no
-			}
-			set_party_name = {
-				ideology = neutrality
-				name = "Imperial Loyalists"
-				long_name = "Imperial Loyalists"
-			}
-			if = {
-				limit = {
-					OR = {
-						date > 1940.2.11
-						has_country_flag = can_john_buchan_death
-					}
-				}
-				create_country_leader = {
-					name = "Alexander Cambridge"
-					picture = "gfx/leaders/CAN/portrait_CAN_Alexander_Cambridge.dds"
-					expire = "1965.1.1"
-					ideology = oligarchism
-					traits = {
-						governor_general
-					}
-				}
-			}
+			add_ideas = CAN_security_establishment_1
 		}
 	}
 	
 	focus = {
-		id = CAN_empower_the_military_faction
-		icon = GFX_goal_generic_army
+		id = CAN_empower_the_military_faction # EXCHANGE INTEL WITH GREENLAND
+		icon = GFX_focus_AUS_seek_to_purchase_alaska
 		relative_position_id = CAN_governor_general_in_power
 		x = -1
 		y = 1
@@ -4537,26 +4494,29 @@ focus_tree = {
 		prerequisite = {
 			focus = CAN_governor_general_in_power
 		}
-		
-		available = {
-			has_government = neutrality
-			OR = {
-				is_subject_of = ENG
-				is_in_faction_with = ENG
-			}
-		}
+
 		completion_reward = {
-			army_experience = 25
-			add_popularity = {
-				ideology = neutrality
-				popularity = 0.1
+			add_intel = {
+				target = W63
+				civilian_intel = 20
+				army_intel = 20
+				navy_intel = 20
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			W36 = {
+				add_intel = {
+					target = W63
+					civilian_intel = 20
+					army_intel = 20
+					navy_intel = 20
+				}
 			}
 		}
 	}
 	
 	focus = {
 		id = CAN_integrate_the_canadian_cadet_corps
-		icon = GFX_goal_small_infantry
+		icon = GFX_focus_CZE_second_fortification_program
 		relative_position_id = CAN_empower_the_military_faction
 		x = -1
 		y = 1
@@ -4572,27 +4532,21 @@ focus_tree = {
 		prerequisite = {
 			focus = CAN_empower_the_military_faction
 		}
-		
-		available = {
-			has_government = neutrality
-			OR = {
-				is_subject_of = ENG
-				is_in_faction_with = ENG
-			}
-		}
+
 		completion_reward = {
-			add_political_power = 100
-			add_popularity = {
-				ideology = neutrality
-				popularity = 0.05
+			add_tech_bonus = {
+				name = CAN_integrate_the_canadian_cadet_corps
+				bonus = 0.5
+				uses = 2
+				category = cat_fortification
+				category = engineers_tech
 			}
-			add_ideas = CAN_canadian_cadet_corps_idea
 		}
 	}
 	
 	focus = {
-		id = CAN_root_out_traitors
-		icon = GFX_goal_generic_army_purges
+		id = CAN_root_out_traitors # BUY OFF COLONIAL ADMINISTRATORS
+		icon = GFX_focus_RAJ_go_into_hiding
 		relative_position_id = CAN_governor_general_in_power
 		x = 1
 		y = 1
@@ -4608,32 +4562,25 @@ focus_tree = {
 		prerequisite = {
 			focus = CAN_governor_general_in_power
 		}
-		
-		available = {
-			has_government = neutrality
-			OR = {
-				is_subject_of = ENG
-				is_in_faction_with = ENG
-			}
-		}
+
 		completion_reward = {
-			add_political_power = 50
-			add_popularity = {
-				ideology = neutrality
-				popularity = 0.2
+			add_political_power = -50
+			custom_effect_tooltip = generic_skip_one_line_tt
+			W63 = {
+				add_war_support = -0.05
+				add_popularity = {
+					ideology = democratic
+					popularity = -0.05
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				add_manpower = -3000
 			}
-			add_popularity = {
-				ideology = democratic
-				popularity = -0.1
-			}
-			add_stability = -0.05
 		}
 	}
 	
 	focus = {
 		id = CAN_god_save_the_king
-		text = ENG_god_save_the_king
-		icon = GFX_focus_eng_god_save_the_king
+		icon = GFX_focus_generic_total_war
 		relative_position_id = CAN_governor_general_in_power
 		x = 0
 		y = 2
@@ -4641,6 +4588,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 
 		cost = 10
+
+		will_lead_to_war_with = W63
 		
 		ai_will_do = {
 			factor = 6
@@ -4653,35 +4602,38 @@ focus_tree = {
 		prerequisite = {
 			focus = CAN_root_out_traitors
 		}
+
+		bypass = {
+			has_war_with = W63
+		}
 		
 		available = {
-			has_government = neutrality
-			OR = {
-				is_subject_of = ENG
-				is_in_faction_with = ENG
+			W63 = {
+				exists = yes
 			}
+			can_declare_war_on = W63
 		}
 		
 		completion_reward = {
-			add_popularity = {
-				ideology = neutrality
-				popularity = 0.1
-			}
 			add_war_support = 0.1
+			custom_effect_tooltip = generic_skip_one_line_tt
+			declare_war_on = {
+				target = W63
+				type = take_core_state
+			}
 		}
 	}
 	
 	focus = {
 		id = CAN_ask_for_newfoundland_and_labrador_gg
-		text = CAN_ask_for_newfoundland_and_labrador
-		icon = GFX_goal_CAN_newfoundland_labrador
+		icon = GFX_focus_generic_population_growth
 		relative_position_id = CAN_god_save_the_king
 		x = -1
 		y = 1
 		
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
-		cost = 10
+		cost = 5
 		
 		ai_will_do = {
 			factor = 11
@@ -4693,61 +4645,19 @@ focus_tree = {
 		}
 		
 		available = {
-			has_government = neutrality
-			OR = {
-				is_subject_of = ENG
-				is_in_faction_with = ENG
+			W63 = {
+				exists = no
 			}
 		}
-		
-		bypass = {
-			owns_state = 331
-			owns_state = 332
-		}
+
 		completion_reward = {
-			every_other_country = {
-				limit = { 
-					owns_state = 331
-					owns_state = 332
-				}
-				country_event = canada.9
-			}
-			if = {
-				limit = {
-					any_other_country = {
-						OR = {
-							owns_state = 331
-							owns_state = 332
-						}
-						NOT = {
-							AND = {
-								owns_state = 331
-								owns_state = 332
-							}
-						}
-					}
-				}
-				331 = {
-					owner = {
-						CAN = {
-							create_wargoal = {
-								type = take_state_focus
-								target = PREV
-								generator = { 331 }
-							}
-						}
-					}
-				}
-				332 = {
-					owner = {
-						CAN = {
-							create_wargoal = {
-								type = take_state_focus
-								target = PREV
-								generator = { 332 }
-							}
-						}
-					}
+			random_owned_controlled_state = {
+				add_manpower = 50000
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
 				}
 			}
 		}
@@ -4755,14 +4665,14 @@ focus_tree = {
 	
 	focus = {
 		id = CAN_the_defense_of_canada
-		icon = GFX_goal_generic_city_chain_forts
+		icon = GFX_focus_RAJ_war_taxes
 		relative_position_id = CAN_god_save_the_king
 		x = 1
 		y = 1
 		
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
 
-		cost = 10
+		cost = 5
 		
 		ai_will_do = {
 			factor = 6
@@ -4771,219 +4681,47 @@ focus_tree = {
 		prerequisite = {
 			focus = CAN_god_save_the_king
 		}
-		
+
 		available = {
-			has_government = neutrality
-			OR = {
-				is_subject_of = ENG
-				is_in_faction_with = ENG
+			W63 = {
+				exists = no
 			}
 		}
+
 		completion_reward = {
-			add_ideas = CAN_the_defense_of_canada_idea
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_resource = {
+					type = steel
+					amount = 8
+				}
+				add_resource = {
+					type = coal
+					amount = 4
+				}
+				add_resource = {
+					type = oil
+					amount = 2
+				}
+			}
 		}
 	}
 	
 	focus = {
-		id = CAN_claims_on_america
-		icon = GFX_focus_spa_the_war_of_vengeance
-		relative_position_id = CAN_the_defense_of_canada
-		x = -3
-		y = 1
-		
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
-		cost = 10
-		
-		ai_will_do = {
-			factor = 10
-		}
-
-		
-		prerequisite = {
-			focus = CAN_the_defense_of_canada
-		}
-	
-		
-		mutually_exclusive = {
-			
-        }
-		
-		available = {
-			has_government = neutrality
-			OR = {
-				is_subject_of = ENG
-				is_in_faction_with = ENG
-			}
-		}
-		
-
-
-		available_if_capitulated = yes
-
-
-	    completion_reward = {
-			add_state_claim = 463
-			add_state_claim = 386
-			add_state_claim = 385
-			add_state_claim = 357
-			add_state_claim = 921
-			add_state_claim = 990
-			add_state_claim	= 991
-			add_state_claim	= 992
-			add_state_claim = 993
-			custom_effect_tooltip = CAN_claims_on_america_tt
-		}
-	}	
-	
-	focus = {
-		id = CAN_defence_scheme_no1_gg
-		text = CAN_defence_scheme_no1
-		icon = GFX_goal_CAN_scheme_no1
-		relative_position_id = CAN_the_defense_of_canada
-		x = -1
-		y = 1
-		
-		search_filters = { FOCUS_FILTER_MILITARY_IMPROVEMENT FOCUS_FILTER_POLITICAL }
-
-		cost = 10
-		
-		ai_will_do = {
-			factor = 10
-		}
-
-		
-		prerequisite = {
-			focus = CAN_the_defense_of_canada
-		}
-	
-		
-		mutually_exclusive = {
-			
-        }
-		
-		available = {
-			has_government = neutrality
-			OR = {
-				is_subject_of = ENG
-				is_in_faction_with = ENG
-			}
-		}
-		
-
-
-		available_if_capitulated = yes
-
-
-	    completion_reward = {
-			unlock_decision_tooltip = { 
-				decision = CAN_defence_scheme_no1
-				show_effect_tooltip = yes 
-				show_modifiers = yes 
-			}
-		}
-	}	
-	
-	focus = {
-		id = CAN_national_defense_funding
-		icon = GFX_focus_generic_tank_production
-		relative_position_id = CAN_the_defense_of_canada
-		x = 1
-		y = 1
-		
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		cost = 10
-		
-		ai_will_do = {
-			factor = 10
-		}
-
-		
-		prerequisite = {
-			focus = CAN_the_defense_of_canada
-		}
-	
-		
-		mutually_exclusive = {
-			
-        }
-		
-		available = {
-			has_government = neutrality
-			OR = {
-				is_subject_of = ENG
-				is_in_faction_with = ENG
-			}
-		}
-		
-
-
-		available_if_capitulated = yes
-
-
-	    completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}	
-	
-	focus = {
 		id = CAN_shadow_factories
-		icon = GFX_goal_generic_military_factories
+		icon = GFX_focus_AFG_scavenging
 		relative_position_id = CAN_trust_in_the_commonwealth
 		x = -1
 		y = 2
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-		cost = 10
+		cost = 5
 		
 		ai_will_do = {
 			factor = 6
@@ -4994,8 +4732,9 @@ focus_tree = {
 		}
 		
 		available = {
-			is_in_faction_with = ENG
-			ENG = { has_government = ROOT }
+			USA = {
+				exists = yes
+			}
 		}
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -5006,12 +4745,11 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction =  {
-					type = arms_factory
-					level = 1
-					instant_build = yes
+			custom_effect_tooltip = generic_skip_one_line_tt
+			USA = {
+				add_timed_idea = {
+					idea = CAN_kustlander_arms_smuggling
+					days = 180
 				}
 			}
 		}
@@ -5019,14 +4757,14 @@ focus_tree = {
 		
 	focus = {
 		id = CAN_permanent_joint_defence_board
-		icon = GFX_goal_CAN_pjnd
+		icon = GFX_focus_NORDIC_dem_institution_1
 		relative_position_id = CAN_trust_in_the_commonwealth
 		x = 1
 		y = 2
 		
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY_XP FOCUS_FILTER_AIR_XP FOCUS_FILTER_NAVY_XP }
 
-		cost = 10
+		cost = 5
 		
 		ai_will_do = {
 			factor = 4
@@ -5045,18 +4783,13 @@ focus_tree = {
 				bonus = 0.05
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
-			QUE = {
-				modify_tech_sharing_bonus = {
-					id = AMERIKAN_DEFENCE_COLLECTIVE_tech_sharing_group
-					bonus = 0.05
-				}
-			}
 			USA = {
 				modify_tech_sharing_bonus = {
 					id = AMERIKAN_DEFENCE_COLLECTIVE_tech_sharing_group
 					bonus = 0.05
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			X63 = {
 				modify_tech_sharing_bonus = {
 					id = AMERIKAN_DEFENCE_COLLECTIVE_tech_sharing_group
@@ -5068,7 +4801,7 @@ focus_tree = {
 	
 	focus = {
 		id = CAN_first_special_service_force
-		icon = GFX_goal_generic_special_forces
+		icon = GFX_focus_NORDIC_dem_army
 		relative_position_id = CAN_shadow_factories
 		x = 2
 		y = 2
@@ -5086,17 +4819,32 @@ focus_tree = {
 			factor = 5
 		}
 		completion_reward = {
+			army_experience = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = special_forces_bonus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
-				category = marine_tech
-				category = para_tech
+				category = cat_special_forces_generic
 			}
-			if = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_doctrine_cost_reduction = {
+				name = CAN_first_special_service_force
+				cost_reduction = 0.5
+				uses = 1
+				category = special_forces_doctrine
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			USA = {
+				army_experience = 25
+				custom_effect_tooltip = generic_skip_one_line_tt
+				add_tech_bonus = {
+					name = special_forces_bonus
+					bonus = 0.5
+					uses = 2
+					category = cat_special_forces_generic
 				}
+				custom_effect_tooltip = generic_skip_one_line_tt
 				add_doctrine_cost_reduction = {
 					name = CAN_first_special_service_force
 					cost_reduction = 0.5
@@ -5104,30 +4852,39 @@ focus_tree = {
 					category = special_forces_doctrine
 				}
 			}
-			else = {
+			custom_effect_tooltip = generic_skip_one_line_tt
+			X63 = {
+				army_experience = 25
+				custom_effect_tooltip = generic_skip_one_line_tt
 				add_tech_bonus = {
 					name = special_forces_bonus
 					bonus = 0.5
+					uses = 2
+					category = cat_special_forces_generic
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				add_doctrine_cost_reduction = {
+					name = CAN_first_special_service_force
+					cost_reduction = 0.5
 					uses = 1
-					category = special_forces_training_tech 
-				}	
+					category = special_forces_doctrine
+				}
 			}			
 		}
 	}
 		
 	focus = {
-		id = CAN_frogmen_of_burma
-		icon = GFX_goal_CAN_commando
+		id = CAN_frogmen_of_burma # HIRE PRUSSIAN ENGINEERS
+		icon = GFX_focus_NORDIC_dem_capstone_navy
 		relative_position_id = CAN_shadow_factories
 		x = 0
-		y = 3
+		y = 2
 		
 		search_filters = { FOCUS_FILTER_MILITARY_IMPROVEMENT FOCUS_FILTER_RESEARCH }
 
-		cost = 10
+		cost = 5
 		
 		prerequisite = {
-			focus = CAN_first_special_service_force
 			focus = CAN_shadow_factories
 		}
 
@@ -5137,81 +4894,31 @@ focus_tree = {
 		
 		available = {
 			has_war = yes
-			is_in_faction_with = ENG
+			is_in_faction_with = PRE
 		}
 		completion_reward = {
-			custom_effect_tooltip = frogmen_of_burma_tt
-			if = {
+			add_timed_idea = {
+				idea = CAN_engineering_expertise
+				days = 365
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			random_owned_controlled_state = {
 				limit = {
-					NOT = { has_tech = marines }
+					is_core_of = root
 				}
-				set_technology = { marines = 1 }
-			}
-			set_technology = { CAN_frogmen_tech = 1 }
-			add_tech_bonus = {
-				name = CAN_frogmen_of_burma
-				bonus = 1.5
-				uses = 1
-				category = marine_tech
-			}	
-			if = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				add_doctrine_cost_reduction = {
-					name = CAN_frogmen_of_burma
-					cost_reduction = 0.4
-					uses = 1
-					category = cat_marines_doctrine
-					
-				}				
-			}
-			else = {
-				add_tech_bonus = {
-			            name = CAN_frogmen_of_burma
-			            bonus = 1.0
-			            uses = 1
-			            category = special_forces_training_tech 
-			    }	
-			}
-			hidden_effect = {
-				division_template = {
-					name = "Frogmen"
-					priority = 1
-	
-					regiments = {
-						marine = { x = 0 y = 0 }
-						marine = { x = 0 y = 1 }
-						marine = { x = 0 y = 2 }
-						marine = { x = 0 y = 3 }
-						marine = { x = 0 y = 4 }
-							
-						marine = { x = 1 y = 0 }
-						marine = { x = 1 y = 1 }
-						marine = { x = 1 y = 2 }
-						marine = { x = 1 y = 3 }
-						marine = { x = 1 y = 4 }
-					}
-					
-					support = {
-						recon = { x = 0 y = 0 }
-						engineer = { x = 0 y = 1 }
-					}
-				}
-				466 = {
-					create_unit = {
-						division = "name = \"Frogmen of Burma\" division_template = \"Frogmen\" start_experience_factor = 0.9" 
-						owner = ROOT
-					}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction =  {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
 				}
 			}
-			unlock_decision_tooltip = { decision = cite_a_marine_unit show_effect_tooltip = yes } 
 		}
 	}
-		
+
 	focus = {
 		id = CAN_montreal_laboratory
-		icon = GFX_goal_CAN_montreal_lab
+		icon = GFX_focus_NORDIC_dem_research
 		relative_position_id = CAN_shadow_factories
 		x = 1
 		y = 1
@@ -5236,8 +4943,6 @@ focus_tree = {
 
 		
 		completion_reward = {
-			custom_effect_tooltip = available_industrial_concern
-			show_ideas_tooltip = montreal_lab
 			IF = {
 				limit = {
 					NOT = {
@@ -5250,6 +4955,7 @@ focus_tree = {
 					uses = 1
 					category = nuclear
 				}
+				custom_effect_tooltip = generic_skip_one_line_tt
 				add_breakthrough_progress = {
 					specialization = specialization_nuclear
 					value = 0.5
@@ -5262,17 +4968,56 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
-			ROOT = {
-				every_scientist = {
+			USA = {
+				IF = {
 					limit = {
-						has_scientist_level = {
-							specialization = specialization_nuclear
-							level > 0
+						NOT = {
+							has_tech = atomic_research
 						}
 					}
-					add_scientist_xp = {
-						experience = 100
+					add_tech_bonus = {
+						name = CAN_montreal_laboratory
+						bonus = 1.0
+						uses = 1
+						category = nuclear
+					}
+					custom_effect_tooltip = generic_skip_one_line_tt
+					add_breakthrough_progress = {
 						specialization = specialization_nuclear
+						value = 0.5
+					}
+				}
+				ELSE = {
+					add_breakthrough_progress = {
+						specialization = specialization_nuclear
+						value = 0.8
+					}
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			X63 = {
+				IF = {
+					limit = {
+						NOT = {
+							has_tech = atomic_research
+						}
+					}
+					add_tech_bonus = {
+						name = CAN_montreal_laboratory
+						bonus = 1.0
+						uses = 1
+						category = nuclear
+					}
+					custom_effect_tooltip = generic_skip_one_line_tt
+					add_breakthrough_progress = {
+						specialization = specialization_nuclear
+						value = 0.5
+					}
+				}
+				ELSE = {
+					add_breakthrough_progress = {
+						specialization = specialization_nuclear
+						value = 0.8
 					}
 				}
 			}
@@ -5299,11 +5044,7 @@ focus_tree = {
 		}
 		
 		available = {
-			is_in_faction_with = ENG
-			ENG = { 
-			has_government = ROOT 
-			has_completed_focus = tizard_mission_focus
-			}
+			is_in_faction_with = PRE
 		}
 		
 
@@ -5312,268 +5053,54 @@ focus_tree = {
 
 
 		completion_reward = {
-			custom_effect_tooltip = available_industrial_concern
-			show_ideas_tooltip = CAN_research_enterprises_ltd
-			 custom_effect_tooltip = generic_skip_one_line_tt
-			add_tech_bonus = {
-                name = radar_focus
-                bonus = 1
-				uses = 1
-				category = radar_tech
-            }
-            custom_effect_tooltip = generic_skip_one_line_tt
-			add_breakthrough_progress = {
-				specialization = specialization_air
-				value = 0.25
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-            add_ideas = generic_radar_idea
-		}
-	}
-		
-	focus = {
-		id = CAN_commonwealth_air_training_plan
-		icon = GFX_goal_generic_airport
-		relative_position_id = CAN_trust_in_the_commonwealth
-		x = -3
-		y = 1
-		
-		search_filters = { FOCUS_FILTER_MILITARY_IMPROVEMENT FOCUS_FILTER_INDUSTRY }
-
-		cost = 10
-		
-		ai_will_do = {
-			factor = 10
-		}
-		
-		prerequisite = {
-			focus = CAN_trust_in_the_commonwealth
-			focus = CAN_strengthen_british_ties
-		}
-		
-		available = {
-			is_in_faction_with = ENG
-			ENG = { has_government = ROOT }
-			has_war = yes
-		}
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = CAN_cwatp
-			custom_effect_tooltip = generic_skip_one_line_tt
-			custom_effect_tooltip = available_military_high_command
-			show_ideas_tooltip = CAN_raymond_collishaw
-			if = {
-				limit = {
-					owns_state = 467
-				}
-				467 = {
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
+			custom_effect_tooltip = CAN_every_faction_member_completes_the_following
+			effect_tooltip = {
+				if = {
+					limit = {
+						NOT = { is_special_project_completed = sp:sp_air_radar }
+					}
+					complete_special_project = {
+						project = sp:sp_air_radar
+						show_modifiers = no
 					}
 				}
 			}
-			if = {
-				limit = {
-					OR = {
-						owns_state = 468
-						AND = {
-							QUE = { exists = yes }
-							QUE = { is_subject_of = CAN }
+			hidden_effect = {
+				every_allied_country = {
+					if = {
+						limit = {
+							NOT = { is_special_project_completed = sp:sp_air_radar }
+							is_in_faction_with = root
+						}
+						complete_special_project = {
+							project = sp:sp_air_radar
+							show_modifiers = no
 						}
 					}
 				}
-				468 = {
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					owns_state = 469
-				}
-				469 = {
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}
-				}
-			}
-		}
-	}		
-		
-	focus = {
-		id = CAN_build_fighters_for_the_empire
-		icon = GFX_goal_generic_air_production
-		relative_position_id = CAN_commonwealth_air_training_plan
-		x = 0
-		y = 1
-		
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		cost = 10
-		
-		ai_will_do = {
-			factor = 10
-		}
-		
-		prerequisite = {
-			focus = CAN_commonwealth_air_training_plan
-		}
-		
-		available = {
-			is_in_faction_with = ENG
-			ENG = { has_government = ROOT }
-			has_war = yes
-		}
-		
-
-
-		available_if_capitulated = yes
-
-
-		completion_reward = {
-			add_ideas = CAN_fighters
-		}
-	}
-	
-	focus = {
-		id = CAN_british_ships
-		icon = GFX_goal_navy_funding
-		relative_position_id = CAN_trust_in_the_commonwealth
-		x = -5
-		y = 1
-		
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		cost = 10
-		
-		ai_will_do = {
-			factor = 9
-		}
-		
-		prerequisite = {
-			focus = CAN_strengthen_british_ties
-			#focus = CAN_trust_in_the_commonwealth
-		}
-		
-		available = {
-			is_in_faction_with = ENG
-			ENG = { has_government = ROOT }
-			has_war = yes
-		}
-		completion_reward = {
-			custom_effect_tooltip = CAN_transfer_ships_tt
-			ENG = {
-				transfer_ship = {
-					prefer_name = "HMS Kempenfelt"
-					type = destroyer
-					target = CAN
-				}
-				transfer_ship = {
-					prefer_name = "HMS Crescent"
-					type = destroyer
-						target = CAN
-				}
-				transfer_ship = {
-					prefer_name = "HMS Crusader"
-					type = destroyer
-						target = CAN
-				}
-				transfer_ship = {
-					prefer_name = "HMS Comet"
-					type = destroyer
-						target = CAN
-				}
-				transfer_ship = {
-					prefer_name = "HMS Cygnet"
-					type = destroyer
-					target = CAN
-				}
-				transfer_ship = {
-					prefer_name = "HMS Diana"
-					type = destroyer
-					target = CAN
-				}
 			}
 		}
 	}
-		
-	focus = {
-		id = CAN_construct_the_cape_spear_forts
-		icon = GFX_goal_generic_fortification
-		relative_position_id = CAN_british_ships
-		x = 1
-		y = 2
-		
-		cost = 10
-		
-		ai_will_do = {
-			factor = 5
-		}
-		
-		prerequisite = {
-			focus = CAN_british_ships
-			focus = CAN_commonwealth_air_training_plan
-		}
-		
-		available = {
-			is_in_faction_with = ENG
-			ENG = { has_government = ROOT }
-			has_war = yes
-			OR = {
-				owns_state = 331
-				ENG = { owns_state = 331 }
-			}
-		}		completion_reward = {
-			331 = {
-				add_building_construction = {
-					type = coastal_bunker
-					level = 2
-					province = 12505
-					instant_build = yes
-				}
-			}
-			add_autonomy_ratio = {
-				value = 0.05
-				localization = CAN_construct_the_cape_spear_forts
-			}
-		}
-	}
-		
+
 	focus = {
 		id = CAN_CAMP_X
 		icon = GFX_goal_CAN_CAMP_X
-		relative_position_id = CAN_construct_the_cape_spear_forts
-		x = 1
+		relative_position_id = CAN_tizard_visit
+		x = 0
 		y = 1
 
-		cost = 10
+		cost = 5
 		
 		ai_will_do = {
 			factor = 5
 		}
 		
 		prerequisite = {
-			focus = CAN_construct_the_cape_spear_forts
 			focus = CAN_tizard_visit
 		}
 		
 		available = {
-			is_in_faction_with = ENG
-			ENG = { has_government = ROOT }
-			has_war = yes
-			OR = {
-				owns_state = 331
-				ENG = { owns_state = 331 }
-			}
+			is_in_faction_with = PRE
 		}
 		
 
@@ -5582,73 +5109,12 @@ focus_tree = {
 
 
 		completion_reward = {
-			if = {
-				limit = {
-					NOT = { has_dlc = "La Resistance" }
-				}
-				add_tech_bonus = {
-					name = CAN_CAMP_X
-					bonus = 1.0
-					uses = 1
-						category = computing_tech
-				}
-			}
-			else = {
-				add_ideas = CAN_CAMP_X_idea
-			}
-		}
-		search_filters = { FOCUS_FILTER_ESPIONAGE }
-	}
-		
-	focus = {
-		id = CAN_hydra
-		icon = GFX_goal_generic_engineering
-		relative_position_id = CAN_CAMP_X
-		x = 0
-		y = 1
-
-		cost = 10
-		
-		ai_will_do = {
-			factor = 5
-		}
-		
-		prerequisite = {
-			focus = CAN_CAMP_X
-		}
-		
-		available = {
-			is_in_faction_with = ENG
-			ENG = { has_government = ROOT }
-			has_war = yes
-			OR = {
-				owns_state = 331
-				ENG = { owns_state = 331 }
-			}
-		}
-		
-
-
-		available_if_capitulated = yes
-
-
-		completion_reward = {
-			if = {
-				limit = {
-					NOT = { has_dlc = "La Resistance" }
-				}
-				add_tech_bonus = {
-					name = CAN_hydra
-					bonus = 1.0
-					uses = 1
-					category = decryption_tech
-				}
-			}
-			else = {
-				hidden_effect = {
-					set_technology = { lar_decryption_bonus_tech = 1 }
-				}
-				custom_effect_tooltip = lar_decryption_bonus_tt	
+			add_tech_bonus = {
+				name = CAN_CAMP_X
+				bonus = 0.5
+				uses = 3
+				category = decryption_tech
+				category = encryption_tech
 			}
 		}
 		search_filters = { FOCUS_FILTER_ESPIONAGE }
@@ -5656,8 +5122,7 @@ focus_tree = {
 	
 	focus = {
 		id = CAN_strengthen_british_ties
-		#text = AST_strengthen_british_ties
-		icon = GFX_focus_chi_british_cooperation
+		icon = GFX_focus_GER_rally_the_industrialists
 		x = -4
 		y = 0
 		relative_position_id = CAN_trust_in_the_commonwealth
@@ -5670,27 +5135,22 @@ focus_tree = {
 
 		available = {
 			OR = {
-				is_subject_of = ENG
-				AND = {
-					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
-				}
-				ENG = {
-					has_government = ROOT
+				is_subject_of = PRE
+				is_in_faction_with = PRE
+				PRE = {
+					has_opinion = {
+						target = root
+						value = 50
+					}
 				}
 			}
 		}
 		
 
 
-				completion_reward = {
+		completion_reward = {
 			add_stability = 0.05
-			ENG = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = AST_strengthened_british_ties
-				}
-			}
+			add_political_power = 50
 		}
 		search_filters = { FOCUS_FILTER_STABILITY }
 	}
