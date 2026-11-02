@@ -21,14 +21,10 @@ GER_porsche_organization = {
 	
 	allowed = {	
 		OR = {
-			OR = { original_tag = GER original_tag = PRE } 
+			original_tag = GER
 			AND = {
 				original_tag = MEX 
 				has_dlc = "Man the Guns"
-			}
-			AND = {
-				original_tag = IRQ 
-				has_dlc = "Graveyard of Empires"
 			}
 			NOR_AAT = yes
 		}
@@ -38,7 +34,7 @@ GER_porsche_organization = {
 		# When in a Foreign MIO, countries need to be at peace with original country
 		IF = {
 			limit = {
-				FROM = { NOT = { OR = { original_tag = GER original_tag = PRE } } }
+				FROM = { NOT = { original_tag = GER } }
 			}
 			FROM = { NOT = { has_war_with = GER } }
 		}
@@ -105,7 +101,7 @@ GER_porsche_organization = {
 		position = { x=@tank_hoesch_X y=@tank_hoesch_Y }
 
 		visible = {
-			FROM = { OR = { original_tag = GER original_tag = PRE } }
+			FROM = { original_tag = GER }
 		}
 
 		available = {
@@ -140,7 +136,7 @@ GER_porsche_organization = {
 		relative_position_id = GER_mio_trait_hoesch_facilities
 
 		visible = {
-			FROM = { OR = { original_tag = GER original_tag = PRE } }
+			FROM = { original_tag = GER }
 		}
 
 		available = {
@@ -173,7 +169,7 @@ GER_porsche_organization = {
 		relative_position_id = generic_mio_trait_one_piece_hull_side_coverings
 
 		visible = {
-			FROM = { OR = { original_tag = GER original_tag = PRE } }
+			FROM = { original_tag = GER }
 		}
 
 		available = {
@@ -204,7 +200,7 @@ GER_porsche_organization = {
 		relative_position_id = generic_mio_trait_one_piece_hull_side_coverings
 
 		visible = {
-			FROM = { OR = { original_tag = GER original_tag = PRE } }
+			FROM = { original_tag = GER }
 		}
 
 		available = {
@@ -234,7 +230,7 @@ GER_porsche_organization = {
 		relative_position_id = generic_mio_trait_simplified_transmission_system
 
 		visible = {
-			FROM = { OR = { original_tag = GER original_tag = PRE } }
+			FROM = { original_tag = GER }
 		}
 
 		available = {
@@ -262,7 +258,7 @@ GER_henschel_organization = {
 	
 	allowed = {	
 		OR = {
-			OR = { original_tag = GER original_tag = PRE } 
+			OR = { original_tag = GER } 
 			AND = {
 				original_tag = BUL
 				has_dlc = "Battle for the Bosporus"
@@ -294,7 +290,7 @@ GER_henschel_organization = {
 		# When in a Foreign MIO, countries need to be at peace with original country
 		IF = {
 			limit = {
-				FROM = { NOT = { OR = { original_tag = GER original_tag = PRE } } }
+				FROM = { NOT = { original_tag = GER } }
 			}
 			FROM = { NOT = { has_war_with = GER } }
 		}
@@ -364,7 +360,7 @@ GER_henschel_organization = {
 		position = { x=@tank_hoesch_X y=@tank_hoesch_Y }  
 		
 		visible = {
-			FROM = { OR = { original_tag = GER original_tag = PRE } }
+			FROM = { original_tag = GER }
 		}
 
 		available = {
@@ -398,7 +394,7 @@ GER_henschel_organization = {
 		position = { x=8 y=0 }
 
 		visible = {
-			FROM = { OR = { original_tag = GER original_tag = PRE } }
+			FROM = { original_tag = GER }
 		}
 
 		available = {
@@ -460,7 +456,7 @@ GER_henschel_organization = {
 		any_parent = { generic_mio_trait_turret_sights }
 
 		visible = {
-			FROM = { OR = { original_tag = GER original_tag = PRE } }
+			FROM = { original_tag = GER }
 		}
 
 		equipment_bonus = {
@@ -503,20 +499,14 @@ GER_man_organization = {
 	icon = GFX_idea_GER_MAN
 	
 	allowed = {	
-		OR = {
-			OR = { original_tag = GER original_tag = PRE } 
-			AND = {
-				original_tag = GRE
-				has_dlc = "Battle for the Bosporus"
-			}
-		}
+		original_tag = GER
 	}
 	
 	available = {
 		# When in a Foreign MIO, countries need to be at peace with original country
 		IF = {
 			limit = {
-				FROM = { NOT = { OR = { original_tag = GER original_tag = PRE } } }
+				FROM = { NOT = { original_tag = GER  } }
 			}
 			FROM = { NOT = { has_war_with = GER } }
 		}
@@ -552,7 +542,7 @@ GER_man_organization = {
 		position = { x=@tank_hoesch_X y=@tank_hoesch_Y }  
 		
 		visible = {
-			FROM = { OR = { original_tag = GER original_tag = PRE } }
+			FROM = { original_tag = GER }
 		}
 
 		available = {
@@ -659,7 +649,7 @@ GER_alkett_organization = {
 	icon = GFX_idea_GER_alkett
 	
 	allowed = {	
-		OR = { original_tag = GER original_tag = PRE } 
+		original_tag = GER
 	}
 
 	tree_header_text = {
@@ -698,7 +688,7 @@ GER_alkett_organization = {
 		position = { x=@tank_hoesch_X y=@tank_hoesch_Y }  
 
 		visible = {
-			FROM = { OR = { original_tag = GER original_tag = PRE } }
+			FROM = { original_tag = GER }
 		}
 
 		available = {
@@ -735,7 +725,7 @@ GER_alkett_organization = {
 		all_parents = { generic_mio_medium_assault_gun_75_mm_43M_tank_gun }
 
 		visible = {
-			FROM = { OR = { original_tag = GER original_tag = PRE } }
+			FROM = { original_tag = GER }
 		}
 
 		available = {
@@ -768,7 +758,7 @@ GER_alkett_organization = {
 		position = { x = 9 y = 1 }
 
 		visible = {
-			FROM = { OR = { original_tag = GER original_tag = PRE } }
+			FROM = { original_tag = GER }
 		}
 
 		available = {
@@ -793,7 +783,7 @@ GER_alkett_organization = {
 		position = { x = 9 y = 2 }
 		
 		visible = {
-			FROM = { OR = { original_tag = GER original_tag = PRE } }
+			FROM = { original_tag = GER }
 		}
 
 		available = {
@@ -829,7 +819,7 @@ GER_daimler_benz_organization = {
 	
 	allowed = {	
 		OR = {
-			OR = { original_tag = GER original_tag = PRE } 
+			original_tag = PRE
 			AND = {
 				original_tag = BRA
 				has_dlc = "Trial of Allegiance"
@@ -844,9 +834,9 @@ GER_daimler_benz_organization = {
 	available = {
 		IF = {
 			limit = {
-				FROM = { NOT = { OR = { original_tag = GER original_tag = PRE } } }
+				FROM = { NOT = { original_tag = PRE } }
 			}
-			FROM = { NOT = { has_war_with = GER } }
+			FROM = { NOT = { has_war_with = PRE } }
 		}
 		IF = {
 			limit = {
@@ -970,7 +960,7 @@ GER_daimler_benz_organization = {
 		position = { x=@tank_hoesch_X y=@tank_hoesch_Y }  
 		
 		visible = {
-			FROM = { OR = { original_tag = GER original_tag = PRE } }
+			FROM = { original_tag = PRE }
 		}
 
 		available = {
@@ -1081,7 +1071,7 @@ GER_deschimag_organization = {
 	}
 	
 	allowed = {	
-		OR = { original_tag = GER original_tag = PRE } 
+		original_tag = PRE
 	}
 
 	add_trait = {  
@@ -1188,7 +1178,7 @@ GER_germaniawerft_organization = {
 	}
 	
 	allowed = {	
-		OR = { original_tag = GER original_tag = PRE } 
+		original_tag = PRE
 	}
 
 	add_trait = {  
@@ -1294,7 +1284,7 @@ GER_blohm_und_voss_organization = {
 	}
 	
 	allowed = {	
-		OR = { original_tag = GER original_tag = PRE } 
+		original_tag = GER
 	}
 
 	add_trait = {  
@@ -1417,7 +1407,7 @@ GER_hdw_organization = {
 	icon = GFX_idea_GER_hdw 
 	
 	allowed = {	
-		OR = { original_tag = GER original_tag = PRE } 
+		original_tag = PRE
 	}
 
 	add_trait = {  
@@ -1575,7 +1565,7 @@ GER_deutsche_werke_organization = {
 	}
 	
 	allowed = {	
-		OR = { original_tag = GER original_tag = PRE } 
+		original_tag = GER
 	}
 
 	add_trait = {  
@@ -1699,7 +1689,7 @@ GER_kriegsmarinewerft_wilhelmshaven_organization = {
 	icon = GFX_idea_GER_kriegsmarinewerft_wilhelmshaven
 	
 	allowed = {	
-		OR = { original_tag = GER original_tag = PRE } 
+		original_tag = GER 
 	}
 
 	add_trait = {  
@@ -1799,7 +1789,7 @@ GER_messerschmitt_organization = {
 	
 	allowed = {	
 		OR = {
-			OR = { original_tag = GER original_tag = PRE }
+			original_tag = GER
 			NOR_AAT = yes 
 		}
 	}

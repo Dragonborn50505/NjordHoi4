@@ -13,22 +13,7 @@ CHI_sino_german_technical_mission_organization = {
 	include = generic_heavy_tank_organization
 	icon = GFX_idea_porsche
 	allowed = {	
-		OR = {
-			original_tag = W41
-			tag = MAN
-		}
-		OR = {
-			NOT = { has_dlc = "No Compromise, No Surrender" }
-			AND = {
-				has_dlc = "No Compromise, No Surrender"
-				NOT = {
-					OR = {
-						tag = CHI
-						tag = PRC
-					}
-				}
-			}
-		} 
+		original_tag = W41
 	}
 	available = {
 		original_tag = W41
@@ -38,11 +23,7 @@ CHI_sino_german_technical_mission_organization = {
 CHI_shanghai_arsenal = {
 	icon = GFX_idea_CHI_shanghai_arsenal
 	allowed = {
-		OR = {
-			original_tag = W41
-			tag = MAN
-			tag = MEN
-		} 
+		original_tag = W41
 		has_dlc = "No Compromise, No Surrender"
 	}
 	available = {
@@ -234,7 +215,7 @@ CHI_ncns_sino_german_technical_mission_organization = {
 	icon = GFX_idea_porsche
 	allowed = {	
 		has_dlc = "No Compromise, No Surrender"
-		original_tag = CHI
+		original_tag = W41
 	}
 	visible = {
 		original_tag = W41
@@ -263,11 +244,7 @@ CHI_jiangnan_shipyard_group_organization = {
 	include = generic_task_force_ship_organization
 	icon = GFX_idea_generic_naval_manufacturer_3
 	allowed = {	
-		OR = {
-			original_tag = W41
-			tag = MAN
-			tag = MEN
-		} 
+		original_tag = W41
 		NOT = { has_dlc = "No Compromise, No Surrender" }
 	}
 	available = {
@@ -280,11 +257,7 @@ CHI_dagu_shipyard_organization = {
 	include = generic_raider_ship_organization
 	icon = GFX_idea_CHI_dagu
 	allowed = {	
-		OR = {
-			original_tag = W41
-			tag = MAN
-			tag = MEN
-		} 
+		original_tag = W41
 		NOT = { has_dlc = "No Compromise, No Surrender" }
 	}
 	available = {
@@ -296,28 +269,15 @@ CHI_kiangnan_shipyard_group_organization_sea = {
 	include = generic_task_force_ship_organization
 	icon = GFX_idea_CHI_kiangnan
 	allowed = {	
-		OR = {
-			original_tag = W41
-			tag = MAN
-			tag = MEN
-		} 
+		original_tag = W41
 		has_dlc = "No Compromise, No Surrender"
 	}
 	available = {
 		IF = {
 			limit = {
-				FROM = { NOT = { original_tag = CHI } }
+				FROM = { NOT = { original_tag = W41 } }
 			}
 			original_tag = W41
-		}
-		IF = {
-			limit = {
-				FROM = { original_tag = CHI }
-			}
-			OR = {
-				owner = { has_completed_focus = CHI_relocate_factories_from_the_coast }
-				owner = { controls_state = CHI.mio_locations^7 } # #613 Shanghai
-			}
 		}
 	}
 
@@ -375,29 +335,11 @@ CHI_dagu_shipyard_organization_sea = {
 	include = generic_raider_ship_organization
 	icon = GFX_idea_CHI_dagu
 	allowed = {	
-		OR = {
-			original_tag = W41
-			tag = MAN
-			tag = MEN
-		} 
+		original_tag = W41
 		has_dlc = "No Compromise, No Surrender"
 	}
 	available = {
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = CHI } }
-			}
-			original_tag = W41
-		}
-		IF = {
-			limit = {
-				FROM = { original_tag = CHI }
-			}
-			OR = {
-				owner = { has_completed_focus = CHI_relocate_factories_from_the_coast }
-				owner = { controls_state = CHI.mio_locations^1 } #608 Beijing
-			}
-		}
+		original_tag = W41
 	}
 
 	add_trait = {
@@ -452,23 +394,7 @@ CHI_camco_medium_organization = {
 	include = generic_medium_aircraft_organization
 	icon = GFX_idea_CHI_camco
 	allowed = {	
-		OR = {
-			original_tag = W41
-			tag = MAN
-		}
-		OR = {
-			original_tag = W41
-			NOT = { has_dlc = "No Compromise, No Surrender" }
-			AND = {
-				has_dlc = "No Compromise, No Surrender"
-				NOT = {
-					OR = {
-						tag = CHI
-						tag = PRC
-					}
-				}
-			}
-		} 
+		original_tag = W41
 	}
 	available = {
 		original_tag = W41
@@ -479,23 +405,7 @@ CHI_camco_fighter_organization = {
 	include = generic_light_aircraft_organization
 	icon = GFX_idea_CHI_camco
 	allowed = {	
-		OR = {
-			original_tag = W41
-			tag = MAN
-		}
-		OR = {
-			NOT = { has_dlc = "No Compromise, No Surrender" }
-			original_tag = W41
-			AND = {
-				has_dlc = "No Compromise, No Surrender"
-				NOT = {
-					OR = {
-						tag = CHI
-						tag = PRC
-					}
-				}
-			}
-		} 
+		original_tag = W41
 	}
 	available = {
 		original_tag = W41
@@ -505,23 +415,7 @@ CHI_camco_bomber_organization = {
 	include = generic_cas_aircraft_organization
 	icon = GFX_idea_CHI_camco
 	allowed = {	
-		OR = {
-			original_tag = W41
-			tag = MAN
-		}
-		OR = {
-			NOT = { has_dlc = "No Compromise, No Surrender" }
-			original_tag = W41
-			AND = {
-				has_dlc = "No Compromise, No Surrender"
-				NOT = {
-					OR = {
-						tag = CHI
-						tag = PRC
-					}
-				}
-			}
-		} 
+		original_tag = W41
 	}
 	available = {
 		original_tag = W41
@@ -536,21 +430,7 @@ CHI_camco_organization_sea = {
 		has_dlc = "No Compromise, No Surrender" 
 	}
 	available = {
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = CHI } }
-			}
-			original_tag = W41
-		}
-		IF = {
-			limit = {
-				FROM = { original_tag = CHI }
-			}
-			OR = {
-				owner = { has_completed_focus = CHI_relocate_factories_from_the_coast }
-				owner = { controls_state = CHI.mio_locations^8 } # #596 Zhejiang
-			}
-		}
+		original_tag = W41
 	}
 }
 
@@ -562,21 +442,7 @@ CHI_sinaw_organization_sea = {
 		has_dlc = "No Compromise, No Surrender" 
 	}
 	available = {
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = CHI } }
-			}
-			original_tag = W41
-		}
-		IF = {
-			limit = {
-				FROM = { original_tag = CHI }
-			}
-			OR = {
-				owner = { has_completed_focus = CHI_relocate_factories_from_the_coast }
-				owner = { controls_state = CHI.mio_locations^9 } # #600 Jiangxi
-			}
-		}
+		original_tag = W41
 	}
 }
 
@@ -595,11 +461,7 @@ CHI_taiyuan_arsenal_organization = {
 	include = generic_artillery_organization
 	icon = GFX_idea_generic_artillery_manufacturer_1
 	allowed = {	
-		OR = {
-			original_tag = W41
-			tag = MAN
-			tag = MEN
-		} 
+		original_tag = W41
 		NOT = { has_dlc = "No Compromise, No Surrender" }
 	}
 	available = {
@@ -610,11 +472,7 @@ CHI_liaoning_arsenal_organization = {
 	include = generic_motorized_mechanized_organization
 	icon = GFX_idea_CHI_liaoning
 	allowed = {	
-		OR = {
-			original_tag = W41
-			tag = MAN
-			tag = MEN
-		} 
+		original_tag = W41 
 		NOT = { has_dlc = "No Compromise, No Surrender" } 
 	}
 	available = {
@@ -625,11 +483,7 @@ CHI_hanyan_arsenal_organization = {
 	include = generic_infantry_equipment_organization
 	icon = GFX_idea_CHI_hanyang
 	allowed = {	
-		OR = {
-			original_tag = W41
-			tag = MAN
-			tag = MEN
-		} 
+		original_tag = W41
 		NOT = { has_dlc = "No Compromise, No Surrender" }
 	}
 	available = {
@@ -641,11 +495,7 @@ CHI_mukden_arsenal_organization = {
 	include = generic_infantry_equipment_organization
 	icon = GFX_idea_CHI_mukden
 	allowed = {	
-		OR = {
-			original_tag = W41
-			tag = MAN
-			tag = MEN
-		}
+		original_tag = W41
 	}
 	available = {
 		original_tag = W41
@@ -656,11 +506,7 @@ CHI_taiyuan_arsenal_organization_sea = {
 	include = generic_artillery_organization
 	icon = GFX_idea_generic_artillery_manufacturer_1
 	allowed = {	
-		OR = {
-			original_tag = W41
-			tag = MAN
-			tag = MEN
-		} 
+		original_tag = W41
 		has_dlc = "No Compromise, No Surrender"
 	}
 	available = {
@@ -672,29 +518,11 @@ CHI_liaoning_arsenal_organization_sea = {
 	include = generic_motorized_mechanized_organization
 	icon = GFX_idea_CHI_liaoning
 	allowed = {	
-		OR = {
-			original_tag = W41
-			tag = MAN
-			tag = MEN
-		} 
+		original_tag = W41
 		has_dlc = "No Compromise, No Surrender"
 	}
 	available = {
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = CHI } }
-			}
-			original_tag = W41
-		}
-		IF = {
-			limit = {
-				FROM = { original_tag = CHI }
-			}
-			OR = {
-				owner = { has_completed_focus = CHI_relocate_factories_from_the_coast }
-				owner = { controls_state = CHI.mio_locations^3 } # #715 Liaobei
-			}
-		}
+		original_tag = W41
 	}
 	override_trait = {
 		token = generic_mio_trait_all_wheel_drive
@@ -778,29 +606,11 @@ CHI_hanyan_arsenal_organization_sea = {
 	include = generic_infantry_equipment_organization
 	icon = GFX_idea_CHI_hanyang
 	allowed = {	
-		OR = {
-			original_tag = W41
-			tag = MAN
-			tag = MEN
-		} 
+		original_tag = W41
 		has_dlc = "No Compromise, No Surrender"
 	}
 	available = {
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = CHI } }
-			}
-			original_tag = W41
-		}
-		IF = {
-			limit = {
-				FROM = { original_tag = CHI }
-			}
-			OR = {
-				owner = { has_completed_focus = CHI_relocate_factories_from_the_coast }
-				owner = { controls_state = CHI.mio_locations^4 } ##1036 Wuhan
-			}
-		}
+		original_tag = W41
 	}
 	
 
@@ -865,29 +675,11 @@ CHI_china_automobile_corporation_organization = {
 	include = generic_motorized_mechanized_organization
 	icon = GFX_idea_CHI_cac
 	allowed = {	
-		OR = {
-			original_tag = W41
-			tag = MAN
-			tag = MEN
-		} 
+		original_tag = W41
 		has_dlc = "No Compromise, No Surrender"
 	}
 	available = {
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = CHI } }
-			}
-			original_tag = W41
-		}
-		IF = {
-			limit = {
-				FROM = { original_tag = CHI }
-			}
-			OR = {
-				owner = { has_completed_focus = CHI_relocate_factories_from_the_coast }
-				owner = { controls_state = CHI.mio_locations^6 } # 613 Shanghai
-			}
-		}
+		original_tag = W41
 	}
 	override_trait = {
 		token = generic_mio_trait_all_wheel_drive
@@ -972,29 +764,11 @@ CHI_jinling_arsenal_organization = {
 	include = generic_support_equipment_organization
 	icon = GFX_idea_CHI_jinling
 	allowed = {	
-		OR = {
-			original_tag = W41
-			tag = MAN
-			tag = MEN
-		} 
+		original_tag = W41
 		has_dlc = "No Compromise, No Surrender"
 	}
 	available = {
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = CHI } }
-			}
-			original_tag = W41
-		}
-		IF = {
-			limit = {
-				FROM = { original_tag = CHI }
-			}
-			OR = {
-				owner = { has_completed_focus = CHI_relocate_factories_from_the_coast }
-				owner = { controls_state = CHI.mio_locations^6 } # 1035 Nanjing
-			}
-		}
+		original_tag = W41
 	}
 
 }
