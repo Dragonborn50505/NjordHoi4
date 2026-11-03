@@ -173,6 +173,7 @@ GER_porsche_organization = {
 		}
 
 		available = {
+			FROM = { has_completed_focus = GER_tank_development }
 		}
 
 		equipment_bonus = {
@@ -204,6 +205,7 @@ GER_porsche_organization = {
 		}
 
 		available = {
+			FROM = { has_completed_focus = GER_heavy_tanks }
 		}
 
 		equipment_bonus = {
@@ -234,7 +236,7 @@ GER_porsche_organization = {
 		}
 
 		available = {
-			
+			FROM = { has_completed_focus = GER_panzer_divisions }
 		}
 
 		limit_to_equipment_type = { 
@@ -430,6 +432,9 @@ GER_henschel_organization = {
 
 		any_parent = { generic_mio_trait_interleaved_track_wheels generic_mio_trait_overlapped_track_wheels }
 
+		available = {
+			FROM = { has_completed_focus = GER_panzer_divisions }
+		}
 
 		equipment_bonus = {
 			reliability = 0.03
@@ -459,6 +464,10 @@ GER_henschel_organization = {
 			FROM = { original_tag = GER }
 		}
 
+		available = {
+			FROM = { has_completed_focus = GER_kampfgruppe }
+		}
+
 		equipment_bonus = {
 			hard_attack = 0.05
 			ap_attack = 0.05
@@ -481,6 +490,9 @@ GER_henschel_organization = {
 
 		any_parent = { generic_mio_trait_adaptable_chassis }
 
+		available = {
+			FROM = { has_completed_focus = GER_tank_development }
+		}
 
 		equipment_bonus = {
 			defense = 0.05
@@ -581,6 +593,7 @@ GER_man_organization = {
 		any_parent = { generic_mio_trait_spaced_armor generic_mio_trait_crew_survival_layout generic_mio_trait_sloped_side_armor }
 		
 		available = {
+			FROM = { has_completed_focus = GER_heavy_tanks }
 		}
 
 		equipment_bonus = {
@@ -606,6 +619,7 @@ GER_man_organization = {
 
 		
 		available = {
+			FROM = { has_completed_focus = GER_new_manoeuvre_warfare }
 		}
 
 		equipment_bonus = {
@@ -631,6 +645,7 @@ GER_man_organization = {
 
 		
 		available = {
+			FROM = { has_completed_focus = GER_panzer_divisions }
 		}
 
 		equipment_bonus = {
@@ -729,9 +744,7 @@ GER_alkett_organization = {
 		}
 
 		available = {
-			FROM = {
-				has_tech = antitank2
-			}
+			FROM = { has_completed_focus = GER_heavy_tanks }
 		}
 
 		mutually_exclusive = { generic_mio_medium_assault_gun_rocket_tubes }
@@ -762,6 +775,7 @@ GER_alkett_organization = {
 		}
 
 		available = {
+			FROM = { has_completed_focus = GER_tank_development }
 		}
 
 		equipment_bonus = {
@@ -787,14 +801,7 @@ GER_alkett_organization = {
 		}
 
 		available = {
-			#TODO_Danne fix this with a flag or something! GER should integrate CZE industries or something before doing this
-			FROM = {
-				OR = {
-					has_completed_focus = GER_fate_of_czechoslovakia
-					has_completed_focus = GER_integrate_czechoslovakia
-					has_completed_focus = GER_carve_up_czechoslovakia
-				}
-			}
+			FROM = { has_completed_focus = GER_armoured_support }
 		}
 
 		limit_to_equipment_type = { medium_tank_artillery_chassis heavy_tank_artillery_chassis }
@@ -824,10 +831,6 @@ GER_daimler_benz_organization = {
 				original_tag = BRA
 				has_dlc = "Trial of Allegiance"
 			}
-			AND = {
-				original_tag = BEL
-				has_dlc = "Gotterdammerung"
-			}
 		}
 	}
 
@@ -846,17 +849,6 @@ GER_daimler_benz_organization = {
 			}
 			FROM = {
 				has_completed_focus = BRA_german_tanks
-			}
-		}
-
-		IF = {
-			limit = {
-				FROM = {
-					original_tag = BEL
-				}
-			}
-			FROM = {
-				has_completed_focus = BEL_invite_german_tank_organization
 			}
 		}
 	}
@@ -1071,7 +1063,7 @@ GER_deschimag_organization = {
 	}
 	
 	allowed = {	
-		original_tag = PRE
+		original_tag = GER
 	}
 
 	add_trait = {  
@@ -1193,7 +1185,7 @@ GER_germaniawerft_organization = {
 
 		available = {
             FROM = {
-                has_completed_focus = GER_plan_z
+                has_completed_focus = DEN_seaworthy_fleet
             }
         }
 
@@ -1222,7 +1214,7 @@ GER_germaniawerft_organization = {
 
 		available = {
 			FROM = {
-				has_completed_focus = GER_grosskampfschiff_construction
+				has_completed_focus = DEN_battle_ready_fleet
 			}
 		}
 
@@ -1250,7 +1242,7 @@ GER_germaniawerft_organization = {
 
 		available = {
 			FROM = {
-				has_completed_focus = GER_grosskampfschiff_construction
+				has_completed_focus = DEN_modern_naval_warfare
 			}
 		}
 
@@ -1301,7 +1293,10 @@ GER_blohm_und_voss_organization = {
 
 		available = {
             FROM = {
-                has_completed_focus = GER_cruiser_warfare
+				OR = {
+					has_completed_focus = GER_raeder_doctrine
+					has_completed_focus = GER_wegener_doctrine
+				}
             }
         }
 
@@ -1332,7 +1327,10 @@ GER_blohm_und_voss_organization = {
 
 		available = {
 			FROM = {
-				has_completed_focus = GER_panzerschiff_raiders
+				OR = {
+					has_completed_focus = GER_fast_battleships
+					has_completed_focus = GER_memel_to_noumea
+				}
 			}
 		}
 
@@ -1363,7 +1361,7 @@ GER_blohm_und_voss_organization = {
 
 		available = {
             FROM = {
-                has_completed_focus = GER_u_boat_efforts
+                has_completed_focus = GER_submarine_arm
             }
         }
 
@@ -1389,6 +1387,12 @@ GER_blohm_und_voss_organization = {
 		all_parents = { GER_mio_trait_u_boat_yards }
 
 		position = { x=0 y=1 }  
+
+		available = {
+			FROM = {
+				has_completed_focus = GER_revised_wolfpacks
+			}
+		}
 
         limit_to_equipment_type = { submarine }
 
@@ -1422,12 +1426,6 @@ GER_hdw_organization = {
 
 		position = { x=0 y=1 }  
 
-		available = {
-			FROM = {
-				has_completed_focus = GER_u_boat_efforts
-			}
-		}
-
         equipment_bonus = {
 			sub_visibility = -0.03
 			naval_range = 0.05
@@ -1449,12 +1447,6 @@ GER_hdw_organization = {
 		all_parents = { generic_mio_trait_submarine_mass_production }
 
 		position = { x=0 y=1 }  
-
-		available = {
-			FROM = {
-				has_completed_focus = GER_u_boat_efforts
-			}
-		}
 
         production_bonus = {
 			production_capacity_factor = 0.05
@@ -1520,12 +1512,6 @@ GER_hdw_organization = {
 
 		position = { x=0 y=1 } 
 
-		available = {
-			FROM = {
-				has_completed_focus = GER_u_boat_efforts
-			}
-		}
-
 		equipment_bonus = {
 			sub_visibility = -0.03
 			naval_range = 0.05
@@ -1565,7 +1551,7 @@ GER_deutsche_werke_organization = {
 	}
 	
 	allowed = {	
-		original_tag = GER
+		original_tag = PRE
 	}
 
 	add_trait = {  
@@ -1702,7 +1688,7 @@ GER_kriegsmarinewerft_wilhelmshaven_organization = {
 		
 		available = {
 			FROM = {
-				has_completed_focus = GER_expand_kriegsmarinewerft
+				has_completed_focus = GER_navy_cartelisation
 			}
 		}
 
@@ -1790,6 +1776,7 @@ GER_messerschmitt_organization = {
 	allowed = {	
 		OR = {
 			original_tag = GER
+			original_tag = PRE
 			NOR_AAT = yes 
 		}
 	}
@@ -1862,22 +1849,6 @@ GER_messerschmitt_organization = {
 			FROM = { OR = { original_tag = GER original_tag = PRE } }
 		}
 
-		available = {
-			FROM = {
-				mio:GER_blohm_und_voss_organization = {
-					has_mio_size > 4
-				}
-				NOT = { has_country_flag = GER_hamburger_flugzeugbau_trait_taken_flag }
-			}
-		}
-
-		on_complete = {
-			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
-			FROM = {
-				set_country_flag = GER_hamburger_flugzeugbau_trait_taken_flag
-			}
-		}
-
 		production_bonus = {
 			production_capacity_factor = 0.05
 		}
@@ -1901,20 +1872,6 @@ GER_messerschmitt_organization = {
 			FROM = { OR = { original_tag = GER original_tag = PRE } }
 		}
 
-		available = {
-			FROM = {
-				has_completed_focus = GER_aerodynamic_research_institute
-				NOT = { has_country_flag = GER_mio_trait_aerodynamic_research_insitute_taken_flag }
-			}
-		}
-
-		on_complete = {
-			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
-			FROM = {
-				set_country_flag = GER_mio_trait_aerodynamic_research_insitute_taken_flag
-			}
-		}
-
 		organization_modifier = {
 		    military_industrial_organization_research_bonus = 0.1
 		}
@@ -1935,15 +1892,8 @@ GER_messerschmitt_organization = {
 		relative_position_id = GER_mio_trait_aerodynamic_research_insitute
 
 		visible = {
-				has_dlc = "Gotterdammerung"
-				FROM = { OR = { original_tag = GER original_tag = PRE } }
-		}
-
-		available = {
-			owner = {
-				has_completed_focus = GER_amerikabomber
-				has_country_flag = GER_amerikabomber_messerschmitt_flag
-			}
+			has_dlc = "Gotterdammerung"
+			FROM = { OR = { original_tag = GER original_tag = PRE } }
 		}
 
 		limit_to_equipment_type = { mio_cat_eq_only_light_fighter }
@@ -2040,22 +1990,6 @@ GER_junkers_organization = {
 			FROM = { OR = { original_tag = GER original_tag = PRE } }
 		}
 
-		available = {
-			FROM = {
-				mio:GER_blohm_und_voss_organization = {
-					has_mio_size > 4
-				}
-				NOT = { has_country_flag = GER_hamburger_flugzeugbau_trait_taken_flag }
-			}
-		}
-
-		on_complete = {
-			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
-			FROM = {
-				set_country_flag = GER_hamburger_flugzeugbau_trait_taken_flag
-			}
-		}
-
 		production_bonus = {
 			production_capacity_factor = 0.05
 		}
@@ -2079,20 +2013,6 @@ GER_junkers_organization = {
 			FROM = { OR = { original_tag = GER original_tag = PRE } }
 		}
 
-		available = {
-			FROM = {
-				has_completed_focus = GER_aerodynamic_research_institute
-				NOT = { has_country_flag = GER_mio_trait_aerodynamic_research_insitute_taken_flag }
-			}
-		}
-
-		on_complete = {
-			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
-			FROM = {
-				set_country_flag = GER_mio_trait_aerodynamic_research_insitute_taken_flag
-			}
-		}
-
 		organization_modifier = {
 		    military_industrial_organization_research_bonus = 0.1
 		}
@@ -2113,15 +2033,8 @@ GER_junkers_organization = {
 		relative_position_id = GER_mio_trait_aerodynamic_research_insitute
 
 		visible = {
-				has_dlc = "Gotterdammerung"
-				FROM = { OR = { original_tag = GER original_tag = PRE } }
-		}
-
-		available = {
-			owner = {
-				has_completed_focus = GER_amerikabomber
-				has_country_flag = GER_amerikabomber_junkers_flag
-			}
+			has_dlc = "Gotterdammerung"
+			FROM = { OR = { original_tag = GER original_tag = PRE } }
 		}
 
 		limit_to_equipment_type = { small_plane_cas_airframe }
@@ -2177,20 +2090,6 @@ GER_focke_wulf_organization = {
 		
 		visible = {
 			FROM = { OR = { original_tag = GER original_tag = PRE } }
-		}
-
-		available = {
-			FROM = {
-				has_completed_focus = GER_aerodynamic_research_institute
-				NOT = { has_country_flag = GER_mio_trait_aerodynamic_research_insitute_taken_flag }
-			}
-		}
-
-		on_complete = {
-			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
-			FROM = {
-				set_country_flag = GER_mio_trait_aerodynamic_research_insitute_taken_flag
-			}
 		}
 
 		organization_modifier = {
@@ -2271,22 +2170,6 @@ GER_focke_wulf_organization = {
 			FROM = { OR = { original_tag = GER original_tag = PRE } }
 		}
 
-		available = {
-			FROM = {
-				mio:GER_blohm_und_voss_organization = {
-					has_mio_size > 4
-				}
-				NOT = { has_country_flag = GER_hamburger_flugzeugbau_trait_taken_flag }
-			}
-		}
-
-		on_complete = {
-			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
-			FROM = {
-				set_country_flag = GER_hamburger_flugzeugbau_trait_taken_flag
-			}
-		}
-
 		production_bonus = {
 			production_capacity_factor = 0.05
 		}
@@ -2309,13 +2192,6 @@ GER_focke_wulf_organization = {
 		visible = {
 				has_dlc = "Gotterdammerung"
 				FROM = { OR = { original_tag = GER original_tag = PRE } }
-		}
-
-		available = {
-			owner = {
-				has_completed_focus = GER_amerikabomber
-				has_country_flag = GER_amerikabomber_focke_wulf_flag
-			}
 		}
 
 		limit_to_equipment_type = { mio_cat_eq_all_medium_plane }
@@ -2463,22 +2339,6 @@ GER_heinkel_organization = {
 			FROM = { OR = { original_tag = GER original_tag = PRE } }
 		}
 
-		available = {
-			FROM = {
-				mio:GER_blohm_und_voss_organization = {
-					has_mio_size > 4
-				}
-				NOT = { has_country_flag = GER_hamburger_flugzeugbau_trait_taken_flag }
-			}
-		}
-
-		on_complete = {
-			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
-			FROM = {
-				set_country_flag = GER_hamburger_flugzeugbau_trait_taken_flag
-			}
-		}
-
 		production_bonus = {
 			production_capacity_factor = 0.05
 		}
@@ -2500,20 +2360,6 @@ GER_heinkel_organization = {
 		
 		visible = {
 			FROM = { OR = { original_tag = GER original_tag = PRE } }
-		}
-
-		available = {
-			FROM = {
-				has_completed_focus = GER_aerodynamic_research_institute
-				NOT = { has_country_flag = GER_mio_trait_aerodynamic_research_insitute_taken_flag }
-			}
-		}
-
-		on_complete = {
-			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
-			FROM = {
-				set_country_flag = GER_mio_trait_aerodynamic_research_insitute_taken_flag
-			}
 		}
 
 		organization_modifier = {
@@ -2538,13 +2384,6 @@ GER_heinkel_organization = {
 		visible = {
 				has_dlc = "Gotterdammerung"
 				FROM = { OR = { original_tag = GER original_tag = PRE } }
-		}
-
-		available = {
-			owner = {
-				has_completed_focus = GER_amerikabomber
-				has_country_flag = GER_amerikabomber_heinkel_flag
-			}
 		}
 
 		limit_to_equipment_type = { mio_cat_eq_only_strategic_bomber }
@@ -2611,22 +2450,6 @@ GER_dornier_organization = {
 			FROM = { OR = { original_tag = GER original_tag = PRE } }
 		}
 
-		available = {
-			FROM = {
-				mio:GER_blohm_und_voss_organization = {
-					has_mio_size > 4
-				}
-				NOT = { has_country_flag = GER_hamburger_flugzeugbau_trait_taken_flag }
-			}
-		}
-
-		on_complete = {
-			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
-			FROM = {
-				set_country_flag = GER_hamburger_flugzeugbau_trait_taken_flag
-			}
-		}
-
 		production_bonus = {
 			production_capacity_factor = 0.05
 		}
@@ -2648,20 +2471,6 @@ GER_dornier_organization = {
 		
 		visible = {
 			FROM = { OR = { original_tag = GER original_tag = PRE } }
-		}
-
-		available = {
-			FROM = {
-				has_completed_focus = GER_aerodynamic_research_institute
-				NOT = { has_country_flag = GER_mio_trait_aerodynamic_research_insitute_taken_flag }
-			}
-		}
-
-		on_complete = {
-			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
-			FROM = {
-				set_country_flag = GER_mio_trait_aerodynamic_research_insitute_taken_flag
-			}
 		}
 
 		organization_modifier = {
@@ -2716,22 +2525,6 @@ GER_arado_flugzeugwerke_organization = {
 			FROM = { OR = { original_tag = GER original_tag = PRE } }
 		}
 
-		available = {
-			FROM = {
-				mio:GER_blohm_und_voss_organization = {
-					has_mio_size > 4
-				}
-				NOT = { has_country_flag = GER_hamburger_flugzeugbau_trait_taken_flag }
-			}
-		}
-
-		on_complete = {
-			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
-			FROM = {
-				set_country_flag = GER_hamburger_flugzeugbau_trait_taken_flag
-			}
-		}
-
 		production_bonus = {
 			production_capacity_factor = 0.05
 		}
@@ -2753,20 +2546,6 @@ GER_arado_flugzeugwerke_organization = {
 		
 		visible = {
 			FROM = { OR = { original_tag = GER original_tag = PRE } }
-		}
-
-		available = {
-			FROM = {
-				has_completed_focus = GER_aerodynamic_research_institute
-				NOT = { has_country_flag = GER_mio_trait_aerodynamic_research_insitute_taken_flag }
-			}
-		}
-
-		on_complete = {
-			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
-			FROM = {
-				set_country_flag = GER_mio_trait_aerodynamic_research_insitute_taken_flag
-			}
 		}
 
 		organization_modifier = {
@@ -2799,22 +2578,6 @@ GER_fieseler_organization = {
 			FROM = { OR = { original_tag = GER original_tag = PRE } }
 		}
 
-		available = {
-			FROM = {
-				mio:GER_blohm_und_voss_organization = {
-					has_mio_size > 4
-				}
-				NOT = { has_country_flag = GER_hamburger_flugzeugbau_trait_taken_flag }
-			}
-		}
-
-		on_complete = {
-			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
-			FROM = {
-				set_country_flag = GER_hamburger_flugzeugbau_trait_taken_flag
-			}
-		}
-
 		production_bonus = {
 			production_capacity_factor = 0.05
 		}
@@ -2836,20 +2599,6 @@ GER_fieseler_organization = {
 		
 		visible = {
 			FROM = { OR = { original_tag = GER original_tag = PRE } }
-		}
-
-		available = {
-			FROM = {
-				has_completed_focus = GER_aerodynamic_research_institute
-				NOT = { has_country_flag = GER_mio_trait_aerodynamic_research_insitute_taken_flag }
-			}
-		}
-
-		on_complete = {
-			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
-			FROM = {
-				set_country_flag = GER_mio_trait_aerodynamic_research_insitute_taken_flag
-			}
 		}
 
 		organization_modifier = {
@@ -2884,22 +2633,6 @@ GER_focke_achgelis_organization = {
 			FROM = { OR = { original_tag = GER original_tag = PRE } }
 		}
 
-		available = {
-			FROM = {
-				mio:GER_blohm_und_voss_organization = {
-					has_mio_size > 4
-				}
-				NOT = { has_country_flag = GER_hamburger_flugzeugbau_trait_taken_flag }
-			}
-		}
-
-		on_complete = {
-			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
-			FROM = {
-				set_country_flag = GER_hamburger_flugzeugbau_trait_taken_flag
-			}
-		}
-
 		production_bonus = {
 			production_capacity_factor = 0.05
 		}
@@ -2921,20 +2654,6 @@ GER_focke_achgelis_organization = {
 		
 		visible = {
 			FROM = { OR = { original_tag = GER original_tag = PRE } }
-		}
-
-		available = {
-			FROM = {
-				has_completed_focus = GER_aerodynamic_research_institute
-				NOT = { has_country_flag = GER_mio_trait_aerodynamic_research_insitute_taken_flag }
-			}
-		}
-
-		on_complete = {
-			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
-			FROM = {
-				set_country_flag = GER_mio_trait_aerodynamic_research_insitute_taken_flag
-			}
 		}
 
 		organization_modifier = {
@@ -3332,12 +3051,6 @@ GER_opel_organization = {
 			FROM = { OR = { original_tag = GER original_tag = PRE } }
 		}
 
-		available = { 
-			FROM = {
-				has_completed_focus = GER_nationalize_ford_factories
-			}
-		}
-
 		equipment_bonus = {
 			reliability = 0.05
 			build_cost_ic = -0.02
@@ -3358,12 +3071,6 @@ GER_opel_organization = {
 
 		visible = {
 			FROM = { OR = { original_tag = GER original_tag = PRE } }
-		}
-
-		available = {
-			FROM = {
-				has_completed_focus = GER_nationalize_ford_factories
-			}
 		}
 
 		production_bonus = {
@@ -3544,12 +3251,6 @@ GER_auto_union_organization = {
 
 		all_parents = { generic_mio_trait_defensive_equipment }
 
-		available = { 
-			FROM = {
-				has_completed_focus = GER_panzergrenadier
-			}
-		}
-
 		equipment_bonus = {
 			breakthrough = 0.03
 			armor_value = 0.05
@@ -3589,17 +3290,6 @@ GER_henschel_kassel_organization = {
 		}
 
 		limit_to_equipment_type = { train_equipment }
-
-		available = {
-			FROM = {
-				OR = {
-					controls_state = 4
-					any_subject_country = {
-						controls_state = 4
-					}	
-				}
-			}
-		}
 
 		production_bonus = {
 			production_capacity_factor = 0.05

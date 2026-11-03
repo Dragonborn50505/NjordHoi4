@@ -1330,8 +1330,8 @@ ideas = {
 				research_speed_factor = 0.05
 			}
 			research_bonus = {
-				mio_cat_all_artillery_equipment = 0.05
-				infantry_tech = 0.05
+				mio_cat_artillery = 0.05
+				infantry_weapons = 0.05
 				support_tech = 0.05
 			}
 		}
@@ -1520,16 +1520,19 @@ ideas = {
 			on_remove = {
 				add_ideas = GER_air_production_bonus
 			}
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
 			picture = man_five_year_plan_air
 			equipment_bonus = {
 				mio_cat_eq_all_small_plane = {
-					build_cost_ic = -0.075
+					build_cost_ic = -0.1
 				}
 				mio_cat_eq_all_medium_plane = {
-					build_cost_ic = -0.075
+					build_cost_ic = -0.1
 				}
 				mio_cat_eq_all_large_plane = {
-					build_cost_ic = -0.075
+					build_cost_ic = -0.1
 				}
 			}
 		}
@@ -3144,6 +3147,140 @@ ideas = {
 				required_garrison_factor = 0.1
 				root_out_resistance_effectiveness_factor = -0.15
 				weekly_manpower = -100
+			}
+		}
+
+		IRE_empire_of_the_irish_crown = {
+			picture = AFG_economic_regionalism
+			modifier = {
+				political_power_gain = 0.1
+				party_popularity_stability_factor = 0.1
+				war_stability_factor = 0.1
+				compliance_gain = -0.01
+				resistance_growth = -0.1
+				required_garrison_factor = 0.33
+				supply_consumption_factor = 0.1
+			}
+		}
+
+		IRE_mistress_of_the_oceans = {
+			picture = AFG_economic_regionalism
+			modifier = {
+				industrial_capacity_dockyard = 0.1
+				production_speed_dockyard_factor = 0.05
+				production_speed_naval_base_factor = 0.05
+				navy_max_range_factor = 0.1
+				navy_org_factor = 0.05
+				experience_gain_navy_factor = 0.05
+				consumer_goods_factor = 0.1
+			}
+		}
+
+		IRE_wealth_of_a_thousand_shores = {
+			picture = AFG_economic_regionalism
+			modifier = {
+				local_resources_factor = 0.2
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+				political_power_cost = 0.2
+				master_build_autonomy_factor = 0.25
+				subjects_autonomy_gain = -0.05
+			}
+		}
+
+		IRE_question_of_the_dominions = {
+			picture = AFG_economic_regionalism
+			modifier = {
+				political_power_factor = -0.1
+				stability_factor = -0.05
+				resistance_growth = 0.05
+				compliance_growth = 0.05
+				subjects_autonomy_gain = 0.1
+				drift_defence_factor = -0.15
+				conscription_factor = -0.1
+			}
+		}
+
+		IRE_the_english_standstill = {
+			picture = AFG_economic_regionalism
+			modifier = {
+				stability_factor = -0.05
+				conscription_factor = -0.1
+				war_support_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = HOL
+				attack_bonus_against = -0.1
+				defense_bonus_against = -0.1
+			}
+			targeted_modifier = {
+				tag = ENG
+				weekly_manpower = 150
+				compliance_growth_on_our_occupied_states = -0.1
+				resistance_decay_on_our_occupied_states = 0.1
+			}
+		}
+
+		IRE_the_shadow_of_the_prussian_eagle = {
+			picture = AFG_economic_regionalism
+			modifier = {
+				war_support_factor = 0.05
+				stability_factor = -0.05
+				army_core_defence_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = PRE
+				extra_trade_to_target_factor = -0.25
+				trade_cost_for_target_factor = 0.25
+			}
+		}
+
+		HOL_the_english_standstill = {
+			picture = AFG_economic_regionalism
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				conscription_factor = -0.1
+			}
+			targeted_modifier = {
+				tag = IRE
+				attack_bonus_against = -0.1
+				defense_bonus_against = -0.1
+			}
+			targeted_modifier = {
+				tag = ENG
+				weekly_manpower = 150
+				compliance_growth_on_our_occupied_states = -0.1
+				resistance_decay_on_our_occupied_states = 0.1
+			}
+		}
+
+
+
+		# FRANCE
+		FRA_INDUSTRY_test = {
+			picture = generic_build_infrastructure
+			modifier = {
+				industrial_capacity_dockyard = -0.3
+				industrial_capacity_factory = -0.3
+				production_factory_efficiency_gain_factor = -0.05
+				production_speed_rail_way_factor = 0.2
+				production_factory_start_efficiency_factor = 0.1
+				consumer_goods_factor = -0.1
+				monthly_population = 0.1
+				conscription_factor = -0.25
+				local_resources_factor = 0.1
+				production_lack_of_resource_penalty_factor = -0.1
+				production_speed_buildings_factor = 0.1
+				
+			}
+		}
+
+		FRA_infrastructure_focus = {
+			picture = generic_build_infrastructure
+			modifier = {
+				production_speed_infrastructure_factor = 0.2
 			}
 		}
 

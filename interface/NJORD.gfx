@@ -183,4 +183,20 @@ spriteTypes = {
 		name = "GFX_goal_generic_mechanized_infantry"
 		texturefile = "gfx/interface/goals/generic_mechanized_infantry.png"
 	}
+						
+	SpriteType = {# French Nuclear Programme
+		name = "GFX_goal_FRA_nuclear"
+		texturefile = "gfx/interface/goals/FRA_nuclear.dds"
+	}
+							
+	SpriteType = {# Recycling
+		name = "GFX_goal_recycling"
+		texturefile = "gfx/interface/goals/recycling.dds"
+	}
+								
+	SpriteType = {# Class Collaboration
+		name = "GFX_goal_class_collaboration"
+		texturefile = "gfx/interface/goals/class_collaboration.dds"
+	}
+
 }

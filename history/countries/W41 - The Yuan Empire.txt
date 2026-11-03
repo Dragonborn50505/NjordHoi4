@@ -179,13 +179,6 @@ add_opinion_modifier = { target = X97 modifier = positive_71 }
 add_opinion_modifier = { target = X98 modifier = positive_62 }
 add_opinion_modifier = { target = YEM modifier = negative_45 }
 
-create_faction_from_template = {
-	template = faction_template_democratic
-	name = league_of_nations
-}
-add_to_faction = W41
-add_to_faction = SPR
-
 add_ideas = {
 	great_power
 	W41_monarch

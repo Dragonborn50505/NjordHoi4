@@ -287,6 +287,12 @@ add_ideas = {
 	civilian_economy
 	export_focus
 	culture_irish
+	IRE_empire_of_the_irish_crown
+	IRE_mistress_of_the_oceans
+	IRE_wealth_of_a_thousand_shores
+	IRE_question_of_the_dominions
+	IRE_the_english_standstill
+	IRE_the_shadow_of_the_prussian_eagle
 }
 set_stability = 0.60
 set_war_support = 0.51

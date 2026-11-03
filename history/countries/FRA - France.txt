@@ -177,13 +177,6 @@ add_opinion_modifier = { target = X98 modifier = negative_200 }
 set_truce = { target = X98 days = 3650 }
 add_opinion_modifier = { target = YEM modifier = negative_140 }
 
-create_faction_from_template = {
-	template = faction_template_democratic
-	name = french_entente_alliance
-}
-add_to_faction = FRA
-add_to_faction = GER
-
 add_ideas = {
 	great_power
 	FRA_monarch

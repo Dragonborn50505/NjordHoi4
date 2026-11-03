@@ -2523,6 +2523,11 @@ focus_tree = {
 				category = mio_cat_artillery
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
+			mio:GER_rheinmetall_organization = {
+                add_mio_funds = 500
+				add_mio_research_bonus = 0.05
+            }
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_army_dynamic_modifier
@@ -2562,6 +2567,32 @@ focus_tree = {
 				ahead_reduction = 0.5
 				category = infantry_weapons
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			mio:GER_mauser_organization = {
+				if = {
+					limit = { 
+						has_mio_trait = GER_mio_trait_experienced_manufacturer
+					}
+					add_mio_funds = 1500
+				}
+				else = {
+					add_mio_funds = 500
+					complete_mio_trait = GER_mio_trait_experienced_manufacturer
+				}
+            }
+			custom_effect_tooltip = generic_skip_one_line_tt
+			mio:GER_carl_walther_organization = {
+                if = {
+					limit = { 
+						has_mio_trait = GER_mio_trait_innovative_safety_features
+					}
+					add_mio_funds = 1500
+				}
+				else = {
+					add_mio_funds = 500
+					complete_mio_trait = GER_mio_trait_innovative_safety_features
+				}
+            }
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_mastery_bonus = {
 				name = DEN_modernize_support_equipment
@@ -2758,6 +2789,19 @@ focus_tree = {
 				tooltip = army_artillery_defence_factor_tt
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
+			mio:GER_rheinmetall_organization = {
+                if = {
+					limit = { 
+						has_mio_trait = GER_mio_trait_dual_recoil_mechanism
+					}
+					add_mio_funds = 1500
+				}
+				else = {
+					add_mio_funds = 500
+					complete_mio_trait = GER_mio_trait_dual_recoil_mechanism
+				}
+            }
+			custom_effect_tooltip = generic_skip_one_line_tt
 			complete_special_project = {
 				project = sp:sp_land_large_caliber_kinetic_energy_sabot
 				show_modifiers = no
@@ -2792,6 +2836,47 @@ focus_tree = {
 				bonus = 0.5
 				uses = 2
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			mio:GER_opel_organization = {
+                if = {
+					limit = { 
+						has_mio_trait = GER_mio_trait_improved_engines
+						has_mio_trait = GER_mio_trait_efficiency_in_mass_production
+					}
+					add_mio_funds = 1500
+				}
+				else_if = {
+					limit = { 
+						has_mio_trait = GER_mio_trait_efficiency_in_mass_production
+						NOT = {
+							has_mio_trait = GER_mio_trait_improved_engines
+						}
+					}
+					add_mio_funds = 500
+					complete_mio_trait = GER_mio_trait_improved_engines
+				}
+				else_if = {
+					limit = { 
+						has_mio_trait = GER_mio_trait_improved_engines
+						NOT = {
+							has_mio_trait = GER_mio_trait_efficiency_in_mass_production
+						}
+					}
+					add_mio_funds = 500
+					complete_mio_trait = GER_mio_trait_efficiency_in_mass_production
+				}
+				else_if = {
+					limit = { 
+						has_mio_trait = GER_mio_trait_ford_facilities
+					}
+					add_mio_funds = 500
+					complete_mio_trait = GER_mio_trait_efficiency_in_mass_production
+				}
+				else = {
+					add_mio_funds = 500
+					complete_mio_trait = GER_mio_trait_ford_facilities
+				}
+            }
 			custom_effect_tooltip = generic_skip_one_line_tt
 			enable_tech_improved_logistics = yes
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -2833,6 +2918,19 @@ focus_tree = {
 				uses = 2
 				category = cat_anti_air
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			mio:GER_rheinmetall_organization = {
+                if = {
+					limit = { 
+						has_mio_trait = GER_mio_trait_versatile_carriage
+					}
+					add_mio_funds = 1500
+				}
+				else = {
+					add_mio_funds = 500
+					complete_mio_trait = GER_mio_trait_versatile_carriage
+				}
+            }
 			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_controlled_state = { # PRIORITIZE NEAR INDUSTRIAL AREAS
 				limit = {
@@ -3914,6 +4012,11 @@ focus_tree = {
 				track = capital_ships
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
+			mio:GER_germaniawerft_organization = {
+				add_mio_funds = 500
+				complete_mio_trait = GER_mio_trait_history_of_battleships
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_navy_dynamic_modifier
@@ -4294,6 +4397,11 @@ focus_tree = {
 				category = mio_cat_tech_all_capital_ship_and_modules
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
+			mio:GER_germaniawerft_organization = {
+				add_mio_funds = 500
+				complete_mio_trait = GER_mio_trait_krupp_guns
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_navy_dynamic_modifier
@@ -4381,6 +4489,11 @@ focus_tree = {
 		completion_reward = {
 			every_navy_leader = {
 				add_coordination = 1
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			mio:GER_germaniawerft_organization = {
+				add_mio_funds = 500
+				complete_mio_trait = GER_mio_trait_h_class_battleships
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {

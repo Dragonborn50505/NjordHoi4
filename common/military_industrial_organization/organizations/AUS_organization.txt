@@ -18,7 +18,9 @@ AUS_ansaldo_organization = {
 		has_dlc = "Gotterdammerung"
 	}
 	available = {
-		original_tag = X07
+		FROM = {
+			original_tag = X07
+		}
 	}
 }
 

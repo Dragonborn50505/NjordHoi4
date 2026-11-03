@@ -678,3 +678,25 @@ CAN_navy = {
 	navy_weather_penalty = CAN_navy_navy_weather_penalty 
 	navy_submarine_detection_factor = CAN_navy_navy_submarine_detection_factor 
 }
+
+FRA_industry = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_improved_industries
+	# STARTING
+	industrial_capacity_dockyard = FRA_industry_industrial_capacity_dockyard
+	industrial_capacity_factory = FRA_industry_industrial_capacity_factory
+	production_factory_efficiency_gain_factor = FRA_industry_production_factory_efficiency_gain_factor
+	conscription_factor = FRA_industry_conscription_factor
+	
+	# EXTRA FROM FOCUS
+	production_speed_rail_way_factor = FRA_industry_production_speed_rail_way_factor
+	production_factory_start_efficiency_factor = FRA_industry_production_factory_start_efficiency_factor
+	production_factory_max_efficiency_factor = FRA_industry_production_factory_max_efficiency_factor
+	consumer_goods_factor = FRA_industry_consumer_goods_factor
+	monthly_population = FRA_industry_monthly_population
+	local_resources_factor = FRA_industry_local_resources_factor
+	production_lack_of_resource_penalty_factor = FRA_industry_production_lack_of_resource_penalty_factor
+	equipment_conversion_speed = FRA_industry_equipment_conversion_speed 
+	production_speed_buildings_factor = FRA_industry_production_speed_buildings_factor
+	
+}
