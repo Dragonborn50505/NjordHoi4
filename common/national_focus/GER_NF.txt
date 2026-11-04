@@ -104,23 +104,24 @@ focus_tree = {
         completion_reward = {
             add_ideas = GER_neue_wirtschaft_1
             custom_effect_tooltip = generic_skip_one_line_tt
-            random_owned_controlled_state = {
-                limit = {
-                    is_core_of = root
-                    is_in_home_area = yes
-                }
+            every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 1
+				limit = {
+					is_owned_and_controlled_by = ROOT
+				}
                 add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
                 add_building_construction = {
-                    type = industrial_complex
-                    level = 1
-                    instant_build = yes
-                }
-                add_building_construction = {
-                    type = arms_factory
-                    level = 1
-                    instant_build = yes
-                }
-            }
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
         }
         search_filters = { FOCUS_FILTER_PRODUCTION FOCUS_FILTER_INTERNAL_AFFAIRS }
     }
@@ -163,23 +164,24 @@ focus_tree = {
                     add_idea = GER_neue_wirtschaft_3
                 }
             }
-            random_owned_controlled_state = {
-                limit = {
-                    is_core_of = root
-                    is_in_home_area = yes
-                }
+            every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 1
+				limit = {
+					is_owned_and_controlled_by = ROOT
+				}
                 add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
                 add_building_construction = {
-                    type = industrial_complex
-                    level = 1
-                    instant_build = yes
-                }
-                add_building_construction = {
-                    type = arms_factory
-                    level = 1
-                    instant_build = yes
-                }
-            }
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
         }
         search_filters = { FOCUS_FILTER_PRODUCTION FOCUS_FILTER_INTERNAL_AFFAIRS }
     }
@@ -221,18 +223,19 @@ focus_tree = {
                     add_idea = GER_neue_wirtschaft_3
                 }
             }
-            random_owned_controlled_state = {
-                limit = {
-                    is_core_of = root
-                    is_in_home_area = yes
-                }
+            every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 1
+				limit = {
+					is_owned_and_controlled_by = ROOT
+				}
                 add_extra_state_shared_building_slots = 2
-                add_building_construction = {
-                    type = industrial_complex
-                    level = 2
-                    instant_build = yes
-                }
-            }
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
         }
         search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_PRODUCTION }
     }
@@ -399,30 +402,19 @@ focus_tree = {
             custom_effect_tooltip = GER_reform_eco_balancer_tt
             add_ideas = GER_reform_eco_balancer
             custom_effect_tooltip = generic_skip_one_line_tt
-            random_owned_controlled_state = {
-                limit = {
-                    is_core_of = root
-                    is_in_home_area = yes
-                }
+            every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 2
+				limit = {
+					is_owned_and_controlled_by = ROOT
+				}
                 add_extra_state_shared_building_slots = 2
-                add_building_construction = {
-                    type = industrial_complex
-                    level = 2
-                    instant_build = yes
-                }
-            }
-            random_owned_controlled_state = {
-                limit = {
-                    is_core_of = root
-                    is_in_home_area = yes
-                }
-                add_extra_state_shared_building_slots = 2
-                add_building_construction = {
-                    type = industrial_complex
-                    level = 2
-                    instant_build = yes
-                }
-            }
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
         }
         search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_INTERNAL_AFFAIRS }
     }
@@ -451,31 +443,19 @@ focus_tree = {
             custom_effect_tooltip = generic_skip_one_line_tt
             add_ideas = GER_adgb_idea
             custom_effect_tooltip = generic_skip_one_line_tt
-            random_owned_controlled_state = {
-                limit = {
-                    is_core_of = root
-                    is_in_home_area = yes
-                }
+            every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 2
+				limit = {
+					is_owned_and_controlled_by = ROOT
+				}
                 add_extra_state_shared_building_slots = 2
-                add_building_construction = {
-                    type = industrial_complex
-                    level = 2
-                    instant_build = yes
-                }
-            }
-            random_owned_controlled_state = {
-                limit = {
-                    is_core_of = root
-                    is_in_home_area = yes
-                }
-                add_extra_state_shared_building_slots = 2
-                add_building_construction = {
-                    type = industrial_complex
-                    level = 2
-                    instant_build = yes
-                }
-            }
-
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
         }
         search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY FOCUS_FILTER_INTERNAL_AFFAIRS }
     }
@@ -523,73 +503,19 @@ focus_tree = {
         }
 
         completion_reward = {
-            random_owned_controlled_state = {
-                limit = {
-                    is_core_of = GER
-                }
+            every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 4
+				limit = {
+					is_owned_and_controlled_by = ROOT
+				}
                 add_extra_state_shared_building_slots = 1
-                add_building_construction = {
-                    type = infrastructure
-                    level = 1
-                    instant_build = yes
-                }
-                add_building_construction = {
-                    type = industrial_complex
-                    level = 1
-                    instant_build = yes
-                }
-            }
-            custom_effect_tooltip = generic_skip_one_line_tt
-            random_owned_controlled_state = {
-                limit = {
-                    is_core_of = GER
-                }
-                add_extra_state_shared_building_slots = 1
-                add_building_construction = {
-                    type = infrastructure
-                    level = 1
-                    instant_build = yes
-                }
-                add_building_construction = {
-                    type = industrial_complex
-                    level = 1
-                    instant_build = yes
-                }
-            }
-            custom_effect_tooltip = generic_skip_one_line_tt
-            random_owned_controlled_state = {
-                limit = {
-                    is_core_of = GER
-                }
-                add_extra_state_shared_building_slots = 1
-                add_building_construction = {
-                    type = infrastructure
-                    level = 1
-                    instant_build = yes
-                }
-                add_building_construction = {
-                    type = industrial_complex
-                    level = 1
-                    instant_build = yes
-                }
-            }
-            custom_effect_tooltip = generic_skip_one_line_tt
-            random_owned_controlled_state = {
-                limit = {
-                    is_core_of = GER
-                }
-                add_extra_state_shared_building_slots = 1
-                add_building_construction = {
-                    type = infrastructure
-                    level = 1
-                    instant_build = yes
-                }
-                add_building_construction = {
-                    type = industrial_complex
-                    level = 1
-                    instant_build = yes
-                }
-            }
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
         }
         search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_INTERNAL_AFFAIRS }
     }
@@ -629,29 +555,19 @@ focus_tree = {
                     add_idea = GER_reform_eco_3
                 }
             }
-            random_owned_controlled_state = {
-                limit = {
-                    is_core_of = GER
-                }
+            every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 2
+				limit = {
+					is_owned_and_controlled_by = ROOT
+				}
                 add_extra_state_shared_building_slots = 2
-                add_building_construction = {
-                    type = industrial_complex
-                    level = 2
-                    instant_build = yes
-                }
-            }
-            custom_effect_tooltip = generic_skip_one_line_tt
-            random_owned_controlled_state = {
-                limit = {
-                    is_core_of = GER
-                }
-                add_extra_state_shared_building_slots = 2
-                add_building_construction = {
-                    type = industrial_complex
-                    level = 2
-                    instant_build = yes
-                }
-            }
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
         }
         search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_INDUSTRY }
     }
@@ -693,53 +609,19 @@ focus_tree = {
                     add_idea = GER_reform_eco_3
                 }
             }
-            random_owned_controlled_state = {
-                limit = {
-                    is_core_of = GER
-                }
+            every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 4
+				limit = {
+					is_owned_and_controlled_by = ROOT
+				}
                 add_extra_state_shared_building_slots = 1
-                add_building_construction = {
-                    type = industrial_complex
-                    level = 1
-                    instant_build = yes
-                }
-            }
-            custom_effect_tooltip = generic_skip_one_line_tt
-            random_owned_controlled_state = {
-                limit = {
-                    is_core_of = GER
-                }
-                add_extra_state_shared_building_slots = 1
-                add_building_construction = {
-                    type = industrial_complex
-                    level = 1
-                    instant_build = yes
-                }
-            }
-            custom_effect_tooltip = generic_skip_one_line_tt
-            random_owned_controlled_state = {
-                limit = {
-                    is_core_of = GER
-                }
-                add_extra_state_shared_building_slots = 1
-                add_building_construction = {
-                    type = industrial_complex
-                    level = 1
-                    instant_build = yes
-                }
-            }
-            custom_effect_tooltip = generic_skip_one_line_tt
-            random_owned_controlled_state = {
-                limit = {
-                    is_core_of = GER
-                }
-                add_extra_state_shared_building_slots = 1
-                add_building_construction = {
-                    type = industrial_complex
-                    level = 1
-                    instant_build = yes
-                }
-            }
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
         }
         search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_INTERNAL_AFFAIRS }
     }
@@ -4006,45 +3888,19 @@ focus_tree = {
                 category = industry
             }
             custom_effect_tooltip = generic_skip_one_line_tt
-            random_owned_controlled_state = {
-                limit = {
-                    is_core_of = ROOT
-                    is_in_home_area = yes
-                    free_building_slots = { building = arms_factory size > 0 include_locked = yes }
-                }
+            every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 3
+				limit = {
+					is_owned_and_controlled_by = ROOT
+				}
                 add_extra_state_shared_building_slots = 1
-                add_building_construction = {
-                    type = arms_factory
-                    level = 1
-                    instant_build = yes
-                }
-            }
-            random_owned_controlled_state = {
-                limit = {
-                    is_core_of = ROOT
-                    is_in_home_area = yes
-                    free_building_slots = { building = arms_factory size > 0 include_locked = yes }
-                }
-                add_extra_state_shared_building_slots = 1
-                add_building_construction = {
-                    type = arms_factory
-                    level = 1
-                    instant_build = yes
-                }
-            }
-            random_owned_controlled_state = {
-                limit = {
-                    is_core_of = ROOT
-                    is_in_home_area = yes
-                    free_building_slots = { building = arms_factory size > 0 include_locked = yes }
-                }
-                add_extra_state_shared_building_slots = 1
-                add_building_construction = {
-                    type = arms_factory
-                    level = 1
-                    instant_build = yes
-                }
-            }
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
         }
         search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH FOCUS_FILTER_GER_PREPAREDNESS }
     }
@@ -4112,19 +3968,19 @@ focus_tree = {
 				tooltip = military_industrial_organization_research_bonus_tt
 			}
             custom_effect_tooltip = generic_skip_one_line_tt
-            random_owned_controlled_state = {
-                limit = {
-                    is_core_of = ROOT
-                    is_in_home_area = yes
-                    free_building_slots = { building = arms_factory size > 0 include_locked = yes }
-                }
+            every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 1
+				limit = {
+					is_owned_and_controlled_by = ROOT
+				}
                 add_extra_state_shared_building_slots = 2
-                add_building_construction = {
-                    type = arms_factory
-                    level = 2
-                    instant_build = yes
-                }
-            }
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
         }
         search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT }
     }
@@ -4846,54 +4702,20 @@ focus_tree = {
         ai_will_do = { factor = 50 }
 
         completion_reward = {
-            random_owned_controlled_state = {
-                limit = {
-                    is_core_of = ROOT
-                    free_building_slots = { building = industrial_complex size > 0 include_locked = yes }
-                }
+            every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 4
+				limit = {
+					is_owned_and_controlled_by = ROOT
+                    free_building_slots = { building = synthetic_refinery size < 3 }
+				}
                 add_extra_state_shared_building_slots = 1
-                add_building_construction = {
-                    type = synthetic_refinery
-                    level = 1
-                    instant_build = yes
-                }
-            }
-            random_owned_controlled_state = {
-                limit = {
-                    is_core_of = ROOT
-                    free_building_slots = { building = industrial_complex size > 0 include_locked = yes }
-                }
-                add_extra_state_shared_building_slots = 1
-                add_building_construction = {
-                    type = synthetic_refinery
-                    level = 1
-                    instant_build = yes
-                }
-            }
-            random_owned_controlled_state = {
-                limit = {
-                    is_core_of = ROOT
-                    free_building_slots = { building = industrial_complex size > 0 include_locked = yes }
-                }
-                add_extra_state_shared_building_slots = 1
-                add_building_construction = {
-                    type = synthetic_refinery
-                    level = 1
-                    instant_build = yes
-                }
-            }
-            random_owned_controlled_state = {
-                limit = {
-                    is_core_of = ROOT
-                    free_building_slots = { building = industrial_complex size > 0 include_locked = yes }
-                }
-                add_extra_state_shared_building_slots = 1
-                add_building_construction = {
-                    type = synthetic_refinery
-                    level = 1
-                    instant_build = yes
-                }
-            }
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
             custom_effect_tooltip = generic_skip_one_line_tt
             modify_building_resources = {
                 building = synthetic_refinery

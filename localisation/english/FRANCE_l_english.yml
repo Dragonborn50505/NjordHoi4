@@ -1,0 +1,28 @@
+﻿l_english:
+### Tooltips ###
+ FRA_rearmament_threat: "French Rearmament"
+
+ FRA_IF_VOLUNTARY_ASSOCIATION_WAS_PICKED: "§TIf§! §YVoluntary Association§! §Twas completed§!:"
+ FRA_IF_MODERNISATION_AND_CARTELISATION_WAS_PICKED: "§TIf§! §YModernisation and Cartelisation§! §Twas completed§!:"
+ FRA_IF_MILITARISATION_OF_THE_PROLETARIAT_WAS_PICKED: "§TIf§! §YMilitarisation of the Proletariat§! §Twas completed§!:"
+ FRA_IF_EMBRACE_PLANISM_WAS_PICKED: "§TIf§! §YEmbrace Planism§! §Twas completed§!:"
+
+
+### Country ###
+
+### Focus Tree ###
+
+
+### Ideas ###
+ FRA_scars_of_the_great_european_war: "Scars of the Great European War"
+ FRA_scars_of_the_great_european_war_desc: "The Great European War was supposed to secure France's position among the great powers of Europe. Instead, it became a catastrophe from which the Empire has yet to recover. Millions of Frenchmen perished in the trenches of the Pyrenees, their sacrifices yielding neither decisive victory nor lasting peace. Entire generations were lost, families shattered and communities left without fathers, sons and brothers. The war has become an open wound, a wound that is threatening to push French society to the brink."
+ FRA_the_white_years: "State of the French Economy - The White Years"
+ FRA_the_white_years_desc: "The French factories once supplied the armies of Europe with weapons, ammunition and machinery. Today, many of those factories stand idle or operate at a fraction of their former capacity. Millions of men never returned from the Pyrenees, leaving industries without workers and families without providers. The shortage of labour has crippled production, while the demographic consequences of the war continue to haunt the Empire. With fewer young men entering the workforce and fewer children being born, France faces a long and painful struggle to rebuild its productive strength."
+ FRA_the_marseille_martyrs: "The Marseille Martyrs"
+ FRA_the_marseille_martyrs_desc: "In 1919, the workers and revolutionaries of Marseille proclaimed a Commune, declaring that the Empire had forfeited its right to govern the French people. Though the uprising lasted barely two months before being crushed by imperial forces, its defeat created martyrs whose memory has endured far longer than the Commune itself. Their names and sacrifices are celebrated in clandestine meetings, workers' assemblies and revolutionary publications. The government may have destroyed the Commune, but it has failed to extinguish the thousands of revolutionaries that it gave birth to."
+ FRA_the_red_menace_within: "The Red Menace Within"
+ FRA_the_red_menace_within_desc: "Across the factories, mines and agricultural districts of France, revolutionary organisations continue to spread their influence. Worker unions organise strikes, socialist newspapers denounce the Empire, and communist agitators call for the overthrow of the French government. Attempts to suppress these movements have repeatedly proven counterproductive, driving their most committed members further underground and radicalising those who might have otherwise remained moderate. The government is increasingly unable to deal with the growing 'Red Menace', be it abroad or at home."
+ FRA_the_humiliation_of_piedmont: "The Humiliation of Piedmont"
+ FRA_the_humiliation_of_piedmont_desc: "The invasion of socialist Italy was intended to prevent revolution from spreading into France. Initially, imperial forces achieved considerable success, occupying Piedmont and Savoy, and promising a swift restoration of order across the Alps. Instead, the Italian revolutionary armies struck back, encircling and destroying much of the French expeditionary force. The defeat was devastating not only for the army, but for the Empire's remaining credibility. Soldiers returned home disillusioned, officers began questioning the competence of their superiors, and the French people were once again forced to mourn thousands of men lost in a war that had promised so much and delivered so little."
+ FRA_conspiracies_of_the_general_staff: "Conspiracies of the General Staff"
+ FRA_conspiracies_of_the_general_staff_desc: "The French officer corps has not forgotten the disasters of the Great European War or the subsequent humiliation in Italy. Across the army, officers privately question the competence and legitimacy of the imperial government, with some openly discussing the need for a new government capable of restoring France's military strength. Some advocate for a military more integrated into the civilian government, others have taken up the ideas of radical ideologies such as Fascism or National Populism, inspired by political movements in Russia, while the most radical factions have begun entertaining cooperation with revolutionary elements if doing so would allow them to remove the existing government."

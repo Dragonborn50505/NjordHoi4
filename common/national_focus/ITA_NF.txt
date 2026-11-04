@@ -584,22 +584,13 @@ focus_tree = {
 			focus = SRI_empower_cgl
 		}
 		completion_reward = {
-			random_owned_controlled_state = {
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 2
 				limit = {
-					is_core_of = root
+					is_owned_and_controlled_by = ROOT
 				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = root
-				}
-				add_extra_state_shared_building_slots = 1
+                add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
@@ -650,11 +641,13 @@ focus_tree = {
 			focus = SRI_empower_cgl
 		}
 		completion_reward = {
-			random_owned_controlled_state = {
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 1
 				limit = {
-					is_core_of = root
+					is_owned_and_controlled_by = ROOT
 				}
-				add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -1088,12 +1081,13 @@ focus_tree = {
 			focus = SRI_exclude_catholic_unions
 		}
 		completion_reward = {
-			random_owned_controlled_state = {
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 1
 				limit = {
-					is_in_home_area = yes
-					is_core_of = root
+					is_owned_and_controlled_by = ROOT
 				}
-				add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 2
@@ -1165,11 +1159,13 @@ focus_tree = {
 		y = 0
 
 		completion_reward = {
-			random_owned_controlled_state = {
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 1
 				limit = {
-					is_core_of = root
+					is_owned_and_controlled_by = ROOT
 				}
-				add_extra_state_shared_building_slots = 1
+                add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
@@ -2004,11 +2000,13 @@ focus_tree = {
 				type = motorized_equipment
 				amount = 300
 			}
-			random_owned_controlled_state = {
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 1
 				limit = {
-					is_core_of = root
+					is_owned_and_controlled_by = ROOT
 				}
-				add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -2455,22 +2453,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			random_owned_controlled_state = {
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 2
 				limit = {
-					is_core_of = ROOT
+					is_owned_and_controlled_by = ROOT
 				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = ROOT
-				}
-				add_extra_state_shared_building_slots = 1
+                add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
 					level = 1
@@ -2609,11 +2598,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			random_owned_controlled_state = {
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 1
 				limit = {
-					is_core_of = ROOT
+					is_owned_and_controlled_by = ROOT
 				}
-				add_extra_state_shared_building_slots = 1
+                add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
 					level = 1
@@ -2674,11 +2665,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			random_owned_controlled_state = {
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 1
 				limit = {
-					is_core_of = ROOT
+					is_owned_and_controlled_by = ROOT
 				}
-				add_extra_state_shared_building_slots = 1
+                add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
 					level = 1
@@ -2852,11 +2845,13 @@ focus_tree = {
 				tooltip = army_artillery_defence_factor_tt
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
-			random_owned_controlled_state = {
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 1
 				limit = {
-					is_core_of = ROOT
+					is_owned_and_controlled_by = ROOT
 				}
-				add_extra_state_shared_building_slots = 1
+                add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
 					level = 1
@@ -4311,11 +4306,13 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 15
-			random_owned_controlled_state = {
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 1
 				limit = {
-					is_core_of = root
+					is_owned_and_controlled_by = ROOT
 				}
-				add_extra_state_shared_building_slots = 1
+                add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
 					level = 1
@@ -5319,6 +5316,7 @@ focus_tree = {
 				limit = {
 					is_core_of = root
 					is_controlled_by = ROOT
+					is_coastal = yes
 				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -5513,11 +5511,14 @@ focus_tree = {
 				tooltip = navy_capital_ship_attack_factor_tt
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
-			random_owned_controlled_state = {
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 1
 				limit = {
-					is_core_of = root
+					is_owned_and_controlled_by = ROOT
+					is_coastal = yes
 				}
-				add_extra_state_shared_building_slots = 1
+                add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = dockyard
 					level = 1
@@ -5546,33 +5547,14 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = SRI_ismm_screen_production_bonus
 			custom_effect_tooltip = generic_skip_one_line_tt
-			random_owned_controlled_state = {
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 3
 				limit = {
-					is_core_of = root
+					is_owned_and_controlled_by = ROOT
+					is_coastal = yes
 				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = root
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = root
-				}
-				add_extra_state_shared_building_slots = 1
+                add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = dockyard
 					level = 1
@@ -5633,33 +5615,14 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = SRI_ismm_capital_production_bonus
 			custom_effect_tooltip = generic_skip_one_line_tt
-			random_owned_controlled_state = {
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 3
 				limit = {
-					is_core_of = root
+					is_owned_and_controlled_by = ROOT
+					is_coastal = yes
 				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = root
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = root
-				}
-				add_extra_state_shared_building_slots = 1
+                add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = dockyard
 					level = 1
@@ -6068,11 +6031,14 @@ focus_tree = {
 				category = asw_tech
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
-			random_owned_controlled_state = {
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 1
 				limit = {
-					is_core_of = root
+					is_owned_and_controlled_by = ROOT
+					is_coastal = yes
 				}
-				add_extra_state_shared_building_slots = 1
+                add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = dockyard
 					level = 1
@@ -6145,11 +6111,14 @@ focus_tree = {
 				category = asw_tech
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
-			random_owned_controlled_state = {
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 1
 				limit = {
-					is_core_of = root
+					is_owned_and_controlled_by = ROOT
+					is_coastal = yes
 				}
-				add_extra_state_shared_building_slots = 1
+                add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = dockyard
 					level = 1
@@ -6215,11 +6184,14 @@ focus_tree = {
 				category = naval_armor
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
-			random_owned_controlled_state = {
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 1
 				limit = {
-					is_core_of = root
+					is_owned_and_controlled_by = ROOT
+					is_coastal = yes
 				}
-				add_extra_state_shared_building_slots = 1
+                add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = dockyard
 					level = 1
@@ -6701,33 +6673,14 @@ focus_tree = {
 				folder = naval
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
-			random_owned_controlled_state = {
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 3
 				limit = {
-					is_core_of = root
+					is_owned_and_controlled_by = ROOT
+					is_coastal = yes
 				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = root
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = root
-				}
-				add_extra_state_shared_building_slots = 1
+                add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = dockyard
 					level = 1

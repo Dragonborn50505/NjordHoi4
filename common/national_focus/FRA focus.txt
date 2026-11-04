@@ -10,21 +10,22 @@ focus_tree = {
 	}
 
 	default = no
-	continuous_focus_position = { x = 0 y = 2000 }
+	continuous_focus_position = { x = 0 y = 2500 }
 
 	focus = {
 		id = FRA_vanguard_of_the_revolution
-		icon = GFX_focus_SOV_builder_of_the_red_army
+		icon = GFX_focus_focus_fra_liberte_egalite_solidarite
 		cost = 5
 
 		x = 4
-		y = 0
+		y = 2
 
 		ai_will_do = { factor = 200 }
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_vanguard_of_the_revolution"
 			add_war_support = 0.05
+			add_political_power = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = FRA_vanguard_of_the_revolution_idea
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -32,7 +33,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_road_to_war
-		icon = GFX_focus_focus_fra_revolution_utmost
+		icon = GFX_focus_SOV_builder_of_the_red_army
 		cost = 5
 
 		relative_position_id = FRA_vanguard_of_the_revolution
@@ -46,17 +47,16 @@ focus_tree = {
 		ai_will_do = { factor = 200 }
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_road_to_war"
-			add_war_support = 0.10
+			add_war_support = 0.1
 			add_named_threat = {
 				threat = 2
 				name = FRA_rearmament_threat
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
-			add_timed_idea = { idea = FRA_revanchist_rearmament days = 500 }
+			add_timed_idea = { idea = FRA_revanchist_rearmament days = 365 }
 			custom_effect_tooltip = generic_skip_one_line_tt
-			RUS = {
-				country_event = { id = russia_democratic_events.121 days = 50 random_days = 50 } #A Conspiracy to Destroy Germany
+			SOV = {
+				country_event = { id = FRA_events.1 days = 50 random_days = 50 } #A Conspiracy to Destroy Germany
 			}
 		}
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
@@ -72,12 +72,7 @@ focus_tree = {
 		y = 1
 
 		available = {
-			has_full_control_of_state = 27
-			if = {
-				limit = { owns_state = 760 }
-				has_full_control_of_state = 760
-			}
-			has_full_control_of_state = 785
+			
 		}
 
 		prerequisite = {
@@ -105,69 +100,44 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_fortify_the_german_border"
 			add_tech_bonus = {
 				name = FRA_fortify_the_german_border
-				bonus = 1
+				bonus = 0.5
 				uses = 2
 				category = cat_fortification
+				category = engineers_tech
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			27 = {
-				custom_override_tooltip = {
-					add_building_construction = {
-						type = bunker
-						level = 2
-						instant_build = yes
-						province = {
-							all_provinces = yes
-							limit_to_border_country = GER
-						}
-					}
-					tooltip = {
-						localization_key = tooltip_add_building_on_border_provinces_with_tag
-						BUILDING = bunker
-						NUMBER = 2
-						TAG = "[GER.GetTag]"
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border_country = GER
 					}
 				}
 			}
 			760 = {
-				if = {
-					limit = { is_owned_by = ROOT }
-					custom_override_tooltip = {
-						add_building_construction = {
-							type = bunker
-							level = 2
-							instant_build = yes
-							province = {
-								all_provinces = yes
-								limit_to_border_country = GER
-							}
-						}
-						tooltip = {
-							localization_key = tooltip_add_building_on_border_provinces_with_tag
-							BUILDING = bunker
-							NUMBER = 2
-							TAG = "[GER.GetTag]"
-						}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border_country = GER
 					}
 				}
 			}
 			785 = {
-				custom_override_tooltip = {
-					add_building_construction = {
-						type = bunker
-						level = 2
-						instant_build = yes
-						province = {
-							all_provinces = yes
-							limit_to_border = yes
-						}
-					}
-					tooltip = {
-						localization_key = tooltip_add_building_on_border_provinces
-						BUILDING = bunker
-						NUMBER = 2
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border_country = GER
 					}
 				}
 			}
@@ -177,7 +147,7 @@ focus_tree = {
 
 	focus = {
 		id = FRA_extend_the_line
-		icon = GFX_goal_nested_fortifications
+		icon = GFX_focus_SWE_hedgehog_defense
 		cost = 5
 
 		relative_position_id = FRA_fortify_the_german_border
@@ -221,81 +191,36 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_extend_the_line"
-			if = {
-				limit = { owns_state = 29 }
-				29 = {
-					custom_override_tooltip = {
-						add_building_construction = {
-							type = bunker
-							level = 2
-							instant_build = yes
-							province = {
-								all_provinces = yes
-								limit_to_border = yes
-							}
-						}
-						tooltip = {
-							localization_key = tooltip_add_building_on_border_provinces
-							BUILDING = bunker
-							NUMBER = 2
-						}
-					}
-				}
-			}
-			else = {
-				17 = {
-					custom_override_tooltip = {
-						add_building_construction = {
-							type = bunker
-							level = 2
-							instant_build = yes
-							province = {
-								all_provinces = yes
-								limit_to_border = yes
-							}
-						}
-						tooltip = {
-							localization_key = tooltip_add_building_on_border_provinces
-							BUILDING = bunker
-							NUMBER = 2
-						}
+			29 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
 					}
 				}
 			}
 			24 = {
-				custom_override_tooltip = {
-					add_building_construction = {
-						type = bunker
-						level = 2
-						instant_build = yes
-						province = {
-							all_provinces = yes
-							limit_to_border = yes
-						}
-					}
-					tooltip = {
-						localization_key = tooltip_add_building_on_border_provinces
-						BUILDING = bunker
-						NUMBER = 2
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
 					}
 				}
 			}
 			980 = {
-				custom_override_tooltip = {
-					add_building_construction = {
-						type = bunker
-						level = 2
-						instant_build = yes
-						province = {
-							all_provinces = yes
-							limit_to_border = yes
-						}
-					}
-					tooltip = {
-						localization_key = tooltip_add_building_on_border_provinces
-						BUILDING = bunker
-						NUMBER = 2
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
 					}
 				}
 			}
@@ -304,8 +229,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = FRA_demand_haute_savoie
-		icon = GFX_goal_FRA_savoie
+		id = FRA_demand_haute_savoie # Demand Nice / Fortify all of France
+		icon = GFX_focus_SWI_fortify_border_with_france
 		cost = 2
 
 		relative_position_id = FRA_road_to_war
@@ -314,16 +239,14 @@ focus_tree = {
 
 		available = {
 			is_subject = no
-			has_global_flag = can_demand_romandy
-			can_declare_war_on = SWI
-			SWI = { owns_state = 760 }
+			can_declare_war_on = ITA
+			ITA = { owns_state = 760 }
 		}
 
 		bypass = {
 			OR = {
 				owns_state = 760
-				NOT = { can_declare_war_on = SWI }
-				SWI = { has_socialist_government = yes }
+				NOT = { can_declare_war_on = ITA }
 			}
 		}
 
@@ -333,18 +256,23 @@ focus_tree = {
 
 		ai_will_do = { factor = 200 }
 
-		will_lead_to_war_with = SWI
-		will_lead_to_war_with = GER
-		will_lead_to_war_with = AUS
+		will_lead_to_war_with = ITA
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_demand_haute_savoie"
-			country_event = pre_war_events.7
-			add_named_threat = {
-				threat = 7
-				name = SWI_haute_savoie_threat
-			}
-			custom_effect_tooltip = SWI_romandie_confrontation
+			GER = {
+                country_event = FRA_events.2
+            }
+            custom_effect_tooltip = if_they_accept_tt
+            effect_tooltip = {
+                add_threat = -5
+            }
+            custom_effect_tooltip = if_they_refuse_tt
+            effect_tooltip = {
+                add_war_support = 0.05
+                GER = {
+                    add_war_support = -0.1
+                }
+            }
 		}
 	}
 
@@ -358,19 +286,12 @@ focus_tree = {
 		y = 3
 
 		available = {
-			second_weltkrieg_can_start = yes
 			can_declare_war_on = GER
 			is_faction_leader = yes
+			date = 1940.1.1
 		}
 
 		continue_if_invalid = yes
-
-		cancel = {
-			OR = {
-				is_faction_leader = no
-				has_country_flag = KR_copenhagen_conference_success
-			}
-		}
 
 		bypass = {
 			NOT = { can_declare_war_on = GER }
@@ -381,10 +302,6 @@ focus_tree = {
 		}
 
 		will_lead_to_war_with = GER
-		will_lead_to_war_with = NFA
-		will_lead_to_war_with = BEL
-		will_lead_to_war_with = FLA
-		will_lead_to_war_with = WAL
 
 		ai_will_do = {
 			factor = 1000
@@ -392,58 +309,20 @@ focus_tree = {
 				factor = 0
 				date < 1939.6.1
 			}
-			modifier = {
-				factor = 0
-				country_is_in_dangerous_war = yes
-				NOT = { GER = { has_war_with = var:global.russia } }
-			}
-			modifier = {
-				factor = 0
-				var:global.russia = { is_faction_leader = no }
-				NOT = { is_in_faction_with = WCA }
-			}
-			modifier = {
-				factor = 0
-				var:global.russia = {
-					NOT = { focus_progress = { focus = RUS_preemptive_war progress > 0 } }
-					NOT = { focus_progress = { focus = RUS_anti_capitalist_warfare progress > 0 } }
-				}
-			}
 		}
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_take_down_germany"
 			declare_war_on = {
 				target = GER
 				type = topple_government
 			}
 			if = {
 				limit = {
-					can_declare_war_on = BEL
-					BEL = { is_in_faction_with = GER }
+					can_declare_war_on = PRE
+					PRE = { is_in_faction_with = PRE }
 				}
 				declare_war_on = {
-					target = BEL
-					type = topple_government
-				}
-			}
-			if = {
-				limit = {
-					can_declare_war_on = FLA
-					FLA = { is_in_faction_with = GER }
-				}
-				declare_war_on = {
-					target = FLA
-					type = topple_government
-				}
-			}
-			if = {
-				limit = {
-					can_declare_war_on = WAL
-					WAL = { is_in_faction_with = GER }
-				}
-				declare_war_on = {
-					target = WAL
+					target = PRE
 					type = topple_government
 				}
 			}
@@ -452,8 +331,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = FRA_flank_the_rhineland
-		icon = GFX_focus_BEL_dyle_plan
+		id = FRA_flank_the_rhineland # Flank the Rhineland
+		icon = GFX_focus_SWI_the_national_redoubt
 		cost = 2
 
 		relative_position_id = FRA_take_down_germany
@@ -468,162 +347,32 @@ focus_tree = {
 			}
 		}
 
-		bypass = {
-			all_country_of = {
-				target = { HOL BEL WAL FLA }
-				OR = {
-					exists = no
-					has_war_with = ROOT
-					has_socialist_government = yes
-				}
-			}
-		}
-
 		prerequisite = {
 			focus = FRA_take_down_germany
 		}
-
-		will_lead_to_war_with = HOL
-		will_lead_to_war_with = BEL
-		will_lead_to_war_with = FLA
-		will_lead_to_war_with = WAL
 
 		ai_will_do = {
 			factor = 100
-			modifier = {
-				factor = 0
-				country_is_in_dangerous_war = yes
-			}
-			modifier = {
-				factor = 0
-				any_country_of = {
-					target = { HOL BEL WAL FLA }
-					ROOT = { can_declare_war_on = PREV }
-					has_socialist_government = no
-					default_attack_AI_trigger = yes
-				}
-			}
-			modifier = {
-				factor = 0
-				NOT = { has_government = totalist }
-				GER = {
-					exists = yes
-					is_subject = no
-					has_socialist_government = no
-				}
-				any_country_of = {
-					target = { BEL HOL }
-					has_idea = generic_neutral_foreign_policy
-				}
-			}
-			modifier = {
-				factor = 0
-				has_war_with = GER
-				any_state_of = {
-					target = { 42 780 781 } #Palatinate, Baden, Western Rhineland
-					controller = { is_ally_with = ROOT }
-				}
-			}
 		}
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_flank_the_rhineland"
-			if = {
-				limit = {
-					can_declare_war_on = HOL
-					HOL = { has_socialist_government = no }
-				}
-				create_wargoal = {
-					target = HOL
-					type = topple_government
-				}
-			}
-			if = {
-				limit = {
-					can_declare_war_on = BLG
-					BLG = { has_socialist_government = no }
-				}
-				create_wargoal = {
-					target = BLG
-					type = topple_government
-				}
-			}
-			else = {
-				if = {
-					limit = {
-						can_declare_war_on = WAL
-						WAL = { has_socialist_government = no }
-					}
-					create_wargoal = {
-						target = WAL
-						type = topple_government
-					}
-				}
-				if = {
-					limit = {
-						can_declare_war_on = FLA
-						FLA = { has_socialist_government = no }
-					}
-					create_wargoal = {
-						target = FLA
-						type = topple_government
-					}
-				}
-			}
+
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
-
-	focus = {
-		id = FRA_peaceful_revolution
-		icon = GFX_focus_SWE_refuge_from_war
-		cost = 6
-
-		relative_position_id = FRA_take_down_germany
-		x = 0
-		y = 1
-
-		prerequisite = {
-			focus = FRA_take_down_germany
-		}
-		available = {
-			has_country_flag = FRA2_FOR_TRAV
-			has_war = no
-		}
-
-		mutually_exclusive = {
-			focus = FRA_world_revolution
-			focus = FRA_european_revolution
-		}
-
-		ai_will_do = { factor = 5 }
-
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_peaceful_revolution"
-			add_ideas = FRA_peaceful_revolution_idea
-		}
-		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY }
-	}
-
 	focus = {
 		id = FRA_european_revolution
 		icon = GFX_focus_ger_great_red_menace
-		cost = 4
+		cost = 5
 
 		relative_position_id = FRA_take_down_germany
-		x = 3
+		x = 2
 		y = 1
 
 		prerequisite = {
 			focus = FRA_take_down_germany
 		}
 		available = {
-			has_country_flag = FRA2_FOR_JACO
 			NOT = { has_war_with = GER }
-		}
-
-		mutually_exclusive = {
-			focus = FRA_world_revolution
-			focus = FRA_peaceful_revolution
 		}
 
 		ai_will_do = {
@@ -635,15 +384,14 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_european_revolution"
-			unlock_decision_category_tooltip = FRA_liberate_europe_category
+			
 		}
 	}
 
 	focus = {
 		id = FRA_the_red_danube
-		icon = GFX_goal_FRA_liberate_AH
-		cost = 4
+		icon = GFX_focus_AUS_austromarxism
+		cost = 5
 
 		relative_position_id = FRA_european_revolution
 		x = -1
@@ -654,88 +402,22 @@ focus_tree = {
 		}
 
 		bypass = {
-			all_country_of = {
-				target = { AUS HUN CZE CRO }
-				OR = {
-					NOT = { can_declare_war_on = ROOT }
-					has_socialist_government = yes
-				}
-			}
+			NOT = { can_declare_war_on = X07 }
 		}
 
 		prerequisite = {
 			focus = FRA_european_revolution
 		}
 
-		will_lead_to_war_with = AUS
-		will_lead_to_war_with = HUN
+		will_lead_to_war_with = X07
 
 		ai_will_do = {
 			factor = 100
-			modifier = {
-				factor = 0
-				country_is_in_dangerous_war = yes
-			}
-			modifier = {
-				factor = 0
-				any_country_of = {
-					target = { AUS HUN CZE CRO }
-					can_declare_war_on = ROOT
-					has_socialist_government = no
-					default_attack_AI_trigger = yes
-				}
-			}
 		}
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_the_red_danube"
-			if = {
-				limit = {
-					can_declare_war_on = AUS
-					AUS = { has_socialist_government = no }
-				}
-				create_wargoal = {
-					target = AUS
-					type = topple_government
-				}
-			}
-			if = {
-				limit = {
-					can_declare_war_on = HUN
-					HUN = {
-						has_socialist_government = no
-						NOT = { is_subject_of = AUS }
-					}
-				}
-				create_wargoal = {
-					target = HUN
-					type = topple_government
-				}
-			}
-			if = {
-				limit = {
-					can_declare_war_on = CZE
-					CZE = {
-						has_socialist_government = no
-						NOT = { is_subject_of = AUS }
-					}
-				}
-				create_wargoal = {
-					target = CZE
-					type = topple_government
-				}
-			}
-			if = {
-				limit = {
-					can_declare_war_on = CRO
-					CRO = {
-						has_socialist_government = no
-						NOT = { is_subject_of = AUS }
-					}
-				}
-				create_wargoal = {
-					target = CRO
-					type = topple_government
-				}
+			declare_war_on = {
+				target = X07
+				type = topple_government
 			}
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -743,8 +425,8 @@ focus_tree = {
 
 	focus = {
 		id = FRA_liberate_iberia
-		icon = GFX_goal_FRA_liberate_Iberia
-		cost = 4
+		icon = GFX_focus_spr_no_pasaran
+		cost = 5
 
 		relative_position_id = FRA_european_revolution
 		x = 1
@@ -757,100 +439,19 @@ focus_tree = {
 			is_subject = no
 		}
 		bypass = {
-			all_country_of = {
-				target = { SPA POR }
-				OR = {
-					NOT = { can_declare_war_on = ROOT }
-					has_socialist_government = yes
-				}
-			}
+			NOT = { can_declare_war_on = SPR }
 		}
 
-		will_lead_to_war_with = SPA
-		will_lead_to_war_with = POR
+		will_lead_to_war_with = SPR
 
 		ai_will_do = {
 			factor = 100
-			modifier = {
-				factor = 0
-				country_is_in_dangerous_war = yes
-			}
-			modifier = {
-				factor = 0
-				any_country_of = {
-					target = { SPA POR }
-					can_declare_war_on = ROOT
-					has_socialist_government = no
-					default_attack_AI_trigger = yes
-				}
-			}
 		}
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_liberate_iberia"
-			if = {
-				limit = {
-					can_declare_war_on = SPA
-					SPA = { has_socialist_government = no }
-				}
-				create_wargoal = {
-					target = SPA
-					type = topple_government
-				}
+			declare_war_on = {
+				target = SPR
+				type = topple_government
 			}
-			if = {
-				limit = {
-					can_declare_war_on = POR
-					POR = { has_socialist_government = no }
-				}
-				create_wargoal = {
-					target = POR
-					type = topple_government
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-	}
-
-	focus = {
-		id = FRA_world_revolution
-		icon = GFX_focus_focus_fra_revolution_utmost
-		cost = 4
-
-		relative_position_id = FRA_take_down_germany
-		x = 6
-		y = 1
-
-		prerequisite = {
-			focus = FRA_take_down_germany
-		}
-		prerequisite = {
-			focus = FRA_damocles
-		}
-		available = {
-			OR = {
-				has_elections = no
-				has_country_flag = FRA2_FOR_SORE
-				has_country_flag = FRA2_FOR_ANAR
-			}
-			NOT = { has_war_with = GER }
-		}
-
-		mutually_exclusive = {
-			focus = FRA_peaceful_revolution
-			focus = FRA_european_revolution
-		}
-
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 0
-				has_war = yes
-			}
-		}
-
-		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_world_revolution"
-			add_ideas = FRA_revolutionary_spirit
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
@@ -858,7 +459,7 @@ focus_tree = {
 	focus = {
 		id = FRA_renseignements_generaux
 		icon = GFX_focus_generic_secret_service_agency
-		cost = 7
+		cost = 5
 
 		relative_position_id = FRA_vanguard_of_the_revolution
 		x = 0
@@ -870,10 +471,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 4
-				has_dlc_lar = yes
-			}
 			modifier = {
 				factor = 1.5
 				date > 1937.1.1
@@ -889,37 +486,22 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_renseignements_generaux"
 			add_political_power = 50
-			if = {
-				limit = { has_dlc_lar = yes }
-				if = {
-					limit = { has_intelligence_agency = no }
-					create_intelligence_agency = yes
-				}
-				custom_effect_tooltip = generic_skip_one_line_tt
-				add_ideas = FRA_renseignements_generaux_lar
-			}
-			else = {
-				add_political_power = 50
-				add_ideas = FRA_renseignements_generaux_non_lar
-			}
-			hidden_effect = {
-				NFA = { country_event = { id = french_republic_events.544 days = 5 } } #Wine-smuggling
-			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			create_intelligence_agency = yes
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = FRA_renseignements_generaux_lar
 		}
 	}
 
 	focus = {
 		id = FRA_the_haunting_spectre
 		icon = GFX_focus_generic_whispers
-		cost = 7
+		cost = 5
 
 		relative_position_id = FRA_renseignements_generaux
 		x = 0
 		y = 2
-
-		allow_branch = { has_dlc_lar = yes }
 
 		available = {
 			agency_upgrade_number > 9
@@ -946,18 +528,18 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_the_haunting_spectre"
 			swap_ideas = {
 				remove_idea = FRA_renseignements_generaux_lar
 				add_idea = FRA_renseignements_generaux_lar_2
 			}
+			upgrade_intelligence_agency = upgrade_interrogation_techniques
 		}
 	}
 
 	focus = {
 		id = FRA_curie_research_institute
 		icon = GFX_focus_research2
-		cost = 7
+		cost = 5
 
 		relative_position_id = FRA_vanguard_of_the_revolution
 		x = 1
@@ -970,34 +552,34 @@ focus_tree = {
 		ai_will_do = { factor = 300 }
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_curie_research_institute"
-			add_research_slot_until_six = yes
+			add_research_slot = 1
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 
 	focus = {
 		id = FRA_the_congress_of_the_internationale
-		icon = GFX_goal_FRA_Internationale_Congress
-		cost = 0
+		icon = GFX_focus_PRC_join_comintern
+		cost = 5
 
 		relative_position_id = FRA_vanguard_of_the_revolution
 		x = 6
-		y = 0
+		y = 2
 
 		available = {
-			hidden_trigger = { always = no }
+			hidden_trigger = { has_government = communism }
 		}
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_the_congress_of_the_internationale"
-			custom_effect_tooltip = unlock_focuses
+			add_political_power = 100
+			custom_effect_tooltip = generic_skip_one_line_tt
+			create_faction_from_template = faction_template_world_revolution
 		}
 	}
 
 	focus = {
 		id = FRA_mission_to_india
-		icon = GFX_goal_india_commune
+		icon = GFX_focus_RAJ_forward_bloc
 		cost = 5
 		dynamic = yes
 
@@ -1009,7 +591,6 @@ focus_tree = {
 			focus = FRA_the_congress_of_the_internationale
 		}
 		available = {
-			has_country_flag = FRA_support_bharatiya
 			country_exists = HND
 			HND = { has_socialist_government = yes }
 		}
@@ -1017,14 +598,13 @@ focus_tree = {
 		ai_will_do = { factor = 6 }
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_mission_to_india"
 			HND = { country_event = france_events.62 }
 		}
 	}
 
 	focus = {
 		id = FRA_arab_committee
-		icon = GFX_goal_INS_focus_islamic_socialism
+		icon = GFX_focus_generic_influence_middle_east
 		cost = 5
 
 		relative_position_id = FRA_the_congress_of_the_internationale
@@ -1038,23 +618,7 @@ focus_tree = {
 		ai_will_do = { factor = 3 }
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_arab_committee"
-			add_political_power = 60
-			ENG = { country_event = { id = france_events.64 days = 2 } }
-			every_other_country = {
-				limit = {
-					OR = {
-						tag = NFA
-						tag = OTT
-						tag = GER
-						AND = {
-							original_tag = SPA
-							owns_state = 290
-						}
-					}
-				}
-				country_event = { id = france_events.63 days = 2 }
-			}
+			# ADD Resistance and communism support amongst Middle Eastern nations
 		}
 	}
 
@@ -1080,7 +644,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_working_women"
 			add_ideas = FRA_working_women_idea
 		}
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY }
@@ -1102,16 +665,27 @@ focus_tree = {
 		ai_will_do = { factor = 5 }
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_international_avant_garde"
 			add_ideas = FRA_international_avant_garde_idea
 			custom_effect_tooltip = generic_skip_one_line_tt
-			ENG = {
-				country_event = france_events.165
+			HOL = {
+				country_event = FRA_events.3
+				effect_tooltip = { add_ideas = FRA_international_avant_garde_idea }
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			ITA = {
+				country_event = FRA_events.3
 				effect_tooltip = { add_ideas = FRA_international_avant_garde_idea }
 			}
 			hidden_effect = {
-				country_event = { id = france_events.164 days = 15 random_days = 30 }
-				NFA = { country_event = { id = french_republic_events.505 days = 3 } } #Académie Française revolted by such acts
+				every_faction_member = {
+					limit = {
+						NOT = {
+							tag = ITA
+							tag = HOL
+						}
+					}
+					add_ideas = FRA_international_avant_garde_idea
+				}
 			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1119,8 +693,8 @@ focus_tree = {
 
 	focus = {
 		id = FRA_found_the_phalanstere_international
-		icon = GFX_goal_FRA_phalanstere
-		cost = 8
+		icon = GFX_focus_PRC_the_central_committee
+		cost = 5
 
 		relative_position_id = FRA_the_congress_of_the_internationale
 		x = 0
@@ -1137,39 +711,20 @@ focus_tree = {
 		ai_will_do = { factor = 200 }
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_found_the_phalanstere_international"
-			save_global_event_target_as = INT_phalanstere_leader
-			hidden_effect = {
-				create_economic_sphere = yes
-				var:economic_sphere = {
-					set_character_name = INT_phalanstere
-					set_character_flag = has_custom_script_handle
-					var:desc = { set_character_name = KR_phalanstere_desc }
-					var:icon = { set_character_name = "GFX_goal_FRA_phalanstere" }
-					set_variable = { red = 0.039 }
-					set_variable = { green = 0.212 }
-					set_variable = { blue = 0.686 }
-				}
-			}
-			FRA_add_to_phalanstere = yes
 			add_tech_bonus = {
 				name = FRA_found_the_phalanstere_international
 				bonus = 1
 				uses = 1
 				category = construction_tech
 			}
-			every_other_country = {
-				display_individual_scopes = yes
-				limit = {
-					has_socialist_government = yes
-					NOT = { has_war_with = ROOT }
+			custom_effect_tooltip = generic_skip_one_line_tt
+			every_faction_member = {
+				add_tech_bonus = {
+					name = FRA_found_the_phalanstere_international
+					bonus = 1
+					uses = 1
+					category = construction_tech
 				}
-				country_event = france_events.127
-			}
-			hidden_effect = {
-				ENG = { country_event = { id = france_events.128 days = 10 } }
-				SRI = { country_event = { id = france_events.128 days = 10 } }
-				HND = { country_event = { id = france_events.128 days = 10 } }
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -1177,7 +732,7 @@ focus_tree = {
 	focus = {
 		id = FRA_synthetic_chemistry
 		icon = GFX_focus_GER_factories_for_resources
-		cost = 8
+		cost = 5
 
 		relative_position_id = FRA_found_the_phalanstere_international
 		x = -3
@@ -1205,21 +760,32 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_synthetic_chemistry"
-			add_one_random_synthetic_refinery = yes
-			add_one_random_synthetic_refinery = yes
-			custom_effect_tooltip = generic_skip_one_line_tt
-			modify_building_resources = {
-				building = synthetic_refinery
-				resource = rubber
-				amount = 3
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = FRA_synthetic_chemistry
 				bonus = 1
 				uses = 2
 				category = synth_resources
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 2
+				limit = {
+					is_owned_and_controlled_by = ROOT
+					free_building_slots = { building = synthetic_refinery size < 3 }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			modify_building_resources = {
+				building = synthetic_refinery
+				resource = rubber
+				amount = 3
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
@@ -1228,20 +794,15 @@ focus_tree = {
 	focus = {
 		id = FRA_damocles
 		icon = GFX_focus_generic_nuclear_development
-		cost = 8
+		cost = 5
 
 		relative_position_id = FRA_found_the_phalanstere_international
 		x = 0
 		y = 1
 
 		available = {
-			is_in_faction_with = ENG
-			is_in_economic_sphere = yes
-			FRA_can_start_project_damocles = yes
-		}
-
-		bypass = {
-			has_global_flag = damocles_project_active
+			is_in_faction_with = HOL
+			is_in_faction_with = ITA
 		}
 
 		prerequisite = {
@@ -1257,13 +818,17 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_damocles"
-			ENG = { country_event = france_events.25 }
-			custom_effect_tooltip = if_they_accept_tt
-			effect_tooltip = {
-				FRA_damocles_effect = yes
-				custom_effect_tooltip = generic_skip_one_line_tt
-				ENG = { FRA_damocles_effect = yes }
+			add_tech_bonus = {
+				name = FRA_damocles
+				bonus = 0.5
+				uses = 1
+				ahead_reduction = 1
+				category = nuclear
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_breakthrough_progress = {
+				value = 0.5
+				specialization = specialization_nuclear
 			}
 		}
 	}
@@ -1271,16 +836,11 @@ focus_tree = {
 	focus = {
 		id = FRA_zoe_project
 		icon = GFX_focus_wonderweapons
-		cost = 7
+		cost = 5
 
 		relative_position_id = FRA_damocles
 		x = 0
 		y = 1
-
-		available = {
-			NOT = { has_global_flag = damocles_project_active }
-		}
-		bypass_if_unavailable = yes
 
 		prerequisite = {
 			focus = FRA_damocles
@@ -1295,7 +855,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_zoe_project"
 			if = {
 				limit = {
 					NOT = { has_tech = atomic_research }
@@ -1311,7 +870,7 @@ focus_tree = {
 			else = {
 				add_breakthrough_progress = {
 					specialization = specialization_nuclear
-					value = 0.5
+					value = 0.8
 				}
 			}
 		}
@@ -1320,8 +879,8 @@ focus_tree = {
 
 	focus = {
 		id = FRA_electric_machines
-		icon = GFX_goal_GER_Zuse_Computer
-		cost = 8
+		icon = GFX_goal_generic_machine
+		cost = 5
 
 		relative_position_id = FRA_found_the_phalanstere_international
 		x = 3
@@ -1335,7 +894,6 @@ focus_tree = {
 		ai_will_do = { factor = 5 }
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_electric_machines"
 			add_tech_bonus = {
 				name = FRA_electric_machines
 				bonus = 1.0
@@ -1359,17 +917,7 @@ focus_tree = {
 	focus = {
 		id = FRA_office_des_chemins_de_fer
 		icon = GFX_focus_BEL_engine_of_the_economy
-		cost = 7
-
-		available = {
-			has_full_control_of_state = 16 #Ile de France
-			has_full_control_of_state = 19 #Aquitaine
-			has_full_control_of_state = 20 #Lyonnais
-			has_full_control_of_state = 21 #Provence
-			has_full_control_of_state = 27 #Burgundy
-			has_full_control_of_state = 785 #Lorraine
-			has_full_control_of_state = 983 #Brittany
-		}
+		cost = 5
 
 		relative_position_id = FRA_the_congress_of_the_internationale
 		x = 7
@@ -1384,14 +932,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_office_des_chemins_de_fer"
 			every_core_state = {
 				display_individual_scopes = yes
 				random_select_amount = 4
 				limit = {
 					is_owned_and_controlled_by = ROOT
 					free_building_slots = { building = infrastructure size > 0 }
-					FRA_is_autoroute_state = no
 				}
 				add_building_construction = {
 					type = infrastructure
@@ -1440,7 +986,7 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = FRA_office_des_chemins_de_fer
-				ahead_reduction = 1.5
+				ahead_reduction = 1
 				bonus = 0.5
 				uses = 1
 				category = train_tech
@@ -1448,63 +994,89 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
+
+	focus = {
+		id = FRA_establish_the_office_of_economic_planning
+		icon = GFX_focus_BEL_engine_of_the_economy
+		cost = 5
+
+		relative_position_id = FRA_office_des_chemins_de_fer
+		x = 4
+		y = 0
+
+		ai_will_do = {
+			factor = 15
+			modifier = {
+				factor = 0.5
+				has_war_with_major = yes
+			}
+		}
+
+		completion_reward = {
+			add_dynamic_modifier = {
+				modifier = FRA_industry
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_tech_bonus = {
+				name = FRA_establish_the_office_of_economic_planning
+				bonus = 1
+				uses = 1
+				category = industry
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 2
+				limit = {
+					is_owned_and_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
 	focus = {
 		id = FRA_voluntary_association
 		icon = GFX_focus_ARG_no_gods_no_masters
-		cost = 7
+		cost = 5
 
 		relative_position_id = FRA_office_des_chemins_de_fer
 		x = -1
 		y = 1
 
-		available = {
-			has_country_flag = ECO_ANAR
-		}
 		prerequisite = {
 			focus = FRA_office_des_chemins_de_fer
 		}
+		prerequisite = {
+			focus = FRA_establish_the_office_of_economic_planning
+		}
 		mutually_exclusive = {
 			focus = FRA_modernisation_and_cartelisation
-			focus = FRA_militarisation_of_the_proletariat
-			focus = FRA_embrace_planism
 		}
 
 		ai_will_do = { factor = 200 }
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_voluntary_association"
-			custom_override_tooltip = {
-				tooltip = {
-					localization_key = tooltip_add_dynmod
-					DYNMOD = FRA_voluntary_association_modifier
-				}
-				add_dynamic_modifier = { modifier = FRA_voluntary_association_modifier }
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = FRA_industry
 			}
 			add_to_variable = {
-				FRA_eco_political_advisor_cost_factor = -0.5
-				tooltip = political_advisor_cost_factor_tooltip
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-			custom_effect_tooltip = tooltip_increases_focus_effects
-			custom_effect_tooltip = {
-				localization_key = tooltip_yellow_text
-				TEXT = FRA_socialist_education
-			}
-			custom_effect_tooltip = {
-				localization_key = tooltip_yellow_text
-				TEXT = FRA_consumer_cooperatives
-			}
-			custom_effect_tooltip = {
-				localization_key = tooltip_yellow_text
-				TEXT = FRA_support_workers_initiatives
+				FRA_industry_political_advisor_cost_factor = -0.5
+				tooltip = political_advisor_cost_factor_tt
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
 		id = FRA_socialist_education
-		icon = GFX_goal_brain
-		cost = 7
+		icon = GFX_focus_NOR_moscows_education_centers
+		cost = 5
 
 		relative_position_id = FRA_voluntary_association
 		x = -1
@@ -1530,33 +1102,34 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_socialist_education"
-			add_ideas = FRA_socialist_education_idea
-			if = {
-				limit = { has_completed_focus = FRA_voluntary_association }
-				custom_effect_tooltip = generic_skip_one_line_tt
-				add_research_slot_until_six = yes
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = FRA_industry
 			}
-			else_if = {
-				limit = {
-					NOT = { has_completed_focus = FRA_modernisation_and_cartelisation }
-					NOT = { has_completed_focus = FRA_militarisation_of_the_proletariat }
-					NOT = { has_completed_focus = FRA_embrace_planism }
+			add_to_variable = {
+				FRA_industry_research_speed_factor = 0.1
+				tooltip = research_speed_factor_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = FRA_IF_VOLUNTARY_ASSOCIATION_WAS_PICKED
+			effect_tooltip = {
+				add_research_slot = 1
+			}
+			hidden_effect = {
+				if = {
+					limit = { 
+						has_completed_focus = FRA_voluntary_association
+					}
+					add_research_slot = 1
 				}
-				custom_effect_tooltip = generic_skip_one_line_tt
-				custom_effect_tooltip = {
-					localization_key = tooltip_if_focus_completed
-					FOCUS = FRA_voluntary_association
-				}
-				effect_tooltip = { add_research_slot_until_six = yes }
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
 		id = FRA_support_workers_initiatives
-		icon = GFX_goal_workers_for_business
-		cost = 7
+		icon = GFX_focus_generic_workers
+		cost = 5
 
 		relative_position_id = FRA_voluntary_association
 		x = 0
@@ -1582,73 +1155,47 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_support_workers_initiatives"
-			add_one_random_civilian_factory = yes
-			add_one_random_civilian_factory = yes
-			add_one_random_civilian_factory = yes
-			if = {
-				limit = { has_completed_focus = FRA_voluntary_association }
-				custom_effect_tooltip = generic_skip_one_line_tt
-				custom_effect_tooltip = {
-					localization_key = tooltip_extra_effect_from_focus_completion
-					FOCUS = FRA_voluntary_association
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 3
+				limit = {
+					is_owned_and_controlled_by = ROOT
 				}
-				custom_override_tooltip = {
-					tooltip = {
-						localization_key = tooltip_change_law_to
-						CATEGORY = economy
-						LAW = FRA_autonomous_communes_default
-					}
-					add_ideas = FRA_autonomous_communes_default
-				}
-				add_to_temp_variable = {
-					consumer_goods_expected_value = 0.10
-					tooltip = consumer_goods_expected_value_tooltip
-				}
-				add_to_temp_variable = {
-					production_speed_buildings_factor = -0.2
-					tooltip = production_speed_buildings_factor_tooltip
-				}
-				add_to_temp_variable = {
-					global_building_slots_factor = 0.1
-					tooltip = global_building_slots_factor_tooltip
-				}
-				add_to_temp_variable = {
-					unit_limit_bonus = 20
-					tooltip = unit_limit_bonus_tooltip
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
 				}
 			}
-			else_if = {
-				limit = {
-					NOT = { has_completed_focus = FRA_modernisation_and_cartelisation }
-					NOT = { has_completed_focus = FRA_militarisation_of_the_proletariat }
-					NOT = { has_completed_focus = FRA_embrace_planism }
-				}
-				custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = FRA_IF_VOLUNTARY_ASSOCIATION_WAS_PICKED
+			effect_tooltip = {
 				custom_effect_tooltip = {
-					localization_key = tooltip_if_focus_completed
-					FOCUS = FRA_voluntary_association
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = FRA_industry
 				}
-				effect_tooltip = {
-					custom_override_tooltip = {
-						tooltip = {
-							localization_key = tooltip_change_law_to
-							CATEGORY = economy
-							LAW = FRA_autonomous_communes_default
-						}
-						add_ideas = FRA_autonomous_communes_default
+				add_to_variable = {
+					FRA_industry_consumer_goods_factor = -0.15
+					tooltip = consumer_goods_factor_tt
+				}
+				add_to_variable = {
+					FRA_industry_production_speed_buildings_factor = -0.1
+					tooltip = consumer_goods_factor_tt
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = { 
+						has_completed_focus = FRA_voluntary_association
 					}
-					add_to_temp_variable = {
-						consumer_goods_expected_value = 0.15
-						tooltip = consumer_goods_expected_value_tooltip
+					add_to_variable = {
+						FRA_industry_consumer_goods_factor = -0.15
+						tooltip = consumer_goods_factor_tt
 					}
-					add_to_temp_variable = {
-						production_speed_buildings_factor = -0.15
-						tooltip = production_speed_buildings_factor_tooltip
-					}
-					add_to_temp_variable = {
-						unit_limit_bonus = 20
-						tooltip = unit_limit_bonus_tooltip
+					add_to_variable = {
+						FRA_industry_production_speed_buildings_factor = -0.1
+						tooltip = consumer_goods_factor_tt
 					}
 				}
 			}
@@ -1658,7 +1205,7 @@ focus_tree = {
 	focus = {
 		id = FRA_consumer_cooperatives
 		icon = GFX_goal_generic_consumer_goods
-		cost = 7
+		cost = 5
 
 		relative_position_id = FRA_support_workers_initiatives
 		x = 0
@@ -1681,33 +1228,55 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_consumer_cooperatives"
-			add_one_random_civilian_factory = yes
-			add_one_random_civilian_factory = yes
-			add_one_random_civilian_factory = yes
-			if = {
-				limit = { has_idea = FRA_autonomous_communes_default }
-				custom_effect_tooltip = generic_skip_one_line_tt
-				swap_ideas = {
-					remove_idea = FRA_autonomous_communes_default
-					add_idea = FRA_autonomous_communes_upgraded
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 3
+				limit = {
+					is_owned_and_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
 				}
 			}
-			else_if = {
-				limit = {
-					NOT = { has_completed_focus = FRA_modernisation_and_cartelisation }
-					NOT = { has_completed_focus = FRA_militarisation_of_the_proletariat }
-					NOT = { has_completed_focus = FRA_embrace_planism }
-				}
-				custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = FRA_IF_VOLUNTARY_ASSOCIATION_WAS_PICKED
+			effect_tooltip = {
 				custom_effect_tooltip = {
-					localization_key = tooltip_if_focus_completed
-					FOCUS = FRA_voluntary_association
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = FRA_industry
 				}
-				effect_tooltip = {
-					swap_ideas = {
-						remove_idea = FRA_autonomous_communes_default
-						add_idea = FRA_autonomous_communes_upgraded
+				add_to_variable = {
+					FRA_industry_global_building_slots_factor = 0.1
+					tooltip = global_building_slots_factor_tt
+				}
+				add_to_variable = {
+					FRA_industry_consumer_goods_factor = -0.1
+					tooltip = consumer_goods_factor_tt
+				}
+				add_to_variable = {
+					FRA_industry_production_speed_buildings_factor = -0.05
+					tooltip = consumer_goods_factor_tt
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = { 
+						has_completed_focus = FRA_voluntary_association
+					}
+					add_to_variable = {
+						FRA_industry_global_building_slots_factor = 0.1
+						tooltip = global_building_slots_factor_tt
+					}
+					add_to_variable = {
+						FRA_industry_consumer_goods_factor = -0.1
+						tooltip = consumer_goods_factor_tt
+					}
+					add_to_variable = {
+						FRA_industry_production_speed_buildings_factor = -0.05
+						tooltip = consumer_goods_factor_tt
 					}
 				}
 			}
@@ -1717,7 +1286,7 @@ focus_tree = {
 	focus = {
 		id = FRA_garden_city_movement
 		icon = GFX_goal_FRA_paris
-		cost = 7
+		cost = 5
 
 		relative_position_id = FRA_voluntary_association
 		x = 1
@@ -1748,18 +1317,19 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_garden_city_movement"
-			add_political_power = 50
 			add_stability = 0.05
-			16 = { add_dynamic_modifier = { modifier = FRA_city_of_lights } }
+			add_political_power = 50
+			custom_effect_tooltip = generic_skip_one_line_tt
 			every_core_state = {
 				display_individual_scopes = yes
 				limit = {
 					is_owned_and_controlled_by = ROOT
-					FRA_is_autoroute_state = yes
+					any_neighbor_state = {
+						state = 16
+					}
 					NOT = { state = 16 } #Ile de France
 				}
-				increase_state_category_by_one_level = yes
+				NJORD_upgrade_state_category = yes
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -1767,7 +1337,7 @@ focus_tree = {
 	focus = {
 		id = FRA_close_bureaucratic_loopholes
 		icon = GFX_focus_AUS_lawmaking_leniency
-		cost = 7
+		cost = 5
 
 		relative_position_id = FRA_garden_city_movement
 		x = 0
@@ -1793,60 +1363,30 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_close_bureaucratic_loopholes"
-			if = {
-				limit = { has_completed_focus = FRA_voluntary_association }
-				custom_effect_tooltip = {
-					localization_key = tooltip_modify_dynmod
-					DYNMOD = FRA_voluntary_association_modifier
-				}
-			}
-			else_if = {
-				limit = { has_completed_focus = FRA_modernisation_and_cartelisation }
-				custom_effect_tooltip = {
-					localization_key = tooltip_modify_dynmod
-					DYNMOD = FRA_modernisation_and_cartelisation_modifier
-				}
-			}
-			else_if = {
-				limit = { has_completed_focus = FRA_militarisation_of_the_proletariat }
-				custom_effect_tooltip = {
-					localization_key = tooltip_modify_dynmod
-					DYNMOD = FRA_militarisation_of_the_proletariat_modifier
-				}
-			}
-			else_if = {
-				limit = { has_completed_focus = FRA_embrace_planism }
-				custom_effect_tooltip = {
-					localization_key = tooltip_modify_dynmod
-					DYNMOD = FRA_planism_modifier
-				}
-			}
-			else = {
-				custom_effect_tooltip = {
-					localization_key = tooltip_modify_four_dynmods
-					DYNMOD1 = FRA_voluntary_association_modifier
-					DYNMOD2 = FRA_modernisation_and_cartelisation_modifier
-					DYNMOD3 = FRA_militarisation_of_the_proletariat_modifier
-					DYNMOD4 = FRA_planism_modifier
-				}
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = FRA_industry
 			}
 			add_to_variable = {
-				FRA_eco_industrial_capacity_factory = 0.02
-				tooltip = industrial_capacity_factory_tooltip
+				FRA_industry_industrial_capacity_factory = 0.025
+				tooltip = industrial_capacity_factory_tt
 			}
 			add_to_variable = {
-				FRA_eco_production_factory_efficiency_gain_factor = 0.05
-				tooltip = production_factory_efficiency_gain_factor_tooltip
+				FRA_industry_industrial_capacity_dockyard = 0.025
+				tooltip = industrial_capacity_dockyard_tt
 			}
 			add_to_variable = {
-				FRA_eco_production_factory_start_efficiency_factor = 0.05
-				tooltip = production_factory_start_efficiency_factor_tooltip
+				FRA_industry_production_factory_start_efficiency_factor = 0.05
+				tooltip = production_factory_start_efficiency_factor_tt
+			}
+			add_to_variable = {
+				FRA_industry_production_factory_efficiency_gain_factor = 0.05
+				tooltip = production_factory_efficiency_gain_factor_tt
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = FRA_close_bureaucratic_loopholes
-				ahead_reduction = 2
+				ahead_reduction = 1
 				bonus = 1.0
 				uses = 1
 				category = cat_production
@@ -1857,52 +1397,29 @@ focus_tree = {
 	focus = {
 		id = FRA_modernisation_and_cartelisation
 		icon = GFX_focus_SOV_merge_plants
-		cost = 7
+		cost = 5
 
 		relative_position_id = FRA_voluntary_association
 		x = 2
 		y = 0
 
-		available = {
-			has_country_flag = ECO_TRAV
-		}
 		prerequisite = {
 			focus = FRA_office_des_chemins_de_fer
 		}
 		mutually_exclusive = {
 			focus = FRA_voluntary_association
-			focus = FRA_militarisation_of_the_proletariat
-			focus = FRA_embrace_planism
 		}
 
 		ai_will_do = { factor = 200 }
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_modernisation_and_cartelisation"
-			custom_override_tooltip = {
-				tooltip = {
-					localization_key = tooltip_add_dynmod
-					DYNMOD = FRA_modernisation_and_cartelisation_modifier
-				}
-				add_dynamic_modifier = { modifier = FRA_modernisation_and_cartelisation_modifier }
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = FRA_industry
 			}
 			add_to_variable = {
-				FRA_eco_production_speed_industrial_complex_factor = 0.1
-				tooltip = production_speed_industrial_complex_factor_tooltip
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-			custom_effect_tooltip = tooltip_increases_focus_effects
-			custom_effect_tooltip = {
-				localization_key = tooltip_yellow_text
-				TEXT = FRA_embrace_chain_production
-			}
-			custom_effect_tooltip = {
-				localization_key = tooltip_yellow_text
-				TEXT = FRA_mass_application_of_pre_stressed_concrete
-			}
-			custom_effect_tooltip = {
-				localization_key = tooltip_yellow_text
-				TEXT = FRA_develop_the_rhone_valley
+				FRA_industry_production_speed_industrial_complex_factor = 0.15
+				tooltip = production_speed_industrial_complex_factor_tt
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -1910,7 +1427,7 @@ focus_tree = {
 	focus = {
 		id = FRA_embrace_chain_production
 		icon = GFX_goal_generic_design_equipment_standards
-		cost = 7
+		cost = 5
 
 		relative_position_id = FRA_modernisation_and_cartelisation
 		x = 0
@@ -1936,9 +1453,19 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_embrace_chain_production"
-			add_one_random_civilian_factory = yes
-			add_one_random_civilian_factory = yes
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 2
+				limit = {
+					is_owned_and_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = FRA_embrace_chain_production
@@ -1946,49 +1473,34 @@ focus_tree = {
 				uses = 1
 				category = cat_production
 			}
-			if = {
-				limit = { has_completed_focus = FRA_modernisation_and_cartelisation }
-				custom_effect_tooltip = generic_skip_one_line_tt
-				custom_effect_tooltip = {
-					localization_key = tooltip_extra_effect_from_focus_completion
-					FOCUS = FRA_modernisation_and_cartelisation
-				}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = FRA_IF_MODERNISATION_AND_CARTELISATION_WAS_PICKED
+			effect_tooltip = {
 				custom_effect_tooltip = {
 					localization_key = tooltip_modify_dynmod
-					DYNMOD = FRA_modernisation_and_cartelisation_modifier
+					DYNMOD = FRA_industry
 				}
 				add_to_variable = {
-					FRA_eco_industrial_capacity_factory = 0.05
-					tooltip = industrial_capacity_factory_tooltip
+					FRA_industry_industrial_capacity_factory = 0.05
+					tooltip = industrial_capacity_factory_tt
 				}
 				add_to_variable = {
-					FRA_eco_industrial_capacity_dockyard = 0.05
-					tooltip = industrial_capacity_dockyard_tooltip
+					FRA_industry_industrial_capacity_dockyard = 0.05
+					tooltip = industrial_capacity_dockyard_tt
 				}
 			}
-			else_if = {
-				limit = {
-					NOT = { has_completed_focus = FRA_voluntary_association }
-					NOT = { has_completed_focus = FRA_militarisation_of_the_proletariat }
-					NOT = { has_completed_focus = FRA_embrace_planism }
-				}
-				custom_effect_tooltip = generic_skip_one_line_tt
-				custom_effect_tooltip = {
-					localization_key = tooltip_if_focus_completed
-					FOCUS = FRA_modernisation_and_cartelisation
-				}
-				effect_tooltip = {
-					custom_effect_tooltip = {
-						localization_key = tooltip_modify_dynmod
-						DYNMOD = FRA_modernisation_and_cartelisation_modifier
+			hidden_effect = {
+				if = {
+					limit = { 
+						has_completed_focus = FRA_modernisation_and_cartelisation
 					}
 					add_to_variable = {
-						FRA_eco_industrial_capacity_factory = 0.05
-						tooltip = industrial_capacity_factory_tooltip
+						FRA_industry_industrial_capacity_factory = 0.05
+						tooltip = industrial_capacity_factory_tt
 					}
 					add_to_variable = {
-						FRA_eco_industrial_capacity_dockyard = 0.05
-						tooltip = industrial_capacity_dockyard_tooltip
+						FRA_industry_industrial_capacity_dockyard = 0.05
+						tooltip = industrial_capacity_dockyard_tt
 					}
 				}
 			}
@@ -1998,7 +1510,7 @@ focus_tree = {
 	focus = {
 		id = FRA_mass_application_of_pre_stressed_concrete
 		icon = GFX_goal_generic_construction
-		cost = 7
+		cost = 5
 
 		relative_position_id = FRA_modernisation_and_cartelisation
 		x = 1
@@ -2024,9 +1536,19 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_mass_application_of_pre_stressed_concrete"
-			add_one_random_civilian_factory = yes
-			add_one_random_civilian_factory = yes
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 2
+				limit = {
+					is_owned_and_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = FRA_mass_application_of_pre_stressed_concrete
@@ -2034,41 +1556,26 @@ focus_tree = {
 				uses = 1
 				category = construction_tech
 			}
-			if = {
-				limit = { has_completed_focus = FRA_modernisation_and_cartelisation }
-				custom_effect_tooltip = generic_skip_one_line_tt
-				custom_effect_tooltip = {
-					localization_key = tooltip_extra_effect_from_focus_completion
-					FOCUS = FRA_modernisation_and_cartelisation
-				}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = FRA_IF_MODERNISATION_AND_CARTELISATION_WAS_PICKED
+			effect_tooltip = {
 				custom_effect_tooltip = {
 					localization_key = tooltip_modify_dynmod
-					DYNMOD = FRA_modernisation_and_cartelisation_modifier
+					DYNMOD = FRA_industry
 				}
 				add_to_variable = {
-					FRA_eco_production_speed_industrial_complex_factor = 0.1
-					tooltip = production_speed_industrial_complex_factor_tooltip
+					FRA_industry_production_speed_industrial_complex_factor = 0.15
+					tooltip = production_speed_industrial_complex_factor_tt
 				}
 			}
-			else_if = {
-				limit = {
-					NOT = { has_completed_focus = FRA_voluntary_association }
-					NOT = { has_completed_focus = FRA_militarisation_of_the_proletariat }
-					NOT = { has_completed_focus = FRA_embrace_planism }
-				}
-				custom_effect_tooltip = generic_skip_one_line_tt
-				custom_effect_tooltip = {
-					localization_key = tooltip_if_focus_completed
-					FOCUS = FRA_modernisation_and_cartelisation
-				}
-				effect_tooltip = {
-					custom_effect_tooltip = {
-						localization_key = tooltip_modify_dynmod
-						DYNMOD = FRA_modernisation_and_cartelisation_modifier
+			hidden_effect = {
+				if = {
+					limit = { 
+						has_completed_focus = FRA_modernisation_and_cartelisation
 					}
 					add_to_variable = {
-						FRA_eco_production_speed_industrial_complex_factor = 0.1
-						tooltip = production_speed_industrial_complex_factor_tooltip
+						FRA_industry_production_speed_industrial_complex_factor = 0.15
+						tooltip = production_speed_industrial_complex_factor_tt
 					}
 				}
 			}
@@ -2078,7 +1585,7 @@ focus_tree = {
 	focus = {
 		id = FRA_develop_the_rhone_valley
 		icon = GFX_focus_generic_industry_3
-		cost = 7
+		cost = 5
 
 		relative_position_id = FRA_mass_application_of_pre_stressed_concrete
 		x = 0
@@ -2104,56 +1611,47 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_develop_the_rhone_valley"
-			20 = { prioritize_state = yes } #Lyonnais
-			add_one_random_civilian_factory = yes
-			21 = { prioritize_state_override_previous = yes } #Provence
-			add_one_random_civilian_factory = yes
-			32 = { prioritize_state_override_previous = yes } #Rhône
-			add_one_random_civilian_factory = yes
-			if = {
-				limit = { has_completed_focus = FRA_modernisation_and_cartelisation }
-				custom_effect_tooltip = generic_skip_one_line_tt
-				custom_effect_tooltip = {
-					localization_key = tooltip_extra_effect_from_focus_completion
-					FOCUS = FRA_modernisation_and_cartelisation
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 3
+				limit = {
+					is_owned_and_controlled_by = ROOT
 				}
-				custom_effect_tooltip = {
-					localization_key = tooltip_modify_dynmod
-					DYNMOD = FRA_modernisation_and_cartelisation_modifier
-				}
-				add_to_variable = {
-					FRA_eco_line_change_production_efficiency_factor = 0.1
-					tooltip = line_change_production_efficiency_factor_tooltip
-				}
-				add_to_variable = {
-					FRA_eco_production_factory_start_efficiency_factor = 0.05
-					tooltip = production_factory_start_efficiency_factor_tooltip
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
 				}
 			}
-			else_if = {
-				limit = {
-					NOT = { has_completed_focus = FRA_voluntary_association }
-					NOT = { has_completed_focus = FRA_militarisation_of_the_proletariat }
-					NOT = { has_completed_focus = FRA_embrace_planism }
-				}
-				custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = FRA_IF_MODERNISATION_AND_CARTELISATION_WAS_PICKED
+			effect_tooltip = {
 				custom_effect_tooltip = {
-					localization_key = tooltip_if_focus_completed
-					FOCUS = FRA_modernisation_and_cartelisation
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = FRA_industry
 				}
-				effect_tooltip = {
-					custom_effect_tooltip = {
-						localization_key = tooltip_modify_dynmod
-						DYNMOD = FRA_modernisation_and_cartelisation_modifier
+				add_to_variable = {
+					FRA_industry_line_change_production_efficiency_factor = 0.1
+					tooltip = line_change_production_efficiency_factor_tt
+				}
+				add_to_variable = {
+					FRA_industry_production_factory_start_efficiency_factor = 0.05
+					tooltip = production_factory_start_efficiency_factor_tt
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = { 
+						has_completed_focus = FRA_modernisation_and_cartelisation
 					}
 					add_to_variable = {
-						FRA_eco_line_change_production_efficiency_factor = 0.1
-						tooltip = line_change_production_efficiency_factor_tooltip
+						FRA_industry_line_change_production_efficiency_factor = 0.1
+						tooltip = line_change_production_efficiency_factor_tt
 					}
 					add_to_variable = {
-						FRA_eco_production_factory_start_efficiency_factor = 0.05
-						tooltip = production_factory_start_efficiency_factor_tooltip
+						FRA_industry_production_factory_start_efficiency_factor = 0.05
+						tooltip = production_factory_start_efficiency_factor_tt
 					}
 				}
 			}
@@ -2163,7 +1661,7 @@ focus_tree = {
 	focus = {
 		id = FRA_exploit_the_massif_central
 		icon = GFX_focus_generic_mining_industry
-		cost = 7
+		cost = 5
 
 		relative_position_id = FRA_modernisation_and_cartelisation
 		x = 2
@@ -2195,7 +1693,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_exploit_the_massif_central"
 			add_resource = {
 				type = oil
 				amount = 2
@@ -2214,8 +1711,8 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = FRA_exploit_the_massif_central
-				bonus = 0.75
-				uses = 2
+				bonus = 0.5
+				uses = 3
 				category = excavation_tech
 			}
 		}
@@ -2223,7 +1720,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_voice_of_the_people
-		icon = GFX_EGY_Radio_Free_Cairo
+		icon = GFX_goal_EGY_Radio_Free_Cairo
 		cost = 5
 
 		relative_position_id = FRA_modernisation_and_cartelisation
@@ -2251,12 +1748,14 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_voice_of_the_people"
-			add_manpower = 25000
 			add_war_support = 0.05
 			add_stability = 0.05
-			set_temp_variable = { ideology_change_var = 0.05 }
-			change_ruling_party_popularity = yes
+			add_manpower = 25000
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
 		}
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 	}
@@ -2278,7 +1777,7 @@ focus_tree = {
 			factor = 5
 			modifier = {
 				factor = 4
-				GER = { has_completed_focus = GER_buying_time_with_spies }
+				GER = { has_completed_focus = GER_treaty_of_metz }
 			}
 			modifier = {
 				factor = 500
@@ -2288,31 +1787,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_point_du_jour_studios"
-			if = {
-				limit = { has_idea = GER_catholic_resistance_idea }
-				remove_ideas = GER_catholic_resistance_idea
-				custom_effect_tooltip = generic_skip_one_line_tt
-				custom_effect_tooltip = FRA_failed_operation_eulen
-			}
-			else = {
-				custom_effect_tooltip = {
-					localization_key = tooltip_if_country_not_completed_focus
-					FOCUS = GER_operation_eulen
-					COUNTRY = "[GER.GetNameWithFlag]"
-				}
-				add_political_power = 75
-				add_war_support = 0.05
-				add_stability = 0.05
-				set_temp_variable = { ideology_change_var = 0.05 }
-				change_ruling_party_popularity = yes
-				custom_effect_tooltip = generic_skip_one_line_tt
-				custom_effect_tooltip = {
-					localization_key = tooltip_if_country_completed_focus
-					FOCUS = GER_operation_eulen
-					COUNTRY = "[GER.GetNameWithFlag]"
-				}
-				effect_tooltip = { remove_ideas = GER_catholic_resistance_idea }
+			add_war_support = 0.05
+			add_stability = 0.05
+			add_political_power = 75
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -2320,7 +1801,7 @@ focus_tree = {
 	focus = {
 		id = FRA_build_the_autoroutes
 		icon = GFX_goal_FRA_autoroutes
-		cost = 7
+		cost = 5
 
 		available = {
 			has_full_control_of_state = 16
@@ -2344,12 +1825,18 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_build_the_autoroutes"
 			every_core_state = {
 				display_individual_scopes = yes
 				limit = {
 					is_owned_and_controlled_by = ROOT
-					FRA_is_autoroute_state = yes
+					OR = {
+						state = 16
+						state = 20
+						state = 21
+						state = 27
+						state = 32
+						state = 33
+					}
 				}
 				set_building_level = { type = infrastructure level = 5 }
 			}
@@ -2364,64 +1851,41 @@ focus_tree = {
 	focus = {
 		id = FRA_militarisation_of_the_proletariat
 		icon = GFX_focus_generic_workers_and_farmers_rise
-		cost = 7
+		cost = 5
 
 		relative_position_id = FRA_build_the_autoroutes
-		x = -2
+		x = -1
 		y = 1
 
-		available = {
-			has_country_flag = ECO_SORE
-		}
 		prerequisite = {
 			focus = FRA_build_the_autoroutes
 		}
 		mutually_exclusive = {
-			focus = FRA_voluntary_association
-			focus = FRA_modernisation_and_cartelisation
 			focus = FRA_embrace_planism
 		}
 
 		ai_will_do = { factor = 200 }
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_militarisation_of_the_proletariat"
-			custom_override_tooltip = {
-				tooltip = {
-					localization_key = tooltip_add_dynmod
-					DYNMOD = FRA_militarisation_of_the_proletariat_modifier
-				}
-				add_dynamic_modifier = { modifier = FRA_militarisation_of_the_proletariat_modifier }
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = FRA_industry
 			}
 			add_to_variable = {
-				FRA_eco_production_speed_arms_factory_factor = 0.1
-				tooltip = production_speed_arms_factory_factor_tooltip
+				FRA_industry_production_speed_arms_factory_factor = 0.1
+				tooltip = production_speed_arms_factory_factor_tt
 			}
 			add_to_variable = {
-				FRA_eco_production_speed_dockyard_factor = 0.05
-				tooltip = production_speed_dockyard_factor_tooltip
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-			custom_effect_tooltip = tooltip_increases_focus_effects
-			custom_effect_tooltip = {
-				localization_key = tooltip_yellow_text
-				TEXT = FRA_second_wave_of_mechanisation
-			}
-			custom_effect_tooltip = {
-				localization_key = tooltip_yellow_text
-				TEXT = FRA_large_scale_rural_projects
-			}
-			custom_effect_tooltip = {
-				localization_key = tooltip_yellow_text
-				TEXT = FRA_communal_waterworks
+				FRA_industry_production_speed_dockyard_factor = 0.1
+				tooltip = production_speed_dockyard_factor_tt
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
 		id = FRA_second_wave_of_mechanisation
-		icon = GFX_focus_generic_agriculture
-		cost = 7
+		icon = GFX_focus_generic_modernizing_agriculture
+		cost = 5
 
 		relative_position_id = FRA_militarisation_of_the_proletariat
 		x = 0
@@ -2456,7 +1920,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_second_wave_of_mechanisation"
 			add_timed_idea = {
 				idea = FRA_second_wave_of_mechanisation_idea
 				days = 730
@@ -2466,45 +1929,37 @@ focus_tree = {
 				display_individual_scopes = yes
 				limit = {
 					is_owned_and_controlled_by = ROOT
-					FRA_is_mechanisation_state = yes
+					OR = {
+						state = 14 #Upper Brittany
+						state = 15 #Normandy
+						state = 18 #Champagne
+						state = 23 #Poitou
+						state = 24 #Picardy
+						state = 785 #Lorraine
+					}
 				}
-				increase_state_category_by_one_level = yes
+				NJORD_upgrade_state_category = yes
 			}
-			if = {
-				limit = { has_completed_focus = FRA_militarisation_of_the_proletariat }
-				custom_effect_tooltip = generic_skip_one_line_tt
-				custom_effect_tooltip = {
-					localization_key = tooltip_extra_effect_from_focus_completion
-					FOCUS = FRA_militarisation_of_the_proletariat
-				}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = FRA_IF_MILITARISATION_OF_THE_PROLETARIAT_WAS_PICKED
+			effect_tooltip = {
 				custom_effect_tooltip = {
 					localization_key = tooltip_modify_dynmod
-					DYNMOD = FRA_militarisation_of_the_proletariat_modifier
+					DYNMOD = FRA_industry
 				}
 				add_to_variable = {
-					FRA_eco_conscription = 0.01
-					tooltip = conscription_tooltip
+					FRA_industry_conscription = 0.01
+					tooltip = conscription_tt
 				}
 			}
-			else_if = {
-				limit = {
-					NOT = { has_completed_focus = FRA_voluntary_association }
-					NOT = { has_completed_focus = FRA_modernisation_and_cartelisation }
-					NOT = { has_completed_focus = FRA_embrace_planism }
-				}
-				custom_effect_tooltip = generic_skip_one_line_tt
-				custom_effect_tooltip = {
-					localization_key = tooltip_if_focus_completed
-					FOCUS = FRA_militarisation_of_the_proletariat
-				}
-				effect_tooltip = {
-					custom_effect_tooltip = {
-						localization_key = tooltip_modify_dynmod
-						DYNMOD = FRA_militarisation_of_the_proletariat_modifier
+			hidden_effect = {
+				if = {
+					limit = { 
+						has_completed_focus = FRA_militarisation_of_the_proletariat
 					}
 					add_to_variable = {
-						FRA_eco_conscription = 0.01
-						tooltip = conscription_tooltip
+						FRA_industry_conscription = 0.01
+						tooltip = conscription_tt
 					}
 				}
 			}
@@ -2514,7 +1969,7 @@ focus_tree = {
 	focus = {
 		id = FRA_large_scale_rural_projects
 		icon = GFX_focus_generic_land_reclamation
-		cost = 7
+		cost = 5
 
 		relative_position_id = FRA_second_wave_of_mechanisation
 		x = -1
@@ -2549,7 +2004,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_large_scale_rural_projects"
 			add_timed_idea = {
 				idea = FRA_large_scale_rural_projects_idea
 				days = 730
@@ -2559,53 +2013,43 @@ focus_tree = {
 				display_individual_scopes = yes
 				limit = {
 					is_owned_and_controlled_by = ROOT
-					FRA_is_rural_project_state = yes
+					OR = {
+						state = 25 #Limousin
+						state = 26 #Auvergne
+						state = 30 #Maine
+						state = 763 #Alpes
+						state = 983 #Brittany
+					}
 				}
-				increase_state_category_by_one_level = yes
+				NJORD_upgrade_state_category = yes
 			}
-			if = {
-				limit = { has_completed_focus = FRA_militarisation_of_the_proletariat }
-				custom_effect_tooltip = generic_skip_one_line_tt
-				custom_effect_tooltip = {
-					localization_key = tooltip_extra_effect_from_focus_completion
-					FOCUS = FRA_militarisation_of_the_proletariat
-				}
+			custom_effect_tooltip = FRA_IF_MILITARISATION_OF_THE_PROLETARIAT_WAS_PICKED
+			effect_tooltip = {
 				custom_effect_tooltip = {
 					localization_key = tooltip_modify_dynmod
-					DYNMOD = FRA_militarisation_of_the_proletariat_modifier
+					DYNMOD = FRA_industry
 				}
 				add_to_variable = {
-					FRA_eco_production_speed_arms_factory_factor = 0.05
-					tooltip = production_speed_arms_factory_factor_tooltip
+					FRA_industry_production_speed_arms_factory_factor = 0.05
+					tooltip = production_speed_arms_factory_factor_tt
 				}
 				add_to_variable = {
-					FRA_eco_production_speed_dockyard_factor = 0.05
-					tooltip = production_speed_dockyard_factor_tooltip
+					FRA_industry_production_speed_dockyard_factor = 0.05
+					tooltip = production_speed_dockyard_factor_tt
 				}
 			}
-			else_if = {
-				limit = {
-					NOT = { has_completed_focus = FRA_voluntary_association }
-					NOT = { has_completed_focus = FRA_modernisation_and_cartelisation }
-					NOT = { has_completed_focus = FRA_embrace_planism }
-				}
-				custom_effect_tooltip = generic_skip_one_line_tt
-				custom_effect_tooltip = {
-					localization_key = tooltip_if_focus_completed
-					FOCUS = FRA_militarisation_of_the_proletariat
-				}
-				effect_tooltip = {
-					custom_effect_tooltip = {
-						localization_key = tooltip_modify_dynmod
-						DYNMOD = FRA_militarisation_of_the_proletariat_modifier
+			hidden_effect = {
+				if = {
+					limit = { 
+						has_completed_focus = FRA_militarisation_of_the_proletariat
 					}
 					add_to_variable = {
-						FRA_eco_production_speed_arms_factory_factor = 0.05
-						tooltip = production_speed_arms_factory_factor_tooltip
+						FRA_industry_production_speed_arms_factory_factor = 0.05
+						tooltip = production_speed_arms_factory_factor_tt
 					}
 					add_to_variable = {
-						FRA_eco_production_speed_dockyard_factor = 0.05
-						tooltip = production_speed_dockyard_factor_tooltip
+						FRA_industry_production_speed_dockyard_factor = 0.05
+						tooltip = production_speed_dockyard_factor_tt
 					}
 				}
 			}
@@ -2614,8 +2058,8 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_communal_waterworks
-		icon = GFX_goal_PAL_Irrigation_Program
-		cost = 7
+		icon = GFX_focus_RAJ_water_privatization
+		cost = 5
 
 		relative_position_id = FRA_second_wave_of_mechanisation
 		x = 1
@@ -2651,7 +2095,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_communal_waterworks"
 			add_timed_idea = {
 				idea = FRA_communal_waterworks_idea
 				days = 730
@@ -2661,53 +2104,44 @@ focus_tree = {
 				display_individual_scopes = yes
 				limit = {
 					is_owned_and_controlled_by = ROOT
-					FRA_is_waterworks_state = yes
+					OR = {
+						state = 17 #Pas-de-Calais
+						state = 22 #Languedoc
+						state = 31 #Garonne
+						state = 779 #Labourd
+						state = 817 #Roussillon
+						state = 984 #Pyrenees
+					}
 				}
-				increase_state_category_by_one_level = yes
+				NJORD_upgrade_state_category = yes
 			}
-			if = {
-				limit = { has_completed_focus = FRA_militarisation_of_the_proletariat }
-				custom_effect_tooltip = generic_skip_one_line_tt
-				custom_effect_tooltip = {
-					localization_key = tooltip_extra_effect_from_focus_completion
-					FOCUS = FRA_militarisation_of_the_proletariat
-				}
+			custom_effect_tooltip = FRA_IF_MILITARISATION_OF_THE_PROLETARIAT_WAS_PICKED
+			effect_tooltip = {
 				custom_effect_tooltip = {
 					localization_key = tooltip_modify_dynmod
-					DYNMOD = FRA_militarisation_of_the_proletariat_modifier
+					DYNMOD = FRA_industry
 				}
 				add_to_variable = {
-					FRA_eco_production_speed_arms_factory_factor = 0.05
-					tooltip = production_speed_arms_factory_factor_tooltip
+					FRA_industry_production_speed_arms_factory_factor = 0.05
+					tooltip = production_speed_arms_factory_factor_tt
 				}
 				add_to_variable = {
-					FRA_eco_production_speed_dockyard_factor = 0.05
-					tooltip = production_speed_dockyard_factor_tooltip
+					FRA_industry_production_speed_dockyard_factor = 0.05
+					tooltip = production_speed_dockyard_factor_tt
 				}
 			}
-			else_if = {
-				limit = {
-					NOT = { has_completed_focus = FRA_voluntary_association }
-					NOT = { has_completed_focus = FRA_modernisation_and_cartelisation }
-					NOT = { has_completed_focus = FRA_embrace_planism }
-				}
-				custom_effect_tooltip = generic_skip_one_line_tt
-				custom_effect_tooltip = {
-					localization_key = tooltip_if_focus_completed
-					FOCUS = FRA_militarisation_of_the_proletariat
-				}
-				effect_tooltip = {
-					custom_effect_tooltip = {
-						localization_key = tooltip_modify_dynmod
-						DYNMOD = FRA_militarisation_of_the_proletariat_modifier
+			hidden_effect = {
+				if = {
+					limit = { 
+						has_completed_focus = FRA_militarisation_of_the_proletariat
 					}
 					add_to_variable = {
-						FRA_eco_production_speed_arms_factory_factor = 0.05
-						tooltip = production_speed_arms_factory_factor_tooltip
+						FRA_industry_production_speed_arms_factory_factor = 0.05
+						tooltip = production_speed_arms_factory_factor_tt
 					}
 					add_to_variable = {
-						FRA_eco_production_speed_dockyard_factor = 0.05
-						tooltip = production_speed_dockyard_factor_tooltip
+						FRA_industry_production_speed_dockyard_factor = 0.05
+						tooltip = production_speed_dockyard_factor_tt
 					}
 				}
 			}
@@ -2717,7 +2151,7 @@ focus_tree = {
 	focus = {
 		id = FRA_ploughshares_into_swords
 		icon = GFX_focus_ITA_peasants_rise
-		cost = 7
+		cost = 5
 
 		relative_position_id = FRA_second_wave_of_mechanisation
 		x = 0
@@ -2740,14 +2174,23 @@ focus_tree = {
 		ai_will_do = { factor = 8 }
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_ploughshares_into_swords"
-			add_one_random_military_factory = yes
-			add_one_random_military_factory = yes
-			add_one_random_military_factory = yes
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 3
+				limit = {
+					is_owned_and_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_timed_idea = {
 				idea = FRA_ploughshares_into_swords_idea
-				days = 400
+				days = 365
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -2755,7 +2198,7 @@ focus_tree = {
 	focus = {
 		id = FRA_new_hydroelectric_dams
 		icon = GFX_focus_generic_hydroelectric_energy
-		cost = 7
+		cost = 5
 
 		relative_position_id = FRA_militarisation_of_the_proletariat
 		x = 2
@@ -2788,21 +2231,12 @@ focus_tree = {
 				NOT = { owns_state = 735 } #Savoy
 			}
 			modifier = {
-				factor = 0
-				NOT = { owns_state = 943 } #Upper Savoy
-				OR = {
-					has_global_flag = can_demand_romandy
-					NOT = { SWI = { has_completed_focus = SWI_peace_at_last } }
-				}
-			}
-			modifier = {
 				factor = 0.5
 				has_war_with_major = yes
 			}
 		}
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_new_hydroelectric_dams"
 			26 = {
 				add_building_construction = {
 					type = dam
@@ -2819,101 +2253,43 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			if = {
-				limit = {
-					NOT = { owns_state = 735 } #Savoy
-					NOT = { owns_state = 943 } #Upper Savoy
+			26 = {
+				add_building_construction = {
+					type = dam
+					level = 1
+					province = 3770
+					instant_build = yes
 				}
-				custom_effect_tooltip = {
-					localization_key = building_state_modifier|dam
-					INDENT = "    "
-				}
-				custom_effect_tooltip = generic_skip_one_line_tt
-				custom_effect_tooltip = FRA_will_build_in_savoy_if_owned
-				custom_effect_tooltip = FRA_will_build_in_upper_savoy_if_owned
 			}
-			else_if = {
-				limit = { NOT = { owns_state = 735 } } #Savoy
-				943 = {
-					custom_override_tooltip = {
-						add_building_construction = {
-							type = dam
-							level = 1
-							province = 778
-							instant_build = yes
-						}
-						tooltip = {
-							localization_key = tooltip_add_building_on_victory_point
-							BUILDING = dam
-							NUMBER = 1
-							VP = 778
-						}
-					}
-				}
-				custom_effect_tooltip = {
-					localization_key = building_state_modifier|dam
-					INDENT = "    "
-				}
-				custom_effect_tooltip = generic_skip_one_line_tt
-				custom_effect_tooltip = FRA_will_build_in_savoy_if_owned
-			}
-			else_if = {
-				limit = { NOT = { owns_state = 943 } } #Upper Savoy
-				735 = {
-					add_building_construction = {
-						type = dam
-						level = 1
-						province = 6609
-						instant_build = yes
-					}
-				}
-				custom_effect_tooltip = {
-					localization_key = building_state_modifier|dam
-					INDENT = "    "
-				}
-				custom_effect_tooltip = generic_skip_one_line_tt
-				custom_effect_tooltip = FRA_will_build_in_upper_savoy_if_owned
-			}
-			else = {
-				735 = {
-					add_building_construction = {
-						type = dam
-						level = 1
-						province = 6609
-						instant_build = yes
-					}
-				}
-				943 = {
-					custom_override_tooltip = {
-						add_building_construction = {
-							type = dam
-							level = 1
-							province = 778
-							instant_build = yes
-						}
-						tooltip = {
-							localization_key = tooltip_add_building_on_victory_point
-							BUILDING = dam
-							NUMBER = 1
-							VP = 778
-						}
-					}
-				}
-				custom_effect_tooltip = {
-					localization_key = building_state_modifier|dam
-					INDENT = "    "
+			763 = {
+				add_building_construction = {
+					type = dam
+					level = 1
+					province = 3764
+					instant_build = yes
 				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
-			add_one_random_civilian_factory = yes
-			add_one_random_civilian_factory = yes
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 2
+				limit = {
+					is_owned_and_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
 		id = FRA_syndical_consolidation
 		icon = GFX_goal_syndicalist_workers
-		cost = 7
+		cost = 5
 
 		relative_position_id = FRA_new_hydroelectric_dams
 		x = 0
@@ -2935,56 +2311,22 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_syndical_consolidation"
-			if = {
-				limit = { has_completed_focus = FRA_voluntary_association }
-				custom_effect_tooltip = {
-					localization_key = tooltip_modify_dynmod
-					DYNMOD = FRA_voluntary_association_modifier
-				}
-			}
-			else_if = {
-				limit = { has_completed_focus = FRA_modernisation_and_cartelisation }
-				custom_effect_tooltip = {
-					localization_key = tooltip_modify_dynmod
-					DYNMOD = FRA_modernisation_and_cartelisation_modifier
-				}
-			}
-			else_if = {
-				limit = { has_completed_focus = FRA_militarisation_of_the_proletariat }
-				custom_effect_tooltip = {
-					localization_key = tooltip_modify_dynmod
-					DYNMOD = FRA_militarisation_of_the_proletariat_modifier
-				}
-			}
-			else_if = {
-				limit = { has_completed_focus = FRA_embrace_planism }
-				custom_effect_tooltip = {
-					localization_key = tooltip_modify_dynmod
-					DYNMOD = FRA_planism_modifier
-				}
-			}
-			else = {
-				custom_effect_tooltip = {
-					localization_key = tooltip_modify_four_dynmods
-					DYNMOD1 = FRA_voluntary_association_modifier
-					DYNMOD2 = FRA_modernisation_and_cartelisation_modifier
-					DYNMOD3 = FRA_militarisation_of_the_proletariat_modifier
-					DYNMOD4 = FRA_planism_modifier
-				}
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = FRA_industry
 			}
 			add_to_variable = {
-				FRA_eco_production_factory_max_efficiency_factor = 0.05
-				tooltip = production_factory_max_efficiency_factor_tooltip
+				FRA_industry_production_factory_max_efficiency_factor = 0.05
+				tooltip = production_factory_max_efficiency_factor_tt
 			}
 			add_to_variable = {
-				FRA_eco_line_change_production_efficiency_factor = 0.1
-				tooltip = line_change_production_efficiency_factor_tooltip
+				FRA_industry_line_change_production_efficiency_factor = 0.1
+				tooltip = line_change_production_efficiency_factor_tt
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = FRA_syndical_consolidation
-				ahead_reduction = 2
+				ahead_reduction = 1
 				bonus = 1.0
 				uses = 1
 				category = construction_tech
@@ -2995,64 +2337,41 @@ focus_tree = {
 	focus = {
 		id = FRA_embrace_planism
 		icon = GFX_goal_SYR_Stop_Jewish_Settlers
-		cost = 7
+		cost = 5
 
-		relative_position_id = FRA_militarisation_of_the_proletariat
-		x = 4
+		relative_position_id = FRA_build_the_autoroutes
+		x = 1
 		y = 0
 
-		available = {
-			has_country_flag = ECO_JACO
-		}
 		prerequisite = {
 			focus = FRA_build_the_autoroutes
 		}
 		mutually_exclusive = {
-			focus = FRA_voluntary_association
-			focus = FRA_modernisation_and_cartelisation
 			focus = FRA_militarisation_of_the_proletariat
 		}
 
 		ai_will_do = { factor = 200 }
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_embrace_planism"
-			custom_override_tooltip = {
-				tooltip = {
-					localization_key = tooltip_add_dynmod
-					DYNMOD = FRA_planism_modifier
-				}
-				add_dynamic_modifier = { modifier = FRA_planism_modifier }
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = FRA_industry
 			}
 			add_to_variable = {
-				FRA_eco_production_factory_max_efficiency_factor = 0.05
-				tooltip = production_factory_max_efficiency_factor_tooltip
+				FRA_industry_production_factory_max_efficiency_factor = 0.05
+				tooltip = production_factory_max_efficiency_factor_tt
 			}
 			add_to_variable = {
-				FRA_eco_production_factory_efficiency_gain_factor = -0.15
-				tooltip = production_factory_efficiency_gain_factor_tooltip
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-			custom_effect_tooltip = tooltip_increases_focus_effects
-			custom_effect_tooltip = {
-				localization_key = tooltip_yellow_text
-				TEXT = FRA_expand_manufacture_darmes_de_tulle
-			}
-			custom_effect_tooltip = {
-				localization_key = tooltip_yellow_text
-				TEXT = FRA_directorate_for_arms_production
-			}
-			custom_effect_tooltip = {
-				localization_key = tooltip_yellow_text
-				TEXT = FRA_maximise_production_capacity
+				FRA_industry_production_factory_efficiency_gain_factor = -0.15
+				tooltip = production_factory_efficiency_gain_factor_tt
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
 		id = FRA_expand_manufacture_darmes_de_tulle
-		icon = GFX_goal_Focus_Military_Mobilisation
-		cost = 7
+		icon = GFX_goal_FRA_common_economic_plan
+		cost = 5
 
 		relative_position_id = FRA_embrace_planism
 		x = -1
@@ -3086,54 +2405,51 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_expand_manufacture_darmes_de_tulle"
-			25 = { prioritize_state = yes } #Limousin
-			add_one_random_military_factory = yes
-			add_one_random_military_factory = yes
-			add_one_random_military_factory = yes
-			if = {
-				limit = { has_completed_focus = FRA_embrace_planism }
-				custom_effect_tooltip = generic_skip_one_line_tt
-				custom_effect_tooltip = {
-					localization_key = tooltip_extra_effect_from_focus_completion
-					FOCUS = FRA_embrace_planism
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 3
+				limit = {
+					is_owned_and_controlled_by = ROOT
 				}
-				custom_effect_tooltip = {
-					localization_key = tooltip_modify_dynmod
-					DYNMOD = FRA_planism_modifier
-				}
-				add_to_variable = {
-					FRA_eco_production_factory_max_efficiency_factor = 0.05
-					tooltip = production_factory_max_efficiency_factor_tooltip
-				}
-				add_to_variable = {
-					FRA_eco_production_factory_efficiency_gain_factor = -0.05
-					tooltip = production_factory_efficiency_gain_factor_tooltip
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
 				}
 			}
-			else_if = {
-				limit = {
-					NOT = { has_completed_focus = FRA_voluntary_association }
-					NOT = { has_completed_focus = FRA_modernisation_and_cartelisation }
-					NOT = { has_completed_focus = FRA_militarisation_of_the_proletariat }
-				}
-				custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = FRA_IF_EMBRACE_PLANISM_WAS_PICKED
+			effect_tooltip = {
 				custom_effect_tooltip = {
-					localization_key = tooltip_if_focus_completed
-					FOCUS = FRA_embrace_planism
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = FRA_industry
 				}
-				effect_tooltip = {
+				add_to_variable = {
+					FRA_industry_production_factory_max_efficiency_factor = 0.05
+					tooltip = production_factory_max_efficiency_factor_tt
+				}
+				add_to_variable = {
+					FRA_industry_production_factory_efficiency_gain_factor = -0.05
+					tooltip = production_factory_efficiency_gain_factor_tt
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = { 
+						has_completed_focus = FRA_embrace_planism
+					}
 					custom_effect_tooltip = {
 						localization_key = tooltip_modify_dynmod
-						DYNMOD = FRA_planism_modifier
+						DYNMOD = FRA_industry
 					}
 					add_to_variable = {
-						FRA_eco_production_factory_max_efficiency_factor = 0.05
-						tooltip = production_factory_max_efficiency_factor_tooltip
+						FRA_industry_production_factory_max_efficiency_factor = 0.05
+						tooltip = production_factory_max_efficiency_factor_tt
 					}
 					add_to_variable = {
-						FRA_eco_production_factory_efficiency_gain_factor = -0.05
-						tooltip = production_factory_efficiency_gain_factor_tooltip
+						FRA_industry_production_factory_efficiency_gain_factor = -0.05
+						tooltip = production_factory_efficiency_gain_factor_tt
 					}
 				}
 			}
@@ -3143,7 +2459,7 @@ focus_tree = {
 	focus = {
 		id = FRA_directorate_for_arms_production
 		icon = GFX_focus_CONGO_copper_cartridges
-		cost = 7
+		cost = 5
 
 		relative_position_id = FRA_embrace_planism
 		x = 0
@@ -3177,52 +2493,52 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_directorate_for_arms_production"
-			add_one_random_military_factory = yes
-			add_one_random_military_factory = yes
-			add_one_random_military_factory = yes
-			if = {
-				limit = { has_completed_focus = FRA_embrace_planism }
-				custom_effect_tooltip = generic_skip_one_line_tt
-				custom_effect_tooltip = {
-					localization_key = tooltip_extra_effect_from_focus_completion
-					FOCUS = FRA_embrace_planism
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 3
+				limit = {
+					is_owned_and_controlled_by = ROOT
 				}
-				custom_effect_tooltip = {
-					localization_key = tooltip_modify_dynmod
-					DYNMOD = FRA_planism_modifier
-				}
-				add_to_variable = {
-					FRA_eco_production_factory_max_efficiency_factor = 0.05
-					tooltip = production_factory_max_efficiency_factor_tooltip
-				}
-				add_to_variable = {
-					FRA_eco_production_factory_efficiency_gain_factor = -0.05
-					tooltip = production_factory_efficiency_gain_factor_tooltip
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
 				}
 			}
-			else_if = {
-				limit = {
-					NOT = { has_completed_focus = FRA_voluntary_association }
-					NOT = { has_completed_focus = FRA_modernisation_and_cartelisation }
-					NOT = { has_completed_focus = FRA_militarisation_of_the_proletariat }
-				}
-				custom_effect_tooltip = generic_skip_one_line_tt
-				custom_effect_tooltip = {
-					localization_key = tooltip_if_focus_completed
-					FOCUS = FRA_embrace_planism
-				}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = FRA_IF_EMBRACE_PLANISM_WAS_PICKED
+			effect_tooltip = {
 				custom_effect_tooltip = {
 					localization_key = tooltip_modify_dynmod
-					DYNMOD = FRA_planism_modifier
+					DYNMOD = FRA_industry
 				}
 				add_to_variable = {
-					FRA_eco_production_factory_max_efficiency_factor = 0.05
-					tooltip = production_factory_max_efficiency_factor_tooltip
+					FRA_industry_production_factory_max_efficiency_factor = 0.05
+					tooltip = production_factory_max_efficiency_factor_tt
 				}
 				add_to_variable = {
-					FRA_eco_production_factory_efficiency_gain_factor = -0.05
-					tooltip = production_factory_efficiency_gain_factor_tooltip
+					FRA_industry_production_factory_efficiency_gain_factor = -0.05
+					tooltip = production_factory_efficiency_gain_factor_tt
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = { 
+						has_completed_focus = FRA_embrace_planism
+					}
+					custom_effect_tooltip = {
+						localization_key = tooltip_modify_dynmod
+						DYNMOD = FRA_industry
+					}
+					add_to_variable = {
+						FRA_industry_production_factory_max_efficiency_factor = 0.05
+						tooltip = production_factory_max_efficiency_factor_tt
+					}
+					add_to_variable = {
+						FRA_industry_production_factory_efficiency_gain_factor = -0.05
+						tooltip = production_factory_efficiency_gain_factor_tt
+					}
 				}
 			}
 		}
@@ -3230,8 +2546,8 @@ focus_tree = {
 	}
 	focus = {
 		id = FRA_maximise_production_capacity
-		icon = GFX_goal_munitions_factories
-		cost = 7
+		icon = GFX_focus_generic_reorient_production
+		cost = 5
 
 		relative_position_id = FRA_embrace_planism
 		x = 1
@@ -3265,52 +2581,52 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_maximise_production_capacity"
-			add_one_random_military_factory = yes
-			add_one_random_military_factory = yes
-			add_one_random_military_factory = yes
-			if = {
-				limit = { has_completed_focus = FRA_embrace_planism }
-				custom_effect_tooltip = generic_skip_one_line_tt
-				custom_effect_tooltip = {
-					localization_key = tooltip_extra_effect_from_focus_completion
-					FOCUS = FRA_embrace_planism
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 3
+				limit = {
+					is_owned_and_controlled_by = ROOT
 				}
-				custom_effect_tooltip = {
-					localization_key = tooltip_modify_dynmod
-					DYNMOD = FRA_planism_modifier
-				}
-				add_to_variable = {
-					FRA_eco_production_factory_max_efficiency_factor = 0.05
-					tooltip = production_factory_max_efficiency_factor_tooltip
-				}
-				add_to_variable = {
-					FRA_eco_production_factory_efficiency_gain_factor = -0.05
-					tooltip = production_factory_efficiency_gain_factor_tooltip
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
 				}
 			}
-			else_if = {
-				limit = {
-					NOT = { has_completed_focus = FRA_voluntary_association }
-					NOT = { has_completed_focus = FRA_modernisation_and_cartelisation }
-					NOT = { has_completed_focus = FRA_militarisation_of_the_proletariat }
-				}
-				custom_effect_tooltip = generic_skip_one_line_tt
-				custom_effect_tooltip = {
-					localization_key = tooltip_if_focus_completed
-					FOCUS = FRA_embrace_planism
-				}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = FRA_IF_EMBRACE_PLANISM_WAS_PICKED
+			effect_tooltip = {
 				custom_effect_tooltip = {
 					localization_key = tooltip_modify_dynmod
-					DYNMOD = FRA_planism_modifier
+					DYNMOD = FRA_industry
 				}
 				add_to_variable = {
-					FRA_eco_production_factory_max_efficiency_factor = 0.05
-					tooltip = production_factory_max_efficiency_factor_tooltip
+					FRA_industry_production_factory_max_efficiency_factor = 0.05
+					tooltip = production_factory_max_efficiency_factor_tt
 				}
 				add_to_variable = {
-					FRA_eco_production_factory_efficiency_gain_factor = -0.05
-					tooltip = production_factory_efficiency_gain_factor_tooltip
+					FRA_industry_production_factory_efficiency_gain_factor = -0.05
+					tooltip = production_factory_efficiency_gain_factor_tt
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = { 
+						has_completed_focus = FRA_embrace_planism
+					}
+					custom_effect_tooltip = {
+						localization_key = tooltip_modify_dynmod
+						DYNMOD = FRA_industry
+					}
+					add_to_variable = {
+						FRA_industry_production_factory_max_efficiency_factor = 0.05
+						tooltip = production_factory_max_efficiency_factor_tt
+					}
+					add_to_variable = {
+						FRA_industry_production_factory_efficiency_gain_factor = -0.05
+						tooltip = production_factory_efficiency_gain_factor_tt
+					}
 				}
 			}
 		}
@@ -3339,18 +2655,26 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_the_working_mans_automobile"
-			add_one_random_civilian_factory = yes
-			add_one_random_civilian_factory = yes
-			add_one_random_civilian_factory = yes
-			add_one_random_civilian_factory = yes
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 4
+				limit = {
+					is_owned_and_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
 		id = FRA_new_tractor_factories
 		icon = GFX_goal_generic_agriculture2
-		cost = 8
+		cost = 5
 
 		relative_position_id = FRA_close_bureaucratic_loopholes
 		x = 3
@@ -3370,18 +2694,26 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_new_tractor_factories"
-			add_one_random_civilian_factory = yes
-			add_one_random_civilian_factory = yes
-			add_one_random_civilian_factory = yes
-			add_one_random_civilian_factory = yes
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 4
+				limit = {
+					is_owned_and_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
 		id = FRA_viticulture_of_the_twentieth_century
 		icon = GFX_goal_GEO_wine
-		cost = 8
+		cost = 5
 
 		relative_position_id = FRA_syndical_consolidation
 		x = -3
@@ -3401,18 +2733,26 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_viticulture_of_the_twentieth_century"
-			add_one_random_civilian_factory = yes
-			add_one_random_civilian_factory = yes
-			add_one_random_civilian_factory = yes
-			add_one_random_civilian_factory = yes
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 4
+				limit = {
+					is_owned_and_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
 		id = FRA_expand_the_textile_industry
 		icon = GFX_focus_CHL_enlarge_the_textile_industries
-		cost = 8
+		cost = 5
 
 		relative_position_id = FRA_syndical_consolidation
 		x = -1
@@ -3432,11 +2772,19 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed FRA_expand_the_textile_industry"
-			add_one_random_civilian_factory = yes
-			add_one_random_civilian_factory = yes
-			add_one_random_civilian_factory = yes
-			add_one_random_civilian_factory = yes
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 4
+				limit = {
+					is_owned_and_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}

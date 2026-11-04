@@ -41,12 +41,13 @@ focus_tree = {
 				remove_idea = PRE_economic_downturn_1
 				add_idea = PRE_economic_downturn_2
 			}
-			random_owned_controlled_state = {
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 1
 				limit = {
-					is_core_of = root
-					is_in_home_area = yes
+					is_owned_and_controlled_by = ROOT
 				}
-				add_extra_state_shared_building_slots = 1
+                add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
@@ -77,12 +78,13 @@ focus_tree = {
 				days = 70
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
-			random_owned_controlled_state = {
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 1
 				limit = {
-					is_core_of = root
-					is_in_home_area = yes
+					is_owned_and_controlled_by = ROOT
 				}
-				add_extra_state_shared_building_slots = 1
+                add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
@@ -165,15 +167,13 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 250 }
 		completion_reward = {
-			random_owned_controlled_state = {
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 1
 				limit = {
-					is_core_of = root
-					is_in_home_area = yes
+					is_owned_and_controlled_by = ROOT
 				}
-				prioritize = {
-					446
-				}
-				add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -228,12 +228,13 @@ focus_tree = {
 					}
 				}
 			}
-			random_owned_controlled_state = {
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 1
 				limit = {
-					is_core_of = root
-					is_in_home_area = yes
+					is_owned_and_controlled_by = ROOT
 				}
-				add_extra_state_shared_building_slots = 1
+                add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
@@ -283,12 +284,13 @@ focus_tree = {
 					}
 				}
 			}
-			random_owned_controlled_state = {
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 2
 				limit = {
-					is_core_of = root
-					is_in_home_area = yes
+					is_owned_and_controlled_by = ROOT
 				}
-				add_extra_state_shared_building_slots = 3
+                NJORD_upgrade_state_category = yes
 			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS }
@@ -415,12 +417,13 @@ focus_tree = {
 		ai_will_do = { factor = 250 }
 
 		completion_reward = {
-			random_owned_controlled_state = {
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 1
 				limit = {
-					is_core_of = root
-					is_in_home_area = yes
+					is_owned_and_controlled_by = ROOT
 				}
-				add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -753,12 +756,13 @@ focus_tree = {
 		ai_will_do = { factor = 250 }
 
 		completion_reward = {
-			random_owned_controlled_state = {
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 1
 				limit = {
-					is_core_of = root
-					is_in_home_area = yes
+					is_owned_and_controlled_by = ROOT
 				}
-				add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -968,25 +972,13 @@ focus_tree = {
 				tooltip = industrial_capacity_dockyard_tt
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
-			random_owned_controlled_state = {
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 2
 				limit = {
-					is_core_of = root
-					is_in_home_area = yes
+					is_owned_and_controlled_by = ROOT
 				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = root
-					is_in_home_area = yes
-				}
-				add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -1052,12 +1044,13 @@ focus_tree = {
 		ai_will_do = { factor = 250 }
 
 		completion_reward = {
-			random_owned_controlled_state = {
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 1
 				limit = {
-					is_core_of = root
-					is_in_home_area = yes
+					is_owned_and_controlled_by = ROOT
 				}
-				add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 2
@@ -2099,38 +2092,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			random_owned_controlled_state = { # CHANGE TO NORTH GERMAN STATE
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 3
 				limit = {
-					is_core_of = root
-					is_in_home_area = yes
+					is_owned_and_controlled_by = ROOT
 				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-			random_owned_controlled_state = { # CHANGE TO NORTH GERMAN STATE
-				limit = {
-					is_core_of = root
-					is_in_home_area = yes
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-			random_owned_controlled_state = { # CHANGE TO NORTH GERMAN STATE
-				limit = {
-					is_core_of = root
-					is_in_home_area = yes
-				}
-				add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 2
@@ -2441,14 +2409,15 @@ focus_tree = {
 				tooltip = political_power_gain_tt
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
-			random_owned_controlled_state = {
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 1
 				limit = {
-					is_core_of = root
-					is_in_home_area = yes
+					is_owned_and_controlled_by = ROOT
 				}
-				add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = arms_factory
+					type = industrial_complex
 					level = 2
 					instant_build = yes
 				}
