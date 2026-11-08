@@ -101,6 +101,44 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_army_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_army_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_army_dynamic_modifier_land_night_attack = 0.15
+				tooltip = land_night_attack_tt
+			}
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_army_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_army_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_army_dynamic_modifier_modifier_army_sub_unit_blackshirt_assault_battalion_defence_factor = 0.1
+				tooltip = modifier_army_sub_unit_blackshirt_assault_battalion_defence_factor_tt
+			}
+			add_to_variable = {
+				GENERIC_army_dynamic_modifier_modifier_army_sub_unit_marine_defence_factor = 0.05
+				tooltip = modifier_army_sub_unit_marine_defence_factor_tt
+			}
+			add_to_variable = {
+				GENERIC_army_dynamic_modifier_modifier_army_sub_unit_mountaineers_defence_factor = 0.05
+				tooltip = modifier_army_sub_unit_mountaineers_defence_factor_tt
+			}
+			add_to_variable = {
+				GENERIC_army_dynamic_modifier_modifier_army_sub_unit_paratrooper_max_org_factor = 0.05
+				tooltip = modifier_army_sub_unit_paratrooper_max_org_factor_tt
+			}
+			add_to_variable = {
+				GENERIC_army_dynamic_modifier_modifier_army_sub_unit_militia_defence_factor = 0.05
+				tooltip = modifier_army_sub_unit_militia_defence_factor_tt
+			}
 			random_owned_controlled_state = {
 				limit = { is_core_of = ROOT is_in_home_area = yes }
 				add_extra_state_shared_building_slots = 2
@@ -139,6 +177,9 @@ focus_tree = {
 				army_spirit_training_time_army_factor = -0.05
 				tooltip = training_time_army_factor_tt
 			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
+			}
 		}
 		ai_will_do = {
 			factor = 2
@@ -165,6 +206,17 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_army_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_army_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_army_dynamic_modifier_command_power_gain_mult = 0.15
+				tooltip = command_power_gain_mult_tt
+			}
 			random_owned_controlled_state = {
 				limit = { is_core_of = ROOT is_in_home_area = yes }
 				add_extra_state_shared_building_slots = 2
@@ -203,6 +255,9 @@ focus_tree = {
 				army_spirit_training_time_army_factor = 0.05
 				tooltip = training_time_army_factor_tt
 			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -228,6 +283,17 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_army_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_army_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_army_dynamic_modifier_land_doctrine_cost_factor = -0.1
+				tooltip = land_doctrine_cost_factor_tt
+			}
 			army_experience = 25
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
@@ -260,6 +326,9 @@ focus_tree = {
 				focus = generic_assimilation_effort
 				cost = 35
 			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -287,6 +356,17 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_army_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_army_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_army_dynamic_modifier_max_command_power_mult = 0.15
+				tooltip = max_command_power_mult_tt
+			}
 			add_tech_bonus = {
 				name = generic_army_college_bonus
 				bonus = 1.0
@@ -331,6 +411,9 @@ focus_tree = {
 				random_select_amount = 2
 				add_trait = { trait = career_officer }
 			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
+			}
 		}
 		ai_will_do = {
 			factor = 2
@@ -352,6 +435,18 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			enable_tech_expanded_engineer_corps = yes
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_army_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_army_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_army_dynamic_modifier_army_advisor_cost_factor = -0.25
+				tooltip = army_advisor_cost_factor_tt
+			}
 			add_tech_bonus = {
 				name = generic_technical_college_bonus
 				bonus = 1.0
@@ -395,6 +490,9 @@ focus_tree = {
 				}
 				add_unit_leader_trait = engineer_officer 
 			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
+			}
 		}
 		ai_will_do = {
 			factor = 2
@@ -423,6 +521,18 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			enable_tech_improved_recon_units = yes
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_army_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_army_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_army_dynamic_modifier_initiative_factor = 0.02
+				tooltip = initiative_factor_tt
+			}
 			if = {
 				limit = {
 					has_dlc = "La Resistance"
@@ -449,6 +559,9 @@ focus_tree = {
 				army_spirit_recon_factor = 0.1
 				tooltip = recon_factor_tt
 			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
+			}
 		}
 		ai_will_do = {
 			factor = 2
@@ -474,6 +587,17 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_army_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_army_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_army_dynamic_modifier_land_equipment_upgrade_xp_cost = -0.1
+				tooltip = land_equipment_upgrade_xp_cost_tt
+			}
 			army_experience = 25
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
@@ -509,6 +633,9 @@ focus_tree = {
 				random_select_amount = 2
 				add_skill_level = 1
 			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
+			}
 		}
 		ai_will_do = {
 			factor = 2
@@ -540,6 +667,17 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_army_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_army_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_army_dynamic_modifier_breakthrough_factor = 0.05
+				tooltip = breakthrough_factor_tt
+			}
 			add_doctrine_cost_reduction = {
 				name = generic_advance_general_staff_doctrine
 				cost_reduction = 0.5
@@ -587,6 +725,9 @@ focus_tree = {
 					}
 				}
 			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -608,6 +749,38 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			enable_tech_mountain_warfare = yes
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_army_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_army_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_army_dynamic_modifier_modifier_army_sub_unit_blackshirt_assault_battalion_max_org_factor = 0.05
+				tooltip = modifier_army_sub_unit_blackshirt_assault_battalion_max_org_factor_tt
+			}
+			add_to_variable = {
+				GENERIC_army_dynamic_modifier_modifier_army_sub_unit_blackshirt_assault_battalion_attack_factor = 0.1
+				tooltip = modifier_army_sub_unit_blackshirt_assault_battalion_attack_factor_tt
+			}
+			add_to_variable = {
+				GENERIC_army_dynamic_modifier_special_forces_defence_factor = 0.05
+				tooltip = special_forces_defence_factor_tt
+			}
+			add_to_variable = {
+				GENERIC_army_dynamic_modifier_extra_marine_supply_grace = 24
+				tooltip = extra_marine_supply_grace_tt
+			}
+			add_to_variable = {
+				GENERIC_army_dynamic_modifier_modifier_army_sub_unit_paratrooper_defence_factor = 0.05
+				tooltip = modifier_army_sub_unit_paratrooper_defence_factor_tt
+			}
+			add_to_variable = {
+				GENERIC_army_dynamic_modifier_modifier_army_sub_unit_militia_attack_factor = 0.05
+				tooltip = modifier_army_sub_unit_militia_attack_factor_tt
+			}
 			add_tech_bonus = {
 				name = special_forces_bonus
 				bonus = 1.0
@@ -631,8 +804,11 @@ focus_tree = {
 				custom_effect_tooltip = GENERIC_modify_army_modifier_tt
 			}
 			add_to_variable = { 
-				army_spirit_special_forces_cap = 0.03
+				army_spirit_special_forces_cap = 0.05
 				tooltip = special_forces_cap_tt
+			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
 			}
 		}
 		ai_will_do = {
@@ -658,6 +834,33 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			enable_tech_improved_logistics = yes
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_army_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_army_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_army_dynamic_modifier_no_supply_grace = 12
+				tooltip = no_supply_grace_tt
+			}
+			add_to_variable = {
+				GENERIC_army_dynamic_modifier_acclimatization_hot_climate_gain_factor = 0.1
+				tooltip = acclimatization_hot_climate_gain_factor_tt
+			}
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_army_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_army_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_army_dynamic_modifier_coastal_bunker_effectiveness_factor = 0.05
+				tooltip = coastal_bunker_effectiveness_factor_tt
+			}
 			add_tech_bonus = {
 				name = generic_army_supply_focus_bonus
 				bonus = 1.0
@@ -683,6 +886,9 @@ focus_tree = {
 				army_spirit_supply_consumption_factor = -0.075
 				tooltip = supply_consumption_factor_tt
 			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
+			}
 		}
 		ai_will_do = {
 			factor = 3
@@ -707,6 +913,33 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			enable_tech_urban_warfare = yes
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_army_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_army_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_army_dynamic_modifier_winter_attrition_factor = -0.1
+				tooltip = winter_attrition_factor_tt
+			}
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_army_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_army_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_army_dynamic_modifier_max_dig_in = 1
+				tooltip = max_dig_in_tt
+			}
+			add_to_variable = {
+				GENERIC_army_dynamic_modifier_land_bunker_effectiveness_factor = 0.05
+				tooltip = land_bunker_effectiveness_factor_tt
+			}
 			add_tech_bonus = {
 				name = generic_army_homeland_focus_bonus
 				bonus = 1.0
@@ -736,6 +969,9 @@ focus_tree = {
 				army_spirit_army_core_attack_factor = 0.025
 				tooltip = army_core_attack_factor_tt
 			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
+			}
 		}
 		ai_will_do = {
 			factor = 3
@@ -757,12 +993,26 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_army_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_army_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_army_dynamic_modifier_army_artillery_attack_factor = 0.1
+				tooltip = army_artillery_attack_factor_tt
+			}
 			add_tech_bonus = {
 				name = infantry_artillery_bonus
 				bonus = 1.0
 				uses = 1
 				category = infantry_weapons
 				category = artillery
+			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
 			}
 		}
 		ai_will_do = {
@@ -786,10 +1036,24 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_army_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_army_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_army_dynamic_modifier_army_speed_factor = 0.05
+				tooltip = army_speed_factor_tt
+			}
 			add_tech_bonus = {
 				name = motorized_bonus
 				bonus = 3.0
 				technology = motorised_infantry
+			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
 			}
 		}
 		ai_will_do = {
@@ -815,10 +1079,28 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_army_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_army_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_army_dynamic_modifier_acclimatization_cold_climate_gain_factor = 0.1
+				tooltip = acclimatization_cold_climate_gain_factor_tt
+			}
+			add_to_variable = {
+				GENERIC_army_dynamic_modifier_heat_attrition_factor = -0.1
+				tooltip = heat_attrition_factor_tt
+			}
 			add_tech_bonus = {
 				bonus = 1.0
 				uses = 2
 				category = support_tech
+			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
 			}
 		}
 		ai_will_do = {
@@ -841,12 +1123,34 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_equipment_production = {
+				equipment = {
+					type = infantry_equipment_1
+				}
+				requested_factories = 2
+				progress = 0.5
+				amount = 400
+			}
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_army_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_army_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_army_dynamic_modifier_army_artillery_defence_factor = 0.1
+				tooltip = army_artillery_defence_factor_tt
+			}
 			add_tech_bonus = {
 				name = infantry_artillery_bonus
 				bonus = 1.0
 				uses = 2
 				category = infantry_weapons
 				category = artillery
+			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
 			}
 		}
 		ai_will_do = {
@@ -868,11 +1172,25 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_army_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_army_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_army_dynamic_modifier_cas_damage_reduction = 0.05
+				tooltip = cas_damage_reduction_tt
+			}
 			add_tech_bonus = {
 				name = motorized_bonus
 				ahead_reduction = 2
 				uses = 1
 				category = motorized_equipment
+			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
 			}
 		}
 		ai_will_do = {
@@ -940,6 +1258,25 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_equipment_production = {
+				equipment = {
+					type = artillery_equipment_1
+				}
+				requested_factories = 2
+				progress = 0.5
+				amount = 200
+			}
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_army_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_army_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_army_dynamic_modifier_army_attack_speed_factor = 0.05
+				tooltip = army_attack_speed_tt
+			}
 			random_owned_controlled_state = {
 				limit = { is_core_of = ROOT is_in_home_area = yes }
 				add_extra_state_shared_building_slots = 2
@@ -958,6 +1295,9 @@ focus_tree = {
 				uses = 1
 				category = infantry_weapons
 				category = artillery
+			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
 			}
 		}
 		ai_will_do = {
@@ -980,6 +1320,21 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			complete_special_project = {
+				project = sp:sp_land_large_caliber_kinetic_energy_sabot
+				show_modifiers = no
+			}
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_army_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_army_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_army_dynamic_modifier_army_armor_defence_factor = 0.05
+				tooltip = army_armor_defence_factor_tt
+			}
 			random_owned_controlled_state = {
 				limit = { is_core_of = ROOT is_in_home_area = yes }
 				add_extra_state_shared_building_slots = 2
@@ -990,6 +1345,9 @@ focus_tree = {
 				bonus = 1.0
 				uses = 2
 				category = armor
+			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
 			}
 		}
 		ai_will_do = {
@@ -1020,6 +1378,37 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_army_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_army_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_army_dynamic_modifier_modifier_army_sub_unit_blackshirt_assault_battalion_speed_factor = 0.05
+				tooltip = modifier_army_sub_unit_blackshirt_assault_battalion_speed_factor_tt
+			}
+			add_to_variable = {
+				GENERIC_army_dynamic_modifier_special_forces_attack_factor = 0.05
+				tooltip = special_forces_attack_factor_tt
+			}
+			add_to_variable = {
+				GENERIC_army_dynamic_modifier_modifier_army_sub_unit_marine_max_org_factor = 0.05
+				tooltip = modifier_army_sub_unit_marine_max_org_factor_tt
+			}
+			add_to_variable = {
+				GENERIC_army_dynamic_modifier_modifier_army_sub_unit_mountaineers_max_org_factor = 0.05
+				tooltip = modifier_army_sub_unit_mountaineers_max_org_factor_tt
+			}
+			add_to_variable = {
+				GENERIC_army_dynamic_modifier_extra_paratrooper_supply_grace = 48
+				tooltip = extra_paratrooper_supply_grace_tt
+			}
+			add_to_variable = {
+				GENERIC_army_dynamic_modifier_modifier_army_sub_unit_militia_max_org_factor = 0.05
+				tooltip = modifier_army_sub_unit_militia_max_org_factor_tt
+			}
 			add_mastery_bonus = {
 				name = GER_trade_interdiction
 				bonus = 0.2
@@ -1058,6 +1447,9 @@ focus_tree = {
 				random_select_amount = 2
 				add_trait = { trait = infantry_officer }
 			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
+			}
 		}
 		ai_will_do = {
 			factor = 4
@@ -1087,6 +1479,17 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_army_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_army_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_army_dynamic_modifier_modifier_army_sub_unit_armored_car_recon_max_org_factor = 0.1
+				tooltip = modifier_army_sub_unit_armored_car_recon_max_org_factor_tt
+			}
 			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 1.0
@@ -1132,6 +1535,9 @@ focus_tree = {
 				random_select_amount = 2
 				add_trait = { trait = armor_officer }
 			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
+			}
 		}
 		ai_will_do = {
 			factor = 4
@@ -1153,6 +1559,17 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_airforce_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_airforce_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_airforce_dynamic_modifier_ace_effectiveness_factor = 0.05
+				tooltip = ace_effectiveness_factor_tt
+			}
 			air_experience = 25	
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_dynamic_modifier = {
@@ -1161,6 +1578,9 @@ focus_tree = {
 			add_to_variable = { 
 				air_spirit_experience_gain_air_factor = 0.05
 				tooltip = experience_gain_air_factor_tt
+			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
 			}
 		}
 		ai_will_do = {
@@ -1181,6 +1601,17 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INTERNATIONAL_TRADE}
 		available_if_capitulated = yes
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_airforce_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_airforce_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_airforce_dynamic_modifier_air_night_penalty = -0.05
+				tooltip = air_night_penalty_tt
+			}
 			random_owned_controlled_state = {
 				limit = { is_core_of = ROOT is_in_home_area = yes }
 				add_extra_state_shared_building_slots = 2
@@ -1201,6 +1632,9 @@ focus_tree = {
 				air_spirit_license_production_speed = 0.25
 				tooltip = license_production_speed_tt
 			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -1220,6 +1654,17 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_AIR_XP}
 		available_if_capitulated = yes
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_airforce_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_airforce_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_airforce_dynamic_modifier_air_intercept_efficiency = 0.05
+				tooltip = air_intercept_efficiency_tt
+			}
 			random_owned_controlled_state = {
 				limit = { is_core_of = ROOT is_in_home_area = yes }
 				add_extra_state_shared_building_slots = 2
@@ -1243,6 +1688,9 @@ focus_tree = {
 				air_spirit_air_range_factor = 0.08
 				tooltip = air_range_factor_tt
 			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -1262,6 +1710,28 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 		available_if_capitulated = yes
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_airforce_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_airforce_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_airforce_dynamic_modifier_air_equipment_upgrade_xp_cost = -0.1
+				tooltip = air_equipment_upgrade_xp_cost_tt
+			}
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_airforce_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_airforce_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_airforce_dynamic_modifier_naval_strike_attack_factor = 0.05
+				tooltip = naval_strike_attack_factor_tt
+			}
 			add_tech_bonus = {
 				name = air_research_focus_bonus
 				bonus = 1.0
@@ -1278,6 +1748,9 @@ focus_tree = {
 			add_to_variable = { 
 				industry_spirit_production_speed_air_facility_factor = 0.15
 				tooltip = production_speed_air_facility_factor_tt
+			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
 			}
 		}
 		ai_will_do = {
@@ -1298,6 +1771,36 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_AIR_XP FOCUS_FILTER_RESEARCH }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_equipment_production = {
+				equipment = {
+					type = fighter_equipment_1
+				}
+				requested_factories = 2
+				progress = 0.5
+				amount = 150
+			}
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_airforce_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_airforce_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_airforce_dynamic_modifier_air_agility_factor = 0.05
+				tooltip = air_agility_factor_tt
+			}
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_airforce_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_airforce_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_airforce_dynamic_modifier_air_power_projection_factor = 0.05
+				tooltip = air_power_projection_factor_tt
+			}
 			random_owned_controlled_state = {
 				limit = { is_core_of = ROOT is_in_home_area = yes }
 				add_extra_state_shared_building_slots = 2
@@ -1313,6 +1816,9 @@ focus_tree = {
 			add_mastery = {
 				amount = 50
 				track = fighter_aircraft
+			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
 			}
 		}
 		ai_will_do = {
@@ -1332,6 +1838,17 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_AIR_XP FOCUS_FILTER_RESEARCH }
 		available_if_capitulated = yes
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_airforce_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_airforce_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_airforce_dynamic_modifier_ground_attack_factor = 0.05
+				tooltip = ground_attack_factor_tt
+			}
 			random_owned_controlled_state = {
 				limit = { is_core_of = ROOT is_in_home_area = yes }
 				add_extra_state_shared_building_slots = 2
@@ -1347,6 +1864,9 @@ focus_tree = {
 			add_mastery = {
 				amount = 50
 				track = medium_aircraft
+			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
 			}
 		}
 		ai_will_do = {
@@ -1367,6 +1887,14 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		available_if_capitulated = yes
 		completion_reward = {
+			add_equipment_production = {
+				equipment = {
+					type = cas_equipment_1
+				}
+				requested_factories = 1
+				progress = 0.5
+				amount = 100
+			}
 			add_tech_bonus = {
 				name = CAS_bonus
 				bonus = 1.0
@@ -1395,6 +1923,28 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_airforce_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_airforce_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_airforce_dynamic_modifier_air_close_air_support_org_damage_factor = 0.05
+				tooltip = air_close_air_support_org_damage_factor_tt
+			}
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_airforce_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_airforce_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_airforce_dynamic_modifier_naval_strike_targetting_factor = 0.05
+				tooltip = naval_strike_targetting_factor_tt
+			}
 			add_tech_bonus = {
 				name = nav_bomber_bonus
 				bonus = 1.0
@@ -1406,6 +1956,9 @@ focus_tree = {
 			add_to_variable = { 
 				air_spirit_air_nav_efficiency = 0.05
 				tooltip = air_nav_efficiency_tt
+			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
 			}
 		}
 		ai_will_do = {
@@ -1428,10 +1981,24 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_airforce_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_airforce_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_airforce_dynamic_modifier_air_weather_penalty = -0.15
+				tooltip = air_weather_penalty_tt
+			}
 			add_tech_bonus = {
 				bonus = 1.0
 				uses = 3
 				category = plane_modules_tech
+			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
 			}
 		}
 		ai_will_do = {
@@ -1454,6 +2021,17 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_airforce_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_airforce_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_airforce_dynamic_modifier_air_cas_present_factor = 0.1
+				tooltip = air_cas_present_factor_tt
+			}
 			add_tech_bonus = {
 				bonus = 1.0
 				uses = 1
@@ -1468,6 +2046,9 @@ focus_tree = {
 			add_to_variable = { 
 				air_spirit_air_interception_detect_factor = 0.025
 				tooltip = air_interception_detect_factor_tt
+			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
 			}
 		}
 		ai_will_do = {
@@ -1515,6 +2096,17 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_airforce_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_airforce_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_airforce_dynamic_modifier_production_speed_rocket_site_factor = 0.1
+				tooltip = production_speed_rocket_site_factor_tt
+			}
 			air_experience = 25
 			if = {
 				limit = {
@@ -1582,6 +2174,9 @@ focus_tree = {
 				focus = generic_assimilation_effort
 				cost = 35
 			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
+			}
 		}
 		ai_will_do = {
 			factor = 2
@@ -1605,6 +2200,29 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_ace = {
+				type = "fighter_genius"
+				name = "Alex"
+				surname = "Ward"
+				callsign = "Falcon"
+			}
+			add_ace = {
+				type = "fighter_unique"
+				name = "Sam"
+				surname = "Hale"
+				callsign = "Kestrel"
+			}
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_airforce_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_airforce_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_airforce_dynamic_modifier_air_mission_xp_gain_factor = 0.05
+				tooltip = air_mission_xp_gain_factor_tt
+			}
 			add_tech_bonus = {
 				name = generic_air_training_school_bonus
 				bonus = 1.0
@@ -1631,6 +2249,9 @@ focus_tree = {
 				focus = generic_rocket_effort
 				cost = 35
 			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
+			}
 		}
 		ai_will_do = {
 			factor = 3
@@ -1654,6 +2275,32 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			complete_special_project = {
+				project = sp:sp_air_radar
+				show_modifiers = no
+			}
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_airforce_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_airforce_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_airforce_dynamic_modifier_air_defence_factor = 0.05
+				tooltip = air_defence_factor_tt
+			}
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_airforce_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_airforce_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_airforce_dynamic_modifier_air_home_defence_factor = 0.05
+				tooltip = air_home_defence_factor_tt
+			}
 			add_tech_bonus = {
 				bonus = 1.0
 				uses = 1
@@ -1668,6 +2315,9 @@ focus_tree = {
 			reduce_focus_completion_cost = {
 				focus = generic_rocket_effort
 				cost = 35
+			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
 			}
 		}
 		ai_will_do = {
@@ -1693,6 +2343,17 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_airforce_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_airforce_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_airforce_dynamic_modifier_air_ace_bonuses_factor = 0.05
+				tooltip = air_ace_bonuses_factor_tt
+			}
 			air_experience = 25
 			add_doctrine_cost_reduction = {
 				name = air_doc_bonus
@@ -1710,6 +2371,9 @@ focus_tree = {
 			reduce_focus_completion_cost = {
 				focus = generic_rocket_effort
 				cost = 70
+			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
 			}
 		}
 		ai_will_do = {
@@ -1740,6 +2404,17 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_army_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_army_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_army_dynamic_modifier_coordination_bonus = 0.05
+				tooltip = coordination_bonus_tt
+			}
 			add_doctrine_cost_reduction = {
 				name = generic_combined_arms_doctrine
 				cost_reduction = 0.5
@@ -1778,6 +2453,9 @@ focus_tree = {
 				air_spirit_air_superiority_bonus_in_combat = 0.05
 				tooltip = air_cas_efficiency_tt
 			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
+			}
 		}
 		ai_will_do = {
 			factor = 4
@@ -1807,6 +2485,23 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_ace = {
+				type = "support_unique"
+				name = "Jo"
+				surname = "Marsh"
+				callsign = "Anvil"
+			}
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_airforce_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_airforce_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_airforce_dynamic_modifier_strategic_bomb_visibility = -0.05
+				tooltip = strategic_bomb_visibility_tt
+			}
 			add_doctrine_cost_reduction = {
 				name = generic_bomber_command_doctrine
 				cost_reduction = 0.5
@@ -1828,6 +2523,9 @@ focus_tree = {
 			add_to_variable = { 
 				air_spirit_air_strategic_bomber_bombing_factor = 0.075
 				tooltip = air_strategic_bomber_bombing_factor_tt
+			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
 			}
 		}
 		ai_will_do = {
@@ -1869,6 +2567,17 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_navy_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_navy_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_navy_dynamic_modifier_naval_coordination = 0.05
+				tooltip = naval_coordination_tt
+			}
 			navy_experience = 25
 			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
@@ -1975,6 +2684,9 @@ focus_tree = {
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = generic_ft_get_more_admirals_tt
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -1996,6 +2708,21 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_navy_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_navy_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_navy_dynamic_modifier_naval_doctrine_cost_factor = -0.1
+				tooltip = naval_doctrine_cost_factor_tt
+			}
+			add_to_variable = {
+				GENERIC_navy_dynamic_modifier_refit_ic_cost = -0.1
+				tooltip = refit_ic_cost_tt
+			}
 			add_tech_bonus = {
 				name = navy_research_focus_bonus
 				bonus = 1.0
@@ -2012,6 +2739,9 @@ focus_tree = {
 			add_to_variable = { 
 				industry_spirit_production_speed_naval_facility_factor = 0.15
 				tooltip = production_speed_naval_facility_factor_tt
+			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
 			}
 		}
 		ai_will_do = {
@@ -2035,6 +2765,17 @@ focus_tree = {
 		
 		available_if_capitulated = yes
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_navy_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_navy_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_navy_dynamic_modifier_navy_submarine_attack_factor = 0.05
+				tooltip = navy_submarine_attack_factor_tt
+			}
 			random_owned_controlled_state = {
 				limit = { is_core_of = ROOT is_coastal = yes }
 				add_extra_state_shared_building_slots = 2
@@ -2045,6 +2786,9 @@ focus_tree = {
 				bonus = 1.0
 				uses = 1
 				category = ss_tech
+			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
 			}
 		}
 		ai_will_do = {
@@ -2077,6 +2821,32 @@ focus_tree = {
 		
 		available_if_capitulated = yes
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_navy_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_navy_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_navy_dynamic_modifier_convoy_escort_efficiency = 0.1
+				tooltip = convoy_escort_efficiency_factor_tt
+			}
+			add_to_variable = {
+				GENERIC_navy_dynamic_modifier_navy_screen_defence_factor = 0.05
+				tooltip = navy_screen_defence_factor_tt
+			}
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_navy_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_navy_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_navy_dynamic_modifier_naval_torpedo_screen_penetration_factor = 0.05
+				tooltip = naval_torpedo_screen_penetration_factor_tt
+			}
 			random_owned_controlled_state = {
 				limit = { is_core_of = ROOT is_coastal = yes }
 				add_extra_state_shared_building_slots = 2
@@ -2087,6 +2857,9 @@ focus_tree = {
 				bonus = 1.0
 				uses = 1
 				category = dd_tech
+			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
 			}
 		}
 		ai_will_do = {
@@ -2121,10 +2894,28 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_navy_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_navy_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_navy_dynamic_modifier_navy_screen_attack_factor = 0.05
+				tooltip = navy_screen_attack_factor_tt
+			}
+			add_to_variable = {
+				GENERIC_navy_dynamic_modifier_navy_anti_air_attack_factor = 0.15
+				tooltip = navy_anti_air_attack_factor_tt
+			}
 			add_tech_bonus = {
 				bonus = 1.0
 				uses = 2
 				category = ship_modules_tech
+			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
 			}
 		}
 		ai_will_do = {
@@ -2155,6 +2946,17 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_navy_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_navy_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_navy_dynamic_modifier_navy_org_factor = 0.05
+				tooltip = navy_org_factor_tt
+			}
 			add_tech_bonus = {
 				name = cr_bonus
 				bonus = 1.0
@@ -2165,6 +2967,9 @@ focus_tree = {
 			add_mastery = {
 				amount = 50
 				track = screens
+			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
 			}
 		}
 		ai_will_do = {
@@ -2195,6 +3000,17 @@ focus_tree = {
 		
 		available_if_capitulated = yes
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_navy_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_navy_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_navy_dynamic_modifier_navy_capital_ship_defence_factor = 0.05
+				tooltip = navy_capital_ship_defence_factor_tt
+			}
 			random_owned_controlled_state = {
 				limit = { is_core_of = ROOT is_coastal = yes }
 				add_extra_state_shared_building_slots = 2
@@ -2221,6 +3037,9 @@ focus_tree = {
 					}
 				}
 				add_unit_leader_trait = gunnery_expert 
+			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
 			}
 		}
 		ai_will_do = {
@@ -2251,6 +3070,25 @@ focus_tree = {
 		
 		available_if_capitulated = yes
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_navy_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_navy_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_navy_dynamic_modifier_navy_carrier_air_attack_factor = 0.05
+				tooltip = navy_carrier_air_attack_factor_tt
+			}
+			add_to_variable = {
+				GENERIC_navy_dynamic_modifier_carrier_air_targetting_factor = 0.05
+				tooltip = navy_carrier_air_targetting_factor_tt
+			}
+			add_to_variable = {
+				GENERIC_navy_dynamic_modifier_carrier_air_agility_factor = 0.05
+				tooltip = navy_carrier_air_agility_factor_tt
+			}
 			random_owned_controlled_state = {
 				limit = { is_core_of = ROOT is_coastal = yes }
 				add_extra_state_shared_building_slots = 2
@@ -2276,6 +3114,9 @@ focus_tree = {
 					}
 				}
 				add_unit_leader_trait = aviation_enthusiast 
+			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
 			}
 		}
 		ai_will_do = {
@@ -2308,6 +3149,28 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_navy_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_navy_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_navy_dynamic_modifier_spotting_chance = 0.1
+				tooltip = spotting_chance_tt
+			}
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_navy_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_navy_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_navy_dynamic_modifier_naval_detection = 0.1
+				tooltip = naval_detection_tt
+			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = dd_bonus
@@ -2334,6 +3197,9 @@ focus_tree = {
 					}
 				}
 				add_unit_leader_trait = chief_engineer 
+			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
 			}
 		}
 		ai_will_do = {
@@ -2365,6 +3231,17 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_navy_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_navy_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_navy_dynamic_modifier_naval_critical_score_chance_factor = 0.05
+				tooltip = naval_critical_score_chance_factor_tt
+			}
 			add_tech_bonus = {
 				name = generic_enlarge_navy_bonus
 				bonus = 1.0
@@ -2406,6 +3283,9 @@ focus_tree = {
 				}
 				add_unit_leader_trait = cuts_corners 
 			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -2440,6 +3320,21 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_navy_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_navy_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_navy_dynamic_modifier_naval_hit_chance = 0.05
+				tooltip = naval_hit_chance_tt
+			}
+			add_to_variable = {
+				GENERIC_navy_dynamic_modifier_sortie_efficiency = 0.1
+				tooltip = sortie_efficiency_tt
+			}
 			navy_experience = 25
 			add_doctrine_cost_reduction = {
 				cost_reduction = 0.5
@@ -2456,6 +3351,9 @@ focus_tree = {
 			reduce_focus_completion_cost = {
 				focus = generic_assimilation_effort
 				cost = 35
+			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
 			}
 		}
 		ai_will_do = {
@@ -2489,6 +3387,17 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_navy_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_navy_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_navy_dynamic_modifier_naval_has_potf_in_combat_attack = 0.1
+				tooltip = naval_has_potf_in_combat_attack_tt
+			}
 			add_tech_bonus = {
 				bonus = 1.0
 				uses = 1
@@ -2513,6 +3422,9 @@ focus_tree = {
 					}
 				}
 				add_unit_leader_trait = naval_invader 
+			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
 			}
 		}
 		ai_will_do = {
@@ -2552,6 +3464,32 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_navy_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_navy_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_navy_dynamic_modifier_experience_gain_navy_unit_factor = 0.1
+				tooltip = experience_gain_navy_unit_factor_tt
+			}
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_navy_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_navy_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_navy_dynamic_modifier_navy_spirit_category_type_cost_factor = -0.25
+				tooltip = navy_spirit_category_type_cost_factor_tt
+			}
+			add_to_variable = {
+				GENERIC_navy_dynamic_modifier_refit_speed = 0.1
+				tooltip = refit_speed_tt
+			}
 			add_doctrine_cost_reduction = {
 				name = generic_naval_college_doctrine
 				cost_reduction = 0.5
@@ -2582,6 +3520,9 @@ focus_tree = {
 				}
 				random_select_amount = 2
 				add_trait = { trait = navy_career_officer }
+			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
 			}
 		}
 		ai_will_do = {
@@ -2619,6 +3560,28 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_navy_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_navy_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_navy_dynamic_modifier_navy_visibility = -0.05
+				tooltip = navy_visibility_tt
+			}
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_navy_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_navy_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_navy_dynamic_modifier_positioning = 0.1
+				tooltip = positioning_tooltip
+			}
 			add_doctrine_cost_reduction = {
 				name = generic_admiralty_doctrine
 				cost_reduction = 0.5
@@ -2644,6 +3607,9 @@ focus_tree = {
 					    id = generic_ft.4
 					}
 				}
+			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
 			}
 		}
 		ai_will_do = {
@@ -2678,6 +3644,21 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_navy_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_navy_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_navy_dynamic_modifier_naval_morale_factor = 0.05
+				tooltip = naval_morale_factor_tt
+			}
+			add_to_variable = {
+				GENERIC_navy_dynamic_modifier_navy_weather_penalty = -0.1
+				tooltip = navy_weather_penalty_tt
+			}
 			navy_experience = 25
 			add_doctrine_cost_reduction = {
 				name = navy_doc_bonus
@@ -2697,6 +3678,9 @@ focus_tree = {
 					skill < 4
 				}
 				add_skill_level = 1
+			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
 			}
 		}
 		ai_will_do = {
@@ -2736,6 +3720,17 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_navy_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_navy_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_navy_dynamic_modifier_naval_torpedo_hit_chance_factor = 0.05
+				tooltip = naval_torpedo_hit_chance_factor_tt
+			}
 			custom_effect_tooltip = GENERIC_modify_navy_modifier_tt
 			add_to_variable = { 
 				navy_spirit_convoy_raiding_efficiency_factor = 0.1
@@ -2773,6 +3768,9 @@ focus_tree = {
 					}
 				}
 				add_unit_leader_trait = craven 
+			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
 			}
 		}
 		ai_will_do = {
@@ -2812,6 +3810,43 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_navy_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_navy_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_navy_dynamic_modifier_naval_retreat_chance_after_initial_combat = -0.05
+				tooltip = naval_retreat_chance_after_initial_combat_tt
+			}
+			add_to_variable = {
+				GENERIC_navy_dynamic_modifier_naval_retreat_speed_after_initial_combat = -0.1
+				tooltip = naval_retreat_speed_after_initial_combat_tt
+			}
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_navy_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_navy_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_navy_dynamic_modifier_strike_force_movement_org_loss = -0.1
+				tooltip = strike_force_movement_org_loss_tt
+			}
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_navy_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_navy_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_navy_dynamic_modifier_naval_strike_agility_factor = 0.05
+				tooltip = naval_strike_agility_factor_tt
+			}
 			custom_effect_tooltip = GENERIC_modify_navy_modifier_tt
 			add_to_variable = { 
 				navy_spirit_navy_capital_ship_attack_factor = 0.05
@@ -2848,6 +3883,9 @@ focus_tree = {
 					}
 				}
 				add_unit_leader_trait = battleship_adherent 
+			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
 			}
 		}
 		ai_will_do = {
@@ -2924,7 +3962,7 @@ focus_tree = {
 					tooltip = industrial_capacity_factory_tt
 				}
 				add_to_variable = { 
-					industry_spirit_consumer_goods_factor = 0.01
+					industry_spirit_consumer_goods_factor = 0.025
 					tooltip = consumer_goods_factor_tt
 				}
 			}
@@ -3171,6 +4209,10 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = { is_core_of = ROOT is_in_home_area = yes }
+				NJORD_upgrade_state_category = yes
+			}
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT is_in_home_area = yes }
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
 			}
@@ -3252,6 +4294,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT is_in_home_area = yes }
+				NJORD_upgrade_state_category = yes
+			}
 			add_tech_bonus = {
 				name = generic_infrastructure_effort_bonus
 				bonus = 1.0
@@ -3427,6 +4473,17 @@ focus_tree = {
 		}		
 
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_industry_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_industry_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_industry_dynamic_modifier_industry_repair_factor = 0.1
+				tooltip = industry_repair_tt
+			}
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -3456,6 +4513,9 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
+			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
 			}
 		}
 		ai_will_do = {
@@ -3571,6 +4631,17 @@ focus_tree = {
 		}		
 
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_faction_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_faction_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_faction_dynamic_modifier_equipment_conversion_speed = 0.2
+				tooltip = equipment_conversion_speed_tt
+			}
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -3600,6 +4671,9 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
+			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
 			}
 		}
 		ai_will_do = {
@@ -4254,6 +5328,22 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = { is_core_of = ROOT is_in_home_area = yes }
+				add_resource = { type = steel amount = 2 }
+				add_resource = { type = chromium amount = 2 }
+			}
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_industry_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_industry_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_industry_dynamic_modifier_production_oil_factor = 0.1
+				tooltip = production_oil_factor_tt
+			}
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT is_in_home_area = yes }
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
 			}
@@ -4286,6 +5376,9 @@ focus_tree = {
 				industry_spirit_military_industrial_organization_funds_gain = 0.15
 				tooltip = military_industrial_organization_funds_gain_tt
 			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
+			}
 		}
 
 		ai_will_do = {
@@ -4315,6 +5408,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT is_in_home_area = yes }
+				add_resource = { type = steel amount = 4 }
+				add_resource = { type = aluminium amount = 2 }
+			}
 			random_owned_controlled_state = {
 				limit = { is_core_of = ROOT is_in_home_area = yes }
 				add_extra_state_shared_building_slots = 2
@@ -4378,6 +5476,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT is_in_home_area = yes }
+				NJORD_upgrade_state_category = yes
+			}
 			add_tech_bonus = {
 				name = generic_public_schools_bonus
 				bonus = 1.0
@@ -4437,6 +5539,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT is_in_home_area = yes }
+				NJORD_upgrade_state_category = yes
+			}
 			random_owned_controlled_state = {
 				limit = { is_core_of = ROOT is_in_home_area = yes }
 				add_extra_state_shared_building_slots = 2
@@ -4924,6 +6030,17 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_political_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_political_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_political_dynamic_modifier_communism_drift = 0.02
+				tooltip = communism_drift_tt
+			}
 			add_political_power = 100
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_dynamic_modifier = {
@@ -4941,6 +6058,9 @@ focus_tree = {
 			reduce_focus_completion_cost = {
 				focus = generic_assimilation_effort
 				cost = 35
+			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
 			}
 		}
 
@@ -5863,7 +6983,7 @@ focus_tree = {
 				tooltip = political_power_factor_tt
 			}
 			add_to_variable = { 
-				communist_spirit_compliance_growth = 0.03
+				communist_spirit_compliance_growth = 0.05
 				tooltip = compliance_growth_tt
 			}
 		}
@@ -5940,7 +7060,7 @@ focus_tree = {
 				tooltip = production_speed_industrial_complex_factor_tt
 			}
 			add_to_variable = { 
-				industry_spirit_production_factory_efficiency_gain_factor = -0.02
+				industry_spirit_production_factory_efficiency_gain_factor = -0.025
 				tooltip = production_factory_efficiency_gain_factor_tt
 			}
 		}
@@ -5984,7 +7104,7 @@ focus_tree = {
 				tooltip = production_speed_arms_factory_factor_tt
 			}
 			add_to_variable = { 
-				industry_spirit_production_factory_efficiency_gain_factor = -0.03
+				industry_spirit_production_factory_efficiency_gain_factor = -0.05
 				tooltip = production_factory_efficiency_gain_factor_tt
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -6067,6 +7187,17 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_political_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_political_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_political_dynamic_modifier_communism_drift = 0.025
+				tooltip = communism_drift_tt
+			}
 			if = {
 				limit = {
 					NOT = {
@@ -6105,6 +7236,9 @@ focus_tree = {
 			add_to_variable = { 
 				communist_spirit_stability_factor = 0.1
 				tooltip = stability_factor_tt
+			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
 			}
 		}
 
@@ -6433,7 +7567,7 @@ focus_tree = {
 				tooltip = stability_factor_tt
 			}
 			add_to_variable = { 
-				communist_spirit_non_core_manpower = 0.02
+				communist_spirit_non_core_manpower = 0.025
 				tooltip = non_core_manpower_tt
 			}
 			add_to_variable = { 
@@ -7201,7 +8335,7 @@ focus_tree = {
 				tooltip = surrender_limit_tt
 			}
 			add_to_variable = { 
-				communist_spirit_conscription = 0.01
+				communist_spirit_conscription = 0.05
 				tooltip = conscription_tt
 			}
 			add_to_variable = { 
@@ -7318,7 +8452,7 @@ focus_tree = {
 				tooltip = political_advisor_cost_factor_tt
 			}
 			add_to_variable = { 
-				fascist_spirit_party_popularity_stability_factor = 0.01
+				fascist_spirit_party_popularity_stability_factor = 0.05
 				tooltip = party_popularity_stability_factor_tt
 			}
 		}
@@ -7511,7 +8645,7 @@ focus_tree = {
 				tooltip = stability_factor_tt
 			}
 			add_to_variable = { 
-				fascist_spirit_party_popularity_stability_factor = 0.04
+				fascist_spirit_party_popularity_stability_factor = 0.1
 				tooltip = party_popularity_stability_factor_tt
 			}
 		}
@@ -7606,7 +8740,7 @@ focus_tree = {
 				tooltip = industrial_capacity_factory_tt
 			}
 			add_to_variable = { 
-				industry_spirit_consumer_goods_factor = -0.04
+				industry_spirit_consumer_goods_factor = -0.05
 				tooltip = consumer_goods_factor_tt
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -7723,11 +8857,11 @@ focus_tree = {
 				tooltip = production_factory_efficiency_gain_factor_tt
 			}
 			add_to_variable = { 
-				industry_spirit_production_factory_max_efficiency_factor = 0.03
+				industry_spirit_production_factory_max_efficiency_factor = 0.05
 				tooltip = production_factory_max_efficiency_factor_tt
 			}
 			add_to_variable = { 
-				industry_spirit_line_change_production_efficiency_factor = -0.03
+				industry_spirit_line_change_production_efficiency_factor = -0.05
 				tooltip = line_change_production_efficiency_factor_tt
 			}
 		}
@@ -8037,7 +9171,7 @@ focus_tree = {
 				tooltip = party_popularity_stability_factor_tt
 			}
 			add_to_variable = { 
-				fascist_spirit_conscription = 0.01
+				fascist_spirit_conscription = 0.05
 				tooltip = conscription_tt
 			}
 			add_to_variable = { 
@@ -9528,7 +10662,7 @@ focus_tree = {
 					tooltip = stability_factor_tt
 				}
 				add_to_variable = { 
-					democratic_spirit_conscription_factor = -0.03
+					democratic_spirit_conscription_factor = -0.05
 					tooltip = conscription_factor_tt
 				}
 			}
@@ -9574,7 +10708,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = GENERIC_modify_democratic_modifier_tt
 			add_to_variable = { 
-				democratic_spirit_non_core_manpower = 0.03
+				democratic_spirit_non_core_manpower = 0.05
 				tooltip = non_core_manpower_tt
 			}
 			add_to_variable = { 
@@ -9798,7 +10932,7 @@ focus_tree = {
 				tooltip = stability_factor_tt
 			}
 			add_to_variable = { 
-				democratic_spirit_conscription_factor = 0.04
+				democratic_spirit_conscription_factor = 0.1
 				tooltip = conscription_factor_tt
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -9813,7 +10947,7 @@ focus_tree = {
 					tooltip = compliance_growth_tt
 				}
 				add_to_variable = { 
-					democratic_spirit_political_power_factor = -0.03
+					democratic_spirit_political_power_factor = -0.05
 					tooltip = political_power_factor_tt
 				}
 			}
@@ -10590,6 +11724,26 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_cic = 1500
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GENERIC_faction_dynamic_modifier
+			}
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = GENERIC_faction_dynamic_modifier }
+			}
+			add_to_variable = {
+				GENERIC_faction_dynamic_modifier_industrial_factory_donations = 1
+				tooltip = industrial_factory_donations_tt
+			}
+			add_to_variable = {
+				GENERIC_faction_dynamic_modifier_military_factory_donations = 1
+				tooltip = military_factory_donations_tt
+			}
+			add_to_variable = {
+				GENERIC_faction_dynamic_modifier_dockyard_donations = 1
+				tooltip = dockyard_donations_tt
+			}
 			custom_effect_tooltip = GENERIC_modify_intervene_modifier_tt
 			add_to_variable = { 
 				intervene_spirit_faction_trade_opinion_factor = 0.15
@@ -10615,6 +11769,9 @@ focus_tree = {
 					equipment_type = infantry_equipment
 					seller_trigger = is_allied_seller_trigger
 				}
+			}
+			hidden_effect = {
+				force_update_dynamic_modifier = yes
 			}
 		}
 
@@ -11996,11 +13153,11 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = GENERIC_modify_despot_modifier_tt
 			add_to_variable = { 
-				despot_spirit_conscription_factor = 0.03
+				despot_spirit_conscription_factor = 0.05
 				tooltip = conscription_factor_tt
 			}
 			add_to_variable = { 
-				despot_spirit_production_speed_buildings_factor = 0.03
+				despot_spirit_production_speed_buildings_factor = 0.05
 				tooltip = production_speed_buildings_factor_tt
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt

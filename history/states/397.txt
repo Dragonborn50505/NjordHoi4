@@ -10,7 +10,7 @@ state={
 	}
 
 	history={
-		owner = X86
+		owner = W49
 		victory_points = {
 			12648 15 
 		}
