@@ -2542,7 +2542,7 @@ focus_tree = {
 					limit = { 
 						has_mio_trait = GER_mio_trait_experienced_manufacturer
 					}
-					add_mio_funds = 1500
+					add_mio_funds = 500
 				}
 				else = {
 					add_mio_funds = 500
@@ -2555,7 +2555,7 @@ focus_tree = {
 					limit = { 
 						has_mio_trait = GER_mio_trait_innovative_safety_features
 					}
-					add_mio_funds = 1500
+					add_mio_funds = 500
 				}
 				else = {
 					add_mio_funds = 500
@@ -2763,7 +2763,7 @@ focus_tree = {
 					limit = { 
 						has_mio_trait = GER_mio_trait_dual_recoil_mechanism
 					}
-					add_mio_funds = 1500
+					add_mio_funds = 500
 				}
 				else = {
 					add_mio_funds = 500
@@ -2812,7 +2812,7 @@ focus_tree = {
 						has_mio_trait = GER_mio_trait_improved_engines
 						has_mio_trait = GER_mio_trait_efficiency_in_mass_production
 					}
-					add_mio_funds = 1500
+					add_mio_funds = 500
 				}
 				else_if = {
 					limit = { 
@@ -3711,10 +3711,10 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = PRE_terror_bombings
 			custom_effect_tooltip = generic_skip_one_line_tt
-			complete_special_project = {
-				project = sp:sp_rockets_flying_bomb
-				show_modifiers = no
-			}
+			#complete_special_project = {
+			#	project = sp:sp_rockets_flying_bomb
+			#	show_modifiers = no
+			#}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
@@ -5075,7 +5075,7 @@ focus_tree = {
 	focus = {
 		id = DEN_bio_propose_single_market
 		icon = GFX_focus_GER_establish_protectorates_in_america
-		cost = 5
+		cost = 10
 
 		relative_position_id = DEN_atlantic_passport_convention
 		x = 1
@@ -5213,7 +5213,7 @@ focus_tree = {
 	focus = {
 		id = DEN_parliamentary_joint_sessions
 		icon = GFX_focus_generic_improve_the_administration_2
-		cost = 5
+		cost = 10
 
 		relative_position_id = DEN_atlantic_monetary_union
 		x = 1
@@ -5417,7 +5417,7 @@ focus_tree = {
 	focus = {
 		id = DEN_military_exchange_program
 		icon = GFX_focus_SIA_reverse_engineer_allied_tanks
-		cost = 5
+		cost = 10
 
 		prerequisite = {
 			focus = DEN_joint_military_acquisition
@@ -5486,7 +5486,7 @@ focus_tree = {
 	focus = {
 		id = DEN_the_unification_conference
 		icon = GFX_focus_GER_tend_to_the_future
-		cost = 5
+		cost = 20
 
 		relative_position_id = DEN_bio_propose_single_market
 		x = 0

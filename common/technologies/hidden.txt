@@ -259,7 +259,7 @@ technologies = {
 
 		category_artillery = {
 			fort = {
-				attack = 0.20
+				attack = 0.10
 			}
 		}
 	}
@@ -311,11 +311,11 @@ technologies = {
 
 		category_artillery = {
 			hills = {
-				attack = 0.1
+				attack = 0.05
 				movement = 0.1
 			}
 			mountain = {
-				attack = 0.1
+				attack = 0.05
 				movement = 0.1
 			}
 		}

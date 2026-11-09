@@ -47,7 +47,7 @@ focus_tree = {
 		icon = GFX_goal_generic_allies_build_infantry
 		x = -10
 		y = 0
-		cost = 5
+		cost = 1
 		search_filters = {  FOCUS_FILTER_ARMY_XP }
 		
 		available_if_capitulated = yes
@@ -94,7 +94,7 @@ focus_tree = {
 		x = -4
 		y = 1
 		relative_position_id = generic_army_effort
-		cost = 5
+		cost = 3
 
 		search_filters = { FOCUS_FILTER_ARMY_XP }
 		
@@ -118,10 +118,6 @@ focus_tree = {
 			}
 			hidden_effect = {
 				add_dynamic_modifier = { modifier = GENERIC_army_dynamic_modifier }
-			}
-			add_to_variable = {
-				GENERIC_army_dynamic_modifier_modifier_army_sub_unit_blackshirt_assault_battalion_defence_factor = 0.1
-				tooltip = modifier_army_sub_unit_blackshirt_assault_battalion_defence_factor_tt
 			}
 			add_to_variable = {
 				GENERIC_army_dynamic_modifier_modifier_army_sub_unit_marine_defence_factor = 0.05
@@ -199,7 +195,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = generic_army_effort
-		cost = 5
+		cost = 3
 
 		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_MANPOWER }
 		
@@ -276,7 +272,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = generic_large_army
-		cost = 5
+		cost = 3
 
 		search_filters = { FOCUS_FILTER_ARMY_XP }
 		
@@ -343,7 +339,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = generic_doctrine_effort
-		cost = 5
+		cost = 3
 
 		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_MILITARY_CHARACTER }
 		
@@ -428,7 +424,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = generic_doctrine_effort
-		cost = 5
+		cost = 3
 
 		search_filters = { FOCUS_FILTER_ARMY_XP }
 		
@@ -507,7 +503,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = generic_doctrine_effort
-		cost = 5
+		cost = 3
 		available = {
 			if = {
 				limit = {
@@ -580,7 +576,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = generic_doctrine_effort
-		cost = 5
+		cost = 3
 
 		search_filters = {  FOCUS_FILTER_ARMY_XP }
 		
@@ -655,7 +651,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = generic_army_college
-		cost = 5
+		cost = 3
 		available = {
 			any_character = {
 				is_army_leader = yes
@@ -742,7 +738,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = generic_doctrine_effort_2
-		cost = 5
+		cost = 3
 
 		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH }
 		
@@ -756,14 +752,6 @@ focus_tree = {
 			}
 			hidden_effect = {
 				add_dynamic_modifier = { modifier = GENERIC_army_dynamic_modifier }
-			}
-			add_to_variable = {
-				GENERIC_army_dynamic_modifier_modifier_army_sub_unit_blackshirt_assault_battalion_max_org_factor = 0.05
-				tooltip = modifier_army_sub_unit_blackshirt_assault_battalion_max_org_factor_tt
-			}
-			add_to_variable = {
-				GENERIC_army_dynamic_modifier_modifier_army_sub_unit_blackshirt_assault_battalion_attack_factor = 0.1
-				tooltip = modifier_army_sub_unit_blackshirt_assault_battalion_attack_factor_tt
 			}
 			add_to_variable = {
 				GENERIC_army_dynamic_modifier_special_forces_defence_factor = 0.05
@@ -827,7 +815,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = generic_army_homeland_focus
 		}
-		cost = 5
+		cost = 3
 
 		search_filters = { FOCUS_FILTER_ARMY_XP }
 		
@@ -906,7 +894,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = generic_army_supply_focus
 		}
-		cost = 5
+		cost = 3
 
 		search_filters = { FOCUS_FILTER_ARMY_XP }
 		
@@ -962,11 +950,11 @@ focus_tree = {
 				custom_effect_tooltip = GENERIC_modify_army_modifier_tt
 			}
 			add_to_variable = { 
-				army_spirit_army_core_defence_factor = 0.05
+				army_spirit_army_core_defence_factor = 0.1
 				tooltip = army_core_defence_factor_tt
 			}
 			add_to_variable = { 
-				army_spirit_army_core_attack_factor = 0.025
+				army_spirit_army_core_attack_factor = 0.05
 				tooltip = army_core_attack_factor_tt
 			}
 			hidden_effect = {
@@ -986,7 +974,7 @@ focus_tree = {
 		x = 2
 		y = 2
 		relative_position_id = generic_army_effort
-		cost = 5
+		cost = 3
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		
@@ -1386,10 +1374,6 @@ focus_tree = {
 				add_dynamic_modifier = { modifier = GENERIC_army_dynamic_modifier }
 			}
 			add_to_variable = {
-				GENERIC_army_dynamic_modifier_modifier_army_sub_unit_blackshirt_assault_battalion_speed_factor = 0.05
-				tooltip = modifier_army_sub_unit_blackshirt_assault_battalion_speed_factor_tt
-			}
-			add_to_variable = {
 				GENERIC_army_dynamic_modifier_special_forces_attack_factor = 0.05
 				tooltip = special_forces_attack_factor_tt
 			}
@@ -1552,7 +1536,7 @@ focus_tree = {
 		icon = GFX_goal_generic_build_airforce
 		x = 1
 		y = 0
-		cost = 5
+		cost = 2
 		
 		search_filters = { FOCUS_FILTER_AIR_XP }
 
@@ -1597,7 +1581,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = generic_aviation_effort
-		cost = 5
+		cost = 2
 		search_filters = { FOCUS_FILTER_INTERNATIONAL_TRADE}
 		available_if_capitulated = yes
 		completion_reward = {
@@ -1650,7 +1634,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = generic_aviation_effort
-		cost = 5
+		cost = 2
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_AIR_XP}
 		available_if_capitulated = yes
 		completion_reward = {
@@ -1685,7 +1669,7 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = GENERIC_modify_air_modifier_tt
 			add_to_variable = { 
-				air_spirit_air_range_factor = 0.08
+				air_spirit_air_range_factor = 0.1
 				tooltip = air_range_factor_tt
 			}
 			hidden_effect = {
@@ -1706,7 +1690,7 @@ focus_tree = {
 		x = 5
 		y = 1
 		relative_position_id = generic_aviation_effort
-		cost = 5
+		cost = 2
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 		available_if_capitulated = yes
 		completion_reward = {
@@ -1767,7 +1751,7 @@ focus_tree = {
 		x = -4
 		y = 2
 		relative_position_id = generic_aviation_effort
-		cost = 5
+		cost = 2
 		search_filters = { FOCUS_FILTER_AIR_XP FOCUS_FILTER_RESEARCH }
 		available_if_capitulated = yes
 		completion_reward = {
@@ -1834,7 +1818,7 @@ focus_tree = {
 		x = 4
 		y = 2
 		relative_position_id = generic_aviation_effort
-		cost = 5
+		cost = 2
 		search_filters = { FOCUS_FILTER_AIR_XP FOCUS_FILTER_RESEARCH }
 		available_if_capitulated = yes
 		completion_reward = {
@@ -1883,7 +1867,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = generic_fighter_focus
-		cost = 5
+		cost = 2
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		available_if_capitulated = yes
 		completion_reward = {
@@ -1916,7 +1900,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = generic_bomber_focus
-		cost = 5
+		cost = 2
 
 		search_filters = { FOCUS_FILTER_AIR_XP FOCUS_FILTER_RESEARCH }
 		
@@ -1974,7 +1958,7 @@ focus_tree = {
 		x = 2
 		y = 3
 		relative_position_id = generic_aviation_effort
-		cost = 5
+		cost = 2
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		
@@ -2014,7 +1998,7 @@ focus_tree = {
 		x = -2
 		y = 3
 		relative_position_id = generic_aviation_effort
-		cost = 5
+		cost = 2
 
 		search_filters = { FOCUS_FILTER_AIR_XP FOCUS_FILTER_RESEARCH }
 		
@@ -2065,7 +2049,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = generic_aviation_effort
-		cost = 5
+		cost = 2
 
 		search_filters = { FOCUS_FILTER_AIR_XP }
 		
@@ -2193,7 +2177,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = generic_airbase_expansion
-		cost = 5
+		cost = 2
 
 		search_filters = { FOCUS_FILTER_AIR_XP }
 		
@@ -2268,7 +2252,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = generic_airbase_expansion
-		cost = 5
+		cost = 2
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		
@@ -2336,7 +2320,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = generic_radar_focus
-		cost = 5
+		cost = 2
 
 		search_filters = { FOCUS_FILTER_AIR_XP }
 		
@@ -2397,7 +2381,7 @@ focus_tree = {
 		x = -4
 		y = 1
 		relative_position_id = generic_air_doctrines
-		cost = 5
+		cost = 2
 
 		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_AIR_XP }
 		
@@ -2478,7 +2462,7 @@ focus_tree = {
 		x = 4
 		y = 1
 		relative_position_id = generic_air_doctrines
-		cost = 5
+		cost = 2
 
 		search_filters = { FOCUS_FILTER_AIR_XP }
 		
@@ -2541,7 +2525,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 13
 		y = 0
-		cost = 5
+		cost = 2
 		relative_position_id = generic_aviation_effort
 
 		search_filters = {  FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP}
@@ -2702,7 +2686,7 @@ focus_tree = {
 		x = -5
 		y = 1
 		relative_position_id = generic_naval_effort
-		cost = 5
+		cost = 2
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 
@@ -2759,7 +2743,7 @@ focus_tree = {
 		x = -2
 		y = 2
 		relative_position_id = generic_naval_effort
-		cost = 5
+		cost = 2
 		
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		
@@ -2815,7 +2799,7 @@ focus_tree = {
 		x = -4
 		y = 2
 		relative_position_id = generic_naval_effort
-		cost = 5
+		cost = 2
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		
@@ -2887,7 +2871,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = generic_submarine_effort
-		cost = 5
+		cost = 2
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		
@@ -2940,7 +2924,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = generic_destroyer_effort
-		cost = 5
+		cost = 2
 		
 		search_filters = { FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH }
 
@@ -2994,7 +2978,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = generic_cruiser_effort
-		cost = 5
+		cost = 2
 
 		search_filters = { FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH }
 		
@@ -3064,7 +3048,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = generic_cruiser_effort
-		cost = 5
+		cost = 2
 
 		search_filters = { FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH }
 		
@@ -3142,7 +3126,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = generic_naval_effort
-		cost = 5
+		cost = 2
 		
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_XP }
 
@@ -3225,7 +3209,7 @@ focus_tree = {
 		x = 2
 		y = 0
 		relative_position_id = generic_modern_navy
-		cost = 5
+		cost = 2
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP }
 
@@ -3313,7 +3297,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = generic_modern_navy
-		cost = 5
+		cost = 2
 
 		search_filters = { FOCUS_FILTER_NAVY_XP }
 		
@@ -3380,7 +3364,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = generic_navy_doctrine
-		cost = 5
+		cost = 2
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		
@@ -3451,7 +3435,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = generic_navy_doctrine
-		cost = 5
+		cost = 2
 
 		search_filters = { FOCUS_FILTER_MILITARY_CHARACTER FOCUS_FILTER_RESEARCH }
 		
@@ -3549,7 +3533,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = generic_naval_college
-		cost = 5
+		cost = 2
 		available = {
 			any_character = {
 				is_navy_leader = yes
@@ -3637,7 +3621,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = generic_naval_invasion
-		cost = 5
+		cost = 2
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		
@@ -3713,7 +3697,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = generic_naval_doctrine_2
-		cost = 5
+		cost = 2
 
 		search_filters = { FOCUS_FILTER_NAVY_XP }
 		
@@ -3803,7 +3787,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = generic_naval_doctrine_2
-		cost = 5
+		cost = 2
 
 		search_filters = { FOCUS_FILTER_NAVY_XP }
 		
@@ -3919,7 +3903,7 @@ focus_tree = {
 			random_owned_controlled_state = {
 				limit = { is_core_of = ROOT is_in_home_area = yes }
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
 			}
 			add_tech_bonus = {
 				name = industrial_bonus
@@ -4059,7 +4043,7 @@ focus_tree = {
 		x = -5
 		y = 1
 		relative_position_id = generic_industrial_effort
-		cost = 5
+		cost = 3
 
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
 		
@@ -4111,7 +4095,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -4129,7 +4113,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = generic_industrial_effort
-		cost = 5
+		cost = 3
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
 		available_if_capitulated = no
 		bypass = {
@@ -4179,7 +4163,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -4214,7 +4198,7 @@ focus_tree = {
 			random_owned_controlled_state = {
 				limit = { is_core_of = ROOT is_in_home_area = yes }
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
 			}
 			add_tech_bonus = {
 				name = generic_railway_expansion_bonus
@@ -4424,10 +4408,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -4507,10 +4491,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -4582,10 +4566,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -4622,10 +4606,10 @@ focus_tree = {
 		}
 
 		complete_tooltip = {
-			add_extra_state_shared_building_slots = 3
+			add_extra_state_shared_building_slots = 4
 			add_building_construction = {
 				type = arms_factory
-				level = 2
+				level = 4
 				instant_build = yes
 			}
 		}		
@@ -4665,10 +4649,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -5122,7 +5106,7 @@ focus_tree = {
 				custom_effect_tooltip = GENERIC_modify_industry_modifier_tt
 			}
 			add_to_variable = { 
-				industry_spirit_industrial_capacity_factory = 0.05
+				industry_spirit_industrial_capacity_factory = 0.1
 				tooltip = industrial_capacity_factory_tt
 			}
 		}
@@ -5168,7 +5152,7 @@ focus_tree = {
 				custom_effect_tooltip = GENERIC_modify_industry_modifier_tt
 			}
 			add_to_variable = { 
-				industry_spirit_consumer_goods_factor = -0.025
+				industry_spirit_consumer_goods_factor = -0.05
 				tooltip = consumer_goods_factor_tt
 			}
 		}
@@ -5223,12 +5207,16 @@ focus_tree = {
 				tooltip = industrial_capacity_factory_tt
 			}
 			add_to_variable = { 
-				industry_spirit_global_building_slots_factor = 0.1
+				industry_spirit_global_building_slots_factor = 0.2
 				tooltip = global_building_slots_factor_tt
 			}
 			add_to_variable = { 
-				industry_spirit_production_speed_buildings_factor = 0.05
+				industry_spirit_production_speed_buildings_factor = 0.1
 				tooltip = production_speed_buildings_factor_tt
+			}
+			add_to_variable = { 
+				industry_spirit_consumer_goods_factor = 0.05
+				tooltip = consumer_goods_factor_tt
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			reduce_focus_completion_cost = {
@@ -5283,7 +5271,7 @@ focus_tree = {
 				custom_effect_tooltip = GENERIC_modify_industry_modifier_tt
 			}
 			add_to_variable = { 
-				industry_spirit_consumer_goods_factor = -0.05
+				industry_spirit_consumer_goods_factor = -0.1
 				tooltip = consumer_goods_factor_tt
 			}
 			add_to_variable = { 
@@ -5293,6 +5281,10 @@ focus_tree = {
 			add_to_variable = { 
 				industry_spirit_supply_combat_penalties_on_core_factor = -0.1
 				tooltip = supply_combat_penalties_on_core_factor_tt
+			}
+			add_to_variable = { 
+				industry_spirit_industrial_capacity_factory = -0.05
+				tooltip = industrial_capacity_factory_tt
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			reduce_focus_completion_cost = {
@@ -5328,8 +5320,8 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = { is_core_of = ROOT is_in_home_area = yes }
-				add_resource = { type = steel amount = 2 }
-				add_resource = { type = chromium amount = 2 }
+				add_resource = { type = steel amount = 150 }
+				add_resource = { type = chromium amount = 50 }
 			}
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
@@ -5410,8 +5402,8 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = { is_core_of = ROOT is_in_home_area = yes }
-				add_resource = { type = steel amount = 4 }
-				add_resource = { type = aluminium amount = 2 }
+				add_resource = { type = steel amount = 250 }
+				add_resource = { type = aluminium amount = 100 }
 			}
 			random_owned_controlled_state = {
 				limit = { is_core_of = ROOT is_in_home_area = yes }
@@ -5620,7 +5612,7 @@ focus_tree = {
 				custom_effect_tooltip = GENERIC_modify_industry_modifier_tt
 			}
 			add_to_variable = { 
-				industry_spirit_monthly_population = 0.1
+				industry_spirit_monthly_population = 0.3
 				tooltip = monthly_population_tt
 			}
 		}
@@ -5637,7 +5629,7 @@ focus_tree = {
 		icon = GFX_goal_generic_demand_territory
 		x = 55
 		y = 0
-		cost = 5
+		cost = 2
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		available_if_capitulated = yes
 		offset = {
@@ -5850,7 +5842,7 @@ focus_tree = {
 		x = -13
 		y = 2
 		relative_position_id = political_sphere
-		cost = 5
+		cost = 3
 
 		offset = {
 			x = 13
@@ -5870,6 +5862,14 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 50
+			add_popularity = {
+			    ideology = fascism
+			    popularity = 0.1
+			}
+			add_popularity = {
+			    ideology = communism
+			    popularity = 0.1
+			}
 			hidden_effect = { #collapse focus tree
 				load_focus_tree = {
 					tree = generic_focus_improved
@@ -5961,7 +5961,7 @@ focus_tree = {
 		x = -6
 		y = 1
 		relative_position_id = radicalism_focus
-		cost = 5
+		cost = 3
 
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		
@@ -5982,7 +5982,7 @@ focus_tree = {
 			}
 			add_popularity = {
 				ideology = communism
-			    popularity = 0.1
+			    popularity = 0.2
 			}
 			hidden_effect = {
 				if = {
@@ -6137,7 +6137,7 @@ focus_tree = {
 				}
 			}
 		}
-		cost = 5
+		cost = 3
 
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		
@@ -6158,7 +6158,7 @@ focus_tree = {
 			}
 			add_popularity = {
 				ideology = fascism
-			    popularity = 0.1
+			    popularity = 0.2
 			}
 			hidden_effect = {
 				if = {
@@ -9174,7 +9174,7 @@ focus_tree = {
 		completion_reward = {
 			add_popularity = {
 			    ideology = fascism
-			    popularity = 0.05
+			    popularity = 0.03
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = GENERIC_modify_fascist_modifier_tt
@@ -10209,7 +10209,7 @@ focus_tree = {
 		x = 13
 		y = 2
 		relative_position_id = political_sphere
-		cost = 5
+		cost = 3
 		offset = {
 			x = -13
 			y = 0
@@ -10317,7 +10317,7 @@ focus_tree = {
 		x = -6
 		y = 1
 		relative_position_id = moderate_focus
-		cost = 5
+		cost = 3
 
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		
@@ -12196,7 +12196,7 @@ focus_tree = {
 		x = 4
 		y = 1
 		relative_position_id = moderate_focus
-		cost = 5
+		cost = 3
 
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		
@@ -12897,7 +12897,7 @@ focus_tree = {
 		x = 28
 		y = 2
 		relative_position_id = political_sphere
-		cost = 5
+		cost = 3
 
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		
@@ -16092,13 +16092,14 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 50
+			add_ideas = puppet_cooperate_idea_1
 			add_autonomy_score = {
-				value = 200
+				value = -50
 				localization = AST_never_another_gallipoli
 			}
 		}
 		ai_will_do = {
-			factor = 50
+			factor = 100
 		}
 	}
 
@@ -16107,9 +16108,6 @@ focus_tree = {
 		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = { 
 			focus = being_a_puppet
-		}
-		mutually_exclusive = {
-			focus = uncooperation_puppet
 		}
 		x = -2
 		y = 1
@@ -16219,11 +16217,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 50
-			add_ideas = puppet_cooperate_idea_1
-			add_autonomy_score = {
-				value = -50
-				localization = AST_never_another_gallipoli
-			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -16291,220 +16284,6 @@ focus_tree = {
 			add_autonomy_score = {
 				value = 300
 				localization = AST_never_another_gallipoli
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	focus = {
-		id = pure_cooperation
-		icon = GFX_goal_generic_national_unity
-		prerequisite = { 
-			focus = cooperation_puppet_3
-		}
-		x = 0
-		y = 1
-		relative_position_id = cooperation_puppet_3
-		cost = 10
-		available = {
-			is_puppet = yes
-		}
-
-		search_filters = { FOCUS_FILTER_TFV_AUTONOMY }
-	
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_political_power = 50
-			swap_ideas = {
-				remove_idea = puppet_cooperate_idea_3
-				add_idea = puppet_cooperate_idea_final
-			}
-			add_autonomy_score = {
-				value = 500
-				localization = AST_never_another_gallipoli
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	focus = {
-		id = uncooperation_puppet
-		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { 
-			focus = being_a_puppet
-		}
-		mutually_exclusive = {
-			focus = cooperation_puppet
-		}
-		x = 2
-		y = 1
-		relative_position_id = being_a_puppet
-		cost = 5
-		
-		available = {
-			is_puppet = yes
-			hidden_trigger = {
-				OR = {
-					is_ai = no
-					AND = {
-						is_ai = yes
-						overlord = { is_ai = yes}
-					}
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_TFV_AUTONOMY }
-	
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_political_power = 50
-			add_ideas = puppet_uncooperate_idea
-			add_offsite_building = { type = arms_factory level = 2 }
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-
-	focus = {
-		id = uncooperation_puppet_1
-		icon = GFX_goal_generic_military_deal
-		prerequisite = { 
-			focus = uncooperation_puppet
-		}
-		x = 0
-		y = 1
-		relative_position_id = uncooperation_puppet
-		cost = 5
-		available = {
-			is_puppet = yes
-		}
-
-		search_filters = { FOCUS_FILTER_TFV_AUTONOMY }
-	
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_political_power = 50
-			add_equipment_to_stockpile = {
-			    type = infantry_equipment
-			    amount = 2000
-			    producer = ROOT
-			}
-			swap_ideas = {
-				remove_idea = puppet_uncooperate_idea
-				add_idea = puppet_uncooperate_idea_1
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	focus = {
-		id = uncooperation_puppet_2
-		icon = GFX_goal_generic_propaganda
-		prerequisite = { 
-			focus = uncooperation_puppet_1
-		}
-		x = 0
-		y = 1
-		relative_position_id = uncooperation_puppet_1
-		cost = 5
-		available = {
-			is_puppet = yes
-		}
-
-		search_filters = { FOCUS_FILTER_TFV_AUTONOMY }
-	
-		available_if_capitulated = yes
-
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = puppet_uncooperate_idea_1
-				add_idea = puppet_uncooperate_idea_2
-			}
-			add_political_power = 150
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	focus = {
-		id = uncooperation_puppet_3
-		icon = GFX_goal_generic_attack_allies
-		prerequisite = { 
-			focus = uncooperation_puppet_2
-		}
-		x = 0
-		y = 1
-		relative_position_id = uncooperation_puppet_2
-		cost = 5
-		available = {
-			is_puppet = yes
-		}
-
-		search_filters = { FOCUS_FILTER_TFV_AUTONOMY }
-	
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_political_power = 50
-			swap_ideas = {
-				remove_idea = puppet_uncooperate_idea_2
-				add_idea = puppet_uncooperate_idea_3
-			}
-			add_autonomy_score = {
-				value = 750
-				localization = AST_never_another_gallipoli
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	focus = {
-		id = violent_liberation
-		icon = GFX_focus_ARG_defense_and_democracy
-		prerequisite = { 
-			focus = uncooperation_puppet_3
-		}
-		x = 0
-		y = 1
-		relative_position_id = uncooperation_puppet_3
-		cost = 10
-		available = {
-			is_puppet = yes
-			compare_autonomy_state > autonomy_integrated_puppet
-		}
-
-		search_filters = { FOCUS_FILTER_TFV_AUTONOMY }
-	
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_political_power = 50
-			declare_war_on = {
-			    target = overlord
-			    type = independence_wargoal
-			}
-			swap_ideas = {
-				remove_idea = puppet_uncooperate_idea_3
-				add_idea = puppet_uncooperate_idea_final
-			}
-			overlord = {
-				add_timed_idea = {
-					idea = puppet_attacking_overlod_idea
-					days = 200
-				}
 			}
 		}
 		ai_will_do = {
