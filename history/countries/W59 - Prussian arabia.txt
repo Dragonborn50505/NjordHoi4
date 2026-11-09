@@ -89,16 +89,31 @@ if = {
     add_to_tech_sharing_group = PRE_research
 }
 
+add_equipment_to_stockpile = {
+	type = convoy
+	amount = 150
+}
 
+set_technology = {
+	marines = 1
+}
 
 add_ideas = {
 	limited_conscription
 	civilian_economy
 	export_focus
 	culture_north_german
+	PAR_bastion_of_arabia_and_the_indian_ocean
+	PAR_black_gold_beneath_the_sands
+	PAR_the_arabian_marine_force
+	PAR_masters_of_hormuz
 }
-set_stability = 0.60
-set_war_support = 0.64
+add_timed_idea = {
+	idea = PAR_join_international_training_missions
+	days = 730
+}
+set_stability = 0.8
+set_war_support = 0.8
 
 recruit_character = W59_alfred_von_holstein_gottorp
 

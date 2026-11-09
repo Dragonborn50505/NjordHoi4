@@ -94,6 +94,11 @@ add_ideas = {
 	civilian_economy
 	export_focus
 	culture_bengali
+	BEN_the_workshops_of_bengal
+	BEN_spoils_of_prussia
+	BEN_rivalry_of_two_empires
+	BEN_the_yuan_threat
+	BEN_assamese_communist_revolt
 }
 set_stability = 0.60
 set_war_support = 0.60

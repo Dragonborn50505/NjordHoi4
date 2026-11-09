@@ -29,7 +29,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/generic_army_high_command.png"
 	}
 
-	SpriteType = {# Army High Command
+	SpriteType = {# Russian Training
 		name = "GFX_goal_RUS_training"
 		texturefile = "gfx/interface/goals/RUS_training.png"
 	}
@@ -91,7 +91,7 @@ spriteTypes = {
 						
 	SpriteType = {# Russian Tank Academy
 		name = "GFX_idea_RUS_tank_academy"
-		texturefile = "gfx/interface/ideas/generic_army_tanks3.png"
+		texturefile = "gfx/interface/ideas/RUS_tank_academy.png"
 	}
 
 	SpriteType = {# All Armor Small
@@ -183,4 +183,70 @@ spriteTypes = {
 		name = "GFX_goal_generic_mechanized_infantry"
 		texturefile = "gfx/interface/goals/generic_mechanized_infantry.png"
 	}
+						
+	SpriteType = {# French Nuclear Programme
+		name = "GFX_goal_FRA_nuclear"
+		texturefile = "gfx/interface/goals/FRA_nuclear.dds"
+	}
+							
+	SpriteType = {# Recycling
+		name = "GFX_goal_recycling"
+		texturefile = "gfx/interface/goals/recycling.dds"
+	}
+								
+	SpriteType = {# Class Collaboration
+		name = "GFX_goal_class_collaboration"
+		texturefile = "gfx/interface/goals/class_collaboration.dds"
+	}
+								
+	SpriteType = {# French Paris
+		name = "GFX_goal_FRA_paris"
+		texturefile = "gfx/interface/goals/FRA_paris.png"
+	}
+									
+	SpriteType = {# Generic Design Equipment Standards
+		name = "GFX_goal_generic_design_equipment_standards"
+		texturefile = "gfx/interface/goals/generic_design_equipment_standards.png"
+	}
+									
+	SpriteType = {# Radio Pole
+		name = "GFX_goal_EGY_Radio_Free_Cairo"
+		texturefile = "gfx/interface/goals/EGY_Radio_Free_Cairo.png"
+	}
+									
+	SpriteType = {# Generic Propaganda Film
+		name = "GFX_goal_generic_propaganda_film"
+		texturefile = "gfx/interface/goals/generic_propaganda_film.png"
+	}
+									
+	SpriteType = {# French Autoroutes
+		name = "GFX_goal_FRA_autoroutes"
+		texturefile = "gfx/interface/goals/FRA_autoroutes.png"
+	}
+									
+	SpriteType = {# Syndicalist Workers
+		name = "GFX_goal_syndicalist_workers"
+		texturefile = "gfx/interface/goals/syndicalist_workers.png"
+	}
+									
+	SpriteType = {# Stop Jewish Settlers / Planned Economy / Plans / Directed Whatever
+		name = "GFX_goal_SYR_Stop_Jewish_Settlers"
+		texturefile = "gfx/interface/goals/SYR_Stop_Jewish_Settlers.png"
+	}
+									
+	SpriteType = {# Common Economy Plan / Militarised Industry Red
+		name = "GFX_goal_FRA_common_economic_plan"
+		texturefile = "gfx/interface/goals/FRA_common_economic_plan.png"
+	}
+									
+	SpriteType = {# Generic Agriculture 2
+		name = "GFX_goal_generic_agriculture2"
+		texturefile = "gfx/interface/goals/generic_agriculture2.png"
+	}
+									
+	SpriteType = {# Wine and Grapes
+		name = "GFX_goal_GEO_wine"
+		texturefile = "gfx/interface/goals/GEO_wine.png"
+	}
+
 }

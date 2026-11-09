@@ -96,6 +96,12 @@ add_ideas = {
 	civilian_economy
 	export_focus
 	culture_north_german
+	PNI_black_gold_and_dark_rubber
+	PNI_the_results_of_assimilation
+	PNI_the_nigerian_public_force
+	PNI_arsenal_of_west_africa
+	PNI_memories_of_the_chad_war
+	PNI_the_calabar_question
 }
 set_stability = 0.60
 set_war_support = 0.64

@@ -95,9 +95,14 @@ add_ideas = {
 	civilian_economy
 	export_focus
 	culture_russian
+	ALSK_the_republics_storehouse
+	ALSK_the_republic_in_retreat
+	ALSK_an_outpost_for_russia
+	ALSK_the_forgotten_frontier
+	ALSK_the_citizens_militia
 }
-set_stability = 0.60
-set_war_support = 0.61
+set_stability = 0.6
+set_war_support = 0.4
 
 recruit_character = W63_lavr_dragomirov
 

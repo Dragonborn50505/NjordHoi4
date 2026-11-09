@@ -188,6 +188,13 @@ add_opinion_modifier = { target = X98 modifier = negative_200 }
 set_truce = { target = X98 days = 3650 }
 add_opinion_modifier = { target = YEM modifier = negative_40 }
 
+create_faction_from_template = {
+	template = faction_template_absolutist
+	name = FACTION_NAME_KINGDOM_1
+}
+add_to_faction = PRE
+add_to_faction = GER
+
 
 add_ideas = {
 	great_power

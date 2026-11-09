@@ -227,6 +227,14 @@ add_opinion_modifier = { target = X98 modifier = negative_200 }
 set_truce = { target = X98 days = 3650 }
 add_opinion_modifier = { target = YEM modifier = negative_102 }
 
+create_faction_from_template = {
+	template = faction_template_european_dominance_absolutist
+	name = FACTION_NAME_KINGDOM_3
+}
+add_to_faction = W66
+add_to_faction = W67
+add_to_faction = W31
+add_to_faction = W65
 
 add_ideas = {
 	great_power

@@ -4,6 +4,7 @@ ideas = {
 		use_list_view = yes
 
 		undisturbed_isolation = {
+			level = 7
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -35,6 +36,7 @@ ideas = {
 		}
 
 		isolation = {
+			level = 6
 			removal_cost = -1
 			allowed = {
 				always = no
@@ -66,6 +68,7 @@ ideas = {
 		}
 
 		civilian_economy = {
+			level = 5
 			cost = 150
 			removal_cost = -1
 			modifier = {
@@ -83,6 +86,7 @@ ideas = {
 		}
 
 		low_economic_mobilisation = {
+			level = 4
 			cost = 150
 			removal_cost = -1
 			available = {
@@ -112,6 +116,7 @@ ideas = {
 		}
 
 		partial_economic_mobilisation = {
+			level = 3
 			cost = 150
 			removal_cost = -1
 			available = {
@@ -137,6 +142,7 @@ ideas = {
 		}
 
 		war_economy = {
+			level = 2
 			cost = 150
 			removal_cost = -1
 			available = {
@@ -199,6 +205,7 @@ ideas = {
 		}
 
 		tot_economic_mobilisation = {
+			level = 1
 			cost = 150
 			removal_cost = -1
 			available = {
@@ -247,90 +254,13 @@ ideas = {
 			}
 			cancel_if_invalid = no
 		}
-
-		totaler_krieg_economy = {
-			cost = 150
-			removal_cost = -1
-			allowed = {
-				always = no
-			}
-			available = {
-				has_war_with_major = yes
-				has_war_support > 0.8
-				any_enemy_country = {
-					ic_ratio = {
-						tag = ROOT
-						ratio > 0.5
-					}
-				}
-			}
-			modifier = {
-				consumer_goods_expected_value = 0.15
-				conscription = -0.02
-				production_speed_arms_factory_factor = 0.2
-				production_speed_dockyard_factor = 0.2
-				conversion_cost_civ_to_mil_factor= -0.3
-				conversion_cost_mil_to_civ_factor = -0.3
-				industrial_capacity_factory = 0.05
-				industrial_capacity_dockyard = 0.05
-				factory_energy_consumption = 0.5
-			}
-			cancel_if_invalid = no
-		}
-
-		new_economic_policy = {
-			removal_cost = -1
-			allowed = {
-				always = no
-			}
-			ai_will_do = {
-   				factor = 0
-   			}
-			picture = new_economic_policy
-			modifier = {
-				consumer_goods_expected_value = 0.15
-				production_speed_buildings_factor = -0.15
-				factory_energy_consumption = 0.25
-			}
-			allowed_to_remove = {
-				OR = {
-					surrender_progress > 0.75
-					NOT = { has_government = communism }
-				}
-			}
-			cancel_if_invalid = no
-		}
-
-		new_economic_policy_2 = {
-			name = new_economic_policy
-			removal_cost = -1
-			allowed = {
-				always = no
-			}
-			ai_will_do = {
-   				factor = 0
-   			}
-			picture = new_economic_policy
-			modifier = {
-				consumer_goods_expected_value = 0.10
-				production_speed_buildings_factor = -0.2
-				global_building_slots_factor = 0.1
-				factory_energy_consumption = 0.35
-			}
-			allowed_to_remove = {
-				OR = {
-					surrender_progress > 0.75
-					NOT = { has_government = communism }
-				}
-			}
-			cancel_if_invalid = no
-		}
 	}
 	trade_laws = {
 		law = yes
 		use_list_view = yes
 
 		free_trade = {
+			level = 4
 			cost = 150
 			removal_cost = -1
 			ai_will_do = {
@@ -350,6 +280,7 @@ ideas = {
 		}
 
 		export_focus = {
+			level = 3
 			cost = 150
 			removal_cost = -1
 			ai_will_do = {
@@ -378,6 +309,7 @@ ideas = {
 		}
 
 		limited_exports = {
+			level = 2
 			cost = 150
 			removal_cost = -1
 			available = {
@@ -451,6 +383,7 @@ ideas = {
 		}
 
 		closed_economy = {
+			level = 1
 			cost = 150
 			removal_cost = -1
 			available = {

@@ -1571,16 +1571,15 @@ technologies = {
 
 		naval_mines_effect_reduction = 0.5
 
-
 		destroyer = {
 			sub_detection = 0.1
-			}
+		}
 		light_cruiser = {
 			sub_detection = 0.1
-			}
+		}
 		heavy_cruiser = {
 			sub_detection = 0.1
-			}
+		}
 			
 		folder = {
 			name = mtgnavalsupportfolder
