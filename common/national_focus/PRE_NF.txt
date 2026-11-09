@@ -34,10 +34,25 @@ focus_tree = {
 
 		ai_will_do = { factor = 100 }
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = 25
+			add_stability = 0.025
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = PRE_economic_downturn_1
 				add_idea = PRE_economic_downturn_2
+			}
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 1
+				limit = {
+					is_owned_and_controlled_by = ROOT
+				}
+                add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
 	}
@@ -56,10 +71,25 @@ focus_tree = {
 			focus = DEN_black_monday
 		}
 		completion_reward = {
-			add_stability = 0.05
+			add_stability = 0.025
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_timed_idea = {
 				idea = PRE_economic_downturn_saving_the_banks
 				days = 70
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 1
+				limit = {
+					is_owned_and_controlled_by = ROOT
+				}
+                add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_INTERNAL_AFFAIRS }
@@ -79,7 +109,8 @@ focus_tree = {
 			focus = DEN_black_monday
 		}
 		completion_reward = {
-			add_political_power = 25
+			add_political_power = 50
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_timed_idea = {
 				idea = PRE_anti_corruption_practices
 				days = 70
@@ -103,9 +134,15 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 250 }
 		completion_reward = {
+			add_stability = 0.025
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = PRE_reichstag_controlled_by_opposition
 				add_idea = PRE_reichstag_controlled_by_opposition_2
+			}
+			add_popularity = {
+				ideology = absolutist
+				popularity = 0.05
 			}
 			add_popularity = {
 				ideology = democratic
@@ -130,21 +167,20 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 250 }
 		completion_reward = {
-			random_owned_controlled_state = {
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 1
 				limit = {
-					is_core_of = root
-					is_in_home_area = yes
+					is_owned_and_controlled_by = ROOT
 				}
-				prioritize = {
-					446
-				}
-				add_extra_state_shared_building_slots = 1
+                add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_popularity = {
 				ideology = communism
 				popularity = -0.05
@@ -192,6 +228,19 @@ focus_tree = {
 					}
 				}
 			}
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 1
+				limit = {
+					is_owned_and_controlled_by = ROOT
+				}
+                add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_INTERNAL_AFFAIRS }
 	}
@@ -235,6 +284,14 @@ focus_tree = {
 					}
 				}
 			}
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 2
+				limit = {
+					is_owned_and_controlled_by = ROOT
+				}
+                NJORD_upgrade_state_category = yes
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS }
 	}
@@ -257,6 +314,9 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 250 }
 		completion_reward = {
+			add_stability = 0.025
+			add_political_power = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = PRE_weak_currency
 				add_idea = PRE_weak_currency_2
@@ -279,6 +339,9 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 250 }
 		completion_reward = {
+			add_stability = 0.025
+			add_political_power = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = { 
 					has_idea = PRE_weak_currency_2
@@ -318,6 +381,14 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.1
+			add_popularity = {
+				ideology = absolutist
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			remove_ideas = PRE_economic_downturn_4
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -346,15 +417,13 @@ focus_tree = {
 		ai_will_do = { factor = 250 }
 
 		completion_reward = {
-			random_owned_controlled_state = {
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 1
 				limit = {
-					is_core_of = root
-					is_in_home_area = yes
+					is_owned_and_controlled_by = ROOT
 				}
-				prioritize = {
-					452
-				}
-				add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -392,11 +461,12 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 250 }
 
-		mutually_exclusive = {
-			focus = DEN_madsen_mygdal_plan
-		}
-
 		completion_reward = {
+			add_timed_idea = {
+				idea = PRE_public_construction_projects
+				days = 180
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_land_military_industrialization_dynamic_modifier
@@ -404,11 +474,6 @@ focus_tree = {
 			add_to_variable = {
 				PRE_land_military_industrialization_dynamic_modifier_production_speed_buildings_factor = 0.05
 				tooltip = production_speed_buildings_factor_tt
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-			add_timed_idea = {
-				idea = PRE_public_construction_projects
-				days = 180
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_PRODUCTION }
@@ -441,13 +506,14 @@ focus_tree = {
 				prioritize = {
 					448
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = root
@@ -456,13 +522,19 @@ focus_tree = {
 				prioritize = {
 					452
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
 					instant_build = yes
 				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = root
@@ -471,10 +543,10 @@ focus_tree = {
 				prioritize = {
 					453
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = industrial_complex
-					level = 1
+					type = arms_factory
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -515,7 +587,7 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_offsite_building = {
 				type = industrial_complex
-				level = 1
+				level = 2
 			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY FOCUS_FILTER_PRODUCTION }
@@ -651,6 +723,7 @@ focus_tree = {
 				idea = PRE_restoring_normalcy_to_prussias_workplace
 				days = 210
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_land_military_industrialization_dynamic_modifier
@@ -683,6 +756,20 @@ focus_tree = {
 		ai_will_do = { factor = 250 }
 
 		completion_reward = {
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 1
+				limit = {
+					is_owned_and_controlled_by = ROOT
+				}
+                add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_land_military_industrialization_dynamic_modifier
@@ -758,7 +845,7 @@ focus_tree = {
 		ai_will_do = { factor = 250 }
 
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = 100
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_timed_idea = {
 				idea = PRE_atlantic_trade
@@ -805,7 +892,7 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_offsite_building = {
 				type = industrial_complex
-				level = 1
+				level = 2
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_PRODUCTION }
@@ -885,33 +972,16 @@ focus_tree = {
 				tooltip = industrial_capacity_dockyard_tt
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
-			random_owned_controlled_state = {
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 2
 				limit = {
-					is_core_of = root
-					is_in_home_area = yes
+					is_owned_and_controlled_by = ROOT
 				}
-				prioritize = {
-					444
-				}
-				add_extra_state_shared_building_slots = 1
+                add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = root
-					is_in_home_area = yes
-				}
-				prioritize = {
-					444
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -938,6 +1008,11 @@ focus_tree = {
 		ai_will_do = { factor = 250 }
 
 		completion_reward = {
+			add_timed_idea = {
+				idea = PRE_private_investments
+				days = 180
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_land_military_industrialization_dynamic_modifier
@@ -945,11 +1020,6 @@ focus_tree = {
 			add_to_variable = {
 				PRE_land_military_industrialization_dynamic_modifier_production_factory_efficiency_gain_factor = 0.05
 				tooltip = production_factory_efficiency_gain_factor_tt
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-			add_timed_idea = {
-				idea = PRE_private_investments
-				days = 180
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_PRODUCTION }
@@ -974,12 +1044,13 @@ focus_tree = {
 		ai_will_do = { factor = 250 }
 
 		completion_reward = {
-			random_owned_controlled_state = {
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 1
 				limit = {
-					is_core_of = root
-					is_in_home_area = yes
+					is_owned_and_controlled_by = ROOT
 				}
-				add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 2
@@ -988,7 +1059,7 @@ focus_tree = {
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_offsite_building = {
-				type = industrial_complex
+				type = arms_factory
 				level = 2
 			}
 		}
@@ -1127,7 +1198,7 @@ focus_tree = {
 
 		completion_reward = {
 			capital_scope = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
@@ -1135,7 +1206,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = dockyard
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1243,13 +1314,14 @@ focus_tree = {
 				prioritize = {
 					450
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = root
@@ -1258,10 +1330,10 @@ focus_tree = {
 				prioritize = {
 					446
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1304,6 +1376,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			449 = { 
 				NJORD_upgrade_state_category = yes
 				add_building_construction = {
@@ -1312,6 +1385,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			448 = { 
 				NJORD_upgrade_state_category = yes
 				add_building_construction = {
@@ -1402,41 +1476,52 @@ focus_tree = {
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			450 = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			447 = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			449 = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			448 = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			452 = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			453 = { 
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -1481,13 +1566,14 @@ focus_tree = {
 				}
 				add_resource = {
 					type = steel
-					amount = 4
+					amount = 8
 				}
 				add_resource = {
 					type = coal
-					amount = 2
+					amount = 4
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			453 = { 
 				add_building_construction = {
 					type = infrastructure
@@ -1496,11 +1582,11 @@ focus_tree = {
 				}
 				add_resource = {
 					type = steel
-					amount = 6
+					amount = 12
 				}
 				add_resource = {
 					type = aluminium
-					amount = 4
+					amount = 8
 				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -1537,7 +1623,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			air_experience = 35
+			air_experience = 25
 			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_controlled_state = { # CHANGE TO NORWEGIAN STATE
 				limit = {
@@ -1548,6 +1634,11 @@ focus_tree = {
 					442
 				}
 				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
 				add_building_construction = {
 					type = arms_factory
 					level = 1
@@ -1568,7 +1659,12 @@ focus_tree = {
 				prioritize = {
 					443
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
 				add_building_construction = {
 					type = arms_factory
 					level = 1
@@ -1605,14 +1701,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			random_owned_controlled_state = { # CHANGE TO NORWEGIAN STATE
-				limit = {
-					is_core_of = root
-					is_in_home_area = yes
-				}
-				prioritize = {
-					442
-				}
+			444 = { # CHANGE TO NORWEGIAN STATE
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
@@ -1621,22 +1710,15 @@ focus_tree = {
 				}
 				add_resource = {
 					type = steel
-					amount = 4
+					amount = 8
 				}
 				add_resource = {
 					type = tungsten
-					amount = 2
+					amount = 4
 				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
-			random_owned_controlled_state = { # CHANGE TO NORWEGIAN STATE
-				limit = {
-					is_core_of = root
-					is_in_home_area = yes
-				}
-				prioritize = {
-					443
-				}
+			443 = { # CHANGE TO NORWEGIAN STATE
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
@@ -1645,22 +1727,15 @@ focus_tree = {
 				}
 				add_resource = {
 					type = steel
-					amount = 3
+					amount = 6
 				}
 				add_resource = {
 					type = coal
-					amount = 2
+					amount = 4
 				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
-			random_owned_controlled_state = { # CHANGE TO NORWEGIAN STATE
-				limit = {
-					is_core_of = root
-					is_in_home_area = yes
-				}
-				prioritize = {
-					441
-				}
+			442 = { # CHANGE TO NORWEGIAN STATE
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
@@ -1669,11 +1744,11 @@ focus_tree = {
 				}
 				add_resource = {
 					type = aluminium
-					amount = 5
+					amount = 10
 				}
 				add_resource = {
 					type = chromium
-					amount = 3
+					amount = 6
 				}
 			}
 		}
@@ -1701,51 +1776,64 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			random_owned_controlled_state = { # CHANGE TO NORWEGIAN STATE
-				limit = {
-					is_core_of = root
-					is_in_home_area = yes
+			if = {
+				limit = { 
+					owns_state = 485
 				}
-				prioritize = {
-					441
+				441 = { # CHANGE TO NORWEGIAN STATE
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					add_resource = {
+						type = steel
+						amount = 16
+					}
+					add_resource = {
+						type = tungsten
+						amount = 8
+					}
 				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				add_resource = {
-					type = steel
-					amount = 8
-				}
-				add_resource = {
-					type = tungsten
-					amount = 4
+				custom_effect_tooltip = generic_skip_one_line_tt
+				485 = { # CHANGE TO NORWEGIAN STATE
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					add_resource = {
+						type = steel
+						amount = 8
+					}
+					add_resource = {
+						type = aluminium
+						amount = 4
+					}
 				}
 			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-			random_owned_controlled_state = { # CHANGE TO NORWEGIAN STATE
-				limit = {
-					is_core_of = root
-					is_in_home_area = yes
-				}
-				prioritize = {
-					485
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				add_resource = {
-					type = steel
-					amount = 4
-				}
-				add_resource = {
-					type = aluminium
-					amount = 2
+			else = {
+				441 = { # CHANGE TO NORWEGIAN STATE
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+					add_resource = {
+						type = steel
+						amount = 24
+					}
+					add_resource = {
+						type = tungsten
+						amount = 8
+					}
+					add_resource = {
+						type = aluminium
+						amount = 4
+					}
 				}
 			}
 		}
@@ -1777,6 +1865,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = PRE_norwegian_lumber_industry
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_land_military_industrialization_dynamic_modifier
@@ -1854,13 +1943,14 @@ focus_tree = {
 				remove_idea = PRE_university_of_electrical_research
 				add_idea = PRE_university_of_electrical_research_2
 			}
+			complete_special_project = sp:sp_air_radar
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = DEN_fund_the_copenhagen_university
 				ahead_reduction = 1
 				bonus = 1
 				uses = 1
-				category = computing_tech
+				category = electronics
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -1898,7 +1988,7 @@ focus_tree = {
 				prioritize = {
 					446
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -1906,7 +1996,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = dockyard
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1918,7 +2008,7 @@ focus_tree = {
 				prioritize = {
 					445
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -1926,7 +2016,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = dockyard
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -2002,12 +2092,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			random_owned_controlled_state = { # CHANGE TO NORTH GERMAN STATE
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 3
 				limit = {
-					is_core_of = root
-					is_in_home_area = yes
+					is_owned_and_controlled_by = ROOT
 				}
-				add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 2
@@ -2015,17 +2106,12 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
-			random_owned_controlled_state = { # CHANGE TO NORTH GERMAN STATE
-				limit = {
-					is_core_of = root
-					is_in_home_area = yes
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
+			add_tech_bonus = {
+				name = DEN_Military_Industry
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 1
+				category = cat_production
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -2050,6 +2136,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_war_support = 0.05
+			add_manpower = 25000
 			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = { 
@@ -2078,7 +2165,6 @@ focus_tree = {
 					add_idea = PRE_pacifist_accord_4
 				}
 			}
-			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_army_dynamic_modifier
@@ -2163,7 +2249,6 @@ focus_tree = {
 					add_idea = PRE_pacifist_accord_4
 				}
 			}
-			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_army_dynamic_modifier
@@ -2211,17 +2296,13 @@ focus_tree = {
 				factor = 50
 				has_completed_focus = DEN_recovery
 			}
-			modifier = {
-				factor = 0
-				has_idea = DEN_idea_pacifist_accord
-			}
 		}
 
 		completion_reward = {
 			add_tech_bonus = {
 				name = DEN_equipment_upgrades
 				bonus = 0.5
-				uses = 2
+				uses = 3
 				category = infantry_weapons
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -2252,7 +2333,6 @@ focus_tree = {
 					add_idea = PRE_pacifist_accord_4
 				}
 			}
-			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_army_dynamic_modifier
@@ -2328,6 +2408,20 @@ focus_tree = {
 				PRE_army_dynamic_modifier_political_power_gain = -0.1
 				tooltip = political_power_gain_tt
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 1
+				limit = {
+					is_owned_and_controlled_by = ROOT
+				}
+                add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY_XP FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_WAR_SUPPORT }
 	}
@@ -2398,6 +2492,11 @@ focus_tree = {
 				category = mio_cat_artillery
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
+			mio:GER_rheinmetall_organization = {
+                add_mio_funds = 500
+				add_mio_research_bonus = 0.05
+            }
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_army_dynamic_modifier
@@ -2430,8 +2529,6 @@ focus_tree = {
 
 
 		completion_reward = {
-			every_army_leader = { add_planning = 1 }
-			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = DEN_modernize_support_equipment
 				bonus = 0.5
@@ -2439,6 +2536,32 @@ focus_tree = {
 				ahead_reduction = 0.5
 				category = infantry_weapons
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			mio:GER_mauser_organization = {
+				if = {
+					limit = { 
+						has_mio_trait = GER_mio_trait_experienced_manufacturer
+					}
+					add_mio_funds = 1500
+				}
+				else = {
+					add_mio_funds = 500
+					complete_mio_trait = GER_mio_trait_experienced_manufacturer
+				}
+            }
+			custom_effect_tooltip = generic_skip_one_line_tt
+			mio:GER_carl_walther_organization = {
+                if = {
+					limit = { 
+						has_mio_trait = GER_mio_trait_innovative_safety_features
+					}
+					add_mio_funds = 1500
+				}
+				else = {
+					add_mio_funds = 500
+					complete_mio_trait = GER_mio_trait_innovative_safety_features
+				}
+            }
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_mastery_bonus = {
 				name = DEN_modernize_support_equipment
@@ -2485,6 +2608,7 @@ focus_tree = {
 				uses = 2
 				category = engineers_tech
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			enable_tech_expanded_engineer_corps = yes
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER FOCUS_FILTER_ARMY_XP }
@@ -2634,6 +2758,19 @@ focus_tree = {
 				tooltip = army_artillery_defence_factor_tt
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
+			mio:GER_rheinmetall_organization = {
+                if = {
+					limit = { 
+						has_mio_trait = GER_mio_trait_dual_recoil_mechanism
+					}
+					add_mio_funds = 1500
+				}
+				else = {
+					add_mio_funds = 500
+					complete_mio_trait = GER_mio_trait_dual_recoil_mechanism
+				}
+            }
+			custom_effect_tooltip = generic_skip_one_line_tt
 			complete_special_project = {
 				project = sp:sp_land_large_caliber_kinetic_energy_sabot
 				show_modifiers = no
@@ -2659,6 +2796,8 @@ focus_tree = {
 		ai_will_do = { factor = 6 }
 
 		completion_reward = {
+			every_army_leader = { add_logistics = 1 }
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = DEN_establish_flyvevabnet
 				category = logistics_tech
@@ -2666,6 +2805,47 @@ focus_tree = {
 				bonus = 0.5
 				uses = 2
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			mio:GER_opel_organization = {
+                if = {
+					limit = { 
+						has_mio_trait = GER_mio_trait_improved_engines
+						has_mio_trait = GER_mio_trait_efficiency_in_mass_production
+					}
+					add_mio_funds = 1500
+				}
+				else_if = {
+					limit = { 
+						has_mio_trait = GER_mio_trait_efficiency_in_mass_production
+						NOT = {
+							has_mio_trait = GER_mio_trait_improved_engines
+						}
+					}
+					add_mio_funds = 500
+					complete_mio_trait = GER_mio_trait_improved_engines
+				}
+				else_if = {
+					limit = { 
+						has_mio_trait = GER_mio_trait_improved_engines
+						NOT = {
+							has_mio_trait = GER_mio_trait_efficiency_in_mass_production
+						}
+					}
+					add_mio_funds = 500
+					complete_mio_trait = GER_mio_trait_efficiency_in_mass_production
+				}
+				else_if = {
+					limit = { 
+						has_mio_trait = GER_mio_trait_ford_facilities
+					}
+					add_mio_funds = 500
+					complete_mio_trait = GER_mio_trait_efficiency_in_mass_production
+				}
+				else = {
+					add_mio_funds = 500
+					complete_mio_trait = GER_mio_trait_ford_facilities
+				}
+            }
 			custom_effect_tooltip = generic_skip_one_line_tt
 			enable_tech_improved_logistics = yes
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -2708,6 +2888,19 @@ focus_tree = {
 				category = cat_anti_air
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
+			mio:GER_rheinmetall_organization = {
+                if = {
+					limit = { 
+						has_mio_trait = GER_mio_trait_versatile_carriage
+					}
+					add_mio_funds = 1500
+				}
+				else = {
+					add_mio_funds = 500
+					complete_mio_trait = GER_mio_trait_versatile_carriage
+				}
+            }
+			custom_effect_tooltip = generic_skip_one_line_tt
 			random_owned_controlled_state = { # PRIORITIZE NEAR INDUSTRIAL AREAS
 				limit = {
 					is_core_of = root
@@ -2748,6 +2941,7 @@ focus_tree = {
 					level = 1
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_land_military_industrialization_dynamic_modifier
@@ -3099,7 +3293,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = DEN_build_air_bases # AIR TRAINING SCHOOLS
+		id = DEN_build_air_bases # Build Airbases and Factories
 		icon = GFX_focus_generic_air_bases
 		cost = 5
 
@@ -3152,6 +3346,19 @@ focus_tree = {
 				add_building_construction = {
 					type = air_base
 					level = 2
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = root
+					is_in_home_area = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
 				}
 			}
 		}
@@ -3411,6 +3618,7 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 50
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_airforce_dynamic_modifier
@@ -3453,13 +3661,6 @@ focus_tree = {
 		ai_will_do = { factor = 6 }
 
 		completion_reward = {
-			add_ideas = PRE_terror_bombings
-			custom_effect_tooltip = generic_skip_one_line_tt
-			complete_special_project = {
-				project = sp:sp_rockets_flying_bomb
-				show_modifiers = no
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = DEN_armour_experiments
 				bonus = 1
@@ -3778,6 +3979,11 @@ focus_tree = {
 				bonus = 0.1
 				days = 365
 				track = capital_ships
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			mio:GER_germaniawerft_organization = {
+				add_mio_funds = 500
+				complete_mio_trait = GER_mio_trait_history_of_battleships
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
@@ -4160,6 +4366,11 @@ focus_tree = {
 				category = mio_cat_tech_all_capital_ship_and_modules
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
+			mio:GER_germaniawerft_organization = {
+				add_mio_funds = 500
+				complete_mio_trait = GER_mio_trait_krupp_guns
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = PRE_navy_dynamic_modifier
@@ -4247,6 +4458,11 @@ focus_tree = {
 		completion_reward = {
 			every_navy_leader = {
 				add_coordination = 1
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			mio:GER_germaniawerft_organization = {
+				add_mio_funds = 500
+				complete_mio_trait = GER_mio_trait_h_class_battleships
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = {
@@ -4424,6 +4640,12 @@ focus_tree = {
 					add_dynamic_modifier = {
 						modifier = PRE_the_atlantic_federation_dynamic_modifier
 					}
+					hidden_effect = {
+						add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_dockyard_donations = 1 }
+						add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_industrial_factory_donations = 1 }
+						add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_military_factory_donations = 1 }
+						add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_political_power_factor = 0.05 }
+					}
 				}
 			}
 			else_if = {
@@ -4438,6 +4660,12 @@ focus_tree = {
 					add_political_power = 25
 					add_dynamic_modifier = {
 						modifier = PRE_the_atlantic_federation_dynamic_modifier
+					}
+					hidden_effect = {
+						add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_dockyard_donations = 1 }
+						add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_industrial_factory_donations = 1 }
+						add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_military_factory_donations = 1 }
+						add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_political_power_factor = 0.05 }
 					}
 				}
 			}
@@ -4458,6 +4686,12 @@ focus_tree = {
 					add_dynamic_modifier = {
 						modifier = PRE_the_atlantic_federation_dynamic_modifier
 					}
+					hidden_effect = {
+						add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_dockyard_donations = 1 }
+						add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_industrial_factory_donations = 1 }
+						add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_military_factory_donations = 1 }
+						add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_political_power_factor = 0.05 }
+					}
 				}
 			}
 			else_if = {
@@ -4472,6 +4706,12 @@ focus_tree = {
 					add_political_power = 25
 					add_dynamic_modifier = {
 						modifier = PRE_the_atlantic_federation_dynamic_modifier
+					}
+					hidden_effect = {
+						add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_dockyard_donations = 1 }
+						add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_industrial_factory_donations = 1 }
+						add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_military_factory_donations = 1 }
+						add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_political_power_factor = 0.05 }
 					}
 				}
 			}
@@ -4492,6 +4732,12 @@ focus_tree = {
 					add_dynamic_modifier = {
 						modifier = PRE_the_atlantic_federation_dynamic_modifier
 					}
+					hidden_effect = {
+						add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_dockyard_donations = 1 }
+						add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_industrial_factory_donations = 1 }
+						add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_military_factory_donations = 1 }
+						add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_political_power_factor = 0.05 }
+					}
 				}
 			}
 			else_if = {
@@ -4506,6 +4752,12 @@ focus_tree = {
 					add_political_power = 25
 					add_dynamic_modifier = {
 						modifier = PRE_the_atlantic_federation_dynamic_modifier
+					}
+					hidden_effect = {
+						add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_dockyard_donations = 1 }
+						add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_industrial_factory_donations = 1 }
+						add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_military_factory_donations = 1 }
+						add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_political_power_factor = 0.05 }
 					}
 				}
 			}
@@ -4526,6 +4778,12 @@ focus_tree = {
 					add_dynamic_modifier = {
 						modifier = PRE_the_atlantic_federation_dynamic_modifier
 					}
+					hidden_effect = {
+						add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_dockyard_donations = 1 }
+						add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_industrial_factory_donations = 1 }
+						add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_military_factory_donations = 1 }
+						add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_political_power_factor = 0.05 }
+					}
 				}
 			}
 			else_if = {
@@ -4540,6 +4798,12 @@ focus_tree = {
 					add_political_power = 25
 					add_dynamic_modifier = {
 						modifier = PRE_the_atlantic_federation_dynamic_modifier
+					}
+					hidden_effect = {
+						add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_dockyard_donations = 1 }
+						add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_industrial_factory_donations = 1 }
+						add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_military_factory_donations = 1 }
+						add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_political_power_factor = 0.05 }
 					}
 				}
 			}
@@ -4577,18 +4841,30 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			ICE = {
 				add_manpower = 5000
+				hidden_effect = {
+					add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_max_command_power_mult = 0.15 }
+				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			QUE = {
 				add_manpower = 5000
+				hidden_effect = {
+					add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_max_command_power_mult = 0.15 }
+				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			USA = {
 				add_manpower = 5000
+				hidden_effect = {
+					add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_max_command_power_mult = 0.15 }
+				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			X63 = {
 				add_manpower = 5000
+				hidden_effect = {
+					add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_max_command_power_mult = 0.15 }
+				}
 			}
 		}
 		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
@@ -4632,18 +4908,38 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			ICE = {
 				add_cic = 500
+				hidden_effect = {
+					add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_dockyard_donations = 1 }
+					add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_industrial_factory_donations = 1 }
+					add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_military_factory_donations = 1 }
+				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			QUE = {
 				add_cic = 500
+				hidden_effect = {
+					add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_dockyard_donations = 1 }
+					add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_industrial_factory_donations = 1 }
+					add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_military_factory_donations = 1 }
+				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			USA = {
 				add_cic = 500
+				hidden_effect = {
+					add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_dockyard_donations = 1 }
+					add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_industrial_factory_donations = 1 }
+					add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_military_factory_donations = 1 }
+				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			X63 = {
 				add_cic = 500
+				hidden_effect = {
+					add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_dockyard_donations = 1 }
+					add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_industrial_factory_donations = 1 }
+					add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_military_factory_donations = 1 }
+				}
 			}
 		}
 		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
@@ -4808,18 +5104,30 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			ICE = {
 				add_ideas = PRE_prussian_single_market
+				hidden_effect = {
+					add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_monthly_population = 0.1 }
+				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			QUE = {
 				add_ideas = PRE_prussian_single_market
+				hidden_effect = {
+					add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_monthly_population = 0.1 }
+				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			USA = {
 				add_ideas = PRE_prussian_single_market
+				hidden_effect = {
+					add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_monthly_population = 0.1 }
+				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			X63 = {
 				add_ideas = PRE_prussian_single_market
+				hidden_effect = {
+					add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_monthly_population = 0.1 }
+				}
 			}
 		}
 		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
@@ -4860,12 +5168,20 @@ focus_tree = {
 					idea = PRE_prussian_immigration
 					days = 730
 				}
+				hidden_effect = {
+					add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_monthly_population = 0.15 }
+					add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_line_change_production_efficiency_factor = 0.1 }
+				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			QUE = {
 				add_timed_idea = {
 					idea = PRE_prussian_immigration
 					days = 730
+				}
+				hidden_effect = {
+					add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_monthly_population = 0.15 }
+					add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_line_change_production_efficiency_factor = 0.1 }
 				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -4874,12 +5190,20 @@ focus_tree = {
 					idea = PRE_prussian_immigration
 					days = 730
 				}
+				hidden_effect = {
+					add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_monthly_population = 0.15 }
+					add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_line_change_production_efficiency_factor = 0.1 }
+				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			X63 = {
 				add_timed_idea = {
 					idea = PRE_prussian_immigration
 					days = 730
+				}
+				hidden_effect = {
+					add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_monthly_population = 0.15 }
+					add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_line_change_production_efficiency_factor = 0.1 }
 				}
 			}
 		}
@@ -4918,18 +5242,30 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			ICE = {
 				add_political_power = 100
+				hidden_effect = {
+					add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_political_power_factor = 0.1 }
+				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			QUE = {
 				add_political_power = 100
+				hidden_effect = {
+					add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_political_power_factor = 0.1 }
+				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			USA = {
 				add_political_power = 100
+				hidden_effect = {
+					add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_political_power_factor = 0.1 }
+				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			X63 = {
 				add_political_power = 100
+				hidden_effect = {
+					add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_political_power_factor = 0.1 }
+				}
 			}
 		}
 		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
@@ -4966,12 +5302,18 @@ focus_tree = {
 					idea = PRE_prussian_influx_of_money
 					days = 730
 				}
+				hidden_effect = {
+					add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_local_resources_factor = 0.1 }
+				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			QUE = {
 				add_timed_idea = {
 					idea = PRE_prussian_influx_of_money
 					days = 730
+				}
+				hidden_effect = {
+					add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_local_resources_factor = 0.1 }
 				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -4980,12 +5322,18 @@ focus_tree = {
 					idea = PRE_prussian_influx_of_money
 					days = 730
 				}
+				hidden_effect = {
+					add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_local_resources_factor = 0.1 }
+				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			X63 = {
 				add_timed_idea = {
 					idea = PRE_prussian_influx_of_money
 					days = 730
+				}
+				hidden_effect = {
+					add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_local_resources_factor = 0.1 }
 				}
 			}
 		}
@@ -5028,12 +5376,18 @@ focus_tree = {
 					cic = 1000
 					equipment_type = infantry_equipment
 				}
+				hidden_effect = {
+					add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_equipment_conversion_speed = 0.2 }
+				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			QUE = {
 				add_equipment_subsidy = {
 					cic = 1000
 					equipment_type = infantry_equipment
+				}
+				hidden_effect = {
+					add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_equipment_conversion_speed = 0.2 }
 				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -5042,12 +5396,18 @@ focus_tree = {
 					cic = 1000
 					equipment_type = infantry_equipment
 				}
+				hidden_effect = {
+					add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_equipment_conversion_speed = 0.2 }
+				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			X63 = {
 				add_equipment_subsidy = {
 					cic = 1000
 					equipment_type = infantry_equipment
+				}
+				hidden_effect = {
+					add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_equipment_conversion_speed = 0.2 }
 				}
 			}
 		}
@@ -5090,21 +5450,33 @@ focus_tree = {
 				army_experience = 25
 				navy_experience = 25
 				air_experience = 25
+				hidden_effect = {
+					add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_command_power_gain_mult = 0.25 }
+				}
 			}
 			QUE = {
 				army_experience = 25
 				navy_experience = 25
 				air_experience = 25
+				hidden_effect = {
+					add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_command_power_gain_mult = 0.25 }
+				}
 			}
 			USA = {
 				army_experience = 25
 				navy_experience = 25
 				air_experience = 25
+				hidden_effect = {
+					add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_command_power_gain_mult = 0.25 }
+				}
 			}
 			X63 = {
 				army_experience = 25
 				navy_experience = 25
 				air_experience = 25
+				hidden_effect = {
+					add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_command_power_gain_mult = 0.25 }
+				}
 			}
 		}
 		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }
@@ -5152,6 +5524,19 @@ focus_tree = {
 				target = USA
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
+			hidden_effect = {
+				ICE = {
+					every_core_state = {
+						add_core_of = PRE
+					}
+				}
+			}
+			annex_country = {
+				target = ICE
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			set_cosmetic_tag = PRE_radical
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = NJORD_PRE_all_members_of_the_atlantic_federation_gets
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
@@ -5160,6 +5545,28 @@ focus_tree = {
 			add_to_variable = {
 				PRE_the_atlantic_federation_dynamic_modifier_conscription_factor = 0.1
 				tooltip = conscription_factor_tt
+			}
+			hidden_effect = {
+				ICE = {
+					hidden_effect = {
+						add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_conscription_factor = 0.1 }
+					}
+				}
+				QUE = {
+					hidden_effect = {
+						add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_conscription_factor = 0.1 }
+					}
+				}
+				USA = {
+					hidden_effect = {
+						add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_conscription_factor = 0.1 }
+					}
+				}
+				X63 = {
+					hidden_effect = {
+						add_to_variable = { PRE_the_atlantic_federation_dynamic_modifier_conscription_factor = 0.1 }
+					}
+				}
 			}
 		}
 		search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS }

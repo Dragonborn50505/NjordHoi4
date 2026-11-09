@@ -236,7 +236,12 @@ create_faction_from_template = {
 	name = HOL_benelux
 }
 add_to_faction = HOL
-add_to_faction = X07
+add_to_faction = W45
+add_to_faction = W46
+add_to_faction = W47
+add_to_faction = W48
+add_to_faction = W49
+add_to_faction = FRA
 
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -249,6 +254,7 @@ add_ideas = {
 	civilian_economy
 	export_focus
 	culture_flemish
+	HOL_the_english_standstill
 }
 set_stability = 0.60
 set_war_support = 0.60

@@ -298,6 +298,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			tank_medium_howitzer_2
+			tank_medium_cannon_2
 		}
 		path = {
 			leads_to_tech = artillery4
@@ -346,7 +347,7 @@ technologies = {
 		}
 
 		enable_equipment_modules = {
-			tank_medium_cannon_2
+			tank_medium_cannon_3
 		}
 
 		path = {
@@ -1268,6 +1269,7 @@ technologies = {
 		}	
 		enable_equipment_modules = {
 			tank_high_velocity_cannon_3
+			tank_medium_cannon_3
 			tank_heavy_cannon_3
 			auto_loader
 			lc_heavy_high_velocity_cannons #Module for Land Cruiser

@@ -5837,6 +5837,12 @@ focus_tree = {
 							has_government = fascism
 							has_government = communism
 						}
+						OVERLORD = {
+							OR = {
+								has_government = fascism
+								has_government = communism
+							}
+						}
 					}
 				}
 			}
@@ -5944,6 +5950,9 @@ focus_tree = {
 					}
 					AND = {
 						is_ai = yes
+						has_government = communism
+					}
+					OVERLORD = {
 						has_government = communism
 					}
 				}
@@ -6106,6 +6115,9 @@ focus_tree = {
 					}
 					AND = {
 						is_ai = yes
+						has_government = fascism
+					}
+					OVERLORD = {
 						has_government = fascism
 					}
 				}
@@ -10185,6 +10197,12 @@ focus_tree = {
 							has_government = neutrality
 						}
 					}
+					OVERLORD = {
+						OR = {
+							has_government = democratic
+							has_government = neutrality
+						}
+					}
 				}
 			}
 		}
@@ -10261,6 +10279,9 @@ focus_tree = {
 					}
 					AND = {
 						is_ai = yes
+						has_government = democratic
+					}
+					OVERLORD = {
 						has_government = democratic
 					}
 				}
@@ -12138,6 +12159,9 @@ focus_tree = {
 						is_ai = yes
 						has_government = neutrality
 					}
+					OVERLORD = {
+						has_government = neutrality
+					}
 				}
 			}
 		}
@@ -12828,7 +12852,17 @@ focus_tree = {
 					}
 					AND = {
 						is_ai = yes
-						has_government = neutrality
+						has_government = absolutist
+					}
+					AND = {
+						is_ai = yes
+						has_government = radical
+					}
+					OVERLORD = {
+						OR = {
+							has_government = absolutist
+							has_government = radical
+						}
 					}
 				}
 			}

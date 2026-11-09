@@ -88,8 +88,6 @@ if = {
     add_to_tech_sharing_group = X07_research
 }
 
-
-
 add_ideas = {
 	X07_monarch
 	volunteer_only

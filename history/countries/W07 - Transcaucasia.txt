@@ -142,9 +142,15 @@ add_ideas = {
 	civilian_economy
 	export_focus
 	culture_georgian
+	TRANS_a_crown_above_the_caucasus
+	TRANS_the_lost_lands_of_the_north
+	TRANS_a_kingdom_besieged
+	TRANS_demands_for_democracy
+	TRANS_the_armenian_question
+	TRANS_russian_advisors
 }
-set_stability = 0.60
-set_war_support = 0.61
+set_stability = 0.6
+set_war_support = 0.6
 
 recruit_character = W07_andria_tabidze
 recruit_character = W07_kaikhosro_kereselidze

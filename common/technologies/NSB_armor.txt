@@ -45,17 +45,17 @@ technologies = {
 			tank_christie_suspension
 			tank_bogie_suspension
 			tank_interleaved_suspension
-			tank_light_one_man_tank_turret
-			tank_light_two_man_tank_turret
-			tank_light_three_man_tank_turret
-			tank_light_fixed_superstructure_turret
-			tank_medium_one_man_tank_turret
-			tank_medium_two_man_tank_turret
-			tank_medium_three_man_tank_turret
-			tank_medium_fixed_superstructure_turret
-			tank_heavy_two_man_tank_turret
-			tank_heavy_three_man_tank_turret
-			tank_heavy_fixed_superstructure_turret
+			tank_light_one_man_tank_turret_1
+			tank_light_two_man_tank_turret_1
+			tank_light_three_man_tank_turret_1
+			tank_light_fixed_superstructure_turret_1
+			tank_medium_one_man_tank_turret_1
+			tank_medium_two_man_tank_turret_1
+			tank_medium_three_man_tank_turret_1
+			tank_medium_fixed_superstructure_turret_1
+			tank_heavy_two_man_tank_turret_1
+			tank_heavy_three_man_tank_turret_1
+			tank_heavy_fixed_superstructure_turret_1
 			tank_super_heavy_four_man_tank_turret
 			tank_super_heavy_three_man_tank_turret
 			tank_modern_tank_turret
@@ -247,6 +247,12 @@ technologies = {
 			light_tank_artillery_chassis_2
 			light_tank_aa_chassis_2
 		}
+		enable_equipment_modules = {
+			tank_light_one_man_tank_turret_2
+			tank_light_two_man_tank_turret_2
+			tank_light_three_man_tank_turret_2
+			tank_light_fixed_superstructure_turret_2
+		}
 
 		path = {
 			leads_to_tech = advanced_light_tank_chassis
@@ -422,6 +428,17 @@ technologies = {
 			light_tank_destroyer_chassis_3
 			light_tank_artillery_chassis_3
 			light_tank_aa_chassis_3
+			tank_light_one_man_tank_turret_3
+			tank_light_two_man_tank_turret_3
+			tank_light_three_man_tank_turret_3
+			tank_light_fixed_superstructure_turret_3
+		}
+
+		enable_equipment_modules = {
+			tank_light_one_man_tank_turret_3
+			tank_light_two_man_tank_turret_3
+			tank_light_three_man_tank_turret_3
+			tank_light_fixed_superstructure_turret_3
 		}
 
 		research_cost = 2
@@ -563,6 +580,17 @@ technologies = {
 			medium_tank_destroyer_chassis_2
 			medium_tank_artillery_chassis_2
 			medium_tank_aa_chassis_2
+			tank_medium_one_man_tank_turret_2
+			tank_medium_two_man_tank_turret_2
+			tank_medium_three_man_tank_turret_2
+			tank_medium_fixed_superstructure_turret_2
+		}
+
+		enable_equipment_modules = {
+			tank_medium_one_man_tank_turret_2
+			tank_medium_two_man_tank_turret_2
+			tank_medium_three_man_tank_turret_2
+			tank_medium_fixed_superstructure_turret_2
 		}
 
 		path = {
@@ -627,6 +655,17 @@ technologies = {
 			medium_tank_destroyer_chassis_3
 			medium_tank_artillery_chassis_3
 			medium_tank_aa_chassis_3
+			tank_medium_one_man_tank_turret_3
+			tank_medium_two_man_tank_turret_3
+			tank_medium_three_man_tank_turret_3
+			tank_medium_fixed_superstructure_turret_3
+		}
+
+		enable_equipment_modules = {
+			tank_medium_one_man_tank_turret_3
+			tank_medium_two_man_tank_turret_3
+			tank_medium_three_man_tank_turret_3
+			tank_medium_fixed_superstructure_turret_3
 		}
 
 		path = {
@@ -806,6 +845,15 @@ technologies = {
 			heavy_tank_destroyer_chassis_2
 			heavy_tank_artillery_chassis_2
 			heavy_tank_aa_chassis_2
+			tank_heavy_two_man_tank_turret_2
+			tank_heavy_three_man_tank_turret_2
+			tank_heavy_fixed_superstructure_turret_2
+		}
+
+		enable_equipment_modules = {
+			tank_heavy_two_man_tank_turret_2
+			tank_heavy_three_man_tank_turret_2
+			tank_heavy_fixed_superstructure_turret_2
 		}
 
 		path = {
@@ -861,6 +909,15 @@ technologies = {
 			heavy_tank_destroyer_chassis_3
 			heavy_tank_artillery_chassis_3
 			heavy_tank_aa_chassis_3
+			tank_heavy_two_man_tank_turret_3
+			tank_heavy_three_man_tank_turret_3
+			tank_heavy_fixed_superstructure_turret_3
+		}
+
+		enable_equipment_modules = {
+			tank_heavy_two_man_tank_turret_3
+			tank_heavy_three_man_tank_turret_3
+			tank_heavy_fixed_superstructure_turret_3
 		}
 
 		path = {

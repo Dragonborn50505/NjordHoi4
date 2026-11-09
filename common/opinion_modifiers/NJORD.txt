@@ -1,0 +1,4 @@
+NJORD_brothers_across_the_lakes = {
+	value = 50
+	decay = 0
+}

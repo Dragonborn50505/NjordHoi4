@@ -160,6 +160,9 @@ add_ideas = {
 	civilian_economy
 	export_focus
 	culture_celtic_american
+	GREENLAND_two_shores_one_colony
+	GREENLAND_the_north_pacific_lifeline
+	GREENLAND_forests_of_the_west
 }
 set_stability = 0.60
 set_war_support = 0.77
