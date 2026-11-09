@@ -78,7 +78,7 @@ if = {
 
 set_country_flag = conv_britain
 starting_train_buffer = 2
-set_convoys = 35
+set_convoys = 1000
 
 set_politics = {
     ruling_party = democratic
@@ -125,12 +125,24 @@ if = {
         autonomous_state = autonomy_integrated_puppet
         freedom_level = 0.4
     }
+	set_autonomy = {
+		target = ATJ
+		autonomous_state = autonomy_puppet
+		freedom_level = 0.4
+	}
+	set_autonomy = {
+		target = X53
+		autonomous_state = autonomy_puppet
+		freedom_level = 0.4
+	}
     else = {
         puppet = W45
         puppet = W46
         puppet = W47
         puppet = W48
         puppet = W49
+		puppet = ATJ
+		puppet = X53
     }
 }
 
@@ -140,96 +152,82 @@ if = {
     add_to_tech_sharing_group = HOL_research
 }
 
-give_guarantee = ATJ
-if = {
-	limit = { NOT = { has_non_aggression_pact_with = ATJ } }
-	diplomatic_relation = { country = ATJ relation = non_aggression_pact }
-}
+add_opinion_modifier = { target = FRA modifier = positive_200 }
+add_opinion_modifier = { target = IRE modifier = positive_100 }
 
-give_guarantee = X07
-if = {
-	limit = { NOT = { has_non_aggression_pact_with = X07 } }
-	diplomatic_relation = { country = X07 relation = non_aggression_pact }
-}
 
-give_guarantee = X86
-if = {
-	limit = { NOT = { has_non_aggression_pact_with = X86 } }
-	diplomatic_relation = { country = X86 relation = non_aggression_pact }
-}
-
-add_opinion_modifier = { target = ATJ modifier = positive_200 }
-add_opinion_modifier = { target = BAN modifier = negative_50 }
-add_opinion_modifier = { target = BRA modifier = positive_108 }
-add_opinion_modifier = { target = BRU modifier = negative_185 }
-add_opinion_modifier = { target = COG modifier = positive_200 }
-add_opinion_modifier = { target = COL modifier = positive_144 }
-add_opinion_modifier = { target = CSA modifier = positive_200 }
-add_opinion_modifier = { target = CUB modifier = positive_33 }
-add_opinion_modifier = { target = DOM modifier = positive_6 }
-add_opinion_modifier = { target = FOR modifier = negative_10 }
-add_opinion_modifier = { target = FRA modifier = positive_41 }
-add_opinion_modifier = { target = GER modifier = negative_158 }
-add_opinion_modifier = { target = ICE modifier = positive_100 }
-add_opinion_modifier = { target = IRE modifier = negative_200 }
-add_opinion_modifier = { target = ITA modifier = negative_200 }
-add_opinion_modifier = { target = JAP modifier = negative_200 }
-add_opinion_modifier = { target = MEX modifier = positive_160 }
-add_opinion_modifier = { target = PAK modifier = positive_8 }
-add_opinion_modifier = { target = PHI modifier = negative_15 }
-add_opinion_modifier = { target = PRE modifier = negative_113 }
-add_opinion_modifier = { target = PRU modifier = positive_115 }
-add_opinion_modifier = { target = QUE modifier = negative_61 }
-add_opinion_modifier = { target = RAJ modifier = negative_10 }
-add_opinion_modifier = { target = SAM modifier = negative_180 }
-add_opinion_modifier = { target = SAR modifier = negative_10 }
-add_opinion_modifier = { target = SOV modifier = negative_104 }
-add_opinion_modifier = { target = SPR modifier = negative_30 }
-add_opinion_modifier = { target = TEX modifier = positive_112 }
-add_opinion_modifier = { target = TIG modifier = negative_200 }
-add_opinion_modifier = { target = TNE modifier = negative_185 }
-add_opinion_modifier = { target = TUR modifier = positive_40 }
-add_opinion_modifier = { target = USA modifier = negative_50 }
-add_opinion_modifier = { target = W02 modifier = negative_168 }
-add_opinion_modifier = { target = W05 modifier = negative_200 }
-add_opinion_modifier = { target = W07 modifier = negative_22 }
-add_opinion_modifier = { target = W10 modifier = negative_160 }
-add_opinion_modifier = { target = W13 modifier = negative_70 }
-add_opinion_modifier = { target = W17 modifier = positive_115 }
-add_opinion_modifier = { target = W19 modifier = negative_114 }
-add_opinion_modifier = { target = W22 modifier = negative_200 }
-add_opinion_modifier = { target = W23 modifier = negative_40 }
-add_opinion_modifier = { target = W24 modifier = negative_10 }
-add_opinion_modifier = { target = W27 modifier = negative_25 }
-add_opinion_modifier = { target = W31 modifier = positive_55 }
-add_opinion_modifier = { target = W35 modifier = positive_135 }
-add_opinion_modifier = { target = W36 modifier = positive_114 }
-add_opinion_modifier = { target = W37 modifier = negative_9 }
-add_opinion_modifier = { target = W41 modifier = negative_167 }
-add_opinion_modifier = { target = X04 modifier = negative_115 }
-add_opinion_modifier = { target = X07 modifier = positive_120 }
-add_opinion_modifier = { target = X20 modifier = negative_100 }
-add_opinion_modifier = { target = X21 modifier = negative_46 }
-add_opinion_modifier = { target = X32 modifier = positive_170 }
-add_opinion_modifier = { target = X36 modifier = positive_115 }
-add_opinion_modifier = { target = X40 modifier = negative_50 }
-add_opinion_modifier = { target = X45 modifier = negative_10 }
-add_opinion_modifier = { target = X46 modifier = negative_200 }
-add_opinion_modifier = { target = X47 modifier = negative_50 }
-add_opinion_modifier = { target = X53 modifier = positive_200 }
-add_opinion_modifier = { target = X63 modifier = positive_130 }
-add_opinion_modifier = { target = X64 modifier = negative_185 }
-add_opinion_modifier = { target = X73 modifier = negative_199 }
-add_opinion_modifier = { target = X75 modifier = negative_11 }
-add_opinion_modifier = { target = X77 modifier = negative_25 }
-add_opinion_modifier = { target = X82 modifier = negative_80 }
-add_opinion_modifier = { target = X83 modifier = negative_60 }
-add_opinion_modifier = { target = X84 modifier = negative_180 }
-add_opinion_modifier = { target = X86 modifier = positive_200 }
-add_opinion_modifier = { target = X93 modifier = negative_200 }
-set_truce = { target = X93 days = 1825 }
-add_opinion_modifier = { target = X98 modifier = positive_101 }
-add_opinion_modifier = { target = YEM modifier = negative_175 }
+#add_opinion_modifier = { target = ATJ modifier = positive_200 }
+#add_opinion_modifier = { target = BAN modifier = negative_50 }
+#add_opinion_modifier = { target = BRA modifier = positive_108 }
+#add_opinion_modifier = { target = BRU modifier = negative_185 }
+#add_opinion_modifier = { target = COG modifier = positive_200 }
+#add_opinion_modifier = { target = COL modifier = positive_144 }
+#add_opinion_modifier = { target = CSA modifier = positive_200 }
+#add_opinion_modifier = { target = CUB modifier = positive_33 }
+#add_opinion_modifier = { target = DOM modifier = positive_6 }
+#add_opinion_modifier = { target = FOR modifier = negative_10 }
+#add_opinion_modifier = { target = FRA modifier = positive_41 }
+#add_opinion_modifier = { target = GER modifier = negative_158 }
+#add_opinion_modifier = { target = ICE modifier = positive_100 }
+#add_opinion_modifier = { target = IRE modifier = negative_200 }
+#add_opinion_modifier = { target = ITA modifier = negative_200 }
+#add_opinion_modifier = { target = JAP modifier = negative_200 }
+#add_opinion_modifier = { target = MEX modifier = positive_160 }
+#add_opinion_modifier = { target = PAK modifier = positive_8 }
+#add_opinion_modifier = { target = PHI modifier = negative_15 }
+#add_opinion_modifier = { target = PRE modifier = negative_113 }
+#add_opinion_modifier = { target = PRU modifier = positive_115 }
+#add_opinion_modifier = { target = QUE modifier = negative_61 }
+#add_opinion_modifier = { target = RAJ modifier = negative_10 }
+#add_opinion_modifier = { target = SAM modifier = negative_180 }
+#add_opinion_modifier = { target = SAR modifier = negative_10 }
+#add_opinion_modifier = { target = SOV modifier = negative_104 }
+#add_opinion_modifier = { target = SPR modifier = negative_30 }
+#add_opinion_modifier = { target = TEX modifier = positive_112 }
+#add_opinion_modifier = { target = TIG modifier = negative_200 }
+#add_opinion_modifier = { target = TNE modifier = negative_185 }
+#add_opinion_modifier = { target = TUR modifier = positive_40 }
+#add_opinion_modifier = { target = USA modifier = negative_50 }
+#add_opinion_modifier = { target = W02 modifier = negative_168 }
+#add_opinion_modifier = { target = W05 modifier = negative_200 }
+#add_opinion_modifier = { target = W07 modifier = negative_22 }
+#add_opinion_modifier = { target = W10 modifier = negative_160 }
+#add_opinion_modifier = { target = W13 modifier = negative_70 }
+#add_opinion_modifier = { target = W17 modifier = positive_115 }
+#add_opinion_modifier = { target = W19 modifier = negative_114 }
+#add_opinion_modifier = { target = W22 modifier = negative_200 }
+#add_opinion_modifier = { target = W23 modifier = negative_40 }
+#add_opinion_modifier = { target = W24 modifier = negative_10 }
+#add_opinion_modifier = { target = W27 modifier = negative_25 }
+#add_opinion_modifier = { target = W31 modifier = positive_55 }
+#add_opinion_modifier = { target = W35 modifier = positive_135 }
+#add_opinion_modifier = { target = W36 modifier = positive_114 }
+#add_opinion_modifier = { target = W37 modifier = negative_9 }
+#add_opinion_modifier = { target = W41 modifier = negative_167 }
+#add_opinion_modifier = { target = X04 modifier = negative_115 }
+#add_opinion_modifier = { target = X07 modifier = positive_120 }
+#add_opinion_modifier = { target = X20 modifier = negative_100 }
+#add_opinion_modifier = { target = X21 modifier = negative_46 }
+#add_opinion_modifier = { target = X32 modifier = positive_170 }
+#add_opinion_modifier = { target = X36 modifier = positive_115 }
+#add_opinion_modifier = { target = X40 modifier = negative_50 }
+#add_opinion_modifier = { target = X45 modifier = negative_10 }
+#add_opinion_modifier = { target = X46 modifier = negative_200 }
+#add_opinion_modifier = { target = X47 modifier = negative_50 }
+#add_opinion_modifier = { target = X53 modifier = positive_200 }
+#add_opinion_modifier = { target = X63 modifier = positive_130 }
+#add_opinion_modifier = { target = X64 modifier = negative_185 }
+#add_opinion_modifier = { target = X73 modifier = negative_199 }
+#add_opinion_modifier = { target = X75 modifier = negative_11 }
+#add_opinion_modifier = { target = X77 modifier = negative_25 }
+#add_opinion_modifier = { target = X82 modifier = negative_80 }
+#add_opinion_modifier = { target = X83 modifier = negative_60 }
+#add_opinion_modifier = { target = X84 modifier = negative_180 }
+#add_opinion_modifier = { target = X86 modifier = positive_200 }
+#add_opinion_modifier = { target = X93 modifier = negative_200 }
+#set_truce = { target = X93 days = 1825 }
+#add_opinion_modifier = { target = X98 modifier = positive_101 }
+#add_opinion_modifier = { target = YEM modifier = negative_175 }
 
 create_faction_from_template = {
 	template = faction_template_democratic
