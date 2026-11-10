@@ -4171,13 +4171,10 @@ focus_tree = {
 				SRI_ar_cas_damage_reduction = 0.05
 				tooltip = cas_damage_reduction_tt
 			}
-<<<<<<< Updated upstream
-=======
 			add_to_variable = {
 				SRI_ar_org_loss_when_moving = -0.05
 				tooltip = org_loss_when_moving_tt
 			}
->>>>>>> Stashed changes
 			custom_effect_tooltip = generic_skip_one_line_tt
 			every_army_leader = { add_attack = 1 }
 		}

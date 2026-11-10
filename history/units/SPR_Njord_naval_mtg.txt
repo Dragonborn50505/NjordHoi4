@@ -1,0 +1,97 @@
+﻿
+units= {
+
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Base Naval El Ferrol"
+		naval_base = 10063
+		task_force = {
+			name = "Escuadrón de El Ferrol"
+			location = 10063
+			ship = { name = "ARE España" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SPR version_name = "España Class" } } }
+			ship = { name = "ARE Jaime I" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SPR version_name = "España Class" } } }
+			ship = { name = "ARE Libertad" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
+			ship = { name = "ARE Almirante Cervera" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
+			ship = { name = "ARE Miguel de Cervantes" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
+			ship = { name = "ARE Alsedo" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
+			ship = { name = "ARE Velasco" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
+			ship = { name = "ARE Lazaga" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
+			ship = { name = "ARE Almirante Miranda" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "ARE Almirante Ferrándiz" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "ARE Sánchez Barcáiztegui" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "ARE Alcalá Galiano" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "ARE Almirante Valdés" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "ARE Churucca" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "ARE José Luis Díez" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "ARE Lepanto" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "ARE Almirante Antequera" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "ARE República" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "República Class" } } }
+			ship = { name = "ARE Méndez Núñez" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Méndez Núñes Class" } } }
+			ship = { name = "ARE Alfonso XIII" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SPR version_name = "España Class" } } }
+			ship = { name = "ARE Pelayo" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SPR version_name = "España Class" } } }
+			ship = { name = "ARE Blas de Lezo" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
+			ship = { name = "ARE Cristóbal Colón" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
+			ship = { name = "ARE Hernán Cortés" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
+			ship = { name = "ARE Bustamante" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
+			ship = { name = "ARE Villaamil" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
+			ship = { name = "ARE Cadarso" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
+			ship = { name = "ARE Alicante" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "ARE Almería" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "ARE Badajoz" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "ARE Burgos" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "ARE Cádiz" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "ARE Córdoba" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "ARE Cuenca" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "ARE Gerona" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "ARE Granada" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = SPR version_name = "Churucca Class" } } }
+			ship = { name = "ARE Agustina de Aragón" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "República Class" } } }
+			ship = { name = "ARE Don Juan de Austria" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Méndez Núñes Class" } } }
+			ship = { name = "ARE Francisco Pizarro" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
+			ship = { name = "ARE Juan Sebastián Elcano" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
+			ship = { name = "ARE Vasco Núñez de Balboa" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
+			ship = { name = "ARE Ulloa" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
+			ship = { name = "ARE Jorge Juan" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
+			ship = { name = "ARE Gravina" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
+			ship = { name = "ARE Mariana Pineda" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "República Class" } } }
+			ship = { name = "ARE Marqués de Santa Cruz" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Méndez Núñes Class" } } }
+			ship = { name = "ARE Pedro de Valdivia" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
+			ship = { name = "ARE Álvaro de Bazán" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
+			ship = { name = "ARE Marqués de la Ensenada" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
+			ship = { name = "ARE Mazarredo" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
+			ship = { name = "ARE Escaño" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
+			ship = { name = "ARE Álava" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
+			ship = { name = "ARE Concepción Arenal" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "República Class" } } }
+			ship = { name = "ARE Almirante Lobo" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Méndez Núñes Class" } } }
+			ship = { name = "ARE Cardenal Cisneros" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SPR version_name = "España Class" } } }
+			ship = { name = "ARE Conde de Venadito" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
+			ship = { name = "ARE Reina Mercedes" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
+			ship = { name = "ARE Navarra" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
+			ship = { name = "ARE Lángara" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
+			ship = { name = "ARE Solano" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
+			ship = { name = "ARE Ciscar" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
+			ship = { name = "ARE Rosalía de Castro" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "República Class" } } }
+			ship = { name = "ARE Reina Cristina" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Méndez Núñes Class" } } }
+			ship = { name = "ARE Numancia" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SPR version_name = "España Class" } } }
+			ship = { name = "ARE Princesa de Asturias" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SPR version_name = "España Class" } } }
+			ship = { name = "ARE Galicia" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
+			ship = { name = "ARE Cataluña" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
+			ship = { name = "ARE Aragón" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
+			ship = { name = "ARE Pezuela" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
+			ship = { name = "ARE Montojo" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
+			ship = { name = "ARE Topete" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
+			ship = { name = "ARE Emilia Pardo Bazán" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "República Class" } } }
+			ship = { name = "ARE Marqués de Comillas" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Méndez Núñes Class" } } }
+			ship = { name = "ARE Vitoria" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SPR version_name = "España Class" } } }
+			ship = { name = "ARE Infanta Isabel" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = SPR version_name = "España Class" } } }
+			ship = { name = "ARE Castilla" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
+			ship = { name = "ARE Asturias" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
+			ship = { name = "ARE Andalucía" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = SPR version_name = "Príncipe Alfonso Class" } } }
+			ship = { name = "ARE Oquendo" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
+			ship = { name = "ARE Pimentel" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
+			ship = { name = "ARE Bonifaz" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
+			ship = { name = "ARE Santa Teresa" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "República Class" } } }
+			ship = { name = "ARE Infante Don Juan" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SPR version_name = "Méndez Núñes Class" } } }
+		}
+	} 
+} 
+

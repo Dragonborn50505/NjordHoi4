@@ -1,6 +1,5 @@
 ﻿capital = 625
 set_research_slots = 3
-add_named_threat = { threat = 0.18 name = infamy }
 
 oob = "TUR_OOB"
 

@@ -2,7 +2,6 @@
 set_major = yes
 set_cosmetic_tag = GER_union
 set_research_slots = 4
-add_named_threat = { threat = 1.1943 name = infamy }
 
 oob = "GER_OOB"
 if = {

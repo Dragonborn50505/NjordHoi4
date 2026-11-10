@@ -1,12 +1,11 @@
-﻿capital = 340
+capital = 340
 set_major = yes
 set_research_slots = 4
-add_named_threat = { threat = 1.3619 name = infamy }
 
 oob = "HOL_OOB"
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "HOL_1936_naval_mtg"
+		set_naval_oob = "HOL_Njord_navy_mtg"
 	else = { 
 		set_naval_oob = "HOL_1936_naval_legacy"
 	}
@@ -26,9 +25,13 @@ set_technology = {
 	tech_military_police = 1
 	tech_logistics_company = 1
 	tech_field_hospital = 1
-
 	basic_train = 1
 	interwar_antitank = 1 # 
+	motorised_infantry = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	fuel_silos = 1
+	fuel_refining = 1
 }
 
 if = {
@@ -46,11 +49,30 @@ if = {
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
-		basic_battery = 1
 		basic_naval_mines = 1
-		basic_torpedo = 1
-		early_ship_hull_cruiser = 1
+		submarine_mine_laying = 1
 		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		smoke_generator = 1
+		basic_depth_charges = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		basic_fire_control_system = 1
+		basic_dp_light_battery = 1
+		coastal_defense_ships = 1
 	}
 }
 
@@ -439,56 +461,140 @@ if = {
 }
 if = {
 	limit = { has_dlc = "Man the Guns" }
+
+	# Destroyer
 	create_equipment_variant = {
-		name = "Early Destroyer"
-		type = ship_hull_light_1
+		name = "Basic Destroyer"
+		type = ship_hull_light_2
 		name_group = HOL_DD_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_battery_slot = ship_light_battery_1
-			fixed_ship_engine_slot = light_ship_engine_1
-			fixed_ship_fire_control_system_slot = empty
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = ship_sonar_1
+			fixed_ship_engine_slot = light_ship_engine_1
 			fixed_ship_torpedo_slot = ship_torpedo_1
-			mid_1_custom_slot = ship_depth_charge_1
-			rear_1_custom_slot = empty
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
+
+	# Heavy cruiser
 	create_equipment_variant = {
-		name = "Early Heavy Cruiser"
-		type = ship_hull_cruiser_1
+		name = "Basic Heavy Cruiser"
+		type = ship_hull_cruiser_2
 		name_group = HOL_CA_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_armor_slot = ship_armor_cruiser_1
 			fixed_ship_battery_slot = ship_medium_battery_1
-			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
 			fixed_ship_secondaries_slot = ship_secondaries_1
-			mid_1_custom_slot = ship_secondaries_1
-			mid_2_custom_slot = ship_medium_battery_1
-			rear_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_medium_battery_1
 		}
 	}
+
+	# Light cruiser
 	create_equipment_variant = {
-		name = "Early Light Cruiser"
-		type = ship_hull_cruiser_1
+		name = "Basic Light Cruiser"
+		type = ship_hull_cruiser_2
 		name_group = HOL_CL_HISTORICAL
 		parent_version = 0
 		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_armor_slot = ship_armor_cruiser_1
-			fixed_ship_battery_slot = ship_light_battery_1
-			fixed_ship_engine_slot = cruiser_ship_engine_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = ship_sonar_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
 			fixed_ship_secondaries_slot = ship_secondaries_1
 			mid_1_custom_slot = ship_torpedo_1
-			mid_2_custom_slot = ship_light_battery_1
-			rear_1_custom_slot = empty
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_light_medium_battery_1
+		}
+	}
+
+	# Battleship
+	create_equipment_variant = {
+		name = "Early Battleship"
+		type = ship_hull_heavy_1
+		name_group = HOL_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_heavy_battery_1
+		}
+	}
+	create_equipment_variant = {
+		name = "Basic Battleship"
+		type = ship_hull_heavy_2
+		name_group = HOL_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_heavy_battery_1
+		}
+	}
+
+	# Battlecruiser
+	create_equipment_variant = {
+		name = "Basic Battlecruiser"
+		type = ship_hull_heavy_2
+		name_group = HOL_BC_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bc_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_heavy_battery_1
+		}
+	}
+
+	# Carrier
+	create_equipment_variant = {
+		name = "Basic Carrier"
+		type = ship_hull_carrier_1
+		name_group = HOL_CV_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = carrier_ship_engine_2
+			fixed_ship_secondaries_slot = dp_ship_secondaries_2
+			front_1_custom_slot = ship_deck_space
 		}
 	}
 }
@@ -575,12 +681,134 @@ if = {
 ### TANK DESIGNS ###
 if = {
 	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}
+if = {
+	limit = {
 		has_dlc = "No Step Back"
 	}
 	set_technology = {
 		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		basic_heavy_tank_chassis = 1
 	}
 }
+
+### TANK DESIGNS ###
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	create_equipment_variant = { #Note: There is a copy of this variant in Finnish National Focus file (FIN_bring_foreign_armor_experts). Any changes here should also be applied there
+		name = "Light Tank Mk. IV"
+		type = light_tank_chassis_1
+		parent_version = 0
+		design_team = mio:ENG_vauxhall_organization
+		show_position = no
+		modules = {
+			main_armament_slot = tank_heavy_machine_gun
+			turret_type_slot = tank_light_one_man_tank_turret
+			suspension_type_slot = tank_christie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 2
+			tank_nsb_armor_upgrade = 1
+		}
+		icon = "GFX_ENG_basic_light_tank_medium"
+		obsolete = yes #used for oob
+	}
+	create_equipment_variant = {
+		name = "Light Tank Mk. VI"
+		type = light_tank_chassis_1
+		parent_version = 1
+		design_team = mio:ENG_vauxhall_organization
+		show_position = no
+		modules = {
+			main_armament_slot = tank_heavy_machine_gun
+			turret_type_slot = tank_light_two_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+			special_type_slot_2 = smoke_launchers
+		}
+		icon = "GFX_ENG_basic_light_tank_medium"
+		upgrades = {
+			tank_nsb_engine_upgrade = 2
+			tank_nsb_armor_upgrade = 2
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Medium Mk. II"
+		type = medium_tank_chassis_0
+		design_team = mio:ENG_vickers_armstrong_eng_organization
+		parent_version = 0
+		show_position = no
+		modules = {
+			main_armament_slot = tank_small_cannon
+			turret_type_slot = tank_medium_three_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+		}
+		upgrades = {
+			tank_nsb_armor_upgrade = 1
+			tank_nsb_engine_upgrade = 2
+		}
+		icon = "GFX_ENG_basic_light_tank_medium"
+	}
+
+	create_equipment_variant = {
+		name = "Vickers 6 ton A"
+		type = light_tank_chassis_0
+		parent_version = 0
+		design_team = mio:ENG_vauxhall_organization
+		modules = {
+			main_armament_slot = tank_heavy_machine_gun
+			turret_type_slot = tank_light_one_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = secondary_turret_hmg
+		}
+		upgrades = {
+			tank_nsb_armor_upgrade = 3
+			tank_nsb_engine_upgrade = 2
+		}
+		icon = "GFX_ENG_light_BAB_camo"
+		obsolete = yes #export only
+	}
+
+	create_equipment_variant = {
+		name = "Vickers 6 ton B"
+		type = light_tank_chassis_0
+		parent_version = 1
+		design_team = mio:ENG_vauxhall_organization
+		modules = {
+			main_armament_slot = tank_small_cannon
+			turret_type_slot = tank_light_two_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+		}
+		upgrades = {
+			tank_nsb_armor_upgrade = 3
+			tank_nsb_engine_upgrade = 2
+		}
+		icon = "GFX_ENG_light_BAB_camo"
+		obsolete = yes #export only
+	}
+}
+### TANK DESIGNS ###
 
 add_equipment_to_stockpile = { type = artillery_equipment amount = 744 producer = HOL }
 add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 11 producer = HOL }
