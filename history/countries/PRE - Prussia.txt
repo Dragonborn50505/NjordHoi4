@@ -102,22 +102,17 @@ if = {
     }
     set_autonomy = {
         target = W60
-        autonomous_state = autonomy_integrated_puppet
+        autonomous_state = autonomy_colony
         freedom_level = 0.4
     }
     set_autonomy = {
         target = W61
-        autonomous_state = autonomy_integrated_puppet
+        autonomous_state = autonomy_colony
         freedom_level = 0.4
     }
     set_autonomy = {
         target = W62
-        autonomous_state = autonomy_integrated_puppet
-        freedom_level = 0.4
-    }
-    set_autonomy = {
-        target = X63
-        autonomous_state = autonomy_dominion
+        autonomous_state = autonomy_colony
         freedom_level = 0.4
     }
     else = {
@@ -126,50 +121,7 @@ if = {
         puppet = W60
         puppet = W61
         puppet = W62
-        puppet = X63
     }
-}
-
-if = {
-    limit = {has_dlc = "Together for Victory" }
-
-    add_to_tech_sharing_group = PRE_research
-}
-
-give_guarantee = FRA
-if = {
-	limit = { NOT = { has_non_aggression_pact_with = FRA } }
-	diplomatic_relation = { country = FRA relation = non_aggression_pact }
-}
-
-give_guarantee = GER
-if = {
-	limit = { NOT = { has_non_aggression_pact_with = GER } }
-	diplomatic_relation = { country = GER relation = non_aggression_pact }
-}
-
-give_guarantee = IRE
-if = {
-	limit = { NOT = { has_non_aggression_pact_with = IRE } }
-	diplomatic_relation = { country = IRE relation = non_aggression_pact }
-}
-
-give_guarantee = SPR
-if = {
-	limit = { NOT = { has_non_aggression_pact_with = SPR } }
-	diplomatic_relation = { country = SPR relation = non_aggression_pact }
-}
-
-give_guarantee = X07
-if = {
-	limit = { NOT = { has_non_aggression_pact_with = X07 } }
-	diplomatic_relation = { country = X07 relation = non_aggression_pact }
-}
-
-give_guarantee = X63
-if = {
-	limit = { NOT = { has_non_aggression_pact_with = X63 } }
-	diplomatic_relation = { country = X63 relation = non_aggression_pact }
 }
 
 add_opinion_modifier = { target = ATJ modifier = negative_10 }
@@ -183,12 +135,10 @@ add_opinion_modifier = { target = CUB modifier = positive_98 }
 add_opinion_modifier = { target = DOM modifier = positive_98 }
 add_opinion_modifier = { target = FRA modifier = negative_93 }
 add_opinion_modifier = { target = GER modifier = positive_195 }
-give_military_access = GER
 add_opinion_modifier = { target = HOL modifier = negative_113 }
 add_opinion_modifier = { target = ICE modifier = negative_30 }
 add_opinion_modifier = { target = IRE modifier = positive_110 }
 add_opinion_modifier = { target = ITA modifier = negative_100 }
-give_military_access = ITA
 add_opinion_modifier = { target = JAP modifier = negative_200 }
 add_opinion_modifier = { target = KOR modifier = negative_10 }
 add_opinion_modifier = { target = MEX modifier = positive_28 }
@@ -224,9 +174,7 @@ add_opinion_modifier = { target = W35 modifier = positive_84 }
 add_opinion_modifier = { target = W37 modifier = positive_96 }
 add_opinion_modifier = { target = W41 modifier = negative_192 }
 add_opinion_modifier = { target = X04 modifier = positive_78 }
-give_military_access = X04
 add_opinion_modifier = { target = X07 modifier = positive_48 }
-give_military_access = X07
 add_opinion_modifier = { target = X20 modifier = negative_1 }
 add_opinion_modifier = { target = X21 modifier = negative_200 }
 add_opinion_modifier = { target = X35 modifier = negative_10 }
@@ -239,7 +187,6 @@ add_opinion_modifier = { target = X53 modifier = negative_200 }
 add_opinion_modifier = { target = X55 modifier = negative_10 }
 add_opinion_modifier = { target = X57 modifier = negative_162 }
 add_opinion_modifier = { target = X63 modifier = positive_191 }
-give_military_access = X63
 add_opinion_modifier = { target = X64 modifier = positive_19 }
 add_opinion_modifier = { target = X68 modifier = positive_39 }
 add_opinion_modifier = { target = X73 modifier = negative_114 }

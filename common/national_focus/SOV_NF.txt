@@ -159,6 +159,37 @@ focus_tree = {
 					}
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = { 
+					has_idea = RUS_a_divided_army
+				}
+				swap_ideas = {
+					remove_idea = RUS_a_divided_army
+					add_idea = RUS_a_divided_army_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = RUS_a_divided_army_2
+				}
+				swap_ideas = {
+					remove_idea = RUS_a_divided_army_2
+					add_idea = RUS_a_divided_army_3
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = RUS_a_divided_army_3
+				}
+				swap_ideas = {
+					remove_idea = RUS_a_divided_army_3
+					add_idea = RUS_a_divided_army_4
+				}
+			}
+			else = {
+				remove_ideas = RUS_a_divided_army_4
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -183,7 +214,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			add_popularity = { ideology = fascism popularity = -0.1 }
+			add_popularity = { ideology = democratic popularity = -0.1 }
 			add_popularity = { ideology = communism popularity = -0.05 }
 			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
@@ -222,6 +253,37 @@ focus_tree = {
 						add_idea = RUS_entrenched_opposition_2
 					}
 				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = { 
+					has_idea = RUS_a_divided_army
+				}
+				swap_ideas = {
+					remove_idea = RUS_a_divided_army
+					add_idea = RUS_a_divided_army_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = RUS_a_divided_army_2
+				}
+				swap_ideas = {
+					remove_idea = RUS_a_divided_army_2
+					add_idea = RUS_a_divided_army_3
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = RUS_a_divided_army_3
+				}
+				swap_ideas = {
+					remove_idea = RUS_a_divided_army_3
+					add_idea = RUS_a_divided_army_4
+				}
+			}
+			else = {
+				remove_ideas = RUS_a_divided_army_4
 			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -443,13 +505,14 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_popularity = {
-				ideology = democratic
+				ideology = radical
 				popularity = 0.05
 			}
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = radical
 				elections_allowed = no
 			}
+			set_country_leader_ideology = national_populism
 			custom_effect_tooltip = generic_skip_one_line_tt
 			set_cosmetic_tag = SOV_union_radical
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -480,7 +543,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 			add_popularity = {
-				ideology = democratic
+				ideology = radical
 				popularity = 0.05
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -517,7 +580,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 25
-			add_popularity = { ideology = democratic popularity = 0.05 }
+			add_popularity = { ideology = radical popularity = 0.05 }
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_country_leader_trait = RUS_cult_of_the_leader
 		}
@@ -779,7 +842,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 75
 			add_popularity = {
-				ideology = democratic
+				ideology = radical
 				popularity = 0.1
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -932,6 +995,37 @@ focus_tree = {
 			add_to_variable = {
 				RUS_new_london_unit_blackshirt_assault_battalion_design_cost_factor = -0.5
 				tooltip = unit_assault_battalion_design_cost_factor_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = { 
+					has_idea = RUS_a_divided_army
+				}
+				swap_ideas = {
+					remove_idea = RUS_a_divided_army
+					add_idea = RUS_a_divided_army_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = RUS_a_divided_army_2
+				}
+				swap_ideas = {
+					remove_idea = RUS_a_divided_army_2
+					add_idea = RUS_a_divided_army_3
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = RUS_a_divided_army_3
+				}
+				swap_ideas = {
+					remove_idea = RUS_a_divided_army_3
+					add_idea = RUS_a_divided_army_4
+				}
+			}
+			else = {
+				remove_ideas = RUS_a_divided_army_4
 			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
@@ -1707,11 +1801,11 @@ focus_tree = {
 				category = synth_resources
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
-			195 = {
+			524 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = { type = synthetic_refinery level = 2 instant_build = yes }
 			}
-			248 = {
+			505 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = { type = synthetic_refinery level = 2 instant_build = yes }
 			}
@@ -1756,7 +1850,7 @@ focus_tree = {
 		cost = 5
 
 		x = 7
-		y = 9
+		y = 8
 
 		ai_will_do = {
 			base = 100
@@ -1778,6 +1872,37 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_dynamic_modifier = {
 				modifier = RUS_army
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = { 
+					has_idea = RUS_a_divided_army
+				}
+				swap_ideas = {
+					remove_idea = RUS_a_divided_army
+					add_idea = RUS_a_divided_army_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = RUS_a_divided_army_2
+				}
+				swap_ideas = {
+					remove_idea = RUS_a_divided_army_2
+					add_idea = RUS_a_divided_army_3
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = RUS_a_divided_army_3
+				}
+				swap_ideas = {
+					remove_idea = RUS_a_divided_army_3
+					add_idea = RUS_a_divided_army_4
+				}
+			}
+			else = {
+				remove_ideas = RUS_a_divided_army_4
 			}
 		}
 		search_filters = { FOCUS_FILTER_ARMY_XP }
@@ -2586,7 +2711,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_popularity = {
-				ideology = democratic
+				ideology = radical
 				popularity = 0.1
 			}
 			add_manpower = 75000
@@ -2858,7 +2983,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = RUS_okhrana_1
+				remove_idea = RUS_okhrana
 				add_idea = RUS_okhrana_2
 			}
 			upgrade_intelligence_agency = upgrade_form_department
@@ -2868,7 +2993,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = RUS_smersh
+		id = RUS_smersh_focus
 		icon = GFX_focus_RAJ_a_policy_of_silence
 		cost = 5
 
@@ -2892,6 +3017,7 @@ focus_tree = {
 				limit = { NOT = { has_done_agency_upgrade = upgrade_psycho_warfare } }
 				upgrade_intelligence_agency = upgrade_psycho_warfare
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = RUS_okhrana_2
 				add_idea = RUS_okhrana_3
@@ -3655,7 +3781,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.1
 			add_popularity = {
-				ideology = democratic
+				ideology = radical
 				popularity = 0.05
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt

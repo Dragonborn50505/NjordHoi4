@@ -248,5 +248,90 @@ spriteTypes = {
 		name = "GFX_goal_GEO_wine"
 		texturefile = "gfx/interface/goals/GEO_wine.png"
 	}
-
+									
+	SpriteType = {# Integrate the Militia
+		name = "GFX_goal_integrate_the_militia"
+		texturefile = "gfx/interface/goals/integrate_the_militia.png"
+	}
+									
+	SpriteType = {# French Army Focus
+		name = "GFX_goal_FRA_army"
+		texturefile = "gfx/interface/goals/FRA_army.png"
+	}
+									
+	SpriteType = {# French Army Idea
+		name = "GFX_ideas_FRA_army"
+		texturefile = "gfx/interface/ideas/FRA_the_red_chevron.png"
+	}
+									
+	SpriteType = {# Generic Solidarity
+		name = "GFX_goal_generic_solidarity"
+		texturefile = "gfx/interface/goals/generic_solidarity.png"
+	}
+										
+	SpriteType = {# Generic Mobile Trucks
+		name = "GFX_goal_generic_mobile_trucks"
+		texturefile = "gfx/interface/goals/generic_mobile_trucks.png"
+	}
+											
+	SpriteType = {# Socialist Lone Warrior / Red Flag Bearer
+		name = "GFX_goal_RUS_socialist_lone_warrior"
+		texturefile = "gfx/interface/goals/RUS_socialist_lone_warrior.png"
+	}
+												
+	SpriteType = {# French Soldiers Training
+		name = "GFX_goal_FRA_infantry_alternate"
+		texturefile = "gfx/interface/goals/FRA_infantry_alternate.png"
+	}
+													
+	SpriteType = {# French Cavalry
+		name = "GFX_goal_FRA_cavalry_default"
+		texturefile = "gfx/interface/goals/FRA_cavalry_default.png"
+	}
+														
+	SpriteType = {# Generic Dual Purpose Guns
+		name = "GFX_goal_generic_dual_purpose_guns"
+		texturefile = "gfx/interface/goals/generic_dual_purpose_guns.png"
+	}
+															
+	SpriteType = {# French Officer
+		name = "GFX_goal_FRA_army_officer"
+		texturefile = "gfx/interface/goals/FRA_army_officer.png"
+	}
+																
+	SpriteType = {# Generic Armoured Car Red
+		name = "GFX_goal_generic_armoured_car_general"
+		texturefile = "gfx/interface/goals/generic_armoured_car_general.png"
+	}
+																	
+	SpriteType = {# Generic Heavy Armour French
+		name = "GFX_goal_generic_heavy_armour_french"
+		texturefile = "gfx/interface/goals/generic_heavy_armour_french.png"
+	}
+																		
+	SpriteType = {# French Tank and Infantry
+		name = "GFX_goal_FRA_tank_and_infantry"
+		texturefile = "gfx/interface/goals/FRA_tank_and_infantry.png"
+	}
+																			
+	SpriteType = {# French Tank
+		name = "GFX_goal_FRA_tank"
+		texturefile = "gfx/interface/goals/FRA_tank.png"
+	}
+																				
+	SpriteType = {# Generic Mobile Artillery Medium
+		name = "GFX_goal_generic_mobile_artillery_medium"
+		texturefile = "gfx/interface/goals/generic_mobile_artillery_medium.png"
+	}
+																					
+	SpriteType = {# French Navy
+		name = "GFX_goal_FRA_navy"
+		texturefile = "gfx/interface/goals/FRA_navy.png"
+	}
+																						
+	SpriteType = {# Generic Radar Installation Red and Gold
+		name = "GFX_goal_generic_radar_instillation"
+		texturefile = "gfx/interface/goals/generic_radar_instillation.png"
+	}
+	
 }

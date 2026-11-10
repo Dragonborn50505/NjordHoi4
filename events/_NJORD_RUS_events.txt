@@ -1,0 +1,70 @@
+add_namespace = RUS_events
+
+# The Hammerfest Agreement
+country_event = {
+	id = RUS_events.1
+	title = RUS_events.1.t
+	desc = RUS_events.1.d
+	picture = GFX_report_event_SOV_demands
+
+	is_triggered_only = yes
+
+	option = {
+		name = RUS_events.1.a
+		add_threat = -5
+        485 = {
+			transfer_state_to = PRE
+			set_demilitarized_zone = yes
+		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+		add_timed_idea = {
+			idea = RUS_prussian_payment_for_hammerfest
+			days = 365
+		}
+		hidden_effect = {
+			485 = {
+				add_core_of = PRE
+			}
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+	option = {
+		name = RUS_events.1.b
+		add_war_support = -0.05
+		SOV = {
+			add_war_support = 0.05
+		}
+	}
+}
+
+# The Franco-Russian Treaty
+country_event = {
+	id = RUS_events.2
+	title = RUS_events.2.t
+	desc = RUS_events.2.d
+	picture = GFX_report_event_por_salazar_franco2
+
+	is_triggered_only = yes
+
+	option = {
+		name = RUS_events.2.a
+		add_ideas = RUS_russo_french_trade_treaty
+		custom_effect_tooltip = generic_skip_one_line_tt
+		SOV = {
+			add_ideas = RUS_franco_russian_trade_treaty
+		}
+		custom_effect_tooltip = RUS_franco_russian_treaty_tt
+		ai_chance = {
+			base = 0
+		}
+	}
+	option = {
+		name = RUS_events.2.b
+		add_war_support = -0.05
+		SOV = {
+			add_war_support = 0.05
+		}
+	}
+}

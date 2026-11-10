@@ -672,3 +672,16 @@
  GER_hwa_aircraft_sector_tt: "For the next 365 days:"
  GER_mission_to_india_tt: "The more Indian Nations we support, the higher their resistance against Yuan will be."
  GER_china_expeditionary_corps_tt: "Our support of Vietnamese Resistance fighters will not become immediately apparent, but will have an effect."
+
+
+
+ # EVENTS
+ GER_events.1.t: "Germany Demands Renewal Of The Treaty of Metz"
+ GER_events.1.d: "A diplomatic demand has arrived from Nuremberg. Germany insists that the Treaty of Metz, signed after the Great European War to guarantee the demilitarisation of the Franco-German border, be renewed. Nuremberg argues that the recent French military build-up along the frontier constitutes a violation of the agreement and demands that our government restore the previous restrictions. Accepting would ease tensions with Germany, allowing us more time to rebuild for the coming war; refusing would make it clear that the Revolution will not be bound by the arrangements of bourgeoisie 'treaties'."
+ GER_events.1.a: "We are not yet ready for direct conflict, renew the treaty."
+ GER_events.1.b: "The Revolution will not be bound by empty threats!"
+
+ GER_events.2.t: "An Invitation From The Central Powers"
+ GER_events.2.d: "An unexpected diplomatic proposal has arrived from Berlin. Germany, alongside Prussia and the other members of the Central Powers, has extended an invitation for Spain to join their alliance. The wounds of the Great European War, when Spanish and German forces fought bitterly across the Pyrenees, have hardly faded. Yet the geopolitical realities of the present day have brought former enemies into an uneasy alignment. With Europe once again drifting towards confrontation with the advent of the French and Italian revolution, Spain must decide whether its future lies alongside its former adversaries, or to seek aid from outside of Europe as it once did."
+ GER_events.2.a: "Former enemies, now turned allies."
+ GER_events.2.b: "We will never trust the Krauts again."

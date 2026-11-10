@@ -77,11 +77,12 @@ set_politics = {
 }
 
 set_popularities = {
-	absolutist = 16
-	communism = 10
+	absolutist = 10
+	communism = 2
 	democratic = 54
 	fascism = 12
-	neutrality = 8
+	neutrality = 4
+	radical = 18
 }
 
 # DIPLOMACY
@@ -99,12 +100,6 @@ if = {
     }
 }
 
-if = {
-    limit = {has_dlc = "Together for Victory" }
-
-    add_to_tech_sharing_group = SOV_research
-}
-
 add_opinion_modifier = { target = ATJ modifier = positive_134 }
 add_opinion_modifier = { target = BAN modifier = negative_75 }
 add_opinion_modifier = { target = BRA modifier = positive_176 }
@@ -112,9 +107,7 @@ add_opinion_modifier = { target = BRU modifier = negative_178 }
 add_opinion_modifier = { target = COG modifier = negative_200 }
 add_opinion_modifier = { target = COL modifier = positive_154 }
 add_opinion_modifier = { target = CSA modifier = negative_56 }
-set_truce = { target = CSA days = 588 }
 add_opinion_modifier = { target = CUB modifier = negative_181 }
-set_truce = { target = CUB days = 588 }
 add_opinion_modifier = { target = DOM modifier = positive_31 }
 add_opinion_modifier = { target = FOR modifier = positive_9 }
 add_opinion_modifier = { target = FRA modifier = negative_89 }
@@ -122,15 +115,12 @@ add_opinion_modifier = { target = GER modifier = negative_195 }
 add_opinion_modifier = { target = HOL modifier = negative_104 }
 add_opinion_modifier = { target = ICE modifier = negative_99 }
 add_opinion_modifier = { target = IRE modifier = negative_191 }
-set_truce = { target = IRE days = 588 }
 add_opinion_modifier = { target = ITA modifier = negative_100 }
 add_opinion_modifier = { target = JAP modifier = negative_199 }
 add_opinion_modifier = { target = KOR modifier = negative_50 }
 add_opinion_modifier = { target = MEX modifier = negative_136 }
-set_truce = { target = MEX days = 588 }
 add_opinion_modifier = { target = PAK modifier = negative_50 }
 add_opinion_modifier = { target = PHI modifier = negative_200 }
-set_truce = { target = PHI days = 588 }
 add_opinion_modifier = { target = PRE modifier = negative_194 }
 add_opinion_modifier = { target = PRU modifier = positive_176 }
 add_opinion_modifier = { target = QUE modifier = positive_151 }
@@ -140,7 +130,6 @@ add_opinion_modifier = { target = SAR modifier = negative_85 }
 add_opinion_modifier = { target = SIN modifier = negative_50 }
 add_opinion_modifier = { target = SPR modifier = negative_195 }
 add_opinion_modifier = { target = TEX modifier = negative_83 }
-set_truce = { target = TEX days = 588 }
 add_opinion_modifier = { target = TIG modifier = negative_200 }
 add_opinion_modifier = { target = TNE modifier = negative_90 }
 add_opinion_modifier = { target = TUR modifier = negative_197 }
@@ -149,7 +138,6 @@ add_opinion_modifier = { target = W02 modifier = negative_200 }
 add_opinion_modifier = { target = W03 modifier = negative_50 }
 add_opinion_modifier = { target = W05 modifier = negative_50 }
 add_opinion_modifier = { target = W07 modifier = negative_4 }
-give_military_access = W07
 add_opinion_modifier = { target = W08 modifier = negative_50 }
 add_opinion_modifier = { target = W10 modifier = negative_200 }
 add_opinion_modifier = { target = W13 modifier = positive_197 }
@@ -169,10 +157,8 @@ add_opinion_modifier = { target = X07 modifier = negative_11 }
 add_opinion_modifier = { target = X20 modifier = negative_150 }
 add_opinion_modifier = { target = X21 modifier = negative_1 }
 add_opinion_modifier = { target = X32 modifier = negative_67 }
-set_truce = { target = X32 days = 588 }
 add_opinion_modifier = { target = X35 modifier = negative_50 }
 add_opinion_modifier = { target = X36 modifier = negative_58 }
-set_truce = { target = X36 days = 588 }
 add_opinion_modifier = { target = X40 modifier = negative_60 }
 add_opinion_modifier = { target = X45 modifier = negative_60 }
 add_opinion_modifier = { target = X46 modifier = negative_95 }
@@ -204,9 +190,15 @@ add_ideas = {
 	culture_russian
 	RUS_entrenched_opposition_1
 	RUS_federalist_deadlock
+	RUS_a_divided_army
 }
 set_stability = 0.6
 set_war_support = 0.3
+
+set_variable = { RUS_new_london_monthly_population = 0.1 }
+set_variable = { RUS_new_london_conscription_factor = 0.05 }
+set_variable = { RUS_army_mobilization_speed = 0.05 }
+set_variable = { RUS_army_land_reinforce_rate = 0.01 }
 
 recruit_character = SOV_yegor_nikolayevich
 recruit_character = SOV_yevgeniy_skobelev
@@ -270,36 +262,6 @@ if = {
 	limit = {
 		has_dlc = "La Resistance"
 	}
-	create_operative_leader = {
-		name = "Jelena Lazareva"
-		GFX = "gfx/leaders/Europe/portrait_europe_generic_operative_female_1.dds"
-		traits = {}
-		bypass_recruitment = no
-		available_to_spy_master = yes
-		female = yes
-		nationalities = { SOV }
-	}
-
-	create_operative_leader = {
-		name = "Jelena Pavlova"
-		GFX = "gfx/leaders/Europe/portrait_europe_generic_operative_female_2.dds"
-		traits = {}
-		bypass_recruitment = no
-		available_to_spy_master = yes
-		female = yes
-		nationalities = { SOV }
-	}
-
-	create_operative_leader = {
-		name = "Ludmila Ostrovskaya"
-		GFX = "gfx/leaders/Europe/portrait_europe_generic_operative_female_3.dds"
-		traits = {}
-		bypass_recruitment = no
-		available_to_spy_master = yes
-		female = yes
-		nationalities = { SOV }
-	}
-
 	create_operative_leader = {
 		name = "Kiril Kornilov"
 		GFX = "gfx/leaders/Europe/portrait_europe_generic_operative_male_1.dds"
@@ -514,9 +476,6 @@ if = {
 	}
 }
 ### TANK DESIGNS ###
-if = {
-	limit = { has_dlc = "No Step Back" }
-}
 add_equipment_to_stockpile = { type = artillery_equipment amount = 192 producer = SOV }
 add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 1 producer = SOV }
 add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 57 producer = SOV }

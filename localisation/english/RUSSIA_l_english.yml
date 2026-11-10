@@ -20,23 +20,28 @@
  RUS_aircraft_design_tt: "\n§YDepending on the researched technologies, an aircraft variant will be created:§!"
  RUS_project_m_design_tt: "\n§YDepending on the researched technologies, an aircraft variant can be created§!"
  RUS_global_power_projection_tt: "\nMerges §YNaval National Spirits§! and modifies it by\n$MODIFIER_NAVY_MAX_RANGE_FACTOR$: §G15.00%§!\n$MODIFIER_INDUSTRIAL_CAPACITY_DOCKYARD_FACTOR$: §G10.00%§!"
- RUS_franco_russian_treaty_tt: "If either @FRA §YFrance§! or @SOV §YRussia§! go to war with a §TMajor Nation§!, both countries will §Rlose§! the national spirit."
+ RUS_franco_russian_treaty_tt: "\nIf either @FRA §YFrance§! or @SOV §YRussia§! go to war with a §TMajor Nation§!, both countries will §Rlose§! the national spirit."
  RUS_catechism_tt: "§gDoubles the effect of our previously taken focus.§!"
 
 # LEADER TRAITS
  RUS_supreme_commander: "Supreme Commander"
- RUS_cultof_the_leader: "Cult of the Captain"
+ RUS_cult_of_the_leader: "Cult of the Captain"
 
 # DYNAMIC MODIFIERS
  RUS_new_london: "'New London"
  RUS_army: "The Russian Armed Forces"
 
+# IDEOLOGY
+ national_populism: "National Populism"
+ national_populism_desc: "National Populism is a broad term for political ideologies associated with authoritarian ultranationalism involving a rejection of liberalism and socialism in favor of a traditionalist, militaristic, and one-party authoritarian state. Despite many commonalities, one aspect National Populist movements may differ on is their stances on religion, for example Integralism, and the parties that follow it, is popular in predominantly Catholic countries and calls for religion and government to become largely intertwined through a monarchy, while the Syrian Social Nationalist Party is explicitly secular in nature. Despite any differing beliefs National Populists may have, a component of National Populist thought that is widespread is Ultranationalism, irredentism, and revanchism as is the case with Pan-Slavism, Pan-Turkism, Pan-Germanism, and some strains of Islamism."
+
 #IDEAS
  RUS_entrenched_opposition_1: "Entrenched Opposition"
  RUS_entrenched_opposition_1_desc: "President Nikita Putyatin's efforts to transform Russia have thoroughly been blocked by a weakening but powerful opposition, largely concentrated around the staunch federalist and parliamentary clique. If the opposition is to be broken, the men leading it will have to be dealt with in some way..."
  RUS_the_democratic_dictatorship_1: "Death Throes of Parliamentarism"
- RUS_the_democratic_dictatorship_2: "'In pain, a new Russia is being born - a Russia that is neither Tsarist nor Bolshevik. But how much blood will be shed.'"
- RUS_the_democratic_dictatorship_2_desc: "The 'Democratic Dictatorship' - New 'Republic'"
+ RUS_the_democratic_dictatorship_1_desc: "President Nikita Putyatin's efforts to transform Russia have thoroughly been blocked by a weakening but powerful opposition, largely concentrated around the staunch federalist and parliamentary clique. If the opposition is to be broken, the men leading it will have to be dealt with in some way..."
+ RUS_the_democratic_dictatorship_2: "The 'Democratic Dictatorship' - New 'Republic'"
+ RUS_the_democratic_dictatorship_2_desc: "'In pain, a new Russia is being born - a Russia that is neither Tsarist nor Bolshevik. But how much blood will be shed.'"
  RUS_the_democratic_dictatorship_3: "The 'Democratic Dictatorship' - Taking Shape"
  RUS_the_democratic_dictatorship_3_desc: "'In pain, a new Russia is being born - a Russia that is neither Tsarist nor Bolshevik. But how much blood will be shed.'"
  RUS_the_democratic_dictatorship_4: "The 'Democratic Dictatorship' - Centralised Power"
@@ -61,6 +66,8 @@
  RUS_russian_cause_idea_desc: "The fight does not end - we are Russians, and we have a sacred duty to destroy the three-headed hydra of Kaiserism, Communism, and Liberal 'Democracies'.\nFatherland or death!"
  RUS_okhrana: "The Department of State Security"
  RUS_okhrana_desc: "While the name could be different, the Okhrana didn't change much. Informants, spies, provocateurs - all tools are good in the fight for the soul of the Motherland."
+ RUS_smersh_focus: "SMERSH"
+ RUS_smersh_focus_desc: "The Russian counter-intelligence is welded together by the sacrificial blood of fallen comrades and murdered agents, whose unwritten names calls for heroism and revenge - death to spies, death to saboteurs, and death to traitors!"
  RUS_SMERSH: "SMERSH"
  RUS_SMERSH_desc: "The Russian counter-intelligence is welded together by the sacrificial blood of fallen comrades and murdered agents, whose unwritten names calls for heroism and revenge - death to spies, death to saboteurs, and death to traitors!"
  RUS_order_267_idea: "Prikaz No. 267"
@@ -99,10 +106,11 @@
  RUS_russian_support: "Russian Support"
  RUS_russian_support_desc: ""
  RUS_russo_french_trade_treaty: "Franco-Russian Treaty"
- RUS_russo_french_trade_treaty_desc: "Whatever here. \nIf either @FRA §YFrance§! or @SOV §YRussia§! go to war with a §TMajor Nation§!, both countries will §Rlose§! their national spirit."
+ RUS_russo_french_trade_treaty_desc: "\nIf either @FRA §YFrance§! or @SOV §YRussia§! go to war with a §TMajor Nation§!, both countries will §Rlose§! their national spirit."
  RUS_franco_russian_trade_treaty: "Franco-Russian Treaty"
- RUS_franco_russian_trade_treaty_desc: "Whatever here. \nIf either @FRA §YFrance§! or @SOV §YRussia§! go to war with a §TMajor Nation§!, both countries will §Rlose§! their national spirit."
-
+ RUS_franco_russian_trade_treaty_desc: "\nIf either @FRA §YFrance§! or @SOV §YRussia§! go to war with a §TMajor Nation§!, both countries will §Rlose§! their national spirit."
+ RUS_a_divided_army: "A Divided Army"
+ RUS_a_divided_army_desc: "The Russian Army is no longer a unified institution, but a battleground for the competing visions of Russia's future. The Svobodniks, hardened veterans and national-populist revolutionaries loyal to Nikita Putyatin, seek to purge the Republican establishment through intimidation and violence. Meanwhile, Republican and Constitutionalist officers under Generals Nikolayevich and Skobelev struggle to preserve the Republic's democratic institutions, while Tsarist commanders rally their own forces in hopes of restoring the old Empire. Skirmishes, purges and acts of insubordination have become commonplace throughout the ranks. With every passing day, the struggle threatens to spill beyond the barracks and engulf Russian society in a civil war."
 
 ### Focuses ###
  Russia_Focus: "Russian Focus Tree"
@@ -315,6 +323,9 @@
  RUS_redemption: "Redemption of Guilt"
  RUS_redemption_desc: "Sometimes soldiers commit crimes, sometimes even officers commit crimes. We have the institute of penal units for them, but this institute is small and used only from time to time. The Okhrana has proposed reorganisation of the penal units for their better use."
 
+ RUS_smersh_focus: "SMERSH"
+ RUS_smersh_focus_desc: "The Russian counter-intelligence is welded together by the sacrificial blood of fallen comrades and murdered agents, whose unwritten names calls for heroism and revenge - death to spies, death to saboteurs, and death to traitors!"
+
 # AIR FOCUSES
  RUS_evaluate_VVFR: "Evaluate the VVFR"
  RUS_evaluate_VVFR_desc: "The Voyenno-Vozdushny Flot Rossii (Military Air Fleet of Russia), an independent branch of the military since 1929, has evolved from a small bomber support group into a substantial force over the past few years. Nevertheless, many issues remain, including the replacement of obsolete or foreign aircraft and the reorganisation of air command."
@@ -484,3 +495,14 @@
 
  RUS_mission_to_teheran: "Mission to Khiva"
  RUS_mission_to_teheran_desc: "A complex relationship has developed between us and the Turkestan state. On one hand, the region has remained amicable in their relations to Russia, on the other, a quick and decisive military operation would put this once-lawless land under our control with ease."
+
+# EVENTS
+ RUS_events.1.t: "The Hammerfest Agreement"
+ RUS_events.1.d: "A diplomatic offer has arrived from the Russian Republic. For decades, the northern Norwegian territories surrounding Hammerfest have remained under Russian occupation, much to the displeasure of successive Prussian governments. Now, seeking to avoid another confrontation with Prussia, Moscow has proposed selling the territory and returning it to Prussian administration. The agreement would finally bring another piece of Norway under our control, while potentially putting an end to a longstanding source of tension between our two nations. We must now decide whether to accept the Russian offer."
+ RUS_events.1.a: "A cheap price for National Sovereignty."
+ RUS_events.1.b: "The only thing we will pay is in Russian blood!"
+
+ RUS_events.2.t: "The Franco-Russian Treaty"
+ RUS_events.2.d: "A proposal has arrived from Moscow, offering to deepen economic cooperation between the Russian Republic and our revolutionary government. Under the proposed agreement, Russia would supply us with vital raw materials, particularly oil, in exchange for preferential Russian access to French steel and coal. Despite the considerable ideological differences between our governments, both nations appear willing to put politics aside in pursuit of mutual economic interests. Such an arrangement could provide much-needed relief to our struggling industries, though accepting closer ties with the Russian Republic may prove an uncomfortable compromise for the Revolution."
+ RUS_events.2.a: "Cooperation in pursuit of mutual destruction of Germany is acceptable."
+ RUS_events.2.b: "Russian National-Populism is only second to German Kaiserism, there will be no deals with either!"

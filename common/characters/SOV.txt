@@ -9,13 +9,23 @@ characters={
 				small="GFX_Portrait_europe_generic_land_6_small"
 			}
 		}
-		corps_commander={
-			skill=3
+		advisor = {
+			slot = army_chief
+			traits = { army_chief_offensive_2 }
+		}
+		field_marshal={
+			skill=5
 			attack_skill=5
 			defense_skill=4
-			planning_skill=1
-			logistics_skill=1
+			planning_skill=2
+			logistics_skill=3
 			legacy_id=0
+			traits = {
+				peasant_sympathiser
+				winter_specialist
+				organizer
+				cavalry_officer
+			}
 		}
 	}
 
@@ -36,6 +46,9 @@ characters={
 			planning_skill=1
 			logistics_skill=1
 			legacy_id=0
+			traits = {
+				peasant_sympathiser
+			}
 		}
 	}
 
@@ -110,12 +123,15 @@ characters={
 			}
 		}
 		corps_commander={
-			skill=2
-			attack_skill=2
+			skill=3
+			attack_skill=3
 			defense_skill=4
-			planning_skill=1
+			planning_skill=2
 			logistics_skill=1
 			legacy_id=0
+			traits = {
+				BALTIC_anti_bolshevik
+			}
 		}
 	}
 
@@ -236,6 +252,9 @@ characters={
 			planning_skill=1
 			logistics_skill=1
 			legacy_id=0
+			traits = {
+				trait_SOV_monarchist_sympathizer
+			}
 		}
 	}
 
@@ -296,6 +315,9 @@ characters={
 			planning_skill=1
 			logistics_skill=1
 			legacy_id=0
+			traits = {
+				BALTIC_anti_bolshevik
+			}
 		}
 	}
 
@@ -396,6 +418,9 @@ characters={
 			planning_skill=1
 			logistics_skill=1
 			legacy_id=0
+			traits = {
+				trait_SOV_monarchist_sympathizer
+			}
 		}
 	}
 
@@ -616,6 +641,9 @@ characters={
 			planning_skill=1
 			logistics_skill=1
 			legacy_id=0
+			traits = {
+				trait_SOV_monarchist_sympathizer
+			}
 		}
 	}
 
@@ -1128,6 +1156,11 @@ characters={
 		}
 		country_leader={
 			ideology=populism
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=national_populism
 			expire="1965.1.1.1"
 			id=-1
 		}

@@ -14655,11 +14655,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		allow_branch = {
-			is_puppet = yes
+			is_subject = yes
 		}
 
 		available = {
-			is_puppet = yes
+			is_subject = yes
 		}
 
 		completion_reward = {
@@ -14691,7 +14691,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_TFV_AUTONOMY }
 
 		available = {
-			is_puppet = yes
+			is_subject = yes
 		}
 	
 		available_if_capitulated = yes
