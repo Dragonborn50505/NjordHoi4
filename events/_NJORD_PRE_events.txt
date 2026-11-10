@@ -1,0 +1,37 @@
+add_namespace = PRE_events
+
+# Prusso-German Trade Agreement
+country_event = {
+	id = PRE_events.1
+	title = PRE_events.1.t
+	desc = PRE_events.1.d
+	picture = GFX_report_event_generic_stock_traders
+
+	is_triggered_only = yes
+
+	option = {
+		name = PRE_events.1.a
+		add_timed_idea = {
+			idea = PRE_prussian_trade
+			days = 365
+		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+		PRE = {
+			add_timed_idea = {
+				idea = PRE_german_trade
+				days = 365
+			}
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+	option = {
+		name = PRE_events.1.b
+		hidden_effect = {
+			PRE = {
+				set_country_flag = NJORD_PRE_GERMANY_SAID_NO
+			}
+		}
+	}
+}

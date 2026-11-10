@@ -6,11 +6,375 @@
  FRA_IF_MODERNISATION_AND_CARTELISATION_WAS_PICKED: "§TIf§! §YModernisation and Cartelisation§! §Twas completed§!:"
  FRA_IF_MILITARISATION_OF_THE_PROLETARIAT_WAS_PICKED: "§TIf§! §YMilitarisation of the Proletariat§! §Twas completed§!:"
  FRA_IF_EMBRACE_PLANISM_WAS_PICKED: "§TIf§! §YEmbrace Planism§! §Twas completed§!:"
+ FRA_the_menace_from_within_TT: "An Operaton to root out the §RCommunist Threat§! will be commenced."
+ FRA_FRENCH_REVOLUTION_TT: "Several of our '§YNational Spirits§!' will change"
 
 
 ### Country ###
 
-### Focus Tree ###
+
+### Focuses ###
+ commune_of_france_focus: "Commune of France Focus Tree"
+
+ FRA_office_des_chemins_de_fer: "Office des Chemins de Fer"
+ FRA_office_des_chemins_de_fer_desc: "A Congress meeting over the status of France's infrastructure at the BGT showed the disorganisation of our rail system and how backwards it became. The Congress agreed on the need to create a new office specifically tasked with the development and maintenance of our railways to connect all the parts of France together."
+
+ FRA_voluntary_association: "Voluntary Association"
+ FRA_voluntary_association_desc: "The greatest economic policy is not one that is dictated from above, but one that arises naturally from below, from the proletariat, from the workers. We reject statism, and instead embrace evermore the decentralisation and liberation of the French economy: we will not triumph by trying to corral the masses, but by letting the People freed by Mother Anarchy usher in a new age of prosperity."
+
+ FRA_socialist_education: "Socialist Education"
+ FRA_socialist_education_desc: "We must recognise that education under the Third Republic was excellent. Through education, she conquered the minds of the French and sowed the seeds of meritocracy. However, it was hindered by its bourgeois biases and did not do enough to develop talents coming from humbler origins. Education under the Revolution does not make the same mistakes: the brightest will rise and serve the People."
+
+ FRA_support_workers_initiatives: "Support Workers’ Initiatives"
+ FRA_support_workers_initiatives_desc: "The ingenuity and common sense of the masses, most attuned with production, cannot be underestimated. We must make a particular effort to help initiatives coming from the economic base not just become reality, but flourish. Not only will this no doubt ensure the men involved in these projects dedicate themselves even harder to their work, seeing their efforts rewarded, but it will be a great propaganda success, both at home and abroad."
+
+ FRA_consumer_cooperatives: "Consumer Cooperatives"
+ FRA_consumer_cooperatives_desc: "Economist Charles Gides had developed before the War a network of cooperative stores, linked to the old SFIO. He had hoped to usher in the "Cooperative Republic" through an alternative economy, freed from capitalism and undue profits. Since the Revolution, consumer cooperatives have become ubiquitous, working hand in hand with producer cooperatives to bring all manners of goods to the workers at fair prices, massifying exchanges."
+
+ FRA_garden_city_movement: "Garden City Movement"
+ FRA_garden_city_movement_desc: "A better living environment means a healthier, more productive worker. To accommodate rural-urban migration and support the development of our industrial capacity, large-scale projects were approved to have neighborhoods sprout on the edge of cities or on demolished slums. Built according to the ideals of the "garden city" movement, they feature family homes and medium-density housing, shared services and amenities, as well as large green spaces."
+
+ FRA_close_bureaucratic_loopholes: "Close Bureaucratic Loopholes"
+ FRA_close_bureaucratic_loopholes_desc: "One recurring criticism of the revolutionary State rings particularly true: economic democracy is a complicated business, leading to intolerable inefficiencies. We must work to make the economy more efficient, without endangering its deliberative and workers-led qualities, and the most obvious point to start is to review our bureaucracy and trim down excessive processes which invite both sluggishness and corruption."
+
+ FRA_modernisation_and_cartelisation: "Modernisation and Cartelisation"
+ FRA_modernisation_and_cartelisation_desc: "Socialism is above all the triumph of economic efficiency over capitalist nonsense. The Revolution has already led to a great rationalisation of the Economy, industrial federations working with the federal government to streamline production. However, this process can be taken further by encouraging the rise of specialised industrial ensembles, working harmoniously together, cogs in a great machine."
+
+ FRA_embrace_chain_production: "Embrace Chain Production"
+ FRA_embrace_chain_production_desc: "French industry at the turn of the Revolution was particular. Though there already was a large proletarian class, many of the workers were still close to their artisan forefathers, with chain production and scientific management only being the norm in a select few industries. Though this might be occasionally unpopular with some workers, we must continue to convince unions to embrace this important step in the modernisation of production."
+
+ FRA_mass_application_of_pre_stressed_concrete: "Mass Application of Pre-Stressed Concrete"
+ FRA_mass_application_of_pre_stressed_concrete_desc: "Developed by engineer Eugène Freyssinet, pre-stressed concrete is a new step in modern construction. Concrete, the industrial age’s darling material, has been found to have a durability and deformation problem with time and wear. The method helps alleviate these risks, particularly for constructions under heavy use or pressure. New, more durable builds will begin, and a campaign of strengthening of at-risk sites will be launched."
+
+ FRA_develop_the_rhone_valley: "Develop the Rhône Valley"
+ FRA_develop_the_rhone_valley_desc: "The Rhône, lifeline of the South-East, wedged between the Massif Central and the Alps, has historically been capricious. Artery of trade between North and South, it is also notoriously prone to flooding, severely hindering development along its banks. This was of course before Man tamed Nature through labour and technology, and we now can canalise the temper of the river for the benefits of our industrial development."
+
+ FRA_exploit_the_massif_central: "Exploit the Massif Central"
+ FRA_exploit_the_massif_central_desc: "The economic and infrastructural development of the regions of the Alps and the Massif Central allows for a greater exploitation of the mineral resources available there. Our prospectors discovered new mineral deposits and we are now ready to start exploiting them on an industrial scale!"
+
+ FRA_voice_of_the_people: "Voice of the People"
+ FRA_voice_of_the_people_desc: "France, beating heart of the Revolution, must be able to reach workers everywhere, particularly those still chafing under the chains of Capital. From Paris to the World, we will emit radio programming in all major languages and let our comrades know that they are not alone. This cannot however be simply a propaganda broadcast: we will ensure alongside news and socialist messaging, will be broader education, entertainment and good music."
+
+ FRA_point_du_jour_studios: "Point du Jour Studios"
+ FRA_point_du_jour_studios_desc: "The Seventh Art is undeniably the medium of this century, a revolution in entertainment and communication of ideas. Born in France, we must admit that Hollywood and Babelsberg have overtaken cinema’s home in production capacity, pumping out counter-revolutionary material for the world. We will support the extension of facilities in the Parisian suburb of Billancourt, Point du Jour (Sunrise) Studios, and fund innovative film-makers."
+
+ FRA_build_the_autoroutes: "Build the Autoroutes"
+ FRA_build_the_autoroutes_desc: "The engineer and urbanist Henri Prost came up with a plan to develop highways around the Parisian region to link the outlying suburbs. This idea is receiving widespread support and the BGT decided to fund new projects to expand highways through the Federation. The communes of Marseille and Lyon also asked him to draw highway plans for their cities."
+
+ FRA_militarisation_of_the_proletariat: "Militarisation of the Proletariat"
+ FRA_militarisation_of_the_proletariat_desc: "We cannot forget this: we, workers, are at war, we have always been at war, we will always be at war. Production is a tireless battle, unceasing warfare against creeping Reaction, against the degenerated bourgeoisie and all that dare stand against History. The producers of France must rise to the occasion, embrace their destiny and work harder than ever to forge the tools of global liberation."
+
+ FRA_second_wave_of_mechanisation: "Second Wave of Mechanisation"
+ FRA_second_wave_of_mechanisation_desc: "France is a powerhouse of agriculture, our land has always been generous in her bounty. However, despite our efforts, the harvest of today doesn’t look too different from that of before the Revolution, and in some cases, from hundreds of years ago. It is still largely a manual, labour-intensive process, with mechanisation progressing slowly. To further modernise our economy, we must help our farmers embrace the new tools of their trade."
+
+ FRA_large_scale_rural_projects: "Large-Scale Rural Projects"
+ FRA_large_scale_rural_projects_desc: "We are a nation of small landholders, when the Revolution came there were few large estates to seize, few tenant farmers. This has meant that life in the countryside has remained relatively unchanged in the last decades. With, however, notable exceptions: the generalisation of agricultural cooperatives and experiments in voluntary collectivisation. These are the necessary path in rural economic development, and we will encourage their work."
+
+ FRA_communal_waterworks: "Communal Waterworks"
+ FRA_communal_waterworks_desc: "For now, it would be unthinkable to ask our peasant class to put in common their plots of land, source of great pride for them. However, there are many aspects of agriculture that can and should be mutualised to make them more efficient and our agriculture eventually even more productive: waterworks are one of them. Encouraging communes to coordinate such projects will sow the seeds of further modernisation of the rural economy."
+
+ FRA_ploughshares_into_swords: "Ploughshares into Swords"
+ FRA_ploughshares_into_swords_desc: "The rural world must help share the burden of the great industrial war effort, do its part in the defence of the Revolution. Decentralised production, particularly of goods necessitating a more artisanal touch in their creation or assembly, will be able to find a home there. The harvest secured, the peasant, the artisan will help their comrade the soldier be equipped in the best quality goods, proud descendants of ancestral craftsmanship."
+
+ FRA_new_hydroelectric_dams: "New Hydroelectric Dams"
+ FRA_new_hydroelectric_dams_desc: "Our mountainous regions in the Alps and the Massif Central have plenty of high flow rivers, a perfect environment to install a clean and lasting source of energy and help revitalise the backwards, rural mountainous regions of France."
+
+ FRA_syndical_consolidation: "Syndical Consolidation"
+ FRA_syndical_consolidation_desc: "As the next step in the great revolutionary conflict draws nearer, we must call upon union federations to reject all rivalries, all interpersonal conflicts, all corporatisms, and embrace productive discipline. The time for debate has passed, now is the time to return to their roots as tools of class war: there is only one working class, let there be one singular syndical will."
+
+ FRA_embrace_planism: "Embrace Planism"
+ FRA_embrace_planism_desc: "Scientific management of the Economy is the future, we will not rest until the economic forces of the Nation are in total harmony with the State, working towards triumph over the enemies of the workers. We cannot allow ourselves to be distracted by any lesser concerns, we must have only one goal: the survival and triumph of the Revolution, and so we must follow one line, one will, one great Plan."
+
+ FRA_expand_manufacture_darmes_de_tulle: "Expand Manufacture d'Armes de Tulle"
+ FRA_expand_manufacture_darmes_de_tulle_desc: "Tulle, in the Limousin, is home to one of the oldest and largest weapons manufacturing plants in France, with thousands of workers principally focused on small arms. As our rearmament drive ramps up, it's been decided to further expand the "Manu", as the locals have nicknamed it. Indeed, unlike other plants situated in traditional industrial bassins, notably in the North, this one is far from the reach of the enemy."
+
+ FRA_directorate_for_arms_production: "Directorate for Military Production"
+ FRA_directorate_for_arms_production_desc: "If we want to triumph in the arms race against reactionary powers, we cannot allow any distraction to hamper our war readiness efforts. A federal executive committee composed of officers, experts, lawmakers, labour leaders will be assembled and use the full might of the proletarian State to take direct control of our defence industry, ensuring it is perfectly tuned to respond to our needs and drives."
+
+ FRA_maximise_production_capacity: "Maximise Production Capacity"
+ FRA_maximise_production_capacity_desc: "We start at a disadvantage in population and industrial base in the race against Reaction. Though we will try our best to catch up, we must do the most we can with what we have. Our free workers are more productive, more skilled than the ones desperately awaiting their liberation. If we must work twice as hard too, we will. One great effort is all we need, and our comrades are more than ready to throw themselves in this effort for us all."
+
+ FRA_the_working_mans_automobile: "The Working Man's Automobile"
+ FRA_the_working_mans_automobile_desc: "Socialism means answering the needs and desires of the workers. Many of our comrades think about the possibilities opened up by owning one's own car, unbound by laid tracks and traced itineraries. Public, mass transportation will never be replaced, but this dream must be made attainable for all hard-working Frenchmen. And so we will reach out to automobile industry unions to design new models, durable, but simple and cheap, easily repairable."
+
+ FRA_new_tractor_factories: "New Tractor Factories"
+ FRA_new_tractor_factories_desc: "With mechanisation efforts came a new need for a large number of mechanical agricultural equipment, most importantly tractors, base building block of this drive. Each cooperative already has theirs, but if we want to fully transition away from the scythe, every peasant must have his own modern beast of burden. To avoid further burdening of our existing automobile industry plants, we will direct the creation of dedicated factories."
+
+ FRA_viticulture_of_the_twentieth_century: "Viticulture of the Twentieth Century"
+ FRA_viticulture_of_the_twentieth_century_desc: "Wine, cornerstone of French sociability, any excuse being the right one to open a good bottle. The reds of Bordeaux or Burgundy, the whites of Lorraine, they all have admirers here and abroad. Harvest is still largely done by hand, and the whole process is still rather artisanal: though some parts are too crucial to modernise, giving the nectar its subtle taste, we can help the production of wine into this century with modernised equipment."
+
+ FRA_expand_the_textile_industry: "Expand the Textile Industry"
+ FRA_expand_the_textile_industry_desc: "From the early days of the industrial revolution, the textile industry has always been at the forefront of economic progress. Now, synthetic fibers, new machines and techniques have made possible the mass production, in less labour-intensive manners, of textiles and clothing. Paris is already the capital of fashion, soon we will also be the homeland of affordable, durable textile: our workers will be better dressed than all the ladies of Berlin."
+
+ FRA_road_to_war: "The Road to War"
+ FRA_road_to_war_desc: "War with Germany is inevitable, not only does it hold hostage our brothers in Alsace and Lorraine, but with its many Reichspakt puppets it stands as the main counter-revolutionary power in Europe, if not the world, tyrant lording over hundreds of millions. This will stop, we will avenge them all, and free our comrades. The World War was not to be the last, the Revolutionary War will have to follow."
+
+ FRA_renseignements_generaux: "The Renseignements Généraux"
+ FRA_renseignements_generaux_desc: "Some look with suspicion at any centralising efforts, any power given to federal authorities, particularly when it comes to sensitive subjects such as intelligence work. We understand their concerns, but we must adapt to new realities and centralise our efforts if we want to be able to defend the Revolution and further her interests abroad, stand against the Algiers' Second Bureau and Berlin's Abteilung III b."
+
+ FRA_the_haunting_spectre: "The Haunting Spectre"
+ FRA_the_haunting_spectre_desc: "In every port, in every warehouse, in every barrack, and on every assembly line of every counter-revolutionary power, we have a comrade, ready to do his part in the great struggle. Our network of informants and sympathisers is unmatched, as after what could be greater than the global working class: we will use it to its full extent as we further our intelligence efforts."
+
+ FRA_vanguard_of_the_revolution: "Vanguard of the Revolution"
+ FRA_vanguard_of_the_revolution_desc: "Those still struggling under capitalist oppression look to us with great hope, as the great beacon, the beating heart of the Revolution. We must do anything in our power to help those breaking the chains, it is our historical duty. Ideological and material support are one thing, but we must go further and be directly involved in the armed struggle: Frenchmen will fight throughout the world for the freedom of all workers, and triumph, just like we triumphed here."
+
+ FRA_curie_research_institute: "Curie Research Institute"
+ FRA_curie_research_institute_desc: "Obscurantism has no place in our nation. Materialism guides us: our politics are scientific, and so science should be given all that it needs to progress. Our brightest minds will work to serve France, the Revolution, and thus Humanity as a whole. We will the establish a research institute aimed at cementing our technological superiority, named after the brilliant physicists Pierre and Marie Curie."
+
+ FRA_synthetic_chemistry: "Synthetic Chemistry"
+ FRA_synthetic_chemistry_desc: "France is great and resourceful, but it does not have everything. Oil, rubber, tungsten and chromium are all lacking and we must not rely on foreign exporters when conflict comes. We must research new ways to acquire these resources from what we already have. Some scientists even suggest we may be able to engineer those resources."
+
+ FRA_electric_machines: "Electric Machines"
+ FRA_electric_machines_desc: "While computing traces back to the tabulating machine, we have since made massive breakthroughs in the field of computing. Our mathematicians already assure use that those new machines are of a tremendous help for rapid and efficient calculus. Given some patronage and time, we can only imagine the possibilities of this new field."
+
+ FRA_damocles: "The Damocles Project"
+ FRA_damocles_desc: "Inspired by the Cambridge Conference during the Tenth Congress of the Third Internationale, a reunion took place today at the University of Cambridge. A group of theoretical physicists from Britain and France are requesting funding for the establishment of the 'Damocles Project', a joint British-French committee for nuclear research."
+
+ FRA_zoe_project: "Zoé Project"
+ FRA_zoe_project_desc: "While the Damocles Project held great promise, the refusal by [ENG.GetNameDef] to take part crippled the cooperation between our scientists and theirs. Regardless, we must persevere and try to figure out what uses we can make of the atom. We will dedicate this project to the very woman who discovered Radium and set us on this path."
+
+ FRA_fortify_the_german_border: "Fortify the German Border"
+ FRA_fortify_the_german_border_desc: "Fortifications along the border with the German Empire were torn down in the aftermath of the Great War, part of the victors' harsh demands. We have abided by this shameful state of things for too long, and must begin at once work on a modern defensive line along the border with Alsace, occupied Lorraine and Luxembourg. Static warfare of twenty years ago will not, cannot be repeated, but it would be foolish to leave our door open."
+
+ FRA_extend_the_line: "Watch on the Low Countries"
+ FRA_extend_the_line_desc: "Our fortification efforts have focused on the slopes of the Vosges and the banks of Meuse, but it's obvious that the plains of the Low Countries are a highway for German troops, aimed straight at the Revolution's heart. We will not repeat the mistakes of 1914, never allow another Schlieffen Plan, and so we must extend the line of fortifications, all the way to the Channel."
+
+ FRA_demand_haute_savoie: "Demand Haute-Savoie"
+ FRA_demand_haute_savoie_desc: "The preposterous Swiss occupation of Haute-Savoie, justified by arcane treaties, has been allowed to go on for too long, relic of the early revolutionary days when we would not yet stand up against reactionary threats. We will push for an immediate evacuation of the region by Swiss forces, and will not hesitate to use force if they refuse to see reason: how dare they hide behind neutrality as they brutalise French workers!"
+
+ FRA_liberate_iberia: "Liberate Iberia"
+ FRA_liberate_iberia_desc: "Right at our southern border, just across the Pyrenees, capitalism and imperialism still persists. With our efforts, we will achieve what no French imperialist could - total control of Iberia. But we are different. We do it for the common people, not imperial ambitions. Syndicalism will succeed in Iberia!"
+
+ FRA_take_down_germany: "Take Down Germany"
+ FRA_take_down_germany_desc: "The time has come for the French proletariat. The Revolution shall prevail: History is with us, who could stand against us? With nothing but comradely love in our hearts for the German people, we will ensure that the Empire that enslaves them is mercilessly torn down, and that the junkers pay for what they did to our fathers, to our brothers. We will avenge them: to the Rhine, to the Elbe, to Berlin, and beyond!"
+
+ FRA_the_red_danube: "The Red Danube"
+ FRA_the_red_danube_desc: "The Danubian peoples have proven their incapability to commence a successful socialist revolution in their country and liberate themselves from the Habsburg tyranny. We shall assist them, then. Likewise, all the peoples still under the tyranny of this anachronistic empire will be freed. Europe will be free of the last of the reactionary empires."
+
+ FRA_flank_the_rhineland: "Flank the Rhineland"
+ FRA_flank_the_rhineland_desc: "The low-lying plains of the Low Countries are an obvious point of entry into the strategically crucial Rhineland, heart of the German war machine. Swift liberation of the lowlands will ensure that warfare is taken to Germany, that we do not fight on our soil: we must be bold, the time for geopolitical pleasantries is over, there is now only a struggle for the future of the Revolution, and thus Humanity: a brighter future awaits us on the Rhine."
+
+ FRA_world_revolution: "World Revolution"
+ FRA_world_revolution_desc: "With the Revolution now well established in Europe, we can start to look outwards and launch a formidable plan to liberate the whole world from the reactionaries and imperialists. Our struggle will end once the last of them is tried before the people for their crimes. Vive la République Socialiste Mondiale !"
+
+ FRA_european_revolution: "European Revolution"
+ FRA_european_revolution_desc: "While the idea of a World Revolution is noble, we have to stay realistic. With smart influence and no other reactionary power to oppose us, we shall soon see the other continents convert to Syndicalism. However, we must ensure that Europe is free of reactionaries. Vive la République Socialiste Européenne !"
+
+ FRA_peaceful_revolution: "Peaceful Revolution"
+ FRA_peaceful_revolution_desc: "We hear those who claim that the Revolution cannot end, and it will not. However, we cannot afford to constantly wage war in all corners of the world without cause. The workers will find their way as we act as a beacon of desires. Let us focus on ourselves instead. Vive la République Socialiste Française !"
+
+ FRA_the_congress_of_the_internationale: "The Congress of the Third Internationale"
+ FRA_the_congress_of_the_internationale_desc: "Heads of socialist, syndicalist, and totalist parties, Heads of State and Governments, Foreign Ministers and journalists have all arrived in Paris for the opening of the Ninth Congress of the Third Internationale. We are proud to once again host the Congress and humbly hope to use it to reinforce our position as the leading socialist country in the world."
+
+ FRA_mission_to_india: "Mission to India"
+ FRA_mission_to_india_desc: "India asked for our support in their struggle against its neighbours, the Lahore imperialists and the Princely Federation reactionaries. They ask of us that we send military advisors to train their officers and their troops. We will ensure this aid arrives rapidly, so that they may unite India faster."
+
+ FRA_arab_committee: "Socialist Anti-Colonial Committee"
+ FRA_arab_committee_desc: "Reactionary traitors hiding in Algiers, led by the decrepit despot Pétain, exploit the native proletariat ceaselessly in their attempt to crush the Revolution. She will come to them and trample their holdouts, not one day too soon, but comrades led by Algerian Mohamed Saïl, have suggested redoubling our efforts in favour of native revolutionaries across Africa: we will give them the tool to work towards their liberation."
+
+ FRA_working_women: "Working Women"
+ FRA_working_women_desc: "During the Congress, Helen Crawfurd took the stage with her flaming speech about the women's role in the World Revolution. We supported her arguments and now we are ready to implement common sense reforms regarding the status of working women in our society. The reactionaries can gawk, we will surely have the last laugh."
+
+ FRA_international_avant_garde: "International Avant-Garde"
+ FRA_international_avant_garde_desc: "A world congress of artistic and literary workers has outlined the basis of a movement towards \"proletarian art\". They stated three goals: to break the chains of bourgeois culture, to bring art to the people, and to help unleash the creative power of the masses. To reach these aims, they encourage that one's art be palatable to the proletariat, that it depicts the struggle of the workers, and that it serves the Revolution."
+
+ FRA_found_the_phalanstere_international: "Found the Phalanstère International"
+ FRA_found_the_phalanstere_international_desc: "Closer military, economic and scientific cooperation between socialist nations is a crucial next step in the Revolution. The framework for such cooperation will be established under the auspices of the Internationale. It will be named the \"Phalanstère International\", in homage to the work of utopian socialist Charles Fourier: by building this Phalanstère, the workers of the world will conquer the utopia they have earned."
+
+ FRA_integrate_the_corps_francs: "Integrate the Corps Francs"
+ FRA_integrate_the_corps_francs_desc: "The Corps Francs, our commando troops, proved their worth in the Great War and the revolutionary events of the past decades, breaking impossible stalemates through sheer will and heroism. Infiltration and neutralisation, opening a breach for our regular forces: only the bravest of braves are willing to take the risks of such missions, and we need this fervour in the coming confrontations with the Revolution's enemies."
+
+ FRA_the_riflemans_friend: "The Rifleman's Friend"
+ FRA_the_riflemans_friend_desc: "We invent every day new ways of slaughter, and so we might forget that no matter how advanced our machines of death, it is not them that triumph, that conquer, that advance, but man. In the end, it all still comes down to a man and his weapon. Each soldier is a worker for the Revolution, and he must be able to trust that his tools are best suited for his grim but necessary task."
+
+ FRA_eyes_on_the_ligne_bleue: "Eyes on the Ligne Bleue"
+ FRA_eyes_on_the_ligne_bleue_desc: "The \"Blue Line\", the Vosges, named after the beautiful morning hue of the venerable mountains, is our frontier with German imperial-junkerism. Our way to peace and victory lies in the vales and forests of the range, towards our brothers in Alsace, our comrades of the Ruhr. We cannot allow the enemy to choose the field of battle, we must push, attack, take the fight to him, surprise him even through impassable terrain."
+
+ FRA_reform_the_high_command: "Reform the High Command"
+ FRA_reform_the_high_command_desc: "Our Federal Forces have for too long been suspected of counter-revolutionary sympathies, and this has hindered organisational reforms. A safe high-command was deemed preferable to an efficient high-command. This stagnation cannot be allowed to continue, or France, already at a disadvantage in the coming fight with Reaction, will never be able to defend the proletariat's burning torch. Adaptability and discipline will be our goal."
+
+ FRA_all_for_the_revolution: "All for the Revolution"
+ FRA_all_for_the_revolution_desc: "The decisive factor in warfare will always be will. Will to triumph, will to fulfil our History-ordained destiny. We will win because we must, because the French people has been tasked with saving civilisation from bourgeois rot. We will win because facing us are mere slaves of Capital, not free men fighting to break the chains. They may have Krupp steel, but we have the united will of the proletariat: victory is certain."
+
+ FRA_our_comrades_fight_too: "Our Comrades' Fight, Too"
+ FRA_our_comrades_fight_too_desc: "In the coming armed struggle against Capital, we are not alone: not only can we count on our allies, but in every nation, in every factory, the worker hopes for our victory, await his liberation. Some will go further, throw off their chains and join us here, and we will assemble a grand international army of free proletarians to assist our forces. What could the enemy do against our combined might?"
+
+ FRA_levee_en_masse: "Levée en Masse"
+ FRA_levee_en_masse_desc: "When our elders in Revolution were threatened by Reaction, they mobilised the entire Nation to defend its newly won liberty. Young men fought, women bandaged their wounds, children and elders preached the creed of Liberty. We must first match their fervour in the mobilisation of the masses, and then we will go further. We fight for Liberation, for the new economic age, no cause is more deserving of our sacrifices."
+
+ FRA_the_methodical_war: "The Methodical War"
+ FRA_the_methodical_war_desc: "This century has killed the daring charge, the heroic last stand. If there was any doubt, the Great War has proved this beyond a doubt: warfare is now a question of planning, of timetables, of logistics, of charts. War is a purely materialistic question. If we want our stand to defend the Revolution to be successful, we must not seek vainglory but intellectual and material supremacy over the forces of Capital."
+
+ FRA_an_armys_stomach: "An Army's Stomach"
+ FRA_an_armys_stomach_desc: "A great enemy of the Revolution once said "an army marches on its stomach". He was then defeated, not by braver men or superior tactics, but by stretched supply lines. He did not take his advice to heart, and so History left him behind. We will not make the same mistake, our mission is too important. The comrade-soldier will fight, will triumph, and will be well-fed, well-clothed, and well-armed, the whole way."
+
+ FRA_principe_de_concentration: "Principe de Concentration"
+ FRA_principe_de_concentration_desc: "France has the best artillerymen in the world, we have proved this in many a campaign, and will prove it again in the next. Our perfectly timed, superbly executed barrages will sweep away the armies of Capital, destroy the fortresses of Reaction, and blast the way open for our men, to Berlin and beyond! There is only one queen that we will abide by, and it is she, Artillery, Queen of the Battlefield."
+
+ FRA_aero_terrestrial_integration: "Aero-Terrestrial Integration"
+ FRA_aero_terrestrial_integration_desc: "A single decisive punch, through the enemy lines, that's all it takes. A lucky breakthrough? We only believe in what we can see, luck will have nothing to do with it. We need perfect coordination between our forces, and we will relentless drill it into our men. Air power will soften up our targets, artillery will blow them away, armour and infantry will mop up whatever meagre resistance a serf of the Kaiser can muster to being liberated."
+
+ FRA_supremacy_of_movement: "Supremacy of Movement"
+ FRA_supremacy_of_movement_desc: "We must face the facts: the enemy outnumbers us, and dwarves us in industrial might. We have with us the international brotherhood of workers, but a plan to negate Capital's advantages couldn't hurt. And for that, we must be daring, the next war cannot be one of positions, it must be over before they know what has happened to them. Advance, envelop, encircle, crush, to the end of the Earth, until we are free."
+
+ FRA_la_petite_reine: "La Petite Reine"
+ FRA_la_petite_reine_desc: "The \"Little Queen\", the bicycle: our enemies might scoff, but this quintessential object of the workers' life will be an instrument of our triumph. When our troops outflank theirs, discreetly infiltrate their lines, quickly advancing only powered by proletarian might, we shall see who laughs last. Their vehicles will breakdown, run out of gas, will be confined to roads: ours will fly across the countryside."
+
+ FRA_overrun_capitals_front_lines: "Overrun Capital's Front Lines"
+ FRA_overrun_capitals_front_lines_desc: "If we want to overwhelm the enemy and negate his advantages, we must be quick, our troops must cross vast expanses in hours, days at most. Embrace the future: entire divisions, supplies, artillery and all, not chained to the limited energy of Man and Beast, but effortlessly carried by machines, ready to fight at a moment's notice. This is a new age, the age of motors: production has been revolutionised, warfare soon will be too."
+
+ FRA_the_modern_comrade_soldier: "The Modern Comrade-Soldier"
+ FRA_the_modern_comrade_soldier_desc: "Gone are the days of militiamen with a red armband, a Lebel, and a dream of Revolution. The modern comrade-soldier is perfectly trained, drilled, equipped to deal with all that the coming conflict will throw at him. His officer are not the tyrants of yesterday, they are united in one common purpose, one common will, and they too have been tirelessly studying the Great War and the various revolutionary conflicts that followed."
+
+ FRA_expand_the_fusiliers: "Expand the Fusiliers"
+ FRA_expand_the_fusiliers_desc: "There remains a secondary but nonetheless concerning counter-revolutionary threat across the Mediterranean Sea. Shadows of their former selves, the men we once called brothers, the Exiles, await the killing blow of History, their captives calling to us in despair. When the opportunity comes, we will have to land in Algiers, and so we need to revitalise our traditions of marine infantry, to act as first glorious wave of liberation upon the African continent."
+
+ FRA_corps_francs_hunters: "Corps Francs Hunters"
+ FRA_corps_francs_hunters_desc: "Our commandos have achieved tremendous successes in action, first to break whatever desperate defences Capital foolishly mounted. Tip of the spear of Revolution, it must be ever sharper. And so this elite of elites will be further reinforced, trained, tirelessly working until enemy commanders turn tails at the mere possibility of their presence on the battlefield."
+
+ FRA_deepen_the_fog_of_war: "Deepen the Fog of War"
+ FRA_deepen_the_fog_of_war_desc: "There is no greater power, no greater advantage in warfare than knowledge. We will know the enemy's every move and obscure our own, making him pounce at shadows before stabbing him in the back. This won't be difficult: everywhere we advance, we are in friendly territory, the workers awaits us; everywhere we are pushed back, revolutionary solidarity will sabotage their efforts at secrecy. The enemy will question his sanity as he is swept away."
+
+ FRA_chasseurs_portes: "Chasseurs Portés"
+ FRA_chasseurs_portes_desc: "Rapid deployment is critical, both to reinforce everywhere the enemy attacks and to push through any break in the front. For this purpose, we will assemble specialised mobile infantry troops, ready to respond to any situation that arise in the coming revolutionary war, and to act as wedge tearing apart resistance."
+
+ FRA_corps_du_genie_militaire: "Corps du Génie Militaire"
+ FRA_corps_du_genie_militaire_desc: "Our engineer corps has a long and proud history, supporting French might across Europe and across the globe, shattering apart any resistance. Whether they come from the Polytechnique School or have risen up the ranks, our combat engineers take us across rivers, shelter us safely behind defences, and blow apart the enemy's. With further training and ever more advanced tools, they will continue to act as the backbone of our forces."
+
+ FRA_rapid_response_detachments: "Rapid Response Detachments"
+ FRA_rapid_response_detachments_desc: "The many are one, revolutionary warfare means that sacrifice must be made, but this cannot mean that the lives of our comrades is thrown away. Especially when France must face enemies with a demographic advantage. Rapid treatment, experienced doctors and dedicated nurses, efficient deployment of reinforcements: we will do everything in our power to minimise casualties, and to prevent a wound to be the end of one's commitment to the Revolution."
+
+ FRA_legacy_of_the_grande_batterie: "Legacy of the Grande Batterie"
+ FRA_legacy_of_the_grande_batterie_desc: "Our forefathers conquered through the might of artillery, slowly honing their craft. We are the inheritors of more than a century of such traditions, and we will write down our own glorious chapter, reducing to rubble all that stands in the way of Progress, in the way of the People. Witness us, artillerymen of yesteryears; take note, our descendants: the triumph of the Revolution comes from the barrel of the cannon."
+
+ FRA_precise_fire_control: "Precise Fire Control"
+ FRA_precise_fire_control_desc: "Red rolling thunder will fall upon the enemies of the working class. Perfect coordination between our artillerymen will wash away any resistance standing against us, a barrage technique already perfected during the Great War but that will now serve us faithfully and be adapted to the new battlefields of revolutionary conquest. We are the best in our field but could always be better, for we serve the most important cause."
+
+ FRA_dual_purpose_howitzers: "Dual-Purpose Howitzers"
+ FRA_dual_purpose_howitzers_desc: "Our engineers are hard at work to take ever further the science of dispersing threats to the Revolution. Their latest find is another proof, if one was ever needed, of French ingenuity: cannons that can be converted for both anti-aircraft and anti-armour action, to accompany our troops and respond to their every need."
+
+ FRA_comrade_estiennes_heritage: "Comrade Estienne's Heritage"
+ FRA_comrade_estiennes_heritage_desc: "General Estienne, a hero who revolutionised forever the battlefield. Against a hierarchy set in their ways, which wasted in doomed offensives the infantryman's life, he carried the torch of armoured warfare and earned his nickname of \"Père des chars\", Father of the Tanks. They were the instrument of triumphs in the latter stages of the Great War, that sadly could not be transformed into victory: the Revolutionary War will prove their usefulness again."
+
+ FRA_proletarian_knights: "Proletarian Knights"
+ FRA_proletarian_knights_desc: "The cavalry of past centuries might be on its way out, but its spirit shines brightly. Knights, hussars, dragons, the mantle of their bold and glorious legacy has been taken up by a new cavalry, motorised, armoured, heavily armed, but still charging and sowing terror in the enemy's heart. Yesterday, the serf was shut out of serving on horseback, today it is the proletarian who has the mechanical know-how to operate the beasts of modernity."
+
+ FRA_chars_du_futur: "Chars du Futur"
+ FRA_chars_du_futur_desc: "Armour is a quickly advancing field: from artillery on shaky tractors twenty years ago, we are getting ever closer to future tanks able to turn the tide of battles by themselves, if not the war herself. Whether they act as support for our infantry or point of the sword we drive into the heart of Capital, they are revolutionary. And so we cannot allow ourselves to fall behind in terms of either technological or strategic developments."
+
+ FRA_the_battlefields_new_queen: "The Battlefield's New Queen"
+ FRA_the_battlefields_new_queen_desc: "Artillery will always have our hearts, but we must admit that there she has a rival for title of Queen of the Battlefield: armour. She has already proven herself invaluable in recent conflicts, and we know that she will only get more crucial as technology and tactics advance. However, we have no need to choose between our loves: artillery will blast open the way, armour will sweep away the enemy, and our true mistress, Revolution, will triumph."
+
+ FRA_mobile_fortresses: "Mobile Fortresses"
+ FRA_mobile_fortresses_desc: "We will simply crush Reaction under the infatigable threads of our armour, advancing as the tide, slowly but surely, unstoppable. Reaction will throw all that it has towards our mobile bastions, and we will laugh heartily at its desperate attempt at hindering the march of the proletariat. After all, there is no rush, Clio is on our side, the outcome of this eternal war is pre-ordained."
+
+ FRA_overwhelming_firepower: "Overwhelming Firepower"
+ FRA_overwhelming_firepower_desc: "The feeble attempts of the slaves of Capital to hold back the might of the free workers will be blown apart by our armoured cavalry. Fiercely, we advance, rightfully, we push on to Berlin, until the Kaiser bows to the humblest seamstress of the Internationale and begs for our forgiveness. We cannot tolerate for even a second more to see our comrades in chains, and so we cannot slow down in our attacks: armour will furiously pierce through."
+
+ FRA_restructure_the_marine_federale: "Restructure the Marine Fédérale"
+ FRA_restructure_the_marine_federale_desc: "We must admit that the Federal Navy has seen better days, Revolution and the loss of France's ultramarine territories have hurt our naval forces. If we want to triumph against the Algiers regime and effectively assist our British comrades on the seas, a heavy-handed rearmament programme as well as a re-examination of our strategic priorities is needed urgently."
+
+ FRA_shipbuilding_union_expertise: "Shipbuilding Union Expertise"
+ FRA_shipbuilding_union_expertise_desc: "Our arsenals are filled to the brim with talented workers, some who have worked for decades in the shipbuilding trade, and thus know every crook and cranny of every vessel. Their expertise could too easily be overlooked: their unions' federation must play an integral role in our re-armement programme, working in tandem with the Federal Navy. We are still lagging behind, but will make up for it with proletarian ingenuity."
+
+ FRA_expand_toulon_arsenal: "Expand Toulon Arsenal"
+ FRA_expand_toulon_arsenal_desc: "As the foremost base of our Mediterranean forces, Toulon is without contest our most important military port, kept busy by the constant threat posed by reactionary presence in Corsica and frequent confrontations with Algiers' navy. If we want to affirm our supremacy over the sea, and one day go on the offensive, the infrastructures of Toulon must be expanded."
+
+ FRA_refurbish_atlantic_bases: "Refurbish Atlantic Bases"
+ FRA_refurbish_atlantic_bases_desc: "Our naval bases facing the Atlantic, chiefly situated in Brittany, are moribund: attention is turned to the South, and the Channel and the Ocean are guarded by the British. This shameful complacency cannot continue, we too must be able to go toe to toe with the Kaiser and his satellites at sea. Dockyards and submarine bases will be modernised, and we will convert to military use some of the local shipbuilding industry."
+
+ FRA_red_fleet_old_school: "Red Fleet, Old School"
+ FRA_red_fleet_old_school_desc: "If we want to reconquer our naval standing, a grand fleet is necessary, one that can stand proudly next to our allies'. Large, powerful ships will impose the people's will on the seas, beautiful prowesses of French engineering and shipbuilding, armed with the most impressive naval gunnery French ships have carried."
+
+ FRA_the_aeronavales_day: "The Aéronavale's Day"
+ FRA_the_aeronavales_day_desc: "It's obvious to us now that large, lumbering ships are the obsessions of naval officers with something to prove or make forget. Let the leviathans painfully move into position, a swam of planes will welcome them. They won't know what hit them, and will be at the bottom of the Channel before they realise that unwieldy colossuses make for great target practice."
+
+ FRA_meute_tactics: "Meute Tactics"
+ FRA_meute_tactics_desc: "We have a lot of catching up to do, starting at clear disadvantage against our main enemy's navy. A situation the French Navy knows well, sadly. What we lack in tonnage, we will make up for in bravery, and cunning: undersea corsairs will hunt down ships as a pack. Soon enough, the Kaiserliche Marine will be too afraid to leave its ports, haunted by the shadows of our sea hounds."
+
+ FRA_the_peoples_lance: "The People's Lance"
+ FRA_the_peoples_lance_desc: "France was a pioneer in advances of submarine technology, it's up to us to renew this glorious legacy. Submariners are the daring anti-heroes of this century's naval war, feared, respected, hated. Some particularly idealistic or conservative officers still cling on to outdated notions for the development of our navy, they will have to get used to the new paradigm: no tactic is too dirty in the fight against Capital."
+
+ FRA_the_noose_around_capitals_neck: "The Noose around Capital's Neck"
+ FRA_the_noose_around_capitals_neck_desc: "Imperialist powers are reliant on trade, on the product of exploitation from their colonies. Without, they wither and die. We will do our proletarian duty and speed up that process, enacting a total blockade against the enemies of the Revolution. Helped by our allies, we will slowly but surely strangle the Empires, until they beg for mercy and liberation."
+
+ FRA_peoples_shield_and_broadside: "People's Shield and Broadside"
+ FRA_peoples_shield_and_broadside_desc: "Ultimately, it's still all about cannons. Bigger guns, better guns, more easily manoeuvrable, manned by dedicated sailors who won't hesitate to put their lives on the line to defend their floating fortresses against threats. Advancements in both our main and anti-aircraft gunnery will ensure that our fleet can reign unimpeded."
+
+ FRA_colonnes_de_neptune: "Colonnes de Neptune"
+ FRA_colonnes_de_neptune_desc: "Across the seas, reactionary threats still lurk. Marine infantry will be crucial in dealing once and for all with these remnants of an outdated system, to deal the mercy kill. Our marines' legacy is tainted by colonialism: they will wash away their units' sins by forging a new glorious history as the first red wave of righteous popular retribution landing on the beaches of imperial capitalism."
+
+ FRA_close_naval_coordination: "Close Naval Coordination"
+ FRA_close_naval_coordination_desc: "Rivalries between arms of the Navy cannot be tolerated, our situation cannot allow petty, unproductive competition. The naval war is fought on, under the seas and in the air, and each front will be finely tuned to work with the other, harmoniously toiling towards a single goal: glorious victory, death to Reaction."
+
+ FRA_chasseurs_tueurs_groups: "Chasseurs-Tueurs Groups"
+ FRA_chasseurs_tueurs_groups_desc: "Of course, we are not the only ones with submarines. The mutts of the enemy lurk, preying upon us: we won't allow ourselves to be hunted, and so we will become hunters. Specialised squadrons will wage total, permanent war against capitalist piracy, which seeks to hinder the collective efforts of the global proletariat against reactionary aggression."
+
+ FRA_protect_revolutionary_lifelines: "Protect Revolutionary Lifelines"
+ FRA_protect_revolutionary_lifelines_desc: "The might of revolutionary production can makeup for most capitalist inefficiencies, but sadly we have not yet invented ways to grow rubber in the French countryside and find oil where there is none. We will stockpile, we will find ways to make more with less, but some strategic goods will need to be gathered by comrades abroad: we cannot allow the sea-lanes bringing them to us to be cut off by the enemy."
+
+ FRA_naval_power_projection: "Naval Power Projection"
+ FRA_naval_power_projection_desc: "The future of sea warfare is in the aviation, more effective, precise, agile than any gun. Our experiments in this field have proved concluant, we must now move full steam ahead with the development of larger, better aircraft carriers, that will allow to punch above our weight, across the seven seas."
+
+ FRA_squadron_warfare: "Squadron Warfare"
+ FRA_squadron_warfare_desc: "Naval traditions are alive and well, and a well-ordered, well-directed fleet will still rule the waves. Once, the French Navy was dubbed \"La Royale\", she can now proudly call herself \"La Populaire\", her ships most impressive, their crew the pride of the people, drilled in revolutionary discipline: no-one will be able to stand against us when we contest control the seas."
+
+ FRA_brest_naval_academy: "Brest Naval Academy"
+ FRA_brest_naval_academy_desc: "With a long and proud history, the "École navale" of Brest, in Brittany has been the alma mater of most of our naval officers. Continuous training and formation to ensure they never get complacent will be an important step in renovation of the Federal Navy. But we will also expand its research facilities, with rebuilding will come innovation and modernisation."
+
+ FRA_international_naval_intelligence: "International Naval Intelligence"
+ FRA_international_naval_intelligence_desc: "Revolutionary camaraderie extends to intelligence sharing: our British and Italian comrades can also boast proud maritime traditions, and we would be foolish to pass up on potential cooperation in naval matters. Together, our efforts will thwart any attempt from the Revolution's enemies at going unnoticed."
+
+ FRA_gifts_for_enemy_ships: "Gifts for Enemy Ships"
+ FRA_gifts_for_enemy_ships_desc: "It's possible that we won't be able to undo our lateness in the naval race by the time the inevitable coming conflict falls upon Europe. No matter: we shall fight as dirty as we must. Channel, Atlantic, Mediterranean: on three fronts, Reichspakt ships will be welcomed by a generous spread of patient explosives. Death by a thousand cuts: ship by ship, their fleet will be whittled down, their shipping hindered."
+
+ FRA_la_lutte_aerienne: "La Lutte Aérienne"
+ FRA_la_lutte_aerienne_desc: "Still in its infancy during the Great War, aviation already revolutionised warfare. In the few years of the conflict, it made incredible strides, from reconnaissance to air jousts between gallant knights of the air, to bombings and mass deployment. Since then, at every turn aeroplanes have proved their incredible usefulness, and shown further potential. France was already a pioneer in the domain, she must stay dominant."
+
+ FRA_ecole_de_lair: "École de l'Air"
+ FRA_ecole_de_lair_desc: "As it was recently decided to create a separate branch of the Federal Forces for aviation, it's only natural that it gets its own officer formation school. The Air School will have aspiring officers be taught by the great pilots of the Great War and the Revolution, so that they may transmit their experience. Pioneers and fresh-faced new guards will no doubt stake out a glorious legacy for our air force."
+
+ FRA_naval_aerial_coordination: "Naval-Aerial Coordination"
+ FRA_naval_aerial_coordination_desc: "The Sky and Sea, terrifying forces of nature, have now been tamed by Mankind. They are, like everything else, a battlefield: the next conflict will no doubt also be fought there, and must be won there too. The air force was not given autonomy as a means to isolate it, but on the contrary to give more flexibility to its missions. Coordination with the Federal Navy will be essential, and any branch rivalry must be nipped in the bud."
+
+ FRA_hone_torpillage_skills: "Hone Torpillage Skills"
+ FRA_hone_torpillage_skills_desc: "Torpedoes strike fear in the heart of any seaman, a well-known tool by now they nonetheless get ever more sophisticated and deadly. Naturally, their potential must be harnessed for our cause, whether they come from the depths or from the air. We will hone our tactics with this most glorious of harpoons, ready to spear the modern sea monsters into scrap metal in a single blow."
+
+ FRA_arsenal_de_laeronautique: "Arsenal de l'Aéronautique"
+ FRA_arsenal_de_laeronautique_desc: "Great and brave pilots, we have aplenty. Brilliant engineers, we certainly do too. We must now combine their efforts to make tomorrow's aeroplane, to show that proletarian efforts can equal and best whatever Junkers, Amiot or Latécoère can put out. Research and testing facilities will be established to centralise our development efforts, and ensure we are not left behind in the air race."
+
+ FRA_barrage_david: "Barrage David"
+ FRA_barrage_david_desc: "Our engineers have worked for some time on the possibility of electromagnetic detection of aircraft. Finally, under the leadership of Pierre David, we will soon be able to implement it on a large scale. This first generation of field bistatic detection will allow us to create an invisible wall that will detect any aircraft that crosses it, immediately putting our own forces on alert and informing them of the enemy's approximate location."
+
+ FRA_popular_aviation: "Popular Aviation"
+ FRA_popular_aviation_desc: "The early days of aviation made it to be a hobby of the gentleman, the War showed that workers' sons could fly a plane better than the most prideful aristocrat. Many pilots kept flying after the Revolution, and some established flying clubs, occasionally based around unions. We will promote these and encourage young men to join, using these clubs to recruit the talented, and prepare others for roles as auxiliary pilots in the coming war."
+
+ FRA_les_amazones: "Les Amazones"
+ FRA_les_amazones_desc: "To ensure that as many available pilots as possible are in combat roles, we will create a female corps of auxiliary pilots. Famous sportswoman pilot Maryse Bastié has demanded to be able to join our air force, her wish will be granted: we hope her renown will lead more young women to consider this daring path. Indeed, though they will be assigned away from the front, to convoy and transport missions, there will still be a risk of danger."
+
+ FRA_politique_des_stocks: "Politique des Stocks"
+ FRA_politique_des_stocks_desc: "One of our main issues is mass production of aircraft, as these complex marvels of engineering are still often assembled in near-artisanal conditions. Through coordination with unions, we will work to create workshops, assembly lines that will let us ready a grand air fleet. We must be ready for combat, and cannot let the hope of a quick collapse of capitalistic powers hinder thorough preparations."
+
+ FRA_spirit_of_the_air_division: "Spirit of the Air Division"
+ FRA_spirit_of_the_air_division_desc: "General Fayolle, in the latter years of the Great War, made great strides in promotion of the use of aircrafts in warfare. The new air force owes much to his legacy. The early pilots, \"knights of the air\", no longer fly, but their elegant duels are still in the mind of every infantryman that witnessed them. No doubt that many of our pilots will seek to imitate their example, adding their names to the long list of heroes of French aviation."
+
+ FRA_beyond_the_frontiers: "Beyond the Frontiers"
+ FRA_beyond_the_frontiers_desc: "War is an economic question: production is the nerve of war. Bombing runs have so far been largely tactical, local, but we must embrace technical advances that allow a strategic use of aviation: we will strike their production centres, hinder their industry, reduce their infrastructure, their defences to rubble. They will learn that there is nowhere that is safe from our rightful assaults."
+
+ FRA_groupes_de_linfanterie_de_lair: "Groupes de l'Infanterie de l'Air"
+ FRA_groupes_de_linfanterie_de_lair_desc: "Already at the end of the Great War, the idea of infantry parachuted behind enemy lines to break stalemates had begun to emerge among the most daring officers. As planes have grown ever more imposing, this hope is now a possibility, and early tests have proved conclusive. We will assemble a first elite of paradropped infantry, ready to take on missions that yesterday seemed like folly, today like a logical new step in tactics."
+
+ FRA_adaptable_strike_tactics: "Adaptable Strike Tactics"
+ FRA_adaptable_strike_tactics_desc: "Flexibility, adaptability will be the way to victory, we cannot afford to rely on a single tactic to blast open the way for our ground troops. Multi-purpose bombers will be produced, that will be able to both neutralise smaller ground targets and assist in larger strategic efforts."
+
+ FRA_assault_brigades: "Assault Brigades"
+ FRA_assault_brigades_desc: "To open the way for our troops and terrorise the enemy, specialised crafts will be produced that will rain fire and lead upon those who dare stand against the march of History. Lightweight, these will conduct daring missions that will get them as close as possible to the targets, to ensure not only that it is hit, but that all witnesses can testify of the skills of our angels of Death."
+
+ FRA_reaction_propulsion_experiments: "Réaction Propulsion Experiments"
+ FRA_reaction_propulsion_experiments_desc: "Propulsion by a rocket engine is a long-mulled over advancement in aeroplane design, allowing for speed yet unmatched by classic engines. Proofs of concepts have already shown that it is possible, and the first prototypes for military use are already impressive. All it takes now is standardisation and refinement of the technology, and the Revolution will have total supremacy over the skies."
+
+ FRA_hurricane_of_fire: "Hurricane of Fire"
+ FRA_hurricane_of_fire_desc: "There is power in the masses, this is true politically, this is true militarily. We will cover the heavens with our wings, attacking as one great aerial proletarian phalanx, overwhelm the enemy with our united firepower. Red wings in the wind, red skies in the night, nothing will stand in the path of progress our heroic mission done, only a new dawn, the rising sun announcing to the world that we are one day closer to the triumph of Revolution."
 
 
 ### Ideas ###
@@ -26,3 +390,98 @@
  FRA_the_humiliation_of_piedmont_desc: "The invasion of socialist Italy was intended to prevent revolution from spreading into France. Initially, imperial forces achieved considerable success, occupying Piedmont and Savoy, and promising a swift restoration of order across the Alps. Instead, the Italian revolutionary armies struck back, encircling and destroying much of the French expeditionary force. The defeat was devastating not only for the army, but for the Empire's remaining credibility. Soldiers returned home disillusioned, officers began questioning the competence of their superiors, and the French people were once again forced to mourn thousands of men lost in a war that had promised so much and delivered so little."
  FRA_conspiracies_of_the_general_staff: "Conspiracies of the General Staff"
  FRA_conspiracies_of_the_general_staff_desc: "The French officer corps has not forgotten the disasters of the Great European War or the subsequent humiliation in Italy. Across the army, officers privately question the competence and legitimacy of the imperial government, with some openly discussing the need for a new government capable of restoring France's military strength. Some advocate for a military more integrated into the civilian government, others have taken up the ideas of radical ideologies such as Fascism or National Populism, inspired by political movements in Russia, while the most radical factions have begun entertaining cooperation with revolutionary elements if doing so would allow them to remove the existing government."
+
+
+ FRA_vanguard_of_the_revolution_idea: "Vanguard of the Revolution"
+ FRA_vanguard_of_the_revolution_idea_desc: ""
+ FRA_support_equipment_production_bonus: "La Petite Reine"
+ FRA_support_equipment_production_bonus_desc: ""
+ FRA_vehicle_production_bonus: "Machines of War"
+ FRA_vehicle_production_bonus_desc: ""
+ FRA_armored_car_production_bonus: "Proletarian Knights"
+ FRA_armored_car_production_bonus_desc: ""
+ FRA_artillery_production_bonus: "Legacy of the Grande Batterie"
+ FRA_artillery_production_bonus_desc: ""
+ FRA_tank_production_bonus: "Mobile Fortresses"
+ FRA_tank_production_bonus_desc: ""
+ FRA_spg_td_production_bonus: "Overwhelming Firepower"
+ FRA_spg_td_production_bonus_desc: ""
+ FRA_purged_military: "Military Purge"
+ FRA_purged_military_desc: ""
+ FRA_capital_ship_production_bonus: "Red Fleet, Old School"
+ FRA_capital_ship_production_bonus_desc: ""
+ FRA_screens_production_bonus: "The Aéronavale's Day"
+ FRA_screens_production_bonus_desc: ""
+ FRA_aap_aircraft_production_bonus: "Politique Des Stocks"
+ FRA_aap_aircraft_production_bonus_desc: ""
+
+ FRA_scars_of_the_french_civil_war: "Scars of the French Civil War"
+ FRA_scars_of_the_french_civil_war_desc: "France has endured yet another devastating upheaval, following the already catastrophic losses of the Great European War. The Second Communard Revolution has left the country deeply divided, its institutions shattered and its population exhausted by years of political violence. The victorious Communard forces are now partially demobilising, reorganising their ranks and attempting to incorporate what remains of the former French Army. However, revolutionary militias and former army formations remain poorly coordinated, inadequately trained and uncertain of their place in the new military hierarchy. Though the old regime has fallen, France is far from ready to fight another war."
+
+ FRA_worker_oriented_economy: "Worker-Oriented Economy"
+ FRA_worker_oriented_economy_desc: "With the old government dismantled, the Communards have assumed control over the entirety of the French economy. Factories, workshops and major industries are being reorganised under new syndicalist principles, with workers' organisations increasingly involved in production, distribution and economic planning. The objective is to reshape the French economy around the needs and welfare of its working population, rather than the interests of the former imperial establishment and industrial elites. However, these reforms remain in their infancy. The disruption of the civil war, uncertainty over ownership and the lack of an established economic framework have made the transition anything but straightforward."
+
+ FRA_the_marseille_martyrs_3: "The Marseille Martyrs - Avenged"
+ FRA_the_marseille_martyrs_3_desc: "For nearly two decades, the memory of the Marseille Commune and its fallen revolutionaries has served as a rallying cry for France's socialist movement. Their suppression in 1919 became a symbol of the old regime's brutality, inspiring generations of workers, activists and revolutionaries to continue their struggle. Now, with the fall of the old government and the establishment of the French Commune, the Communards proclaim that the martyrs have finally been avenged. Their names and sacrifices are celebrated throughout the country, providing the new state with a powerful revolutionary mythos and an enduring source of propaganda."
+
+ FRA_conspiracies_of_the_general_staff_4_communist: "Lackluster High Command"
+ FRA_conspiracies_of_the_general_staff_4_communist_desc: "The conclusion of the French Civil War has left the country's military leadership in complete disarray. With much of the former High Command arrested or executed for their involvement in the attempted military coup, the Communards have begun a series of investigations and trials against the remaining conspiratorial officers. However, the purges have also deprived the newly established army of much of its senior leadership and institutional experience. Experienced commanders are scarce, chains of command remain fragmented, and the revolutionary military establishment has yet to produce a capable replacement for the old officer corps."
+
+ FRA_government_fractures_3_communist: "The Fate of the Old Parliament"
+ FRA_government_fractures_3_communist_desc: "With the establishment of the French Commune, the old parliamentary system has been suspended and elections indefinitely postponed. Yet the institutions and political traditions of the former Republic have not entirely disappeared. Many former cabinet members, parliamentarians and representatives of non-socialist parties have been permitted to remain in France, for the time being allowed to live under the new revolutionary order. Others, particularly those who supported the former government until its final days or were implicated in counterrevolutionary conspiracies, have been arrested or executed. The Communards now face a difficult question: what place, if any, should the old political establishment have in the new France? Whether to restore some form of parliamentary representation, establish a socialist political monopoly or create entirely new institutions remains unresolved."
+
+ FRA_counterrevolutionary_forces: "The Counterrevolutionary Remnants"
+ FRA_counterrevolutionary_forces_desc: "Although the French Commune has secured the majority of France and proclaimed victory, the countryside remains far from pacified. Remnants of the former far-right and radical militias have scattered into rural France, regrouping in isolated communities and conducting sabotage operations against Communard infrastructure and local administrations. Alongside them, surviving members of the former French High Command have gathered their most devoted loyalists and retreated into the countryside, continuing to resist the revolutionary government through sporadic skirmishes and ambushes against Communard forces. Though no longer capable of challenging the revolution on equal terms, these scattered counterrevolutionary groups remain a persistent threat to the stability of the new state."
+
+
+### Dynamic Modifiers ###
+ FRA_armee_federale_modifier: "Armée Fédérale"
+ FRA_armee_de_lair_populaire_modifier: "Armée de l'Air Populaire"
+ FRA_marine_federale_modifier: "Marine Fédérale"
+
+
+# EVENTS
+ FRA_events.1.t: "A Conspiracy to Destroy Germany"
+ FRA_events.1.d: "Surprisingly, a clandestine military meeting took place in St. Petersburg today, which would have been more in place in 1856 than in 1936. A joint French, Dutch, and Italian military delegation met with General-Fieldmarshal Lavr Badanov today in surprisingly positive terms. The delegation was under the leadership of General Georges Catroux, with charles Delestraint as his deputy and Edmund Ironside leading the representation of the Dutch military. \n \nOne could almost forget about the ideological disagreements of their respective governments as they laid out a strategic plan for the destruction of Germany and Poland-Lithuania in a calm, professional manner. The general idea was for the Commonwealth and Germany to be split amongst the Socialist Alliance and the Russian bloc, though already, issues were raised on the borders being drawn up. \n \nBoth sides withheld information, no doubt thinking about the possible future conflict if they manage to destroy Germany and Poland, but were open to agree on sharing relevant military intel and some other matters that would make cooperation easier. After all, both of them shared a simple, greater goal: the destruction of the German Empire and The Polish-Lithuanian Commonwealth. And for these military men, it was a greater cause than any ideology."
+ FRA_events.1.a: "A secret alliance is taking shape..."
+
+ FRA_events.2.t: "French Demands For Nice"
+ FRA_events.2.d: "The city of Nice has for long been under Italian control, even though historically it has been a 'French' city, with the majority of the citizens being French or French-speaking. Now, a French delegation has asked the Italian leadership to relegate the ownership of the historical city back to French control. Though the city of Nice has been our most important city and defence against French aggression, with the new friendly and socialist government in place, it would be a sign of good-will and cement our alliance further should we give it to France."
+ FRA_events.2.a: "Nice no longer serves our purposes."
+ FRA_events.2.b: "What's next? Will they ask for Piedmont too?"
+
+ FRA_events.3.t: "French Support for Assam"
+ FRA_events.3.d: "The French toads have supported Assam fr fr."
+ FRA_events.3.a: "On god type shit."
+
+ FRA_events.4.t: "Dealing with the Menace Within"
+ FRA_events.4.d: "Following weeks of investigations and intelligence gathering, the government has assembled the President and the General Staff to discuss the growing communist threat within France. Reports from across the country have identified numerous clandestine cells, meeting places, and suspected revolutionary organisers. The President has made his intentions clear: the state can no longer afford to tolerate the growing subversion threatening its foundations. After a tense meeting with the military leadership, plans for a coordinated nationwide assault have been finalised. Orders are now being dispatched to the army, gendarmerie, and security services. The final operation to dismantle the communist underground is about to begin."
+ FRA_events.4.a: "Commence the Operation"
+
+ FRA_events.5.t: "The Assault Begins"
+ FRA_events.5.d: "The orders have been carried out. Across France, gendarmerie units, intelligence operatives and detachments of the French Army have moved against identified communist cells, raiding meeting halls, safehouses and suspected hideouts. Numerous organisers and suspected insurgents have been arrested, while several communist newspapers and publications have been forcibly shut down. In some districts, armed resistance has broken out, leading to brief but violent clashes between government forces and communist militants. Though the operation has not been without casualties, government losses remain relatively minor, and the authorities report considerable success in dismantling the revolutionary underground. For now, the streets have grown quieter — but whether the communist movement has truly been broken remains to be seen."
+ FRA_events.5.a: "Great Success!"
+
+ FRA_events.6.t: "The Price of Crackdown"
+ FRA_events.6.d: "As the campaign against the communist underground continues, reports of abuses and wrongful arrests have begun to emerge from across the country. With the army and gendarmerie operating under considerable pressure, numerous civilians and members of non-socialist organisations have been caught in the crossfire. Liberal and left-leaning newspapers have been raided, their offices shuttered and their members arrested — some killed in clashes, others seemingly targeted under accusations of revolutionary sympathies. Whether these incidents are the result of mistaken identities, overzealous commanders or deliberate persecution remains uncertain. What is certain, however, is that public outrage is spreading. Minor parties within the governing coalition have begun voicing their opposition, while sections of the French public increasingly question the methods being employed in the name of national security."
+ FRA_events.6.a: "This is supposed to be a campaign against the Communists!"
+
+ FRA_events.7.t: "The Militias Mobilize"
+ FRA_events.7.d: "A series of leaked documents from the French High Command has sent shockwaves through the government. The reports appear to reveal plans extending far beyond the original campaign against communist cells, detailing the suppression of liberal and other non-socialist organisations, alongside efforts to arm and encourage radical far-right militias. These groups, already operating with increasing independence, have begun conducting their own campaigns against socialist and liberal opposition, with several incidents escalating into massacres that have left hundreds dead. Reports suggest that elements of the army and gendarmerie have either supported these militias or deliberately turned a blind eye to their actions. As public outrage spreads and the governing coalition fractures, an increasingly troubling reality is becoming apparent: the government may lose control of the situation."
+ FRA_events.7.a: "Perhaps this was a bad idea..."
+
+ FRA_events.8.t: "The Government Fractures"
+ FRA_events.8.d: "The revelations from the High Command have thrown the French government into its gravest political crisis yet. Coalition partners, unwilling to remain associated with the unfolding atrocities, have begun abandoning Parliament and withdrawing their support from the President. Under mounting pressure, the President has ordered an immediate, temporary halt to the nationwide operation against the communist underground, hoping to restore order and regain control of the situation. The order, however, has been met with confusion and outright defiance. Some army and gendarmerie units have abandoned their operations and returned to their barracks, while others insist that only the High Command or their direct superiors possess the authority to issue such an order. Fighting therefore continues in several regions, despite the government's demands. Meanwhile, protests and demonstrations have erupted across the country, with public outrage threatening to overwhelm an already crumbling state."
+ FRA_events.8.a: "Oh no..."
+
+ FRA_events.9.t: "The Menace From Within"
+ FRA_events.9.d: "Public outrage has spilled into the streets, with protest marches spreading across France in opposition to the government's actions. What began as largely peaceful demonstrations soon descended into violence as far-right and radical militias confronted protesters, whom they accused of aiding the revolutionary threat. The Gendarmerie struggled to contain the clashes, and the deployment of army units to reinforce them only worsened the situation. Gunfire erupted, leaving several demonstrators dead and hundreds more casualties reported across the country. \n \nYet the crisis has taken an even more alarming turn. Several days later, Gendarmerie officers detained a radical militia attempting to secure a state broadcasting station. Under interrogation, its members claimed they had received orders to seize the facility and announce a state of emergency, temporarily suspending the civilian government in favour of a military administration. The revelations point directly towards elements within the French High Command. With the army increasingly acting beyond civilian authority, the question is no longer whether the government is losing control, but whether its own generals are preparing to overthrow it."
+ FRA_events.9.a: "This is the President speaking. Stop the fighting!"
+
+ FRA_events.10.t: "France Descends Into Civil War"
+ FRA_events.10.d: "The struggle for control of France has erupted into open warfare. Units loyal to the civilian government, supported by elements of the Gendarmerie, are now clashing with military-aligned militias, rebellious army formations and forces answering to the conspiratorial High Command. Amid the confusion, the communist underground has seized its opportunity. Emboldened by the growing revolutionary fervour among the population, communist cells have reorganised, arming themselves and begun mobilising openly. Across several cities and industrial centres, workers are establishing revolutionary Communes, invoking the memory of the Marseille Commune and the martyrs who fell in 1919. Their calls for a new revolution are finding an increasingly receptive audience. With fighting spreading, loyalties uncertain and armed factions multiplying by the day, the civilian government has effectively lost control of the country. France stands on the brink of a second revolution."
+ FRA_events.10.a: "The Socialists! Focus on the Socialists!"
+
+ FRA_events.11.t: "The Second Communard Revolution"
+ FRA_events.11.d: "The final collapse has come. Communist forces have advanced towards Paris, bringing the fighting to its most desperate intensity yet. In a last attempt to preserve their authority, the French High Command has arrested the President and remaining coalition members, suspended Parliament and proclaimed a military dictatorship. Yet the declaration has done little to stem the tide. As communist and radical militias battle across the country, entire army formations are laying down their arms, while others have openly defected to the revolutionary cause. Around Paris, government forces are gradually overwhelmed, and communist units succeed in encircling the capital. After several days of brutal street fighting, the city finally falls. The revolutionaries proclaim the establishment of the French Commune, declaring the old Republic and its institutions dissolved. In the days that follow, surviving members of Parliament and the High Command are arreste. The French Revolution is complete."
+ FRA_events.11.a: "Vive la Révolution Française! Vivent les Martyrs Marseillais!"

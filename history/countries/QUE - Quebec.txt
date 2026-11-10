@@ -178,7 +178,12 @@ add_ideas = {
 
 set_stability = 0.60
 set_war_support = 0.60
-
+add_dynamic_modifier = {
+	modifier = CAN_air
+}
+set_variable = { CAN_army_mobilization_speed = 0.05 }
+set_variable = { CAN_air_air_doctrine_cost_factor = 0.2 }
+set_variable = { CAN_air_air_accidents_factor = 0.05 }
 set_variable = { CAN_navy_naval_doctrine_cost_factor = -0.05 }
 set_variable = { CAN_navy_naval_coordination = 0.05 }
 set_variable = { CAN_navy_refit_ic_cost = -0.05 }

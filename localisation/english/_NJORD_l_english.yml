@@ -15,6 +15,7 @@
  division_template_deletion_warning: "\nAny existing templates with the same name will be §Rdisbanded§!, refunding all manpower and equipment."
  line_battalion_tt: "\n£indent £$ICON$ §Y$COUNT$ $NAME$§! line battalions"
  support_battalion_tt: "\n£indent £$ICON$ §Y$NAME$§!"
+ NJORD_when_idea_runs_out: "When this idea runs out we will gain:"
 
 ###########################################################
 ###     TANKS (for use as tooltips in tank designer)    ###
@@ -877,19 +878,22 @@ EQ_MOD_CAT_tank_super_heavy_main_armament_1_TITLE: "Super Heavy Main Armament (T
 
  ALSK_an_outpost_for_russia: "An Outpost for Russia"
  ALSK_an_outpost_for_russia_desc: "Russian Amerika has never been expected to stand on its own. Its ports, mines, and settlements rely on a steady stream of supplies from the republican heartland, from machinery and manufactured goods to the equipment needed to maintain its railways and mines. What little industry exists locally is geared toward immediate extraction rather than the production of complex goods, leaving the colony unable to replace much of what it consumes. Under ordinary circumstances, Russian subsidies and shipments keep the colonial economy functioning. In times of crisis, however, that same dependance becomes a weakness: disrupted shipping routes, economic downturn in the homelands, or a distant war could deprive the colony of the very goods required to sustain its population and defend its borders."
- ALSK_an_outpost_for_russia_tt: "A steady stream of military equipment from @SOV §YRussia§! arrives monthly, as long as the shipping routes remain secure."
- ALSK_an_outpost_for_russia_at_war_tt: "Once the shipping routes are again secure, a steady stream of military equipment from @SOV §YRussia§! will arrive monthly."
+ ALSK_an_outpost_for_russia_tt: "\nA steady stream of military equipment from @SOV §YRussia§! arrives monthly, as long as the shipping routes remain secure.\n"
+ ALSK_an_outpost_for_russia_at_war_tt: "\nOnce the shipping routes are again secure, a steady stream of military equipment from @SOV §YRussia§! will arrive monthly.\n"
 
  ALSK_the_forgotten_frontier: "The Forgotten Frontier"
  ALSK_the_forgotten_frontier_desc: "Russian Amerika's strategic position has become increasingly precarious. To the west and south, Greenland eyes the lands separating its own domains from connecting the Nortwestern Coast. To the east, Küstland watches the colony's eastern territories with growing ambition. Intelligence reaching the colonial administration suggests that these rivals may be preparing to divide Russian Amerika between themselves, eliminating the Russian presence in North America once and for all. Preparation for this coming war is underway, strengthening its defensive lines, expanding local garrisons, and preparing the settlements for the possibility of conflict. Yet its ambitions far exceed its capabilities. The Colonial Guard and Civil Milita Force depend on Russian weapons, ammunition, supply, and reinforcements, while its small population and limited industry make prolonged independent resistance difficult. Russian's last colony may see the danger approaching, but whether Russia can save it in time remains uncertain."
- ALSK_the_forgotten_frontier_tt: "Our defensive preparations will remain as long as we can rely on @SOV §YRussian§! support. Else, this will prove §Rdisastrous§!."
- ALSK_the_forgotten_frontier_at_war_tt: "Our defensive preparations are meaningless, §Rthe war is lost§!."
+ ALSK_the_forgotten_frontier_tt: "\nOur defensive preparations will remain as long as we can rely on @SOV §YRussian§! support. Else, this will prove §Rdisastrous§!.\n"
+ ALSK_the_forgotten_frontier_at_war_tt: "\nOur defensive preparations are meaningless, §Rthe war is lost§!.\n"
 
  ALSK_the_citizens_militia: "The Grazhdanskaya Strazha"
  ALSK_the_citizens_militia_desc: "For all its strategic importance, Russian Amerika possesses little in the way of a proper army of its own. The Colonial Police and Colonial Guard remain the colony's only established armed forces, tasked with maintaining order and safeguarding its citizens from internal and external enemies. With the threat of invasion from Irish Greenland and Küstland growing ever more apparent, the colonial administration has begun organising a Citizens' Militia, recruiting, training, and arming local inhabitants to defend their own towns, villages, and communities. Though poorly equipped and lacking the cohesion of a professional army, these local militias offer a means of mobilising the population and resisting an invasion until reinforcements can arrive from Russia. In a land where the nearest garrison may lie hundreds of miles away, the first line of defence must be the people themselves. Whether their courage can compensate for their inexperience and lack of equipment, however, remains to be seen."
 
  ALSK_the_republic_in_retreat: "The Republic in Retreat"
  ALSK_the_republic_in_retreat_desc: "The Russian Republic, once regarded as a guarantor of representative government and constitutional order, is undergoing a profound political transformation. A rising national-populist movement has steadily weakened democratic conventions, undermined its opponents, and sought to concentrate power beneath the appearance of republican legitimacy. Across the ocean, Russian settlers watches these developments with growing unease. Colonial officials remain loyal to Moscow regardless of its political direction, as long as their a slice of the profits remain in their pockets, while ordinary citizens fear that the erosion of democracy will bring harsher administration, greater economic exploitation, and the abandonment of local interests. For now, the colony remains dependent on the Russian state, but the future character of that state is becoming increasingly uncertain."
+
+ ALSK_the_national_populist_takeover: "The Populist Takeover"
+ ALSK_the_national_populist_takeover_desc: ""
 
 
  #GREENLAND IRISH COLONY

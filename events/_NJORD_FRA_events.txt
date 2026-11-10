@@ -1,0 +1,449 @@
+add_namespace = FRA_events
+
+# A Conspiracy to Destroy Germany
+country_event = {
+	id = FRA_events.1
+	title = FRA_events.1.t
+	desc = FRA_events.1.d
+	picture = GFX_report_event_fascist_militia
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA_events.1.a
+
+		add_war_support = 0.05
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+# France Demands Nice
+country_event = {
+	id = FRA_events.2
+	title = FRA_events.2.t
+	desc = FRA_events.2.d
+	picture = GFX_report_event_soldiers_in_france
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA_events.2.a
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+	option = {
+		name = FRA_events.2.b
+		
+	}
+}
+
+# Frenchies support Assamese separatism
+country_event = {
+	id = FRA_events.3
+	title = FRA_events.3.t
+	desc = FRA_events.3.d
+	picture = GFX_report_event_spr_carlists_franco
+
+	is_triggered_only = yes
+
+	option = {
+		name = FRA_events.3.a
+		add_stability = -0.05
+		add_popularity = {
+			ideology = communism
+			popularity = 0.1
+		}
+		swap_ideas = {
+			remove_idea = BEN_assamese_communist_revolt
+			add_idea = BEN_assamese_communist_revolt_2
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+# Dealing with the Menace Within
+country_event = {
+		id = FRA_events.4
+		title = FRA_events.4.t
+		desc = FRA_events.4.d
+		picture = GFX_report_event_FIN_risto_ryti_speech
+
+		is_triggered_only = yes
+
+		option = {
+		name = FRA_events.4.a
+
+		add_stability = 0.05
+		add_war_support = 0.05
+		add_command_power = 50
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+# The Assault Begins
+country_event = {
+		id = FRA_events.5
+		title = FRA_events.5.t
+		desc = FRA_events.5.d
+		picture = GFX_report_event_ITA_partisans
+
+		is_triggered_only = yes
+
+		immediate = {
+			hidden_effect = {
+				country_event = {
+					id = FRA_events.6
+					days = 10
+				}
+			}
+		}
+
+		option = {
+		name = FRA_events.5.a
+
+		add_popularity = {
+			ideology = communism
+			popularity = -0.05
+		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+		add_manpower = -159
+		custom_effect_tooltip = generic_skip_one_line_tt
+		swap_ideas = {
+			remove_idea = FRA_the_red_menace_within_2
+			add_idea = FRA_the_red_menace_within_3
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+# Price of Crackdowns
+country_event = {
+		id = FRA_events.6
+		title = FRA_events.6.t
+		desc = FRA_events.6.d
+		picture = GFX_report_event_gre_political_upheaval
+
+		is_triggered_only = yes
+
+		immediate = {
+			hidden_effect = {
+				country_event = {
+					id = FRA_events.7
+					days = 10
+				}
+			}
+		}
+
+		option = {
+		name = FRA_events.6.a
+
+		add_stability = -0.05
+		add_political_power = -25
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.05
+		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+		add_manpower = -327
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+# The Menace Within
+country_event = {
+		id = FRA_events.7
+		title = FRA_events.7.t
+		desc = FRA_events.7.d 
+		picture = GFX_report_event_gre_militaristic_march
+
+		is_triggered_only = yes
+
+		immediate = {
+			hidden_effect = {
+				country_event = {
+					id = FRA_events.8
+					days = 10
+				}
+			}
+		}
+
+		option = {
+		name = FRA_events.7.a
+
+		add_stability = -0.05
+		add_political_power = -25
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+		add_popularity = {
+			ideology = radical
+			popularity = 0.01
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.01
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.01
+		}
+		add_popularity = {
+			ideology = absolutist
+			popularity = 0.01
+		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+		add_manpower = -815
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		swap_ideas = {
+			remove_idea = FRA_conspiracies_of_the_general_staff_2
+			add_idea = FRA_conspiracies_of_the_general_staff_3
+		}
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+# The Government Begins to Collapse
+country_event = {
+		id = FRA_events.8
+		title = FRA_events.8.t
+		desc = FRA_events.8.d
+		picture = GFX_report_event_tur_politician_march
+
+		is_triggered_only = yes
+
+		immediate = {
+			hidden_effect = {
+				country_event = {
+					id = FRA_events.9
+					days = 10
+				}
+			}
+		}
+
+		option = {
+		name = FRA_events.8.a
+
+		add_stability = -0.1
+		add_political_power = -50
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.1
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		add_manpower = -1583
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		add_ideas = FRA_government_fractures
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+# The Menace From Within
+country_event = {
+		id = FRA_events.9
+		title = FRA_events.9.t
+		desc = FRA_events.9.d
+		picture = GFX_report_event_INS_fight_in_surabaya
+
+		is_triggered_only = yes
+
+		immediate = {
+			hidden_effect = {
+				country_event = {
+					id = FRA_events.10
+					days = 10
+				}
+			}
+		}
+
+		option = {
+		name = FRA_events.9.a
+
+		add_stability = -0.1
+		add_political_power = -50
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.1
+		}
+		add_popularity = {
+			ideology = radical
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = absolutist
+			popularity = 0.05
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		add_manpower = -3121
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		swap_ideas = {
+			remove_idea = FRA_government_fractures
+			add_idea = FRA_government_fractures_2
+		}
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+# France Descends into Civil War
+country_event = {
+		id = FRA_events.10
+		title = FRA_events.10.t
+		desc = FRA_events.10.d
+		picture = GFX_report_event_generic_communist_militia
+
+		is_triggered_only = yes
+
+		immediate = {
+			hidden_effect = {
+				country_event = {
+					id = FRA_events.11
+					days = 10
+				}
+			}
+		}
+
+		option = {
+		name = FRA_events.10.a
+
+		add_stability = -0.1
+		add_political_power = -50
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		add_popularity = {
+			ideology = communism
+			popularity = 0.1
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		add_manpower = -5719
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		swap_ideas = {
+			remove_idea = FRA_the_marseille_martyrs
+			add_idea = FRA_the_marseille_martyrs_2
+		}
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+}GFX_report_event_peasant_revolt
+
+# France Descends into Civil War
+country_event = {
+		id = FRA_events.11
+		title = FRA_events.11.t
+		desc = FRA_events.11.d
+		picture = GFX_report_event_peasant_revolt
+
+		is_triggered_only = yes
+
+		after = {
+			set_party_rule = {
+				ideology = communism
+				can_create_factions = yes
+			}
+			add_country_leader_trait = {
+				ideology = marxism
+				trait = devoted_marxist
+			}
+			set_party_rule = {
+				ideology = communism
+				can_create_factions = yes
+			}
+			set_country_leader_ideology = marxism
+		}
+
+		option = {
+		name = FRA_events.11.a
+
+		add_stability = 0.2
+		add_political_power = 100
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		set_political_party = {
+			ideology = communism
+			popularity = 0.33
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		add_manpower = -9816
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		custom_effect_tooltip = FRA_FRENCH_REVOLUTION_TT
+		hidden_effect = {
+			remove_ideas = FRA_scars_of_the_great_european_war_2
+			remove_ideas = FRA_the_white_years_2
+			remove_ideas = FRA_the_marseille_martyrs_2
+			remove_ideas = FRA_the_red_menace_within_3
+			remove_ideas = FRA_the_humiliation_of_piedmont
+			remove_ideas = FRA_conspiracies_of_the_general_staff_3
+			remove_ideas = FRA_government_fractures_2
+			add_ideas = FRA_scars_of_the_french_civil_war
+			add_ideas = FRA_worker_oriented_economy
+			add_timed_idea = {
+				idea = FRA_the_marseille_martyrs_3
+				days = 730
+			}
+			add_ideas = FRA_conspiracies_of_the_general_staff_4_communist
+			add_ideas = FRA_government_fractures_3_communist
+			add_ideas = FRA_counterrevolutionary_forces
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}

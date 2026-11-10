@@ -804,11 +804,21 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 250 }
 
-		completion_reward = {
+		available = {
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = NJORD_PRE_GERMANY_SAID_NO
+				}
+			}
+		}
+
+		select_effect = {
 			GER = {
 				country_event = PRE_events.1
 			}
-			custom_effect_tooltip = generic_skip_one_line_tt
+		}
+
+		completion_reward = {
 			custom_effect_tooltip = NJORD_PRE_if_they_accept_event
 			effect_tooltip = {
 				add_timed_idea = {

@@ -287,3 +287,11 @@ DEN_military_exchange_program_desc: "The increased cooperation between the Atlan
 ### Tooltips ###
  NJORD_pre_combine_ideas: "Combine '§YUniversal Healthcare§! and §YExpanded Welfare System§! into:"
  NJORD_PRE_all_members_of_the_atlantic_federation_gets: "All members of the '§YAtlantic Federation§!' gets:"
+ NJORD_PRE_if_they_accept_event: "If they accept:"
+
+
+ # EVENTS
+ PRE_events.1.t: "Prusso-German Trade Agreement"
+ PRE_events.1.d: "Prussian diplomats have approached our government with a proposal to establish unrestricted trade between Prussia and Germany. Under the proposed agreement, goods and commodities would cross our shared economic sphere without tariffs or additional trade taxes, encouraging investment, strengthening industrial cooperation, and bringing our markets closer together. With both nations facing an increasingly uncertain European landscape, closer economic ties may prove beneficial to us both. The decision now rests with Nuremberg: shall we open our markets to our Prussian neighbours?"
+ PRE_events.1.a: "Free Trade? Sign me up."
+ PRE_events.1.b: "Those North Germans can never be trusted."
