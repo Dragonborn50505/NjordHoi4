@@ -44,6 +44,7 @@ ideologies = {
 			hidden_modifier = { join_faction_tension = -0.1 }
 			justify_war_goal_when_in_major_war_time = -0.80
 			navy_intel_to_others = 10.0
+			send_volunteers_tension = -1
 		}
 		
 		faction_modifiers = {
@@ -106,6 +107,7 @@ ideologies = {
 			hidden_modifier = { join_faction_tension = -0.1 }
 			lend_lease_tension = 0.50
 			navy_intel_to_others = 12.5
+			send_volunteers_tension = -1
 		}
 		
 		faction_modifiers = {
@@ -154,7 +156,7 @@ ideologies = {
 			can_lower_tension = yes
 			can_only_justify_war_on_threat_country = yes
 			can_puppet = no
-			can_send_volunteers = no
+			can_send_volunteers = yes
 		}
 		
 		war_impact_on_world_tension = 0.25
@@ -171,7 +173,7 @@ ideologies = {
 			join_faction_tension = 0.80
 			lend_lease_tension = 0.50
 			navy_intel_to_others = 20.0
-			send_volunteers_tension = 0.50
+			send_volunteers_tension = -1
 		}
 		
 		faction_modifiers = {
@@ -236,6 +238,7 @@ ideologies = {
 			justify_war_goal_when_in_major_war_time = -0.80
 			lend_lease_tension = 0.50
 			navy_intel_to_others = 10.0
+			send_volunteers_tension = -1
 		}
 		
 		faction_modifiers = {
@@ -299,7 +302,7 @@ ideologies = {
 		rules = {
 			can_force_government = yes
 			can_puppet = yes
-			can_send_volunteers = no
+			can_send_volunteers = yes
 		}
 		
 		war_impact_on_world_tension = 0.25
@@ -315,7 +318,7 @@ ideologies = {
 			join_faction_tension = 0.4
 			lend_lease_tension = 0.6
 			navy_intel_to_others = 20.0
-			send_volunteers_tension = 0.4
+			send_volunteers_tension = -1
 		}
 		
 		faction_modifiers = {
@@ -368,7 +371,7 @@ ideologies = {
 			hidden_modifier = { join_faction_tension = -0.1 }
 			lend_lease_tension = 0.50
 			navy_intel_to_others = 12.5
-			send_volunteers_tension = 0.50
+			send_volunteers_tension = -1
 		}
 		
 		faction_modifiers = {

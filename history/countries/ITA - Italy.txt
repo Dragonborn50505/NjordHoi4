@@ -104,29 +104,18 @@ if = {
     }
 }
 
-if = {
-    limit = {has_dlc = "Together for Victory" }
-
-    add_to_tech_sharing_group = ITA_research
-}
-
 add_opinion_modifier = { target = ATJ modifier = negative_100 }
 add_opinion_modifier = { target = BAN modifier = negative_155 }
 add_opinion_modifier = { target = BRA modifier = negative_200 }
-set_truce = { target = BRA days = 3650 }
 add_opinion_modifier = { target = BRU modifier = negative_200 }
 add_opinion_modifier = { target = COG modifier = negative_200 }
 add_opinion_modifier = { target = COL modifier = negative_200 }
-set_truce = { target = COL days = 3650 }
 add_opinion_modifier = { target = CSA modifier = positive_75 }
 add_opinion_modifier = { target = CUB modifier = positive_9 }
 add_opinion_modifier = { target = DOM modifier = negative_200 }
-set_truce = { target = DOM days = 3650 }
 add_opinion_modifier = { target = FOR modifier = negative_110 }
 add_opinion_modifier = { target = FRA modifier = negative_199 }
-give_military_access = FRA
 add_opinion_modifier = { target = GER modifier = positive_5 }
-give_military_access = GER
 add_opinion_modifier = { target = HOL modifier = negative_200 }
 add_opinion_modifier = { target = ICE modifier = positive_5 }
 add_opinion_modifier = { target = IRE modifier = negative_200 }
@@ -137,7 +126,6 @@ add_opinion_modifier = { target = PAK modifier = negative_125 }
 add_opinion_modifier = { target = PHI modifier = negative_140 }
 add_opinion_modifier = { target = PRE modifier = negative_100 }
 add_opinion_modifier = { target = PRU modifier = negative_200 }
-set_truce = { target = PRU days = 3650 }
 add_opinion_modifier = { target = QUE modifier = negative_120 }
 add_opinion_modifier = { target = RAJ modifier = negative_110 }
 add_opinion_modifier = { target = SAM modifier = negative_200 }
@@ -145,7 +133,6 @@ add_opinion_modifier = { target = SAR modifier = negative_165 }
 add_opinion_modifier = { target = SIN modifier = negative_125 }
 add_opinion_modifier = { target = SOV modifier = negative_100 }
 add_opinion_modifier = { target = SPR modifier = negative_200 }
-set_truce = { target = SPR days = 3650 }
 add_opinion_modifier = { target = TEX modifier = negative_123 }
 add_opinion_modifier = { target = TIG modifier = negative_200 }
 add_opinion_modifier = { target = TNE modifier = negative_165 }
@@ -166,11 +153,9 @@ add_opinion_modifier = { target = W24 modifier = negative_110 }
 add_opinion_modifier = { target = W27 modifier = negative_150 }
 add_opinion_modifier = { target = W31 modifier = negative_76 }
 add_opinion_modifier = { target = W35 modifier = negative_200 }
-set_truce = { target = W35 days = 3650 }
 add_opinion_modifier = { target = W36 modifier = negative_138 }
 add_opinion_modifier = { target = W37 modifier = negative_110 }
 add_opinion_modifier = { target = W41 modifier = negative_195 }
-set_truce = { target = W41 days = 3650 }
 add_opinion_modifier = { target = X04 modifier = negative_168 }
 add_opinion_modifier = { target = X07 modifier = negative_162 }
 add_opinion_modifier = { target = X20 modifier = negative_200 }
@@ -196,11 +181,9 @@ add_opinion_modifier = { target = X83 modifier = negative_145 }
 add_opinion_modifier = { target = X84 modifier = negative_200 }
 add_opinion_modifier = { target = X86 modifier = negative_95 }
 add_opinion_modifier = { target = X93 modifier = negative_195 }
-set_truce = { target = X93 days = 1825 }
 add_opinion_modifier = { target = X94 modifier = negative_106 }
 add_opinion_modifier = { target = X97 modifier = negative_125 }
 add_opinion_modifier = { target = X98 modifier = negative_200 }
-set_truce = { target = X98 days = 3650 }
 add_opinion_modifier = { target = YEM modifier = negative_200 }
 
 
@@ -417,33 +400,6 @@ recruit_character = UTI_sergei_kirov
 recruit_character = UTI_sergey_khudyakov
 recruit_character = UTI_yakov_smushkevich
 recruit_character = UTI_pavel_rychagov
-UTI_aleksandr_shlyapnikov = {
-	set_character_flag = SOV_imprisoned_flag
-}
-UTI_genrikh_yagoda = {
-	set_character_flag = SOV_safe_from_purge_flag
-}
-UTI_grigory_zinovyev = {
-	set_character_flag = SOV_imprisoned_flag
-}
-UTI_ivan_smirnov = {
-	set_character_flag = SOV_imprisoned_flag
-}
-UTI_ivar_smilga = {
-	set_character_flag = SOV_imprisoned_flag
-}
-UTI_lavrenty_beriya = {
-	set_character_flag = SOV_safe_from_purge_flag
-}
-UTI_lev_kamenev = {
-	set_character_flag = SOV_imprisoned_flag
-}
-UTI_martemyan_ryutin = {
-	set_character_flag = SOV_imprisoned_flag
-}
-UTI_nikolay_yezhov = {
-	set_character_flag = SOV_safe_from_purge_flag
-}
 
 if = {
 	limit = {
@@ -697,6 +653,3 @@ if = {
 	limit = { has_dlc = "No Step Back" }
 }
 add_equipment_to_stockpile = { type = artillery_equipment amount = 1056 producer = ITA }
-
-save_global_event_target_as = FRA_begin_rearmament_ITA
-save_global_event_target_as = SOV_the_path_of_marxism_leninism_SOV

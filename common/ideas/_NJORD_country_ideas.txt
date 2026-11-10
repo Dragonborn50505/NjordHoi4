@@ -419,7 +419,6 @@ ideas = {
 		SRI_the_precarious_balance = {
 			picture = BEL_the_kings_surrender
 			modifier = {
-				send_volunteers_tension = 1
 				justify_war_goal_time = 1
 			}
 			rule = {
@@ -1035,7 +1034,6 @@ ideas = {
 			modifier = {
 				air_volunteer_cap = 1
 				send_volunteer_size = 1
-				send_volunteers_tension = -1
 			}
 		}
 
@@ -1045,7 +1043,6 @@ ideas = {
 			modifier = {
 				air_volunteer_cap = 1
 				send_volunteer_size = 1
-				send_volunteers_tension = -1
 				experience_gain_army = 0.03
 				experience_gain_navy = 0.03
 				experience_gain_air = 0.03
@@ -1058,7 +1055,6 @@ ideas = {
 			modifier = {
 				air_volunteer_cap = 1
 				send_volunteer_size = 1
-				send_volunteers_tension = -1
 				experience_gain_army = 0.06
 				experience_gain_navy = 0.06
 				experience_gain_air = 0.06
@@ -1073,7 +1069,6 @@ ideas = {
 				max_command_power_mult = 0.1
 				air_volunteer_cap = 2
 				send_volunteer_size = 2
-				send_volunteers_tension = -1
 				experience_gain_army = 0.09
 				experience_gain_navy = 0.09
 				experience_gain_air = 0.09
@@ -1091,7 +1086,6 @@ ideas = {
 				max_command_power_mult = 0.15
 				air_volunteer_cap = 2
 				send_volunteer_size = 2
-				send_volunteers_tension = -1
 				experience_gain_army = 0.12
 				experience_gain_navy = 0.12
 				experience_gain_air = 0.12
@@ -1110,7 +1104,6 @@ ideas = {
 				max_command_power_mult = 0.25
 				air_volunteer_cap = 2
 				send_volunteer_size = 2
-				send_volunteers_tension = -1
 				experience_gain_army = 0.15
 				experience_gain_navy = 0.15
 				experience_gain_air = 0.15
@@ -1131,7 +1124,6 @@ ideas = {
 				max_command_power_mult = 0.25
 				air_volunteer_cap = 3
 				send_volunteer_size = 3
-				send_volunteers_tension = -1
 				experience_gain_army = 0.15
 				experience_gain_navy = 0.15
 				experience_gain_air = 0.15
@@ -1153,7 +1145,6 @@ ideas = {
 				max_command_power_mult = 0.3
 				air_volunteer_cap = 3
 				send_volunteer_size = 3
-				send_volunteers_tension = -1
 				experience_gain_army = 0.15
 				experience_gain_navy = 0.15
 				experience_gain_air = 0.15
@@ -1175,7 +1166,6 @@ ideas = {
 				max_command_power_mult = 0.3
 				air_volunteer_cap = 3
 				send_volunteer_size = 3
-				send_volunteers_tension = -1
 				experience_gain_army = 0.15
 				experience_gain_navy = 0.15
 				experience_gain_air = 0.15
@@ -2664,7 +2654,6 @@ ideas = {
 			modifier = {
 				send_volunteer_size = 1
 				army_experience_from_volunteers = 0.25
-				send_volunteers_tension = -1
 			}
 		}
 
@@ -3545,6 +3534,20 @@ ideas = {
 			}
 		}
 
+		FRA_scars_of_the_french_civil_war_2 = {
+			name = FRA_scars_of_the_french_civil_war
+			picture = generic_army_problems
+			modifier = {
+				stability_factor = -0.05
+				army_org_factor = -0.05
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				army_morale_factor = -0.05
+				conscription_factor = -0.05
+				training_time_army_factor = 0.05
+			}
+		}
+
 		FRA_worker_oriented_economy = {
 			picture = NORDIC_northern_union
 			modifier = {
@@ -3571,8 +3574,17 @@ ideas = {
 				war_support_factor = -0.15
 				army_org_factor = -0.15
 				max_command_power_mult = -0.25
-				experience_gain_army = -0.4
 				command_power_gain_mult = -0.5
+			}
+		}
+
+		FRA_conspiracies_of_the_general_staff_5_communist = {
+			name = FRA_conspiracies_of_the_general_staff_4_communist
+			picture = SOV_purged_junior_army_officers
+			modifier = {
+				planning_speed = -0.1
+				max_command_power_mult = -0.1
+				command_power_gain_mult = -0.25
 			}
 		}
 
@@ -3607,7 +3619,6 @@ ideas = {
 			modifier = {
 				drift_defence_factor = 0.5
 				send_volunteer_size = 1
-				send_volunteers_tension = -0.5
 			}
 		}
 
@@ -3818,14 +3829,12 @@ ideas = {
 		FRA_purged_military = {
 			picture = SOV_purged_junior_army_officers
 			modifier = {
-				army_morale_factor = -0.15
-				army_org_factor = -0.15
-				experience_gain_army = -0.3
-				promote_cost_factor = 0.5
-				field_officer_promotion_penalty = 0.5
+				army_morale_factor = -0.05
+				army_org_factor = -0.05
+				experience_gain_army = -0.05
 				political_power_gain = 0.2
-				stability_factor = -0.1
-				war_support_factor = -0.1
+				stability_factor = -0.05
+				war_support_factor = -0.05
 			}
 		}
 

@@ -123,6 +123,7 @@ focus_tree = {
 				ideology = communism
 				popularity = -0.05
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = FRA_the_red_menace_within
 				add_idea = FRA_the_red_menace_within_2
@@ -161,6 +162,16 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = FRA_the_menace_from_within_TT
+			if = {
+				limit = { 
+					has_government = communism
+				}
+				add_stability = 0.05
+				add_political_power = 50
+			}
+			else = {
+				custom_effect_tooltip = FRA_the_menace_from_within_TT
+			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -184,6 +195,11 @@ focus_tree = {
 			add_political_power = 25
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = FRA_vanguard_of_the_revolution_idea
+			custom_effect_tooltip = generic_skip_one_line_tt
+			swap_ideas = {
+				remove_idea = FRA_scars_of_the_french_civil_war
+				add_idea = FRA_scars_of_the_french_civil_war_2
+			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -269,7 +285,7 @@ focus_tree = {
 				category = engineers_tech
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
-			27 = {
+			129 = {
 				add_building_construction = {
 					type = bunker
 					level = 2
@@ -279,8 +295,13 @@ focus_tree = {
 						limit_to_border_country = GER
 					}
 				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
 			}
-			760 = {
+			128 = {
 				add_building_construction = {
 					type = bunker
 					level = 2
@@ -290,8 +311,13 @@ focus_tree = {
 						limit_to_border_country = GER
 					}
 				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
 			}
-			785 = {
+			127 = {
 				add_building_construction = {
 					type = bunker
 					level = 2
@@ -300,6 +326,27 @@ focus_tree = {
 						all_provinces = yes
 						limit_to_border_country = GER
 					}
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+			144 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border_country = GER
+					}
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
 				}
 			}
 		}
@@ -316,15 +363,9 @@ focus_tree = {
 		y = 1
 
 		available = {
-			if = {
-				limit = { owns_state = 29 }
-				has_full_control_of_state = 29
+			HOL = {
+				is_in_faction_with = root
 			}
-			else = {
-				has_full_control_of_state = 17
-			}
-			has_full_control_of_state = 24
-			has_full_control_of_state = 980
 		}
 
 		prerequisite = {
@@ -352,7 +393,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			29 = {
+			347 = {
 				add_building_construction = {
 					type = bunker
 					level = 2
@@ -360,10 +401,11 @@ focus_tree = {
 					province = {
 						all_provinces = yes
 						limit_to_border = yes
+						limit_to_border_country = GER
 					}
 				}
 			}
-			24 = {
+			343 = {
 				add_building_construction = {
 					type = bunker
 					level = 2
@@ -371,10 +413,11 @@ focus_tree = {
 					province = {
 						all_provinces = yes
 						limit_to_border = yes
+						limit_to_border_country = GER
 					}
 				}
 			}
-			980 = {
+			342 = {
 				add_building_construction = {
 					type = bunker
 					level = 2
@@ -382,6 +425,31 @@ focus_tree = {
 					province = {
 						all_provinces = yes
 						limit_to_border = yes
+						limit_to_border_country = GER
+					}
+				}
+			}
+			344 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+						limit_to_border_country = GER
+					}
+				}
+			}
+			350 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+						limit_to_border_country = GER
 					}
 				}
 			}
@@ -400,15 +468,11 @@ focus_tree = {
 
 		available = {
 			is_subject = no
-			can_declare_war_on = ITA
-			ITA = { owns_state = 760 }
+			ITA = { owns_state = 224 }
 		}
 
 		bypass = {
-			OR = {
-				owns_state = 760
-				NOT = { can_declare_war_on = ITA }
-			}
+			owns_state = 224
 		}
 
 		prerequisite = {
@@ -425,7 +489,9 @@ focus_tree = {
             }
             custom_effect_tooltip = if_they_accept_tt
             effect_tooltip = {
-                add_threat = -5
+                FRA = {
+					transfer_state = 224
+				}
             }
             custom_effect_tooltip = if_they_refuse_tt
             effect_tooltip = {
@@ -516,7 +582,34 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-
+			144 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+						limit_to_border_country = GER
+					}
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = stronghold_network
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
@@ -535,6 +628,9 @@ focus_tree = {
 		available = {
 			NOT = { has_war_with = GER }
 		}
+		bypass = {
+			has_war_with = GER
+		}
 
 		ai_will_do = {
 			factor = 5
@@ -545,7 +641,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_war_support = 0.1
+			add_political_power = 100
+			add_command_power = 50
 		}
 	}
 
@@ -652,6 +750,8 @@ focus_tree = {
 			create_intelligence_agency = yes
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = FRA_renseignements_generaux_lar
+			custom_effect_tooltip = generic_skip_one_line_tt
+			remove_ideas = FRA_government_fractures_3_communist
 		}
 	}
 
@@ -836,12 +936,10 @@ focus_tree = {
 			add_ideas = FRA_international_avant_garde_idea
 			custom_effect_tooltip = generic_skip_one_line_tt
 			HOL = {
-				country_event = FRA_events.4
 				effect_tooltip = { add_ideas = FRA_international_avant_garde_idea }
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			ITA = {
-				country_event = FRA_events.4
 				effect_tooltip = { add_ideas = FRA_international_avant_garde_idea }
 			}
 			hidden_effect = {
@@ -1190,6 +1288,8 @@ focus_tree = {
 				modifier = FRA_industry
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
+			remove_ideas = FRA_worker_oriented_economy
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = FRA_establish_the_office_of_economic_planning
 				bonus = 1
@@ -1349,12 +1449,12 @@ focus_tree = {
 					DYNMOD = FRA_industry
 				}
 				add_to_variable = {
-					FRA_industry_consumer_goods_factor = -0.15
+					FRA_industry_consumer_goods_factor = -0.1
 					tooltip = consumer_goods_factor_tt
 				}
 				add_to_variable = {
 					FRA_industry_production_speed_buildings_factor = -0.1
-					tooltip = consumer_goods_factor_tt
+					tooltip = production_speed_buildings_factor_tt
 				}
 			}
 			hidden_effect = {
@@ -1363,12 +1463,12 @@ focus_tree = {
 						has_completed_focus = FRA_voluntary_association
 					}
 					add_to_variable = {
-						FRA_industry_consumer_goods_factor = -0.15
+						FRA_industry_consumer_goods_factor = -0.1
 						tooltip = consumer_goods_factor_tt
 					}
 					add_to_variable = {
 						FRA_industry_production_speed_buildings_factor = -0.1
-						tooltip = consumer_goods_factor_tt
+						tooltip = production_speed_buildings_factor_tt
 					}
 				}
 			}
@@ -1426,12 +1526,12 @@ focus_tree = {
 					tooltip = global_building_slots_factor_tt
 				}
 				add_to_variable = {
-					FRA_industry_consumer_goods_factor = -0.1
+					FRA_industry_consumer_goods_factor = -0.15
 					tooltip = consumer_goods_factor_tt
 				}
 				add_to_variable = {
-					FRA_industry_production_speed_buildings_factor = -0.05
-					tooltip = consumer_goods_factor_tt
+					FRA_industry_production_speed_buildings_factor = -0.1
+					tooltip = production_speed_buildings_factor_tt
 				}
 			}
 			hidden_effect = {
@@ -1444,12 +1544,12 @@ focus_tree = {
 						tooltip = global_building_slots_factor_tt
 					}
 					add_to_variable = {
-						FRA_industry_consumer_goods_factor = -0.1
+						FRA_industry_consumer_goods_factor = -0.15
 						tooltip = consumer_goods_factor_tt
 					}
 					add_to_variable = {
-						FRA_industry_production_speed_buildings_factor = -0.05
-						tooltip = consumer_goods_factor_tt
+						FRA_industry_production_speed_buildings_factor = -0.1
+						tooltip = production_speed_buildings_factor_tt
 					}
 				}
 			}
@@ -1580,6 +1680,9 @@ focus_tree = {
 
 		prerequisite = {
 			focus = FRA_office_des_chemins_de_fer
+		}
+		prerequisite = {
+			focus = FRA_establish_the_office_of_economic_planning
 		}
 		mutually_exclusive = {
 			focus = FRA_voluntary_association
@@ -2059,6 +2162,9 @@ focus_tree = {
 		x = -1
 		y = 1
 
+		prerequisite = {
+			focus = FRA_establish_the_office_of_economic_planning
+		}
 		prerequisite = {
 			focus = FRA_build_the_autoroutes
 		}
@@ -2544,6 +2650,9 @@ focus_tree = {
 		y = 1
 
 		prerequisite = {
+			focus = FRA_establish_the_office_of_economic_planning
+		}
+		prerequisite = {
 			focus = FRA_build_the_autoroutes
 		}
 		mutually_exclusive = {
@@ -2558,7 +2667,7 @@ focus_tree = {
 				DYNMOD = FRA_industry
 			}
 			add_to_variable = {
-				FRA_industry_production_factory_max_efficiency_factor = 0.05
+				FRA_industry_production_factory_max_efficiency_factor = 0.025
 				tooltip = production_factory_max_efficiency_factor_tt
 			}
 			add_to_variable = {
@@ -2626,7 +2735,7 @@ focus_tree = {
 					DYNMOD = FRA_industry
 				}
 				add_to_variable = {
-					FRA_industry_production_factory_max_efficiency_factor = 0.05
+					FRA_industry_production_factory_max_efficiency_factor = 0.025
 					tooltip = production_factory_max_efficiency_factor_tt
 				}
 				add_to_variable = {
@@ -2644,7 +2753,7 @@ focus_tree = {
 						DYNMOD = FRA_industry
 					}
 					add_to_variable = {
-						FRA_industry_production_factory_max_efficiency_factor = 0.05
+						FRA_industry_production_factory_max_efficiency_factor = 0.025
 						tooltip = production_factory_max_efficiency_factor_tt
 					}
 					add_to_variable = {
@@ -2714,7 +2823,7 @@ focus_tree = {
 					DYNMOD = FRA_industry
 				}
 				add_to_variable = {
-					FRA_industry_production_factory_max_efficiency_factor = 0.05
+					FRA_industry_production_factory_max_efficiency_factor = 0.025
 					tooltip = production_factory_max_efficiency_factor_tt
 				}
 				add_to_variable = {
@@ -2732,7 +2841,7 @@ focus_tree = {
 						DYNMOD = FRA_industry
 					}
 					add_to_variable = {
-						FRA_industry_production_factory_max_efficiency_factor = 0.05
+						FRA_industry_production_factory_max_efficiency_factor = 0.025
 						tooltip = production_factory_max_efficiency_factor_tt
 					}
 					add_to_variable = {
@@ -2997,7 +3106,7 @@ focus_tree = {
 		cost = 5
 
 		x = 7
-		y = 8
+		y = 9
 
 		ai_will_do = {
 			factor = 2
@@ -3190,14 +3299,10 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_dynamic_modifier = { modifier = FRA_armee_federale_modifier }
 			custom_effect_tooltip = generic_skip_one_line_tt
-			add_mastery_bonus = {
-				name = FRA_reform_the_high_command
-				bonus = 0.1
-				days = 365
-				folder = infantry
+			swap_ideas = {
+				remove_idea = FRA_conspiracies_of_the_general_staff_4_communist
+				add_idea = FRA_conspiracies_of_the_general_staff_5_communist
 			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-			enable_tactic_masterful_blitz = yes
 		}
 	}
 	focus = {
@@ -3217,7 +3322,7 @@ focus_tree = {
 
 		relative_position_id = FRA_the_riflemans_friend
 		x = 0
-		y = 1
+		y = 2
 
 		ai_will_do = {
 			factor = 2
@@ -3242,12 +3347,8 @@ focus_tree = {
 		completion_reward = {
 			add_war_support = 0.05
 			custom_effect_tooltip = generic_skip_one_line_tt
-			add_dynamic_modifier = { modifier = FRA_armee_federale_modifier }
+			remove_ideas = FRA_conspiracies_of_the_general_staff_5_communist
 			custom_effect_tooltip = generic_skip_one_line_tt
-			add_timed_idea = {
-				idea = FRA_purged_military
-				days = 180
-			}
 			custom_effect_tooltip = NJORD_when_idea_runs_out
 			effect_tooltip = {
 				add_war_support = 0.1
@@ -3390,7 +3491,7 @@ focus_tree = {
 					localization_key = tooltip_create_division_template
 					NAME = "Volontaires Internationaux"
 					LINE_1 = { localization_key = line_battalion_tt NAME = militia ICON = GFX_unit_militia_icon_small COUNT = 9 }
-					SUPPORT_1 = { localization_key = support_battalion_tt NAME = assault_battalion ICON = GFX_unit_assault_battalion_icon_small }
+					SUPPORT_1 = { localization_key = support_battalion_tt NAME = assault_battalion ICON = GFX_unit_blackshirt_assault_battalion_icon_small }
 					SUPPORT_2 = { localization_key = support_battalion_tt NAME = artillery ICON = GFX_unit_artillery_icon_small }
 				}
 				if = {
@@ -3732,9 +3833,6 @@ focus_tree = {
 		icon = GFX_focus_generic_tankette
 		cost = 5
 
-		available = {
-			has_country_flag = ARMY_ANAR
-		}
 		prerequisite = {
 			focus = FRA_reform_the_high_command
 		}
@@ -5231,7 +5329,7 @@ focus_tree = {
 		cost = 5
 
 		x = 22
-		y = 9
+		y = 10
 
 		ai_will_do = {
 			factor = 1
@@ -5318,7 +5416,7 @@ focus_tree = {
 		y = 1
 
 		available = {
-			controls_state = 21
+			controls_state = 143
 		}
 		prerequisite = {
 			focus = FRA_shipbuilding_union_expertise
@@ -5333,8 +5431,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			if = {
-				limit = { 21 = { free_building_slots = { building = dockyard size > 2 include_locked = yes } } }
-				21 = {
+				limit = { 143 = { free_building_slots = { building = dockyard size > 2 include_locked = yes } } }
+				143 = {
 					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = dockyard
@@ -5386,7 +5484,7 @@ focus_tree = {
 		y = 1
 
 		available = {
-			controls_state = 14
+			controls_state = 131
 		}
 		prerequisite = {
 			focus = FRA_shipbuilding_union_expertise
@@ -5401,8 +5499,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			if = {
-				limit = { 14 = { free_building_slots = { building = dockyard size > 2 include_locked = yes } } }
-				14 = {
+				limit = { 131 = { free_building_slots = { building = dockyard size > 2 include_locked = yes } } }
+				131 = {
 					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = dockyard
