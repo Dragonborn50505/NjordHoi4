@@ -33,11 +33,6 @@ leader_traits = {
 		gain_xp = {
 			always = no # not gainable
 		}
-		allowed = {
-			FROM = {
-				tag = LIT
-			}
-		}
 		modifier = {
 			
 		}

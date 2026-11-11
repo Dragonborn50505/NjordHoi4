@@ -31,6 +31,8 @@
  RUS_new_london: "'New London"
  RUS_army: "The Russian Armed Forces"
 
+ SOV_kolomna_organization: "Kolomna"
+
 # IDEOLOGY
  national_populism: "National Populism"
  national_populism_desc: "National Populism is a broad term for political ideologies associated with authoritarian ultranationalism involving a rejection of liberalism and socialism in favor of a traditionalist, militaristic, and one-party authoritarian state. Despite many commonalities, one aspect National Populist movements may differ on is their stances on religion, for example Integralism, and the parties that follow it, is popular in predominantly Catholic countries and calls for religion and government to become largely intertwined through a monarchy, while the Syrian Social Nationalist Party is explicitly secular in nature. Despite any differing beliefs National Populists may have, a component of National Populist thought that is widespread is Ultranationalism, irredentism, and revanchism as is the case with Pan-Slavism, Pan-Turkism, Pan-Germanism, and some strains of Islamism."

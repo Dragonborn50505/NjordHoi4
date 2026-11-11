@@ -789,21 +789,6 @@ leader_traits = {
 
 		trait_type = personality_trait
 
-		allowed = {
-			FROM = {
-				OR = {
-					original_tag = ITA
-					original_tag = SWI
-					original_tag = SWE
-					original_tag = AUS
-					original_tag = BRA
-					original_tag = GER
-					original_tag = CHI # Intentionally not below 
-					original_tag = PRC
-				}
-			}
-		}
-
 		unit_type = {
 			type = militia
 		}
@@ -811,15 +796,6 @@ leader_traits = {
 		unit_trigger = {
 			division_has_majority_template = militia
 			owner = {
-				OR = {
-					original_tag = ITA
-					original_tag = SWI
-					original_tag = SWE
-					original_tag = AUS
-					original_tag = BRA
-					original_tag = GER
-					original_tag = PRC 
-				}
 				NOT = {
 					OR = {
 						has_idea = best_of_the_best_spirit
@@ -870,10 +846,6 @@ leader_traits = {
 	jaeger = { 
 		type = land
 		trait_type = personality_trait 
-
-		allowed = {
-			FROM = { original_tag = FIN }
-		}
 				
 		trait_xp_factor = {
 			trickster = 1     #+100%

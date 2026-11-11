@@ -11,7 +11,7 @@ characters={
 		}
 		advisor = {
 			slot = army_chief
-			traits = { army_chief_offensive_2 }
+			traits = { army_chief_offensive_3 }
 		}
 		field_marshal={
 			skill=5
@@ -24,7 +24,9 @@ characters={
 				peasant_sympathiser
 				winter_specialist
 				organizer
-				cavalry_officer
+				skilled_staffer
+				offensive_doctrine
+				harsh_leader
 			}
 		}
 	}
@@ -39,15 +41,23 @@ characters={
 				small="GFX_portrait_SOV_semyon_timoshenko_small"
 			}
 		}
-		corps_commander={
-			skill=2
-			attack_skill=2
+		advisor = {
+			slot = high_command
+			traits = { army_infantry_2 }
+		}
+		field_marshal={
+			skill=4
+			attack_skill=6
 			defense_skill=3
-			planning_skill=1
-			logistics_skill=1
+			planning_skill=2
+			logistics_skill=3
 			legacy_id=0
 			traits = {
 				peasant_sympathiser
+				organizer
+				infantry_leader
+				infantry_expert
+				infantry_officer
 			}
 		}
 	}
@@ -63,12 +73,19 @@ characters={
 			}
 		}
 		corps_commander={
-			skill=2
+			skill=3
 			attack_skill=3
 			defense_skill=2
 			planning_skill=1
 			logistics_skill=1
 			legacy_id=0
+			traits = {
+				peasant_sympathiser
+				war_hero
+				organizer
+				infantry_leader
+				infantry_expert
+			}
 		}
 	}
 
@@ -89,6 +106,13 @@ characters={
 			planning_skill=1
 			logistics_skill=1
 			legacy_id=0
+			traits = {
+				peasant_sympathiser
+				war_hero
+				fast_planner
+				infantry_leader
+				infantry_expert
+			}
 		}
 	}
 
@@ -109,6 +133,9 @@ characters={
 			planning_skill=1
 			logistics_skill=1
 			legacy_id=0
+			traits = {
+				cavalry_officer
+			}
 		}
 	}
 
@@ -122,8 +149,12 @@ characters={
 				small="GFX_Soviet_Mitrofan_Nezhentsev_small"
 			}
 		}
+		advisor = {
+			slot = army_chief
+			traits = { army_chief_offensive_2 }
+		}
 		corps_commander={
-			skill=3
+			skill=4
 			attack_skill=3
 			defense_skill=4
 			planning_skill=2
@@ -131,6 +162,9 @@ characters={
 			legacy_id=0
 			traits = {
 				BALTIC_anti_bolshevik
+				harsh_leader
+				skilled_staffer
+				panzer_leader
 			}
 		}
 	}
@@ -152,6 +186,12 @@ characters={
 			planning_skill=1
 			logistics_skill=1
 			legacy_id=0
+			traits = {
+				trait_GRE_stauch_monarchist
+				cavalry_leader
+				defensive_doctrine
+				inspirational_leader
+			}
 		}
 	}
 

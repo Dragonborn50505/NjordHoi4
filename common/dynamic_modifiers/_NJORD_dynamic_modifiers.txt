@@ -699,7 +699,6 @@ FRA_industry = {
 	industrial_capacity_dockyard = FRA_industry_industrial_capacity_dockyard
 	production_factory_start_efficiency_factor = FRA_industry_production_factory_start_efficiency_factor
 	line_change_production_efficiency_factor = FRA_industry_line_change_production_efficiency_factor
-	local_resources_factor = FRA_industry_local_resources_factor
 	conscription = FRA_industry_conscription
 }
 
