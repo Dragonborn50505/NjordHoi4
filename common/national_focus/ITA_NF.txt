@@ -284,11 +284,6 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		available = {
-			hidden_trigger = {
-				always = no
-			}
-		}
 		prerequisite = {
 			focus = SRI_making_the_new_italy
 		}
@@ -1761,8 +1756,10 @@ focus_tree = {
 		available = {
 			controls_state = 232 #Calabria
 			controls_state = 223 #Abruzzo
+			controls_state = 233
 			232 = { is_core_of = ROOT }
 			223 = { is_core_of = ROOT }
+			233 = { is_core_of = ROOT }
 		}
 
 		prerequisite = {
@@ -1773,7 +1770,7 @@ focus_tree = {
 
 		completion_reward = {
 			232 = { #Calabria
-				NJORD_upgrade_state_category = yes
+				add_extra_state_shared_building_slots = 1
 				if = {
 					limit = { free_building_slots = { building = infrastructure size > 0 } }
 					add_building_construction = {
@@ -1782,12 +1779,14 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
-				else = {
-					add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
 				}
 			}
 			223 = { #Abruzzo
-				NJORD_upgrade_state_category = yes
+				add_extra_state_shared_building_slots = 1
 				if = {
 					limit = { free_building_slots = { building = infrastructure size > 0 } }
 					add_building_construction = {
@@ -1796,8 +1795,26 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
-				else = {
-					add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			233 = { #Sicily
+				add_extra_state_shared_building_slots = 1
+				if = {
+					limit = { free_building_slots = { building = infrastructure size > 0 } }
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
 				}
 			}
 		}
@@ -5600,10 +5617,6 @@ focus_tree = {
 		relative_position_id = SRI_cantieri_riuniti_del_tirreno
 		x = 0
 		y = 1
-
-		available = {
-			controls_state = 488 #Trieste
-		}
 
 		prerequisite = {
 			focus = SRI_cantieri_riuniti_del_tirreno

@@ -1097,7 +1097,7 @@ focus_tree = {
 	focus = {
 		id = RUS_labour_conscription
 		icon = GFX_focus_DEN_heavy_regulations
-		cost = 10
+		cost = 5
 
 		relative_position_id = RUS_voskhod
 		x = 0
@@ -1139,7 +1139,7 @@ focus_tree = {
 	focus = {
 		id = RUS_teleological_planning
 		icon = GFX_focus_GER_prioritize_the_four_year_plan
-		cost = 10
+		cost = 5
 
 		relative_position_id = RUS_labour_conscription
 		x = -1
@@ -1147,9 +1147,6 @@ focus_tree = {
 
 		prerequisite = {
 			focus = RUS_labour_conscription
-		}
-		mutually_exclusive = {
-			focus = RUS_solidarist_representation
 		}
 		ai_will_do = {
 			base = 35
@@ -1188,9 +1185,6 @@ focus_tree = {
 
 		prerequisite = {
 			focus = RUS_labour_conscription
-		}
-		mutually_exclusive = {
-			focus = RUS_teleological_planning
 		}
 		available = {
 			has_manpower > 50000
@@ -1235,50 +1229,22 @@ focus_tree = {
 
 		prerequisite = {
 			focus = RUS_teleological_planning
+		}
+		prerequisite = {
 			focus = RUS_solidarist_representation
 		}
 		ai_will_do = {
 			factor = 15
 		}
 		completion_reward = {
-			if = {
-				limit = { 
-					has_idea = RUS_supreme_economic_council_3
-				}
-				swap_ideas = {
-					remove_idea = RUS_supreme_economic_council_3
-					add_idea = RUS_supreme_economic_council_4
-				}
+			swap_ideas = {
+				remove_idea = RUS_supreme_economic_council_3
+				add_idea = RUS_supreme_economic_council_4
 			}
-			else_if = {
-				limit = { 
-					has_idea = RUS_supreme_economic_council_2
-				}
-				swap_ideas = {
-					remove_idea = RUS_supreme_economic_council_2
-					add_idea = RUS_supreme_economic_council_3
-				}
-			}
-			else = {
-				swap_ideas = {
-					remove_idea = RUS_supreme_economic_council
-					add_idea = RUS_supreme_economic_council_2
-				}
-			}
-			if = {
-				limit = { 
-					has_idea = RUS_artels_chamber
-				}
-				swap_ideas = {
-					remove_idea = RUS_artels_chamber
-					add_idea = RUS_artels_chamber_2
-				}
-			}
-			else = {
-				swap_ideas = {
-					remove_idea = RUS_artels
-					add_idea = RUS_artels_chamber
-				}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			swap_ideas = {
+				remove_idea = RUS_supreme_economic_council_2
+				add_idea = RUS_supreme_economic_council_3
 			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1579,34 +1545,34 @@ focus_tree = {
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			499 = { # CHANGE TO WEST RUSSIAN STATE
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			500 = { # CHANGE TO WEST RUSSIAN STATE
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			498 = { # CHANGE TO WEST RUSSIAN STATE
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			515 = { # CHANGE TO WEST RUSSIAN STATE
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1638,34 +1604,34 @@ focus_tree = {
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			512 = { # CHANGE TO URALS STATE
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			505 = { # CHANGE TO URALS STATE
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			504 = { # CHANGE TO URALS STATE
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			506 = { # CHANGE TO URALS STATE
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}

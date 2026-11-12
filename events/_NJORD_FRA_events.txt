@@ -31,13 +31,24 @@ country_event = {
 
 	option = {
 		name = FRA_events.2.a
-		
+
+		FRA = {
+			transfer_state = 224
+		}
+		224 = {
+			remove_core_of = root
+		}
 		ai_chance = {
 			base = 0
 		}
 	}
 	option = {
 		name = FRA_events.2.b
+
+		add_war_support = -0.1
+        FRA = {
+            add_war_support = 0.05
+        }
 		
 	}
 }
@@ -377,9 +388,9 @@ country_event = {
 			base = 0
 		}
 	}
-}GFX_report_event_peasant_revolt
+}
 
-# France Descends into Civil War
+# The Second Communard Revolution
 country_event = {
 		id = FRA_events.11
 		title = FRA_events.11.t
@@ -387,6 +398,10 @@ country_event = {
 		picture = GFX_report_event_peasant_revolt
 
 		is_triggered_only = yes
+	
+		immediate = {
+			leave_faction = yes
+		}
 
 		after = {
 			set_party_rule = {
@@ -440,7 +455,10 @@ country_event = {
 			}
 			add_ideas = FRA_conspiracies_of_the_general_staff_4_communist
 			add_ideas = FRA_government_fractures_3_communist
-			add_ideas = FRA_counterrevolutionary_forces
+			add_timed_idea = {
+				idea = FRA_counterrevolutionary_forces
+				days = 180
+			}
 		}
 		ai_chance = {
 			base = 0

@@ -1156,6 +1156,9 @@ focus_tree = {
 
 		prerequisite = {
 			focus = DEN_universal_healthcare
+		}
+
+		prerequisite = {
 			focus = DEN_encourage_unempl_insurance
 		}
 

@@ -122,14 +122,10 @@ if = {
     }
 }
 
-if = {
-    limit = {has_dlc = "Together for Victory" }
-
-    add_to_tech_sharing_group = ITA_research
-}
 
 add_opinion_modifier = { target = X07 modifier = negative_50 }
 add_opinion_modifier = { target = FRA modifier = negative_50 }
+
 
 add_ideas = {
 	great_power
@@ -344,33 +340,6 @@ recruit_character = UTI_sergei_kirov
 recruit_character = UTI_sergey_khudyakov
 recruit_character = UTI_yakov_smushkevich
 recruit_character = UTI_pavel_rychagov
-UTI_aleksandr_shlyapnikov = {
-	set_character_flag = SOV_imprisoned_flag
-}
-UTI_genrikh_yagoda = {
-	set_character_flag = SOV_safe_from_purge_flag
-}
-UTI_grigory_zinovyev = {
-	set_character_flag = SOV_imprisoned_flag
-}
-UTI_ivan_smirnov = {
-	set_character_flag = SOV_imprisoned_flag
-}
-UTI_ivar_smilga = {
-	set_character_flag = SOV_imprisoned_flag
-}
-UTI_lavrenty_beriya = {
-	set_character_flag = SOV_safe_from_purge_flag
-}
-UTI_lev_kamenev = {
-	set_character_flag = SOV_imprisoned_flag
-}
-UTI_martemyan_ryutin = {
-	set_character_flag = SOV_imprisoned_flag
-}
-UTI_nikolay_yezhov = {
-	set_character_flag = SOV_safe_from_purge_flag
-}
 
 if = {
 	limit = {
@@ -710,6 +679,3 @@ if = {
 }
 
 add_equipment_to_stockpile = { type = artillery_equipment amount = 1056 producer = ITA }
-
-save_global_event_target_as = FRA_begin_rearmament_ITA
-save_global_event_target_as = SOV_the_path_of_marxism_leninism_SOV

@@ -320,7 +320,7 @@ EQ_MOD_CAT_tank_super_heavy_main_armament_1_TITLE: "Super Heavy Main Armament (T
  modifier_army_sub_unit_militia_attack_factor_tt: "$modifier_army_sub_unit_militia_attack_factor$: $RIGHT|+=%2$"
  modifier_army_sub_unit_militia_defence_factor_tt: "$modifier_army_sub_unit_militia_defence_factor$: $RIGHT|+=%2$"
  modifier_army_sub_unit_militia_max_org_factor_tt: "$modifier_army_sub_unit_militia_max_org_factor$: $RIGHT|+=%2$"
- modifier_army_sub_unit_militia_speed_factor_tt: "$modifier_army_sub_unit_cavalry_speed_factor$: $RIGHT|+=%1$"
+ modifier_army_sub_unit_militia_speed_factor_tt: "$modifier_army_sub_unit_militia_speed_factor$: $RIGHT|+=%1$"
 
  modifier_army_sub_unit_irregular_attack_factor_tt: "$modifier_army_sub_unit_irregular_infantry_attack_factor$: $RIGHT|+=%2$"
  modifier_army_sub_unit_irregular_defence_factor_tt: "$modifier_army_sub_unit_irregular_infantry_defence_factor$: $RIGHT|+=%2$"
