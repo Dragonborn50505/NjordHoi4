@@ -3807,113 +3807,6 @@ ideas = {
 			}
 		}
 
-		# IRELAND
-		IRE_empire_of_the_irish_crown = {
-			picture = AFG_economic_regionalism
-			modifier = {
-				political_power_gain = 0.1
-				party_popularity_stability_factor = 0.1
-				war_stability_factor = 0.1
-				compliance_gain = -0.01
-				resistance_growth = -0.1
-				required_garrison_factor = 0.33
-				supply_consumption_factor = 0.1
-			}
-		}
-
-		IRE_mistress_of_the_oceans = {
-			picture = AFG_economic_regionalism
-			modifier = {
-				industrial_capacity_dockyard = 0.1
-				production_speed_dockyard_factor = 0.05
-				production_speed_naval_base_factor = 0.05
-				navy_max_range_factor = 0.1
-				navy_org_factor = 0.05
-				experience_gain_navy_factor = 0.05
-				consumer_goods_factor = 0.1
-			}
-		}
-
-		IRE_wealth_of_a_thousand_shores = {
-			picture = AFG_economic_regionalism
-			modifier = {
-				local_resources_factor = 0.2
-				consumer_goods_factor = 0.1
-				production_speed_buildings_factor = 0.05
-				industrial_capacity_factory = 0.05
-				political_power_cost = 0.2
-				master_build_autonomy_factor = 0.25
-				subjects_autonomy_gain = -0.05
-			}
-		}
-
-		IRE_question_of_the_dominions = {
-			picture = AFG_economic_regionalism
-			modifier = {
-				political_power_factor = -0.1
-				stability_factor = -0.05
-				resistance_growth = 0.05
-				compliance_growth = 0.05
-				subjects_autonomy_gain = 0.1
-				drift_defence_factor = -0.15
-				conscription_factor = -0.1
-			}
-		}
-
-		IRE_the_english_standstill = {
-			picture = AFG_economic_regionalism
-			modifier = {
-				stability_factor = -0.05
-				conscription_factor = -0.1
-				war_support_factor = -0.05
-			}
-			targeted_modifier = {
-				tag = HOL
-				attack_bonus_against = -0.1
-				defense_bonus_against = -0.1
-			}
-			targeted_modifier = {
-				tag = ENG
-				weekly_manpower = 150
-				compliance_growth_on_our_occupied_states = -0.1
-				resistance_decay_on_our_occupied_states = 0.1
-			}
-		}
-
-		IRE_the_shadow_of_the_prussian_eagle = {
-			picture = AFG_economic_regionalism
-			modifier = {
-				war_support_factor = 0.05
-				stability_factor = -0.05
-				army_core_defence_factor = 0.05
-			}
-			targeted_modifier = {
-				tag = PRE
-				extra_trade_to_target_factor = -0.25
-				trade_cost_for_target_factor = 0.25
-			}
-		}
-
-		HOL_the_english_standstill = {
-			picture = AFG_economic_regionalism
-			modifier = {
-				stability_factor = -0.05
-				war_support_factor = -0.05
-				conscription_factor = -0.1
-			}
-			targeted_modifier = {
-				tag = IRE
-				attack_bonus_against = -0.1
-				defense_bonus_against = -0.1
-			}
-			targeted_modifier = {
-				tag = ENG
-				weekly_manpower = 150
-				compliance_growth_on_our_occupied_states = -0.1
-				resistance_decay_on_our_occupied_states = 0.1
-			}
-		}
-
 
 		# FRANCE / COMMUNE OF FRANCE
 		FRA_scars_of_the_great_european_war = {
@@ -6889,6 +6782,354 @@ ideas = {
 		}
 
 
-		#
+		# JAPAN
+		JAP_the_national_security_act = {
+			picture = JAP_yatagarasus_guidance
+			modifier = {
+				required_garrison_factor = -0.25
+				resistance_growth = -0.05
+				resistance_damage_to_garrison = -0.05
+				root_out_resistance_effectiveness_factor = 0.25
+			}
+		}
+
+		JAP_the_showa_emperor = {
+			picture = JAP_showa_statism
+			modifier = {
+				party_popularity_stability_factor = 0.25
+				drift_defence_factor = 0.25
+				political_power_factor = 0.05
+				absolutist_drift = 0.01
+			}
+		}
+
+		JAP_the_showa_emperor_2 = {
+			name = JAP_the_showa_emperor
+			picture = JAP_showa_statism
+			modifier = {
+				party_popularity_stability_factor = 0.25
+				drift_defence_factor = 0.5
+				political_power_factor = 0.1
+				war_stability_factor = 0.1
+				absolutist_drift = 0.03
+			}
+		}
+
+		JAP_dojinkai_industrialists = {
+			picture = JAP_the_civilian_cabinet
+			modifier = {
+				industrial_concern_cost_factor = -0.33
+				military_industrial_organization_research_bonus = 0.1
+				industrial_capacity_dockyard = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		JAP_dojinkai_industrialists_2 = {
+			name = JAP_dojinkai_industrialists
+			picture = JAP_the_civilian_cabinet
+			modifier = {
+				industrial_concern_cost_factor = -0.33
+				military_industrial_organization_research_bonus = 0.1
+				industrial_capacity_dockyard = 0.1
+				industrial_capacity_factory = 0.1
+				line_change_production_efficiency_factor = 0.1
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+
+		JAP_dojinkai_industrialists_3 = {
+			name = JAP_dojinkai_industrialists
+			picture = JAP_the_civilian_cabinet
+			modifier = {
+				industrial_concern_cost_factor = -0.33
+				military_industrial_organization_research_bonus = 0.1
+				industrial_capacity_dockyard = 0.15
+				industrial_capacity_factory = 0.15
+				line_change_production_efficiency_factor = 0.1
+				production_factory_start_efficiency_factor = 0.05
+				production_speed_buildings_factor = 0.1
+			}
+		}
+
+		JAP_burgeoning_agriculture = {
+			picture = generic_agrarian_society
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = -0.15
+				conscription_factor = -0.15
+			}
+		}
+
+		JAP_burgeoning_agriculture_2 = {
+			picture = generic_agrarian_society
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = -0.05
+				conscription_factor = -0.05
+			}
+		}
+
+		JAP_reformed_agriculture = {
+			picture = JAP_the_japanese_communist_party
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.05
+				monthly_population = 0.1
+				supply_consumption_factor = -0.05
+				supply_factor = 0.05
+			}
+		}
+
+		JAP_national_service_draft_ordinance_idea = {
+			picture = JAP_socialist_pioneers
+			modifier = {
+				conscription_factor = 0.15
+				mobilization_speed = 0.1
+				war_support_factor = 0.1
+				mobilization_laws_cost_factor = -0.33
+			}
+		}
+
+		JAP_state_controlled_banking_and_finances = {
+			picture = JAP_idemitsu_kosan
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.1
+				consumer_goods_factor = -0.05
+				political_power_factor = 0.05
+				economy_laws_cost_factor = -0.33
+			}
+		}
+
+		JAP_cabinet_information_committee_idea = {
+			picture = JAP_expel_the_barbarians
+			modifier = {
+				political_power_factor = 0.1
+				stability_weekly_factor = 0.001
+				war_support_weekly_factor = 0.001
+			}
+		}
+
+		JAP_spirital_mobilization_movement = {
+			picture = JAP_advance_one_hundred_million_fireballs
+			modifier = {
+				army_morale_factor = 0.1
+				weekly_casualties_war_support = 0.002
+				weekly_bombing_war_support = 0.002
+				weekly_convoys_war_support = 0.002
+			}
+		}
+
+		JAP_self_sufficiency = {
+			picture = JAP_socialist_pioneers
+			modifier = {
+				production_lack_of_resource_penalty_factor = -0.15
+				min_export = -0.15
+				consumer_goods_factor = -0.05
+				local_resources_factor = 0.15
+			}
+		}
+
+		JAP_appeased_kodoha_faction = {
+			picture = JAP_national_defense_brotherhood
+			modifier = {
+				conscription = 0.01
+				org_loss_at_low_org_factor = -0.1
+				radical_drift = 0.01
+				no_supply_grace = 12
+			}
+		}
+
+		JAP_appeased_kodoha_faction_2 = {
+			name = JAP_appeased_kodoha_faction
+			picture = JAP_national_defense_brotherhood
+			modifier = {
+				conscription = 0.01
+				org_loss_at_low_org_factor = -0.15
+				training_time_army_factor = -0.1
+				army_attack_factor = 0.05
+				radical_drift = 0.01
+				fascism_drift = 0.01
+				no_supply_grace = 12
+			}
+		}
+
+		JAP_appeased_kodoha_faction_3 = {
+			name = JAP_appeased_kodoha_faction
+			picture = JAP_national_defense_brotherhood
+			modifier = {
+				conscription = 0.02
+				conscription_factor = 0.1
+				war_stability_factor = 0.1
+				org_loss_at_low_org_factor = -0.15
+				training_time_army_factor = -0.15
+				army_attack_factor = 0.05
+				radical_drift = 0.01
+				fascism_drift = 0.01
+				party_popularity_stability_factor = 0.1
+				no_supply_grace = 24
+			}
+		}
+
+		JAP_enacting_economic_controls = {
+			picture = JAP_east_asian_co_prosperity
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				autonomy_manpower_share_from_subjects = 0.25
+				subjects_autonomy_gain = -0.1
+			}
+		}
+
+		JAP_enacting_economic_controls_2 = {
+			picture = JAP_east_asian_co_prosperity
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				autonomy_manpower_share_from_subjects = 0.5
+				subjects_autonomy_gain = -0.2
+				resistance_activity = -0.05
+			}
+			targeted_modifier = {
+				tag = W58
+				cic_to_overlord_factor = 0.05
+				mic_to_overlord_factor = 0.05
+				resources_to_overlord_factor = 0.25
+				overlord_trade_cost_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = FOR
+				cic_to_overlord_factor = 0.05
+				mic_to_overlord_factor = 0.05
+				resources_to_overlord_factor = 0.25
+				overlord_trade_cost_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = SAR
+				cic_to_overlord_factor = 0.05
+				mic_to_overlord_factor = 0.05
+				resources_to_overlord_factor = 0.25
+				overlord_trade_cost_factor = -0.5
+			}
+		}
+
+		# JAPAN COMBINED ARMY SPIRIT
+		JAP_the_national_militaristic_people_spirit = {
+			picture = JAP_imperial_army
+			modifier = {
+				conscription = 0.02
+				conscription_factor = 0.25
+				mobilization_speed = 0.2
+				war_support_factor = 0.25
+				mobilization_laws_cost_factor = -0.33
+				army_morale_factor = 0.2
+				weekly_casualties_war_support = 0.004
+				weekly_bombing_war_support = 0.004
+				weekly_convoys_war_support = 0.004
+				war_stability_factor = 0.2
+				org_loss_at_low_org_factor = -0.25
+				training_time_army_factor = -0.15
+				army_attack_factor = 0.075
+				army_defence_factor = 0.05
+				radical_drift = 0.02
+				fascism_drift = 0.02
+				party_popularity_stability_factor = 0.15
+				army_attack_speed_factor = 0.1
+				no_supply_grace = 48
+			}
+		}
+
+		JAP_total_economic_mobilization = {
+			picture = JAP_japanese_economy
+			modifier = {
+				industrial_concern_cost_factor = -0.33
+				military_industrial_organization_research_bonus = 0.1
+				industrial_capacity_dockyard = 0.15
+				industrial_capacity_factory = 0.15
+				production_factory_max_efficiency_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
+				production_factory_start_efficiency_factor = 0.05
+				production_speed_buildings_factor = 0.2
+				consumer_goods_factor = -0.25
+				monthly_population = 0.2
+				supply_consumption_factor = -0.05
+				supply_factor = 0.05
+				production_speed_arms_factory_factor = 0.15
+				production_speed_dockyard_factor = 0.15
+				political_power_factor = 0.1
+				economy_laws_cost_factor = -0.33
+				production_lack_of_resource_penalty_factor = -0.2
+				min_export = -0.2
+				local_resources_factor = 0.2
+			}
+		}
+
+		JAP_unified_war_cabinet = {
+			picture = JAP_imperial_influence
+			modifier = {
+				required_garrison_factor = -0.33
+				resistance_growth = -0.1
+				resistance_damage_to_garrison = -0.15
+				root_out_resistance_effectiveness_factor = 0.33
+				party_popularity_stability_factor = 0.5
+				drift_defence_factor = 1.0
+				political_power_factor = 0.2
+				war_stability_factor = 0.1
+				absolutist_drift = 0.05
+				stability_weekly_factor = 0.002
+				war_support_weekly_factor = 0.002
+			}
+		}
+
+		JAP_total_economic_dominance = {
+			picture = JAP_red_dawn_over_asia
+			modifier = {
+				production_speed_buildings_factor = 0.2
+				autonomy_manpower_share_from_subjects = 0.75
+				subjects_autonomy_gain = -0.2
+				resistance_activity = -0.1
+				military_factory_donations = 5
+				industrial_factory_donations = 5
+				dockyard_donations = 5
+			}
+			targeted_modifier = {
+				tag = W58
+				cic_to_overlord_factor = 0.1
+				mic_to_overlord_factor = 0.1
+				resources_to_overlord_factor = 0.5
+				overlord_trade_cost_factor = -0.75
+				master_ideology_drift = 0.01
+			}
+			targeted_modifier = {
+				tag = FOR
+				cic_to_overlord_factor = 0.1
+				mic_to_overlord_factor = 0.1
+				resources_to_overlord_factor = 0.5
+				overlord_trade_cost_factor = -0.75
+				master_ideology_drift = 0.01
+			}
+			targeted_modifier = {
+				tag = SAR
+				cic_to_overlord_factor = 0.1
+				mic_to_overlord_factor = 0.1
+				resources_to_overlord_factor = 0.5
+				overlord_trade_cost_factor = -0.75
+				master_ideology_drift = 0.01
+			}
+		}
+
+		# JAPAN ARMY TREE
+		JAP_equipment_modernisations = {
+			picture = jap_supremacy_of_technology
+			research_bonus = {
+				infantry_weapons = 0.1
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					soft_attack = 0.05
+					breakthrough = 0.05
+					build_cost_ic = -0.1
+				}
+			}
+		}
 	}
 }

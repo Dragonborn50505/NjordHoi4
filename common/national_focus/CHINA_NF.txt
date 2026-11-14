@@ -54,7 +54,7 @@ focus_tree = {
 			add_political_power = 50
 			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
-				remove_idea = CHI_illicit_trade
+				remove_idea = CHI_illicit_trade_idea
 				add_idea = CHI_illicit_trade_allowed
 			}
 		}
@@ -3915,7 +3915,7 @@ focus_tree = {
 	focus = {
 		id = QIE_cross_the_dai_river
 		icon = GFX_focus_AST_war_japan
-		cost = 3
+		cost = 5
 
 		relative_position_id = QIE_restore_order_in_the_middle_kingdom
 		x = 0

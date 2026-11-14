@@ -1,0 +1,977 @@
+focus_tree = {
+	id = JAP_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = JAP
+		}
+	}
+	
+	default = no
+
+	focus = {
+		id = JAP_the_national_security_act
+		icon = GFX_focus_JAP_yatagarasus_guidance
+		x = 5
+		y = 0
+		cost = 5
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = JAP_the_national_security_act
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = JAP_the_showa_restorations
+		icon = GFX_focus_jap_showa_restoration
+		x = 0
+		y = 1
+		relative_position_id = JAP_the_national_security_act
+		prerequisite = {
+			focus = JAP_the_national_security_act
+		}
+		cost = 5
+		completion_reward = {
+			add_political_power = 100
+			add_popularity = {
+				ideology = absolutist
+				popularity = 0.05
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_manpower = 15000
+			custom_effect_tooltip = generic_skip_one_line_tt
+			swap_ideas = {
+				remove_idea = JAP_the_showa_emperor
+				add_idea = JAP_the_showa_emperor_2
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = JAP_work_through_the_dojinkai
+		icon = GFX_focus_JAP_crush_the_internal_factions
+		x = -5
+		y = 1
+		relative_position_id = JAP_the_showa_restorations
+		prerequisite = {
+			focus = JAP_the_showa_restorations
+		}
+		cost = 5
+		completion_reward = {
+			add_political_power = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = JAP_dojinkai_industrialists
+			custom_effect_tooltip = generic_skip_one_line_tt
+			every_core_state = {
+				limit = {
+					is_owned_and_controlled_by = root
+					is_in_home_area = yes
+				}
+				random_select_amount = 4
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = JAP_reach_out_to_big_business
+		icon = GFX_focus_JAP_approach_mitsui
+		x = -1
+		y = 1
+		relative_position_id = JAP_work_through_the_dojinkai
+		prerequisite = {
+			focus = JAP_work_through_the_dojinkai
+		}
+		cost = 5
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = JAP_dojinkai_industrialists
+				add_idea = JAP_dojinkai_industrialists_2
+			}
+			every_core_state = {
+				limit = {
+					is_owned_and_controlled_by = root
+					is_in_home_area = yes
+				}
+				random_select_amount = 2
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = JAP_a_new_way
+		icon = GFX_focus_PHI_encourage_japanese_investment
+		x = 0
+		y = 1
+		relative_position_id = JAP_reach_out_to_big_business
+		prerequisite = {
+			focus = JAP_reach_out_to_big_business
+		}
+		cost = 5
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = JAP_dojinkai_industrialists_2
+				add_idea = JAP_dojinkai_industrialists_3
+			}
+			every_core_state = {
+				limit = { 
+					is_owned_and_controlled_by = root
+					is_in_home_area = yes
+					free_building_slots = { building = infrastructure size > 0 } 
+				}
+				random_select_amount = 4
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = JAP_development_of_the_countryside
+		icon = GFX_focus_JAP_central_agricultural_association
+		x = 1
+		y = 1
+		relative_position_id = JAP_work_through_the_dojinkai
+		prerequisite = {
+			focus = JAP_work_through_the_dojinkai
+		}
+		cost = 5
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = JAP_burgeoning_agriculture
+				add_idea = JAP_burgeoning_agriculture_2
+			}
+			every_core_state = {
+				limit = { 
+					is_owned_and_controlled_by = root
+					is_in_home_area = yes
+					free_building_slots = { building = infrastructure size > 0 } 
+				}
+				random_select_amount = 4
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = JAP_one_country_united
+		icon = GFX_focus_JAP_the_five_great_cities
+		x = 0
+		y = 1
+		relative_position_id = JAP_development_of_the_countryside
+		prerequisite = {
+			focus = JAP_development_of_the_countryside
+		}
+		cost = 5
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			swap_ideas = {
+				remove_idea = JAP_burgeoning_agriculture_2
+				add_idea = JAP_reformed_agriculture
+			}
+			every_core_state = {
+				limit = { 
+					is_owned_and_controlled_by = root
+					is_in_home_area = yes
+					NOT = {
+						has_state_category = megalopolis
+					}
+				}
+				random_select_amount = 4
+				NJORD_upgrade_state_category = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = JAP_a_favor_between_friends
+		icon = GFX_focus_jap_zaibatsu
+		x = 1
+		y = 1
+		relative_position_id = JAP_a_new_way
+		prerequisite = {
+			focus = JAP_a_new_way
+		}
+		prerequisite = {
+			focus = JAP_one_country_united
+		}
+		cost = 5
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			swap_ideas = {
+				remove_idea = JAP_burgeoning_agriculture_2
+				add_idea = JAP_reformed_agriculture
+			}
+			every_core_state = {
+				limit = { 
+					is_owned_and_controlled_by = root
+					is_in_home_area = yes
+				}
+				random_select_amount = 2
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			every_core_state = {
+				limit = { 
+					is_owned_and_controlled_by = root
+					is_in_home_area = yes
+				}
+				random_select_amount = 2
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			every_core_state = {
+				limit = { 
+					is_owned_and_controlled_by = root
+					is_in_home_area = yes
+				}
+				random_select_amount = 2
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	focus = {
+		id = JAP_destroy_degenerative_individualism
+		icon = GFX_focus_generic_expropriate_industrialist
+		x = -1
+		y = 1
+		relative_position_id = JAP_the_showa_restorations
+		prerequisite = {
+			focus = JAP_the_showa_restorations
+		}
+		cost = 5
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.05
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = JAP_eliminate_party_politics
+		icon = GFX_focus_JAP_purge_the_kodoha_faction
+		x = 1
+		y = 1
+		relative_position_id = JAP_the_showa_restorations
+		prerequisite = {
+			focus = JAP_the_showa_restorations
+		}
+		cost = 5
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = radical
+				popularity = -0.05
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = JAP_implementing_shintaisei
+		icon = GFX_focus_JAP_revere_the_emperor_destroy_the_traitors
+		x = 1
+		y = 1
+		relative_position_id = JAP_destroy_degenerative_individualism
+		prerequisite = {
+			focus = JAP_destroy_degenerative_individualism
+		}
+		prerequisite = {
+			focus = JAP_eliminate_party_politics
+		}
+		cost = 5
+		completion_reward = {
+			add_popularity = {
+				ideology = absolutist
+				popularity = 0.05
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			swap_ruler_traits = {
+				remove = JAP_imperial_prince
+				add = JAP_emperor_with_a_thousand_friends
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = JAP_national_service_draft_ordinance
+		icon = GFX_focus_JAP_raise_the_red_flag_high
+		x = -2
+		y = 1
+		relative_position_id = JAP_implementing_shintaisei
+		prerequisite = {
+			focus = JAP_implementing_shintaisei
+		}
+		cost = 5
+		completion_reward = {
+			add_ideas = JAP_national_service_draft_ordinance_idea
+			custom_effect_tooltip = generic_skip_one_line_tt
+			every_core_state = {
+				limit = { 
+					is_owned_and_controlled_by = root
+					is_in_home_area = yes
+				}
+				random_select_amount = 3
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = JAP_banking_and_finance_control
+		icon = GFX_focus_PER_national_bank
+		x = 0
+		y = 1
+		relative_position_id = JAP_implementing_shintaisei
+		prerequisite = {
+			focus = JAP_implementing_shintaisei
+		}
+		cost = 5
+		completion_reward = {
+			add_ideas = JAP_state_controlled_banking_and_finances
+			custom_effect_tooltip = generic_skip_one_line_tt
+			every_core_state = {
+				limit = { 
+					is_owned_and_controlled_by = root
+					is_in_home_area = yes
+				}
+				random_select_amount = 3
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = JAP_cabinet_information_committee
+		icon = GFX_focus_JAP_konoes_first_cabinet
+		x = 2
+		y = 1
+		relative_position_id = JAP_implementing_shintaisei
+		prerequisite = {
+			focus = JAP_implementing_shintaisei
+		}
+		cost = 5
+		completion_reward = {
+			add_stability = 0.1
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = JAP_cabinet_information_committee_idea
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = JAP_mobilize_the_nation
+		icon = GFX_focus_JAP_advance_one_hundred_million_fireballs
+		x = -1
+		y = 2
+		relative_position_id = JAP_implementing_shintaisei
+		prerequisite = {
+			focus = JAP_national_service_draft_ordinance
+		}
+		prerequisite = {
+			focus = JAP_banking_and_finance_control
+		}
+		cost = 5
+		completion_reward = {
+			add_war_support = 0.1
+			add_command_power = 50
+			add_manpower = 150000
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = JAP_spirital_mobilization_movement
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = JAP_independence_and_self_sufficiency
+		icon = GFX_focus_JAP_resource_security
+		x = 1
+		y = 2
+		relative_position_id = JAP_implementing_shintaisei
+		prerequisite = {
+			focus = JAP_banking_and_finance_control
+		}
+		prerequisite = {
+			focus = JAP_cabinet_information_committee
+		}
+		cost = 5
+		completion_reward = {
+			add_ideas = JAP_self_sufficiency
+			custom_effect_tooltip = generic_skip_one_line_tt
+			283 = {
+				add_resource = {
+					type = steel
+					amount = 10
+				}
+				add_resource = {
+					type = coal
+					amount = 5
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			282 = {
+				add_resource = {
+					type = aluminium
+					amount = 8
+				}
+				add_resource = {
+					type = tungsten
+					amount = 4
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			281 = {
+				add_resource = {
+					type = aluminium
+					amount = 2
+				}
+				add_resource = {
+					type = coal
+					amount = 2
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			285 = {
+				add_resource = {
+					type = tungsten
+					amount = 6
+				}
+				add_resource = {
+					type = oil
+					amount = 3
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			280 = {
+				add_resource = {
+					type = chromium
+					amount = 10
+				}
+				add_resource = {
+					type = coal
+					amount = 4
+				}
+				add_resource = {
+					type = oil
+					amount = 2
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = JAP_appease_the_kodoha_faction
+		icon = GFX_focus_JAP_crush_the_spirit_of_gekokujo
+		x = 5
+		y = 1
+		relative_position_id = JAP_the_showa_restorations
+		prerequisite = {
+			focus = JAP_the_showa_restorations
+		}
+		cost = 5
+		completion_reward = {
+			add_political_power = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = JAP_appeased_kodoha_faction
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = JAP_shison_danran
+		icon = GFX_focus_JAP_form_the_yokusan_sonendan 
+		x = -1
+		y = 1
+		relative_position_id = JAP_appease_the_kodoha_faction
+		prerequisite = {
+			focus = JAP_appease_the_kodoha_faction
+		}
+		cost = 5
+		completion_reward = {
+			add_war_support = 0.05
+			custom_effect_tooltip = generic_skip_one_line_tt
+			every_army_leader = {
+				limit = {
+					NOT = {
+						is_character = JAP_katsu_kiyotaka
+						has_trait = infantry_leader
+					}
+				}
+				random_select_amount = 4
+				add_attack = 1
+				add_trait = {
+					trait = infantry_leader
+				}
+			}
+			enable_tactic_grand_banzai_charge = yes
+			custom_effect_tooltip = generic_skip_one_line_tt
+			swap_ideas = {
+				remove_idea = JAP_appeased_kodoha_faction
+				add_idea = JAP_appeased_kodoha_faction_2
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = JAP_revere_imperial_power
+		icon = GFX_focus_JAP_supremacy_of_will
+		x = 0
+		y = 1
+		relative_position_id = JAP_shison_danran
+		prerequisite = {
+			focus = JAP_shison_danran
+		}
+		cost = 5
+		completion_reward = {
+			add_war_support = 0.05
+			custom_effect_tooltip = generic_skip_one_line_tt
+			swap_ideas = {
+				remove_idea = JAP_appeased_kodoha_faction_2
+				add_idea = JAP_appeased_kodoha_faction_3
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = JAP_enact_economic_controls
+		icon = GFX_focus_JAP_approach_yasuda
+		x = 1
+		y = 1
+		relative_position_id = JAP_appease_the_kodoha_faction
+		prerequisite = {
+			focus = JAP_appease_the_kodoha_faction
+		}
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = JAP_enact_economic_controls
+				bonus = 1
+				uses = 2
+				category = industry
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = JAP_enacting_economic_controls
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = JAP_colonial_industry
+		icon = GFX_focus_JAP_the_shuilikeng_power_plant
+		x = 0
+		y = 1
+		relative_position_id = JAP_enact_economic_controls
+		prerequisite = {
+			focus = JAP_enact_economic_controls
+		}
+		cost = 5
+		completion_reward = {
+			FOR = {
+				587 = {
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+					}
+					add_building_construction = {
+						type = dockyard
+						level = 1
+					}
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			W58 = {
+				290 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+					}
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				289 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+					}
+					add_building_construction = {
+						type = dockyard
+						level = 1
+					}
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			SAR = {
+				586 = {
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+					}
+					add_building_construction = {
+						type = dockyard
+						level = 1
+					}
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			swap_ideas = {
+				remove_idea = JAP_enacting_economic_controls
+				add_idea = JAP_enacting_economic_controls_2
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = JAP_an_end_to_excess
+		icon = GFX_focus_JAP_promote_japanese_settlement
+		x = 1
+		y = 1
+		relative_position_id = JAP_revere_imperial_power
+		prerequisite = {
+			focus = JAP_revere_imperial_power
+		}
+		prerequisite = {
+			focus = JAP_colonial_industry
+		}
+		cost = 5
+		completion_reward = {
+			172 = {
+				add_manpower = 75000
+				NJORD_upgrade_state_category = yes
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			287 = {
+				add_manpower = 50000
+				NJORD_upgrade_state_category = yes
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			173 = {
+				add_manpower = 35000
+				NJORD_upgrade_state_category = yes
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			315 = {
+				add_manpower = 65000
+				NJORD_upgrade_state_category = yes
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			314 = {
+				add_manpower = 45000
+				NJORD_upgrade_state_category = yes
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			324 = {
+				add_manpower = 15000
+				NJORD_upgrade_state_category = yes
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			323 = {
+				add_manpower = 10000
+				NJORD_upgrade_state_category = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	focus = {
+		id = JAP_ennoble_the_national_spirit
+		icon = GFX_focus_JAP_rely_on_infantry_charges
+		x = 1
+		y = 1
+		relative_position_id = JAP_mobilize_the_nation
+		prerequisite = {
+			focus = JAP_a_favor_between_friends
+		}
+		prerequisite = {
+			focus = JAP_mobilize_the_nation
+		}
+		prerequisite = {
+			focus = JAP_independence_and_self_sufficiency
+		}
+		prerequisite = {
+			focus = JAP_an_end_to_excess
+		}
+		cost = 5
+		completion_reward = {
+			custom_effect_tooltip = JAP_ennoble_the_national_spirit_tt
+			effect_tooltip = {
+				add_ideas = JAP_the_national_militaristic_people_spirit
+				custom_effect_tooltip = generic_skip_one_line_tt
+				add_ideas = JAP_total_economic_mobilization
+				custom_effect_tooltip = generic_skip_one_line_tt
+				add_ideas = JAP_unified_war_cabinet
+			}
+			hidden_effect = {
+				remove_ideas = JAP_the_national_security_act
+				remove_ideas = JAP_the_showa_emperor_2
+				remove_ideas = JAP_dojinkai_industrialists_3
+				remove_ideas = JAP_reformed_agriculture
+				remove_ideas = JAP_national_service_draft_ordinance_idea
+				remove_ideas = JAP_state_controlled_banking_and_finances
+				remove_ideas = JAP_cabinet_information_committee_idea
+				remove_ideas = JAP_spirital_mobilization_movement
+				remove_ideas = JAP_self_sufficiency
+				remove_ideas = JAP_appeased_kodoha_faction_3
+				remove_ideas = JAP_enacting_economic_controls_2
+				add_ideas = JAP_the_national_militaristic_people_spirit
+				add_ideas = JAP_total_economic_mobilization
+				add_ideas = JAP_unified_war_cabinet
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	focus = {
+		id = JAP_revise_imperial_defence_policy
+		icon = GFX_goal_generic_army_high_command
+		x = 18
+		y = 0
+		cost = 5
+		completion_reward = {
+			army_experience = 25
+			air_experience = 25
+			navy_experience = 25
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				name = JAP_revise_imperial_defence_policy
+				uses = 3
+				category = land_doctrine
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = JAP_mobilize_the_people
+		icon = GFX_focus_JAP_anti_militarist_speeches_in_the_diet
+		x = -1
+		y = 1
+		cost = 5
+		relative_position_id = JAP_revise_imperial_defence_policy
+		prerequisite = {
+			focus = JAP_revise_imperial_defence_policy
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_command_power = 50
+			custom_effect_tooltip = generic_skip_one_line_tt
+			every_core_state = {
+				limit = {
+					is_owned_and_controlled_by = root
+					is_in_home_area = yes
+				}
+				random_select_amount = 2
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = JAP_foster_militarism
+		icon = GFX_focus_JAP_national_spiritual_mobilization_movement
+		x = 1
+		y = 1
+		cost = 5
+		relative_position_id = JAP_revise_imperial_defence_policy
+		prerequisite = {
+			focus = JAP_revise_imperial_defence_policy
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_manpower = 50000
+			custom_effect_tooltip = generic_skip_one_line_tt
+			enable_tech_militias = yes
+			custom_effect_tooltip = generic_skip_one_line_tt
+			enable_tech_bicycle_battalion = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = JAP_phase_out_the_arisakas
+		icon = GFX_goal_generic_military_equipment
+		x = -1
+		y = 1
+		cost = 5
+		relative_position_id = JAP_mobilize_the_people
+		prerequisite = {
+			focus = JAP_mobilize_the_people
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = JAP_phase_out_the_arisakas
+				bonus = 0.5
+				uses = 3
+				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				name = JAP_phase_out_the_arisakas
+				ahead_reduction = 1
+				uses = 1
+				category = infantry_weapons
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = JAP_equipment_modernisations
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
