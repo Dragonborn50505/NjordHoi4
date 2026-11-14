@@ -836,14 +836,15 @@ technologies = {
 			acclimatization_cold_climate_gain_factor = 0.05
 		}
 
-		dependencies = {
-			OR = {
-				marines = 1
-				paratroopers = 1
-				tech_mountaineers = 1
-				rangers_tech = 1
-			}
-		}
+		allow_branch = { NOT = { has_dlc = "Arms Against Tyranny" } }
+
+		#dependencies = {
+		#	OR = {
+		#		marines = 1
+		#		paratrooper = 1
+		#		mountaineer = 1
+		#	}
+		#}
 
 		path = {
 			leads_to_tech = advanced_special_forces

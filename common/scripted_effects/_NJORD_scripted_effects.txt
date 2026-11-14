@@ -829,3 +829,50 @@ RUS_spawn_naval_bombers = {
 		}
 	}
 }
+
+
+
+
+NJORD_generic_free_equipment = {
+	add_equipment_production = {
+		equipment = {
+			type = $TYPE$
+		}
+		requested_factories = $FACTORIES$
+		progress = $PROGRESS$
+		amount = $AMOUNT$
+	}
+}
+
+NJORD_generic_state_upgrade = {
+	random_owned_controlled_state = {
+		limit = {
+			is_core_of = ROOT
+			is_in_home_area = yes
+		}
+		NJORD_upgrade_state_category = yes
+	}
+}
+
+NJORD_generic_faction_donations = {
+	add_cic = 1500
+	custom_effect_tooltip = {
+		localization_key = tooltip_modify_dynmod
+		DYNMOD = PRE_the_atlantic_federation_dynamic_modifier
+	}
+	hidden_effect = {
+		add_dynamic_modifier = { modifier = PRE_the_atlantic_federation_dynamic_modifier }
+	}
+	add_to_variable = {
+		PRE_the_atlantic_federation_dynamic_modifier_industrial_factory_donations = 1
+		tooltip = industrial_factory_donations_tt
+	}
+	add_to_variable = {
+		PRE_the_atlantic_federation_dynamic_modifier_military_factory_donations = 1
+		tooltip = military_factory_donations_tt
+	}
+	add_to_variable = {
+		PRE_the_atlantic_federation_dynamic_modifier_dockyard_donations = 1
+		tooltip = dockyard_donations_tt
+	}
+}

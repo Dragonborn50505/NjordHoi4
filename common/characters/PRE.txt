@@ -9,13 +9,24 @@ characters={
 				small="GFX_portrait_GER_heinz_guderian_small"
 			}
 		}
+		advisor = {
+			slot = theorist
+			traits = { superior_firepower_expert }
+		}
 		corps_commander={
-			skill=3
+			skill=4
 			attack_skill=5
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=1
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
 			legacy_id=0
+			traits = {
+				media_personality
+				harsh_leader
+				organizer
+				aggressive_assaulter
+				skilled_staffer
+			}
 		}
 	}
 
@@ -29,11 +40,15 @@ characters={
 				small="GFX_Portrait_europe_generic_land_6_small"
 			}
 		}
+		advisor = {
+			slot = high_command
+			traits = { army_infantry_2 }
+		}
 		corps_commander={
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=1
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
 			logistics_skill=1
 			legacy_id=0
 		}
@@ -49,12 +64,16 @@ characters={
 				small="GFX_portrait_GER_georghans_reinhardt_small"
 			}
 		}
+		advisor = {
+			slot = high_command
+			traits = { army_logistics_3 }
+		}
 		corps_commander={
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=1
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			planning_skill=4
+			logistics_skill=5
 			legacy_id=0
 		}
 	}
@@ -129,11 +148,15 @@ characters={
 				small="GFX_portrait_GER_georg_von_kuchler_small"
 			}
 		}
+		advisor = {
+			slot = high_command
+			traits = { army_artillery_2 }
+		}
 		corps_commander={
-			skill=2
+			skill=3
 			attack_skill=3
 			defense_skill=3
-			planning_skill=1
+			planning_skill=2
 			logistics_skill=1
 			legacy_id=0
 		}
@@ -189,12 +212,16 @@ characters={
 				small="GFX_portrait_GER_gerd_von_rundstedt_small"
 			}
 		}
+		advisor = {
+			slot = army_chief
+			traits = { army_chief_army_high_command }
+		}
 		corps_commander={
-			skill=2
+			skill=4
 			attack_skill=3
-			defense_skill=3
-			planning_skill=1
-			logistics_skill=1
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=3
 			legacy_id=0
 		}
 	}
@@ -469,12 +496,16 @@ characters={
 				small="GFX_portrait_GER_erwin_von_witzleben_small"
 			}
 		}
+		advisor = {
+			slot = high_command
+			traits = { army_chief_morale_3 }
+		}
 		corps_commander={
-			skill=2
-			attack_skill=3
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=1
+			skill=3
+			attack_skill=4
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=2
 			legacy_id=0
 		}
 	}

@@ -265,7 +265,7 @@ ideas = {
 			picture = generic_morale_bonus
 
 			modifier = {
-				master_ideology_drift = 0.01
+				master_ideology_drift = 0.5
 				consumer_goods_factor = -0.05
 			}
 		}
@@ -281,7 +281,7 @@ ideas = {
 			picture = generic_morale_bonus
 
 			modifier = {
-				master_ideology_drift = 0.02
+				master_ideology_drift = 0.5
 				consumer_goods_factor = -0.075
 				overlord_trade_cost_factor = -0.25
 			}
@@ -298,7 +298,7 @@ ideas = {
 			picture = generic_morale_bonus
 
 			modifier = {
-				master_ideology_drift = 0.03
+				master_ideology_drift = 0.5
 				consumer_goods_factor = -0.075
 				overlord_trade_cost_factor = -0.25
 				autonomy_gain_trade_factor = 0.25
@@ -317,7 +317,7 @@ ideas = {
 			picture = generic_morale_bonus
 
 			modifier = {
-				master_ideology_drift = 0.05
+				master_ideology_drift = 0.5
 				consumer_goods_factor = -0.1
 				overlord_trade_cost_factor = -0.25
 				autonomy_gain_trade_factor = 0.25
