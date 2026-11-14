@@ -489,7 +489,7 @@ ideas = {
 			}
 		}
 		SRI_italian_chetniks_2 = {
-			name = SRI_italian_chetniks_2
+			name = SRI_italian_chetniks
 			picture = NOR_anti_communist_sentiment
 			modifier = {
 				weekly_manpower = -25
@@ -2805,7 +2805,7 @@ ideas = {
 			picture = man_low_legitimacy
 			modifier = {
 				political_power_factor = -0.1
-				compliance_gain = -0.01
+				compliance_gain = -0.03
 				stability_factor = -0.25
 				war_support_factor = -0.25
 				research_speed_factor = -0.05
@@ -2822,7 +2822,7 @@ ideas = {
 			picture = man_low_legitimacy2
 			modifier = {
 				political_power_factor = -0.05
-				compliance_gain = -0.01
+				compliance_gain = -0.02
 				stability_factor = -0.15
 				war_support_factor = -0.15
 				drift_defence_factor = -0.2
@@ -2888,6 +2888,18 @@ ideas = {
 			}
 		}
 
+		CHI_corruption_in_the_administration_2 = {
+			name = CHI_corruption_in_the_administration_1
+			picture = ARG_political_corruption_modifier
+			modifier = {
+				political_advisor_cost_factor = -0.1
+				political_power_gain = 0.15
+				consumer_goods_factor = 0.1
+				industry_repair_factor = -0.1
+				industry_free_repair_factor = -0.1
+			}
+		}
+
 		CHI_inefficient_economy_1 = {
 			picture = CHI_inefficient_economy
 			modifier = {
@@ -2900,6 +2912,7 @@ ideas = {
 		}
 
 		CHI_inefficient_economy_2 = {
+			name = CHI_inefficient_economy_1
 			picture = CHI_inefficient_economy
 			modifier = {
 				fuel_gain_factor = -0.35
@@ -2911,6 +2924,7 @@ ideas = {
 		}
 
 		CHI_inefficient_economy_3 = {
+			name = CHI_inefficient_economy_1
 			picture = CHI_inefficient_economy
 			modifier = {
 				fuel_gain_factor = -0.15
@@ -2931,6 +2945,7 @@ ideas = {
 		}
 
 		CHI_inefficient_economy_5 = {
+			name = CHI_inefficient_economy_4
 			picture = ARG_economic_reactivation
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.05
@@ -2948,6 +2963,26 @@ ideas = {
 				economic_law_cost_factor = 0.25
 				trade_laws_cost_factor = 0.25
 			}
+			targeted_modifier = {
+				tag = X93
+				cic_to_target_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = IRE
+				cic_to_target_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = SPR
+				cic_to_target_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = GER
+				cic_to_target_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = PRE
+				cic_to_target_factor = 0.05
+			}
 		}
 
 		CHI_national_debt_2 = {
@@ -2957,6 +2992,26 @@ ideas = {
 				production_speed_buildings_factor = -0.15
 				economic_law_cost_factor = 0.15
 				trade_laws_cost_factor = 0.15
+			}
+			targeted_modifier = {
+				tag = X93
+				cic_to_target_factor = 0.025
+			}
+			targeted_modifier = {
+				tag = IRE
+				cic_to_target_factor = 0.025
+			}
+			targeted_modifier = {
+				tag = SPR
+				cic_to_target_factor = 0.025
+			}
+			targeted_modifier = {
+				tag = GER
+				cic_to_target_factor = 0.025
+			}
+			targeted_modifier = {
+				tag = PRE
+				cic_to_target_factor = 0.025
 			}
 		}
 
@@ -3096,7 +3151,7 @@ ideas = {
 			picture = CHI_li_zongren
 			modifier = {
 				experience_gain_army_factor = 0.15
-				neutrality_drift = 0.01
+				radical_drift = 0.01
 				command_power_gain_mult = 0.1
 				planning_speed = -0.1
 				max_command_power = 25
@@ -3106,6 +3161,7 @@ ideas = {
 		}
 
 		CHI_court_of_the_jade_marshal_democratic = {
+			name = CHI_court_of_the_jade_marshal
 			picture = CHI_li_zongren
 			modifier = {
 				experience_gain_army_factor = 0.15
@@ -3119,6 +3175,7 @@ ideas = {
 		}
 
 		CHI_court_of_the_jade_marshal_democratic_2 = {
+			name = CHI_court_of_the_jade_marshal
 			picture = CHI_li_zongren
 			modifier = {
 				experience_gain_army_factor = 0.15
@@ -3134,36 +3191,8 @@ ideas = {
 			}
 		}
 
-		CHI_court_of_the_jade_marshal_absolutist = {
-			picture = CHI_li_zongren
-			modifier = {
-				experience_gain_army_factor = 0.15
-				experience_gain_army_unit_factor = 0.05
-				absolutist_drift = 0.01
-				command_power_gain_mult = 0.15
-				max_command_power = 40
-				army_defence_factor = 0.05
-				experience_gain_factor = 0.1
-			}
-		}
-
-		CHI_court_of_the_jade_marshal_absolutist_2 = {
-			picture = CHI_li_zongren
-			modifier = {
-				experience_gain_army_factor = 0.15
-				experience_gain_army_unit_factor = 0.15
-				absolutist_drift = 0.02
-				command_power_gain_mult = 0.2
-				planning_speed = 0.1
-				max_planning_factor = 0.05
-				max_command_power = 40
-				max_command_power_mult = 0.05
-				army_defence_factor = 0.05
-				experience_gain_factor = 0.15
-			}
-		}
-
 		CHI_court_of_the_jade_marshal_neutrality = {
+			name = CHI_court_of_the_jade_marshal
 			picture = CHI_li_zongren
 			modifier = {
 				experience_gain_army_factor = 0.15
@@ -3177,38 +3206,12 @@ ideas = {
 		}
 
 		CHI_court_of_the_jade_marshal_neutrality_2 = {
+			name = CHI_court_of_the_jade_marshal
 			picture = CHI_li_zongren
 			modifier = {
 				experience_gain_army_factor = 0.15
 				experience_gain_army_unit_factor = 0.15
 				neutrality_drift = 0.02
-				command_power_gain_mult = 0.2
-				planning_speed = 0.1
-				max_planning_factor = 0.05
-				max_command_power = 40
-				max_command_power_mult = 0.05
-				army_defence_factor = 0.05
-				experience_gain_factor = 0.15
-			}
-		}
-
-		CHI_court_of_the_jade_marshal_generic = {
-			picture = CHI_li_zongren
-			modifier = {
-				experience_gain_army_factor = 0.15
-				experience_gain_army_unit_factor = 0.05
-				command_power_gain_mult = 0.15
-				max_command_power = 40
-				army_defence_factor = 0.05
-				experience_gain_factor = 0.1
-			}
-		}
-
-		CHI_court_of_the_jade_marshal_generic_2 = {
-			picture = CHI_li_zongren
-			modifier = {
-				experience_gain_army_factor = 0.15
-				experience_gain_army_unit_factor = 0.15
 				command_power_gain_mult = 0.2
 				planning_speed = 0.1
 				max_planning_factor = 0.05
@@ -3305,7 +3308,7 @@ ideas = {
 			}
 		}
 
-		CHI_illicit_trade = {
+		CHI_illicit_trade_idea = {
 			picture = CHI_illicit_trade_1
 			modifier = {
 				monthly_population = -0.15
@@ -3324,18 +3327,17 @@ ideas = {
 				consumer_goods_factor = -0.2
 				production_factory_efficiency_gain_factor = -0.05
 				political_power_cost = 0.2
-				stability_factor = -0.1
-				war_support_factor = -0.1
+				stability_factor = -0.05
+				war_support_factor = -0.05
 			}
 		}
 
 		CHI_illicit_trade_allowed_2 = {
-			name = CHI_illicit_trade_allowed
 			picture = CHI_illicit_trade_2
 			modifier = {
 				monthly_population = -0.05
 				consumer_goods_factor = -0.25
-				party_popularity_stability_factor = 0.05
+				party_popularity_stability_factor = 0.1
 			}
 		}
 
@@ -3350,7 +3352,6 @@ ideas = {
 		CHI_illicit_trade_banned = {
 			picture = CHI_illicit_trade_0
 			modifier = {
-				consumer_goods_factor = -0.05
 				war_stability_factor = 0.1
 				research_speed_factor = 0.1
 			}
@@ -3371,6 +3372,7 @@ ideas = {
 		}
 
 		CHI_growing_separatism_2 = {
+			name = CHI_growing_separatism_1
 			picture = AFG_economic_regionalism
 			modifier = {
 				resistance_target = 0.05
@@ -3385,6 +3387,7 @@ ideas = {
 		}
 
 		CHI_growing_separatism_3 = {
+			name = CHI_growing_separatism_1
 			picture = AFG_economic_regionalism
 			modifier = {
 				resistance_growth = 0.05
@@ -3445,9 +3448,42 @@ ideas = {
 		QIE_seeing_to_rural_reconstruction = {
 			picture = PRC_land_revolution_expedited
 			on_remove = {
-				swap_ideas = {
-					remove_idea = CHI_neglected_country_side_1
-					add_idea = CHI_neglected_country_side_3
+				if = {
+					limit = { 
+						has_idea = CHI_neglected_country_side_1
+					}
+					swap_ideas = {
+						remove_idea = CHI_neglected_country_side_1
+						add_idea = CHI_neglected_country_side_2
+					}
+				}
+				else_if = {
+					limit = { 
+						has_idea = CHI_neglected_country_side_2
+					}
+					swap_ideas = {
+						remove_idea = CHI_neglected_country_side_2
+						add_idea = CHI_neglected_country_side_3
+					}
+				}
+				else_if = {
+					limit = { 
+						has_idea = CHI_neglected_country_side_2
+					}
+					swap_ideas = {
+						remove_idea = CHI_neglected_country_side_2
+						add_idea = CHI_neglected_country_side_3
+					}
+				}
+				else_if = {
+					limit = { 
+						has_idea = CHI_neglected_country_side_3
+					}
+					remove_ideas = CHI_neglected_country_side_3
+				}
+				else = {
+					add_stability = 0.1
+					add_war_support = 0.1
 				}
 			}
 			modifier = {
@@ -3496,7 +3532,7 @@ ideas = {
 			modifier = {
 				supply_consumption_factor = -0.05
 				out_of_supply_factor = -0.1
-				supply_combat_penalties_on_core_factor = -0.15
+				supply_combat_penalties_on_core_factor = -0.05
 			}
 		}
 
@@ -3613,8 +3649,26 @@ ideas = {
 			modifier = {
 				army_artillery_attack_factor = 0.05
 				army_artillery_defence_factor = 0.05
+				army_org_regain = 0.05
+				experience_gain_army = 0.1
+				land_doctrine_cost_factor = -0.1
+			}
+			equipment_bonus = {
+				artillery_equipment = {
+					soft_attack = 0.05
+				}
+			}
+		}
+
+		CHI_the_chinese_elitheer_3 = {
+			name = CHI_the_chinese_elitheer
+			picture = german_advisors
+			modifier = {
+				army_artillery_attack_factor = 0.1
+				army_artillery_defence_factor = 0.1
 				army_org_regain = 0.1
-				army_org_factor = 0.1
+				army_org_regain = 0.1
+				planning_speed = 0.1
 				experience_gain_army = 0.1
 				land_doctrine_cost_factor = -0.1
 			}

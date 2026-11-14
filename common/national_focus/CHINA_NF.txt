@@ -106,6 +106,142 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = QIE_dealing_with_separatist_bandits
+		icon = GFX_focus_generic_manpower
+		cost = 5
+
+		x = -1
+		y = 1
+
+		relative_position_id = QIE_emergency_meeting_of_the_cabinet
+		prerequisite = { focus = QIE_emergency_meeting_of_the_cabinet }
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 0.5
+				has_war = yes
+			}
+			modifier = {
+				factor = 2
+				has_war = no
+			}
+		}
+		completion_reward = {
+			add_stability = 0.05
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = { 
+					has_idea = CHI_growing_separatism_1
+				}
+				swap_ideas = {
+					remove_idea = CHI_growing_separatism_1
+					add_idea = CHI_growing_separatism_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_growing_separatism_2
+				}
+				swap_ideas = {
+					remove_idea = CHI_growing_separatism_2
+					add_idea = CHI_growing_separatism_3
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_growing_separatism_3
+				}
+				remove_ideas = CHI_growing_separatism_3
+			}
+			else = {
+				add_political_power = 100
+			}
+		}
+	}
+
+	focus = {
+		id = QIE_seize_the_treaty_ports
+		icon = GFX_focus_CHI_retake_the_coastal_cities
+		cost = 10
+
+		x = 1
+		y = 1
+
+		available = {
+			has_war_support = 0.8
+		}
+
+		relative_position_id = QIE_emergency_meeting_of_the_cabinet
+		prerequisite = { focus = QIE_emergency_meeting_of_the_cabinet }
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 0.5
+				has_war = yes
+			}
+			modifier = {
+				factor = 2
+				has_war = no
+			}
+		}
+		select_effect = {
+			add_threat = 5
+		}
+		completion_reward = {
+			HOL = {
+                country_event = CHI_events.4
+            }
+            custom_effect_tooltip = if_they_accept_tt
+            effect_tooltip = {
+                375 = {
+					transfer_state_to = W41
+				}
+            }
+            custom_effect_tooltip = if_they_refuse_tt
+            effect_tooltip = {
+                add_war_support = 0.05
+                HOL = {
+                    add_political_power = -50
+                }
+            }
+			custom_effect_tooltip = generic_skip_one_line_tt
+			PRE = {
+                country_event = CHI_events.4
+            }
+            custom_effect_tooltip = if_they_accept_tt
+            effect_tooltip = {
+                457 = {
+					transfer_state_to = W41
+				}
+            }
+            custom_effect_tooltip = if_they_refuse_tt
+            effect_tooltip = {
+                add_war_support = 0.05
+                PRE = {
+                    add_political_power = -50
+                }
+            }
+			custom_effect_tooltip = generic_skip_one_line_tt
+			IRE = {
+                country_event = CHI_events.4
+            }
+            custom_effect_tooltip = if_they_accept_tt
+            effect_tooltip = {
+                220 = {
+					transfer_state_to = W41
+				}
+            }
+            custom_effect_tooltip = if_they_refuse_tt
+            effect_tooltip = {
+                add_war_support = 0.05
+                IRE = {
+                    add_political_power = -50
+                }
+            }
+		}
+	}
+
 	#pro-ANQ mini political tree
 	focus = {
 		id = QIE_elections_of_year
@@ -130,9 +266,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_stability = 0.05
-			custom_effect_tooltip = generic_skip_one_line_tt
 			add_popularity = {
-				ideology = neutrality
+				ideology = democratic
 				popularity = 0.05
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -169,6 +304,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = QIE_debt_default_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
 			hidden_effect = {
 				remove_ideas = CHI_national_debt_2
 			}
@@ -189,7 +325,24 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_popularity = {
 				ideology = democratic
-				popularity = 0.03
+				popularity = 0.05
+			}
+			hidden_effect = {
+				IRE = {
+					country_event = CHI_events.3
+				}
+				PRE = {
+					country_event = CHI_events.3
+				}
+				GER = {
+					country_event = CHI_events.3
+				}
+				X07 = {
+					country_event = CHI_events.3
+				}
+				SOV = {
+					country_event = CHI_events.3
+				}
 			}
 		}
 	}
@@ -247,6 +400,49 @@ focus_tree = {
 				send_embargo = W41
 				add_opinion_modifier = { target = ROOT modifier = NJORD_nationalised_industries }
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_1
+				}
+				swap_ideas = {
+					remove_idea = CHI_inefficient_economy_1
+					add_idea = CHI_inefficient_economy_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_2
+				}
+				swap_ideas = {
+					remove_idea = CHI_inefficient_economy_2
+					add_idea = CHI_inefficient_economy_3
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_3
+				}
+				swap_ideas = {
+					remove_idea = CHI_inefficient_economy_3
+					add_idea = CHI_inefficient_economy_4
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_4
+				}
+				swap_ideas = {
+					remove_idea = CHI_inefficient_economy_4
+					add_idea = CHI_inefficient_economy_5
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_5
+				}
+				remove_ideas = CHI_inefficient_economy_5
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
@@ -300,6 +496,49 @@ focus_tree = {
 				idea = QIE_iterating_upon_german_designs
 				days = 180
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_1
+				}
+				swap_ideas = {
+					remove_idea = CHI_inefficient_economy_1
+					add_idea = CHI_inefficient_economy_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_2
+				}
+				swap_ideas = {
+					remove_idea = CHI_inefficient_economy_2
+					add_idea = CHI_inefficient_economy_3
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_3
+				}
+				swap_ideas = {
+					remove_idea = CHI_inefficient_economy_3
+					add_idea = CHI_inefficient_economy_4
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_4
+				}
+				swap_ideas = {
+					remove_idea = CHI_inefficient_economy_4
+					add_idea = CHI_inefficient_economy_5
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_5
+				}
+				remove_ideas = CHI_inefficient_economy_5
+			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -341,9 +580,42 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = NJORD_when_idea_runs_out
 			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = CHI_neglected_country_side_1
-					add_idea = CHI_neglected_country_side_3
+				if = {
+					limit = { 
+						has_idea = CHI_neglected_country_side_1
+					}
+					swap_ideas = {
+						remove_idea = CHI_neglected_country_side_1
+						add_idea = CHI_neglected_country_side_2
+					}
+				}
+				else_if = {
+					limit = { 
+						has_idea = CHI_neglected_country_side_2
+					}
+					swap_ideas = {
+						remove_idea = CHI_neglected_country_side_2
+						add_idea = CHI_neglected_country_side_3
+					}
+				}
+				else_if = {
+					limit = { 
+						has_idea = CHI_neglected_country_side_2
+					}
+					swap_ideas = {
+						remove_idea = CHI_neglected_country_side_2
+						add_idea = CHI_neglected_country_side_3
+					}
+				}
+				else_if = {
+					limit = { 
+						has_idea = CHI_neglected_country_side_3
+					}
+					remove_ideas = CHI_neglected_country_side_3
+				}
+				else = {
+					add_stability = 0.1
+					add_war_support = 0.1
 				}
 			}
 		}
@@ -479,7 +751,7 @@ focus_tree = {
 		icon = GFX_focus_CHI_change_in_leadership
 		cost = 5
 
-		x = 3
+		x = 0
 		y = 10
 
 		available = {
@@ -523,26 +795,11 @@ focus_tree = {
 			}
 			else_if = {
 				limit = { 
-					has_completed_focus = QIE_overtures_to_the_assembly
-				}
-				swap_ideas = {
-					remove_idea = CHI_court_of_the_jade_marshal
-					add_idea = CHI_court_of_the_jade_marshal_absolutist
-				}
-			}
-			else_if = {
-				limit = { 
 					has_completed_focus = QIE_future_of_the_zhili_clique
 				}
 				swap_ideas = {
 					remove_idea = CHI_court_of_the_jade_marshal
 					add_idea = CHI_court_of_the_jade_marshal_neutrality
-				}
-			}
-			else = {
-				swap_ideas = {
-					remove_idea = CHI_court_of_the_jade_marshal
-					add_idea = CHI_court_of_the_jade_marshal_generic
 				}
 			}
 		}
@@ -591,6 +848,10 @@ focus_tree = {
 					trait = trait_mountaineer
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			enable_tech_mountain_warfare = yes
+			custom_effect_tooltip = generic_skip_one_line_tt
+			enable_tech_mountain_artillery = yes
 		}
 		search_filters = {
 			FOCUS_FILTER_RESEARCH
@@ -674,6 +935,8 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
+			enable_tech_assault_battalion = yes
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = { 
 					has_idea = CHI_court_of_the_jade_marshal_democratic
@@ -685,37 +948,11 @@ focus_tree = {
 			}
 			else_if = {
 				limit = { 
-					has_idea = CHI_court_of_the_jade_marshal_absolutist
-				}
-				swap_ideas = {
-					remove_idea = CHI_court_of_the_jade_marshal_absolutist
-					add_idea = CHI_court_of_the_jade_marshal_absolutist_2
-				}
-			}
-			else_if = {
-				limit = { 
 					has_idea = CHI_court_of_the_jade_marshal_neutrality
 				}
 				swap_ideas = {
 					remove_idea = CHI_court_of_the_jade_marshal_neutrality
 					add_idea = CHI_court_of_the_jade_marshal_neutrality_2
-				}
-			}
-			else_if = {
-				limit = { 
-					has_idea = CHI_court_of_the_jade_marshal_generic
-				}
-				swap_ideas = {
-					remove_idea = CHI_court_of_the_jade_marshal_generic
-					add_idea = CHI_court_of_the_jade_marshal_generic_2
-				}
-			}
-			else = {
-				effect_tooltip = {
-					swap_ideas = {
-						remove_idea = CHI_court_of_the_jade_marshal
-						add_idea = CHI_court_of_the_jade_marshal_generic
-					}
 				}
 			}
 		}
@@ -727,10 +964,13 @@ focus_tree = {
 		cost = 5
 
 		relative_position_id = QIE_domain_of_the_jade_marshal
-		x = 4
-		y = 2
+		x = 6
+		y = 1
 
-		prerequisite = { focus = QIE_reorganise_warlord_divisions }
+		prerequisite = {
+			focus = QIE_domain_of_the_jade_marshal
+			focus = QIE_the_eagle_and_the_dragon
+		}
 
 		ai_will_do = {
 			base = 40
@@ -1008,7 +1248,7 @@ focus_tree = {
 			add_equipment_to_stockpile = {
 				type = support_equipment
 				amount = 750
-				producer = X07
+				producer = QUE
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
@@ -1278,6 +1518,121 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 
+
+	focus = {
+		id = QIE_the_great_wall_defences
+		icon = GFX_focus_CHI_protracted_warfare
+		cost = 5
+
+		x = -1
+		y = 1
+
+		relative_position_id = QIE_reorganise_warlord_divisions
+
+		prerequisite = { focus = QIE_understanding_our_backyard }
+		prerequisite = { focus = QIE_reorganise_warlord_divisions }
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 0.5
+				has_war = yes
+			}
+			modifier = {
+				factor = 2
+				has_war = no
+			}
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = QIE_the_great_wall_defences
+				bonus = 0.5
+				uses = 2
+				category = engineers_tech
+				category = cat_fortification
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			enable_tech_expanded_engineer_corps = yes
+		}
+	}
+
+	focus = {
+		id = QIE_protracted_warfare
+		icon = GFX_focus_CHI_guerrilla_warfare
+		cost = 5
+
+		x = 1
+		y = 1
+
+		relative_position_id = QIE_reorganise_warlord_divisions
+
+		prerequisite = { 
+			focus = QIE_reorganise_warlord_divisions 
+			focus = QIE_defend_the_yellow_river
+		}
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 0.5
+				has_war = yes
+			}
+			modifier = {
+				factor = 2
+				has_war = no
+			}
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = QIE_the_great_wall_defences
+				bonus = 0.5
+				uses = 2
+				category = recon_tech
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			enable_tech_improved_recon_units = yes
+			custom_effect_tooltip = generic_skip_one_line_tt
+			enable_tech_forest_warfare = yes
+		}
+	}
+
+	focus = {
+		id = QIE_improving_our_scouting_forces
+		icon = GFX_focus_CHI_start_looking_outwards
+		cost = 5
+
+		x = 3
+		y = 1
+
+		relative_position_id = QIE_reorganise_warlord_divisions
+
+		prerequisite = { 
+			focus = QIE_defend_the_yellow_river
+		}
+		prerequisite = { 
+			focus = QIE_chinese_auftragstaktik
+		}
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 0.5
+				has_war = yes
+			}
+			modifier = {
+				factor = 2
+				has_war = no
+			}
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = QIE_the_great_wall_defences
+				bonus = 0.5
+				uses = 2
+				category = recon_tech
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			enable_tech_extensive_reconnaissance = yes
+		}
+	}
+
 	#pro_LEP mini political tree
 	focus = {
 		id = QIE_overtures_to_the_assembly
@@ -1428,6 +1783,49 @@ focus_tree = {
 					amount = 4
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_1
+				}
+				swap_ideas = {
+					remove_idea = CHI_inefficient_economy_1
+					add_idea = CHI_inefficient_economy_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_2
+				}
+				swap_ideas = {
+					remove_idea = CHI_inefficient_economy_2
+					add_idea = CHI_inefficient_economy_3
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_3
+				}
+				swap_ideas = {
+					remove_idea = CHI_inefficient_economy_3
+					add_idea = CHI_inefficient_economy_4
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_4
+				}
+				swap_ideas = {
+					remove_idea = CHI_inefficient_economy_4
+					add_idea = CHI_inefficient_economy_5
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_5
+				}
+				remove_ideas = CHI_inefficient_economy_5
+			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -1543,10 +1941,62 @@ focus_tree = {
 			if = {
 				limit = { amount_taken_ideas = { amount > 0 slots = { industrial_concern } } }
 				custom_effect_tooltip = available_industrial_concern
-				show_ideas_tooltip = CHI_H_A_B_holdings
+				show_ideas_tooltip = CHI_H_A_B_holdings_2
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_H_A_B_holdings
+				}
+				swap_ideas = {
+					remove_idea = CHI_H_A_B_holdings
+					add_idea = CHI_H_A_B_holdings_2
+				}
 			}
 			else = {
-				add_ideas = CHI_H_A_B_holdings
+				add_ideas = CHI_H_A_B_holdings_2
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_1
+				}
+				swap_ideas = {
+					remove_idea = CHI_inefficient_economy_1
+					add_idea = CHI_inefficient_economy_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_2
+				}
+				swap_ideas = {
+					remove_idea = CHI_inefficient_economy_2
+					add_idea = CHI_inefficient_economy_3
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_3
+				}
+				swap_ideas = {
+					remove_idea = CHI_inefficient_economy_3
+					add_idea = CHI_inefficient_economy_4
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_4
+				}
+				swap_ideas = {
+					remove_idea = CHI_inefficient_economy_4
+					add_idea = CHI_inefficient_economy_5
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_5
+				}
+				remove_ideas = CHI_inefficient_economy_5
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -1554,7 +2004,7 @@ focus_tree = {
 
 	focus = {
 		id = QIE_securing_advanced_equipment
-		icon = GFX_focus_generic_radio_communication
+		icon = GFX_goal_generic_radar_instillation
 		cost = 5
 
 		relative_position_id = QIE_overtures_to_the_assembly
@@ -1602,6 +2052,49 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_1
+				}
+				swap_ideas = {
+					remove_idea = CHI_inefficient_economy_1
+					add_idea = CHI_inefficient_economy_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_2
+				}
+				swap_ideas = {
+					remove_idea = CHI_inefficient_economy_2
+					add_idea = CHI_inefficient_economy_3
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_3
+				}
+				swap_ideas = {
+					remove_idea = CHI_inefficient_economy_3
+					add_idea = CHI_inefficient_economy_4
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_4
+				}
+				swap_ideas = {
+					remove_idea = CHI_inefficient_economy_4
+					add_idea = CHI_inefficient_economy_5
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_5
+				}
+				remove_ideas = CHI_inefficient_economy_5
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -1807,6 +2300,49 @@ focus_tree = {
 					add_idea = CHI_legitimacy_of_the_monarchy_5
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_1
+				}
+				swap_ideas = {
+					remove_idea = CHI_inefficient_economy_1
+					add_idea = CHI_inefficient_economy_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_2
+				}
+				swap_ideas = {
+					remove_idea = CHI_inefficient_economy_2
+					add_idea = CHI_inefficient_economy_3
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_3
+				}
+				swap_ideas = {
+					remove_idea = CHI_inefficient_economy_3
+					add_idea = CHI_inefficient_economy_4
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_4
+				}
+				swap_ideas = {
+					remove_idea = CHI_inefficient_economy_4
+					add_idea = CHI_inefficient_economy_5
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_5
+				}
+				remove_ideas = CHI_inefficient_economy_5
+			}
 			add_research_slot = 1
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -1819,7 +2355,7 @@ focus_tree = {
 		cost = 5
 
 		relative_position_id = QIE_domain_of_the_jade_marshal
-		x = 7
+		x = 9
 		y = 0
 
 		mutually_exclusive = { focus = QIE_domain_of_the_jade_marshal }
@@ -1896,6 +2432,10 @@ focus_tree = {
 				category = artillery
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
+			swap_ideas = {
+				remove_idea = CHI_the_chinese_elitheer
+				add_idea = CHI_the_chinese_elitheer_2
+			}
 			add_equipment_to_stockpile = {
 				type = artillery_equipment
 				amount = 500
@@ -1943,13 +2483,13 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { NOT = { has_tech = tech_signal_company } }
-				set_technology = { tech_signal_company = 1 }
 				add_tech_bonus = {
 					name = QIE_chinese_auftragstaktik
 					bonus = 0.75
 					uses = 1
 					category = signal_company_tech
 				}
+				set_technology = { tech_signal_company = 1 }
 			}
 			else = {
 				add_tech_bonus = {
@@ -1962,13 +2502,13 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = { NOT = { has_tech = tech_signal_company } }
-				set_technology = { radio = 1 }
 				add_tech_bonus = {
 					name = QIE_chinese_auftragstaktik
 					bonus = 0.75
 					uses = 1
 					category = electronics
 				}
+				set_technology = { radio = 1 }
 			}
 			else = {
 				add_tech_bonus = {
@@ -1978,6 +2518,8 @@ focus_tree = {
 					category = electronics
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			enable_tech_strengthened_support_companies = yes
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_equipment_to_stockpile = {
 				type = support_equipment
@@ -2324,9 +2866,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = CHI_the_chinese_elitheer
-				add_idea = CHI_the_chinese_elitheer_2
+				remove_idea = CHI_the_chinese_elitheer_2
+				add_idea = CHI_the_chinese_elitheer_3
 			}
+			enable_tech_integrated_specialists = yes
 		}
 	}
 
@@ -2371,7 +2914,7 @@ focus_tree = {
 	#shared central Zhili tree - industrial development and two plans
 	focus = {
 		id = QIE_future_of_the_zhili_clique
-		icon = GFX_goal_SZC_zhili_army
+		icon = GFX_focus_CHI_baojia_system
 		cost = 5
 
 		x = 15
@@ -2638,6 +3181,49 @@ focus_tree = {
 				add_mio_size = 1
 				add_mio_funds = 500
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_1
+				}
+				swap_ideas = {
+					remove_idea = CHI_inefficient_economy_1
+					add_idea = CHI_inefficient_economy_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_2
+				}
+				swap_ideas = {
+					remove_idea = CHI_inefficient_economy_2
+					add_idea = CHI_inefficient_economy_3
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_3
+				}
+				swap_ideas = {
+					remove_idea = CHI_inefficient_economy_3
+					add_idea = CHI_inefficient_economy_4
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_4
+				}
+				swap_ideas = {
+					remove_idea = CHI_inefficient_economy_4
+					add_idea = CHI_inefficient_economy_5
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_5
+				}
+				remove_ideas = CHI_inefficient_economy_5
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
@@ -2703,18 +3289,23 @@ focus_tree = {
 			741 = {
 				NJORD_upgrade_state_category = yes
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			735 = {
 				NJORD_upgrade_state_category = yes
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			738 = {
 				NJORD_upgrade_state_category = yes
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			737 = {
 				NJORD_upgrade_state_category = yes
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			736 = {
 				NJORD_upgrade_state_category = yes
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			753 = {
 				NJORD_upgrade_state_category = yes
 			}
@@ -2839,6 +3430,49 @@ focus_tree = {
 					amount = 10
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_1
+				}
+				swap_ideas = {
+					remove_idea = CHI_inefficient_economy_1
+					add_idea = CHI_inefficient_economy_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_2
+				}
+				swap_ideas = {
+					remove_idea = CHI_inefficient_economy_2
+					add_idea = CHI_inefficient_economy_3
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_3
+				}
+				swap_ideas = {
+					remove_idea = CHI_inefficient_economy_3
+					add_idea = CHI_inefficient_economy_4
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_4
+				}
+				swap_ideas = {
+					remove_idea = CHI_inefficient_economy_4
+					add_idea = CHI_inefficient_economy_5
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_5
+				}
+				remove_ideas = CHI_inefficient_economy_5
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
@@ -2901,6 +3535,49 @@ focus_tree = {
 				idea = CHI_daye_hanyang_rapid_development
 				days = 180
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_1
+				}
+				swap_ideas = {
+					remove_idea = CHI_inefficient_economy_1
+					add_idea = CHI_inefficient_economy_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_2
+				}
+				swap_ideas = {
+					remove_idea = CHI_inefficient_economy_2
+					add_idea = CHI_inefficient_economy_3
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_3
+				}
+				swap_ideas = {
+					remove_idea = CHI_inefficient_economy_3
+					add_idea = CHI_inefficient_economy_4
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_4
+				}
+				swap_ideas = {
+					remove_idea = CHI_inefficient_economy_4
+					add_idea = CHI_inefficient_economy_5
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_5
+				}
+				remove_ideas = CHI_inefficient_economy_5
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
@@ -2945,6 +3622,49 @@ focus_tree = {
 				bonus = 1
 				uses = 1
 				category = support_tech
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_1
+				}
+				swap_ideas = {
+					remove_idea = CHI_inefficient_economy_1
+					add_idea = CHI_inefficient_economy_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_2
+				}
+				swap_ideas = {
+					remove_idea = CHI_inefficient_economy_2
+					add_idea = CHI_inefficient_economy_3
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_3
+				}
+				swap_ideas = {
+					remove_idea = CHI_inefficient_economy_3
+					add_idea = CHI_inefficient_economy_4
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_4
+				}
+				swap_ideas = {
+					remove_idea = CHI_inefficient_economy_4
+					add_idea = CHI_inefficient_economy_5
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_5
+				}
+				remove_ideas = CHI_inefficient_economy_5
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -3202,10 +3922,7 @@ focus_tree = {
 		y = 1
 
 		available = {
-			OR = {
-				NOT = { country_exists = JAP }
-				JAP = { is_subject_of = root }
-			}
+			is_subject = no
 		}
 
 		bypass = {
@@ -3257,20 +3974,6 @@ focus_tree = {
 
 		available = {
 			is_subject = no
-			OR = {
-				OR = {
-					NOT = { country_exists = W47 }
-					W47 = { is_subject_of = root }
-				}
-				AND = {
-					352 = {
-						is_owned_or_subject_trigger = yes
-					}
-					351 = {
-						is_owned_or_subject_trigger = yes
-					}
-				}
-			}
 		}
 
 		bypass = {
@@ -3387,7 +4090,7 @@ focus_tree = {
 		icon = GFX_focus_CHI_cradle_of_civilization
 		cost = 10
 
-		x = 20
+		x = 19
 		y = 3
 
 		cancelable = no
@@ -3405,9 +4108,32 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = CHI_growing_separatism_1
-				add_idea = CHI_growing_separatism_2
+			if = {
+				limit = { 
+					has_idea = CHI_growing_separatism_1
+				}
+				swap_ideas = {
+					remove_idea = CHI_growing_separatism_1
+					add_idea = CHI_growing_separatism_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_growing_separatism_2
+				}
+				swap_ideas = {
+					remove_idea = CHI_growing_separatism_2
+					add_idea = CHI_growing_separatism_3
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_growing_separatism_3
+				}
+				remove_ideas = CHI_growing_separatism_3
+			}
+			else = {
+				add_political_power = 100
 			}
 		}
 	}
@@ -3436,9 +4162,44 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = CHI_neglected_country_side_1
-				add_idea = CHI_neglected_country_side_2
+			add_stability = 0.05
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = { 
+					has_idea = CHI_neglected_country_side_1
+				}
+				swap_ideas = {
+					remove_idea = CHI_neglected_country_side_1
+					add_idea = CHI_neglected_country_side_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_neglected_country_side_2
+				}
+				swap_ideas = {
+					remove_idea = CHI_neglected_country_side_2
+					add_idea = CHI_neglected_country_side_3
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_neglected_country_side_2
+				}
+				swap_ideas = {
+					remove_idea = CHI_neglected_country_side_2
+					add_idea = CHI_neglected_country_side_3
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_neglected_country_side_3
+				}
+				remove_ideas = CHI_neglected_country_side_3
+			}
+			else = {
+				add_stability = 0.1
+				add_war_support = 0.1
 			}
 		}
 	}
@@ -3522,6 +4283,49 @@ focus_tree = {
 			add_timed_idea = {
 				idea = QIE_dealing_with_dishonesty
 				days = 180
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_1
+				}
+				swap_ideas = {
+					remove_idea = CHI_inefficient_economy_1
+					add_idea = CHI_inefficient_economy_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_2
+				}
+				swap_ideas = {
+					remove_idea = CHI_inefficient_economy_2
+					add_idea = CHI_inefficient_economy_3
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_3
+				}
+				swap_ideas = {
+					remove_idea = CHI_inefficient_economy_3
+					add_idea = CHI_inefficient_economy_4
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_4
+				}
+				swap_ideas = {
+					remove_idea = CHI_inefficient_economy_4
+					add_idea = CHI_inefficient_economy_5
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_inefficient_economy_5
+				}
+				remove_ideas = CHI_inefficient_economy_5
 			}
 		}
 	}
@@ -3677,7 +4481,62 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 200 }
 		completion_reward = {
-
+			add_stability = 0.1
+			add_political_power = 100
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = { 
+					has_idea = CHI_corruption_in_the_administration_1
+				}
+				swap_ideas = {
+					remove_idea = CHI_corruption_in_the_administration_1
+					add_idea = CHI_corruption_in_the_administration_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_corruption_in_the_administration_2
+				}
+				remove_ideas = CHI_corruption_in_the_administration_2
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			if = {
+				limit = { 
+					has_idea = CHI_neglected_country_side_1
+				}
+				swap_ideas = {
+					remove_idea = CHI_neglected_country_side_1
+					add_idea = CHI_neglected_country_side_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_neglected_country_side_2
+				}
+				swap_ideas = {
+					remove_idea = CHI_neglected_country_side_2
+					add_idea = CHI_neglected_country_side_3
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_neglected_country_side_2
+				}
+				swap_ideas = {
+					remove_idea = CHI_neglected_country_side_2
+					add_idea = CHI_neglected_country_side_3
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_neglected_country_side_3
+				}
+				remove_ideas = CHI_neglected_country_side_3
+			}
+			else = {
+				add_stability = 0.1
+				add_war_support = 0.1
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}

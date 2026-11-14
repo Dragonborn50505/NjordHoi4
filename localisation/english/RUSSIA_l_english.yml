@@ -113,6 +113,11 @@
  RUS_a_divided_army: "A Divided Army"
  RUS_a_divided_army_desc: "The Russian Army is no longer a unified institution, but a battleground for the competing visions of Russia's future. The Svobodniks, hardened veterans and national-populist revolutionaries loyal to Nikita Putyatin, seek to purge the Republican establishment through intimidation and violence. Meanwhile, Republican and Constitutionalist officers under Generals Nikolayevich and Skobelev struggle to preserve the Republic's democratic institutions, while Tsarist commanders rally their own forces in hopes of restoring the old Empire. Skirmishes, purges and acts of insubordination have become commonplace throughout the ranks. With every passing day, the struggle threatens to spill beyond the barracks and engulf Russian society in a civil war."
 
+ RUS_state_aviation_bureau_1: "State-Aviation Bureau"
+ RUS_state_aviation_bureau_1_desc: ""
+ RUS_strategic_dimension_1: "The Terror Doctrine"
+ RUS_strategic_dimension_1_desc: ""
+
 ### Focuses ###
  Russia_Focus: "Russian Focus Tree"
 
