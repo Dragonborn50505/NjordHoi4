@@ -2,20 +2,29 @@ characters={
 	W41_kurman_beg={
 		name=W41_kurman_beg
 		portraits={
-			army={
-				large="GFX_OTT_Mustafa_Fevzi"
-			}
-			army={
-				small="GFX_OTT_Mustafa_Fevzi_small"
+			army = {
+				large="GFX_portrait_chi_xue_yue"
+				small="GFX_idea_CHI_xue_yue"
 			}
 		}
+		advisor = {
+			slot = theorist
+			traits = { CHI_KURMAN_BEG_STRONG }
+			cost = 100
+		}
 		corps_commander={
-			skill=3
-			attack_skill=6
+			skill=5
+			attack_skill=5
 			defense_skill=3
 			planning_skill=1
 			logistics_skill=1
 			legacy_id=0
+			traits = {
+				war_hero
+				brilliant_strategist
+				offensive_doctrine
+				trait_reckless
+			}
 		}
 	}
 
@@ -1003,13 +1012,25 @@ characters={
 		name=W41_kasim_beg_7
 		portraits={
 			civilian={
-				large="GFX_Turkey_Ismet_Inonu"
+				large="GFX_CHI_Yuan_Shikai"
 			}
 		}
+		country_leader={
+			ideology=absolute_monarchy
+			expire="1965.1.1.1"
+			id=-1
+			traits = {
+				QIE_puppet_emperor
+			}
+		}
+
 		country_leader={
 			ideology=conservatism
 			expire="1965.1.1.1"
 			id=-1
+			traits = {
+				QIE_puppet_emperor
+			}
 		}
 	}
 

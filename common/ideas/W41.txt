@@ -87,9 +87,6 @@ ideas = {
 
 			allowed = {
 				original_tag = W41
-				NOT = {
-					has_allowed_idea_with_traits = { idea = industrial_concern limit = 1 }
-				}
 			}
 
 			cost = 150
@@ -108,9 +105,6 @@ ideas = {
 
 			allowed = {
 				original_tag = W41
-				NOT = {
-					has_allowed_idea_with_traits = { idea = electronics_concern limit = 1 }
-				}
 			}
 
 			cost = 150
@@ -121,6 +115,43 @@ ideas = {
 			}
 
 			traits = { electronics_concern }
+		}
+
+		CHI_H_A_B_holdings = {
+
+			picture = GER_philipp_holzmann
+
+			allowed = {
+				original_tag = W41
+			}
+
+			available = {
+				has_completed_focus = QIE_simplify_international_investment_laws
+				NOT = {
+					has_war_with = PRE
+				}
+			}
+
+			cost = 100
+			removal_cost = 10
+
+			research_bonus = {
+				industry = 0.2
+			}
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_arms_factory_factor = 0.2
+			}
+
+			targeted_modifier = {
+				tag = PRE
+				extra_trade_to_target_factor = 0.1
+				trade_cost_for_target_factor = -0.2
+				cic_to_target_factor = 0.05
+			}
+
+			traits = { industrial_concern }
 		}
 	}
 

@@ -70,10 +70,10 @@ starting_train_buffer = 5
 set_convoys = 0
 
 set_politics = {
-    ruling_party = democratic
+    ruling_party = absolutist
     last_election = "1899.1.10"
     election_frequency = 48
-    elections_allowed = yes
+    elections_allowed = no
 }
 
 set_popularities = {

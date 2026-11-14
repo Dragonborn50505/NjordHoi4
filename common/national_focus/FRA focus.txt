@@ -50,13 +50,11 @@ focus_tree = {
 
 		ai_will_do = { factor = 200 }
 
-		select_effect = {
-			country_event = FRA_events.4
-		}
-
 		completion_reward = {
 			add_war_support = 0.05
 			add_command_power = 50
+			custom_effect_tooltip = generic_skip_one_line_tt
+			country_event = FRA_events.4
 			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = FRA_conspiracies_of_the_general_staff
@@ -114,10 +112,6 @@ focus_tree = {
 
 		ai_will_do = { factor = 200 }
 
-		select_effect = {
-			country_event = FRA_events.5
-		}
-
 		completion_reward = {
 			add_popularity = {
 				ideology = communism
@@ -135,7 +129,7 @@ focus_tree = {
 	focus = {
 		id = FRA_the_menace_from_within
 		icon = GFX_focus_RAJ_a_policy_of_silence
-		cost = 15
+		cost = 10
 
 		relative_position_id = FRA_meet_with_the_general_staff
 
@@ -161,7 +155,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = FRA_the_menace_from_within_TT
 			if = {
 				limit = { 
 					has_government = communism
@@ -185,6 +178,14 @@ focus_tree = {
 		y = 3
 
 		ai_will_do = { factor = 200 }
+
+		available = {
+			has_government = communism
+		}
+
+		allow_branch = {
+			has_completed_focus = FRA_the_menace_from_within
+		}
 
 		prerequisite = {
 			focus = FRA_the_menace_from_within
@@ -828,7 +829,11 @@ focus_tree = {
 		y = 0
 
 		available = {
-			hidden_trigger = { has_government = communism }
+			has_government = communism
+		}
+
+		allow_branch = {
+			has_completed_focus = FRA_the_menace_from_within
 		}
 
 		completion_reward = {
@@ -1197,6 +1202,14 @@ focus_tree = {
 			}
 		}
 
+		available = {
+			has_government = communism
+		}
+
+		allow_branch = {
+			has_completed_focus = FRA_the_menace_from_within
+		}
+
 		completion_reward = {
 			every_core_state = {
 				display_individual_scopes = yes
@@ -1281,6 +1294,14 @@ focus_tree = {
 				factor = 0.5
 				has_war_with_major = yes
 			}
+		}
+
+		available = {
+			has_government = communism
+		}
+
+		allow_branch = {
+			has_completed_focus = FRA_the_menace_from_within
 		}
 
 		completion_reward = {
@@ -2115,6 +2136,14 @@ focus_tree = {
 			has_full_control_of_state = 127
 			has_full_control_of_state = 128
 			has_full_control_of_state = 129
+		}
+
+		available = {
+			has_government = communism
+		}
+
+		allow_branch = {
+			has_completed_focus = FRA_the_menace_from_within
 		}
 
 		relative_position_id = FRA_office_des_chemins_de_fer
@@ -3128,6 +3157,14 @@ focus_tree = {
 			}
 		}
 
+		available = {
+			has_government = communism
+		}
+
+		allow_branch = {
+			has_completed_focus = FRA_the_menace_from_within
+		}
+
 		completion_reward = {
 			army_experience = 25
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -3168,6 +3205,14 @@ focus_tree = {
 				factor = 6
 				date > 1939.1.1
 			}
+		}
+
+		available = {
+			has_government = communism
+		}
+
+		allow_branch = {
+			has_completed_focus = FRA_the_menace_from_within
 		}
 
 		completion_reward = {
@@ -3220,6 +3265,14 @@ focus_tree = {
 				factor = 6
 				date > 1939.1.1
 			}
+		}
+
+		available = {
+			has_government = communism
+		}
+
+		allow_branch = {
+			has_completed_focus = FRA_the_menace_from_within
 		}
 
 		completion_reward = {
@@ -5331,6 +5384,14 @@ focus_tree = {
 		x = 22
 		y = 10
 
+		available = {
+			has_government = communism
+		}
+
+		allow_branch = {
+			has_completed_focus = FRA_the_menace_from_within
+		}
+
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -6494,6 +6555,14 @@ focus_tree = {
 		relative_position_id = FRA_restructure_the_marine_federale
 		x = 8
 		y = 0
+
+		available = {
+			has_government = communism
+		}
+
+		allow_branch = {
+			has_completed_focus = FRA_the_menace_from_within
+		}
 
 		ai_will_do = {
 			factor = 1

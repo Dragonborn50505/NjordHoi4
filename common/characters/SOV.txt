@@ -1158,11 +1158,17 @@ characters={
 			ideology=populism
 			expire="1965.1.1.1"
 			id=-1
+			traits = {
+				RUS_the_vozhd
+			}
 		}
 		country_leader={
 			ideology=national_populism
 			expire="1965.1.1.1"
 			id=-1
+			traits = {
+				RUS_the_vozhd
+			}
 		}
 		corps_commander={
 			skill=2

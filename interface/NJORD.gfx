@@ -333,5 +333,9 @@ spriteTypes = {
 		name = "GFX_goal_generic_radar_instillation"
 		texturefile = "gfx/interface/goals/generic_radar_instillation.png"
 	}
-	
+																							
+	SpriteType = {# Generic Police State
+		name = "GFX_goal_generic_police_state"
+		texturefile = "gfx/interface/goals/generic_police_state.png"
+	}
 }

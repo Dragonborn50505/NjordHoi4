@@ -401,6 +401,48 @@ country_event = {
 	
 		immediate = {
 			leave_faction = yes
+			add_stability = 0.2
+			add_political_power = 100
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_popularity = {
+				ideology = communism
+				popularity = 0.33
+			}
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_manpower = -9816
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = FRA_FRENCH_REVOLUTION_TT
+			hidden_effect = {
+				remove_ideas = FRA_scars_of_the_great_european_war_2
+				remove_ideas = FRA_the_white_years_2
+				remove_ideas = FRA_the_marseille_martyrs_2
+				remove_ideas = FRA_the_red_menace_within_3
+				remove_ideas = FRA_the_humiliation_of_piedmont
+				remove_ideas = FRA_conspiracies_of_the_general_staff_3
+				remove_ideas = FRA_government_fractures_2
+				add_ideas = FRA_scars_of_the_french_civil_war
+				add_ideas = FRA_worker_oriented_economy
+				add_timed_idea = {
+					idea = FRA_the_marseille_martyrs_3
+					days = 730
+				}
+				add_ideas = FRA_conspiracies_of_the_general_staff_4_communist
+				add_ideas = FRA_government_fractures_3_communist
+				add_timed_idea = {
+					idea = FRA_counterrevolutionary_forces
+					days = 180
+				}
+			}
 		}
 
 		after = {
@@ -422,42 +464,48 @@ country_event = {
 		option = {
 		name = FRA_events.11.a
 
-		add_stability = 0.2
-		add_political_power = 100
+		effect_tooltip = {
+			add_stability = 0.2
+			add_political_power = 100
 
-		custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
 
-		set_political_party = {
-			ideology = communism
-			popularity = 0.33
-		}
-
-		custom_effect_tooltip = generic_skip_one_line_tt
-
-		add_manpower = -9816
-
-		custom_effect_tooltip = generic_skip_one_line_tt
-
-		custom_effect_tooltip = FRA_FRENCH_REVOLUTION_TT
-		hidden_effect = {
-			remove_ideas = FRA_scars_of_the_great_european_war_2
-			remove_ideas = FRA_the_white_years_2
-			remove_ideas = FRA_the_marseille_martyrs_2
-			remove_ideas = FRA_the_red_menace_within_3
-			remove_ideas = FRA_the_humiliation_of_piedmont
-			remove_ideas = FRA_conspiracies_of_the_general_staff_3
-			remove_ideas = FRA_government_fractures_2
-			add_ideas = FRA_scars_of_the_french_civil_war
-			add_ideas = FRA_worker_oriented_economy
-			add_timed_idea = {
-				idea = FRA_the_marseille_martyrs_3
-				days = 730
+			add_popularity = {
+				ideology = communism
+				popularity = 0.33
 			}
-			add_ideas = FRA_conspiracies_of_the_general_staff_4_communist
-			add_ideas = FRA_government_fractures_3_communist
-			add_timed_idea = {
-				idea = FRA_counterrevolutionary_forces
-				days = 180
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_manpower = -9816
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = FRA_FRENCH_REVOLUTION_TT
+			hidden_effect = {
+				remove_ideas = FRA_scars_of_the_great_european_war_2
+				remove_ideas = FRA_the_white_years_2
+				remove_ideas = FRA_the_marseille_martyrs_2
+				remove_ideas = FRA_the_red_menace_within_3
+				remove_ideas = FRA_the_humiliation_of_piedmont
+				remove_ideas = FRA_conspiracies_of_the_general_staff_3
+				remove_ideas = FRA_government_fractures_2
+				add_ideas = FRA_scars_of_the_french_civil_war
+				add_ideas = FRA_worker_oriented_economy
+				add_timed_idea = {
+					idea = FRA_the_marseille_martyrs_3
+					days = 730
+				}
+				add_ideas = FRA_conspiracies_of_the_general_staff_4_communist
+				add_ideas = FRA_government_fractures_3_communist
+				add_timed_idea = {
+					idea = FRA_counterrevolutionary_forces
+					days = 180
+				}
 			}
 		}
 		ai_chance = {

@@ -2,3 +2,8 @@ NJORD_brothers_across_the_lakes = {
 	value = 50
 	decay = 0
 }
+
+NJORD_nationalised_industries = {
+	value = -100
+	decay = 1
+}

@@ -7,19 +7,6 @@
  #  #  # #  # # # ## 
 
  #################### 
-
-
-CHI_sino_german_technical_mission_organization = {
-	include = generic_heavy_tank_organization
-	icon = GFX_idea_porsche
-	allowed = {	
-		original_tag = W41
-	}
-	available = {
-		original_tag = W41
-	}
-}
-
 CHI_shanghai_arsenal = {
 	icon = GFX_idea_CHI_shanghai_arsenal
 	allowed = {
@@ -27,7 +14,9 @@ CHI_shanghai_arsenal = {
 		has_dlc = "No Compromise, No Surrender"
 	}
 	available = {
-		original_tag = W41
+		from = {
+			tag = W41
+		}
 	}
 	equipment_type = { armored_car_equipment mio_cat_eq_all_light_tank }
 	research_categories = { cat_armored_cars mio_cat_tech_light_armor_and_modules  }
@@ -216,9 +205,14 @@ CHI_ncns_sino_german_technical_mission_organization = {
 	allowed = {	
 		has_dlc = "No Compromise, No Surrender"
 		original_tag = W41
+		NOT = {
+			has_war_with = GER
+		}
 	}
 	visible = {
-		original_tag = W41
+		from = {
+			tag = W41
+		}
 	}
 	available = {
 		owner = {
@@ -239,32 +233,6 @@ CHI_ncns_sino_german_technical_mission_organization = {
 ##  #  # ### #    ##  
  
 #####################
-
-CHI_jiangnan_shipyard_group_organization = {
-	include = generic_task_force_ship_organization
-	icon = GFX_idea_generic_naval_manufacturer_3
-	allowed = {	
-		original_tag = W41
-		NOT = { has_dlc = "No Compromise, No Surrender" }
-	}
-	available = {
-		original_tag = W41
-	}
-}
-
-
-CHI_dagu_shipyard_organization = {
-	include = generic_raider_ship_organization
-	icon = GFX_idea_CHI_dagu
-	allowed = {	
-		original_tag = W41
-		NOT = { has_dlc = "No Compromise, No Surrender" }
-	}
-	available = {
-		original_tag = W41
-	}
-}
-
 CHI_kiangnan_shipyard_group_organization_sea = {
 	include = generic_task_force_ship_organization
 	icon = GFX_idea_CHI_kiangnan
@@ -273,11 +241,8 @@ CHI_kiangnan_shipyard_group_organization_sea = {
 		has_dlc = "No Compromise, No Surrender"
 	}
 	available = {
-		IF = {
-			limit = {
-				FROM = { NOT = { original_tag = W41 } }
-			}
-			original_tag = W41
+		from = {
+			tag = W41
 		}
 	}
 
@@ -339,7 +304,9 @@ CHI_dagu_shipyard_organization_sea = {
 		has_dlc = "No Compromise, No Surrender"
 	}
 	available = {
-		original_tag = W41
+		from = {
+			tag = W41
+		}
 	}
 
 	add_trait = {
@@ -381,47 +348,6 @@ CHI_dagu_shipyard_organization_sea = {
 #    ### #  # #  # ### ##  
 
 ###########################
-
-CHI_camco_organization = {
-	include = generic_medium_aircraft_organization
-	icon = GFX_idea_CHI_camco
-	allowed = {	
-		original_tag = W41
-		NOT = { has_dlc = "Waking the Tiger" }
-	}
-}
-CHI_camco_medium_organization = {
-	include = generic_medium_aircraft_organization
-	icon = GFX_idea_CHI_camco
-	allowed = {	
-		original_tag = W41
-	}
-	available = {
-		original_tag = W41
-
-	}
-}
-CHI_camco_fighter_organization = {
-	include = generic_light_aircraft_organization
-	icon = GFX_idea_CHI_camco
-	allowed = {	
-		original_tag = W41
-	}
-	available = {
-		original_tag = W41
-	}
-}
-CHI_camco_bomber_organization = {
-	include = generic_cas_aircraft_organization
-	icon = GFX_idea_CHI_camco
-	allowed = {	
-		original_tag = W41
-	}
-	available = {
-		original_tag = W41
-	}
-}
-
 CHI_camco_organization_sea = {
 	include = generic_light_aircraft_organization
 	icon = GFX_idea_CHI_camco_sea 
@@ -430,7 +356,9 @@ CHI_camco_organization_sea = {
 		has_dlc = "No Compromise, No Surrender" 
 	}
 	available = {
-		original_tag = W41
+		from = {
+			tag = W41
+		}
 	}
 }
 
@@ -442,7 +370,9 @@ CHI_sinaw_organization_sea = {
 		has_dlc = "No Compromise, No Surrender" 
 	}
 	available = {
-		original_tag = W41
+		from = {
+			tag = W41
+		}
 	}
 }
 
@@ -456,52 +386,6 @@ CHI_sinaw_organization_sea = {
 
 
 ###################################
-
-CHI_taiyuan_arsenal_organization = {
-	include = generic_artillery_organization
-	icon = GFX_idea_generic_artillery_manufacturer_1
-	allowed = {	
-		original_tag = W41
-		NOT = { has_dlc = "No Compromise, No Surrender" }
-	}
-	available = {
-		original_tag = W41
-	}
-}
-CHI_liaoning_arsenal_organization = {
-	include = generic_motorized_mechanized_organization
-	icon = GFX_idea_CHI_liaoning
-	allowed = {	
-		original_tag = W41 
-		NOT = { has_dlc = "No Compromise, No Surrender" } 
-	}
-	available = {
-		original_tag = W41
-	}
-}
-CHI_hanyan_arsenal_organization = {
-	include = generic_infantry_equipment_organization
-	icon = GFX_idea_CHI_hanyang
-	allowed = {	
-		original_tag = W41
-		NOT = { has_dlc = "No Compromise, No Surrender" }
-	}
-	available = {
-		original_tag = W41
-	}
-}
-
-CHI_mukden_arsenal_organization = {
-	include = generic_infantry_equipment_organization
-	icon = GFX_idea_CHI_mukden
-	allowed = {	
-		original_tag = W41
-	}
-	available = {
-		original_tag = W41
-	}
-}
-
 CHI_taiyuan_arsenal_organization_sea = {
 	include = generic_artillery_organization
 	icon = GFX_idea_generic_artillery_manufacturer_1
@@ -510,7 +394,9 @@ CHI_taiyuan_arsenal_organization_sea = {
 		has_dlc = "No Compromise, No Surrender"
 	}
 	available = {
-		original_tag = W41
+		from = {
+			tag = W41
+		}
 	}
 
 }
@@ -522,7 +408,9 @@ CHI_liaoning_arsenal_organization_sea = {
 		has_dlc = "No Compromise, No Surrender"
 	}
 	available = {
-		original_tag = W41
+		from = {
+			tag = W41
+		}
 	}
 	override_trait = {
 		token = generic_mio_trait_all_wheel_drive
@@ -610,7 +498,9 @@ CHI_hanyan_arsenal_organization_sea = {
 		has_dlc = "No Compromise, No Surrender"
 	}
 	available = {
-		original_tag = W41
+		from = {
+			tag = W41
+		}
 	}
 	
 
@@ -671,95 +561,6 @@ CHI_hanyan_arsenal_organization_sea = {
 
 }
 
-CHI_china_automobile_corporation_organization = {
-	include = generic_motorized_mechanized_organization
-	icon = GFX_idea_CHI_cac
-	allowed = {	
-		original_tag = W41
-		has_dlc = "No Compromise, No Surrender"
-	}
-	available = {
-		original_tag = W41
-	}
-	override_trait = {
-		token = generic_mio_trait_all_wheel_drive
-		position = { x=0 y=2 }
-		mutually_exclusive = { generic_mio_trait_long_range_priority }
-	}
-
-	add_trait = {
-		token = generic_mio_trait_long_range_priority
-		name = generic_mio_trait_long_range_priority
-		icon = GFX_generic_mio_trait_icon_breakthrough
-		special_trait_background = yes
-		
-		position = { x=2 y=2 }
-		relative_position_id = generic_mio_trait_composite_cargo_bed
-		mutually_exclusive = { generic_mio_trait_all_wheel_drive }
-		any_parent = { generic_mio_trait_composite_cargo_bed generic_mio_trait_steel_cargo_bed }
-		all_parents = { generic_mio_trait_medium_machinegun_mounts }
-
-		limit_to_equipment_type = { motorized_equipment motorized_rocket_equipment }
-		
-		equipment_bonus = {
-			fuel_consumption = -0.03
-		}
-	}
-
-	override_trait = {
-		token = generic_mio_trait_attached_wood_gas_generator
-		position = { x=0 y=2 }
-		any_parent = { generic_mio_trait_all_wheel_drive generic_mio_trait_long_range_priority }
-	}
-
-	trait = {
-		token = generic_mio_trait_high_powered_engine
-		any_parent = { generic_mio_trait_all_wheel_drive generic_mio_trait_long_range_priority }
-	}
-
-	add_trait = {
-		token = generic_mio_trait_sufficient_armor
-		name = generic_mio_trait_sufficient_armor
-		icon = GFX_generic_mio_trait_icon_breakthrough
-		special_trait_background = yes
-		
-		position = { x=0 y=2 }
-		relative_position_id = generic_mio_trait_open_chassi
-		mutually_exclusive = { generic_mio_trait_bulletproof_panels }
-		any_parent = { generic_mio_trait_open_chassi generic_mio_trait_closed_chassi }
-		all_parents = { generic_mio_trait_medium_machinegun_mounts }
-		
-		limit_to_equipment_type = { mechanized_equipment amphibious_mechanized_equipment }
-		
-		equipment_bonus = {
-			armor_value = -0.03
-			build_cost_ic = -0.05
-		}
-	}
-
-	override_trait = {
-		token = generic_mio_trait_bulletproof_panels
-		position = { x=0 y=2 }
-		mutually_exclusive = { generic_mio_trait_sufficient_armor }
-	}
-
-	override_trait = {
-		token = generic_mio_trait_mounted_light_anti_tank_gun #elephant gun
-		any_parent = { generic_mio_trait_bulletproof_panels generic_mio_trait_sufficient_armor }
-	}
-
-	override_trait = {
-		token = generic_mio_trait_light_flame_projectors
-		position = { x=-1 y=2 }
-		any_parent = { generic_mio_trait_bulletproof_panels generic_mio_trait_sufficient_armor }
-	}
-
-	override_trait = {
-		token = generic_mio_trait_land_mine_racks
-		any_parent = { generic_mio_trait_bulletproof_panels generic_mio_trait_sufficient_armor }
-	}
-}
-
 CHI_jinling_arsenal_organization = {
 	include = generic_support_equipment_organization
 	icon = GFX_idea_CHI_jinling
@@ -768,7 +569,9 @@ CHI_jinling_arsenal_organization = {
 		has_dlc = "No Compromise, No Surrender"
 	}
 	available = {
-		original_tag = W41
+		from = {
+			tag = W41
+		}
 	}
 
 }
