@@ -1896,6 +1896,12 @@ GER_messerschmitt_organization = {
 			FROM = { OR = { original_tag = GER original_tag = PRE } }
 		}
 
+		available = {
+			FROM = {
+				has_tech = improved_large_airframe
+			}
+		}
+
 		limit_to_equipment_type = { mio_cat_eq_only_light_fighter }
 
 		equipment_bonus = {

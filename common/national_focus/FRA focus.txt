@@ -165,6 +165,9 @@ focus_tree = {
 			else = {
 				custom_effect_tooltip = FRA_the_menace_from_within_TT
 			}
+			hidden_effect = {
+				mark_focus_tree_layout_dirty = yes
+			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -178,10 +181,6 @@ focus_tree = {
 		y = 3
 
 		ai_will_do = { factor = 200 }
-
-		available = {
-			has_government = communism
-		}
 
 		allow_branch = {
 			has_completed_focus = FRA_the_menace_from_within
@@ -828,10 +827,6 @@ focus_tree = {
 		x = 6
 		y = 0
 
-		available = {
-			has_government = communism
-		}
-
 		allow_branch = {
 			has_completed_focus = FRA_the_menace_from_within
 		}
@@ -1202,10 +1197,6 @@ focus_tree = {
 			}
 		}
 
-		available = {
-			has_government = communism
-		}
-
 		allow_branch = {
 			has_completed_focus = FRA_the_menace_from_within
 		}
@@ -1294,10 +1285,6 @@ focus_tree = {
 				factor = 0.5
 				has_war_with_major = yes
 			}
-		}
-
-		available = {
-			has_government = communism
 		}
 
 		allow_branch = {
@@ -2136,10 +2123,6 @@ focus_tree = {
 			has_full_control_of_state = 127
 			has_full_control_of_state = 128
 			has_full_control_of_state = 129
-		}
-
-		available = {
-			has_government = communism
 		}
 
 		allow_branch = {
@@ -3157,10 +3140,6 @@ focus_tree = {
 			}
 		}
 
-		available = {
-			has_government = communism
-		}
-
 		allow_branch = {
 			has_completed_focus = FRA_the_menace_from_within
 		}
@@ -3205,10 +3184,6 @@ focus_tree = {
 				factor = 6
 				date > 1939.1.1
 			}
-		}
-
-		available = {
-			has_government = communism
 		}
 
 		allow_branch = {
@@ -3265,10 +3240,6 @@ focus_tree = {
 				factor = 6
 				date > 1939.1.1
 			}
-		}
-
-		available = {
-			has_government = communism
 		}
 
 		allow_branch = {
@@ -5383,10 +5354,6 @@ focus_tree = {
 
 		x = 22
 		y = 10
-
-		available = {
-			has_government = communism
-		}
 
 		allow_branch = {
 			has_completed_focus = FRA_the_menace_from_within
