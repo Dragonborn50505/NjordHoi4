@@ -313,6 +313,8 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.05
+			custom_effect_tooltip = generic_skip_one_line_tt
+			remove_ideas = JAP_rampant_landlordism
 		}
 		ai_will_do = {
 			factor = 1

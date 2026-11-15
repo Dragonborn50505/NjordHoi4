@@ -13,7 +13,7 @@ characters={
 			slot = theorist
 			traits = { superior_firepower_expert }
 		}
-		corps_commander={
+		field_marshal = {
 			skill=4
 			attack_skill=5
 			defense_skill=3
@@ -920,13 +920,22 @@ characters={
 				small="GFX_Europe_Generic_navy_new_4_small"
 			}
 		}
+		advisor = {
+			slot = navy_chief
+			traits = { navy_chief_decisive_battle_3 }
+		}
 		navy_leader={
 			skill=3
 			attack_skill=4
 			defense_skill=3
-			maneuvering_skill=1
-			coordination_skill=1
+			maneuvering_skill=4
+			coordination_skill=2
 			legacy_id=0
+			traits = {
+				superior_tactician
+				ironside
+				cruiser_captain
+			}
 		}
 	}
 

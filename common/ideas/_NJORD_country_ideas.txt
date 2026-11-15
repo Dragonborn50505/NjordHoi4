@@ -23,10 +23,10 @@ ideas = {
 		PRE_economic_downturn_1 = {
 			picture = generic_economic_crisis
 			modifier = {
-				industrial_capacity_factory = -0.4
-				production_speed_buildings_factor = -0.2
-				production_factory_max_efficiency_factor = -0.2
-				production_factory_efficiency_gain_factor = -0.4
+				industrial_capacity_factory = -0.3
+				production_speed_buildings_factor = -0.3
+				production_factory_max_efficiency_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.2
 				consumer_goods_factor = 0.4
 			}
 		}
@@ -35,10 +35,10 @@ ideas = {
 			name = PRE_economic_downturn_1
 			picture = generic_economic_crisis
 			modifier = {
-				industrial_capacity_factory = -0.3
-				production_speed_buildings_factor = -0.15
-				production_factory_max_efficiency_factor = -0.15
-				production_factory_efficiency_gain_factor = -0.3
+				industrial_capacity_factory = -0.2
+				production_speed_buildings_factor = -0.2
+				production_factory_max_efficiency_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.1
 				consumer_goods_factor = 0.3
 			}
 		}
@@ -46,10 +46,8 @@ ideas = {
 		PRE_economic_downturn_3 = {
 			picture = generic_economic_recovery
 			modifier = {
-				industrial_capacity_factory = -0.2
+				industrial_capacity_factory = -0.1
 				production_speed_buildings_factor = -0.1
-				production_factory_max_efficiency_factor = -0.1
-				production_factory_efficiency_gain_factor = -0.2
 				consumer_goods_factor = 0.2
 			}
 		}
@@ -57,10 +55,6 @@ ideas = {
 		PRE_economic_downturn_4 = {
 			picture = generic_economic_recovery
 			modifier = {
-				industrial_capacity_factory = -0.1
-				production_speed_buildings_factor = -0.05
-				production_factory_max_efficiency_factor = -0.05
-				production_factory_efficiency_gain_factor = -0.1
 				consumer_goods_factor = 0.1
 			}
 		}
