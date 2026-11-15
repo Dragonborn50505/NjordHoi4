@@ -1,0 +1,412 @@
+add_namespace = MINORS_events
+add_namespace = MINORS_news_events
+
+# Greenland and Kustland declares war
+news_event = {
+    id = MINORS_news_events.1
+    title = {
+        text = MINORS_news_events.1.t.a
+        trigger = {
+            tag = SOV
+        }
+    }
+    desc = {
+        text = MINORS_news_events.1.desc.a
+        trigger = {
+            tag = SOV
+        }
+    }
+
+	title = {
+        text = MINORS_news_events.1.t.a
+        trigger = {
+			NOT = {
+				tag = SOV
+			}
+        }
+    }
+    desc = {
+        text = MINORS_news_events.1.desc.b
+        trigger = {
+            NOT = {
+				tag = SOV
+			}
+        }
+    }
+    
+    picture = GFX_news_event_016
+    
+    is_triggered_only = yes
+    major = yes
+    
+    option = {
+		trigger = {
+            tag = SOV
+        }
+        name = MINORS_news_events.1.a
+    }
+
+	option = {
+		trigger = {
+			NOT = {
+				tag = SOV
+			}
+		}
+        name = MINORS_news_events.1.b
+    }
+}
+
+# Invasion of Russian Amerika
+country_event = {
+	id = MINORS_events.1
+	title = MINORS_events.1.t
+	desc = MINORS_events.1.d
+	picture = GFX_report_event_DEN_fascist_troops
+
+	is_triggered_only = yes
+
+	immediate = {
+		SOV = {
+			end_puppet = W63
+		}
+
+		hidden_effect = {
+			news_event = { id = MINORS_news_events.1 days = 2 }
+		}
+	}
+
+	option = {
+		name = MINORS_events.1.a
+
+		add_war_support = 0.05
+		add_threat = 2
+		W36 = {
+			declare_war_on = {
+				target = W63
+				type = take_core_state
+			}
+		}
+		QUE = {
+			declare_war_on = {
+				target = W63
+				type = take_core_state
+			}
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+
+# The Mughal Empire invades Bengal
+news_event = {
+    id = MINORS_news_events.2
+    title = {
+        text = MINORS_news_events.2.t.a
+        trigger = {
+            NOT = {
+				tag = BAN
+			}
+        }
+    }
+    desc = {
+        text = MINORS_news_events.2.desc.a
+        trigger = {
+            NOT = {
+				tag = BAN
+			}
+        }
+    }
+
+	title = {
+        text = MINORS_news_events.2.t.b
+        trigger = {
+            tag = BAN
+        }
+    }
+    desc = {
+        text = MINORS_news_events.2.desc.b
+        trigger = {
+            tag = BAN
+        }
+    }
+    
+    picture = GFX_news_event_indian_parade
+    
+    is_triggered_only = yes
+    major = yes
+    
+    option = {
+		trigger = {
+            NOT = {
+				tag = BAN
+			}
+        }
+        name = MINORS_news_events.2.a
+    }
+
+	option = {
+		trigger = {
+            tag = BAN
+        }
+        name = MINORS_news_events.2.a
+    }
+}
+
+# Mughal Empire Invasion of Bengal
+country_event = {
+	id = MINORS_events.2
+	title = MINORS_events.2.t
+	desc = MINORS_events.2.d
+	picture = GFX_report_event_DEN_fascist_troops
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			news_event = { id = MINORS_news_events.2 days = 2 }
+		}
+
+		hidden_effect = {
+			X94 = {
+				country_event = {
+					id = MINORS_events.3
+					days = 30
+				}
+			}
+		}
+	}
+
+	option = {
+		name = MINORS_events.2.a
+
+		add_war_support = 0.05
+		add_threat = 2
+		declare_war_on = {
+			target = BAN
+			type = annex_everything
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+# The Sikh Empire Strikes Back
+country_event = {
+	id = MINORS_events.3
+	title = MINORS_events.3.t
+	desc = MINORS_events.3.d
+	picture = GFX_report_event_DEN_fascist_troops
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			news_event = { id = MINORS_news_events.3 days = 2 }
+		}
+	}
+
+	option = {
+		name = MINORS_events.3.a
+
+		add_war_support = 0.05
+		add_threat = 1
+		declare_war_on = {
+			target = PAK
+			type = take_core_state
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+# The Sikh Empire attacks Mughals
+news_event = {
+    id = MINORS_news_events.3
+
+	trigger = {
+		NOT = {
+			tag = PAK
+		}
+	}
+    title = {
+        text = MINORS_news_events.3.t.a
+        trigger = {
+            NOT = {
+				tag = PAK
+			}
+        }
+    }
+    desc = {
+        text = MINORS_news_events.3.desc.a
+        trigger = {
+            NOT = {
+				tag = PAK
+			}
+        }
+    }
+
+    picture = GFX_news_event_indian_parade
+    
+    is_triggered_only = yes
+    major = yes
+    
+    option = {
+		trigger = {
+            NOT = {
+				tag = PAK
+			}
+        }
+        name = MINORS_news_events.3.a
+    }
+
+}
+
+
+# The Armenian Resurgence
+country_event = {
+	id = MINORS_events.4
+	title = MINORS_events.4.t
+	desc = MINORS_events.4.d
+	picture = GFX_report_event_DEN_fascist_troops
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			news_event = { id = MINORS_news_events.4 days = 2 }
+		}
+		release = ARM
+		remove_ideas = TRANS_the_armenian_question
+		ARM = {
+			add_timed_idea = {
+				idea = ARM_war_for_independence
+				days = 120
+			}
+			add_timed_idea = {
+				idea = ARM_militia_army
+				days = 120
+			}
+			add_timed_idea = {
+				idea = ARM_disorganised_command
+				days = 120
+			}
+			add_timed_idea = {
+				idea = ARM_improvised_war_production
+				days = 120
+			}
+		}
+	}
+
+	option = {
+		name = MINORS_events.4.a
+
+		add_war_support = 0.05
+		add_threat = 2
+		declare_war_on = {
+			target = ARM
+			type = annex_everything
+		}
+		hidden_effect = {
+			ARM = {
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = tooltip_create_division_template
+						NAME = "Volontaires Internationaux"
+						LINE_1 = { localization_key = line_battalion_tt NAME = militia ICON = GFX_unit_militia_icon_small COUNT = 9 }
+						SUPPORT_1 = { localization_key = support_battalion_tt NAME = assault_battalion ICON = GFX_unit_blackshirt_assault_battalion_icon_small }
+						SUPPORT_2 = { localization_key = support_battalion_tt NAME = artillery ICON = GFX_unit_artillery_icon_small }
+					}
+					if = {
+						limit = { has_template = "Volontaires Internationaux" }
+						delete_unit_template_and_units = { division_template = "Volontaires Internationaux" disband = yes } #no cheating
+					}
+					division_template = {
+						name = "Volontaires Internationaux"
+						template_counter = 68
+						role = infantry
+						regiments = {
+							militia = { x = 0 y = 0 }
+							militia = { x = 0 y = 1 }
+							militia = { x = 0 y = 2 }
+							militia = { x = 1 y = 0 }
+							militia = { x = 1 y = 1 }
+							militia = { x = 1 y = 2 }
+							militia = { x = 2 y = 0 }
+							militia = { x = 2 y = 1 }
+							militia = { x = 2 y = 2 }
+						}
+						support = {
+							blackshirt_assault_battalion = { x = 0 y = 0 }
+							artillery = { x = 0 y = 1 }
+						}
+					}
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				random_controlled_state = {
+					limit = { is_capital = yes }
+					custom_override_tooltip = {
+						tooltip = {
+							localization_key = tooltip_spawn_units
+							COUNT = 18
+							TYPE = "Volontaires Internationaux"
+						}
+						create_unit = {
+							division = "division_template = \"Volontaires Internationaux\" start_experience_factor = 0.4"
+							owner = ROOT
+							count = 18
+						}
+					}
+				}
+			}
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+# The Armenian Resurgence
+news_event = {
+    id = MINORS_news_events.4
+
+	trigger = {
+		NOT = {
+			tag = W07
+		}
+	}
+    title = {
+        text = MINORS_news_events.4.t.a
+        trigger = {
+            NOT = {
+				tag = W07
+			}
+        }
+    }
+    desc = {
+        text = MINORS_news_events.4.desc.a
+        trigger = {
+            NOT = {
+				tag = W07
+			}
+        }
+    }
+
+    picture = GFX_news_event_SOV_invasion_iran
+    
+    is_triggered_only = yes
+    major = yes
+    
+    option = {
+		trigger = {
+            NOT = {
+				tag = W07
+			}
+        }
+        name = MINORS_news_events.4.a
+    }
+
+}

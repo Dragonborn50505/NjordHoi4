@@ -115,30 +115,6 @@ characters={
 			}
 		}
 	}
-
-	SOV_rotan_golivin={
-		name=SOV_rotan_golivin
-		portraits={
-			army={
-				large="GFX_portrait_SOV_vasily_chuykov"
-			}
-			army={
-				small="GFX_portrait_SOV_vasily_chuykov_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=2
-			defense_skill=3
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-			traits = {
-				cavalry_officer
-			}
-		}
-	}
-
 	SOV_lavr_badanov={
 		name=SOV_lavr_badanov
 		portraits={
@@ -195,86 +171,6 @@ characters={
 		}
 	}
 
-	SOV_rotan_zavoyko={
-		name=SOV_rotan_zavoyko
-		portraits={
-			army={
-				large="GFX_Portrait_Soviet_Generic_land_8"
-			}
-			army={
-				small="GFX_Portrait_Soviet_Generic_land_8_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
-	SOV_sergey_ivanov={
-		name=SOV_sergey_ivanov
-		portraits={
-			army={
-				large="GFX_Portrait_Soviet_Generic_land_6"
-			}
-			army={
-				small="GFX_Portrait_Soviet_Generic_land_6_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
-	SOV_boris_rozhestvenskiy={
-		name=SOV_boris_rozhestvenskiy
-		portraits={
-			army={
-				large="GFX_portrait_SOV_aleksandr_vasilevsky"
-			}
-			army={
-				small="GFX_portrait_SOV_aleksandr_vasilevsky_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=3
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
-	SOV_sergey_kornilov={
-		name=SOV_sergey_kornilov
-		portraits={
-			army={
-				large="GFX_portrait_SOV_kirill_moskalenko"
-			}
-			army={
-				small="GFX_portrait_SOV_kirill_moskalenko_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
 	SOV_yevgeniy_gurko={
 		name=SOV_yevgeniy_gurko
 		portraits={
@@ -295,46 +191,6 @@ characters={
 			traits = {
 				trait_SOV_monarchist_sympathizer
 			}
-		}
-	}
-
-	SOV_rotan_shuvalov={
-		name=SOV_rotan_shuvalov
-		portraits={
-			army={
-				large="GFX_portrait_europe_generic_land_7"
-			}
-			army={
-				small="GFX_portrait_europe_generic_land_7_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=2
-			defense_skill=3
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
-	SOV_yuriy_kuropatkin={
-		name=SOV_yuriy_kuropatkin
-		portraits={
-			army={
-				large="GFX_portrait_europe_generic_land_8"
-			}
-			army={
-				small="GFX_portrait_europe_generic_land_8_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=3
-			defense_skill=3
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
 		}
 	}
 
@@ -401,46 +257,6 @@ characters={
 		}
 	}
 
-	SOV_sergey_kuropatkin={
-		name=SOV_sergey_kuropatkin
-		portraits={
-			army={
-				large="GFX_portrait_europe_generic_land_7"
-			}
-			army={
-				small="GFX_portrait_europe_generic_land_7_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=2
-			defense_skill=3
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
-	SOV_rotan_gurko={
-		name=SOV_rotan_gurko
-		portraits={
-			army={
-				large="GFX_portrait_SOV_filipp_golikov"
-			}
-			army={
-				small="GFX_portrait_SOV_filipp_golikov_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
 	SOV_kiril_dragomirov={
 		name=SOV_kiril_dragomirov
 		portraits={
@@ -478,26 +294,6 @@ characters={
 			skill=2
 			attack_skill=2
 			defense_skill=3
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
-	SOV_yevgeniy_budonnyy={
-		name=SOV_yevgeniy_budonnyy
-		portraits={
-			army={
-				large="GFX_Portrait_Soviet_Generic_land_1"
-			}
-			army={
-				small="GFX_Portrait_Soviet_Generic_land_1_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=3
-			defense_skill=2
 			planning_skill=1
 			logistics_skill=1
 			legacy_id=0
@@ -544,26 +340,6 @@ characters={
 		}
 	}
 
-	SOV_mikhail_nebogatov={
-		name=SOV_mikhail_nebogatov
-		portraits={
-			army={
-				large="GFX_Portrait_Europe_Generic_land_2"
-			}
-			army={
-				small="GFX_Portrait_Europe_Generic_land_2_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
 	SOV_rotan_surkov={
 		name=SOV_rotan_surkov
 		portraits={
@@ -584,26 +360,6 @@ characters={
 		}
 	}
 
-	SOV_dmitriy_nikolayevich={
-		name=SOV_dmitriy_nikolayevich
-		portraits={
-			army={
-				large="GFX_portrait_SOV_ivan_konev"
-			}
-			army={
-				small="GFX_portrait_SOV_ivan_konev_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
 	SOV_vladislav_rozhestvenskiy={
 		name=SOV_vladislav_rozhestvenskiy
 		portraits={
@@ -612,26 +368,6 @@ characters={
 			}
 			army={
 				small="GFX_Soviet_Sergei_Markov_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
-	SOV_valeriy_nikolayevich={
-		name=SOV_valeriy_nikolayevich
-		portraits={
-			army={
-				large="GFX_Portrait_Soviet_Generic_land_3"
-			}
-			army={
-				small="GFX_Portrait_Soviet_Generic_land_3_small"
 			}
 		}
 		corps_commander={
@@ -687,26 +423,6 @@ characters={
 		}
 	}
 
-	SOV_igor'_golivin={
-		name=SOV_igor'_golivin
-		portraits={
-			army={
-				large="GFX_Portrait_Soviet_Generic_land_3"
-			}
-			army={
-				small="GFX_Portrait_Soviet_Generic_land_3_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
 	SOV_gennadiy_shuvalov={
 		name=SOV_gennadiy_shuvalov
 		portraits={
@@ -727,106 +443,6 @@ characters={
 		}
 	}
 
-	SOV_aleksey_nikolayevich={
-		name=SOV_aleksey_nikolayevich
-		portraits={
-			army={
-				large="GFX_Soviet_Max_Andreyevich"
-			}
-			army={
-				small="GFX_Soviet_Max_Andreyevich_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=3
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
-	SOV_gennadiy_yegorov={
-		name=SOV_gennadiy_yegorov
-		portraits={
-			army={
-				large="GFX_portrait_SOV_filipp_golikov"
-			}
-			army={
-				small="GFX_portrait_SOV_filipp_golikov_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=3
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
-	SOV_vladimir_rozhestvenskiy={
-		name=SOV_vladimir_rozhestvenskiy
-		portraits={
-			army={
-				large="GFX_portrait_SOV_georgy_zakharov"
-			}
-			army={
-				small="GFX_portrait_SOV_georgy_zakharov_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=2
-			defense_skill=3
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
-	SOV_leonid_pavlov={
-		name=SOV_leonid_pavlov
-		portraits={
-			army={
-				large="GFX_portrait_SOV_filipp_golikov"
-			}
-			army={
-				small="GFX_portrait_SOV_filipp_golikov_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=2
-			defense_skill=3
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
-	SOV_yuriy_kornilov={
-		name=SOV_yuriy_kornilov
-		portraits={
-			army={
-				large="GFX_portrait_SOV_konstantin_rokossovsky"
-			}
-			army={
-				small="GFX_portrait_SOV_konstantin_rokossovsky_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=3
-			defense_skill=3
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
 	SOV_dmitriy_yudenich={
 		name=SOV_dmitriy_yudenich
 		portraits={
@@ -841,86 +457,6 @@ characters={
 			skill=2
 			attack_skill=2
 			defense_skill=2
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
-	SOV_igor'_skobelev={
-		name=SOV_igor'_skobelev
-		portraits={
-			army={
-				large="GFX_Portrait_Soviet_Generic_land_2"
-			}
-			army={
-				small="GFX_Portrait_Soviet_Generic_land_2_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=4
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
-	SOV_valeriy_nebogatov={
-		name=SOV_valeriy_nebogatov
-		portraits={
-			army={
-				large="GFX_portrait_SOV_kirill_meretskov"
-			}
-			army={
-				small="GFX_portrait_SOV_kirill_meretskov_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=3
-			defense_skill=3
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
-	SOV_leonid_yegorov={
-		name=SOV_leonid_yegorov
-		portraits={
-			army={
-				large="GFX_portrait_SOV_dmitry_lelyushenko"
-			}
-			army={
-				small="GFX_portrait_SOV_dmitry_lelyushenko_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=2
-			defense_skill=3
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
-	SOV_kiril_grishin={
-		name=SOV_kiril_grishin
-		portraits={
-			army={
-				large="GFX_portrait_SOV_georgy_zhukov"
-			}
-			army={
-				small="GFX_portrait_SOV_georgy_zhukov_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=2
-			defense_skill=3
 			planning_skill=1
 			logistics_skill=1
 			legacy_id=0
@@ -987,26 +523,6 @@ characters={
 		}
 	}
 
-	SOV_leonid_voroshilov={
-		name=SOV_leonid_voroshilov
-		portraits={
-			army={
-				large="GFX_portrait_SOV_konstantin_rokossovsky"
-			}
-			army={
-				small="GFX_portrait_SOV_konstantin_rokossovsky_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
 	SOV_kiril_grishin_1={
 		name=SOV_kiril_grishin_1
 		portraits={
@@ -1021,26 +537,6 @@ characters={
 			skill=2
 			attack_skill=2
 			defense_skill=2
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
-	SOV_sergey_voroshilov={
-		name=SOV_sergey_voroshilov
-		portraits={
-			army={
-				large="GFX_portrait_SOV_kuzma_galitsky"
-			}
-			army={
-				small="GFX_portrait_SOV_kuzma_galitsky_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=2
-			defense_skill=3
 			planning_skill=1
 			logistics_skill=1
 			legacy_id=0
@@ -1067,26 +563,6 @@ characters={
 		}
 	}
 
-	SOV_potr_rozhestvenskiy={
-		name=SOV_potr_rozhestvenskiy
-		portraits={
-			army={
-				large="GFX_portrait_SOV_kirill_meretskov"
-			}
-			army={
-				small="GFX_portrait_SOV_kirill_meretskov_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=2
-			defense_skill=3
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
 	SOV_yevgeniy_brusilov={
 		name=SOV_yevgeniy_brusilov
 		portraits={
@@ -1095,26 +571,6 @@ characters={
 			}
 			army={
 				small="GFX_Soviet_Aleksander_Kutepov_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=3
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
-	SOV_vladimir_brusilov={
-		name=SOV_vladimir_brusilov
-		portraits={
-			army={
-				large="GFX_portrait_europe_generic_land_9"
-			}
-			army={
-				small="GFX_portrait_europe_generic_land_9_small"
 			}
 		}
 		corps_commander={

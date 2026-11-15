@@ -1037,9 +1037,9 @@ ideas = {
 			modifier = {
 				air_volunteer_cap = 1
 				send_volunteer_size = 1
-				experience_gain_army = 0.03
-				experience_gain_navy = 0.03
-				experience_gain_air = 0.03
+				experience_gain_army = 0.01
+				experience_gain_navy = 0.01
+				experience_gain_air = 0.01
 			}
 		}
 
@@ -1049,9 +1049,9 @@ ideas = {
 			modifier = {
 				air_volunteer_cap = 1
 				send_volunteer_size = 1
-				experience_gain_army = 0.06
-				experience_gain_navy = 0.06
-				experience_gain_air = 0.06
+				experience_gain_army = 0.01
+				experience_gain_navy = 0.01
+				experience_gain_air = 0.01
 			}
 		}
 
@@ -1063,9 +1063,9 @@ ideas = {
 				max_command_power_mult = 0.1
 				air_volunteer_cap = 2
 				send_volunteer_size = 2
-				experience_gain_army = 0.09
-				experience_gain_navy = 0.09
-				experience_gain_air = 0.09
+				experience_gain_army = 0.01
+				experience_gain_navy = 0.01
+				experience_gain_air = 0.01
 			}
 		}
 
@@ -1080,9 +1080,9 @@ ideas = {
 				max_command_power_mult = 0.15
 				air_volunteer_cap = 2
 				send_volunteer_size = 2
-				experience_gain_army = 0.12
-				experience_gain_navy = 0.12
-				experience_gain_air = 0.12
+				experience_gain_army = 0.02
+				experience_gain_navy = 0.02
+				experience_gain_air = 0.02
 			}
 		}
 
@@ -1098,9 +1098,9 @@ ideas = {
 				max_command_power_mult = 0.25
 				air_volunteer_cap = 2
 				send_volunteer_size = 2
-				experience_gain_army = 0.15
-				experience_gain_navy = 0.15
-				experience_gain_air = 0.15
+				experience_gain_army = 0.02
+				experience_gain_navy = 0.02
+				experience_gain_air = 0.02
 				coordination_bonus = 0.05
 			}
 		}
@@ -1118,9 +1118,9 @@ ideas = {
 				max_command_power_mult = 0.25
 				air_volunteer_cap = 3
 				send_volunteer_size = 3
-				experience_gain_army = 0.15
-				experience_gain_navy = 0.15
-				experience_gain_air = 0.15
+				experience_gain_army = 0.02
+				experience_gain_navy = 0.02
+				experience_gain_air = 0.02
 				coordination_bonus = 0.05
 				land_reinforce_rate = 0.05
 			}
@@ -1139,9 +1139,9 @@ ideas = {
 				max_command_power_mult = 0.3
 				air_volunteer_cap = 3
 				send_volunteer_size = 3
-				experience_gain_army = 0.15
-				experience_gain_navy = 0.15
-				experience_gain_air = 0.15
+				experience_gain_army = 0.03
+				experience_gain_navy = 0.03
+				experience_gain_air = 0.03
 				coordination_bonus = 0.05
 				land_reinforce_rate = 0.05
 			}
@@ -1160,9 +1160,9 @@ ideas = {
 				max_command_power_mult = 0.3
 				air_volunteer_cap = 3
 				send_volunteer_size = 3
-				experience_gain_army = 0.15
-				experience_gain_navy = 0.15
-				experience_gain_air = 0.15
+				experience_gain_army = 0.03
+				experience_gain_navy = 0.03
+				experience_gain_air = 0.03
 				coordination_bonus = 0.05
 				land_reinforce_rate = 0.05
 			}
@@ -8063,6 +8063,57 @@ ideas = {
 				dig_in_speed_factor = -0.15
 				experience_loss_factor = 0.15
 				army_org_regain = -0.15
+			}
+		}
+
+
+		# ARMENIA QUICK MODDING
+		ARM_war_for_independence = {
+			picture = chi_war_of_resistance3
+			modifier = {
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.15
+				drift_defence_factor = 0.25
+				surrender_limit = 0.25
+				weekly_manpower = 500
+			}
+		}
+
+		ARM_militia_army = {
+			picture = CHL_patagonian_giants
+			modifier = {
+				modifier_army_sub_unit_militia_attack_factor = 0.1
+				modifier_army_sub_unit_militia_defence_factor = 0.1
+				modifier_army_sub_unit_militia_max_org_factor = 0.15
+				training_time_army_factor = -0.15
+				out_of_supply_factor = -0.15
+				equipment_capture_factor = 0.05
+				army_org_factor = -0.05
+				weekly_manpower = 250
+			}
+		}
+
+		ARM_disorganised_command = {
+			picture = tur_disorganised_armed_forces
+			modifier = {
+				command_power_gain_mult = -0.25
+				army_org_regain = -0.05
+				army_org_factor = -0.05
+			}
+		}
+
+		ARM_improvised_war_production = {
+			picture = CHI_corruption_armed_forces
+			modifier = {
+				equipment_capture_factor = 0.05
+				industrial_capacity_factory = -0.05
+				consumer_goods_factor = -0.15
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.15
+					reliability_factor = -0.1
+				}
 			}
 		}
 	}

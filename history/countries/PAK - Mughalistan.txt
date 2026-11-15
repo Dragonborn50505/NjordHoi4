@@ -1,6 +1,11 @@
 ﻿capital = 332
 set_research_slots = 2
 
+country_event = {
+	id = MINORS_events.2
+	days = 240
+}
+
 oob = "PAK_OOB"
 
 # Starting tech
