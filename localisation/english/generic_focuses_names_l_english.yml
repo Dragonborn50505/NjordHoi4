@@ -39,9 +39,9 @@
   generic_armor_effort_desc:0 "Applying what we have learned from mechanising our infantry, we can improve our armoured vehicles as well."
   generic_army_projects:0 "Land Research Projects"
   generic_army_projects_desc:0 "Investing in exciting and elaborate new projects is possible in the modern nation state."
-  generic_infantry_primacy:0 "Infantry Primacy"
+  generic_infantry_primacy:0 "Old War Tactics"
   generic_infantry_primacy_desc:0 "The backbone of our army is its infantry. Without their hard work, we could not have an effective fighting force."
-  generic_armor_primacy:0 "Armor Primacy"
+  generic_armor_primacy:0 "New War Primacy"
   generic_armor_primacy_desc:0 "We have invested heavily in the "
 
   generic_aviation_effort:0 "Aviation Effort"
@@ -77,7 +77,7 @@
   generic_combined_arms_desc:0 "The doctrine of our airforce is breathtakingly modern. Coordinating our close air support with our army grants us total battlefield advantage."
   generic_bomber_command:0 "Bomber Command"
   generic_bomber_command_desc:0 "The bomber will always get through. Disabling enemy industrial capacity will degrade their war effort and their will to continue."
-  
+
   generic_naval_effort:0 "Naval Effort"
   generic_naval_effort_tt:0 "Not enough building slots for §YNaval Dockyards§!"
   generic_naval_effort_desc:0 "The expansion of our navy should be our first priority. Assign all available resources to new Dockyards and research into light surface ships."
@@ -113,7 +113,7 @@
   generic_wolf_packs_desc:0 "Utilising our submarines will give our modest navy an outsized impact in the wars ahead."
   generic_naval_engagements:0 "Grand Naval Engagements"
   generic_naval_engagements_desc:0 "We have a proud naval tradition of sweeping battles, ones in which we emerge victorious!"
-    
+
   generic_industrial_effort:0 "Industrial Effort"
   generic_industrial_effort_desc:0 "Focus all our political efforts on building up the civilian industry in a great leap forward."
   expand_dockyards_focus:0 "Dockyard Expansion"
@@ -326,7 +326,7 @@
   fascist_empire_complete_desc:0 "The empire has been established and now we can proclaim our rightful glory!"
   claim_nearby_focus:0 "Revanchism"
   claim_nearby_focus_desc:0 "Our neighbours are weak and own our historic lands. We must reclaim it."
-  
+
   moderate_focus:0 "Power in Moderation"
   moderate_focus_desc:0 "It is all too easy to succumb to the easy answers of radical politics. Moderation is our strength, and we will stick with it."
   power_people_focus:0 "Power to the People"
@@ -395,7 +395,7 @@
   make_the_case_for_war_focus_desc:0 "If we are to go to war, the people must understand that it is for a worthwhile cause and be prepared for the worst."
   enter_global_sphere_focus:0 "Democratic Diplomacy"
   enter_global_sphere_focus_desc:0 "As a Democratic country, we can expect certain benefits from our egalitarian counterparts."
-  
+
   moderate_politics_focus:0 "Moderate Politics"
   moderate_politics_focus_desc:0 "Whilst we are a democratic nation, ours is not aligned in the same way as the ideological ones."
   balance_internal_politics_focus:0 "Balance Internal Politics"
@@ -419,7 +419,7 @@
   ideological_democracy_focus_3:0 "Balanced Institutions"
   ideological_democracy_focus_3_desc:0 "It is through our moderate past that our institutions remain impartial, balanced and efficient."
   moderate_carefulness:0 "Considerate Diplomacy"
-  moderate_carefulness_desc:0 "Only through being careful with our diplomacy, can we navigate these trying times."  
+  moderate_carefulness_desc:0 "Only through being careful with our diplomacy, can we navigate these trying times."
 
   neutrality_defence_focus:0 "Defence in Neutrality"
   neutrality_defence_focus_desc:0 "The best way we can defend our nation is to buy as much time as possible. Declaring neutrality will grant us the space we need."
@@ -459,9 +459,9 @@
   despot_focus_desc:0 "[ROOT.GetNeutralLeader] is a legendary figure, who relies on divine right or holy legitimacy. They are legendary, not as a common person, but as one who stands above the personry. "
   honour_guard_focus:0 "Honour Guards"
   honour_guard_focus_desc:0 "In their court, [ROOT.GetNeutralLeader] stands surrounded by a highly elite force. Sometimes, they ride out to do their leader’s bidding too."
-  
+
   involve_spain_civil_war:0 "Involvement in the Spanish Civil War"
-  involve_spain_civil_war_desc:0 "The Spanish Civil War is already considered the precursor to a wider conflict. We must involve ourselves, be it for research or ideological purposes."  
+  involve_spain_civil_war_desc:0 "The Spanish Civil War is already considered the precursor to a wider conflict. We must involve ourselves, be it for research or ideological purposes."
 
   elite_support_focus:0 "Elite Support"
   elite_support_focus_desc:0 "It is the old aristocrats and traditional leaders that keep the regime in power. The regime serves the elites and they serve the regime."
@@ -545,7 +545,7 @@
   historic_figure_focus_desc:0 "It is undoubtable that the history books will have a special place for [ROOT.GetNeutralLeader]."
   appease_major_powers_focus:0 "Appease the Major Powers"
   appease_major_powers_focus_desc:0 "The major powers can easily be appeased. Giving them some influence over our affairs in exchange for their guarantee will ensure our safety and stability."
-  
+
 
   being_a_puppet:0 "Loss of Independence"
   being_a_puppet_desc:0 "We are beaten, but not defeated. We will survive these trials."
@@ -581,4 +581,3 @@
   church_fiat_focus_islam_desc:0 "The church must be brought into line so we can legitimise our regime. Threatening it into supporting us will aid our cause massively."
   replace_church_focus_islam:0 "Dogma over Faith"
   replace_church_focus_islam_desc:0 "The church is antiquated and useless. There are no gods, only men!"
-

@@ -37,6 +37,9 @@ generic_army_spirit_dynamic = {
 	army_infantry_attack_factor = ROOT.army_spirit_army_infantry_attack_factor
 	army_infantry_defence_factor = ROOT.army_spirit_army_infantry_defence_factor
 
+	army_cavalry_attack_factor = ROOT.army_spirit_army_cavalry_attack_factor
+	army_cavalry_defence_factor = ROOT.army_spirit_army_cavalry_defence_factor
+
 	army_armor_speed_factor = ROOT.army_spirit_army_armor_speed_factor
 	army_armor_attack_factor = ROOT.army_spirit_army_armor_attack_factor
 

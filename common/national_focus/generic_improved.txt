@@ -54,6 +54,7 @@ focus_tree = {
 
 		completion_reward = {
 			army_experience = 25
+			add_command_power = 80
 			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
@@ -109,7 +110,7 @@ focus_tree = {
 				add_dynamic_modifier = { modifier = GENERIC_army_dynamic_modifier }
 			}
 			add_to_variable = {
-				GENERIC_army_dynamic_modifier_land_night_attack = 0.15
+				GENERIC_army_dynamic_modifier_land_night_attack = 0.075
 				tooltip = land_night_attack_tt
 			}
 			custom_effect_tooltip = {
@@ -1082,6 +1083,10 @@ focus_tree = {
 				GENERIC_army_dynamic_modifier_heat_attrition_factor = -0.1
 				tooltip = heat_attrition_factor_tt
 			}
+			add_to_variable = {
+				GENERIC_army_dynamic_modifier_cas_damage_reduction = 0.05
+				tooltip = cas_damage_reduction_tt
+			}
 			add_tech_bonus = {
 				bonus = 1.0
 				uses = 2
@@ -1111,14 +1116,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_equipment_production = {
-				equipment = {
-					type = infantry_equipment_1
-				}
-				requested_factories = 2
-				progress = 0.5
-				amount = 400
-			}
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = GENERIC_army_dynamic_modifier
@@ -1168,8 +1165,12 @@ focus_tree = {
 				add_dynamic_modifier = { modifier = GENERIC_army_dynamic_modifier }
 			}
 			add_to_variable = {
-				GENERIC_army_dynamic_modifier_cas_damage_reduction = 0.05
-				tooltip = cas_damage_reduction_tt
+				GENERIC_army_dynamic_modifier_mechanized_attack_factor = 0.05
+				tooltip = mechanized_attack_factor_tt
+			}
+			add_to_variable = {
+				GENERIC_army_dynamic_modifier_mechanized_defence_factor = 0.05
+				tooltip = mechanized_defence_factor_tt
 			}
 			add_tech_bonus = {
 				name = motorized_bonus
@@ -1246,14 +1247,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_equipment_production = {
-				equipment = {
-					type = artillery_equipment_1
-				}
-				requested_factories = 2
-				progress = 0.5
-				amount = 200
-			}
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = GENERIC_army_dynamic_modifier
@@ -1389,10 +1382,6 @@ focus_tree = {
 				GENERIC_army_dynamic_modifier_extra_paratrooper_supply_grace = 48
 				tooltip = extra_paratrooper_supply_grace_tt
 			}
-			add_to_variable = {
-				GENERIC_army_dynamic_modifier_modifier_army_sub_unit_militia_max_org_factor = 0.05
-				tooltip = modifier_army_sub_unit_militia_max_org_factor_tt
-			}
 			add_mastery_bonus = {
 				name = GER_trade_interdiction
 				bonus = 0.2
@@ -1422,6 +1411,14 @@ focus_tree = {
 			add_to_variable = { 
 				army_spirit_army_infantry_defence_factor = 0.05
 				tooltip = army_infantry_defence_factor_tt
+			}
+			add_to_variable = { 
+				army_spirit_army_cavalry_attack_factor = 0.10
+				tooltip = cavalry_attack_factor_tt
+			}
+			add_to_variable = { 
+				army_spirit_army_cavalry_defence_factor = 0.10
+				tooltip = cavalry_defence_factor_tt
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			every_army_leader = {
@@ -1755,14 +1752,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_AIR_XP FOCUS_FILTER_RESEARCH }
 		available_if_capitulated = yes
 		completion_reward = {
-			add_equipment_production = {
-				equipment = {
-					type = fighter_equipment_1
-				}
-				requested_factories = 2
-				progress = 0.5
-				amount = 150
-			}
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = GENERIC_airforce_dynamic_modifier
@@ -1871,14 +1860,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		available_if_capitulated = yes
 		completion_reward = {
-			add_equipment_production = {
-				equipment = {
-					type = cas_equipment_1
-				}
-				requested_factories = 1
-				progress = 0.5
-				amount = 100
-			}
 			add_tech_bonus = {
 				name = CAS_bonus
 				bonus = 1.0
@@ -2327,6 +2308,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_ideas = Generic_air_production_bonus
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = GENERIC_airforce_dynamic_modifier
@@ -6018,6 +6000,7 @@ focus_tree = {
 		}
 	}
 
+
 	#Communist Regime
 	focus = {
 		id = communist_regime_focus
@@ -6027,7 +6010,7 @@ focus_tree = {
 			focus = sickle_sword_focus 
 		}
 		available = {
-			has_government = communism
+			communism > 0.5 #has_government = communism
 		}
 		x = 0
 		y = 1
@@ -6039,6 +6022,18 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_government = communism
+					}
+				}
+				set_politics = {
+				    ruling_party = communism
+				    elections_allowed = no
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
 			custom_effect_tooltip = {
 				localization_key = tooltip_modify_dynmod
 				DYNMOD = GENERIC_political_dynamic_modifier
@@ -6203,7 +6198,7 @@ focus_tree = {
 			focus = iron_blood_focus 
 		}
 		available = {
-			has_government = fascism
+			fascism > 0.5 #has_government = fascism
 		}
 		x = 0
 		y = 1
@@ -6215,6 +6210,18 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_government = fascism
+					}
+				}
+				set_politics = {
+				    ruling_party = fascism
+				    elections_allowed = no
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
 			army_experience = 20
 			add_political_power = 25
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -6240,6 +6247,8 @@ focus_tree = {
 			factor = 100000
 		}
 	}
+
+		
 
 	#Ideological Propaganda
 	focus = {
@@ -8914,8 +8923,12 @@ focus_tree = {
 				custom_effect_tooltip = GENERIC_modify_industry_modifier_tt
 			}
 			add_to_variable = { 
-				industry_spirit_consumer_goods_factor = -0.02
+				industry_spirit_consumer_goods_factor = 0.05
 				tooltip = consumer_goods_factor_tt
+			}
+			add_to_variable = { 
+				industry_spirit_global_building_slots_factor = 0.2
+				tooltip = global_building_slots_factor_tt
 			}
 			add_to_variable = { 
 				industry_spirit_local_resources_factor = 0.10
@@ -9174,7 +9187,7 @@ focus_tree = {
 		completion_reward = {
 			add_popularity = {
 			    ideology = fascism
-			    popularity = 0.03
+			    popularity = 0.2
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = GENERIC_modify_fascist_modifier_tt
@@ -9183,7 +9196,7 @@ focus_tree = {
 				tooltip = party_popularity_stability_factor_tt
 			}
 			add_to_variable = { 
-				fascist_spirit_conscription = 0.05
+				fascist_spirit_conscription = 0.01
 				tooltip = conscription_tt
 			}
 			add_to_variable = { 
@@ -12347,6 +12360,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			set_rule = { 
+				can_create_factions = yes
+			}
 			custom_effect_tooltip = GENERIC_modify_democratic_modifier_tt
 			add_to_variable = { 
 				democratic_spirit_political_power_factor = 0.15

@@ -1,6 +1,7 @@
 GENERIC_army_dynamic_modifier = {
 	enable = { always = yes }
 	remove_trigger = { always = no }
+	icon = GFX_idea_man_five_year_plan_tank
 	acclimatization_cold_climate_gain_factor = GENERIC_army_dynamic_modifier_acclimatization_cold_climate_gain_factor
 	acclimatization_hot_climate_gain_factor = GENERIC_army_dynamic_modifier_acclimatization_hot_climate_gain_factor
 	army_advisor_cost_factor = GENERIC_army_dynamic_modifier_army_advisor_cost_factor
@@ -42,11 +43,14 @@ GENERIC_army_dynamic_modifier = {
 	special_forces_attack_factor = GENERIC_army_dynamic_modifier_special_forces_attack_factor
 	special_forces_defence_factor = GENERIC_army_dynamic_modifier_special_forces_defence_factor
 	winter_attrition_factor = GENERIC_army_dynamic_modifier_winter_attrition_factor
+	mechanized_attack_factor = GENERIC_army_dynamic_modifier_mechanized_attack_factor
+	mechanized_defence_factor = GENERIC_army_dynamic_modifier_mechanized_defence_factor
 }
 
 GENERIC_navy_dynamic_modifier = {
 	enable = { always = yes }
 	remove_trigger = { always = no }
+	icon = GFX_idea_generic_navy_bonus
 	navy_carrier_air_agility_factor = GENERIC_navy_dynamic_modifier_carrier_air_agility_factor
 	navy_carrier_air_targetting_factor = GENERIC_navy_dynamic_modifier_carrier_air_targetting_factor
 	convoy_escort_efficiency = GENERIC_navy_dynamic_modifier_convoy_escort_efficiency
@@ -84,6 +88,7 @@ GENERIC_navy_dynamic_modifier = {
 GENERIC_airforce_dynamic_modifier = {
 	enable = { always = yes }
 	remove_trigger = { always = no }
+	icon = GFX_idea_generic_air_bonus
 	ace_effectiveness_factor = GENERIC_airforce_dynamic_modifier_ace_effectiveness_factor
 	air_ace_bonuses_factor = GENERIC_airforce_dynamic_modifier_air_ace_bonuses_factor
 	air_agility_factor = GENERIC_airforce_dynamic_modifier_air_agility_factor
@@ -107,6 +112,7 @@ GENERIC_airforce_dynamic_modifier = {
 GENERIC_industry_dynamic_modifier = {
 	enable = { always = yes }
 	remove_trigger = { always = no }
+	icon = GFX_idea_eng_spirit_of_the_industrial_revolution
 	industry_repair_factor = GENERIC_industry_dynamic_modifier_industry_repair_factor
 	production_oil_factor = GENERIC_industry_dynamic_modifier_production_oil_factor
 }
@@ -114,6 +120,7 @@ GENERIC_industry_dynamic_modifier = {
 GENERIC_faction_dynamic_modifier = {
 	enable = { always = yes }
 	remove_trigger = { always = no }
+	icon = GFX_idea_generic_flexible_foreign_policy2
 	dockyard_donations = GENERIC_faction_dynamic_modifier_dockyard_donations
 	equipment_conversion_speed = GENERIC_faction_dynamic_modifier_equipment_conversion_speed
 	industrial_factory_donations = GENERIC_faction_dynamic_modifier_industrial_factory_donations
@@ -123,6 +130,6 @@ GENERIC_faction_dynamic_modifier = {
 GENERIC_political_dynamic_modifier = {
 	enable = { always = yes }
 	remove_trigger = { always = no }
+	icon = GFX_idea_generic_constitutional_guarantees
 	communism_drift = GENERIC_political_dynamic_modifier_communism_drift
 }
-

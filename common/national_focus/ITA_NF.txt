@@ -25,6 +25,9 @@ focus_tree = {
 		y = 0
 
 		completion_reward = {
+			set_rule = { 
+				can_create_factions = yes
+			}
 			add_political_power = 25
 			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {

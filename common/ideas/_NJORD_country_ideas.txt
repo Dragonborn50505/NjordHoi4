@@ -1505,6 +1505,21 @@ ideas = {
 			}
 		}
 
+		Generic_air_production_bonus = {
+			picture = man_five_year_plan_air
+			equipment_bonus = {
+				mio_cat_eq_all_small_plane = {
+					build_cost_ic = -0.05
+				}
+				mio_cat_eq_all_medium_plane = {
+					build_cost_ic = -0.05
+				}
+				mio_cat_eq_all_large_plane = {
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
 		GER_aircraft_production_improvements = {
 			name = GER_air_production_bonus
 			on_remove = {

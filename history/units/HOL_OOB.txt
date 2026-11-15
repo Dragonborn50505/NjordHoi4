@@ -191,10 +191,55 @@ division_template = {
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_0
+			type = infantry_equipment_1
 			creator = "HOL"
 		}
 		requested_factories = 5
+		progress = 0.88
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "HOL"
+		}
+		requested_factories = 1
+		progress = 0.88
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = anti_tank_equipment_1
+			creator = "HOL"
+		}
+		requested_factories = 1
+		progress = 0.88
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = anti_air_equipment_1
+			creator = "HOL"
+		}
+		requested_factories = 1
+		progress = 0.88
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "HOL"
+		}
+		requested_factories = 1
+		progress = 0.88
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = train_equipment_1
+			creator = "HOL"
+		}
+		requested_factories = 1
 		progress = 0.88
 		efficiency = 100
 	}
@@ -206,18 +251,6 @@ instant_effect = {
 		requested_factories = 2
 		progress = 0.88
 		efficiency = 100
-	}
-	if = {
-		limit = { has_dlc = "By Blood Alone" }
-		add_equipment_production = {
-			equipment = {
-				type = small_plane_airframe_0
-				creator = "HOL"
-			}
-			requested_factories = 5
-			progress = 0.88
-			efficiency = 100
-		}
 	}
 	else = {
 		add_equipment_production = {

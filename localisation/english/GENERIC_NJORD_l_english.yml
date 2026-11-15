@@ -37,3 +37,5 @@
   communism_drift_tt: "Communism Drift: $RIGHT|+=%2$"
   modifier_army_sub_unit_armored_car_recon_max_org_factor_tt: "Armoured Car and Recon Organisation: $RIGHT|+=%2$"
   positioning_tooltip: "Positioning: $RIGHT|+=%1$"
+  Generic_air_production_bonus: "Air Production"
+  Generic_air_production_bonus_desc: ""

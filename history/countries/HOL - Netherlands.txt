@@ -139,7 +139,7 @@ if = {
     }
     set_autonomy = {
         target = W48
-        autonomous_state = autonomy_colony
+        autonomous_state = autonomy_integrated_puppet
         freedom_level = 0.4
     }
     set_autonomy = {
@@ -149,12 +149,12 @@ if = {
     }
 	set_autonomy = {
 		target = ATJ
-		autonomous_state = autonomy_puppet
+		autonomous_state = autonomy_integrated_puppet
 		freedom_level = 0.4
 	}
 	set_autonomy = {
 		target = X53
-		autonomous_state = autonomy_puppet
+		autonomous_state = autonomy_integrated_puppet
 		freedom_level = 0.4
 	}
     else = {
@@ -263,10 +263,7 @@ add_to_faction = W48
 add_to_faction = W49
 add_to_faction = FRA
 
-if = {
-	limit = { has_dlc = "Man the Guns" }
-	add_ideas = MTG_naval_treaty_adherent
-}
+
 add_ideas = {
 	great_power
 	HOL_monarch
@@ -712,7 +709,7 @@ if = {
 		show_position = no
 		modules = {
 			main_armament_slot = tank_heavy_machine_gun
-			turret_type_slot = tank_light_one_man_tank_turret
+			turret_type_slot = tank_light_two_man_tank_turret_1
 			suspension_type_slot = tank_christie_suspension
 			armor_type_slot = tank_riveted_armor
 			engine_type_slot = tank_gasoline_engine
@@ -732,7 +729,7 @@ if = {
 		show_position = no
 		modules = {
 			main_armament_slot = tank_heavy_machine_gun
-			turret_type_slot = tank_light_two_man_tank_turret
+			turret_type_slot = tank_light_two_man_tank_turret_1
 			suspension_type_slot = tank_bogie_suspension
 			armor_type_slot = tank_riveted_armor
 			engine_type_slot = tank_gasoline_engine
