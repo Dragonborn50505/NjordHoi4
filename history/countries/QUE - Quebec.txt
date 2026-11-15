@@ -1,6 +1,11 @@
 ﻿capital = 480
 set_research_slots = 3
 
+country_event = {
+	id = MINORS_events.1
+	days = 365
+}
+
 oob = "QUE_OOB"
 if = {
 	limit = { has_dlc = "Man the Guns" }

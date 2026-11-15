@@ -13,7 +13,7 @@ characters={
 			slot = theorist
 			traits = { superior_firepower_expert }
 		}
-		corps_commander={
+		field_marshal = {
 			skill=4
 			attack_skill=5
 			defense_skill=3
@@ -78,66 +78,6 @@ characters={
 		}
 	}
 
-	PRE_peter_groener={
-		name=PRE_peter_groener
-		portraits={
-			army={
-				large="GFX_portrait_GER_friedrich_paulus"
-			}
-			army={
-				small="GFX_portrait_GER_friedrich_paulus_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
-	PRE_dieter_von_wettin={
-		name=PRE_dieter_von_wettin
-		portraits={
-			army={
-				large="GFX_portrait_MEX_Luis_Maria_Martinez"
-			}
-			army={
-				small="GFX_portrait_MEX_Luis_Maria_Martinez_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=3
-			defense_skill=3
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
-	PRE_jurgen_von_mecklenburg_schwerin={
-		name=PRE_jurgen_von_mecklenburg_schwerin
-		portraits={
-			army={
-				large="GFX_portrait_GER_kurt_student"
-			}
-			army={
-				small="GFX_portrait_GER_kurt_student_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=2
-			defense_skill=3
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
 	PRE_franz_von_hohenzollern={
 		name=PRE_franz_von_hohenzollern
 		portraits={
@@ -157,46 +97,6 @@ characters={
 			attack_skill=3
 			defense_skill=3
 			planning_skill=2
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
-	PRE_ernst_von_sachsen_altenburg={
-		name=PRE_ernst_von_sachsen_altenburg
-		portraits={
-			army={
-				large="GFX_Portrait_Germany_Generic_land_4"
-			}
-			army={
-				small="GFX_Portrait_Germany_Generic_land_4_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
-	PRE_florian_von_blomberg={
-		name=PRE_florian_von_blomberg
-		portraits={
-			army={
-				large="GFX_Portrait_europe_generic_land_6"
-			}
-			army={
-				small="GFX_Portrait_europe_generic_land_6_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=1
 			logistics_skill=1
 			legacy_id=0
 		}
@@ -246,45 +146,6 @@ characters={
 		}
 	}
 
-	PRE_nikolaus_heppendorf={
-		name=PRE_nikolaus_heppendorf
-		portraits={
-			army={
-				large="GFX_portrait_GER_sepp_dietrich"
-			}
-			army={
-				small="GFX_portrait_GER_sepp_dietrich_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
-	PRE_wolfgang_von_holstein_gottorp={
-		name=PRE_wolfgang_von_holstein_gottorp
-		portraits={
-			army={
-				large="GFX_Portrait_Europe_Generic_land_3"
-			}
-			army={
-				small="GFX_Portrait_Europe_Generic_land_3_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
 
 	PRE_leonhard_von_sachsen_weimar_eisenach={
 		name=PRE_leonhard_von_sachsen_weimar_eisenach
@@ -346,26 +207,6 @@ characters={
 		}
 	}
 
-	PRE_stefan_groener={
-		name=PRE_stefan_groener
-		portraits={
-			army={
-				large="GFX_Germany_Willi_Reschke"
-			}
-			army={
-				small="GFX_Germany_Willi_Reschke_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
 	PRE_heinrich_von_bulow={
 		name=PRE_heinrich_von_bulow
 		portraits={
@@ -406,26 +247,6 @@ characters={
 		}
 	}
 
-	PRE_friedrich_von_mecklenburg_schwerin={
-		name=PRE_friedrich_von_mecklenburg_schwerin
-		portraits={
-			army={
-				large="GFX_portrait_GER_hasso_von_manteuffel"
-			}
-			army={
-				small="GFX_portrait_GER_hasso_von_manteuffel_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=2
-			defense_skill=3
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
 	PRE_burkhard_von_reuter={
 		name=PRE_burkhard_von_reuter
 		portraits={
@@ -439,46 +260,6 @@ characters={
 		corps_commander={
 			skill=2
 			attack_skill=4
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
-	PRE_burkhard_vogel_von_falkenstein={
-		name=PRE_burkhard_vogel_von_falkenstein
-		portraits={
-			army={
-				large="GFX_portrait_ger_felix_steiner"
-			}
-			army={
-				small="GFX_portrait_ger_felix_steiner_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=2
-			defense_skill=3
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
-	PRE_florian_hoffmann={
-		name=PRE_florian_hoffmann
-		portraits={
-			army={
-				large="GFX_Portrait_Germany_Generic_land_4"
-			}
-			army={
-				small="GFX_Portrait_Germany_Generic_land_4_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=2
 			defense_skill=2
 			planning_skill=1
 			logistics_skill=1
@@ -524,26 +305,6 @@ characters={
 			skill=3
 			attack_skill=3
 			defense_skill=4
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
-	PRE_erwin_von_braunschweig={
-		name=PRE_erwin_von_braunschweig
-		portraits={
-			army={
-				large="GFX_Germany_Wolfram_Freiherr_von_Richthofen"
-			}
-			army={
-				small="GFX_Germany_Wolfram_Freiherr_von_Richthofen_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=2
-			defense_skill=2
 			planning_skill=1
 			logistics_skill=1
 			legacy_id=0
@@ -610,66 +371,6 @@ characters={
 		}
 	}
 
-	PRE_stefan_von_blumenthal={
-		name=PRE_stefan_von_blumenthal
-		portraits={
-			army={
-				large="GFX_portrait_GER_wilhelm_list"
-			}
-			army={
-				small="GFX_portrait_GER_wilhelm_list_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=2
-			defense_skill=3
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
-	PRE_burkhard_krohn={
-		name=PRE_burkhard_krohn
-		portraits={
-			army={
-				large="GFX_portrait_GER_fedor_von_bock"
-			}
-			army={
-				small="GFX_portrait_GER_fedor_von_bock_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=2
-			defense_skill=3
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
-	PRE_gunther_von_bulow={
-		name=PRE_gunther_von_bulow
-		portraits={
-			army={
-				large="GFX_Portrait_Europe_Generic_land_5"
-			}
-			army={
-				small="GFX_Portrait_Europe_Generic_land_5_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
 	PRE_maximilian_von_hessen_darmstadt={
 		name=PRE_maximilian_von_hessen_darmstadt
 		portraits={
@@ -690,26 +391,6 @@ characters={
 		}
 	}
 
-	PRE_theodor_von_waldeck_und_pyrmont={
-		name=PRE_theodor_von_waldeck_und_pyrmont
-		portraits={
-			army={
-				large="GFX_portrait_europe_generic_land_13"
-			}
-			army={
-				small="GFX_portrait_europe_generic_land_13_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=3
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
 	PRE_albrecht_von_knorr={
 		name=PRE_albrecht_von_knorr
 		portraits={
@@ -718,106 +399,6 @@ characters={
 			}
 			army={
 				small="GFX_portrait_GER_hermann_hoth_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=3
-			defense_skill=3
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
-	PRE_florian_von_schwarzburg={
-		name=PRE_florian_von_schwarzburg
-		portraits={
-			army={
-				large="GFX_portrait_GER_wilhelm_ritter_von_leeb"
-			}
-			army={
-				small="GFX_portrait_GER_wilhelm_ritter_von_leeb_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=2
-			defense_skill=3
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
-	PRE_bernhard_von_bismarck_bohlen={
-		name=PRE_bernhard_von_bismarck_bohlen
-		portraits={
-			army={
-				large="GFX_portrait_Gunther_von_Kluge"
-			}
-			army={
-				small="GFX_portrait_Gunther_von_Kluge_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
-	PRE_heinrich_dreyer={
-		name=PRE_heinrich_dreyer
-		portraits={
-			army={
-				large="GFX_portrait_GER_gotthard_heinrici"
-			}
-			army={
-				small="GFX_portrait_GER_gotthard_heinrici_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
-	PRE_hermann_von_sachsen_meiningen={
-		name=PRE_hermann_von_sachsen_meiningen
-		portraits={
-			army={
-				large="GFX_portrait_ger_felix_steiner"
-			}
-			army={
-				small="GFX_portrait_ger_felix_steiner_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
-	PRE_paul_herwarth_von_bittenfeld={
-		name=PRE_paul_herwarth_von_bittenfeld
-		portraits={
-			army={
-				large="GFX_Portrait_europe_generic_land_6"
-			}
-			army={
-				small="GFX_Portrait_europe_generic_land_6_small"
 			}
 		}
 		corps_commander={
@@ -850,26 +431,6 @@ characters={
 		}
 	}
 
-	PRE_hasso_von_rauch={
-		name=PRE_hasso_von_rauch
-		portraits={
-			navy={
-				large="GFX_Portrait_Europe_Generic_navy_3"
-			}
-			navy={
-				small="GFX_Portrait_Europe_Generic_navy_3_small"
-			}
-		}
-		navy_leader={
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=0
-		}
-	}
-
 	PRE_hugo_heppendorf={
 		name=PRE_hugo_heppendorf
 		portraits={
@@ -890,26 +451,6 @@ characters={
 		}
 	}
 
-	PRE_karl_von_braunschweig={
-		name=PRE_karl_von_braunschweig
-		portraits={
-			navy={
-				large="GFX_Europe_Generic_navy_new_5"
-			}
-			navy={
-				small="GFX_Europe_Generic_navy_new_5_small"
-			}
-		}
-		navy_leader={
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=0
-		}
-	}
-
 	PRE_erwin_von_manteuffel={
 		name=PRE_erwin_von_manteuffel
 		portraits={
@@ -920,113 +461,22 @@ characters={
 				small="GFX_Europe_Generic_navy_new_4_small"
 			}
 		}
+		advisor = {
+			slot = navy_chief
+			traits = { navy_chief_decisive_battle_3 }
+		}
 		navy_leader={
 			skill=3
 			attack_skill=4
 			defense_skill=3
-			maneuvering_skill=1
-			coordination_skill=1
+			maneuvering_skill=4
+			coordination_skill=2
 			legacy_id=0
-		}
-	}
-
-	PRE_florian_von_arentschildt={
-		name=PRE_florian_von_arentschildt
-		portraits={
-			navy={
-				large="GFX_Europe_Generic_navy_new_1"
+			traits = {
+				superior_tactician
+				ironside
+				cruiser_captain
 			}
-			navy={
-				small="GFX_Europe_Generic_navy_new_1_small"
-			}
-		}
-		navy_leader={
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=0
-		}
-	}
-
-	PRE_pascal_von_manteuffel={
-		name=PRE_pascal_von_manteuffel
-		portraits={
-			navy={
-				large="GFX_Portrait_Germany_Generic_navy_3"
-			}
-			navy={
-				small="GFX_Portrait_Germany_Generic_navy_3_small"
-			}
-		}
-		navy_leader={
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=0
-		}
-	}
-
-	PRE_manfred_von_sachsen_coburg_gotha={
-		name=PRE_manfred_von_sachsen_coburg_gotha
-		portraits={
-			navy={
-				large="GFX_portrait_GER_alfred_saalwachter"
-			}
-			navy={
-				small="GFX_portrait_GER_alfred_saalwachter_small"
-			}
-		}
-		navy_leader={
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=0
-		}
-	}
-
-	PRE_ludwig_von_manteuffel={
-		name=PRE_ludwig_von_manteuffel
-		portraits={
-			navy={
-				large="GFX_portrait_GER_erich_raeder"
-			}
-			navy={
-				small="GFX_portrait_GER_erich_raeder_small"
-			}
-		}
-		navy_leader={
-			skill=2
-			attack_skill=2
-			defense_skill=3
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=0
-		}
-	}
-
-	PRE_manfred_von_ravensberg={
-		name=PRE_manfred_von_ravensberg
-		portraits={
-			navy={
-				large="GFX_Europe_Generic_navy_new_3"
-			}
-			navy={
-				small="GFX_Europe_Generic_navy_new_3_small"
-			}
-		}
-		navy_leader={
-			skill=2
-			attack_skill=2
-			defense_skill=3
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=0
 		}
 	}
 
@@ -1038,46 +488,6 @@ characters={
 			}
 			navy={
 				small="GFX_Europe_Generic_navy_new_4_small"
-			}
-		}
-		navy_leader={
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=0
-		}
-	}
-
-	PRE_florian_von_oldenburg={
-		name=PRE_florian_von_oldenburg
-		portraits={
-			navy={
-				large="GFX_portrait_GER_alfred_saalwachter"
-			}
-			navy={
-				small="GFX_portrait_GER_alfred_saalwachter_small"
-			}
-		}
-		navy_leader={
-			skill=2
-			attack_skill=2
-			defense_skill=3
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=0
-		}
-	}
-
-	PRE_edwin_von_roon={
-		name=PRE_edwin_von_roon
-		portraits={
-			navy={
-				large="GFX_Portrait_Europe_Generic_navy_3"
-			}
-			navy={
-				small="GFX_Portrait_Europe_Generic_navy_3_small"
 			}
 		}
 		navy_leader={

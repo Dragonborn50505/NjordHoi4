@@ -448,26 +448,6 @@ characters={
 		}
 	}
 
-	W41_kasim_beg_4={
-		name=W41_kasim_beg_4
-		portraits={
-			army={
-				large="GFX_OTTLeader01"
-			}
-			army={
-				small="GFX_OTTLeader01_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
 	W41_ishim_beg_3={
 		name=W41_ishim_beg_3
 		portraits={
@@ -896,46 +876,6 @@ characters={
 			}
 			army={
 				small="GFX_Arabia_Generic_new_1_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=3
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
-	W41_kurman_beg_5={
-		name=W41_kurman_beg_5
-		portraits={
-			army={
-				large="GFX_OTTLeader01"
-			}
-			army={
-				small="GFX_OTTLeader01_small"
-			}
-		}
-		corps_commander={
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
-
-	W41_chingiz_beg_5={
-		name=W41_chingiz_beg_5
-		portraits={
-			army={
-				large="GFX_OTT_Mustafa_Fevzi"
-			}
-			army={
-				small="GFX_OTT_Mustafa_Fevzi_small"
 			}
 		}
 		corps_commander={

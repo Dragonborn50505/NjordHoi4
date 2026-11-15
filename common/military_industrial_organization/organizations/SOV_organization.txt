@@ -323,12 +323,6 @@ SOV_okmo_organization = {
 
 		available = { #Two FROM blocs to provide two different check marks in the UI
 			FROM = {
-				has_full_control_of_state = 195 #LENINGRAD
-			}
-			FROM = {
-				has_completed_focus = SOV_merge_tank_and_materiel_plants
-			}
-			FROM = {
 				NOT = { has_country_flag = SOV_merge_plant_no_174_flag }
 			}
 		}

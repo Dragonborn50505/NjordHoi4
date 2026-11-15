@@ -415,6 +415,16 @@ country_event = {
 				elections_allowed = no
 			}
 
+			create_country_leader = {
+				name = FRA_marcel_detat
+				picture = GFX_FRA_marcel_deat
+				expire = "1965.1.1"
+				ideology = marxism
+				traits = {
+					ARG_anarchosyndicalist
+				}
+			}
+
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			add_manpower = -9816

@@ -1,5 +1,5 @@
 ﻿capital = 448
-set_research_slots = 3
+set_research_slots = 4
 
 
 oob = "PRE_OOB"
@@ -18,7 +18,18 @@ set_technology = {
 	fuel_silos = 1
 	gw_artillery = 1
 	infantry_weapons = 1
+	infantry_weapons1 = 1
+	support_weapons = 1
 	tech_support = 1
+	tech_recon = 1
+	tech_engineers = 1
+	tech_trucks = 1
+	basic_machine_tools = 1
+	electronic_mechanical_engineering = 1
+	motorised_infantry = 1
+	antiair1 = 1
+	antitank1 = 1
+	interwar_artillery = 1
 }
 
 if = {
@@ -262,62 +273,32 @@ set_variable = { PRE_the_atlantic_federation_dynamic_modifier_political_power_fa
 set_variable = { PRE_the_atlantic_federation_dynamic_modifier_local_resources_factor = 0 }
 set_variable = { PRE_the_atlantic_federation_dynamic_modifier_monthly_population = 0 }
 
-set_stability = 0.60
-set_war_support = 0.30
+set_stability = 0.5
+set_war_support = 0.4
 
 recruit_character = PRE_eduard_von_hessen_darmstadt
 recruit_character = PRE_friedrich_von_anhalt
 recruit_character = PRE_alfred_von_sachsen_altenburg
-recruit_character = PRE_peter_groener
-recruit_character = PRE_dieter_von_wettin
-recruit_character = PRE_jurgen_von_mecklenburg_schwerin
 recruit_character = PRE_franz_von_hohenzollern
-recruit_character = PRE_ernst_von_sachsen_altenburg
-recruit_character = PRE_florian_von_blomberg
 recruit_character = PRE_bernhard_von_sachsen_weimar_eisenach
 recruit_character = PRE_adolf_krohn
-recruit_character = PRE_nikolaus_heppendorf
-recruit_character = PRE_wolfgang_von_holstein_gottorp
 recruit_character = PRE_leonhard_von_sachsen_weimar_eisenach
 recruit_character = PRE_hasso_schree
 recruit_character = PRE_adolf_von_hessen_darmstadt
-recruit_character = PRE_stefan_groener
 recruit_character = PRE_heinrich_von_bulow
 recruit_character = PRE_georg_von_holstein_gottorp
-recruit_character = PRE_friedrich_von_mecklenburg_schwerin
 recruit_character = PRE_burkhard_von_reuter
-recruit_character = PRE_burkhard_vogel_von_falkenstein
-recruit_character = PRE_florian_hoffmann
 recruit_character = PRE_friedrich_von_roon
 recruit_character = PRE_theodor_zur_lippe
-recruit_character = PRE_erwin_von_braunschweig
 recruit_character = PRE_gustav_herwarth_von_bittenfeld
 recruit_character = PRE_theodor_von_moltke
 recruit_character = PRE_wilhelm_ludendorff
-recruit_character = PRE_stefan_von_blumenthal
-recruit_character = PRE_burkhard_krohn
-recruit_character = PRE_gunther_von_bulow
 recruit_character = PRE_maximilian_von_hessen_darmstadt
-recruit_character = PRE_theodor_von_waldeck_und_pyrmont
 recruit_character = PRE_albrecht_von_knorr
-recruit_character = PRE_florian_von_schwarzburg
-recruit_character = PRE_bernhard_von_bismarck_bohlen
-recruit_character = PRE_heinrich_dreyer
-recruit_character = PRE_hermann_von_sachsen_meiningen
-recruit_character = PRE_paul_herwarth_von_bittenfeld
 recruit_character = PRE_wolfgang_krohn
-recruit_character = PRE_hasso_von_rauch
 recruit_character = PRE_hugo_heppendorf
-recruit_character = PRE_karl_von_braunschweig
 recruit_character = PRE_erwin_von_manteuffel
-recruit_character = PRE_florian_von_arentschildt
-recruit_character = PRE_pascal_von_manteuffel
-recruit_character = PRE_manfred_von_sachsen_coburg_gotha
-recruit_character = PRE_ludwig_von_manteuffel
-recruit_character = PRE_manfred_von_ravensberg
 recruit_character = PRE_michael_von_arentschildt
-recruit_character = PRE_florian_von_oldenburg
-recruit_character = PRE_edwin_von_roon
 recruit_character = PRE_otto_von_knorr
 
 if = {

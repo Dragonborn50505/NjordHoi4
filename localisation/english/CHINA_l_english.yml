@@ -4,9 +4,25 @@
 
  QIE_puppet_emperor: "Puppet Emperor"
 
+# TOOLTIPS
+ CHI_IF_WE_STILL_HAVE_STALLED_80_DIV_REFORM_PLAN_IN_180_DAYS_WE_WILL_GET_UPGRADED_IDEA: "If we still have '§YStalled 80-Division Reform Plan§!', we will implement the Reform Plan, and in 180 days, we will get an §YUpgraded Idea§!."
+ CHI_IF_WE_HAVE_PICKED_NATIONAL_DEFENSE: "If we have completed '§YOn National Defence§!' we will receive:"
+ CHI_IF_WE_HAVE_PICKED_SYMPHONY_OF_MILITARY_AND_INDUSTRY: "If we have completed '§YSymphony of Military and Industry§!' we will receive:"
 
  # FOCUSES
  QIE_zhili: "Empire of Yuan Focus Tree"
+
+ QIE_lessons_of_intervention: "Lessons of Intervention"
+ QIE_lessons_of_intervention_desc: "Our intervention in the Great European War taught us much about the modern battlefield. By revisiting these lessons, we will gain newfound truths about the nature of 'Modern Combat'."
+
+ QIE_the_great_wall_defences: "Great Wall Defences"
+ QIE_the_great_wall_defences_desc: "The Great Wall has stood for centuries, guarding the Chinese people from foreign invasions. The issue with it is that we can't bring it with us when we fight on foreign soil. By funding our combat-engineering department, they can develop new defensive tactics and equipment for our common soldiers, so they themselves can become their own 'Great Wall'."
+
+ QIE_protracted_warfare: "Protracted Warfare"
+ QIE_protracted_warfare_desc: "The European powers of France, Italy, Austria-Hungary, and Troia have believed that swift, aggressive action is the road to victory. This has led them to have a military without staying power, so if we deny them a quick victory, their units will crumble in short order."
+
+ QIE_fractured_and_broken_united_again: "A New Chinese Century"
+ QIE_fractured_and_broken_united_again_desc: "This century we live in will not be another century dominated by the 'West'. The Eastern Dragon has risen from its slumber. A Giant Awakens, and in its wake, a New Chinese Century dawns."
 
  QIE_year_of_the_rat: "Year of the Rat"
  QIE_year_of_the_rat_desc: "As the nation prepares to begin celebrating Chinese New Year on January 24th, Assembly President Cao Kun and Kurman Beg have begun drafting a speech to mark the fourth year of concerted anti-trade debt efforts. The largest issue currently facing the government."

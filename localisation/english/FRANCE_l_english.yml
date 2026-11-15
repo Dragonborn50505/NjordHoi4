@@ -15,6 +15,31 @@
  FRA_marcel_detat_desc: ""
 
 ### Focuses ###
+
+ FRA_emergency_economic_reforms: "Emergency Economic Reform"
+ FRA_emergency_economic_reforms_desc: "The French economy is in tatters, and in need of immediate reform. There is a massive shortage of labour and a growing unemployment that threatens to overboil into revolution. A stimulus package will be issued, allowing for some breathing room for our economic office."
+
+ FRA_meet_with_the_general_staff: "Meet with the General Staff"
+ FRA_meet_with_the_general_staff_desc: "The French High Command is a plotting bunch. Many of them disagree with our political and economic policies, and their influence in the armed forces is concerning. But with a meeting planned for how to deal with the Communist Menace, perhaps we can distract them for at least a while."
+
+ FRA_inspire_the_people: "Be Proud To Be French!"
+ FRA_inspire_the_people_desc: "The French people have had their hopes and dreams shattered; the loss in the Great European war, the economic turmoil that came after, and the disaster in Piedmont, is too much to bear. We must inspire the people, employ bread and circus methods, so we once again can reignite our people's hopes, making them proud and feel French once again."
+
+ FRA_hunt_down_communist_cells: "Hunt Down Communist Cells"
+ FRA_hunt_down_communist_cells_desc: "The Communist rats fester in the countryside and in the factories, they speak of menace and evil, espousing anti-governmental rhetoric, and have for long demanded radical changes to the country. This stops now. We will gather up the lists and hunt down known communist leaders and their sympathisers!"
+
+ FRA_the_menace_from_within: "The Menace from Within"
+ FRA_the_menace_from_within_desc: "There can be no doubt that the biggest threat to France is not a conspiring High Command, the growing economic crisis, nor our standing with the general populace. The biggest threat is the communists, who threaten the very livelihood of the French Nation. With one fell swoop we shall orchestrate a genius plan to kill off all remaining communist threats, once and for all ending the 'Menace from Within'."
+
+ FRA_establish_the_office_of_economic_planning: "Establish the Office of Economic Planning"
+ FRA_establish_the_office_of_economic_planning_desc: "The French economy has since our revolution placed profit interests before the public wealth of the people. Though a full-scale dismantlement and rebuilding of the French economy is a possiblity, it would be wiser to slowly, but surely, re-organise the existing institutions. By replacing the board of directors of the 'Economic Planning Office', staffing them with knowledgable socialist economic thinkers, trade union leaders, and industrialists, we can reform the French economy to a socialist one."
+
+ FRA_military_purge: "Purge the French High Command"
+ FRA_military_purge_desc: "There is still those in the French High Command who have not adopted our politics and socialist ideology. Many of them fought against us during the revolution, and are posing an active threat to our socialist cause. We must purge these counterrevolutionary forces within the military."
+
+ FRA_our_golden_officers: "Our Golden Officers"
+ FRA_our_golden_officers_desc: "During the revolution, many from the French Officer Corps sided with us for the socialist cause. This 'Reformist Clique' from the past French Army will serve our revolution and their comrades well."
+
  commune_of_france_focus: "Commune of France Focus Tree"
 
  FRA_office_des_chemins_de_fer: "Office des Chemins de Fer"
