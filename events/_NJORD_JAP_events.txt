@@ -1,0 +1,103 @@
+add_namespace = JAP_news_events
+news_event = {
+    id = JAP_news_events.1
+    title = {
+        text = JAP_news_events.1.t.a
+        trigger = {
+            tag = JAP
+        }
+    }
+    desc = {
+        text = JAP_news_events.1.desc.a
+        trigger = {
+            tag = JAP
+        }
+    }
+
+	title = {
+        text = JAP_news_events.1.t.a
+        trigger = {
+			NOT = {
+				tag = JAP
+			}
+        }
+    }
+    desc = {
+        text = JAP_news_events.1.desc.b
+        trigger = {
+            NOT = {
+				tag = JAP
+			}
+        }
+    }
+    
+    picture = GFX_news_event_JAP_rangoon_occupation
+    
+    is_triggered_only = yes
+    major = yes
+    
+    option = {
+        name = JAP_news_events.1.a
+        trigger = {
+            tag = JAP
+        }
+    }
+
+	option = {
+        name = JAP_news_events.1.b
+        trigger = {
+            NOT = {
+				tag = JAP
+			}
+        }
+    }
+}
+
+# Japanese Troop Movements
+country_event = {
+	id = JAP_events.1
+	title = JAP_events.1.t
+	desc = JAP_events.1.d
+	picture = GFX_report_event_japanese_soldiers_03
+
+	is_triggered_only = yes
+
+	option = {
+		name = JAP_events.1.a
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+# Japanese Invasion
+country_event = {
+	id = JAP_events.2
+	title = JAP_events.2.t
+	desc = JAP_events.2.d
+	picture = GFX_report_event_japanese_transport_soldiers
+
+	is_triggered_only = yes
+
+    immediate = {
+        add_timed_idea = {
+            idea = JAP_CHI_chaotic_army_command
+            days = 90
+        }
+    }
+
+	option = {
+		name = JAP_events.2.a
+        
+        effect_tooltip = {
+            add_timed_idea = {
+                idea = JAP_CHI_chaotic_army_command
+                days = 90
+            }
+        }
+		ai_chance = {
+			base = 0
+		}
+	}
+}

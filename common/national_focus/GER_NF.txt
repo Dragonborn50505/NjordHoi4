@@ -851,7 +851,20 @@ focus_tree = {
             }
             else = {
                 remove_ideas = GER_the_ruhrkampf_3
+                custom_effect_tooltip = generic_skip_one_line_tt
             }
+            custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GER_war_preparedness
+			}
+			add_to_variable = {
+				GER_war_preparedness_war_support_factor = 0.05
+				tooltip = war_support_factor_tt
+			}
+            add_to_variable = {
+				GER_war_preparedness_war_stability_factor = 0.05
+				tooltip = war_stability_factor_tt
+			}
         }
         search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_INTERNAL_AFFAIRS }
     }
@@ -2088,7 +2101,7 @@ focus_tree = {
 
         completion_reward = {
             declare_war_on = {
-                target = FRA
+                target = ITA
                 type = topple_government
             }
         }
@@ -2148,11 +2161,11 @@ focus_tree = {
 				DYNMOD = GER_war_preparedness
 			}
 			add_to_variable = {
-				GER_war_preparedness_war_support_factor = 0.1
+				GER_war_preparedness_war_support_factor = 0.05
 				tooltip = war_support_factor_tt
 			}
             add_to_variable = {
-				GER_war_preparedness_war_stability_factor = 0.1
+				GER_war_preparedness_war_stability_factor = 0.05
 				tooltip = war_stability_factor_tt
 			}
         }
@@ -2179,11 +2192,11 @@ focus_tree = {
 				DYNMOD = GER_war_preparedness
 			}
             add_to_variable = {
-				GER_war_preparedness_war_stability_factor = 0.1
+				GER_war_preparedness_war_stability_factor = 0.05
 				tooltip = war_stability_factor_tt
 			}
             add_to_variable = {
-				GER_war_preparedness_conscription_factor = 0.1
+				GER_war_preparedness_conscription_factor = 0.05
 				tooltip = conscription_factor_tt
 			}
         }
@@ -2230,6 +2243,10 @@ focus_tree = {
             add_to_variable = {
 				GER_war_preparedness_industrial_capacity_dockyard = 0.05
 				tooltip = industrial_capacity_dockyard_tt
+			}
+            add_to_variable = {
+				GER_war_preparedness_war_support_factor = 0.05
+				tooltip = war_support_factor_tt
 			}
         }
         search_filters = { FOCUS_FILTER_INTERNAL_AFFAIRS FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY FOCUS_FILTER_GER_PREPAREDNESS }
@@ -2290,11 +2307,11 @@ focus_tree = {
 				tooltip = supply_combat_penalties_on_core_factor_tt
 			}
             add_to_variable = {
-				GER_war_preparedness_weekly_bombing_war_support = 0.006
+				GER_war_preparedness_weekly_bombing_war_support = 0.004
 				tooltip = weekly_bombing_war_support_tt
 			}
             add_to_variable = {
-				GER_war_preparedness_weekly_convoys_war_support = 0.006
+				GER_war_preparedness_weekly_convoys_war_support = 0.004
 				tooltip = weekly_convoys_war_support_tt
 			}
         }
@@ -2336,15 +2353,7 @@ focus_tree = {
 				DYNMOD = GER_war_preparedness
 			}
             add_to_variable = {
-				GER_war_preparedness_industrial_capacity_factory = 0.05
-				tooltip = industrial_capacity_factory_tt
-			}
-            add_to_variable = {
-				GER_war_preparedness_industrial_capacity_dockyard = 0.05
-				tooltip = industrial_capacity_dockyard_tt
-			}
-            add_to_variable = {
-				GER_war_preparedness_line_change_production_efficiency_factor = 0.1
+				GER_war_preparedness_line_change_production_efficiency_factor = 0.05
 				tooltip = line_change_production_efficiency_factor_tt
 			}
         }
@@ -2375,27 +2384,19 @@ focus_tree = {
 				DYNMOD = GER_war_preparedness
 			}
             add_to_variable = {
-				GER_war_preparedness_industrial_capacity_factory = 0.05
-				tooltip = industrial_capacity_factory_tt
-			}
-            add_to_variable = {
-				GER_war_preparedness_industrial_capacity_dockyard = 0.05
-				tooltip = industrial_capacity_dockyard_tt
-			}
-            add_to_variable = {
-				GER_war_preparedness_air_mission_efficiency = 0.05
+				GER_war_preparedness_air_mission_efficiency = 0.025
 				tooltip = air_mission_efficiency_tt
 			}
             add_to_variable = {
-				GER_war_preparedness_army_morale_factor = 0.05
+				GER_war_preparedness_army_morale_factor = 0.025
 				tooltip = army_morale_factor_tt
 			}
             add_to_variable = {
-				GER_war_preparedness_army_defence_factor = 0.05
+				GER_war_preparedness_army_defence_factor = 0.025
 				tooltip = army_defence_factor_tt
 			}
             add_to_variable = {
-				GER_war_preparedness_navy_org_factor = 0.05
+				GER_war_preparedness_navy_org_factor = 0.025
 				tooltip = navy_org_factor_tt
 			}
             custom_effect_tooltip = generic_skip_one_line_tt
@@ -2456,9 +2457,9 @@ focus_tree = {
         available = {
             has_war_with_major = yes
             OR = {
-                controls_state = 781
-                controls_state = 42
-                controls_state = 28
+                controls_state = 154
+                controls_state = 153
+                controls_state = 146
             }
         }
 
@@ -2467,10 +2468,12 @@ focus_tree = {
         }
 
         completion_reward = {
+            add_political_power = 50
             if = {
                 limit = {
                     controls_state = 154
                 }
+                custom_effect_tooltip = generic_skip_one_line_tt
                 154 = { #Western Rhineland
                     remove_building = {
                         type = arms_factory
@@ -2508,10 +2511,12 @@ focus_tree = {
                     }
                 }
             }
+            
             if = {
                 limit = {
                     controls_state = 153
                 }
+                custom_effect_tooltip = generic_skip_one_line_tt
                 153 = { #Palatinate
                     remove_building = {
                         type = industrial_complex
@@ -2539,6 +2544,7 @@ focus_tree = {
                 limit = {
                     controls_state = 146
                 }
+                custom_effect_tooltip = generic_skip_one_line_tt
                 146 = { #Alsace-Lorraine
                     remove_building = {
                         type = industrial_complex
@@ -2589,7 +2595,7 @@ focus_tree = {
 				DYNMOD = GER_war_preparedness
 			}
             add_to_variable = {
-				GER_war_preparedness_conversion_cost_civ_to_mil_factor = -0.3
+				GER_war_preparedness_conversion_cost_civ_to_mil_factor = -0.15
 				tooltip = conversion_cost_civ_to_mil_factor_tt
 			}
             add_to_variable = {
@@ -2692,19 +2698,19 @@ focus_tree = {
 				tooltip = conscription_tt
 			}
             add_to_variable = {
-				GER_war_preparedness_air_mission_efficiency = 0.05
+				GER_war_preparedness_air_mission_efficiency = 0.025
 				tooltip = air_mission_efficiency_tt
 			}
             add_to_variable = {
-				GER_war_preparedness_army_morale_factor = 0.05
+				GER_war_preparedness_army_morale_factor = 0.025
 				tooltip = army_morale_factor_tt
 			}
             add_to_variable = {
-				GER_war_preparedness_army_defence_factor = 0.05
+				GER_war_preparedness_army_defence_factor = 0.025
 				tooltip = army_defence_factor_tt
 			}
             add_to_variable = {
-				GER_war_preparedness_navy_org_factor = 0.05
+				GER_war_preparedness_navy_org_factor = 0.025
 				tooltip = navy_org_factor_tt
 			}
         }
@@ -2968,6 +2974,27 @@ focus_tree = {
 				GER_imperial_army_initiative_factor = 0.04
 				tooltip = initiative_factor_tt
 			}
+            custom_effect_tooltip = generic_skip_one_line_tt
+            custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GER_war_preparedness
+			}
+            add_to_variable = {
+				GER_war_preparedness_air_mission_efficiency = 0.025
+				tooltip = air_mission_efficiency_tt
+			}
+            add_to_variable = {
+				GER_war_preparedness_army_morale_factor = 0.025
+				tooltip = army_morale_factor_tt
+			}
+            add_to_variable = {
+				GER_war_preparedness_army_defence_factor = 0.025
+				tooltip = army_defence_factor_tt
+			}
+            add_to_variable = {
+				GER_war_preparedness_navy_org_factor = 0.025
+				tooltip = navy_org_factor_tt
+			}
         }
         search_filters = { FOCUS_FILTER_ARMY_BONUS }
     }
@@ -3164,6 +3191,27 @@ focus_tree = {
                 GER_imperial_army_experience_gain_factor = 0.2
                 tooltip = experience_gain_factor_tt
             }
+            custom_effect_tooltip = generic_skip_one_line_tt
+            custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GER_war_preparedness
+			}
+            add_to_variable = {
+				GER_war_preparedness_air_mission_efficiency = 0.025
+				tooltip = air_mission_efficiency_tt
+			}
+            add_to_variable = {
+				GER_war_preparedness_army_morale_factor = 0.025
+				tooltip = army_morale_factor_tt
+			}
+            add_to_variable = {
+				GER_war_preparedness_army_defence_factor = 0.025
+				tooltip = army_defence_factor_tt
+			}
+            add_to_variable = {
+				GER_war_preparedness_navy_org_factor = 0.025
+				tooltip = navy_org_factor_tt
+			}
         }
         search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_ARMY_BONUS }
     }
@@ -3385,6 +3433,27 @@ focus_tree = {
 				GER_imperial_army_breakthrough_factor = 0.05
 				tooltip = breakthrough_factor_tt
 			}
+            custom_effect_tooltip = generic_skip_one_line_tt
+            custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GER_war_preparedness
+			}
+            add_to_variable = {
+				GER_war_preparedness_air_mission_efficiency = 0.025
+				tooltip = air_mission_efficiency_tt
+			}
+            add_to_variable = {
+				GER_war_preparedness_army_morale_factor = 0.025
+				tooltip = army_morale_factor_tt
+			}
+            add_to_variable = {
+				GER_war_preparedness_army_defence_factor = 0.025
+				tooltip = army_defence_factor_tt
+			}
+            add_to_variable = {
+				GER_war_preparedness_navy_org_factor = 0.025
+				tooltip = navy_org_factor_tt
+			}
         }
         search_filters = { FOCUS_FILTER_POLITICAL }
     }
@@ -3581,6 +3650,27 @@ focus_tree = {
             every_army_leader = {
                 add_planning = 1
             }
+            custom_effect_tooltip = generic_skip_one_line_tt
+            custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GER_war_preparedness
+			}
+            add_to_variable = {
+				GER_war_preparedness_air_mission_efficiency = 0.025
+				tooltip = air_mission_efficiency_tt
+			}
+            add_to_variable = {
+				GER_war_preparedness_army_morale_factor = 0.025
+				tooltip = army_morale_factor_tt
+			}
+            add_to_variable = {
+				GER_war_preparedness_army_defence_factor = 0.025
+				tooltip = army_defence_factor_tt
+			}
+            add_to_variable = {
+				GER_war_preparedness_navy_org_factor = 0.025
+				tooltip = navy_org_factor_tt
+			}
         }
         search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_GER_PREPAREDNESS }
     }
@@ -3856,6 +3946,23 @@ focus_tree = {
             add_dynamic_modifier = {
                 modifier = GER_w_plants
             }
+            custom_effect_tooltip = generic_skip_one_line_tt
+            custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = GER_war_preparedness
+			}
+            add_to_variable = {
+				GER_war_preparedness_conversion_cost_civ_to_mil_factor = -0.15
+				tooltip = conversion_cost_civ_to_mil_factor_tt
+			}
+            add_to_variable = {
+				GER_war_preparedness_industrial_capacity_factory = 0.05
+				tooltip = industrial_capacity_factory_tt
+			}
+            add_to_variable = {
+				GER_war_preparedness_industrial_capacity_dockyard = 0.05
+				tooltip = industrial_capacity_dockyard_tt
+			}
         }
         search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY FOCUS_FILTER_GER_PREPAREDNESS }
     }

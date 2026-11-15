@@ -2361,7 +2361,7 @@ focus_tree = {
 		mutually_exclusive = { focus = QIE_domain_of_the_jade_marshal }
 
 		available = {
-			has_country_flag = QIE_pro_concessionist_policy
+			has_completed_focus = QIE_overtures_to_the_assembly
 		}
 		ai_will_do = {
 			base = 75
@@ -2810,6 +2810,7 @@ focus_tree = {
 				limit = { 
 					has_idea = CHI_stalled_80_division_reform_plan
 				}
+				custom_effect_tooltip = generic_skip_one_line_tt
 				custom_effect_tooltip = CHI_IF_WE_STILL_HAVE_STALLED_80_DIV_REFORM_PLAN_IN_180_DAYS_WE_WILL_GET_UPGRADED_IDEA
 				hidden_effect = {
 					remove_ideas = CHI_stalled_80_division_reform_plan
@@ -2824,7 +2825,6 @@ focus_tree = {
 						add_idea = QIE_80_division_plan
 					}
 					custom_effect_tooltip = NJORD_when_idea_runs_out
-					custom_effect_tooltip = generic_skip_one_line_tt
 					add_ideas = CHI_completed_80_division_reform_plan
 				}
 			}
@@ -2993,7 +2993,6 @@ focus_tree = {
 						add_idea = QIE_80_division_plan
 					}
 					custom_effect_tooltip = NJORD_when_idea_runs_out
-					custom_effect_tooltip = generic_skip_one_line_tt
 					add_ideas = CHI_completed_80_division_reform_plan
 				}
 			}
@@ -3114,7 +3113,6 @@ focus_tree = {
 						add_idea = QIE_80_division_plan
 					}
 					custom_effect_tooltip = NJORD_when_idea_runs_out
-					custom_effect_tooltip = generic_skip_one_line_tt
 					add_ideas = CHI_completed_80_division_reform_plan
 				}
 			}

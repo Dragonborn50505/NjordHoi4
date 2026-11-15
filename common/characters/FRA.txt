@@ -1153,23 +1153,6 @@ characters={
 		}
 	}
 
-	FRA_marcel_detat={
-		name=FRA_marcel_detat
-		portraits={
-			civilian={
-				large="GFX_FRA_marcel_deat"
-			}
-		}
-		country_leader={
-			ideology=marxism
-			expire="1965.1.1.1"
-			id=-1
-			traits = {
-				ARG_anarchosyndicalist
-			}
-		}
-	}
-
 	UTI_maurice_gamelin={
 		advisor={
 			slot = army_chief

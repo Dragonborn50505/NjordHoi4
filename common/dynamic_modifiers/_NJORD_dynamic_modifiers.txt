@@ -859,3 +859,10 @@ FRA_armee_de_lair_populaire_modifier = {
 	#Hurricane of Fire
 	air_mission_efficiency = FRA_aap_air_mission_efficiency
 }
+
+
+JAP_chaotic_frontline = {
+	icon = GFX_modifier_generic_sabotage
+	disable_strategic_redeployment = 1
+	local_org_regain = -0.1
+}
