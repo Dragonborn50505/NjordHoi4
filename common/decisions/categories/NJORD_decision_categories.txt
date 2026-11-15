@@ -20,10 +20,10 @@ CHI_army_reforms_category = {
 		OR = {
 			has_idea = CHI_corruption_in_the_armed_forces_1
 			has_idea = CHI_corruption_in_the_armed_forces_2
-			has_idea = CHI_corruption_in_the_armed_forces_2
+			has_idea = CHI_corruption_in_the_armed_forces_3
 			has_idea = CHI_conservative_high_command_1
 			has_idea = CHI_conservative_high_command_2
-			has_idea = CHI_conservative_high_command_2
+			has_idea = CHI_conservative_high_command_3
 		}
 	}
 }
