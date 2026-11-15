@@ -66,7 +66,7 @@ if = {
 # Research Bonuses
 
 set_country_flag = conv_indonesia
-set_convoys = 0
+set_convoys = 300
 
 set_politics = {
     ruling_party = democratic
@@ -81,27 +81,6 @@ set_popularities = {
 	democratic = 65
 	fascism = 5
 	neutrality = 3
-}
-
-# DIPLOMACY
-if = {
-    limit = {
-        has_dlc = "Together for Victory"
-    }
-    set_autonomy = {
-        target = ATJ
-        autonomous_state = autonomy_puppet
-        freedom_level = 0.4
-    }
-    set_autonomy = {
-        target = X53
-        autonomous_state = autonomy_puppet
-        freedom_level = 0.4
-    }
-    else = {
-        puppet = ATJ
-        puppet = X53
-    }
 }
 
 if = {

@@ -1,0 +1,442 @@
+﻿l_english:
+
+ NJORD_nationalised_industries: "Nationalised Industries"
+
+ QIE_puppet_emperor: "Puppet Emperor"
+
+# TOOLTIPS
+ CHI_IF_WE_STILL_HAVE_STALLED_80_DIV_REFORM_PLAN_IN_180_DAYS_WE_WILL_GET_UPGRADED_IDEA: "If we still have '§YStalled 80-Division Reform Plan§!', we will implement the Reform Plan, and in 180 days, we will get an §YUpgraded Idea§!."
+ CHI_IF_WE_HAVE_PICKED_NATIONAL_DEFENSE: "If we have completed '§YOn National Defence§!' we will receive:"
+ CHI_IF_WE_HAVE_PICKED_SYMPHONY_OF_MILITARY_AND_INDUSTRY: "If we have completed '§YSymphony of Military and Industry§!' we will receive:"
+
+ # FOCUSES
+ QIE_zhili: "Empire of Yuan Focus Tree"
+
+ QIE_lessons_of_intervention: "Lessons of Intervention"
+ QIE_lessons_of_intervention_desc: "Our intervention in the Great European War taught us much about the modern battlefield. By revisiting these lessons, we will gain newfound truths about the nature of 'Modern Combat'."
+
+ QIE_the_great_wall_defences: "Great Wall Defences"
+ QIE_the_great_wall_defences_desc: "The Great Wall has stood for centuries, guarding the Chinese people from foreign invasions. The issue with it is that we can't bring it with us when we fight on foreign soil. By funding our combat-engineering department, they can develop new defensive tactics and equipment for our common soldiers, so they themselves can become their own 'Great Wall'."
+
+ QIE_protracted_warfare: "Protracted Warfare"
+ QIE_protracted_warfare_desc: "The European powers of France, Italy, Austria-Hungary, and Troia have believed that swift, aggressive action is the road to victory. This has led them to have a military without staying power, so if we deny them a quick victory, their units will crumble in short order."
+
+ QIE_fractured_and_broken_united_again: "A New Chinese Century"
+ QIE_fractured_and_broken_united_again_desc: "This century we live in will not be another century dominated by the 'West'. The Eastern Dragon has risen from its slumber. A Giant Awakens, and in its wake, a New Chinese Century dawns."
+
+ QIE_year_of_the_rat: "Year of the Rat"
+ QIE_year_of_the_rat_desc: "As the nation prepares to begin celebrating Chinese New Year on January 24th, Assembly President Cao Kun and Kurman Beg have begun drafting a speech to mark the fourth year of concerted anti-trade debt efforts. The largest issue currently facing the government."
+
+ QIE_excising_cash_crops: "Excising Cash Crops"
+ QIE_excising_cash_crops_desc: "A long endemic plague upon the great Chinese nation, opium has been an ever present issue that various provincial governments have attempted to handle individually. It is high time we centralise the agricultural sectors dedicated to monetary gain, which will greatly increase governmental profits."
+
+ QIE_levying_provincial_taxes: "Levying Provincial Taxes"
+ QIE_levying_provincial_taxes_desc: "With provincial tax revenue obligations having been paltry ever since the Great European War, the Central Government has been bereft of finance comparative to its nominal control. If we are to fix the enormous debt, we must rein in the provinces first."
+
+ QIE_emergency_meeting_of_the_cabinet: "Emergency Meeting of the Cabinet"
+ QIE_emergency_meeting_of_the_cabinet_desc: "With corruption and kleptocracy running rampant in both the military and the civilian administration, Marshal Kurman Beg alongside Cao Kun will call a meeting of the ministers and army officials to draft a response to the situation."
+
+ QIE_elections_of_year: "Allow Provincial Elections"
+ QIE_elections_of_year_desc: "With the establishment of the Harmony Association, we have seen a near total dominance of delegates within the Assembly. With our popularity rebounding following our anti-concessionist stance, President Cao has opted to hold a series of new provincial elections to exploit our newfound popularity."
+
+ QIE_foregoing_the_debts: "Foregoing the Debts"
+ QIE_foregoing_the_debts_desc: "Our economic mismanagement has brought upon us a lot of governmental debt, often resulting in large loans being granted from European powers. With our interests ramping up, and the debts still not being paid, the easiest way to solve our financial crisis is a full-scale international default."
+ QIE_debt_default_tt: "With the conclusion that any and all agreements with the foreign imperialists over China's previously binding debts should be declared null and void, we will relinquish our authority over the black holes in their financial books. However, the imperialists will hardly take this slight softly."
+
+ QIE_nationalise_german_industry: "Nationalise European Industries"
+ QIE_nationalise_german_industry_desc: "A great deal of companies were partly or wholly owned by foreign financial concerns prior to our default. As advised by our ministers, we are fully within legal rights to nationalise these industries, helping our domestic production."
+
+ QIE_german_designs_chinese_ingenuity: "European Designs, Chinese Ingenuity"
+ QIE_german_designs_chinese_ingenuity_desc: "With our extensive collaboration over the years, the European bureaucrats, businessmen and the Peking-Kommission clerks have imparted much modern industrial wisdom upon our own engineers. With their machinery left behind in their disorganised retreat to the concessions, we can reutilised their assets for China, not Europe!"
+
+ QIE_anti_concessionist_personality_cult: "Anti-Concessionist Personality Cult"
+ QIE_anti_concessionist_personality_cult_desc: "Our intervention on behalf of the broader Anti-Concessionist intellectual movement has ensured that continuous and willing support of the usually antagonistic \"Men of Words\" that float around our government. President Cao is a true saviours of the Chinese people! A modern patriotic hero!"
+
+ QIE_encourage_nationalist_cooperation: "Encourage Nationalist Cooperation"
+ QIE_encourage_nationalist_cooperation_desc: "Ever an admirable bunch, at least in certain aspects, the Young China Party has long championed the cause of nationalism, and even republicanism at certain periods of time. Collaborating with them following the rejection of our mutual European enemy, we can build a democratic collaboration to last!"
+
+ QIE_greasing_the_gears_of_zongshe: "Greasing the Gears of Zongshe"
+ QIE_greasing_the_gears_of_zongshe_desc: "At odds with most within the Assembly bar maybe the Constitutionalists, the Zongshe Party have long accused the President and Marshal of sidelining Emperor Beg. Whilst true, we are still on the surface a constitutional monarchy. Placating the nobles, perhaps we can blind them with greed, ensuring their cooperation."
+
+ QIE_harmonious_balance: "Harmonious Balance"
+ QIE_harmonious_balance_desc: "Considered a masterful display of tactful politicking by President Cao and Marshal Beg, the Harmony Association has managed to build a broad coalition between reformist intellectuals, Manchu nobles and ultranationalist republicans. A coalition of contradictions, the common person no doubt supports our enlightened governance."
+
+ QIE_overtures_to_the_assembly: "Overtures to the Assembly"
+ QIE_overtures_to_the_assembly_desc: "With our rather controversial choice to restrain provincial elections, maintaining our ties with Europeans, it has generated a series of controversial disputes in the Assembly. With the opposition bar the Prosperity League and others refusing to participate, it is up to Cao to rebuild confidence in our nascent democracy."
+
+ QIE_negotiating_better_terms: "Negotiating Better Terms"
+ QIE_negotiating_better_terms_desc: "Drowned in international obligations and trade debts, the Central Government has been prevented from meaningful industrial progress for decades. While it may enrage our compatriots in YCP, asking Germany and Ireland for financial support will expediate debt recovery efforts, allowing modernisation to flourish."
+
+ QIE_simplify_international_investment_laws: "Simplify International Investment Laws"
+ QIE_simplify_international_investment_laws_desc: "In spite of the lobbying efforts, our international investment laws remain rather byzantine, a sprawling web of red tape, restrictions and loopholes. By simplifying these laws, we can attract additional international investment, allowing further economic growth and bolstering our military."
+
+ QIE_partner_with_german_manufacturing_firms: "Partner with Prussian Manufacturing Firms"
+ QIE_partner_with_german_manufacturing_firms_desc: "Extending a new hand of true Chinese-Prussian cooperation, and pulling upon our \"special relationship\", we can work towards officially granting government contracts to joint Chinese-Prussian manufacturing firms and businesses, equalising the relationship and allowing for steady development."
+
+ QIE_secure_foreign_expertise: "Secure Foreign Expertise"
+ QIE_secure_foreign_expertise_desc: "Fully capable of constructing our own factories, devising our own machines, our national experts are however stretched thin. Split between the machinations of warlords, or otherwise occupied by large scale projects. Acquiring high-quality tooling equipment, mostly from Prussia, will further expediate our modernisation."
+
+ QIE_hire_western_rail_engineers: "Hire Western Rail Engineers"
+ QIE_hire_western_rail_engineers_desc: "Much of our rail network was constructed by European firms, under Chinese hands. While some might bristle at continuing to use them to build our railroads, they are the undisputed masters of the craft. We should seek out Western railroad engineers and directly hire them to improve our infrastructure."
+
+ QIE_import_krupp_steel: "Import Krupp Steel"
+ QIE_import_krupp_steel_desc: "In lieu of our growing native Steel industry, the German behemoth of Krupp has continued to subsidise and fill the gaps. With our increasing ties to Mitteleuropa, we can cooperate with their businessmen in establishing \"Krupp China\", constructing a vast industrial network within Europe and China."
+
+ QIE_securing_advanced_equipment: "Securing Advanced Equipment"
+ QIE_securing_advanced_equipment_desc: "The field of war has been ever changing since the turn of the century, with tanks, planes, and modernised radio communications. China's nascent military economy does not possess the capacity to field or support the former, however the latter is fully applicable, and much desired. Establishing contracts with western firms, we can import vast quantities."
+
+ QIE_modernising_our_chemistry: "Modernising Our Chemistry"
+ QIE_modernising_our_chemistry_desc: "Perhaps utterly bereft of much rubber and oil, at least in the core territories, many Chinese theorists and leaders have grown fond of the capacities of synthetic forms of the resources. With our flowering relationship with experts in Germany, they can provide their expertise in place of our own."
+
+ QIE_university_exchange_program: "University Exchange Programme"
+ QIE_university_exchange_program_desc: "The best way to learn is to experience other cultures. By sending some Chinese students to European universities, they can return home with the latest knowledge and information. One hopes the European students who study here will learn something of our culture, and take it home to share with their countrymen."
+
+##- Industry/Military Plans/Foreign Policy -##
+ QIE_future_of_the_zhili_clique: "Future of the Zhili Clique"
+ QIE_future_of_the_zhili_clique_desc: "The upheaval of the last few months has shown that the Zhili Clique must reform itself if it is to survive the next few years, let alone the next few decades. The Zhili patronage system must be reformed, and at least modernised to allow for a meritocratic scene to flourish, and for the elimination of the festering rot that has seeped into our military. Lest we fade into the annals of history."
+
+ QIE_on_national_defense: "On National Defense"
+ QIE_on_national_defense_desc: "As promoted by the \"Baoding Clique\", Jiang hopes to inspire a general improvement of the drilling procedures of the soldiery, prioritising exceptional self-sacrifice and zealous devotion to the nation. Perhaps more sane compared to Jiang's more out there theories, he has moderated them akin to his experiences with Cai E in Great European War."
+
+ QIE_highlighting_our_goals: "Highlighting our Goals"
+ QIE_highlighting_our_goals_desc: "Inspired by the dedication shown by the Huguojun soldiers in the Great European War, Jiang Baili has proposed to the Jade Marshal that the Zhili pursue a similar course of incentives. By assuring the soldiers of the political goals of our wars, they shall fight with a concrete mind and purpose, sure to strike with tenacity and devotion, awakening the true Chinese warrior spirit."
+
+ QIE_court_hubei_generals: "Court Hubei Generals"
+ QIE_court_hubei_generals_desc: "The \"Hubei Generals\" are an informal association of the leading manufacturers and industrialists in Hubei Province. Jiang Baili's close family friend is governor of the province, and has graciously volunteered his industrial contacts for the construction of many new arms industries."
+
+ QIE_symphony_of_military_and_industry: "Symphony of Military and Industry"
+ QIE_symphony_of_military_and_industry_desc: "General Tang Zaili's theory focuses on improved logistical networks to support the supplies of the Zhili army. Alongside that, he and his \"Chinese Eliteheer\" endeavours to complete both the joint German-Prussian Advisory Mission's 80 Division plan."
+
+ QIE_expand_baoding_arsenal: "Expand Baoding Arsenal"
+ QIE_expand_baoding_arsenal_desc: "The Baoding Arsenal, attached to the military academy, is somewhat less developed than the Gongxian foundry. Yet with enough investments, we can turn it into one of China's main military manufacturers. Serving as an exemplary depiction of the unification of the military and industry."
+
+ QIE_a_competitive_army_and_industry: "A Competitive Army and Industry"
+ QIE_a_competitive_army_and_industry_desc: "Previously, contracts for the production of packed artillery were handed out on an ad-hoc basis, rife with corruption. By exerting considerable political willpower, we can modernise and clean up these systems, bringing our arms industry up to western standards. Obviously, ensuring healthy competition between contractors along the way, perhaps one day Chinese arms will be world renowned."
+
+ QIE_the_central_plains_artery: "The Central Plain's Artery"
+ QIE_the_central_plains_artery_desc: "Ever the vital lifelines by which wars in China are fought, the railways control the very flow of battles, allowing for greater divisions and greater arms to clash as opposed to the rugged interior. It is one of the most integral pieces of warfare, and it is imperative we see to its maintenance and expansion."
+
+ QIE_reorganise_the_kailuan_mining_bureau: "Reorganise the Kailuan Mining Bureau"
+ QIE_reorganise_the_kailuan_mining_bureau_desc: "The Kailuan Mining Bureau was founded in 1878 as a joint venture between the Qing government and a variety of Irish business interests. Having been neglected for long, it is perhaps the right moment for us to revive the institution, and place it under government control."
+
+ QIE_expanding_our_shanxi_spoils: "Expanding Our Shanxi Spoils"
+ QIE_expanding_our_shanxi_spoils_desc: "The coal fields of eastern Shanxi are some of the most prosperous in China. So far we have refrained from investing in its local development, but with our newfound ties with the 'Model Governor', there is no longer any reason to delay further extractions in this area."
+
+ QIE_daye_hanyang_development_scheme: "Daye-Hanyang Development Scheme"
+ QIE_daye_hanyang_development_scheme_desc: "The Daye-Hanyang corridor surrounding Northern Hunan houses the majority of China's industrial capacity outside of Peking, yet the infrastructure and urban planning in the region leaves much to be desired. By investing into clearing new land for factories, and building additional industry, we can modernise the region."
+
+ QIE_gongxian_arsenal_expansion_office: "Gongxian Arsenal Expansion Office"
+ QIE_gongxian_arsenal_expansion_office_desc: "The Gongxian Arsenal, constructed by Yuan Shikai and Sa Zhenbing in 1915, has normally played second fiddle to the much larger and more productive Hanyang weapons foundry. By expanding its manufacturing capabilities as done so in the 1920s, we can sufficiently spread out our industrial base in case one arsenal falls into the hands of invaders."
+
+ QIE_restore_order_in_the_middle_kingdom: "Restore Order in the Middle Kingdom"
+ QIE_restore_order_in_the_middle_kingdom_desc: "For far too long, China has been bitterly divided by ambitious strongmen and rebellious regional factions. In our weakness, predators of all stripes have come to exploit our land and corrupt our people. The next step in ending the Century of Fracture is to stop the encroachment of our rivals. We must bring the various Indian Rajdoms, the Japense Rising Sun, and the European Colonial-States under our control."
+
+ QIE_destroy_federalists: "The Second Indian Expedition"
+ QIE_destroy_federalists_desc: "The Indian Rajdoms have for far too long threatened our holdings in India. We must bring these petty kingdoms down, once and for all."
+
+ QIE_cross_the_dai_river: "Cross Paektu Mountains"
+ QIE_cross_the_dai_river_desc: "Since the Japanese Invasion of Korea, Japan has posed an existential threat to China. It is high time we liberate our Sino-Korean brethren and bring down these Asiatic-Imperialists in the Land of the Rising Sun."
+
+ QIE_destroy_kuomintang: "Drive out European Colonialism"
+ QIE_destroy_kuomintang_desc: "The European nations have subjugated and colonised much of South-Eastern Asia, exploiting its people and its resources for their own benefit. This ends now. We shall bring an anti-imperialistic fury that scares the Imperialists back to their homelands!"
+
+##- Republic -##
+ QIE_handling_the_disintegration: "Handling the Disintegration"
+ QIE_handling_the_disintegration_desc: "Plagued by indecisiveness and incessant bickering, the Cabinet and Zhili High Command have utterly refused to properly deal with the separatist threats. We must deal with this issue at once."
+
+ QIE_let_the_five_banner_flag_fly: "Let the Five Banner Flag Fly!"
+ QIE_let_the_five_banner_flag_fly_desc: "Finally the martyrs of Xinhai are exonerated once more! No more shall the Royals leech off of the common Chinese! We shall bring proper investments into the common Chinese people, hopefully deradicalising them in the process."
+
+ QIE_flying_too_close_to_the_sun: "Flying Too Close to the Sun"
+ QIE_flying_too_close_to_the_sun_desc: "The disastrous \"Manchu Coup\" plotters nearly succeeded in 1926, if it weren't for the quick thinking of the Zhili loyalists. However it has revealed a whole worrying array of potential security breaches in our own back door! The fact that the plotters could even conspire for so long has proven that we have grown incompetent during our time at the top. Serious internal restructuring and reform is necessary to push forward."
+
+ QIE_the_gift_of_the_dynasties: "The Gift of the Dynasties"
+ QIE_the_gift_of_the_dynasties_desc: "Forever marred by the frailty and weakness, the old Beiyang Republic was saddled with incomprehensible foreign debts, resulting in its complete ineffectiveness in economic matters compared to unburdened countries. With the restoration of the Republican Investment Fund, we shall not fall into the same trap bound by international legitimacy. With the option to negotiate, or outright default, we have the full reigns to decide our own fate."
+
+ QIE_endeavours_human_face: "Endeavour's Human Face"
+ QIE_endeavours_human_face_desc: "Having long been an intellectual within Beijing circles, Hu Shih has championed the cause of rooting out the 'Illicit Vices' that plague China. We shall support and implement his proposed reforms to the Opium agricultural industry."
+
+ QIE_government_of_good_people: "Government of Good People"
+ QIE_government_of_good_people_desc: "As prescribed in Endeavour's original \"Our Political Statement\", Hu Shih desire a transparent, focused government dedicate to personal liberty and wellbeing. With Hu Shih's evolving political ideology, we shall root out the Opium Industry completely, banning and barring any who still seek profit before human health."
+
+ QIE_beiyangs_favourite_son: "Beiyang's Favourite Son"
+ QIE_beiyangs_favourite_son_desc: "Forever the one artery of the Beiyang Government that brought some aid to the growing governmental debt, we cannot get rid of the Opium Trade in its entirety. Instead, a governmental plan to nationalise and strictly control its distribution, we can mitigate the human cost whilst still keeping monetary gain in focus."
+
+ QIE_flourish_of_the_diplomatic_corps: "Flourish of the Diplomatic Corps"
+ QIE_flourish_of_the_diplomatic_corps_desc: "Home to some of our greatest civil servants, such as Gu Weijun or Yan Huiqing, the Diplomatic Corps is but the most paramount grey eminence at our disposal. With their capability and skills, we can ensure that the idea of 'Five Races - One Union' becomes a national objective for the entirety of China."
+
+ QIE_xinhais_legacy: "Xinhai's Legacy"
+ QIE_xinhais_legacy_desc: "Temporarily halted but not forgotten, the dreams and desires of the Xinhai Revolutionaries ever flourish in the new China. Merely utilising the Xuantong Restoration in 1928 as a tool for increased assistance, it was never a situation bound to last. Under the Auspicious Cloud, may the Five Races Under One Union have their liberty, and their responsible good governance."
+
+ QIE_domain_of_the_jade_marshal: "Domain of the Jade Marshal"
+ QIE_domain_of_the_jade_marshal_desc: "The true domain of the Zhili Clique is in that of the art of war. By implementing the Jade-Marshal's plan for military reform, through a militaristic and patriotic spirit, we can mobilise the very soul of the Chinese people."
+
+ QIE_local_logistics: "Local Logistics"
+ QIE_local_logistics_desc: "Through the development of local motorised vehicles, we can extend our supply lines to reach further from their depos, aiding our soldiers no matter where they are."
+
+ QIE_king_of_the_battlefield: "King of the Battlefield"
+ QIE_king_of_the_battlefield_desc: "Perhaps derided by those in Europe as a rather foolish notion, the true dominant force in Chinese weaponry is that of the artillery. Considered the most heavily prioritised piece of equipment of the native battlefield, the most successful campaigns have always been based around its prominence. The Anguojun, the Huguojun, the Jingguojun, they all knew it, and so do we."
+
+ QIE_understanding_our_backyard: "Understanding Our Backyard"
+ QIE_understanding_our_backyard_desc: "China's rugged terrain necessitates any military force having a strong engineering corps to support it. Unfortunately, the ad-hoc and amateur quality of many of our current Military Engineers prevents their support from being truly effective. We must reconstitute our existing support detachments, and revitalise Baoding's Engineering Branch."
+
+ QIE_placing_faith_in_the_underdogs: "Placing Faith in the Underdogs"
+ QIE_placing_faith_in_the_underdogs_desc: "Perhaps most striking in the Zhili dominance of the Chinese Central Army, is that of the overwhelming reliance Kurman Beg and his direct staff. The Jade Marshal will not live forever. If we are to truly forment an army worthy of the Chinese state and its people, we must diversify our command staff."
+
+ QIE_emulating_the_jade_marshal: "Emulating the Jade Marshal"
+ QIE_emulating_the_jade_marshal_desc: "Time and time again, we have witnessed the sheer tenacity of the Chinese soldier, striking against the rising tide and overwhelming odds. Perhaps the most premier example of this is that of Marshal Kurman Beg. The undisputed military champion and Confucian Warrior Hero of the Chinese nation-state. If every soldier can emulate his martial spirit, we would be undefeatable."
+
+ QIE_rolling_the_dice_on_the_markets: "Rolling the Dice on the Markets"
+ QIE_rolling_the_dice_on_the_markets_desc: "Our anti-concession stance prevents us from dealing with the imperialists that have carved out pieces of our nation, but there are many countries in the world that have either suffered similar fates, remained respectful, or otherwise share our common enemies. Russia, America, the international arms market is large, varied and expansive. We must merely make the plunge."
+
+ QIE_the_baoding_clique_and_the_third_avenue: "The \"Baoding Clique\" and the Third Avenue"
+ QIE_the_baoding_clique_and_the_third_avenue_desc: "We lack designs for domestic aircraft production, and promises of Prussian designs never came to fruition for obvious reasons. However, nothing says we can't develop our own native airplane designs, for the third avenue of warfare."
+
+ QIE_expat_air_training_scheme: "Expat Air Training Scheme"
+ QIE_expat_air_training_scheme_desc: "While a fledgling domestic air training industry exists, it is split apart by various regionalists of various capacities. With every regionalist fascinated by the sheer potential of the third avenue of warfare, an interesting prospect has arrived to maintain the edge. By both sending native pilots to foreign countries, and hiring foreigners to advise our cadets, we can sustain a novel, new, and deadly Chinese Air Force."
+
+ QIE_utilising_european_dockyards: "Utilising European Dockyards"
+ QIE_utilising_european_dockyards_desc: "Although Macao, Hong Kong, and Ammassalik are under control of European powers, we can license a modest starting fleet to reinforce our current capabilities."
+
+ QIE_reviving_the_beiyang_fleet: "Reviving the Beiyang Fleet"
+ QIE_reviving_the_beiyang_fleet_desc: "Far and wide, the Beiyang Fleet has become dwarfed in its on shadow. With Chinese navies having sailed the seas as far as the coasts of America in times past, we are now reduced to not even being able to directly control our own waters. This absolutely cannot stand. Admiral Sa Zhenbing has done it once before, and he shall do it again. By following his advice in engaging in a rapid navy expansion project, we shall once again rejuvenate China's naval spirit."
+
+ QIE_science_and_modernity_hand_in_hand: "Science and Modernity, Hand in Hand"
+ QIE_science_and_modernity_hand_in_hand_desc: "Baoding Military Academy is one of China's proudest military institutions. Counting itself the most premier compared to the likes of Kunming, or the late Whampoa, its walls have contained all manners of men. Revolutionaries, Warlords, Beiyang Statesmen, and even the likes of Kurman Beg and Cao Kun. Let us modernise and increase funding for such a proud academy."
+
+ QIE_the_destitute_and_the_stragglers: "The Destitute and the Stragglers"
+ QIE_the_destitute_and_the_stragglers_desc: "Our anti-concession stance quite obviously keeps us from taking military aid from most European governments, but individual, independent advisors are fair game. The turmoil and conflict of the last twenty years has generated no shortage of men willing to sell their talents and advice to the highest bidder."
+
+ QIE_reorganise_warlord_divisions: "Re-Organise Warlord Divisions"
+ QIE_reorganise_warlord_divisions_desc: "Any warlord worth anything has his own personal militia to control the territory he rules. Unfortunately, these troops vary wildly in quality from semi-professional troops to mobs more used to robbing and burning the villages they theoretically protect. By devoting considerable resources to standardising and modernising these divisions, we can turn them into valuable assets on the battlefield."
+
+ QIE_defend_the_yellow_river: "Re-Organise the Officer Corps"
+ QIE_defend_the_yellow_river_desc: "Imperative to our divisions and brigades is the Officer Corps. We must make sure that they are properly instructed and prepared for the coming wars."
+
+ QIE_the_eagle_and_the_dragon: "The Eagle and the Dragon"
+ QIE_the_eagle_and_the_dragon_desc: "German and Prussian weapons and technology has its own set of benefits, despite the drawbacks associated with closer ties to both. Through our Special Relationship, Advisory Mission, and the Prosperity League, we can purchase vast swathes of modern equipment. Armour, aircraft and more lie at our very fingertips."
+
+ QIE_chinese_auftragstaktik: "Chinese Auftragstaktik"
+ QIE_chinese_auftragstaktik_desc: "Unsurprisingly, the 'Heer' reigns supreme in its military efficacy. Critical to their efficiency however was that of their autonomous units capable of coordinating mass action in order to achieve a singular, united strategic objective. Already adopted all across Europe, modern radios are imperative for the innovations of modern warfare."
+
+ QIE_leaning_upon_the_juggernaut: "Leaning Upon the Juggernaut"
+ QIE_leaning_upon_the_juggernaut_desc: "Chinese arsenals have a long, storied history in terms of adopting or modifying foreign designs. Knockoff Mauser pistols, various European rifles and other designs find themselves reappropriated within arsenals such as that of Taiyuan. By utilising our special contacts within Germany's military high command, we can access the designs of their modern weapons, and produce them locally."
+
+ QIE_chinese_soldiers_german_weapons: "Chinese Soldiers, Prussian Weapons"
+ QIE_chinese_soldiers_german_weapons_desc: "Our domestic armaments industry is but a paltry assortment of independent arsenals split across multiple provinces, abused for their merits by local warlords attempting to shore up their forces. United, they would be incredibly effectve. However split as they are, we can instead rely upon Prussian guns and equipment to supplement this large national gap in weaponry."
+
+ QIE_utilising_our_connections: "Utilising our Connections"
+ QIE_utilising_our_connections_desc: "With the Kaiserliche Marine being the pre-eminent naval force in the globe, perhaps only rivalled by that of the Netherlands, Irish or the Spanish Empire, our nascent Beiyang Fleet is undoubtedly in excellent hands in terms of naval expertise. With various admirals having even studied in Prussian schools, such as that of Wu Yulin, we can levy this connection alongside a diplomatic mission by Admiral Sa Zhenbing to acquire commissioned ships at discount prices."
+
+ QIE_license_luftstreitkrafte_airplanes: "License Luftstreitkräfte Airplanes"
+ QIE_license_luftstreitkrafte_airplanes_desc: "Ever hesitant to sell us their latest designs, Germany's aircraft industry continues to remain elusive in our efforts for military support. Without any connections in the advisory mission or in our officers to utilise, we must pull on perhaps the true reason they even back us in the first place. Japan. If we are to keep Japan at bay in the inevitable showdown between the Middle Kingdom and Rising Sun, it would be prudent to have an airforce, no?"
+
+ QIE_the_chinese_armoured_corps: "The Chinese Armoured Corps"
+ QIE_the_chinese_armoured_corps_desc: "Our younger officers are fascinated by the potential of modern armoured behemoths. Encircling divisions faster than on foot, and with far more punch than that of trucks, truly the tank is the modern spearhead by which mobile warfare is waged. Most Chinese commanders could only dream of commanding brigades of tanks, and yet in there lies an opportunity for our Special Relationship to be of use. Importing German armour, we can fight toe-to-toe with Japan."
+
+ QIE_extend_the_80_division_plan: "Extend the 80 Division Plan"
+ QIE_extend_the_80_division_plan_desc: "German equipment and modernisation plans are all well and good, but what Chinese armies truly need is the knowledge and understanding provided by the vigorous 80 Division Plan of bygone days. Having withdrew following a downturn of relations, perhaps we have proven ourselves \"loyal\" enough, and established enough connections, to negotiate its return. Otherwise, it is no short order the Diplomatic Corps can't fix."
+
+ QIE_the_future_of_the_special_relationsip: "The Future of the \"Special Relationship\""
+ QIE_the_future_of_the_special_relationsip_desc: "With our army modernisation efforts now complete, our future relationship with Germany and Prussia have reached its ultimate ascent. The Chinese-Heer has been realised and our soldiers now fight with the same strategic depth and heroic efficiency as any Prussian or German."
+
+ QIE_dealing_with_separatist_bandits: "Dealing With Separatism"
+ QIE_dealing_with_separatist_bandits_desc: "The growing unpopularity of our Emperor and the Monarchy as a whole has created separatist sentiment that is spreading across our Empire. They decry Emperor Kasim Beg as a mere Turkic steppe-warlord who has conquered the Chinese people. This separatist idiocy must be stopped."
+
+ QIE_seize_the_treaty_ports: "Reclaim the Three Pearls"
+ QIE_seize_the_treaty_ports_desc: "During the 17th and 18th century, European powers were allowed to set up their trading posts and business ventures in the 'Three Pearls Delta' of Ammassalik, Macao, and Hong Kong. Though much profit has been generated by European business and investment into these cities, much of the wealth generated by these cities flows out back to their European counterparts. No longer. We shall send a telegram demanding the return of these territories!"
+
+ # IDEAS
+
+ CHI_legitimacy_of_the_monarchy_1: "Legitimacy of the Monarchy - Detested"
+ CHI_legitimacy_of_the_monarchy_1_desc: "Though the Yuan Empire has ruled over a united China and its surrounding territories for centuries, the legitimacy of its monarchy remains deeply contested. Since the establishment of the Yuan dynasty under a foreign Turkic Emperor in the 17th century, the imperial institution has increasingly come to symbolise tyranny, decadence and the subjugation of China's many peoples. From the heartlands of China to the distant provinces of India, Burma, Indochina and Manchuria, resentment towards the imperial court remains widespread. Growing segments of society demand the modernisation and liberalisation of the monarchy, questioning whether an institution so deeply rooted in the old imperial order can continue to govern a modern empire."
+
+ CHI_legitimacy_of_the_monarchy_2: "Legitimacy of the Monarchy - Questioned"
+ CHI_legitimacy_of_the_monarchy_2_desc: "Though the Yuan monarchy remains a deeply controversial institution, recent efforts to address the empire's shortcomings have begun to yield results. Imperial reforms, public concessions and a renewed emphasis on the prosperity of the empire have softened some opposition towards the throne. While many still regard the monarchy as an outdated and foreign institution, an increasing number are willing to give the imperial court an opportunity to prove itself. The legitimacy of the Yuan dynasty remains fragile, but its decline may yet be reversed."
+
+ CHI_legitimacy_of_the_monarchy_3: "Legitimacy of the Monarchy - Ambigious"
+ CHI_legitimacy_of_the_monarchy_3_desc: "The Yuan monarchy has begun to regain some measure of public confidence, though its position remains far from secure. Years of gradual reform and imperial modernisation have convinced portions of the population that the dynasty may yet adapt to the demands of a changing world. Nevertheless, scepticism remains widespread, particularly among liberal reformers, regional authorities and the empire's many non-Chinese peoples. While the throne is no longer universally regarded with outright contempt, neither has it earned the unquestioned loyalty of its subjects. The future of the Yuan monarchy remains uncertain, caught between the traditions of the imperial court and the expectations of a modern empire."
+
+ CHI_legitimacy_of_the_monarchy_4: "Legitimacy of the Monarchy - Accepted"
+ CHI_legitimacy_of_the_monarchy_4_desc: "The Yuan monarchy has weathered years of uncertainty and public discontent, emerging with a renewed sense of legitimacy. Through gradual modernisation, political concessions and a renewed commitment to the prosperity of the empire, the imperial court has managed to reconcile much of the population with its continued rule. Though disagreements over the future of the monarchy remain, the throne is increasingly viewed as a legitimate institution capable of guiding the Yuan Empire into the modern age. For the first time in generations, loyalty to the dynasty is becoming a source of national unity rather than division."
+
+ CHI_legitimacy_of_the_monarchy_5: "Legitimacy of the Monarchy - Revered"
+ CHI_legitimacy_of_the_monarchy_5_desc: "The Yuan monarchy has completed its remarkable transformation from a detested relic of the past into a respected symbol of imperial unity. Through decades of reform, modernisation and reconciliation, the dynasty has managed to secure the loyalty of its subjects across the vast territories of the empire. The Emperor is no longer seen merely as a foreign ruler presiding over a decaying institution, but as the sovereign and unifying figurehead of a modern, prosperous and powerful Yuan Empire. Though the empire's many peoples retain their distinct identities and aspirations, the legitimacy of the imperial throne is no longer seriously questioned. The dynasty has secured its place in the future of China."
+
+ CHI_corruption_in_the_administration_1: "Corruption in the Administration"
+ CHI_corruption_in_the_administration_1_desc: "Despite its vast wealth, population and territorial reach, the Yuan Empire suffers from deeply entrenched corruption throughout its administrative institutions. Provincial governors, imperial bureaucrats and local officials frequently exploit their positions for personal enrichment, diverting state funds, accepting bribes and neglecting their responsibilities. In many of the empire's more distant territories, imperial decrees are routinely ignored or manipulated by local authorities, leaving the central government with little effective oversight. Such practices have weakened public confidence in the administration, hindered economic development and made the implementation of meaningful reforms an increasingly difficult undertaking."
+
+ CHI_inefficient_economy_1: "Inefficient Economy"
+ CHI_inefficient_economy_1_desc: "For all its territorial wealth and abundant natural resources, the Yuan Empire has yet to develop an economy capable of fully utilising its enormous potential. Centuries of centralised imperial administration, uneven industrialisation and outdated economic practices have left much of the empire dependent on inefficient production methods and fragmented regional markets. While the industrial centres of eastern China continue to expand, the rest of the nation remain economically underdeveloped and poorly integrated into the imperial economy."
+
+ CHI_inefficient_economy_4: "Rejuvenated National Economy"
+ CHI_inefficient_economy_4_desc: "Following years of economic reform and industrial investment, the Yuan Empire has begun to overcome many of the inefficiencies that once hindered its development. Modern production methods have been introduced, regional markets have been increasingly integrated, and infrastructure expanded to connect the empire's distant territories with its industrial heartlands. The enormous resources and manpower of the Yuan Empire are finally being put to more effective use, allowing industries to flourish and domestic production to expand."
+
+ CHI_national_debt_1: "Crippling National Debt"
+ CHI_national_debt_1_desc: "The conclusion of the Great European War brought little relief to the Yuan Empire. A succession of devastating famines, coupled with years of governmental mismanagement and excessive wartime expenditure, plunged the imperial economy into a severe financial crisis. Desperate for funds to maintain the state and prevent further economic collapse, the Yuan government was forced to secure enormous loans from European powers, often under punishing interest rates. These creditors, many of whom had fought against the Yuan during the Great European War, have been all too willing to exploit the empire's weakened position, using its mounting debts to secure economic concessions and influence over domestic affairs. The Yuan Empire may have survived the war, but its financial independence remains deeply compromised."
+
+ CHI_national_debt_2: "High National Debt"
+ CHI_national_debt_2_desc: "The conclusion of the Great European War brought little relief to the Yuan Empire. A succession of devastating famines, coupled with years of governmental mismanagement and excessive wartime expenditure, plunged the imperial economy into a severe financial crisis. Desperate for funds to maintain the state and prevent further economic collapse, the Yuan government was forced to secure enormous loans from European powers, often under punishing interest rates. These creditors, many of whom had fought against the Yuan during the Great European War, have been all too willing to exploit the empire's weakened position, using its mounting debts to secure economic concessions and influence over domestic affairs. The Yuan Empire may have survived the war, but its financial independence remains deeply compromised."
+
+ CHI_national_debt_3: "Moderate National Debt"
+ CHI_national_debt_3_desc: "The conclusion of the Great European War brought little relief to the Yuan Empire. A succession of devastating famines, coupled with years of governmental mismanagement and excessive wartime expenditure, plunged the imperial economy into a severe financial crisis. Desperate for funds to maintain the state and prevent further economic collapse, the Yuan government was forced to secure enormous loans from European powers, often under punishing interest rates. These creditors, many of whom had fought against the Yuan during the Great European War, have been all too willing to exploit the empire's weakened position, using its mounting debts to secure economic concessions and influence over domestic affairs. The Yuan Empire may have survived the war, but its financial independence remains deeply compromised."
+
+ CHI_national_debt_4: "Low National Debt"
+ CHI_national_debt_4_desc: "The conclusion of the Great European War brought little relief to the Yuan Empire. A succession of devastating famines, coupled with years of governmental mismanagement and excessive wartime expenditure, plunged the imperial economy into a severe financial crisis. Desperate for funds to maintain the state and prevent further economic collapse, the Yuan government was forced to secure enormous loans from European powers, often under punishing interest rates. These creditors, many of whom had fought against the Yuan during the Great European War, have been all too willing to exploit the empire's weakened position, using its mounting debts to secure economic concessions and influence over domestic affairs. The Yuan Empire may have survived the war, but its financial independence remains deeply compromised."
+
+ CHI_national_debt_5: "Miniscule National Debt"
+ CHI_national_debt_5_desc: "The conclusion of the Great European War brought little relief to the Yuan Empire. A succession of devastating famines, coupled with years of governmental mismanagement and excessive wartime expenditure, plunged the imperial economy into a severe financial crisis. Desperate for funds to maintain the state and prevent further economic collapse, the Yuan government was forced to secure enormous loans from European powers, often under punishing interest rates. These creditors, many of whom had fought against the Yuan during the Great European War, have been all too willing to exploit the empire's weakened position, using its mounting debts to secure economic concessions and influence over domestic affairs. The Yuan Empire may have survived the war, but its financial independence remains deeply compromised."
+
+ CHI_corruption_in_the_armed_forces_1: "Corruption in the Armed Forces"
+ CHI_corruption_in_the_armed_forces_1_desc: "Our armed force are rife with corruption and nepotism. If we want to turn them into a potent fighting force, we will have to engage in a lengthy and expensive program of army reform."
+
+ CHI_stalled_80_division_reform_plan: "Stalled 80-Division Reform Plan"
+ CHI_stalled_80_division_reform_plan_desc: "In the aftermath of the Great European War, the Yuan Empire recognised the urgent need to modernise its enormous and unwieldy military establishment. With assistance from a joint German-Prussian Advisory Mission, the Yuan High Command initiated the ambitious 80-Division Reform Plan, intended to reduce an army of more than two hundred divisions into a smaller, professional and highly disciplined fighting force. However, the programme barely progressed beyond its initial stages before German and Prussian military advisers gradually withdrew their attention away from China, back to Europe. Left without meaningful foreign assistance or sufficient institutional experience, the Yuan High Command has struggled to continue the reforms independently."
+
+ QIE_80_division_plan: "Implemented 80-Division Reform Plan"
+ QIE_80_division_plan_desc: "Following renewed efforts by the Yuan High Command, the long-neglected 80-Division Reform Plan has finally been brought back to life. Recognising the shortcomings of the old military establishment, the imperial government has committed additional funding, personnel and institutional support towards completing the reforms. The remaining divisions are gradually being reorganised, outdated command structures dismantled and new standards of training and discipline introduced throughout the armed forces. Although the Yuan military remains some distance from the professional force originally envisioned by its German-Prussian advisers, the reform programme is once again progressing, and the foundations of a modern imperial army are beginning to take shape."
+
+ CHI_completed_80_division_reform_plan: "Completed 80-Division Reform Plan"
+ CHI_completed_80_division_reform_plan_desc: "After years of painstaking reform and restructuring, the Yuan Empire has finally completed its ambitious 80-Division Reform Plan. The once bloated and unwieldy imperial military has been transformed into a professional fighting force, built around modern command structures, rigorous training standards and a renewed emphasis on discipline and operational efficiency. The shortcomings of the old military establishment have largely been addressed, and the Yuan High Command can finally claim to possess an army capable of meeting the demands of modern warfare. Though further improvements will undoubtedly be necessary, the imperial armed forces have entered a new era of military professionalism."
+
+ CHI_court_of_the_jade_marshal: "Court of the Jade-Marshal"
+ CHI_court_of_the_jade_marshal_desc: "Marshal Kurman Beg, the famed Jade-Marshal, stands as the most influential figure in the Yuan military. His reputation was forged in the Great European War, where his tactical prowess earned him international acclaim and secured his place among the Empire's most respected commanders. Since his return, his influence has extended far beyond the battlefield, shaping the army's reformation and reaching deep into the civilian administration. Yet his prominence has come at a cost: other commanders find themselves overshadowed, while the Marshal increasingly holds the final word on military affairs. His views do not always align with the Monarchy's political direction, and disagreements over reform and foreign diplomacy have become a growing source of friction within the Imperial Court."
+
+ CHI_conservative_high_command_1: "Conservative High Command"
+ CHI_conservative_high_command_1_desc: "The Yuan High Command emerged from the Great European War convinced that its hard-won experience had revealed the future of warfare. Senior officers remain deeply attached to the doctrines that secured victory, placing their faith in entrenched positions, massed infantry and the defensive strength of prepared fortifications. New developments such as military aviation and armoured vehicles are frequently dismissed as expensive distractions rather than necessities. While younger officers and foreign advisers argue for modernisation, the old guard continues to dominate military planning, leaving the Yuan army at risk of preparing for the last war rather than the next."
+
+ CHI_neglected_country_side_1: "Neglected Countryside"
+ CHI_neglected_country_side_1_desc: "The Nanjing decade has seen truly impressive changes to our society. However modernity has been mostly limited to urban areas and the countryside have been overlooked. This could lead to the breeding ground of radical ideas."
+
+ CHI_neglected_country_side_2: "Neglected Countryside"
+ CHI_neglected_country_side_2_desc: "The Nanjing decade has seen truly impressive changes to our society. However modernity has been mostly limited to urban areas and the countryside have been overlooked. This could lead to the breeding ground of radical ideas."
+
+ CHI_neglected_country_side_3: "Neglected Countryside"
+ CHI_neglected_country_side_3_desc: "The Nanjing decade has seen truly impressive changes to our society. However modernity has been mostly limited to urban areas and the countryside have been overlooked. This could lead to the breeding ground of radical ideas."
+
+ CHI_illicit_trade_idea: "Illicit Trade - The Vices of Modernity"
+ CHI_illicit_trade_idea_desc: "As the Yuan economy faltered throughout the 1920s and 1930s, countless farmers abandoned traditional food crops in favour of opium and other lucrative cash crops. What began as a means of survival has grown into an enormous illicit agricultural trade, encouraged by wealthy landlords who profit immensely from its cultivation and export. Rather than investing these fortunes in domestic food production, many landlords use their wealth to purchase agricultural goods from foreign markets, leaving the Empire increasingly dependent on overseas harvests and vulnerable to famine beyond its borders. The trade has enriched powerful landowners and provided the government with a valuable source of revenue, but its consequences are becoming impossible to ignore: widespread addiction, deepening inequality and a countryside increasingly unable to feed itself."
+
+ CHI_illicit_trade_allowed: "Illicit Trade - Promoted Cash Crops"
+ CHI_illicit_trade_allowed_desc: "Recognising the immense profits generated by opium and other high-value cash crops, the Yuan government has begun bringing portions of the trade under its own influence. Loyal provincial governors have appropriated plantations and established state-backed agricultural enterprises, while the central administration has nationalised other operations outright. These measures provide the Imperial Treasury with a much-needed source of revenue during the ongoing economic crisis, allowing the government to benefit directly from a trade once dominated by wealthy landlords. Yet the underlying problems remain: farmland continues to be diverted away from food production, foreign agricultural imports remain essential, and the social consequences of the opium trade are becoming increasingly difficult to contain."
+
+ CHI_illicit_trade_allowed_2: "Reformed Opium Business"
+ CHI_illicit_trade_allowed_2_desc: "Rather than dismantling a trade that has become an important pillar of the Imperial Treasury, the Yuan government has chosen to formalise and expand its involvement in the opium business. State-backed enterprises and loyal provincial governors are granted greater authority over cultivation, processing and distribution, bringing an increasingly lucrative industry under closer government supervision. The resulting revenues provide the Empire with funds desperately needed for industrialisation and military modernisation. Yet the cost remains considerable: food production continues to suffer, foreign agricultural imports remain indispensable, and opium addiction spreads throughout Chinese society. The Yuan government has secured a source of wealth, but it may be mortgaging the health and security of its own people."
+
+ CHI_illicit_trade_rooting_out: "Illicit Trade - Rooting Out"
+ CHI_illicit_trade_rooting_out_desc: "The Yuan government has finally acknowledged that the unchecked expansion of opium cultivation has become a threat to the Empire's long-term prosperity. Under a new agricultural programme, provincial authorities are ordered to dismantle illicit plantations, reclaim farmland for food production and reduce the influence of landlords who have profited from the trade. The transition will not be easy: powerful interests are resisting the reforms, farmers fear losing their livelihoods, and years of neglect have left domestic food production unable to meet the Empire's needs. Nevertheless, the government hopes that restoring agricultural self-sufficiency will prevent future famines and alleviate the growing social crisis."
+
+ CHI_illicit_trade_banned: "Reformed Agricultural Sector"
+ CHI_illicit_trade_banned_desc: "The Yuan agricultural reforms are beginning to bear fruit. Former opium plantations have been returned to food production, agricultural infrastructure has been improved, and provincial administrations are increasingly focused on ensuring reliable domestic harvests. Though the transition has required considerable investment and opposition from wealthy landlords remains, the Empire is gradually reducing its dependence on foreign food imports. The countryside is becoming more productive, and the threat of another devastating famine is no longer as immediate as it once was."
+
+ CHI_growing_separatism_1: "Separatist Sentiment"
+ CHI_growing_separatism_1_desc: ""
+
+ QIE_defaulted_debt: "Governmental Default"
+ QIE_defaulted_debt_desc: ""
+
+ QIE_populist_support: "Populist Support"
+ QIE_populist_support_desc: ""
+
+ QIE_nationalised_german_industry: "Nationalised European Industries"
+ QIE_nationalised_german_industry_desc: ""
+
+ QIE_iterating_upon_german_designs: "Iterating Upon European Designs"
+ QIE_iterating_upon_german_designs_desc: ""
+
+ QIE_seeing_to_rural_reconstruction: "Seeing To Rural Reconstruction"
+ QIE_seeing_to_rural_reconstruction_desc: ""
+
+ QIE_extol_nationalist_cause: "Extol the Nationalist Cause"
+ QIE_extol_nationalist_cause_desc: ""
+
+ CHI_the_young_china_party_1: "The Young China Party"
+ CHI_the_young_china_party_1_desc: ""
+
+ CHI_local_logistics: "Local Logistics"
+ CHI_local_logistics_desc: ""
+
+ QIE_foreign_advisory_training: "Foreign Advisory Training"
+ QIE_foreign_advisory_training_desc: ""
+
+ QIE_embers_of_a_new_beiyang: "Embers of a New Beiyang"
+ QIE_embers_of_a_new_beiyang_desc: ""
+
+ QIE_the_beiyang_navy: "The Beiyang Navy"
+ QIE_the_beiyang_navy_desc: ""
+
+ QIE_baoding_military_academy: "Baoding Military Academy"
+ QIE_baoding_military_academy_desc: ""
+
+ QIE_flurry_of_investment: "Flurry of Investments"
+ QIE_flurry_of_investment_desc: ""
+
+ QIE_german_railroad_engineers_idea: "Western Railroad Engineers"
+ QIE_german_railroad_engineers_idea_desc: ""
+
+ QIE_Sie_Contracts: "Siemens Contracts"
+ QIE_Sie_Contracts_desc: ""
+
+ QIE_zhili_war_production_idea: "Foreign Expertise"
+ QIE_zhili_war_production_idea_desc: ""
+
+ CHI_the_chinese_elitheer: "The Chinese Elitheer"
+ CHI_the_chinese_elitheer_desc: ""
+
+ QIE_chinese_soldiers_german_weapons_idea: "Chinese Soldiers, German Weapons"
+ QIE_chinese_soldiers_german_weapons_idea_desc: ""
+
+ QIE_national_aviation_programme: "National Aviation Programme"
+ QIE_national_aviation_programme_desc: ""
+
+ CHI_creating_a_militaristic_people: "The Militaristic Nation-Spirit"
+ CHI_creating_a_militaristic_people_desc: ""
+
+ QIE_renovated_baoding_arsenal_idea: "Renovated Baoding Arsenal"
+ QIE_renovated_baoding_arsenal_idea_desc: ""
+
+ CHI_clogging_the_arteries: "Clogging the Arteries"
+ CHI_clogging_the_arteries_desc: ""
+
+ QIE_kailuan_mining_bureau_idea: "Kailuan Mining Bureau"
+ QIE_kailuan_mining_bureau_idea_desc: ""
+
+ CHI_daye_hanyang_rapid_development: "Daye Hanyang Rapid Development Programme"
+ CHI_daye_hanyang_rapid_development_desc: ""
+
+ CHI_A_NEW_CHINESE_CENTURY: "A New Chinese Century"
+ CHI_A_NEW_CHINESE_CENTURY_desc: ""
+
+ CHI_flying_police_squads: "The Flying Police Squads"
+ CHI_flying_police_squads_desc: ""
+
+ QIE_dealing_with_dishonesty: "Dealing with Dishonesty"
+ QIE_dealing_with_dishonesty_desc: ""
+
+ QIE_burgeoning_pluralism: "Burgeoning Pluralism"
+ QIE_burgeoning_pluralism_desc: ""
+
+ QIE_five_races_one_union: "Five Races, One Union"
+ QIE_five_races_one_union_desc: ""
+
+ CHI_H_A_B_holdings: "C.U.I Holdings"
+ CHI_H_A_B_holdings_desc: "C.U.I Holdings is the extensive commercial and industrial interests of the Prussian Chinesisches Unternehmen und Investitionskonzern (Chinese Business and Investment Concern) within the Yuan Empire. Through a network of Prussian business ventures, industrial investments and commercial partnerships, the organisation has established a considerable presence in the Chinese economy. Its enterprises provide the Yuan government with access to valuable engineering expertise, industrial technology and experienced technical personnel, contributing to the development and modernisation of Chinese factories, infrastructure and manufacturing capabilities. Although formally operating as a collection of private commercial interests, C.U.I Holdings has become an influential economic actor within the Empire, serving as an important link between Prussian industry and Yuan ambitions for industrial development."
+
+
+# EVENTS
+ CHI_events.1.t: "Chinese New Year"
+ CHI_events.1.d: "Across the vast territories of the Yuan Empire, families gather to celebrate the arrival of the Lunar New Year, celebrated on the 24th of January, welcoming the Year of the Rat with festivities, prayers and hopes for prosperity. Yet beneath the celebrations, the Empire enters the new year burdened by considerable uncertainty. The economic decline of the past decade continues to weigh heavily upon the population, with corruption, foreign debt and uneven industrial development hindering the government's attempts at recovery. In the countryside, the expansion of opium cultivation has enriched powerful landlords and provincial authorities, but diverted valuable farmland from food production and worsened the famine and addiction crises. \n \nMeanwhile, the Imperial Court faces mounting demands for political and administrative reform, while Marshal Kurman Beg and the conservative High Command exert considerable influence over the direction of the armed forces. The Yuan military is undergoing a difficult modernisation, caught between the Marshal's ambitions and an officer corps reluctant to abandon the doctrines of the Great European War. \n \nBeyond the Empire's borders, the growing power of the Yuan's neighbours and the lingering consequences of the last great conflict offer little reassurance. As the bells ring in the new year, the Emperor's subjects celebrate and pray for good fortune. Whether the Year of the Rat will bring renewal or further hardship remains to be seen."
+ CHI_events.1.a: "The Year of the Rat!"
+
+ CHI_events.2.t: "The First Provincial Elections"
+ CHI_events.2.d: "For the first time in the history of the Yuan Empire, provincial elections are being held across China, marking a significant step towards political reform. The elections are the first major achievement of the newly established Harmony Association, a gathering of reformist and liberal-minded officials within the Central Government who have long argued that the Empire must modernise not only its economy and military, but also its political institutions. Under their guidance, provincial administrations are opening their doors to elected representatives, giving local communities a greater voice in matters of governance and administration. Though the elections remain limited in scope, and the Imperial Court retains ultimate authority, their significance should not be underestimated. Conservative officials and members of the old bureaucracy view these reforms with suspicion, fearing that provincial representation may eventually undermine the authority of the throne. For the Harmony Association, however, this is only the beginning. The first foundations of a more representative Yuan government are being laid, and the path towards a constitutional and democratic future may finally be opening."
+ CHI_events.2.a: "Democracy? I suppose some limited reforms can be granted."
+
+ CHI_events.3.t: "The Yuan Debt Defaults"
+ CHI_events.3.d: "The announcement from the Yuan Empire has sent shockwaves through European financial markets. In an extraordinary declaration, the Imperial Government has repudiated its outstanding international debts, declaring the agreements under which they were issued null and void. Stockbrokers across the continent have watched Yuan bonds plummet in value, while banks and financial institutions face the prospect of enormous losses. Government officials in Germany, Prussia, Russia, Austria-Hungary, Ireland and other creditor nations have expressed their outrage, condemning the decision as an unlawful repudiation of binding international agreements. \n \nFor years, European lenders have used Yuan indebtedness to secure commercial concessions, political influence and access to Chinese markets. Now, those arrangements have been thrown into question overnight. Some officials are calling for diplomatic pressure and economic retaliation, while others warn that an aggressive response could jeopardise their remaining interests in China. Whatever the response, the Yuan Empire's decision has shaken confidence in international lending and demonstrated that even the most heavily indebted nation may choose to reject the terms imposed upon it."
+ CHI_events.3.a: "But a debt is a debt!"
+
+ CHI_events.4.t: "The Yuan Demands the Return of the Three Pearls"
+ CHI_events.4.d: "Diplomatic delegations from the Yuan Empire have arrived in the capitals of Europe, carrying an unmistakable demand from the Imperial Court: the return of the so-called "Three Pearls" — Ammassalik, Macao and Hong Kong. The Yuan government has formally declared that these treaty ports, long held under Dutch, Prussian and Irish administration respectively, are remnants of an unjust era of foreign concessions and must be returned to Chinese sovereignty. The delegations insist that the Empire's growing political reforms and renewed determination to restore its international standing leave no room for the continued occupation of these territories. European officials, however, have received the demands with considerable displeasure. The ports represent valuable commercial footholds and strategic positions in East Asia, and none of the three powers is particularly eager to surrender its privileges."
+ CHI_events.4.a: "I suppose the port was a temporary agreement."
+ CHI_events.4.b: "And lose our economic influence? I don't think so."

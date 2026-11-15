@@ -830,6 +830,9 @@ characters={
 			ideology=prussian_const
 			expire="1965.1.1.1"
 			id=-1
+			traits = {
+				NJORD_kaiser_of_the_old_world
+			}
 		}
 	}
 

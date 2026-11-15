@@ -1,0 +1,185 @@
+CHI_lower_debt_category = {
+
+	CHI_lower_debt_decision = {
+        allowed = {
+            OR = {
+				has_idea = CHI_national_debt_1
+				has_idea = CHI_national_debt_2
+				has_idea = CHI_national_debt_3
+				has_idea = CHI_national_debt_4
+				has_idea = CHI_national_debt_5
+			}
+        }
+		visible = {
+            OR = {
+				has_idea = CHI_national_debt_1
+				has_idea = CHI_national_debt_2
+				has_idea = CHI_national_debt_3
+				has_idea = CHI_national_debt_4
+				has_idea = CHI_national_debt_5
+			}
+        }
+        icon = GFX_decision_gre_paying_ifc_debt
+        days_remove = 100
+        modifier = {
+            consumer_goods_factor = 0.1
+			political_power_gain = -0.1
+        }
+        remove_effect = {
+			if = {
+				limit = { 
+					has_idea = CHI_national_debt_1
+				}
+				swap_ideas = {
+					remove_idea = CHI_national_debt_1
+					add_idea = CHI_national_debt_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_national_debt_2
+				}
+				swap_ideas = {
+					remove_idea = CHI_national_debt_2
+					add_idea = CHI_national_debt_3
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_national_debt_3
+				}
+				swap_ideas = {
+					remove_idea = CHI_national_debt_3
+					add_idea = CHI_national_debt_4
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_national_debt_4
+				}
+				swap_ideas = {
+					remove_idea = CHI_national_debt_4
+					add_idea = CHI_national_debt_5
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_national_debt_5
+				}
+				remove_ideas = CHI_national_debt_5
+			}
+        }
+    }
+}
+
+CHI_army_reforms_category = {
+
+	CHI_lower_corruption_in_the_armed_forces = {
+        allowed = {
+            OR = {
+				has_idea = CHI_corruption_in_the_armed_forces_1
+				has_idea = CHI_corruption_in_the_armed_forces_2
+				has_idea = CHI_corruption_in_the_armed_forces_2
+			}
+        }
+		visible = {
+            OR = {
+				has_idea = CHI_corruption_in_the_armed_forces_1
+				has_idea = CHI_corruption_in_the_armed_forces_2
+				has_idea = CHI_corruption_in_the_armed_forces_2
+			}
+        }
+
+		custom_cost_text = army_xp_200
+		custom_cost_trigger = {
+			NOT = { has_army_experience < 200 }
+		}
+		complete_effect = {
+			hidden_effect = { army_experience = -200 }
+		}
+		
+        icon = GFX_decision_generic_prepare_civil_war
+        days_remove = 200
+        remove_effect = {
+			if = {
+				limit = { 
+					has_idea = CHI_corruption_in_the_armed_forces_1
+				}
+				swap_ideas = {
+					remove_idea = CHI_corruption_in_the_armed_forces_1
+					add_idea = CHI_corruption_in_the_armed_forces_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_corruption_in_the_armed_forces_2
+				}
+				swap_ideas = {
+					remove_idea = CHI_corruption_in_the_armed_forces_2
+					add_idea = CHI_corruption_in_the_armed_forces_3
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_corruption_in_the_armed_forces_3
+				}
+				remove_ideas = CHI_corruption_in_the_armed_forces_3
+			}
+        }
+    }
+
+	CHI_lower_conservative_high_command = {
+        allowed = {
+            OR = {
+				has_idea = CHI_conservative_high_command_1
+				has_idea = CHI_conservative_high_command_2
+				has_idea = CHI_conservative_high_command_2
+			}
+        }
+		visible = {
+            OR = {
+				has_idea = CHI_conservative_high_command_1
+				has_idea = CHI_conservative_high_command_2
+				has_idea = CHI_conservative_high_command_2
+			}
+        }
+		
+        icon = GFX_decision_generic_army_support
+        fire_only_once = yes
+        days_remove = 100
+        custom_cost_text = army_xp_100
+		custom_cost_trigger = {
+			NOT = { has_army_experience < 100 }
+		}
+		complete_effect = {
+			hidden_effect = { army_experience = -100 }
+		}
+        remove_effect = {
+			if = {
+				limit = { 
+					has_idea = CHI_conservative_high_command_1
+				}
+				swap_ideas = {
+					remove_idea = CHI_conservative_high_command_1
+					add_idea = CHI_conservative_high_command_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_conservative_high_command_2
+				}
+				swap_ideas = {
+					remove_idea = CHI_conservative_high_command_2
+					add_idea = CHI_conservative_high_command_3
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = CHI_conservative_high_command_3
+				}
+				remove_ideas = CHI_conservative_high_command_3
+			}
+        }
+    }
+}
+

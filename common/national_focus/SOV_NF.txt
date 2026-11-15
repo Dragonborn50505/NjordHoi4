@@ -55,7 +55,7 @@ focus_tree = {
 	focus = {
 		id = RUS_control_supreme_court
 		icon = GFX_focus_FIN_confederated_finno_russian_republics
-		cost = 5
+		cost = 4
 
 		x = 5
 		y = 0
@@ -78,7 +78,7 @@ focus_tree = {
 	focus = {
 		id = RUS_savinkov_constitution
 		icon = GFX_SOV_call_for_aid_ccp_2d_sov_compatibility
-		cost = 5
+		cost = 3
 
 		relative_position_id = RUS_control_supreme_court
 		x = 0
@@ -94,6 +94,11 @@ focus_tree = {
 			add_war_support = 0.05
 			add_political_power = 25
 			custom_effect_tooltip = generic_skip_one_line_tt
+			retire_character = SOV_yegor_nikolayevich
+			retire_character = SOV_yevgeniy_skobelev
+			retire_character = SOV_nikolay_putyatin
+			retire_character = SOV_grigoriy_aleksseyev
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_country_leader_trait = RUS_supreme_commander
 			swap_ideas = {
 				remove_idea = RUS_entrenched_opposition_2
@@ -106,7 +111,7 @@ focus_tree = {
 	focus = {
 		id = RUS_undercut_monarchists
 		icon = GFX_focus_NOR_send_the_king_back_to_denmark
-		cost = 5
+		cost = 4
 
 		relative_position_id = RUS_savinkov_constitution
 		x = 1
@@ -121,6 +126,10 @@ focus_tree = {
 		completion_reward = {
 			add_popularity = { ideology = absolutist popularity = -0.1 }
 			add_popularity = { ideology = neutrality popularity = -0.05 }
+			custom_effect_tooltip = generic_skip_one_line_tt
+			retire_character = SOV_fedor_nebogatov
+			retire_character = SOV_yevgeniy_gurko
+			retire_character = SOV_kiril_dragomirov
 			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = { 
@@ -159,6 +168,37 @@ focus_tree = {
 					}
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = { 
+					has_idea = RUS_a_divided_army
+				}
+				swap_ideas = {
+					remove_idea = RUS_a_divided_army
+					add_idea = RUS_a_divided_army_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = RUS_a_divided_army_2
+				}
+				swap_ideas = {
+					remove_idea = RUS_a_divided_army_2
+					add_idea = RUS_a_divided_army_3
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = RUS_a_divided_army_3
+				}
+				swap_ideas = {
+					remove_idea = RUS_a_divided_army_3
+					add_idea = RUS_a_divided_army_4
+				}
+			}
+			else = {
+				remove_ideas = RUS_a_divided_army_4
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -166,7 +206,7 @@ focus_tree = {
 	focus = {
 		id = RUS_necessary_revenge
 		icon = GFX_focus_HUN_outlaw_the_party_of_national_will #GFX_focus_generic_conspiracy
-		cost = 5
+		cost = 4
 
 		relative_position_id = RUS_control_supreme_court
 		x = -1
@@ -183,7 +223,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			add_popularity = { ideology = fascism popularity = -0.1 }
+			add_popularity = { ideology = democratic popularity = -0.1 }
 			add_popularity = { ideology = communism popularity = -0.05 }
 			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
@@ -222,6 +262,37 @@ focus_tree = {
 						add_idea = RUS_entrenched_opposition_2
 					}
 				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = { 
+					has_idea = RUS_a_divided_army
+				}
+				swap_ideas = {
+					remove_idea = RUS_a_divided_army
+					add_idea = RUS_a_divided_army_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = RUS_a_divided_army_2
+				}
+				swap_ideas = {
+					remove_idea = RUS_a_divided_army_2
+					add_idea = RUS_a_divided_army_3
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = RUS_a_divided_army_3
+				}
+				swap_ideas = {
+					remove_idea = RUS_a_divided_army_3
+					add_idea = RUS_a_divided_army_4
+				}
+			}
+			else = {
+				remove_ideas = RUS_a_divided_army_4
 			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -287,7 +358,7 @@ focus_tree = {
 	focus = {
 		id = RUS_establish_the_VES
 		icon = GFX_SOV_planned_economy_ccp_2d_sov_compatibility
-		cost = 10
+		cost = 5
 
 		relative_position_id = RUS_control_supreme_court
 		x = 3
@@ -302,47 +373,17 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = RUS_supreme_economic_council
 			custom_effect_tooltip = generic_skip_one_line_tt
-			random_owned_controlled_state = {
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 4
 				limit = {
-					is_core_of = root
+					is_owned_and_controlled_by = ROOT
 				}
-				add_extra_state_shared_building_slots = 1
+                add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = root
-					is_in_home_area = yes
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = root
-					is_in_home_area = yes
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = root
-					is_in_home_area = yes
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
+					instant_build = yes
 				}
 			}
 		}
@@ -352,7 +393,7 @@ focus_tree = {
 	focus = {
 		id = RUS_voskhod
 		icon = GFX_focus_CHI_commemorate_labour_corp
-		cost = 10
+		cost = 5
 
 		relative_position_id = RUS_establish_the_VES
 		x = 1
@@ -473,13 +514,14 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_popularity = {
-				ideology = democratic
+				ideology = radical
 				popularity = 0.05
 			}
 			set_politics = {
-				ruling_party = democratic
+				ruling_party = radical
 				elections_allowed = no
 			}
+			set_country_leader_ideology = national_populism
 			custom_effect_tooltip = generic_skip_one_line_tt
 			set_cosmetic_tag = SOV_union_radical
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -510,7 +552,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 			add_popularity = {
-				ideology = democratic
+				ideology = radical
 				popularity = 0.05
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -547,7 +589,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 25
-			add_popularity = { ideology = democratic popularity = 0.05 }
+			add_popularity = { ideology = radical popularity = 0.05 }
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_country_leader_trait = RUS_cult_of_the_leader
 		}
@@ -809,7 +851,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 75
 			add_popularity = {
-				ideology = democratic
+				ideology = radical
 				popularity = 0.1
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -963,6 +1005,37 @@ focus_tree = {
 				RUS_new_london_unit_blackshirt_assault_battalion_design_cost_factor = -0.5
 				tooltip = unit_assault_battalion_design_cost_factor_tt
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = { 
+					has_idea = RUS_a_divided_army
+				}
+				swap_ideas = {
+					remove_idea = RUS_a_divided_army
+					add_idea = RUS_a_divided_army_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = RUS_a_divided_army_2
+				}
+				swap_ideas = {
+					remove_idea = RUS_a_divided_army_2
+					add_idea = RUS_a_divided_army_3
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = RUS_a_divided_army_3
+				}
+				swap_ideas = {
+					remove_idea = RUS_a_divided_army_3
+					add_idea = RUS_a_divided_army_4
+				}
+			}
+			else = {
+				remove_ideas = RUS_a_divided_army_4
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 	}
@@ -1024,7 +1097,7 @@ focus_tree = {
 	focus = {
 		id = RUS_labour_conscription
 		icon = GFX_focus_DEN_heavy_regulations
-		cost = 10
+		cost = 5
 
 		relative_position_id = RUS_voskhod
 		x = 0
@@ -1046,22 +1119,13 @@ focus_tree = {
 				add_idea = RUS_supreme_economic_council_2
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
-			random_owned_controlled_state = { # CHANGE TO SIBERIAN STATE
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 2
 				limit = {
-					is_core_of = root
+					is_owned_and_controlled_by = ROOT
 				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = { # CHANGE TO SIBERIAN STATE
-				limit = {
-					is_core_of = root
-				}
-				add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -1075,7 +1139,7 @@ focus_tree = {
 	focus = {
 		id = RUS_teleological_planning
 		icon = GFX_focus_GER_prioritize_the_four_year_plan
-		cost = 10
+		cost = 5
 
 		relative_position_id = RUS_labour_conscription
 		x = -1
@@ -1083,9 +1147,6 @@ focus_tree = {
 
 		prerequisite = {
 			focus = RUS_labour_conscription
-		}
-		mutually_exclusive = {
-			focus = RUS_solidarist_representation
 		}
 		ai_will_do = {
 			base = 35
@@ -1096,33 +1157,13 @@ focus_tree = {
 				add_idea = RUS_supreme_economic_council_3
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
-			random_owned_controlled_state = {
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 3
 				limit = {
-					is_core_of = root
+					is_owned_and_controlled_by = ROOT
 				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = root
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = root
-				}
-				add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -1145,9 +1186,6 @@ focus_tree = {
 		prerequisite = {
 			focus = RUS_labour_conscription
 		}
-		mutually_exclusive = {
-			focus = RUS_teleological_planning
-		}
 		available = {
 			has_manpower > 50000
 		}
@@ -1163,66 +1201,13 @@ focus_tree = {
 				add_idea = RUS_artels_chamber
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
-			random_owned_controlled_state = { # CHANGE TO SIBERIAN STATE
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 6
 				limit = {
-					is_core_of = root
+					is_owned_and_controlled_by = ROOT
 				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = { # CHANGE TO SIBERIAN STATE
-				limit = {
-					is_core_of = root
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = { # CHANGE TO SIBERIAN STATE
-				limit = {
-					is_core_of = root
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = { # CHANGE TO SIBERIAN STATE
-				limit = {
-					is_core_of = root
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = { # CHANGE TO SIBERIAN STATE
-				limit = {
-					is_core_of = root
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = { # CHANGE TO SIBERIAN STATE
-				limit = {
-					is_core_of = root
-				}
-				add_extra_state_shared_building_slots = 1
+                add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
@@ -1244,50 +1229,22 @@ focus_tree = {
 
 		prerequisite = {
 			focus = RUS_teleological_planning
+		}
+		prerequisite = {
 			focus = RUS_solidarist_representation
 		}
 		ai_will_do = {
 			factor = 15
 		}
 		completion_reward = {
-			if = {
-				limit = { 
-					has_idea = RUS_supreme_economic_council_3
-				}
-				swap_ideas = {
-					remove_idea = RUS_supreme_economic_council_3
-					add_idea = RUS_supreme_economic_council_4
-				}
+			swap_ideas = {
+				remove_idea = RUS_supreme_economic_council_3
+				add_idea = RUS_supreme_economic_council_4
 			}
-			else_if = {
-				limit = { 
-					has_idea = RUS_supreme_economic_council_2
-				}
-				swap_ideas = {
-					remove_idea = RUS_supreme_economic_council_2
-					add_idea = RUS_supreme_economic_council_3
-				}
-			}
-			else = {
-				swap_ideas = {
-					remove_idea = RUS_supreme_economic_council
-					add_idea = RUS_supreme_economic_council_2
-				}
-			}
-			if = {
-				limit = { 
-					has_idea = RUS_artels_chamber
-				}
-				swap_ideas = {
-					remove_idea = RUS_artels_chamber
-					add_idea = RUS_artels_chamber_2
-				}
-			}
-			else = {
-				swap_ideas = {
-					remove_idea = RUS_artels
-					add_idea = RUS_artels_chamber
-				}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			swap_ideas = {
+				remove_idea = RUS_supreme_economic_council_2
+				add_idea = RUS_supreme_economic_council_3
 			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1588,34 +1545,34 @@ focus_tree = {
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			499 = { # CHANGE TO WEST RUSSIAN STATE
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			500 = { # CHANGE TO WEST RUSSIAN STATE
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			498 = { # CHANGE TO WEST RUSSIAN STATE
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			515 = { # CHANGE TO WEST RUSSIAN STATE
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1647,34 +1604,34 @@ focus_tree = {
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			512 = { # CHANGE TO URALS STATE
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			505 = { # CHANGE TO URALS STATE
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			504 = { # CHANGE TO URALS STATE
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			506 = { # CHANGE TO URALS STATE
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1819,11 +1776,11 @@ focus_tree = {
 				category = synth_resources
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
-			195 = {
+			524 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = { type = synthetic_refinery level = 2 instant_build = yes }
 			}
-			248 = {
+			505 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = { type = synthetic_refinery level = 2 instant_build = yes }
 			}
@@ -1868,7 +1825,7 @@ focus_tree = {
 		cost = 5
 
 		x = 7
-		y = 9
+		y = 8
 
 		ai_will_do = {
 			base = 100
@@ -1890,6 +1847,37 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_dynamic_modifier = {
 				modifier = RUS_army
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = { 
+					has_idea = RUS_a_divided_army
+				}
+				swap_ideas = {
+					remove_idea = RUS_a_divided_army
+					add_idea = RUS_a_divided_army_2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = RUS_a_divided_army_2
+				}
+				swap_ideas = {
+					remove_idea = RUS_a_divided_army_2
+					add_idea = RUS_a_divided_army_3
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = RUS_a_divided_army_3
+				}
+				swap_ideas = {
+					remove_idea = RUS_a_divided_army_3
+					add_idea = RUS_a_divided_army_4
+				}
+			}
+			else = {
+				remove_ideas = RUS_a_divided_army_4
 			}
 		}
 		search_filters = { FOCUS_FILTER_ARMY_XP }
@@ -2698,7 +2686,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_popularity = {
-				ideology = democratic
+				ideology = radical
 				popularity = 0.1
 			}
 			add_manpower = 75000
@@ -2970,7 +2958,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = RUS_okhrana_1
+				remove_idea = RUS_okhrana
 				add_idea = RUS_okhrana_2
 			}
 			upgrade_intelligence_agency = upgrade_form_department
@@ -2980,7 +2968,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = RUS_smersh
+		id = RUS_smersh_focus
 		icon = GFX_focus_RAJ_a_policy_of_silence
 		cost = 5
 
@@ -3004,6 +2992,7 @@ focus_tree = {
 				limit = { NOT = { has_done_agency_upgrade = upgrade_psycho_warfare } }
 				upgrade_intelligence_agency = upgrade_psycho_warfare
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			swap_ideas = {
 				remove_idea = RUS_okhrana_2
 				add_idea = RUS_okhrana_3
@@ -3767,7 +3756,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.1
 			add_popularity = {
-				ideology = democratic
+				ideology = radical
 				popularity = 0.05
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -4699,11 +4688,13 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = RUS_state_aviation_bureau_1
 			custom_effect_tooltip = generic_skip_one_line_tt
-			random_owned_controlled_state = {
+			every_core_state = {
+				display_individual_scopes = yes
+				random_select_amount = 1
 				limit = {
-					is_core_of = root
+					is_owned_and_controlled_by = ROOT
 				}
-				add_extra_state_shared_building_slots = 1
+                add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
 					level = 1
@@ -4831,7 +4822,6 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			log = "[GetLogRoot]: Focus Completed RUS_radar_system"
 			if = {
 				limit = {
 					NOT = { is_special_project_completed = sp:sp_air_radar }

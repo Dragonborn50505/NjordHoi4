@@ -1,0 +1,54 @@
+add_namespace = GER_events
+
+# Renewal of the Treaty of Metz
+country_event = {
+	id = GER_events.1
+	title = GER_events.1.t
+	desc = GER_events.1.d
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+
+	option = {
+		name = GER_events.1.a
+		add_threat = -5
+		ai_chance = {
+			base = 0
+		}
+	}
+	option = {
+		name = GER_events.1.b
+		add_war_support = -0.1
+		GER = {
+			add_war_support = 0.05
+		}
+	}
+}
+
+# Spanish Entrance into the Central Powers
+country_event = {
+	id = GER_events.2
+	title = GER_events.2.t
+	desc = GER_events.2.d
+	picture = GFX_report_event_spr_carlists_franco
+
+	is_triggered_only = yes
+
+	option = {
+		name = GER_events.2.a
+		add_threat = -5
+		GER = {
+			add_to_faction = SPR
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+	option = {
+		name = GER_events.2.b
+		add_war_support = -0.05
+		GER = {
+			add_war_support = 0.05
+		}
+	}
+}

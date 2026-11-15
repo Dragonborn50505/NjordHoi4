@@ -65,7 +65,7 @@ if = {
 # Research Bonuses
 
 set_country_flag = conv_persia
-set_convoys = 0
+set_convoys = 100
 
 set_politics = {
     ruling_party = democratic
@@ -87,8 +87,6 @@ if = {
 
     add_to_tech_sharing_group = X07_research
 }
-
-
 
 add_ideas = {
 	X07_monarch

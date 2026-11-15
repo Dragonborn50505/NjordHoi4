@@ -1,0 +1,110 @@
+units = {
+	fleet = {
+		name = "3rd Fleet"
+		naval_base = 11374
+		task_force = {
+			name = "Screening Force"
+			location = 11374
+			ship = { name = "Mylo" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = HOL version_name = "Early Destroyer" } } }
+			ship = { name = "Claggor" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = HOL version_name = "Early Destroyer" } } }
+			ship = { name = "Powder" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = HOL version_name = "Early Destroyer" } } }
+			ship = { name = "Ekko" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = HOL version_name = "Early Destroyer" } } }
+			ship = { name = "Sevika" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = HOL version_name = "Early Destroyer" } } }
+			ship = { name = "Finn" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = HOL version_name = "Early Destroyer" } } }
+			ship = { name = "Benzo" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = HOL version_name = "Early Destroyer" } } }
+			ship = { name = "Isha" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = HOL version_name = "Early Destroyer" } } }
+			ship = { name = "Deckard" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = HOL version_name = "Early Destroyer" } } }
+			ship = { name = "Rictus" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = HOL version_name = "Early Destroyer" } } }
+			ship = { name = "Salo" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = HOL version_name = "Early Destroyer" } } }
+			ship = { name = "Marcus" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = HOL version_name = "Early Destroyer" } } }
+			ship = { name = "Singed" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = HOL version_name = "Early Destroyer" } } }
+			ship = { name = "Warwick" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = HOL version_name = "Early Destroyer" } } }
+			ship = { name = "Vander" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_1 = { amount = 1 owner = HOL version_name = "Early Destroyer" } } }
+			ship = { name = "Stormfly" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_2 = { amount = 1 owner = HOL version_name = "Basic Destroyer" } } }
+			ship = { name = "Meatlug" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_2 = { amount = 1 owner = HOL version_name = "Basic Destroyer" } } }
+			ship = { name = "Hookfang" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_2 = { amount = 1 owner = HOL version_name = "Basic Destroyer" } } }
+			ship = { name = "Cloudjumper" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_2 = { amount = 1 owner = HOL version_name = "Basic Destroyer" } } }
+			ship = { name = "Windshear" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_2 = { amount = 1 owner = HOL version_name = "Basic Destroyer" } } }
+			ship = { name = "Skullcrusher" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_2 = { amount = 1 owner = HOL version_name = "Basic Destroyer" } } }
+			ship = { name = "Thornado" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_2 = { amount = 1 owner = HOL version_name = "Basic Destroyer" } } }
+			ship = { name = "Grump" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_2 = { amount = 1 owner = HOL version_name = "Basic Destroyer" } } }
+			ship = { name = "Barf and Belch" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_2 = { amount = 1 owner = HOL version_name = "Basic Destroyer" } } }
+			ship = { name = "Skrill" definition = destroyer start_experience_factor = 0.1 equipment = { ship_hull_light_2 = { amount = 1 owner = HOL version_name = "Basic Destroyer" } } }
+			ship = { name = "Renoir" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HOL version_name = "Basic Light Cruiser" } } }
+			ship = { name = "Dessendre" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HOL version_name = "Basic Light Cruiser" } } }
+			ship = { name = "Sophie" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HOL version_name = "Basic Light Cruiser" } } }
+			ship = { name = "Emma" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HOL version_name = "Basic Light Cruiser" } } }
+			ship = { name = "Aline" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HOL version_name = "Basic Light Cruiser" } } }
+			ship = { name = "Alicia" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HOL version_name = "Basic Light Cruiser" } } }
+			ship = { name = "Clea" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HOL version_name = "Basic Light Cruiser" } } }
+			ship = { name = "Noco" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HOL version_name = "Basic Light Cruiser" } } }
+			ship = { name = "Monoco" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HOL version_name = "Basic Light Cruiser" } } }
+			ship = { name = "Esquie" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HOL version_name = "Basic Light Cruiser" } } }
+			ship = { name = "Sciel" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HOL version_name = "Basic Light Cruiser" } } }
+			ship = { name = "Lune" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HOL version_name = "Basic Light Cruiser" } } }
+			ship = { name = "Berk" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HOL version_name = "Basic Light Cruiser" } } }
+			ship = { name = "Gobber" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HOL version_name = "Basic Light Cruiser" } } }
+			ship = { name = "Astrid" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HOL version_name = "Basic Light Cruiser" } } }
+			ship = { name = "Snotlout" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HOL version_name = "Basic Light Cruiser" } } }
+			ship = { name = "Fishlegs" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HOL version_name = "Basic Light Cruiser" } } }
+			ship = { name = "Eret" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HOL version_name = "Basic Light Cruiser" } } }
+			ship = { name = "Grimmel" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HOL version_name = "Basic Light Cruiser" } } }
+			ship = { name = "Ruffnut" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HOL version_name = "Basic Light Cruiser" } } }
+			ship = { name = "Tuffnut" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HOL version_name = "Basic Light Cruiser" } } }
+			ship = { name = "Drago" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HOL version_name = "Basic Light Cruiser" } } }
+			ship = { name = "Light Fury" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HOL version_name = "Basic Light Cruiser" } } }
+			ship = { name = "Hidden World" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HOL version_name = "Basic Light Cruiser" } } }
+			ship = { name = "Heather" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HOL version_name = "Basic Light Cruiser" } } }
+			ship = { name = "Silverwing" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = HOL version_name = "Early Light Cruiser" } } }
+			ship = { name = "Meleys" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = HOL version_name = "Early Light Cruiser" } } }
+			ship = { name = "Syrax" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = HOL version_name = "Early Light Cruiser" } } }
+			ship = { name = "Tessarion" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = HOL version_name = "Early Light Cruiser" } } }
+			ship = { name = "Quicksilver" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = HOL version_name = "Early Light Cruiser" } } }
+			ship = { name = "Dreamfyre" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = HOL version_name = "Early Light Cruiser" } } }
+			ship = { name = "Vermithor" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = HOL version_name = "Early Light Cruiser" } } }
+			ship = { name = "Ghost" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = HOL version_name = "Early Light Cruiser" } } }
+			ship = { name = "Nymeria" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = HOL version_name = "Early Light Cruiser" } } }
+			ship = { name = "Grey Wind" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = HOL version_name = "Early Light Cruiser" } } }
+			ship = { name = "Summer" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = HOL version_name = "Early Light Cruiser" } } }
+			ship = { name = "Shaggydog" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = HOL version_name = "Early Light Cruiser" } } }
+			ship = { name = "Lady" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = HOL version_name = "Early Light Cruiser" } } }
+			ship = { name = "Arrax" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = HOL version_name = "Early Light Cruiser" } } }
+			ship = { name = "Seasmoke" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = HOL version_name = "Early Light Cruiser" } } }
+			ship = { name = "Sirene" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HOL version_name = "Basic Light Cruiser" } } }
+			ship = { name = "Eveque" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HOL version_name = "Basic Light Cruiser" } } }
+			ship = { name = "Curator" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HOL version_name = "Basic Light Cruiser" } } }
+			ship = { name = "Lampmaster" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HOL version_name = "Basic Light Cruiser" } } }
+			ship = { name = "Stone Wave" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HOL version_name = "Basic Light Cruiser" } } }
+			ship = { name = "Spring Meadows" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HOL version_name = "Basic Light Cruiser" } } }
+			ship = { name = "Yellow Harvest" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HOL version_name = "Basic Light Cruiser" } } }
+			ship = { name = "Flying Manor" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HOL version_name = "Basic Light Cruiser" } } }
+			ship = { name = "Gestral Village" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HOL version_name = "Basic Light Cruiser" } } }
+			ship = { name = "Visages" definition = light_cruiser start_experience_factor = 0.15 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HOL version_name = "Basic Light Cruiser" } } }
+			ship = { name = "Verso" definition = heavy_cruiser start_experience_factor = 0.2 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = HOL version_name = "Early Heavy Cruiser" } } }
+			ship = { name = "Vi" definition = heavy_cruiser start_experience_factor = 0.2 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = HOL version_name = "Early Heavy Cruiser" } } }
+			ship = { name = "Hiccup" definition = heavy_cruiser start_experience_factor = 0.2 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = HOL version_name = "Early Heavy Cruiser" } } }
+			ship = { name = "Aegon" definition = heavy_cruiser start_experience_factor = 0.2 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = HOL version_name = "Early Heavy Cruiser" } } }
+			ship = { name = "Gustave" definition = heavy_cruiser start_experience_factor = 0.2 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HOL version_name = "Basic Heavy Cruiser" } } }
+			ship = { name = "Maelle" definition = heavy_cruiser start_experience_factor = 0.2 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HOL version_name = "Basic Heavy Cruiser" } } }
+			ship = { name = "Caitlyn" definition = heavy_cruiser start_experience_factor = 0.2 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HOL version_name = "Basic Heavy Cruiser" } } }
+			ship = { name = "Valka" definition = heavy_cruiser start_experience_factor = 0.2 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HOL version_name = "Basic Heavy Cruiser" } } }
+			ship = { name = "Rhaegal" definition = heavy_cruiser start_experience_factor = 0.2 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HOL version_name = "Basic Heavy Cruiser" } } }
+			ship = { name = "Viserion" definition = heavy_cruiser start_experience_factor = 0.2 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HOL version_name = "Basic Heavy Cruiser" } } }
+			ship = { name = "Sunfyre" definition = heavy_cruiser start_experience_factor = 0.2 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HOL version_name = "Basic Heavy Cruiser" } } }
+			ship = { name = "Balerion" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_heavy_1 = { amount = 1 owner = HOL version_name = "Early Battleship" } } }
+			ship = { name = "Vhagar" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_heavy_1 = { amount = 1 owner = HOL version_name = "Early Battleship" } } }
+			ship = { name = "Meraxes" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_heavy_1 = { amount = 1 owner = HOL version_name = "Early Battleship" } } }
+			ship = { name = "Drogon" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_heavy_1 = { amount = 1 owner = HOL version_name = "Early Battleship" } } }
+			ship = { name = "Red Death" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_heavy_1 = { amount = 1 owner = HOL version_name = "Early Battleship" } } }
+			ship = { name = "Stoick the Vast" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_heavy_1 = { amount = 1 owner = HOL version_name = "Early Battleship" } } }
+			ship = { name = "The Paintress" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_heavy_2 = { amount = 1 owner = HOL version_name = "Basic Battleship" } } }
+			ship = { name = "Lumiere" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_heavy_2 = { amount = 1 owner = HOL version_name = "Basic Battleship" } } }
+			ship = { name = "Winterfell" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_heavy_2 = { amount = 1 owner = HOL version_name = "Basic Battleship" } } }
+			ship = { name = "Piltover" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_heavy_2 = { amount = 1 owner = HOL version_name = "Basic Battleship" } } }
+			ship = { name = "Caraxes" definition = battle_cruiser start_experience_factor = 0.2 equipment = { ship_hull_heavy_2 = { amount = 1 owner = HOL version_name = "Basic Battlecruiser" } } }
+			ship = { name = "Night Fury" definition = battle_cruiser start_experience_factor = 0.2 equipment = { ship_hull_heavy_2 = { amount = 1 owner = HOL version_name = "Basic Battlecruiser" } } }
+			ship = { name = "Jinx" definition = battle_cruiser start_experience_factor = 0.2 equipment = { ship_hull_heavy_2 = { amount = 1 owner = HOL version_name = "Basic Battlecruiser" } } }
+			ship = { name = "Dragon's Edge" definition = carrier start_experience_factor = 0.2 equipment = { ship_hull_carrier_1 = { amount = 1 owner = HOL version_name = "Basic Carrier" } } }
+		}
+	}
+}

@@ -12,17 +12,13 @@ state={
 	history={
 		owner = ATJ
 		victory_points = {
-			1277 1 
+			1277 10354
 		}
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 0
 			arms_factory = 0
 			air_base = 0
-			1277 = {
-				naval_base = 4
-			}
-
 		}
 		add_core_of = ATJ
 		add_core_of = X92

@@ -1,0 +1,123 @@
+add_namespace = CHI_events
+
+# Chinese New Year
+country_event = {
+	id = CHI_events.1
+	title = CHI_events.1.t
+	desc = CHI_events.1.d
+	picture = GFX_report_event_china_chiang_kai_shek
+
+	is_triggered_only = yes
+
+	option = {
+		name = CHI_events.1.a
+
+		swap_ideas = {
+			remove_idea = CHI_legitimacy_of_the_monarchy_1
+			add_idea = CHI_legitimacy_of_the_monarchy_2
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+# The First Provincial Elections
+country_event = {
+	id = CHI_events.2
+	title = CHI_events.2.t
+	desc = CHI_events.2.d
+	picture = GFX_report_event_JAP_workers_celebrating
+
+	is_triggered_only = yes
+
+	option = {
+		name = CHI_events.2.a
+
+		swap_ideas = {
+			remove_idea = CHI_legitimacy_of_the_monarchy_2
+			add_idea = CHI_legitimacy_of_the_monarchy_3
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+# The Yuan Debt Defaults
+country_event = {
+	id = CHI_events.3
+	title = CHI_events.3.t
+	desc = CHI_events.3.d
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+
+	is_triggered_only = yes
+
+	option = {
+		name = CHI_events.3.a
+
+		add_political_power = -100
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+# The Yuan Demands the Return of the Three Pearls
+country_event = {
+	id = CHI_events.4
+	title = CHI_events.4.t
+	desc = CHI_events.4.d
+	picture = GFX_report_event_generic_china
+
+	is_triggered_only = yes
+
+	option = {
+		name = CHI_events.4.a
+
+		if = {
+			limit = { 
+				tag = HOL
+			}
+			375 = {
+				transfer_state_to = W41
+			}
+		}
+		if = {
+			limit = { 
+				tag = PRE
+			}
+			457 = {
+				transfer_state_to = W41
+			}
+		}
+		if = {
+			limit = { 
+				tag = IRE
+			}
+			220 = {
+				transfer_state_to = W41
+			}
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = {
+		name = CHI_events.4.b
+
+		add_political_power = -50
+		W41 = {
+			add_war_support = 0.05
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
