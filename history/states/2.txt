@@ -12,7 +12,7 @@ state={
 	history={
 		owner = X04
 		victory_points = {
-			12787 15 
+			12787 5 
 		}
 		buildings = {
 			infrastructure = 2
